@@ -1,22 +1,22 @@
 ---
 title: 自訂代碼品質規則
 seo-title: 自訂代碼品質規則
-description: 請依照此頁面瞭解Cloud Manager執行的自訂Sonarque規則。
-seo-description: 請依照本頁面瞭解Adobe Experience Manager Cloud Manager執行的自訂Sonarque規則。
+description: 請依照此頁面來瞭解Cloud Manager執行的自訂代碼品質規則。
+seo-description: 請依照本頁面瞭解Adobe Experience Manager Cloud Manager執行的自訂代碼品質規則。
 uuid: a feb465-1982-46be-7-e57-e67 b59849579
 contentOwner: jsyal
 products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 使用
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509 f
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 
 ---
 
 
 # 自訂代碼品質規則 {#custom-code-quality-rules}
 
-此頁面說明Cloud Manager執行的自訂Sonarque規則。這些規則使用AEM工程的最佳實務來增強標準Sonarque規則。
+此頁面說明Cloud Manager執行的自訂代碼品質規則，以根據AEM工程的最佳實務建立。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 **嚴重性**：主修
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 ***執行緒. stop()*** 和 ***執行緒.中斷()*** 的方法可產生難以重制的問題，有時會造成安全性弱點。應密切監控其使用情況並加以驗證。一般而言，傳遞訊息是達成類似目標的安全方式。
 
@@ -93,7 +93,7 @@ public class DoThis implements Runnable {
 
 **嚴重性**：主修
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 使用外部來源的格式字串(此類請求參數或使用者產生的內容)可讓應用程式暴露於拒絕服務攻擊。在某些情況下，格式字串可能是外部控制，但僅允許來自受信任來源。
 
@@ -115,7 +115,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **嚴重性**：重要事項
 
-****因為：2018.6.0版
+**** 因為：2018.6.0版
 
 在AEM應用程式內執行HTTP要求時，務必確定已設定適當逾時，以避免不必要的執行緒消耗。遺憾的是，Java的預設HTTP Client(VisitPurlConnection)和常用的Apache HTTP Components用戶端的預設行為不會逾時，因此必須明確設定逾時。此外，作為最佳實務，這些逾時不應超過60秒。
 
@@ -193,7 +193,7 @@ public void orDoThis() {
 
 **嚴重性**：重要事項
 
-****因為：2018.7.0版
+**** 因為：2018.7.0版
 
 AEM API包含僅供自訂程式碼使用，但未實施的Java介面和類別。例如，介面 *com.day.cq.wc. api。頁面* 設計只能由 ***AEM實施***。
 
@@ -219,7 +219,7 @@ public class DontDoThis implements Page {
 
 **嚴重性**：主修
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 資源從ResourceSolverFactory取得的資源使用系統資源。雖然在不再使用ResourceSolver時仍有各項措施可用來重新命名這些資源，但呼叫close()方法以明確關閉任何開啓的resourceOver物件會更有效率。
 
@@ -264,7 +264,7 @@ public void orDoThis(Session session) throws Exception {
 
 **嚴重性**：主修
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 如 [Sling文件](http://sling.apache.org/documentation/the-sling-engine/servlets.html)所述，系結servlets依路徑分組。路徑系結的servlet無法使用標準JCR存取控制，因此需要額外的安全性防護。建議您不要使用路徑系結servlet，而是建議在儲存庫中建立節點，並依資源類型註冊servlet。
 
@@ -287,7 +287,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 **嚴重性**：次要
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 一般而言，應記錄一次例外狀況。記錄例外次數多次可能造成混淆，因為不清楚發生例外情況多少次。導致這個現象的最常見模式就是記錄並擲出一個畫面例外。
 
@@ -332,7 +332,7 @@ public void orDoThis() throws MyCustomException {
 
 **嚴重性**：次要
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 另一個避免的常見模式是記錄訊息，然後立即擲出例外狀況。這通常表示例外訊息會複製到記錄檔中。
 
@@ -391,7 +391,7 @@ public void doGet() throws Exception {
 
 **嚴重性**：次要
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 作為最佳實務，記錄訊息應該提供有關應用程式中發生例外情形的相關資訊。雖然內容也可以透過堆疊追蹤來判斷，一般記錄訊息要更容易閱讀和瞭解。因此，當記錄例外時，使用例外訊息作為記錄訊息是很好的做法-例外訊息將會包含發生錯誤的訊息，而應使用記錄檔訊息來告知記錄檔，當發生例外狀況時，應用程式正在執行甚麼動作。例外訊息仍將記錄；透過指定您自己的訊息，即可更容易瞭解記錄。
 
@@ -427,7 +427,7 @@ public void doThis() {
 
 **嚴重性**：次要
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 如名稱所示，Java例外一律用於 *特殊* 情況下。因此，當擷取例外時，務必確保記錄訊息已記錄在適當層級- WARN或ERROR。如此可確保這些訊息在記錄檔中正確顯示。
 
@@ -463,7 +463,7 @@ public void doThis() {
 
 **嚴重性**：次要
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 如前所述，在瞭解記錄訊息時，上下文很重要。使用Exception. printStackTrace()會使 **** 堆疊追蹤輸出至標準錯誤串流，因而失去所有上下文。此外，在AEM(如AEM)的多執行緒應用程式中，如果同時使用此方法列印多個例外，其堆疊追蹤可能會重疊，造成嚴重混淆。例外情形應僅透過記錄架構登入。
 
@@ -499,7 +499,7 @@ public void doThis() {
 
 **嚴重性**：次要
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 登入AEM應一律透過記錄架構(SLF4J)完成。直接輸出至標準輸出或標準錯誤串流會遺失記錄架構提供的結構與內容資訊，有時可能會造成效能問題。
 
@@ -535,7 +535,7 @@ public void doThis() {
 
 **嚴重性**：次要
 
-****因為：2018.4.0版
+**** 因為：2018.4.0版
 
 一般而言，以/libs和/apps開始的路徑不應被硬式編碼為他們參照的路徑，最常被儲存為相對於Sling搜尋路徑(預設為/libs)的路徑(預設為)。使用絕對路徑可能會帶來細微的瑕疵，只會出現在專案生命週期之後。
 
