@@ -9,7 +9,7 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 使用
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bc7 e7318 d4
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 
 ---
 
@@ -54,11 +54,11 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 >如需詳細定義，請參閱 [度量定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 。
 
 
-您可以在此處 [下載規則清單](assets/sonarqube-rules.xlsx)
+您可以在此處 [下載規則清單](assets/code-quality-rules.xlsx)
 
 >[!NOTE]
 >
->若要進一步瞭解執行的 [!UICONTROL Cloud Manager]自訂Sonarque規則，請參閱 [自訂代碼品質規則](custom-code-quality-rules.md)。
+>若要進一步瞭解自訂代碼品質規則， [!UICONTROL Cloud Manager]請參閱 [自訂代碼品質規則](custom-code-quality-rules.md)。
 
 ### 處理虛假問題 {#dealing-with-false-positives}
 
