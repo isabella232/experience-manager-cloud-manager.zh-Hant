@@ -6,25 +6,14 @@ seo-description: 請依照本頁進一步瞭解Adobe AEM Cloud Manager。
 uuid: 9aa90a99-f049-422e-9e06-b00 b843 ed98 b
 products: SG_ PERIENCENCENAGER/CLUDManager
 translation-type: tm+mt
-source-git-commit: 7236e9d3bf5955509068757b34c81f0021db4270
+source-git-commit: e3e7fbd9c44c69e5bcdd92e4099c764aa6a99fe4
 
 ---
 
 
-# 其他資源 [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
+# Additional Resources to [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
 
-## 簡介 {#introduction}
+您應先聯絡Adobe Managed Services客戶成功工程師(CSE)，以取得與Cloud Manager相關的支援。
+CSE會向您建議他們是否可協助您處理問題，或是否需要使用客戶服務建立支援票證。
+You can access [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) to create Support tickets. 如需在客戶服務中建立支援票證的詳細資訊，請參閱存取AEM支援入口網站。
 
-本節強調Adobe Managed [!UICONTROL Cloud Manager]Cloud服務的其他有用資源。
-
-## Experience League {#experience-league-resource}
-
-請追隨 [Adobe Experience League](https://expleague.azureedge.net/labs/L722/index.html) 開始使用Cloud Manager的Lab概觀和整合教學課程。
-
-## 網路研討會系列 {#webinar-series}
-
-請依照 [Adobe論壇](https://forums.adobe.com/message/11061595) ，為雲端管理員建立額外的學習路徑，以做為網路研討會系列。
-
-## 示範影片系列 {#demo-videos}
-
-在Cloud Manager的Cloud Manager中 [使用CI/CD管線，其中包含在探索、設定及執行Cloud](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)Manager的CI/CD管道時，同時在失敗和成功案例中進行的視訊系列。
