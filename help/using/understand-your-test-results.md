@@ -9,7 +9,7 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 使用
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bc7 e7318 d4
 translation-type: tm+mt
-source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
+source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
 
 ---
 
@@ -33,6 +33,10 @@ source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
 * **重要** -這些是閘道識別的問題，造成管線立即失敗。
 * **重要** -這些是閘道識別的問題，會導致管線進入暫停狀態。部署管理員、專案經理或業務擁有者可以覆寫問題，在此情況下，管線會發展，或者他們可以接受問題，此時管線會停止發生。
 * **資訊** -這些是依關卡識別的問題，僅供資訊用途使用，不影響管線執行。
+
+>[!NOTE]
+>
+>在「僅限程式碼品質的管道」中，「程式碼品質測試」門中的重要失敗無法被覆寫，因為「程式碼品質測試」步驟是管線中最後一個步驟。
 
 ## Code Quality Testing {#code-quality-testing}
 
