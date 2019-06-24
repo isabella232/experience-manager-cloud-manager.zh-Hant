@@ -8,16 +8,16 @@ contentOwner: jsyal
 products: SG_ PERIENCENCENAGER/CLUDManager
 discoiquuid: ebcc91a5-be9 e-4684-8146-d88 f4013 d4 d1
 translation-type: tm+mt
-source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
+source-git-commit: 2fda16bb4826171c993ec07c7ff3e38d1675b9f5
 
 ---
 
 
-# Evaulation Phase {#evaluation}
+# Evaluation Phase {#evaluation}
 
-按一下「開始更新」後，「產品更新精靈」中的第一個階段就是「評估」階段。在這個階段中，您可以使用直接從精靈存取的圖樣檢測器來評估升級複雜性。在本步驟結束時，您將可存取評估報告。
+Once you click **[!UICONTROL Start Update]**, the first phase in Product Update Wizard is the Evaluation phase. 在這個階段中，您可以使用直接從精靈存取的圖樣檢測器來評估升級複雜性。在本步驟結束時，您將可存取評估報告。
 
-產生的報表可讓您偵測使用中的模式，檢查「作者」執行個體是否可執行下列動作：
+產生的報表可讓您偵測「作者」執行個體，借由偵測下列模式來檢查：
 
 * 違反某些規則，並在升級時會受到影響或覆寫。
 
@@ -33,11 +33,15 @@ source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
 
 請遵循下列步驟執行評估工具：
 
-1. Select [!UICONTROL Run evaluation] to run the pattern detector. 圖樣檢測器可在任何環境上執行。但是，若要提高偵測率並避免在業務關鍵性例項上發生任何慢動作，Cloud Manager將會在作者例項上執行測試環境。
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. 圖樣檢測器可在任何環境上執行。但是，若要提高偵測率並避免在業務關鍵性例項上發生任何慢動作，Cloud Manager將會在作者例項上執行測試環境。
+
+![](assets/Run-Evaluation.png)
 
 1. 精靈會通知您動作的狀態。You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
 Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+
+![](assets/Evaluation-1.png)
 
 >[!NOTE]
 >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
