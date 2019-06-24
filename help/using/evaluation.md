@@ -8,21 +8,20 @@ contentOwner: jsyal
 products: SG_ PERIENCENCENAGER/CLUDManager
 discoiquuid: ebcc91a5-be9 e-4684-8146-d88 f4013 d4 d1
 translation-type: tm+mt
-source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
 
 # Evaluation Phase {#evaluation}
 
-Once you click **[!UICONTROL Start Update]**, the first phase in Product Update Wizard is the Evaluation phase. 在這個階段中，您可以使用直接從精靈存取的圖樣檢測器來評估升級複雜性。在本步驟結束時，您將可存取評估報告。
+Once you click **[!UICONTROL Start Update]**, the first phase in Product Update wizard is the **[!UICONTROL Evaluation]** phase. 在這個階段中，您可以使用直接從精靈存取的圖樣檢測器來評估升級複雜性。在本步驟結束時，您將可存取評估報告。
 
 產生的報表可讓您偵測「作者」執行個體，借由偵測下列模式來檢查：
 
 * 違反某些規則，並在升級時會受到影響或覆寫。
 
 * 使用AEM6.x功能或在新AEM上不會向後相容的API，而且在升級後可能會中斷。
-
 
 這是評估升級至Adobe Experience Manager(AEM)6.5所涉及的開發成果。
 
@@ -33,7 +32,7 @@ Once you click **[!UICONTROL Start Update]**, the first phase in Product Update 
 
 請遵循下列步驟執行評估工具：
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
+1. Click on **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
    >[!NOTE]
    >圖樣檢測器可在任何環境上執行。但是，若要提高偵測率並避免在業務關鍵性例項上發生任何慢動作，Cloud Manager將會在作者例項上執行測試環境。
