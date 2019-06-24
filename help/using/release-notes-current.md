@@ -4,7 +4,7 @@ seo-title: 2019.6.0版AEM Cloud Manager發行說明
 description: 請依照此頁面取得Cloud Manager發行2019.6.0的資訊。
 seo-description: 請依照此頁面取得AEM Cloud Manager發行2019.6.0的資訊。
 translation-type: tm+mt
-source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
+source-git-commit: ef6a0a0bdc22e37357304823d6f0a70d84917fa4
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 ## 新功能 {#whats-new}
 
 * 新產品更新精靈可協助客戶成功執行AEM更新。Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
-* 檢查內容結構的程式碼品質規則。Refer to [Custom Code Quality Rules](custom-code-quality-rules.md)for more information.
+* 檢查內容結構的程式碼品質規則。Refer to [Custom Code Quality Rules](custom-code-quality-rules.md) for more information.
 * Git推播的大小上限已提高為GB。
 
 ## Bug Fixes {#bug-fixes}
@@ -29,4 +29,4 @@ source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 ## 已知問題 {#known-issues}
 
 * 不一定會根據嚴重性排序程式碼品質CSV下載。
-* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a config folder.
+* *如果* OSGi組態放置在 *config* 資料夾下的巢狀資料夾中，則ConfigAndInstallshordonlycontrough OsyDays規則可能會報告錯誤的位置。
