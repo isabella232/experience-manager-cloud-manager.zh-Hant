@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_ PERIENCENCENAGER/CLUDManager
 discoiquuid: ebcc91a5-be9 e-4684-8146-d88 f4013 d4 d1
 translation-type: tm+mt
-source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
+source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
 ---
 
@@ -37,4 +37,4 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
    ![](assets/Start-Update.png)
 
-The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process, as seen in the [Evaluation Phase](evaluation.md).
+   The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process as seen in the [Evaluation Phase](evaluation.md).
