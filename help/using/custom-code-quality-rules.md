@@ -9,7 +9,7 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 使用
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509 f
 translation-type: tm+mt
-source-git-commit: f76b8e6a036ab920f11fb913d3ad29818f1e153f
+source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 ---
 
@@ -617,6 +617,27 @@ public void doThis(Resource resource) {
 **** 因為：2019.6.0版
 
 For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. 將其他類型的內容放置在包含這些區段的路徑下，會導致應用程式行為在管理和非管理使用者之間有所差異。
+
+A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. 若要解決此問題，應重新命名為相符的名稱。For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+
+#### Non Compliant Code {#non-compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    + config [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
+
+#### Compliant Code {#compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    ./configPath = inplaceEditingConfig (String)
+    + inplaceEditingConfig [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
 
 ### Packages Should Not Overlap {#oakpal-no-overlap}
 
