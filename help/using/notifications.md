@@ -9,14 +9,14 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 使用
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
 translation-type: tm+mt
-source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+source-git-commit: 1d4bb0b24cdcd6dc0ed9db58f1e14b6714bb96d6
 
 ---
 
 
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] 允許使用者在生產部署開始時接收通知，以及到達 **「上線核准** 」和「 **已排程** 」步驟。These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
+[!UICONTROL Cloud Manager] 可讓使用者在「管道」開始和完成(成功或未成功)、生產部署開始時，以及到達「 **上線核准** 」和「 **已排程** 」步驟時接收通知。These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
 
 >[!NOTE]
 >
