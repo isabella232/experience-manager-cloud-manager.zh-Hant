@@ -9,7 +9,7 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 快速入門
 discoiquuid: 76c1a8e4-d66 f-4a3 b-8c0 c-b80 c9 e17700 e
 translation-type: tm+mt
-source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+source-git-commit: b39fc865e3c34052fb94b223d9eebc0fce3495d2
 
 ---
 
@@ -104,6 +104,7 @@ Cloud Manager builds and tests your code using a specialized build runtime **Env
    * 圖形雜誌
    * 如果您需要其他套件，則需要透過客戶成功工程師(CSE)提出要求。
 
+* 每個建置都是在原始環境上完成；組建容器不會保留執行之間的任何狀態。
 * Maven is always run with the command: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository. (Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
