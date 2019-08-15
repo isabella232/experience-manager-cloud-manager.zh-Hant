@@ -4,7 +4,7 @@ sub-product: adobe experience manager cloud管理員
 archetype: 管理員
 user-guide-title: Experience Manager Cloud Manager說明
 translation-type: tm+mt
-source-git-commit: c5f26158bd4268b866a0726fbd63009a779ddcf1
+source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 ---
 
@@ -36,13 +36,15 @@ source-git-commit: c5f26158bd4268b866a0726fbd63009a779ddcf1
    + [管理您的環境](manage-your-environment.md)
    + [監控您的環境](monitor-your-environments.md)
    + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [通知](notifications.md)
    + [自訂代碼品質規則](custom-code-quality-rules.md)
 + 產品更新精靈 {#product-update-wizard}
    + [綜覽](overview-productupdate-wizard.md)
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
-   + [目前發行說明(2019.7.0)](release-notes-current.md)
+   + [目前發行說明(2019.8.0)](release-notes-current.md)
+   + [目前發行說明(2019.7.0)](release-notes-2019-7-0.md)
    + [2019.6.0版發行說明](release-notes-2019-6-0.md)
    + [2019.5.0版發行說明](release-notes-2019-5-0.md)
    + [2019.4.0版發行說明](release-notes-2019-4-0.md)
