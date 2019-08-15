@@ -9,7 +9,7 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 快速入門
 discoiquuid: 76c1a8e4-d66 f-4a3 b-8c0 c-b80 c9 e17700 e
 translation-type: tm+mt
-source-git-commit: 81f4e0b3b31a8be1f0620b70442b0268159e4ec0
+source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 ---
 
@@ -270,6 +270,43 @@ Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境�
 >[!NOTE]
 >
 >以此方式安裝系統套件時 **，不** 會將它安裝在執行Adobe Experience Manager的執行時期環境中。如果您需要安裝在AEM環境的系統套件，請聯絡客戶成功工程師(CSE)。
+
+## 跳過內容封裝 {#skipping-content-packages}
+
+在Cloud Manager中，建立可能會產生任何數量的內容封裝。
+基於各種原因，您可能需要產品套件，但不要部署它。例如，當建立僅用於測試的內容封裝時，或將透過建置程序中另一個步驟重新封裝的內容封裝(即另一個套件的子封裝)，這可能很有用。
+
+為了因應這些情況，Cloud Manager將會尋找一個名為 ***CloudManagerTarget的屬性*** ，在建立的內容封裝屬性中。如果此屬性設為無，則會跳過套件，而不會部署。設定此屬性的機制取決於建置內容套件的方式。例如，使用filevault-maven-plugin可設定外掛程式如下：
+
+```xml
+        <plugin>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
+
+使用content-package-maven-plugin類似：
+
+```xml
+        <plugin>
+            <groupId>com.day.jcr.vault</groupId>
+            <artifactId>content-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
 
 ## 根據最佳實務開發您的程式碼 {#develop-your-code-based-on-best-practices}
 
