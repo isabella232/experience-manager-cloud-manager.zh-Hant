@@ -4,7 +4,7 @@ sub-product: adobe experience manager cloud管理員
 archetype: 管理員
 user-guide-title: Experience Manager Cloud Manager說明
 translation-type: tm+mt
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+source-git-commit: 9e30939d319ad1c0db8b640b578567aa105d5e91
 
 ---
 
@@ -44,7 +44,7 @@ source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
    + [目前發行說明(2019.8.0)](release-notes-current.md)
-   + [目前發行說明(2019.7.0)](release-notes-2019-7-0.md)
+   + [2019.7.0版發行說明](release-notes-2019-7-0.md)
    + [2019.6.0版發行說明](release-notes-2019-6-0.md)
    + [2019.5.0版發行說明](release-notes-2019-5-0.md)
    + [2019.4.0版發行說明](release-notes-2019-4-0.md)
