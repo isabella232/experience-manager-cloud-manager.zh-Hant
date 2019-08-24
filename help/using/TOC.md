@@ -1,10 +1,10 @@
 ---
 product: adobe experience manager
-sub-product: adobe experience manager cloud管理員
+sub-product: Experience Manager cloud管理員
 archetype: 管理員
 user-guide-title: Experience Manager Cloud Manager說明
 translation-type: tm+mt
-source-git-commit: 9e30939d319ad1c0db8b640b578567aa105d5e91
+source-git-commit: 5ebc83e089f889da9746828ecc362c2760ff79e9
 
 ---
 
