@@ -4,7 +4,7 @@ seo-title: 監控您的環境
 description: 'null'
 seo-description: 請依照此頁面來瞭解Cloud Manager中的「系統監控」，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種量度。
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -61,12 +61,12 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 個別圖表會隨著時間顯示資料的狀態和圖表。如果顯示多個例項，則每個例項的資料將位於個別系列上。
 
-![](assets/System-Monitoring3.png)
+![](assets/Monitoring_Graphs1.png)
 
 您可以按一下圖例中的系列，將個別系列隱藏在圖形上。
 例如，如果您按一下警告臨界值系列，則只會看見臨界臨界值。
 
-![](assets/System_Monitoring4.png)
+![](assets/Monitoring_Graphs2.png)
 
 ### 度量定義 {#metric-definitions}
 
