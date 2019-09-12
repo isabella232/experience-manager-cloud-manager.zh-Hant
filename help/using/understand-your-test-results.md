@@ -9,7 +9,7 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 使用
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bc7 e7318 d4
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
@@ -114,12 +114,12 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 預設密碼已變更 | 預設登入帳戶 | 重要事項 |
 | Sling default GET servlet受DOS攻擊保護。 | Sling Get Servlet | 重要事項 |
 | Dispatcher已正確篩選請求 | CQ Dispatcher 組態 | 重要事項 |
-| 已適當設定Adobe Granite HTML Library Manager | CQ HTML 文件庫管理員組態 | 重要事項 |
 | 已適當設定Sling Java Script Handler | Sling Java 指令碼處理常式 | 重要事項 |
 | 已適當設定Sling JSP Script Handler | Sling JSP Script Handler | 重要事項 |
-| Sling Referrer Filter is configured in order to防止CSRF攻擊 | Sling 查閱者篩選 | 重要事項 |
 | SSL設定正確 | SSL 設定 | 重要事項 |
 | 找不到明顯不安全的使用者個人資料政策 | 使用者設定檔預設存取 | 重要事項 |
+| Sling Referrer Filter is configured in order to防止CSRF攻擊 | Sling 查閱者篩選 | 重要事項 |
+| 已適當設定Adobe Granite HTML Library Manager | CQ HTML 文件庫管理員組態 | 重要事項 |
 | 已停用CRXDE支援套裝 | CRXDE 支援 | 重要事項 |
 | 停用Sling DavEx搭售和servlet | DavEx 健康狀態檢查 | 重要事項 |
 | 未安裝範例內容 | 範例內容封裝 | 重要事項 |
