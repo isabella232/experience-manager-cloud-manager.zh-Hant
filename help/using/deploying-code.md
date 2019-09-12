@@ -9,7 +9,7 @@ products: SG_ PERIENCENCENAGER/CLUDManager
 topic-tags: 使用
 discoiquuid: 832a4647-9b83-4a9d-b373-30Fe16092 b15
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -46,20 +46,22 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
    * 建置與單元測試
    * 程式碼掃描
    * 部署至舞台
-   ![](assets/Stage_Testing.png)
+   ![](assets/Stage_Deployment1.png)
 
    **Stage Testing**(舞台測試)包含下列步驟：
 
    * 安全性測試
    * 效能測試
-   ![](assets/Stage_Deployment.png)
+   ![](assets/Stage_Testing1.png)
 
-   **生產部署**包含下列步驟：
+   **生產部署**&#x200B;包含下列步驟：
 
    * **Application for Approval** (if enabled)
    * **排程生產部署** (如果已啓用)
    * **CSE支援** (如果已啓用)
    * **部署至生產環境**
+   ![](assets/Prod_Deployment1.png)
+
    >[!NOTE]
    >
    >設定管線時，啓用 **「排程生產部署** 」。
