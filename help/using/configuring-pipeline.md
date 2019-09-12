@@ -10,7 +10,7 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78 a-439e-8c40-367203a719 b3
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 1. 隨即顯示 **「設定管道** 」畫面。
 
-   三步驟精靈可讓您設定您的 **分支**、 **環境**和 **測試** 環境。
+   三步驟精靈可讓您設定您的 **分支**、 **環境**&#x200B;和 **測試** 環境。
 選取「Git」分支，然後按「 **Next**」(下一步)。
 
    >[!NOTE]
@@ -161,9 +161,9 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
    >[!NOTE]
    >
-   >此外，當您設定管線後，您仍可從UI使用 **「管道設定** 」方塊編輯 [!UICONTROL Cloud Manager] 相同的設定。
+   >此外，當您設定管線後，您仍然可以從UI使用 **「生產管線設定** 」方塊編輯 [!UICONTROL Cloud Manager] 相同的設定。
 
-   ![](assets/Configuring_Pipeline-Settings.png)
+   ![](assets/Prod-Pipeline-Settings-Dialog.png)
 
 ## 僅限非生產與程式碼品質管線
 
