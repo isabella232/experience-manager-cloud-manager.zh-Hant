@@ -1,164 +1,164 @@
 ---
-title: 設定Cloud Manager的一般設定
+title: 為Cloud manager設定常規配置
 seo-title: 設定Adobe AEM Cloud Manager的一般設定
-description: 設定Cloud Manager及從使用者介面管理內容的必要條件。
-seo-description: 設定Adobe AEM Cloud Manager及從使用者介面管理內容的必要條件。
-uuid: 65d795f9-aa97-4816-b66 b-03b5 ae961 f47
+description: 設定Cloud manager及從其使用者介面管理內容的先決條件。
+seo-description: 設定Adobe AEM Cloud manager及從其使用者介面管理內容的先決條件。
+uuid: 65d795f9-aa97-4816-b66b-03b5ae961f47
 contentOwner: jsyal
-discoiquuid: 0341b88-8d28-401b-aa42-17ead6183 cd8
+discoiquuid: 03241b88-8d28-401b-aa42-17ead6183cd8
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 093e25fa1cf2f5cdc3d8ea0bffd5c02ade854a88
 
 ---
 
 
-# 設定一般設定 [!UICONTROL Cloud Manager]{#setting-up-general-configurations-for-cloud-manager}
+# 設定常規配置 [!UICONTROL Cloud Manager]{#setting-up-general-configurations-for-cloud-manager}
 
-下節重點說明從使用者介面設定 [!UICONTROL Cloud Manager] 及管理內容的必要條件。
+以下章節重點說明從使用者介面 [!UICONTROL Cloud Manager] 設定和管理內容的必要條件。
 
 本節頁面涵蓋下列主題
 
-* **設定使用者和角色**
+* **設定用戶和角色**
 * **AEM應用程式專案設定**
-* **Dispatcher組態**
+* **Dispatcher Configurations**
 * **開發最佳實務**
 
-下圖說明可 [!UICONTROL Cloud Manager] 持續提供最佳品質代碼的不同函數：
+下圖說明可持續提供最佳品 [!UICONTROL Cloud Manager] 質程式碼的不同功能：
 
 ![](assets/screen_shot_2018-05-01at81926pm.png)
 
-## 設定使用者和角色 {#setting-up-users-and-roles}
+## 設定用戶和角色 {#setting-up-users-and-roles}
 
-角色是由 [!UICONTROL Cloud Manager] Adobe Admin Console管理。您可以在Admin Console中新增使用者至 [!UICONTROL Cloud Manager] 產品描述檔，以提供特定角色會籍。
+角色是從Adobe Admin [!UICONTROL Cloud Manager] Console管理的。 將使用者新增至「管理控制台」中的「產品設定檔」，即可 [!UICONTROL Cloud Manager] 提供特定角色成員資格。
 
 >[!CAUTION]
 >
->若要使用 [!UICONTROL Cloud Manager]，您必須擁有Adobe ID和Adobe Managed Services產品上下文。
+>若要使 [!UICONTROL Cloud Manager]用，您必須擁有Adobe ID和Adobe Managed services產品內容。
 
-您可以在管理控制台中新增使用者至 [!UICONTROL Cloud Manager] 產品描述檔，以指定特定角色會籍。
+您可以將使用者新增至「管理控制台」中的「產 [!UICONTROL Cloud Manager] 品設定檔」，以指派特定角色成員資格。
 
-Create the following roles using the Admin console for [!UICONTROL Cloud Manager]:
+使用Admin Console建立下列角色 [!UICONTROL Cloud Manager]:
 
 >[!NOTE]
 >
->Adobe Admin Console可讓您集中管理整個組織內的Adobe權益。
+>Adobe Admin Console可讓您集中管理整個組織的Adobe權益。
 >
->若要進一步瞭解Adobe Admin Console，請參閱 [Admin Console的文件](https://helpx.adobe.com/enterprise/using/admin-console.html)。
+>若要進一步瞭解Adobe Admin Console，請參閱 [Admin Console的檔案](https://helpx.adobe.com/enterprise/using/admin-console.html)。
 
 | **[!UICONTROL Cloud Manager]角色** | **說明** |
 |---|---|
-| 企業負責人 | 負責定義KPI、核准生產部署並覆寫重要的層失敗。 |
-| 方案經理 | 用於 [!UICONTROL Cloud Manager] 執行團隊設定、檢閱狀態及檢視KPI。可核准重要的層失敗。 |
-| 部署管理員 | 管理部署作業。用於 [!UICONTROL Cloud Manager] 執行階段/生產部署。可核准重要的層失敗。擁有Git存取權。 |
-| 開發人員 | 開發並測試自訂應用程式代碼。主要用於 [!UICONTROL Cloud Manager] 檢視狀態。已確認存取git。 |
-| 客戶成功工程師 | 一般支援AMS客戶成功案例。與執行 [!UICONTROL Cloud Manager] 需要CSE監督的部署互動。 |
-| 內容作者 | 通常不會與您互動 [!UICONTROL Cloud Manager]。可使用 [!UICONTROL Cloud Manager] Program Switcher(導覽自 [!UICONTROL Experience Cloud])存取AEM。 |
+| 企業負責人 | 負責定義KPI、批准生產部署及覆寫重要的3層故障。 |
+| 計畫經理 | 用於 [!UICONTROL Cloud Manager] 執行團隊設定、複查狀態和查看KPI。 可能會批准重要的3層故障。 |
+| 部署管理員 | 管理部署操作。 用於 [!UICONTROL Cloud Manager] 執行階段／生產部署。 可能會批准重要的3層故障。 具備Git存取權。 |
+| 開發人員 | 開發並測試自訂的應用程式碼。 主要用 [!UICONTROL Cloud Manager] 於查看狀態。 具有對Git的訪問權。 |
+| 客戶成功工程師 | 通常支援AMS客戶的成功。 為執行需 [!UICONTROL Cloud Manager] 要CSE監督的部署而與之互動。 |
+| 內容作者 | 通常不與互動 [!UICONTROL Cloud Manager]。 可能會使 [!UICONTROL Cloud Manager] 用Program Switcher(已瀏覽過 [!UICONTROL Experience Cloud])來存取AEM。 |
 
-### 使用管理控制台來設定團隊 {#using-admin-console-to-set-up-team}
+### 使用Admin console設定團隊 {#using-admin-console-to-set-up-team}
 
-為了為 [!UICONTROL Cloud Manager] 使用者提供適當的角色權限，客戶組織中的管理員必須在 [!UICONTROL AEM Managed Services] 產品內容下建立新的產品描述檔。
+為了向用戶提供適當的基於角色的權 [!UICONTROL Cloud Manager] 限，客戶組織中的管理員必須在「產品上下文」下建立新的「產品 [!UICONTROL AEM Managed Services] 配置檔案」。
 
 >[!NOTE]
 >
->若要呼叫管理主控台並設定您的團隊(使用者和角色)，請開啓瀏覽器並瀏覽 [https://adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise)。
+>若要存取管理控制台並設定您的團隊（使用者和角色），請開啟瀏覽器並造訪 [https://adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise)。
 
-將使用者(或群組)新增至這些「產品描述檔」是使用一般的「管理控制台」功能完成，如下圖所示：
+將使用者（或群組）新增至這些產品設定檔是使用一般的管理控制台功能來完成，如下圖所示：
 
-1. 登入管理控制台，然後按一下 **「新增描述檔** 」以新增描述檔。
+1. 登入管理控制台，然後按一下「 **新增描述檔** 」以新增描述檔。
 
    ![](assets/admin_console_roles.png)
 
 1. 填寫欄位以設定新角色 [!UICONTROL Cloud Manager]。
 
-   輸入 **描述檔名稱**， **說明** 以建立新的描述檔。此外，您也可以選取描述檔 **的權限群組** 。
+   輸入 **配置檔案名**、 **說明** ，以建立新配置檔案。 此外，您也可以為描述 **檔選取「權限群組** 」。
 
-   按一下 **完成** ，完成描述檔建立步驟。
+   按一下「 **完成** 」(Done)以完成配置檔案建立步驟。
 
    ![](assets/screen_shot_2018-04-23at75014am.png)
 
 ## AEM應用程式專案設定 {#aem-application-project-setup}
 
-在您設定應用程式專案之前 [!UICONTROL Cloud Manager]，您必須考慮這兩種情況之一。您可能是AEM6.4新手或現有客戶。
+在中設定應用程式項 [!UICONTROL Cloud Manager]目之前，您必須考慮兩個方案之一。 您可能是AEM 6.4的新手，或已是現有客戶。
 
 >[!NOTE]
 >
->若要存取，請聯絡 [!UICONTROL Cloud Manager]客戶成功工程師(CSE)以取得開始使用的URL和認證。
+>若要存取，請連絡 [!UICONTROL Cloud Manager]客戶成功工程師(CSE)以取得URL和認證以開始使用。
 
-您可以根據下列兩種情況 [!UICONTROL Cloud Manager]設定應用程式專案：
+您可以根據以下兩種方 [!UICONTROL Cloud Manager]案來設定應用程式項目：
 
-* **新的AEM專案**：
+* **新AEM專案**:
 
-新的AEM專案將可運用您現有的專案 [!UICONTROL Cloud Manager]並搭配使用。
+新的AEM專案將運用您現有的專案並搭配使用 [!UICONTROL Cloud Manager]。
 
-如需其他資訊，請參閱 [「AEM6.4快速入門](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html)」。此外，請參閱 [AEM資源](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) 以取得詳細資訊。
+如需詳細資訊，請 [參閱「AEM 6.4快速入門」](https://chl-author./content/help/en/experience-manager/6-4/sites/deploying/using/deploy.html)。 此外，請參閱 [AEM資源](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) ，以取得詳細資訊。
 
-* **現有的AEM專案**：
+* **現有AEM專案**:
 
-現有的AEM專案必須確認規則至專案設定。您可以升級現有的AEM安裝，以取得AEM6.4中提供的新功能和增強功能 [!UICONTROL Cloud Manager]，並開始使用。這些准則必須最少變更。聯絡客戶成功工程師(CSE)以取得支援。
+現有的AEM專案必須向規則確認，才能設定專案。 您可以升級現有的AEM安裝，以取得AEM 6.4中提供的新功能和增強功能，並開始使用 [!UICONTROL Cloud Manager]。 這些准則應能在最小的變更下運作。 請聯絡客戶成功工程師(CSE)以取得支援。
 
-如需有關將AEM實例升級至6.4的額外資訊，請參閱 [升級至AEM6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html)。
+若要取得有關將AEM例項升級至6.4的其他資訊，請參 [閱「升級至AEM 6.4」](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html)。
 
 ### 設定儲存庫 {#setting-up-repository}
 
-單一(最初是空白)的儲存空間會針對每個已登入的程式布 [!UICONTROL Cloud Manager]建。開發人員和部署經理會收到CID的URL和認證。
+為已登錄的每個程式設定一個初始為空的Git儲存庫 [!UICONTROL Cloud Manager]。 開發人員和部署經理會從其CSE中取得git URL和認證。
 
-有了這項資訊，開發人員可以依照下面的成功區段中** Project Set Up**中的准則來新增他們的程式碼，以便在使用之前完成設定需求 [!UICONTROL Cloud Manager]。
+有了這項資訊，開發人員可依照下節**專案設定**中的准則，新增其程式碼，以在使用前完成設定需求 [!UICONTROL Cloud Manager]。
 
-## Dispatcher組態 {#dispatcher-configurations}
+## Dispatcher Configurations {#dispatcher-configurations}
 
-[!UICONTROL Cloud Manager] 除了一般的AEM內容封裝外，還可以部署Web伺服器和發送器組態檔，前提是它們儲存在Git存放庫中。
+[!UICONTROL Cloud Manager] 可部署Web伺服器和Dispatcher組態檔案（假設這些檔案儲存在git儲存庫中），以及一般的AEM內容封裝。
 
-為善加利用此功能，Maven構建版本會產生包含兩個目錄( ***conf*** 和 ***conf. d***)的壓縮檔。
+為了利用此功能，Maven構建版本將生成一個包含兩個目錄( ***conf*** 和 ***conf.d)的zip檔案***。
 
-部署至dispatcher例項後，這些目錄的內容將會覆寫dispatcher例項上這些目錄的內容。由於網頁伺服器和調度器組態檔經常需要特定環境資訊，因此，您必須先與客戶成功工程師(CSE)合作，才能將這些環境變數擷取到/etc/sysconfig/httpd中。
+部署到調度器實例時，這些目錄的內容將覆蓋調度器實例上這些目錄的內容。 由於Web伺服器和調度程式配置檔案通常需要特定於環境的資訊，為了使此功能能夠正確使用，您首先需要與其客戶成功工程師(CSE)合作，將這些環境變數提取到/etc/sysconfig/httpd中。
 
-請依照下列步驟完成設定發送器的初始程序：
+按照以下步驟完成配置調度程式的初始過程：
 
-1. 從CSE取得目前的生產設定檔案。
-1. 移除硬式編碼環境專用資料(例如發佈轉譯器IP)並替換變數。
-1. 為每個目標分派程式定義關鍵值配對中必要的變數，並要求CSE新增至 ***每個例項的/etc/sysconfig/httpd*** 。
-1. 測試已更新的組態，然後要求CSE部署至生產環境，以確保它們正常運作。
-1. 將檔案送出至Git。
-1. 部署 [!UICONTROL Cloud Manager]。
+1. 從其CSE獲取當前生產配置檔案。
+1. 移除硬式編碼環境特定資料（例如發佈轉譯器IP），並以變數取代。
+1. 在每個目標調度程式的鍵值對中定義所需的變數，並請求CSE在每個實例上添加到 ***/etc/sysconfig/httpd*** 。
+1. 在舞台上測試更新的設定，然後要求CSE部署至生產環境，以確保其正常運作。
+1. 將檔案提交到git。
+1. 透過部署 [!UICONTROL Cloud Manager]。
 
-實際zip檔案可使用maven-assembly-plugin產生。使用「lazybones AEM Multimodule範本」產生的專案可以使用建立專案的適當Maven專案結構。
+實際的zip檔案可使用maven-assembly-plugin來製作。 使用Lazybones AEM Multimodule Template產生的專案可以建立正確的Maven專案結構，做為專案建立的一部分。
 
 >[!NOTE]
 >
->設定發送器是在登入期間完成，但 [!UICONTROL Cloud Manager]也可以在稍後階段完成。
+>配置調度程式是在登錄過程中完成的， [!UICONTROL Cloud Manager]但也可以在以後的階段完成。
 
-### 設定Dispatcher以進行效能測試 {#configuring-dispatcher-for-performance-testing}
+### 配置Dispatcher以進行效能測試 {#configuring-dispatcher-for-performance-testing}
 
-為了正確執行效能測試， [!UICONTROL Cloud Manager] Stage Dispatcher伺服器必須以與生產伺服器一致的方式回應與生產發送器相同的主機名稱。
+為了正確 [!UICONTROL Cloud Manager] 運行效能測試，舞台調度器伺服器必須以與生產調度器一致的方式響應與生產調度器相同的主機名。
 
-*例如*，如果客戶有 [www.myco.com](http://www.myco.com/) 和 [www.myotherco.com](http://www.myotherco.com,/) 作為其生產主機名稱和stage-myco. adobecqms. net作為其舞台主機名稱，則這類請求必須適當地回應：
+*例如*，如果客戶的生產主機名稱為 [www.myco.com](http://www.myco.com/) 和 [www.myotherco.com](http://www.myotherco.com,/) ，而stage-myco.adobecqms.net為其階段主機名稱，則此類請求必須正確回應：
 
 ```
 curl -H"Host: www.myco.com" http://stage-myco.adobecqms.net/en/home.html
 ```
 
-這不僅需要在dispatcher組態中正確設定主機名稱，還需要 ***/etc/map***、任何Apache重寫，或實際上任何其他路徑 ***對應/篩選*** 規則以一致方式建置階段和生產。
+這不僅要求在分發程式配置中正確配置主機名，還要求以一致的方式在階段和生產階段之間實施 ***/etc/map***、任何Apache重寫或其他任何路徑 ****** 映射／過濾規則。
 
 ## 開發最佳實務 {#development-best-practices}
 
-在使用 [!UICONTROL Cloud Manager]之前，建議您瞭解設定專案和設定網站伺服器或淨化組態的一些最佳實務。
+在使用 [!UICONTROL Cloud Manager]之前，建議您瞭解一些設定專案和設定Web伺服器或顯示設定的最佳實務。
 
 ### 專案設定 {#project-set-up}
 
-您的專案必須遵守一些准則才能處理 [!UICONTROL Cloud Manager]。
+您的專案必須符合某些標準才能使用 [!UICONTROL Cloud Manager]。
 
-請遵循設定專案的 [!UICONTROL Cloud Manager]最佳實務：
+請遵循以下項目中設定專案的最佳實務 [!UICONTROL Cloud Manager]:
 
-* 唯一提供和支援的建置工具是Apache Maven。Apache Maven3.3.9已安裝。
-* 建立在Docker容器中的Linux環境中執行，做為root使用者。
-* 安裝的Java版本為Oracle JDK8u161。
-* 另外還安裝了一些額外的系統套件，例如bzip2、解壓縮、libpng、imagemaged和圖形標記。如果您需要其他套件，則需要透過CSE申請這些套件。
-* Maven一律會使用命令mvn -B簡潔套件執行。
-* 您將會提供一個Git存放庫。此存放庫的根目錄必須有pom.xml檔案。此pom.xml檔案可參照至多個子模組(依次為其他子模組等)。但必須有一個進入點。
-* Maven是在系統層級設定的，settings.xml檔案會自動包含公開的Adobe網站存放庫(repo.adobe.com)。
-* 您可以在pom.xml檔案中新增其他儲存庫。不過，不支援存取受密碼保護或受網路保護的媒體儲存庫。
-* 可部署的內容封裝是透過掃描命名為目標目錄中的壓縮檔來發現。同樣地，任何數量的子模組都可能產生內容封裝。
-* 如果有多個內容套件，則不保證套件部署的順序。如果需要特定順序，可以使用內容封裝相依性來定義順序。
+* 唯一提供並支援的建置工具是Apache Maven。 已安裝Apache Maven 3.3.9。
+* 以root用戶身份在Docker容器的Linux環境中運行的構建。
+* 安裝的Java版本是Oracle JDK 8u161。
+* 另外還安裝了一些系統軟體包，如bzip2、unzip、libpng、imagemagick和graphicsmagick。 如果您需要其他套件，則需要透過CSE申請。
+* Maven始終使用命令mvn -B clean軟體包運行。
+* 您將只有一個Git儲存庫。 此儲存庫的根目錄中必須有pom.xml檔案。 此pom.xml檔案可以引用任意數量的子模組（這些子模組又可能具有其他子模組等）必要，但只有一個切入點。
+* Maven在系統層級設定有設定。xml檔案，此檔案會自動包含公用Adobe工件存放庫(repo.adobe.com)。
+* 您可以在pom.xml檔案中添加其他儲存庫。 但是，不支援對受密碼保護或受網路保護的對象儲存庫的訪問。
+* 可部署的內容包是通過掃描名為target的目錄中包含的zip檔案來發現的。 同樣地，任何數量的子模組都可以生成內容包。
+* 如果有多個內容包，則無法保證包部署的順序。 如果需要特定順序，則可使用內容包相關性來定義順序。
 
 <!-- 
 
@@ -172,6 +172,6 @@ change as per KT
 
 ### 後續步驟 {#the-next-steps}
 
-設定一般組態 [!UICONTROL Cloud Manager]後，您就可以使用。
+一旦設定了常規配置，您就可以使用 [!UICONTROL Cloud Manager]。
 
-請參閱 [「使用」[！UICOHTROL Cloud Manager]開始](https://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html)[!UICONTROL Cloud Manager]使用。
+請參 [閱使用[!UICONTROL Cloud Manager]](https://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html) 以開始使用 [!UICONTROL Cloud Manager]。
