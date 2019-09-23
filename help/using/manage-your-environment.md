@@ -2,42 +2,42 @@
 title: 管理您的環境
 seo-title: 管理您的環境
 description: 'null'
-seo-description: 請依照此頁面檢視用於在Cloud Manager中設定及執行CI/CD管線的生產和非生產環境清單。
-uuid: 04e67572-11db-4d5d-acf3-fd7 f644 a95 f0
+seo-description: 請依照本頁查看用於在Cloud manager中設定和運行CI/CD管道的生產和非生產環境的清單。
+uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
-products: SG_ PERIENCENCENAGER/CLUDManager
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 使用
-discoiquuid: c5b39de2-3a9b-437f-98e8-e6 e6249 a5 b3 a
+discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 2b71bb61e00d462a43519ec0a2dcfe9231fe53ff
 
 ---
 
 
 # 管理您的環境 {#manage-your-environments}
 
-Cloud Manager的 **「概述** 」頁面包含 **「環境** 」方塊，可列出所有受管理的AEM環境。
+Cloud manager **的** 「概述」頁面包含「 **Environments** 」圖格，其中列出所有受管理的AEM環境。
 
-每個列出的環境都會顯示其相關狀態。
+每個列出的環境都顯示其關聯狀態。
 
 ![](assets/Manage_Environments1.png)
 
-## 在Cloud Manager中存取環境 {#accessing-environments-in-cloud-manager}
+## 在Cloud manager中訪問環境 {#accessing-environments-in-cloud-manager}
 
-**環境** 方塊會顯示程式中布建的Production and Stage環境以及狀態。
+「環 **境** 」圖格會顯示您的程式中布建的「生產」和「舞台」環境以及狀態。
 
-狀態是環境中節點間已捲動的電源狀態。如果所有節點都執行了綠色，則紅色是否會停止，如果某個節點已停止，則藍色是否為藍色，如果某個節點的電源狀態無法使用(依照此順序順序)，則為黃色。
+狀態是環境中節點上累計的電源狀態。 如果所有節點都在運行，則為綠色；如果某個節點停止，則為紅色；如果某個節點出現，則為藍色；如果某個節點的電源狀態不可用，則為黃色（按此優先順序順序）。
 
 ![](assets/manage_environments-screen2.png)
 
 ### 環境 {#environments}
 
-按一下 **「管理** 」以顯示 **「環境」** 畫面。
+按一 **下「管** 理」以顯示「 **環境** 」畫面。
 
-**「環境」** 畫面會在您的程式中顯示 *每個「生產」* 和 *「舞台」* 環境(適用)的卡片。每張卡片上會看到環境的名稱。卡片包含環境中的節點，以及CPU的t恤大小、儲存空間、地區和狀態。
+「環 **境** 」畫面會針對您的程式中的 *Production* 和 *Stage* （如適用）環境顯示資訊卡。 每張卡片上方會顯示環境名稱。 該卡包括環境中的節點表，以及CPU的t恤大小、儲存、區域和狀態。
 
 >[!NOTE]
 >
->節點 **的狀態** 代表VM的強大狀態，不反映伺服器上的AEM狀態。狀態可以是 **「執行(** 綠色圓圈)」、 **「已停止** 」(紅色圓圈)、「 **即將啓動」** (藍色圓形)或 **「無法使用** 」(黃色圓圈)。
+>節 **點的STATUS** 代表VM的電源狀態，不反映伺服器上AEM的狀態。 狀態可以是「 **Running** (circle)」、「 **Stopped** （紅色圓圈）」、「Furing up **（藍色圓圈）」或「****** UnavailableCircle（黃色圓圈）」。
 
 ![](assets/Manage_Environments2.png)
