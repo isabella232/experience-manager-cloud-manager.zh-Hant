@@ -3,21 +3,21 @@ title: 部署環境
 seo-title: 部署環境
 description: 'null'
 seo-description: 'null'
-page-status-flag: 從未啓動
-uuid: 7334882-a3 f7-4048-bb8 d-7f5819 d29 c8 f
+page-status-flag: 從未激活
+uuid: 73436882-a3f7-4048-bb8d-7f5819d29c8f
 contentOwner: jsyal
-discoiquuid: 4ac3e831-2227-4ea8-abcc-c5734 e023424
+discoiquuid: 4ac3e831-2227-4ea8-abcc-c5734e023424
 preview: 'true'
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f135526c6a47f1502395e6d53f9e286c0f935da5
 
 ---
 
 
 # 部署環境{#deployment-environment}
 
-您可能是Adobe Experience Manager(AEM)6.4的新手，或需要升級至AEM6.4版本。
+您可能是Adobe Experience Manager(AEM)6.4的新手，或需要升級至AEM 6.4版本。
 
-如果您是AEM6.4的新功能，則您已擁有Cloud Manager的存取權。
+如果您是AEM 6.4的新手，則您已擁有Cloud manager的存取權。
 
-如果您是現有客戶，則需要升級至AEM6.4才能存取Cloud Manager。當您收到客戶成功工程師(CSE)的URL和認證後，就可以開始使用Cloud Manager。
+如果您是現有客戶，則需要升級至AEM 6.4才能存取Cloud Manager。 一旦您收到客戶成功工程師(CSE)的URL和認證，就可以開始使用Cloud Manager。
