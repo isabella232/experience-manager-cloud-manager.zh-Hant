@@ -1,45 +1,45 @@
 ---
 title: 主要概念
 seo-title: 主要概念
-description: 本頁面列出與Cloud Manager相關聯的主要詞彙。
-seo-description: 請遵循此頁面來瞭解與Cloud Manager相關聯的主要術語。
+description: 本頁列出與Cloud manager相關的關鍵詞。
+seo-description: 請依照本頁瞭解與Cloud manager相關的關鍵術語。
 uuid: 2a37810b-98f8-4f01-90de-1e52c754ad16
 contentOwner: jsyal
-products: SG_ PERIENCENCENAGER/CLUDManager
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 簡介
-discoiquuid: b702dfc0-3534-4d90-af19-8559d8 baf6 a6
+discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: aa4ff4eb2f3292fe4cb0baf8087b4d0213443cf4
 
 ---
 
 
 # 主要概念 {#key-concepts}
 
-此頁面說明Cloud Manager中使用的一些基本術語。強烈建議您先閱讀本頁，再檢閱Cloud Manager文件的其餘部分。
+本頁說明Cloud manager中使用的一些基本術語。 我們強烈建議您先閱讀本頁，然後再檢視其餘的Cloud manager檔案。
 
-**應用程式：** 客戶(或其自訂程式)建立的自訂和設定集，以因應其特定使用案例和需求的調整。應用程式是一個邏輯單位，可以由多個人工影像組成。
+**應用** ：由客戶（或其定制者）建立的定製和配置集，以便根據其特定使用案例和需求調整底層解決方案。 應用程式是可由多個偽物組成的邏輯單元。
 
-例如， *我們*零售。
+例如， *We.Retail*。
 
-**Artifact** A可部署單元。有些建置程序會將原始碼轉換為單一單位。例如，包含原始碼的Zip檔案。
+**藏物** ，可展開的部隊。 將原始碼轉換為單一單位的建立程式的結果。 例如，包含原始碼的Zip檔案。
 
-**Artifact Repository** 儲存與保全客戶專屬之人工影像的儲存位置。
+**Artifact Repository** （對象儲存庫）儲存位置，保存並保護客戶特定對象。
 
-**環境：** 程式內的單一虛擬機器叢集。對於AEM，此項目由作者實例(選擇性於額外的冷備作者例項)、零或多個發佈例項、一個或多個傳送程式例項和負載平衡器組成。
+**環境** ：程式中的單個虛擬機群集。 對於AEM，這是由作者例項（可選地附加冷備用作者例項）、零或多個發佈例項、一或多個調度器例項，以及負載平衡器所組成。
 
-**Git儲存庫** ：客戶特定原始碼儲存的位置，可使用Git通訊協定加以存取。
+**Git Repository** （Git資料庫）儲存客戶特定原始碼的位置，可使用Git通訊協定存取。
 
-**例項** 執行AEM解決方案的特定虛擬伺服器。例項是從部署觀點代表單一邏輯單位。
+**例項** ：執行AEM解決方案的特定虛擬伺服器。 實例從部署角度表示單個邏輯單元。
 
-**代表企業客戶的組織** Adobe結構。一家公司可能有多個組織，視其原本在Adobe身分管理系統中布建而定。
+**組織** Adobe建構代表企業客戶的架構。 一家公司可能有多個組織，具體取決於Adobe Identity Management system中最初布建的方式。
 
-**管線** 一組依順序執行的部署步驟。
+**Pipeline** （管線）依序執行的一組部署步驟。
 
-**產品在** 組織授權之解決方案中的特定功能組。組織內的不同方案可能會分配給不同的產品組。例如，網站的「網站資產」。
+**產品** ：組織授權之解決方案中的一組特定功能。 組織內的不同方案可以與不同的產品組合在一起。 例如，網站、表單資產。
 
-**方案** 一組環境，支援邏輯分組的客戶活動，通常對應於購買的服務層級合約(SLA)。每個方案都有一個生產環境，而且可能有許多非生產環境。
+**Program** A set of environments that support a logical grouping of customer initiatives, usually corresponding to a purchased Service Level Agreements (SLA). 每個方案都只有一個生產環境，可能有許多非生產環境。
 
-**解決方案** 之一Adobe [!UICONTROL Experience Cloud] 解決方案。例如Adobe Experience Manager、Adobe Target或Adobe Analytics。
+**Solution** One of the Adobe [!UICONTROL Experience Cloud] solutions. 例如，Adobe Experience Manager、Adobe Target或Adobe Analytics。
 
-**步驟** A設定的指令集，accompli某些工作單位、管線的建立區塊。
+**步驟** ：配置的指令集，用於完成流水線的一些工作單元、構建塊。
