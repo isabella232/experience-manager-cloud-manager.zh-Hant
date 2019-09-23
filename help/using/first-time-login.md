@@ -1,43 +1,43 @@
 ---
 title: 首次登入
 seo-title: 首次登入Adobe AEM Cloud Manager
-description: 如果您已設定一般組態，且您已首次準備好使用Cloud Manager，請遵循此頁面。
-seo-description: 如果您已設定一般設定，且您已準備好第一次使用Adobe AEM Cloud Manager，請遵循此頁面。
-uuid: 7c8458a6-6de8-4946-ac0 c-fb10 bce17 a15
+description: 如果您已設定一般設定，且已準備好第一次使用Cloud Manager，請依照本頁進行。
+seo-description: 如果您已設定一般設定，而且已準備好第一次使用Adobe AEM Cloud Manager，請依照本頁進行。
+uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
-products: SG_ PERIENCENCENAGER/CLUDManager
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 快速入門
-discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932 a82
+discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
 
 ---
 
 
 # 首次登入 {#first-time-login}
 
-設定一般組態後，您就 [!UICONTROL Cloud Manager]可以使用使用者介面(UI) [!UICONTROL Cloud Manager]。
+在您設定一般設定後， [!UICONTROL Cloud Manager]就可以使用使用者介面(UI) [!UICONTROL Cloud Manager]。
 
 >[!NOTE]
 >
->視指派的角色 [!UICONTROL Cloud Manager] 和應用程式的狀態而定，使用 [!UICONTROL Cloud Manager] UI時，您會看到不同畫面。
+>根據中指派的角色和應 [!UICONTROL Cloud Manager] 用程式的狀態，您在使用UI時會看到不同的 [!UICONTROL Cloud Manager] 畫面。
 
 ## 首次登入 {#logging-in-for-the-first-time}
 
-1. 登入Adobe **，您[!UICONTROL Experience Cloud]** 就會看到 **程式清單**。
+1. 登入 **Adobe[!UICONTROL Experience Cloud]** ，您就會看到程式清 **單**。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
-1. 選取程式(例如 **，We. Retail Global**)，然後按一下左上角圖示開啓 [!UICONTROL Cloud Manager]。
+1. 選取程式(例如 **We.Retail Global**)，然後按一下左上角的圖示以開啟 [!UICONTROL Cloud Manager]。
 
    ![](assets/screen_shot_2018-06-04at12611pm.png)
 
-1. [!UICONTROL Cloud Manager] 顯示的控制面板。
+1. 顯示的控 [!UICONTROL Cloud Manager] 制面板。
 
    ![](assets/FirstLogin1.png)
 
-1. 按一下 **設定程式** 以設定 **方案** 說明並定義關鍵績效指標(KPI)。
+1. 按一下 **設定程式** ，以設定程式 **** 說明並定義關鍵績效指標(KPI)。
 
    >[!NOTE]
    >
-   >請參閱 [設定您的計劃](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 以完成後續步驟。
+   >請參閱 [設定您的方案](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) ，以完成後續步驟。
