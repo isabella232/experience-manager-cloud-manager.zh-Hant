@@ -1,12 +1,12 @@
 ---
 title: 產品更新精靈
 seo-title: 產品更新精靈
-description: '此頁面是學習產品更新精靈的起點。 '
-seo-description: '此頁面是學習產品更新精靈的起點。 '
-uuid: 62d68e79-c2 ba-4d8 b-ba7 d-33709014d5 b6
+description: '本頁面是學習「產品更新精靈」的起點。 '
+seo-description: '本頁面是學習「產品更新精靈」的起點。 '
+uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
-products: SG_ PERIENCENCENAGER/CLUDManager
-discoiquuid: ebcc91a5-be9 e-4684-8146-d88 f4013 d4 d1
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
+discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
 source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
@@ -15,26 +15,26 @@ source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
 # 綜覽 {#overview-product-update-wizard}
 
-產品更新精靈是逐步引導的體驗，適用於升級至最新Adobe Experience Manager(AEM)6.5的Cloud Manager客戶。它簡化端對端流程，確保使用Cloud Manager的CI/CD架構和內建自動化測試的AEM最佳實務。
+「產品更新」精靈是Cloud manager客戶的逐步引導式體驗，這些客戶要升級至最新的Adobe Experience Manager(AEM)6.5。它可簡化端對端程式，並使用Cloud Manager的CI/CD架構和內建的自動化測試，確保符合AEM最佳實務。
 
-此精靈包含五個階段，可在AEM產品更新期間引導使用者：
+精靈包含五個階段，可引導使用者進行AEM產品更新：
 
 * **評估**
-* **重新修訂**
-* **執行執行**
+* **修正**
+* **執行**
 * **驗證**
 * **完成**
 
 
-## Using Product Update Wizard {#using-product-update-wizard}
+## 使用產品更新精靈 {#using-product-update-wizard}
 
 >[!NOTE]
->登入Cloud Manager的客戶以及升級至AEM6.5的資格將可運用產品更新精靈。如需詳細資訊，請洽詢您的客戶成功工程師(CSE)。
+>已登入Cloud manager且符合升級至AEM 6.5資格的客戶將可運用「產品更新」精靈。 如需詳細資訊，請連絡您的客戶成功工程師(CSE)。
 
-1. 您將會透過Cloud Manager收到脈衝通知，通知您您的方案已提供AEM6.5。
+1. 您會透過Cloud manager收到脈衝通知，通知您您的程式已提供AEM 6.5。
 
-1. **[!UICONTROL AEM 6.5 Update]** 卡片會顯示在概述畫面 [!UICONTROL Cloud Manager]上。此資訊卡將協助追蹤您目前所在的更新程序階段，並通知您下個步驟的執行進度。Select **[!UICONTROL Start Update]** to launch the wizard.
+1. 資訊 **[!UICONTROL AEM 6.5 Update]** 卡會顯示在的概述畫面上 [!UICONTROL Cloud Manager]。 此資訊卡將協助追蹤您目前所處的更新程式階段，並通知您下一步要採取的動作。 選擇 **[!UICONTROL Start Update]** 以啟動嚮導。
 
    ![](assets/Start-Update.png)
 
-   The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process as seen in the [Evaluation Phase](evaluation.md).
+   精靈現在會顯示評估階 **[!UICONTROL AEM 6.5 Update]** 段中的第一 [階段](evaluation.md)。
