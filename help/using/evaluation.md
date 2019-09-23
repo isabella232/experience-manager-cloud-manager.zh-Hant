@@ -1,51 +1,51 @@
 ---
 title: 評估
 seo-title: 評估
-description: '此頁面是產品更新精靈中學習評估階段的起點。 '
-seo-description: 此頁面是產品更新精靈中學習評估階段的起點。
-uuid: 62d68e79-c2 ba-4d8 b-ba7 d-33709014d5 b6
+description: '本頁是「產品更新精靈」中學習「評估」階段的起點。 '
+seo-description: 本頁是「產品更新精靈」中學習「評估」階段的起點。
+uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
-products: SG_ PERIENCENCENAGER/CLUDManager
-discoiquuid: ebcc91a5-be9 e-4684-8146-d88 f4013 d4 d1
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
+discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
 source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
 ---
 
 
-# Evaluation Phase {#evaluation}
+# 評估階段 {#evaluation}
 
-The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase.
-您可以在此處透過直接從精靈存取的圖樣檢測器來評估升級複雜性。在本步驟結束時，您將可存取評估報告。
+「產品更新」嚮導的第一個階段是 **[!UICONTROL Evaluation]** 階段。
+您可以在這裡使用模式偵測器，直接從精靈存取，以評估升級的複雜性。 在此步驟結束時，您將可存取評估報表。
 
-產生的報表可讓您偵測「作者」執行個體，借由偵測下列模式來檢查：
+產生的報表可讓您偵測下列模式，以檢查作者實例的可升級性：
 
-* 違反某些規則，並在升級時會受到影響或覆寫。
+* 違反特定規則，並在受升級影響或覆寫的區域執行。
 
-* 使用AEM6.x功能或在新AEM上不會向後相容的API，而且在升級後可能會中斷。
+* 使用AEM 6.x功能或API，此功能在新AEM上無法向後相容，而且升級後可能會中斷。
 
-這是評估升級至Adobe Experience Manager(AEM)6.5所涉及的開發成果。
+這是對升級至Adobe Experience Manager(AEM)6.5所需開發工作的評估。
 
 >[!NOTE]
->To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
+>若要進一步瞭解圖樣偵測器，請參 [閱使用圖樣偵測器評估升級複雜性](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
-## Running the Evaluator {#running-evaluator}
+## 運行評估器 {#running-evaluator}
 
-請遵循下列步驟產生評估報告：
+請依照下列步驟產生評估報表：
 
-1. Click on **[!UICONTROL Run Evaluation]**.
+1. 按一下 **[!UICONTROL Run Evaluation]**。
 
    >[!NOTE]
-   >圖樣檢測器可在任何環境上執行。但是，若要提高偵測率並避免在業務關鍵性例項上發生任何慢動作，Cloud Manager將會在作者例項上執行測試環境。
+   >該圖案檢測器可在任何環境上運行。 但是，為了提高檢測率並避免關鍵業務實例出現任何慢速，Cloud manager將在作者實例的測試環境中運行它。
 
    ![](assets/Run-Evaluation.png)
 
-1. 精靈會通知您動作狀態。You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
+1. 嚮導會通知您操作的狀態。 當評估報 **告產生時** ，您會 **注意到「進行中** 」或「已完成」。
 
-   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
+   報表產生後，您可以按一下以 **[!UICONTROL Download report]** 儲存復本。
 
    ![](assets/Evaluation-1.png)
 
 
 >[!NOTE]
->The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
+>Cloud manager中最新版本的「產品更新」精靈僅支援「 **評估** 」階段。 其他四個階段，即 **補救**、 **執行**、 **驗證**&#x200B;和 **** 完成計畫即將推出。
