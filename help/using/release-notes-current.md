@@ -1,41 +1,41 @@
 ---
-title: 2019.9.0版發行說明
-seo-title: 2019.9.0的AEM Cloud Manager發行說明
-description: 請依照此頁面取得Cloud Manager發行2019.9.0的資訊。
-seo-description: 請依照此頁面取得AEM Cloud Manager發行2019.9.0的資訊。
+title: 2019.9.0發行說明
+seo-title: AEM Cloud manager 2019.9.0版本注意事項
+description: 請依照本頁取得Cloud Manager 2019.9.0版的相關資訊。
+seo-description: 請依照本頁取得AEM Cloud Manager 2019.9.0版的相關資訊。
 translation-type: tm+mt
 source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
-# 2019.9.0版發行說明 {#release-notes-for}
+# 2019.9.0發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.9.0版本更新安全性測試准則、新增可下載的監控圖表，並修正部分客戶回報的可用性問題。
+2019.9.0 [!UICONTROL Cloud Manager] 版本會更新安全性測試標準、新增可下載的監控圖表，並修正客戶報告的可用性問題。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2019.9.0版的發行日期為2019年月12日。
+2019.9.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年9月12日。
 
 ## 新功能 {#whats-new}
 
-* Sling Referrer Filter Health Check的分類已從重要變更為重要。
-* HTML Library Manager組態健康檢查的分類已從重要變更為重要。
-* 現在可以下載監控圖表。如需詳細資訊，請參閱 [監控您的環境](monitor-your-environments.md) 。
-* 如果某個程式沒有生產AEM環境，從登陸頁面按一下程式卡片會導覽至Cloud Manager總覽頁面，而不會產生錯誤對話方塊。
-* 「概述」頁面上的 **「管道設定****** 資訊卡」已退役至 **「生產管道設定**」。
-* 重要失敗行為選項按鈕已從僅限程式碼品質的管線移除。
-* **「活動」** 頁面現在會顯示每個執行的管線名稱。
-* 執行頁面現在會顯示管線名稱。
-* 「程式碼品質摘要」對話方塊現在會顯示每個評分的說明。
+* Sling Referrer Filter Health check的分類已從Critical變更為Importent。
+* HTML Library Manager config運行狀況檢查的分類已從「Critical（關鍵）」更改為「Mignent（重要）」。
+* Monitoring graphs can now be downloaded. Refer to Monitor your Environments for more details.[](monitor-your-environments.md)
+* If a program does not have a production AEM environment, clicking on the program card from the landing page will navigate to the Cloud Manager overview page, not produce an error dialog.
+* The Pipeline Settings Card on the Overview page has been retitled to Production Pipeline Settings.************
+* The Important Failure Behavior radio buttons have been removed from code-quality only pipelines.
+* The Activity page now displays the name of the pipeline for each execution.****
+* The execution page now displays the name of the pipeline.
+* The Code Quality summary dialog now shows a description for each rating.
 
-## 錯誤修正 {#bug-fixes}
+## Bug Fixes {#bug-fixes}
 
-* 有些使用者在等待核准時無法檢視執行詳細資訊。
-* **在「概述** 」頁面上，右側的邊界不一致。
-* 大型專案中的建置容器可能記憶體不足。
-* 在某些情況下，BandnedPath Oakcal規則無法識別已安裝內容在/libs下的位置。
-* 當品質關卡遭到拒絕時，對話方塊標題仍顯示 *為部分通過*。
+* Some users could not view an execution details when it was waiting for approval.
+* On Overview page, the right margin was not consistent.****
+* The build container could run out of memory in large projects.
+* Under certain circumstances, the BannedPaths OakPAL rule did not identify installed content under /libs.
+* When a quality gate was rejected, the dialog heading still showed Partially Passed.**
 
 ## 已知問題 {#known-issues}
 
-* Safari無法下載監控圖表。
+* Downloading of monitoring graphs is not available in Safari.
