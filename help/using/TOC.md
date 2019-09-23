@@ -1,36 +1,36 @@
 ---
 product: adobe experience manager
-sub-product: Experience Manager cloud管理員
+sub-product: experience manager Cloud Manager
 archetype: 管理員
-user-guide-title: Experience Manager Cloud Manager說明
+user-guide-title: Experience Manager Cloud manager說明
 translation-type: tm+mt
 source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
 
-# Experience Manager說明 {#using}
+# Experience manager說明 {#using}
 
-+ [Cloud Manager簡介](introduction-to-cloud-manager.md)
++ [Cloud manager簡介](introduction-to-cloud-manager.md)
 + 綜覽 {#overview}
    + [主要概念](key-concepts.md)
    + [客戶歷程](customer-journey.md)
-   + [CI/CD管線](ci-cd-pipeline.md)
+   + [CI/CD管道](ci-cd-pipeline.md)
    + [安全性與隱私權](security-and-privacy.md)
    + [說明資源](help-resources.md)
-+ 需要甚麼 {#requirements}
-   + [授予權限授予](access-rights-granted.md)
-   + [原始碼存放庫](source-code-repository.md)
-   + [新增使用者和角色](setting-up-users-and-roles.md)
-   + [布建環境](environments-provisioned.md)
++ 需要什麼 {#requirements}
+   + [授予的訪問權限](access-rights-granted.md)
+   + [原始碼儲存庫](source-code-repository.md)
+   + [添加用戶和角色](setting-up-users-and-roles.md)
+   + [已布建環境](environments-provisioned.md)
 + 快速入門 {#getting-started}
    + [首次登入](first-time-login.md)
-   + [設定您的計劃](setting-up-program.md)
+   + [設定您的方案](setting-up-program.md)
    + [建立AEM應用程式專案](create-an-application-project.md)
-   + [設定您的版本分支](configure-your-release-branches.md)
-   + [管理您的Dispatcher組態](dispatcher-configurations.md)
+   + [設定您的發行分支](configure-your-release-branches.md)
+   + [管理Dispatcher配置](dispatcher-configurations.md)
 + 如何使用 {#how-to-use}
-   + [設定您的CI/CD管線](configuring-pipeline.md)
+   + [配置CI/CD管線](configuring-pipeline.md)
    + [部署您的程式碼](deploying-code.md)
    + [瞭解您的測試結果](understand-your-test-results.md)
    + [管理您的環境](manage-your-environment.md)
@@ -43,18 +43,18 @@ source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
    + [綜覽](overview-productupdate-wizard.md)
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
-   + [目前發行說明(2019.9.0)](release-notes-current.md)
-   + [2019.8.0版發行說明](release-notes-2019-8-0.md)
-   + [2019.7.0版發行說明](release-notes-2019-7-0.md)
-   + [2019.6.0版發行說明](release-notes-2019-6-0.md)
-   + [2019.5.0版發行說明](release-notes-2019-5-0.md)
-   + [2019.4.0版發行說明](release-notes-2019-4-0.md)
-   + [2019.3.0版發行說明](release-notes-2019-3-0.md)
-   + [2019.2.0版發行說明](release-notes-2019-2-0.md)
-   + [2019.1.0版發行說明](release-notes-2019-1-0.md)
-   + [2018.9.0版發行說明](release-notes-2018-9-0.md)
-   + [2018.8.0版發行說明](release-notes-2018-8-0.md)
-   + [2018.7.0版發行說明](release-notes-2018-7-0.md)
-   + [2018.6.0版發行說明](release-notes-2018-6-0.md)
-   + [2018.5.0版發行說明](release-notes-2018-5-0.md)
+   + [最新發行說明(2019.9.0)](release-notes-current.md)
+   + [2019.8.0發行說明](release-notes-2019-8-0.md)
+   + [2019.7.0發行說明](release-notes-2019-7-0.md)
+   + [2019.6.0發行說明](release-notes-2019-6-0.md)
+   + [2019.5.0發行說明](release-notes-2019-5-0.md)
+   + [2019.4.0發行說明](release-notes-2019-4-0.md)
+   + [2019.3.0發行說明](release-notes-2019-3-0.md)
+   + [2019.2.0發行說明](release-notes-2019-2-0.md)
+   + [2019.1.0發行說明](release-notes-2019-1-0.md)
+   + [2018.9.0發行說明](release-notes-2018-9-0.md)
+   + [2018.8.0發行說明](release-notes-2018-8-0.md)
+   + [2018.7.0發行說明](release-notes-2018-7-0.md)
+   + [2018.6.0發行說明](release-notes-2018-6-0.md)
+   + [2018.5.0發行說明](release-notes-2018-5-0.md)
 
