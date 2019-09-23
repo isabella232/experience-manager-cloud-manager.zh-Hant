@@ -1,68 +1,68 @@
 ---
-title: CI/CD管線
-seo-title: CI/CD管線
+title: CI/CD管道
+seo-title: CI/CD管道
 description: 'null'
-seo-description: 請依照本節來瞭解在Cloud Manager中處理部署的CI/CD管線。
-uuid: 763ddb24-05cd-463f-8d72-a2 e69 be6 b7 e
+seo-description: 請依照本節內容瞭解CI/CD管道，該管道可在Cloud manager中處理部署和生產。
+uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: 簡介
-discoiquuid: cdb76eb-1a91-4689-85799-0fa9fcc0592
+discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 ---
 
 
-# CI/CD管線 {#ci-cd-pipeline}
+# CI/CD管道 {#ci-cd-pipeline}
 
-## 管道概述 {#pipeline-overview}
+## 管線概述 {#pipeline-overview}
 
-[!UICONTROL Cloud Manager] 包括持續整合(CI)和持續傳送(CD)架構，可讓實施團隊快速測試並提供新的或更新的程式碼。例如，實施團隊可以設定、設定並開始自動化CI/CD管線，運用Adobe編碼最佳實務的最佳實務，以執行完整的程式碼掃描並確保程式碼品質。
+[!UICONTROL Cloud Manager] 包含連續整合(CI)和連續傳送(CD)架構，可讓實施團隊快速測試並傳送新的或更新的程式碼。 例如，實作團隊可以設定、設定和啟動自動化CI/CD管道，運用Adobe編碼最佳實務來執行完整的程式碼掃描，並確保最高的程式碼品質。
 
-CI/CD管線也會自動化單元和效能測試程序，以提高部署效率，並主動識別部署後昂貴的修正重要問題。實施團隊可存取完整的程式碼效能報告，以瞭解在程式碼部署至生產環境時，KPI和重大安全性驗證的潛在影響。
+CI/CD管道還自動化了單元和效能測試流程，以提高部署效率，並主動發現部署後需要修復的重要問題。 實作團隊可存取完整的程式碼效能報告，以便在將程式碼部署至生產環境時，洞悉KPI和重要安全性驗證的潛在影響。
 
-## 管線程序 {#pipeline-process}
+## 管線處理 {#pipeline-process}
 
-下圖說明在開啓版本後會發生 [!UICONTROL Cloud Manager]甚麼事。下表說明工作流程中的每個步驟。
+下圖說明在中觸發發行後會發生什麼 [!UICONTROL Cloud Manager]。 隨附的表格說明工作流程中的每個步驟。
 
 ![](assets/screen_shot_2018-05-30at82457pm.png)
 
-下表詳細說明過程中的每個步驟：
+下表詳細說明了流程每個步驟中的情況：
 
-| 管線程序步驟 | 發生甚麼事？ |
+| 管線處理步驟 | 怎麼回事？ |
 |---|---|
-| 1. 開始發行 | 部署管理員會透過Git認可或根據循環排程，手動觸發發行。 |
-| 2. 建立版本標籤 | [!UICONTROL Cloud Manager] 建立Git標記，以使用自動產生的版本號碼來標示版本。例如：2018.531.245527.2001222 |
-| 3. 以自動產生版本建立版本 | [!UICONTROL Cloud Manager] 以新指派的版本號碼建立應用程式。 |
-| 4. 評估程式碼品質 | [!UICONTROL Cloud Manager] 掃描原始碼並提供摘要，然後再將程式碼部署至舞台環境 |
-| 5. Versioned Artifacts(已儲存) | 會儲存發行路徑，以便在部署步驟中使用。 |
-| 6. 自動部署Artifacts至AMS AEM舞台 | 版本實作會部署至舞台環境。 |
-| 7. 觸發自動化測試 | [!UICONTROL Cloud Manager] 執行「效能與保全測試」。 |
-| 8. 生產觸發部署 | 完成自動測試後，將部署 [!UICONTROL Cloud Manager] 開始至生產環境。 |
-| 9. [!UICONTROL Cloud Manager] 取得要部署的項目 | [!UICONTROL Cloud Manager] 提取儲存的發行個體。 |
-| 10. 對生產進行剪裁 | 發行項目會部署至生產環境。 |
+| 1.開始發行 | 部署管理員會以手動方式、透過Git提交或根據循環排程來觸發發行。 |
+| 2.建立發行標籤 | [!UICONTROL Cloud Manager] 建立Git標籤，以使用自動產生的版本號碼來標籤發行。 例如：2018.531.245527.000001222 |
+| 3.使用自動產生的版本建立為發行 | [!UICONTROL Cloud Manager] 使用新指派的版本號碼建立應用程式。 |
+| 4.評估程式碼品質 | [!UICONTROL Cloud Manager] 掃描原始碼並提供摘要，然後代碼才能部署到階段環境 |
+| 5.已儲存的版本化對象 | 發行對象會儲存起來，以便日後在部署步驟中使用。 |
+| 6.自動將對象部署到AMS AEM Stage | 釋放對象部署到舞台環境。 |
+| 7.觸發自動測試 | [!UICONTROL Cloud Manager] 運行對象的效能和安全性測試。 |
+| 8.生產觸發器部署 | 完成自動測試後， [!UICONTROL Cloud Manager] 開始將部署至生產環境。 |
+| 9.獲 [!UICONTROL Cloud Manager] 取要部署的對象 | [!UICONTROL Cloud Manager] 提取儲存的釋放對象。 |
+| 10.將對象放入生產環境 | 發行對象將部署到生產環境。 |
 
 ### 如何設定CI/CD管線 {#how-to-setup-a-ci-cd-pipeline}
 
-若要進一步瞭解管道組態，請參閱 [設定管道](configuring-pipeline.md)。
+要瞭解有關管線配置的更多資訊，請參 [閱配置管線](configuring-pipeline.md)。
 
-## Quality Gates {#quality-gates}
+## 質量門 {#quality-gates}
 
-CI/CD管道提供品質關卡或接受標準，您必須先符合標準，才能將程式碼從舞台環境移至部署環境。管線中有三個閘門：
+CI/CD管線提供了質量門或驗收標準，在將代碼從階段環境移動到部署環境之前必須滿足這些標準。 目前有三扇門正在醖釀之中：
 
 * 程式碼品質
 * 效能測試
 * 安全性測試
 
-對於上述每個門，發現三個層級的問題：
+對於每個門，都有三個層次的問題：
 
-* **重要** -關卡識別的問題，造成管線立即失敗。
-* **重要** -關卡識別的問題，會導致管線進入暫停狀態。部署管理員、專案經理或業務擁有者可以覆寫問題，在此情況下，管線會發展，或者他們可以接受問題，此時管線會停止發生。
-* **資訊** -依關卡識別的問題，僅供資訊目的使用，且不影響管線執行。
+* **Critical** —— 澆口發現的導致管道立即故障的問題。
+* **重要** -閘道所識別導致管線進入暫停狀態的問題。 部署經理、專案經理或業務負責人可以覆寫問題（在這種情況下，管道會繼續），或者接受問題（在這種情況下，管道會因故障而停止）。
+* **資訊** -網關所發現的問題，這些問題僅供參考，對管線執行沒有影響。
 
-以下是程式碼掃描的範例，其中包含程式碼的相關問題：
+以下是代碼掃描的示例，其中列出了代碼的問題：
 
 ![](assets/quality-gate-failed.png)
 
-### 如何設定閘門 {#how-to-setup-gates}
+### 如何設定門 {#how-to-setup-gates}
 
-如需設定程式碼、品質和效能閘門的詳細資訊，請參閱 **[設定蓋茨](configuring-pipeline.md)** 。
+如需 **[設定程式碼](configuring-pipeline.md)** 、品質和效能閘道的詳細資訊，請參閱設定閘道。
