@@ -1,33 +1,33 @@
 ---
-title: 2019.8.0版發行說明
-seo-title: 2019.8.0AEM Cloud Manager發行說明
-description: 請依照此頁面取得Cloud Manager發行2019.8.0的資訊。
-seo-description: 請依照此頁面取得AEM Cloud Manager發行2019.8.0的資訊。
+title: 2019.8.0發行說明
+seo-title: AEM Cloud manager 2019.6.0版本注意事項
+description: 請依照本頁取得Cloud Manager 2019.8.0版的相關資訊。
+seo-description: 請依照本頁取得AEM Cloud Manager 2019.8.0版的相關資訊。
 translation-type: tm+mt
 source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
-# 2019.8.0版發行說明 {#release-notes-for}
+# 2019.8.0發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.8.0版本新增了選擇性建立的內容套件支援、改善建置效能，並修正了各種次要錯誤。
+2019.8.0 [!UICONTROL Cloud Manager] 版本新增了對選擇性內建內容封裝的支援、改善內建效能並修正多種次要錯誤。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2019.8.0版的發行日期為2019年月19日。
+2019.8.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年8月19日。
 
 ## 新功能 {#whats-new}
 
-* 由Adobe I/CLI提供的Cloud Manager [API新命令列介面](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
-* 建置的特定內容套件可能會宣告為可跳過，且不會部署。如需詳細資訊，請參閱建立AEM應用程式專案中 ******[的「Skipping Content](create-an-application-project.md) Packages」一節。
-* 建置容器中的預先載入相依性集已重新運作，以避免某些不必要的網路要求。
-* 部分錯誤設定程式的概述頁面上的訊息已改善。
+* 由 [Adobe I/O CLI提供的Cloud Manager API新命令列介面](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
+* 構建版本生成的特定內容包可聲明為可跳過，且不會部署。 如需詳細 ***資訊，請參閱「建立AEM應用程*** 式專案」中的「跳過內容套件 [](create-an-application-project.md) 」一節。
+* 已重新處理建置容器中預先載入的相依性集，以避免某些不必要的網路要求。
+* 某些配置錯誤的程式的概述頁面上的消息已經改進。
 
 ## 錯誤修正 {#bug-fixes}
 
 * 存取SLA報告時，預設年份為2018，而非2019。
-* 對於長的環境名稱，報表畫面上的環境選擇器無法正確增加大小。
-* ***當使用Sling Rewriter元件時，ConfigAndInstallShordlycontains*** 程式碼品質規則會產生錯誤的置信度。
-* ***ConfigAndInstallShordonlyContainosyNode*** 程式碼品質規則針對某些不常見的路徑結構產生誤判。
-* 僅限資產的客戶可能無法一致導覽至其AEM環境。
-* [!UICONTROL Create a Branch and Project] 對話方塊以不同的瀏覽器呈現。
+* 對於較長的環境名稱，「報告」畫面上的環境選擇器未正確增加大小。
+* 當使 ***用Sling Rewriter元件時，ConfigAndInstallShowOnlyContainOsgiNodes*** code quality rule會產生誤報。
+* ConfigAndInstallShoudOnlyContainOsgiNodes ****** 代碼品質規則針對某些不常見的路徑結構產生誤報。
+* 僅限資產的客戶可能無法一致地導覽至其AEM環境。
+* 對話方 [!UICONTROL Create a Branch and Project] 塊在不同瀏覽器上的呈現方式不同。
