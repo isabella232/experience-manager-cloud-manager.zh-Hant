@@ -2,12 +2,12 @@
 title: 建立AEM應用程式專案
 seo-title: 建立AEM應用程式專案
 description: 'null'
-seo-description: 請依照本頁進一步瞭解如何在開始使用Cloud Manager時設定AEM專案。
-uuid: 7b976ef-5358-49d8-a58 d-0bae026303 fa
+seo-description: 請依照本頁進一步瞭解如何在Cloud manager入門時設定AEM專案。
+uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
 contentOwner: jsyal
-products: SG_ PERIENCENCENAGER/CLUDManager
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 快速入門
-discoiquuid: 76c1a8e4-d66 f-4a3 b-8c0 c-b80 c9 e17700 e
+discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
 source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
@@ -18,9 +18,9 @@ source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 ## 使用精靈建立AEM應用程式專案 {#using-wizard-to-create-an-aem-application-project}
 
-當客戶登入Cloud Manager時，會提供空的git存放庫。目前的Adobe Managed Services(AMS)客戶(或移轉至AMS的內部AEM客戶)通常在其專案程式碼中已有其專案代碼(或其他版本控制系統)，並將其專案匯入Cloud Manager git儲存庫。不過，新客戶並沒有現有的專案。
+當客戶已登入Cloud manager時，他們會獲得一個空的git儲存庫。 目前的Adobe Managed Services(AMS)客戶（或內部部署AEM客戶，如果要移轉至AMS），通常其專案程式碼已位於git（或其他版本控制系統）中，並將其專案匯入Cloud Manager Git儲存庫。 但是，新客戶沒有現有的專案。
 
-為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案做為起點。此程序以 [**AEM Project ArchetType**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)為基礎。
+為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案作為起點。 此程式以 [**AEM Project Archetype為基礎**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 <!-- 
 
@@ -32,51 +32,51 @@ Last Modified Date: 2018-10-08T12:52:50.071-0400
 
  -->
 
-請依照下列步驟，在Cloud Manager中建立AEM應用程式專案：
+請依照下列步驟，在Cloud manager中建立AEM應用程式專案：
 
-1. 當您登入Cloud Manager並完成基本程式設定後，如果存放庫空白， **「概述** 」畫面會顯示特殊的動作卡片呼叫。
+1. 一旦您登入Cloud Manager且基本程式設定完成後，如果儲存庫為空，「概述」畫面將會顯示特殊的動作卡呼叫。 ****
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-1. 按一下 **「建立** 」以導覽 **至「管道設定」** 畫面。
+1. 按一下「 **建立** 」(Create **)以導航至「管** 線設定」(Pipeline Setup)螢幕。
 
    ![](assets/image2018-10-3_14-30-22.png)
 
-1. 按一下 **「建立」** 開啓對話方塊，讓使用者提供AEM Project Archetype所需的參數。在預設表單中，對話方塊會要求兩個值：
+1. 按一 **下「建立** 」以開啟對話方塊，讓使用者提供AEM Project Archetype所需的參數。 在其預設形式中，對話框要求輸入兩個值：
 
-   * **標題** -依預設，此項目會設為 *程式名稱*
+   * **Title** —— 預設情況下，此設定為 *Program Name*
 
-   * **新分支名稱** -依預設此為 *主*
+   * **新建分支名稱** -預設情況下，此為主分 *支*
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
-   對話框中有一個抽屜，可以按一下對話框底部的控點來開啓。在擴充的表格中，對話方塊會顯示「Archetype」的所有組態參數。其中許多參數都具有根據 **標題產生的預設值**。
+   對話框中有一個抽屜，可通過按一下指向對話框底部的手柄來開啟該抽屜。 在其展開形式中，對話框顯示Archetype的所有配置參數。 其中許多參數具有根據標題生成的預設 **值**。
 
    ![](assets/screen_shot_2018-10-08at60032am.png)
 
    >[!NOTE]
    >
-   >例如 **，如果「標題** 」為 ***「我們金融」***，則「基本遮色片Artifact ID」參數會產生 ***為com. webance***。視需要變更這些值。
+   >例如，如果 **Title** is ***We.Finance***,Base Maven Artifact id參數會產生 ***為com.wefinance***。 如有需要，這些值可以變更。
    >
    >
-   >例如，您可以從產生 ***的值com. webFinance*** 變更為 ***net. webance***。
+   >例如，您可以從產生的 ***值com.wefinance*** 變 ***更為net.wefinance***。
 
-1. 按一下前述步驟中 **的「建立」** ，以建立起始專案，方法是使用原型並提交給命名的git分支。完成後，您就可以設定渠道。
+1. 按一 **下前述步驟中的** 「建立」，使用原型建立起始專案並提交至指定的git分支。 完成此操作後，可以設定管線。
 
-## 設定您的專案 {#setting-up-your-project}
+## 設定專案 {#setting-up-your-project}
 
-### 修改專案設定詳細資訊 {#modifying-project-setup-details}
+### 修改項目設定詳細資訊 {#modifying-project-setup-details}
 
-若要透過Cloud Manager成功建立並部署，現有的AEM專案必須遵守一些基本規則：
+若要使用Cloud manager成功建立和部署現有的AEM專案，必須遵守一些基本規則：
 
-* 專案必須使用Apache Maven建立。
-* Git存放庫的根目錄必須有 *pom.xml* 檔案。此 *pom.xml* 檔案可參照至多個子模組(依次為其他子模組等)。視情況而定。
+* 必須使用Apache Maven建立專案。
+* Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可能具有其他子模組等）視需要。
 
-* 您可以在 *pom.xml* 檔案中新增其他Maven Artifact儲存庫參照。不過，不支援存取受密碼保護或受網路保護的媒體儲存庫。
-* 可部署的內容封裝是掃描內容封裝 ** 檔，方法是掃描名為 *目標目錄*&#x200B;中的內容封裝檔。任何數量的子模組可能會產生內容封裝。
+* 您可以在 *pom.xml檔案中添加對其他Maven對象儲存庫的引* 用。 但是，不支援對受密碼保護或受網路保護的對象儲存庫的訪問。
+* 可部署的內容套件是透過掃描內容套件 *zip* 檔案來發現的，這些檔案位於名為 *target的目錄中*。 任何數量的子模組都可以生成內容包。
 
-* 部署可部署的Dispatcher偽象是掃描 *為****名為conf* 和 *conf. d*&#x200B;目錄的目錄(又包含在名為目標的目錄中)。
+* 可部署的Dispatcher對象是通過掃描 *zip檔案* (同樣，包含在名為target **&#x200B;的目錄中)來發現的，該目錄具有名為 *conf* 和 ** conf.d的目錄。
 
-* 如果有多個內容套件，則不保證套件部署的順序。如果需要特定順序，可以使用內容封裝相依性來定義順序。
+* 如果有多個內容包，則無法保證包部署的順序。 如果需要特定順序，則可使用內容包相關性來定義順序。
 
 <!-- 
 
@@ -88,33 +88,33 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 
  -->
 
-## 建立環境詳細資訊 {#build-environment-details}
+## 構建環境詳細資訊 {#build-environment-details}
 
-Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境具有下列屬性：
+Cloud manager使用專業的構建環境來構建和測試代碼。 此環境具有以下屬性：
 
-* 建置環境是以Linux為基礎，衍生自Ubuntu18.04。
-* Apache Maven3.6.0已安裝。
-* 安裝的Java版本為Oracle JDK8u202。
-* 另外還安裝了一些安裝的系統套件：
+* 構建環境基於Linux，源自Ubuntu 18.04。
+* 已安裝Apache Maven 3.6.0。
+* 安裝的Java版本是Oracle JDK 8u202。
+* 安裝了一些其他系統軟體包是必要的：
 
    * bzip2
    * unzip
    * libpng
-   * imagemaged
-   * 圖形雜誌
+   * imagick
+   * graphicsmagick
 
-* 其他套件可在建置時間安裝，如下所述 [](#installing-additional-system-packages)。
-* 每個建置都是在原始環境上完成；組建容器不會保留執行之間的任何狀態。
-* Maven一律會使用命令執行： *mvn—批次模式clean org. jackoco：jacoco-maven-plugin：準備代理套件*
-* Maven是在系統層級設定的，settings.xml檔案會自動包含公開的Adobe **Artifact** 存放庫。(請參閱 [Adobe Public Maven儲存庫以](https://repo.adobe.com/) 取得詳細資訊)。
+* 其他軟體包可在構建時安裝，如下 [所述](#installing-additional-system-packages)。
+* 每棟建築都是在原始環境下完成的；建置容器不會在執行之間保留任何狀態。
+* Maven始終使用以下命令運行： *mvn —batch-mode clean org.jaco:jaco-maven-plugin:prepare-agent軟體包*
+* Maven是在系統層級以settings.xml檔案來設定，該檔案會自動包含公用的Adobe **Artifact** 儲存庫。 (如需詳細 [資訊，請參閱Adobe Public Maven Repository](https://repo.adobe.com/) )。
 
-## 在Cloud Manager中啓用Maven Profiles {#activating-maven-profiles-in-cloud-manager}
+## 在Cloud manager中啟用Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
 
-在某些有限的情況下，在Cloud Manager內部執行時，您可能需要稍微變更組建程序，而不是在開發人員工作站上執行時。在這些情況下 [，Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 可用來定義不同環境中的建置方式應如何不同，包括Cloud Manager。
+在某些有限的情況下，在Cloud manager內執行時，您可能需要稍微改變建立程式，而不是在開發人員工作站上執行。 在這些情況下， [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 可用來定義在不同環境（包括Cloud Manager）中，建置應如何不同。
 
-在雲端管理員建立環境中啓用Maven Profile，應尋找是否 `CM_BUILD`存在環境變數。此變數一律會設定在Cloud Manager組建環境內。相反地，只想在Cloud Manager組建環境外部使用的描述檔，應尋找此變數的詳細資訊。
+在Cloud manager構建環境中啟動Maven配置檔案時，應查找名為的環境變數的存在 `CM_BUILD`。 此變數將一律在Cloud manager建置環境中設定。 轉換為，只能在Cloud manager構建環境之外使用的配置檔案應通過查找此變數的基本含義來完成。
 
-例如，如果您只想要在Cloud Manager內輸出簡單訊息，則您可以執行下列動作：
+例如，如果您只想在Cloud manager內執行組建時輸出簡單訊息，您可以執行下列動作：
 
 ```xml
         <profile>
@@ -150,9 +150,9 @@ Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境�
 
 >[!NOTE]
 >
->若要在開發人員工作站上測試此描述檔，您可以在命令列上或在您的整合 `-PcmBuild`開發環境(IDE)上啓用此設定檔。
+>要在開發人員工作站上測試此配置檔案，可以在命令行(使用 `-PcmBuild`)或整合開發環境(IDE)中啟用它。
 
-如果您只想在Cloud Manager以外的位置輸出簡單訊息，您可以這麼做：
+如果您只想在構建版本在Cloud manager外部運行時輸出簡單消息，則可以執行以下操作：
 
 ```xml
         <profile>
@@ -188,9 +188,9 @@ Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境�
 
 ## 自訂環境變數
 
-在某些情況下，客戶的建置程序可能視特定組態變數而定，不適合放置在Git存放庫中。Cloud Manager允許客戶成功工程師(CSE)設定這些變數。這些變數會儲存在安全的儲存位置，並且僅會顯示在特定客戶的組建容器中。想要使用此功能的客戶需要聯絡其CSE來設定變數。
+在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在git儲存庫中。 Cloud manager允許客戶成功工程師(CSE)根據客戶逐一配置這些變數。 這些變數會儲存在安全的儲存位置中，且僅會顯示在特定客戶的建立容器中。 想要使用此功能的客戶需要聯絡其CSE以設定其變數。
 
-設定後，這些變數便可作為環境變數使用。In order to use them as a Maven properties，you can reference them in your loc file，possible within a profile as described above：
+配置後，這些變數將可作為環境變數使用。 為了將它們用作Maven屬性，您可以在pom.xml檔案內引用它們，可能如上所述在配置檔案內：
 
 ```xml
         <profile>
@@ -208,11 +208,11 @@ Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境�
 
 >[!NOTE]
 >
->環境變數名稱只能包含英數和底線(_)字元。依慣例，名稱應大寫。
+>環境變數名稱只能包含字母數字和下划線(_)字元。 按照慣例，名稱應全部大寫。
 
-## 安裝其他系統套件 {#installing-additional-system-packages}
+## 安裝其他系統軟體包 {#installing-additional-system-packages}
 
-有些建置需要安裝額外的系統套件，才能完全運作。例如，組建版本可以叫用Python或Ruby script，因此必須安裝適當的語言解譯器。您可以呼叫 [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) 來叫用APT。此執行通常應包裝在Cloud Manager專用的Maven描述檔中。例如，若要安裝python：
+某些構建需要安裝其他系統軟體包才能完全運作。 例如，構建版本可以調用Python或ruby指令碼，因此需要安裝適當的語言解釋器。 若要這麼做，請呼 [叫exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) 以叫用APT。 此執行通常應包在Cloud manager特定的Maven配置式中。 例如，要安裝python:
 
 ```xml
         <profile>
@@ -265,18 +265,18 @@ Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境�
         </profile>
 ```
 
-此相同技術可用來安裝語言特定套件，例如 `gem` RubyGems或 `pip` Python Packages。
+此相同技術可用於安裝語言特定的軟體包，即使用RubyGems或 `gem` Python軟體包 `pip` 進行安裝。
 
 >[!NOTE]
 >
->以此方式安裝系統套件時 **，不** 會將它安裝在執行Adobe Experience Manager的執行時期環境中。如果您需要安裝在AEM環境的系統套件，請聯絡客戶成功工程師(CSE)。
+>以此方式安裝系統套件 **不會** ，將它安裝在執行Adobe Experience Manager時所用的執行階段環境中。 如果您需要在AEM環境中安裝系統套件，請連絡您的客戶成功工程師(CSE)。
 
-## 跳過內容封裝 {#skipping-content-packages}
+## 跳過內容包 {#skipping-content-packages}
 
-在Cloud Manager中，建立可能會產生任何數量的內容封裝。
-基於各種原因，您可能需要產品套件，但不要部署它。例如，當建立僅用於測試的內容封裝時，或將透過建置程序中另一個步驟重新封裝的內容封裝(即另一個套件的子封裝)，這可能很有用。
+在Cloud Manager中，組建可能會產生任意數量的內容套件。
+由於各種原因，可能需要製作內容套件，但不要部署它。 例如，當建立僅用於測試的內容封裝時，或者在建立程式中的另一個步驟（即作為另一個封裝的子封裝）重新封裝的內容封裝時，這可能很有用。
 
-為了因應這些情況，Cloud Manager將會尋找一個名為 ***CloudManagerTarget的屬性*** ，在建立的內容封裝屬性中。如果此屬性設為無，則會跳過套件，而不會部署。設定此屬性的機制取決於建置內容套件的方式。例如，使用filevault-maven-plugin可設定外掛程式如下：
+為了適應這些情況，Cloud manager將在內建內容包的屬性中 ***查找名為cloudManagerTarget*** 的屬性。 如果此屬性設定為none，則會跳過該包且不部署。 設定此屬性的機制取決於建立內容封裝的方式。 例如，使用filevault-maven-plugin時，您可以像這樣設定外掛程式：
 
 ```xml
         <plugin>
@@ -292,7 +292,7 @@ Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境�
         </plugin>
 ```
 
-使用content-package-maven-plugin類似：
+使用content-package-maven-plugin時，其效果類似：
 
 ```xml
         <plugin>
@@ -308,6 +308,6 @@ Cloud Manager使用專業建置環境建立並測試您的程式碼。此環境�
         </plugin>
 ```
 
-## 根據最佳實務開發您的程式碼 {#develop-your-code-based-on-best-practices}
+## 根據最佳實務來開發程式碼 {#develop-your-code-based-on-best-practices}
 
-Adobe工程與諮詢團隊已為AEM開發人員開發 [出一套完整的最佳實務](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)。
+Adobe工程與諮詢團隊已針對AEM [開發人員開發一套完整的最佳實務](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)。
