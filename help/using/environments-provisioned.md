@@ -14,9 +14,9 @@ source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 ---
 
 
-# 已布建環境 {#environments-provisioned}
+# Environments Provisioned {#environments-provisioned}
 
-## 布建 {#provisioning}
+## Provisioning {#provisioning}
 
 在客戶上線程式中，客戶購買的所有AEM雲端環境都會由Adobe自動布建，並連結回其中的計畫 [!UICONTROL Cloud Manager]。 這些AEM雲 **端環境** (Adobe Managed Services Subscriptions)包含在每個Adobe Managed services訂閱中，通常包含至少一個生產環境、一個階段環境，以及選擇性的一或多個開發或測試環境。
 
