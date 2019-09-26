@@ -2,11 +2,11 @@
 title: 添加用戶和角色
 seo-title: 添加用戶和角色
 description: 'null'
-seo-description: 您可以將使用者新增至管理控制台中的Cloud manager產品設定檔，以指派特定角色成員資格。 Follow this section to learn more.
+seo-description: 您可以將使用者新增至管理控制台中的Cloud manager產品設定檔，以指派特定角色成員資格。 請依照本節的說明進一步瞭解。
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: requirements
+topic-tags: 需求
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 translation-type: tm+mt
 source-git-commit: 73203dca7b20570103af429cf933610941b787be
@@ -14,15 +14,15 @@ source-git-commit: 73203dca7b20570103af429cf933610941b787be
 ---
 
 
-# Add Users and Roles{#add-users-and-roles}
+# 添加用戶和角色{#add-users-and-roles}
 
-Many features in  require specific permissions to operate. [!UICONTROL Cloud Manager]For example, only certain users are allowed to set the Key Performance Indicators (KPIs) for a program. These permissions are logically grouped into roles.
+中的許多功 [!UICONTROL Cloud Manager] 能需要特定的操作權限。 例如，僅允許某些用戶為程式設定關鍵績效指標(KPI)。 這些權限在邏輯上分組為角色。
 
-[!UICONTROL Cloud Manager] currently defines four roles for users which govern the availability of specific features:
+[!UICONTROL Cloud Manager] 目前為控制特定功能可用性的使用者定義四個角色：
 
 * 企業負責人
-* Program Manager
-* Deployment Manager
+* 計畫經理
+* 部署管理員
 * 開發人員
 
 >[!CAUTION]
@@ -50,11 +50,11 @@ Many features in  require specific permissions to operate. [!UICONTROL Cloud Man
 >
 >對 [!UICONTROL Cloud Manager] Git儲存庫的訪問由CSE管理。 請連絡他們以新增和移除使用者。
 >
->If a newly added user requires access to the Git repository you will need to contact your CSE/AMS representative to have the access granted. 這些角色不提供對Git儲存庫的自動訪問。 You can only have a maximum of 3 users with Git repository access.
+>如果新添加的用戶需要訪問Git儲存庫，則您需要聯繫您的CSE/AMS代表以獲得訪問權限。 這些角色不提供對Git儲存庫的自動訪問。 最多只能有3個具有Git儲存庫訪問權限的用戶。
 
-## Using Admin Console to Create a Profile {#using-admin-console-to-create-a-profile}
+## 使用Admin console建立設定檔 {#using-admin-console-to-create-a-profile}
 
-角色是從Adobe Admin [!UICONTROL Cloud Manager] Console管理的。 Specific role memberships are provided by adding the user to a  Product Profile in Admin Console.[!UICONTROL Cloud Manager]
+角色是從Adobe Admin [!UICONTROL Cloud Manager] Console管理的。 將使用者新增至「管理控制台」中的「產品設定檔」，即可 [!UICONTROL Cloud Manager] 提供特定角色成員資格。
 
 您可以在Adobe Admin console中將使用者新增至產品設定檔，以指派特定的角色會籍。Adobe Admin Console是管理整個組織中Adobe權益的集中位置。 [!UICONTROL Cloud Manager]**** 若要進一步瞭解Adobe Admin Console，請參閱 [Admin Console的檔案](https://helpx.adobe.com/enterprise/using/admin-console.html)。
 
@@ -96,7 +96,7 @@ Many features in  require specific permissions to operate. [!UICONTROL Cloud Man
 
    ![](assets/screen_shot_2018-05-04at171819.png)
 
-1. Once you create product profile, you can add users (or groups) to these Product Profiles.
+1. 在您建立產品設定檔後，就可以新增使用者（或群組）至這些產品設定檔。
 
    ![](assets/image2018-4-9_15-19-26.png)
 
