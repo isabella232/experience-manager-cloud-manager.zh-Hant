@@ -1,12 +1,12 @@
 ---
 title: 首次登入
-seo-title: 首次登入Adobe AEM Cloud Manager
+seo-title: First Time Login to Adobe AEM Cloud Manager
 description: 如果您已設定一般設定，且已準備好第一次使用Cloud Manager，請依照本頁進行。
-seo-description: 如果您已設定一般設定，而且已準備好第一次使用Adobe AEM Cloud Manager，請依照本頁進行。
+seo-description: Follow this page if you have set up your general configurations and you are ready to use Adobe AEM Cloud Manager for the first time.
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 快速入門
+topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
 source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
@@ -14,30 +14,30 @@ source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
 ---
 
 
-# 首次登入 {#first-time-login}
+# First Time Login {#first-time-login}
 
-在您設定一般設定後， [!UICONTROL Cloud Manager]就可以使用使用者介面(UI) [!UICONTROL Cloud Manager]。
+Once you have setup the general configurations for , you are ready to use the User Interface (UI) for .[!UICONTROL Cloud Manager][!UICONTROL Cloud Manager]
 
 >[!NOTE]
 >
->根據中指派的角色和應 [!UICONTROL Cloud Manager] 用程式的狀態，您在使用UI時會看到不同的 [!UICONTROL Cloud Manager] 畫面。
+>Depending on the roles assigned in  and the state of the application, you will see different screens while using  UI.[!UICONTROL Cloud Manager][!UICONTROL Cloud Manager]
 
 ## 首次登入 {#logging-in-for-the-first-time}
 
-1. 登入 **Adobe[!UICONTROL Experience Cloud]** ，您就會看到程式清 **單**。
+1. Log in to the Adobe  and you will see the list of Programs.**[!UICONTROL Experience Cloud]******
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
-1. 選取程式(例如 **We.Retail Global**)，然後按一下左上角的圖示以開啟 [!UICONTROL Cloud Manager]。
+1. Select the program (for example, We.Retail Global) and click on the top left icon to open .****[!UICONTROL Cloud Manager]
 
    ![](assets/screen_shot_2018-06-04at12611pm.png)
 
-1. 顯示的控 [!UICONTROL Cloud Manager] 制面板。
+1. The dashboard for  displays.[!UICONTROL Cloud Manager]
 
    ![](assets/FirstLogin1.png)
 
-1. 按一下 **設定程式** ，以設定程式 **** 說明並定義關鍵績效指標(KPI)。
+1. Click Setup Program for setting the Program description and defining the Key Performance Indicators (KPIs).********
 
    >[!NOTE]
    >
-   >請參閱 [設定您的方案](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) ，以完成後續步驟。
+   >Please see Setup your Program to complete the next steps.[](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html)
