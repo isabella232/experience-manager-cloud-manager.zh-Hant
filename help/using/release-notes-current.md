@@ -20,22 +20,22 @@ source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 * Sling Referrer Filter Health check的分類已從Critical變更為Importent。
 * HTML Library Manager config運行狀況檢查的分類已從「Critical（關鍵）」更改為「Mignent（重要）」。
-* Monitoring graphs can now be downloaded. Refer to Monitor your Environments for more details.[](monitor-your-environments.md)
-* If a program does not have a production AEM environment, clicking on the program card from the landing page will navigate to the Cloud Manager overview page, not produce an error dialog.
-* The Pipeline Settings Card on the Overview page has been retitled to Production Pipeline Settings.************
-* The Important Failure Behavior radio buttons have been removed from code-quality only pipelines.
-* The Activity page now displays the name of the pipeline for each execution.****
-* The execution page now displays the name of the pipeline.
-* The Code Quality summary dialog now shows a description for each rating.
+* 現在可以下載監控圖形。 如需詳細 [資訊，請參閱](monitor-your-environments.md) 「監控您的環境」。
+* 如果程式沒有生產AEM環境，從著陸頁面按一下程式卡會導覽至「雲端管理員概述」頁面，而不會產生錯誤對話方塊。
+* 「概 **述」(Overview)頁** 面上的「管線設定」(Pipeline Settings **Card)已重新命名為「生產管** 線設定」(Production Pipeline Settings ****)。
+* 「重要故障行為」選項按鈕已從僅代碼質量的管線中刪除。
+* 「活 **動** 」頁面現在會顯示每個執行的管線名稱。
+* 執行頁面現在會顯示管線的名稱。
+* 「程式碼品質摘要」對話方塊現在會顯示每個評等的說明。
 
-## Bug Fixes {#bug-fixes}
+## 錯誤修正 {#bug-fixes}
 
-* Some users could not view an execution details when it was waiting for approval.
-* On Overview page, the right margin was not consistent.****
-* The build container could run out of memory in large projects.
-* Under certain circumstances, the BannedPaths OakPAL rule did not identify installed content under /libs.
-* When a quality gate was rejected, the dialog heading still showed Partially Passed.**
+* 有些使用者在等待核準時無法檢視執行詳細資訊。
+* 在「 **概述** 」頁面上，右邊距不一致。
+* 在大型專案中，建置容器可能會耗用記憶體。
+* 在特定情況下，UnpardedPaths OakPAL規則未識別/libs下的已安裝內容。
+* 拒絕質量門時，對話框標題仍顯示「部分 *通過」*。
 
 ## 已知問題 {#known-issues}
 
-* Downloading of monitoring graphs is not available in Safari.
+* Safari中無法下載監控圖表。
