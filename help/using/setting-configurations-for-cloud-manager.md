@@ -141,7 +141,7 @@ curl -H"Host: www.myco.com" http://stage-myco.adobecqms.net/en/home.html
 
 ## 開發最佳實務 {#development-best-practices}
 
-在使用 [!UICONTROL Cloud Manager]之前，建議您瞭解一些設定專案和設定Web伺服器或顯示設定的最佳實務。
+在使用 [!UICONTROL Cloud Manager]之前，建議您先瞭解一些設定專案和設定Web伺服器或顯示組態的最佳實務。
 
 ### 專案設定 {#project-set-up}
 
