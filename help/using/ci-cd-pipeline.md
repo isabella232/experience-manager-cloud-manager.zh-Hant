@@ -35,7 +35,7 @@ CI/CD管道還自動化了單元和效能測試流程，以提高部署效率，
 | 3.使用自動產生的版本建立為發行 | [!UICONTROL Cloud Manager] 使用新指派的版本號碼建立應用程式。 |
 | 4.評估程式碼品質 | [!UICONTROL Cloud Manager] 掃描原始碼並提供摘要，然後代碼才能部署到階段環境 |
 | 5.已儲存的版本化對象 | 發行對象會儲存起來，以便日後在部署步驟中使用。 |
-| 6.自動將對象部署到AMS AEM Stage | 釋放對象部署到舞台環境。 |
+| 6. Automatic Deployment of Artifact(s) to AMS AEM Stage | The release artifact is deployed to the stage environment. |
 | 7.觸發自動測試 | [!UICONTROL Cloud Manager] 運行對象的效能和安全性測試。 |
 | 8.生產觸發器部署 | 完成自動測試後， [!UICONTROL Cloud Manager] 開始將部署至生產環境。 |
 | 9.獲 [!UICONTROL Cloud Manager] 取要部署的對象 | [!UICONTROL Cloud Manager] 提取儲存的釋放對象。 |
