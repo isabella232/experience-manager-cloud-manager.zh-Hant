@@ -22,7 +22,7 @@ source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 >
 >此處提供的程式碼範例僅供說明之用。
 
-## SonarQube規則 {#sonarqube-rules}
+## SonarQube Rules {#sonarqube-rules}
 
 以下章節重點說明SonarQube規則：
 
@@ -36,7 +36,7 @@ source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 **自**:2018.4.0版
 
-方法 ***Thread.stop()*** 和 ***Thread.interrupt()*** 可產生難以重制的問題，在某些情況下，還可能產生安全漏洞。 它們的使用應受到嚴密監控和驗證。 總的來說，傳遞資訊是實現類似目標的更安全的方式。
+方法 ***Thread.stop()*** 和 ***Thread.interrupt()*** 可產生難以重制的問題，在某些情況下，還可能產生安全漏洞。 Their usage should be tightly monitored and validated. In general, message passing is a safer way to accomplish similar goals.
 
 #### 不符合程式碼 {#non-compliant-code}
 
@@ -359,9 +359,9 @@ public void doThis() throws Exception {
 
 **類型**:程式碼氣味
 
-**嚴重性**:次要
+**Severity**: Minor
 
-一般而言，INFO記錄檔層級應用於區分重要動作，而且依預設，AEM會設定為在INFO層級或以上記錄檔。 GET和HEAD方法只能是只讀操作，因此不構成重要操作。 響應GET或HEAD請求在INFO級別登錄可能會產生明顯的日誌雜訊，從而更難識別日誌檔案中的有用資訊。 處理GET或HEAD請求時的記錄應位於發生錯誤時的WARN或ERROR級別，或位於DEBUG或TRACE級別（如果更深入的疑難排解資訊有幫助）。
+In general, the INFO log level should be used to demarcate important actions and, by default, AEM is configured to log at the INFO level or above. GET和HEAD方法只能是只讀操作，因此不構成重要操作。 響應GET或HEAD請求在INFO級別登錄可能會產生明顯的日誌雜訊，從而更難識別日誌檔案中的有用資訊。 處理GET或HEAD請求時的記錄應位於發生錯誤時的WARN或ERROR級別，或位於DEBUG或TRACE級別（如果更深入的疑難排解資訊有幫助）。
 
 >[!CAUTION]
 >
@@ -558,7 +558,7 @@ public void doThis(Resource resource) {
 
 ## OakPAL內容規則 {#oakpal-rules}
 
-請在Cloud manager執行的OakPAL檢查下方尋找。
+Please find below the OakPAL checks executed by Cloud Manager.
 
 >[!NOTE]
 >OakPAL是由AEM合作夥伴（並獲2019年AEM Rockstar北美地區得獎者）開發的架構，可使用獨立的Oak儲存庫來驗證內容套件。
