@@ -38,8 +38,8 @@ source-git-commit: aa4ff4eb2f3292fe4cb0baf8087b4d0213443cf4
 
 **產品** ：組織授權之解決方案中的一組特定功能。 組織內的不同方案可以與不同的產品組合在一起。 例如，網站、表單資產。
 
-**Program** A set of environments that support a logical grouping of customer initiatives, usually corresponding to a purchased Service Level Agreements (SLA). 每個方案都只有一個生產環境，可能有許多非生產環境。
+**方案** ：一組環境，支援客戶活動的邏輯分組，通常對應於購買的服務級別協定(SLA)。 每個方案都只有一個生產環境，可能有許多非生產環境。
 
-**Solution** One of the Adobe [!UICONTROL Experience Cloud] solutions. 例如，Adobe Experience Manager、Adobe Target或Adobe Analytics。
+**解決方案** :Adobe解決方案之 [!UICONTROL Experience Cloud] 一。 例如，Adobe Experience Manager、Adobe Target或Adobe Analytics。
 
 **步驟** ：配置的指令集，用於完成流水線的一些工作單元、構建塊。
