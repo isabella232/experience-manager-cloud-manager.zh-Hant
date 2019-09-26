@@ -13,7 +13,7 @@ source-git-commit: e3e7fbd9c44c69e5bcdd92e4099c764aa6a99fe4
 
 # 其他資源 [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
 
-您應先洽詢Adobe Managed services客戶成功工程師(CSE)，以取得與Cloud manager相關的支援。
+You should first reach out to your Adobe Managed Services Customer Success Engineer (CSE) for support related to Cloud Manager.
 您的CSE會建議您他們是否能協助您處理問題，或您是否需要使用客戶服務來建立支援票證。
-您可以存取「 [企業支援](https://helpx.adobe.com/contact/enterprise-support.ec.html) 」以建立「支援」票證。 如需在客戶服務中建立支援票證的詳細資訊，請參閱存取AEM支援入口網站。
+You can access [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) to create Support tickets. See Accessing the AEM Support Portal for more information on creating Support tickets in Customer Care.
 
