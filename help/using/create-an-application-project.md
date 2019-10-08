@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 快速入門
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -186,7 +186,9 @@ Cloud manager使用專業的構建環境來構建和測試代碼。 此環境具
         </profile>
 ```
 
-## 自訂環境變數
+## 環境變數 {#environment-variables}
+
+### 標準環境變數 {#standard-environ-variables}
 
 在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在git儲存庫中。 Cloud manager允許客戶成功工程師(CSE)根據客戶逐一配置這些變數。 這些變數會儲存在安全的儲存位置中，且僅會顯示在特定客戶的建立容器中。 想要使用此功能的客戶需要聯絡其CSE以設定其變數。
 
