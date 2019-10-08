@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 快速入門
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 >
 >根據中指派的角色和應 [!UICONTROL Cloud Manager] 用程式的狀態，您在使用UI時會看到不同的 [!UICONTROL Cloud Manager] 畫面。
 
-## 方案概觀 {#programs-video}
+## 概觀影片至節目 {#programs-video}
 
 以下視訊提供Cloud manager計畫的概觀，這些計畫代表支援邏輯業務活動集的AEM環境集，通常對應於購買的服務層級合約(SLA)。
 
@@ -47,3 +47,9 @@ source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
    >[!NOTE]
    >
    >請參閱 [設定您的方案](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) ，以完成後續步驟。
+
+## 「活動」標籤 {#activity-video}
+
+Cloud manager可提供方案活動的整合視圖，列出所有CI/CD Pipeline執行（包括生產和非生產），允許查看過去和現在的活動，並可以查看任何活動的詳細資訊。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=chi_hant)
