@@ -1,15 +1,15 @@
 ---
 title: 首次登入
-seo-title: First Time Login to Adobe AEM Cloud Manager
-description: Follow this page if you have set up your general configurations and you are ready to use Cloud Manager for the first time.
-seo-description: Follow this page if you have set up your general configurations and you are ready to use Adobe AEM Cloud Manager for the first time.
+seo-title: 首次登入Adobe AEM Cloud Manager
+description: 如果您已設定一般設定，且已準備好第一次使用Cloud Manager，請依照本頁進行。
+seo-description: 如果您已設定一般設定，而且已準備好第一次使用Adobe AEM Cloud Manager，請依照本頁進行。
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: getting-started
+topic-tags: 快速入門
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: ec35af20dceeb50610bc365c8e00d5ee0374ea34
+source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
 
 ---
 
@@ -25,9 +25,6 @@ source-git-commit: ec35af20dceeb50610bc365c8e00d5ee0374ea34
 ## 方案概觀 {#programs-video}
 
 以下視訊提供Cloud manager計畫的概觀，這些計畫代表支援邏輯業務活動集的AEM環境集，通常對應於購買的服務層級合約(SLA)。
-
-
-[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&captions=chi_hant)
 
 
 ## 首次登入 {#logging-in-for-the-first-time}
