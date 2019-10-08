@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 快速入門
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
+source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
 
 以下視訊提供Cloud manager計畫的概觀，這些計畫代表支援邏輯業務活動集的AEM環境集，通常對應於購買的服務層級合約(SLA)。
 
+>[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=chi_hant)
 
 ## 首次登入 {#logging-in-for-the-first-time}
 
