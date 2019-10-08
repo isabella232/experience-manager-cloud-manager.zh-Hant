@@ -4,7 +4,7 @@ seo-title: 監控您的環境
 description: 'null'
 seo-description: 請依照本頁瞭解Cloud manager中的系統監控，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種度量。
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -48,6 +48,13 @@ source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 >[!NOTE]
 >
 >依預設，導覽至此頁面時，生產環境例項是可見的，但其他環境也可開啟。
+
+## 概述視訊至報表 {#video-reports}
+
+「Cloud Manager報表」透過一組圖表提供方案環境和AEM例項的檢視，這些圖表可報告並追蹤每個AEM例項的各種量度。
+請參閱以下視訊以取得詳細資訊。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=chi_hant)
 
 ## 系統監控詳細資訊 {#system-monitoring-detail}
 
