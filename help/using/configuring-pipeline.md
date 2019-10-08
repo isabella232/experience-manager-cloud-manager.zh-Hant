@@ -10,7 +10,7 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -168,6 +168,13 @@ source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
 ## 非生產和代碼純質量管道
 
 除了部署到生產階段的主管道外，客戶還可以設定額外的管道，即非生 **產管道**。 這些管線始終執行構建和代碼質量步驟。 他們也可以選擇性地部署至Adobe Managed Services環境。
+
+### 非製作與僅程式碼品質管道影片
+
+CI/CD非生產管道分為代碼質量管道和部署管道兩類。 程式碼品質會從Git分支輸入所有程式碼，以根據Cloud manager的程式碼品質掃描來建立和評估。
+請參閱以下影片以取得詳細資訊。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=chi_hant)
 
 在主螢幕上，新卡中列出了以下管線：
 
