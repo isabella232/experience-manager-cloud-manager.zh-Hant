@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 使用
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -93,6 +93,13 @@ Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 
 1. Cloud manager會決定每個對象是AEM還是分派程式套件。
 1. Cloud manager會從負載平衡器中刪除所有調度程式，以在部署期間隔離環境。
+
+   除非另行配置，否則您可以跳過開發和階段部署中的負載平衡器更改，即分離和附加非生產管線中的步驟，以用於開發環境，以及生產管線中的步驟，用於階段環境。
+
+   >[!NOTE]
+   >
+   >此功能預期主要由1-1-1客戶使用。
+
 1. 每個AEM物件都會透過Package Manager API部署至每個AEM例項，並依套件而定，以決定部署順序。
 
    有關如何使用軟體包來安裝新功能、在實例之間傳輸內容以及備份儲存庫內容的詳細資訊，請參閱如何使用軟體包。
@@ -113,6 +120,10 @@ Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
    >Cloud manager希望調度器對象包含完整檔案集。  所有調度程式配置檔案都必須存在於git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
 
 1. 成功將所有AEM和Dispatcher套件部署至所有節點後，會將Dispatcher新增至負載平衡器，而部署即告完成。
+
+   >[!NOTE]
+   >
+   >您可以跳過開發和階段部署中的負載允許更改，即在非生產管道、開發人員環境和生產管道中分離和附加步驟，以用於階段環境。 此功能預期主要由1-1-1客戶使用。
 
 ### 部署至生產階段 {#deployment-production-phase}
 
