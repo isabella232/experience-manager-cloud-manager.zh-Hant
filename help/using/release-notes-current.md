@@ -4,14 +4,14 @@ seo-title: AEM Cloud manager 2019.10.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2019.10.0版的資訊。
 seo-description: 請依照本頁取得AEM Cloud Manager 2019.10.0版的相關資訊。
 translation-type: tm+mt
-source-git-commit: 1e927076e6bc84e8e1761e33a86cff61a3be0d2f
+source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 
 ---
 
 # 2019.10.0發行說明 {#release-notes-for}
 
-下節概述2018.10.0版的一般發行說明，並新增部署步驟的更新，並管理專案版本處理。 [!UICONTROL Cloud Manager] 
-請依照下列頁面瞭解詳細資訊。
+下節概述2019.10.0版的一般發行說明，並新增部署步驟的更新，並管理專案版本處理。 [!UICONTROL Cloud Manager] 
+請依照下列章節瞭解詳細資訊。
 
 ## 發行日期 {#release-date}
 
@@ -22,7 +22,7 @@ source-git-commit: 1e927076e6bc84e8e1761e33a86cff61a3be0d2f
 * 部署步驟中的大部分已提升效能。
 * 如果適用，組建Maven專案的版本現在將以git的形式整合專案版本。
 * 在構建時，有新的環境變數可用。
-* 非生產管道可從「概述」頁面和API的卡片中刪除。
+* 非生產管道可從「概述」頁面和API的卡 **片中刪除** 。
 * 在階段部署步驟之後，但在安全性測試步驟之前，會立即有新的選擇性核准步驟。
 * 在配置CI/CD流水線時，可以跳過從負載平衡器分離和附加調度器實例，以用於開發和階段環境。
 請參閱部 **[署程式](deploying-code.md#deployment-process)** ，以取得詳細資訊。
