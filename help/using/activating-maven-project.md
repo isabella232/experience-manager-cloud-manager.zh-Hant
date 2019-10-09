@@ -4,7 +4,7 @@ seo-title: Maven專案版本處理
 description: 進一步瞭解Maven Project Version Handling。
 seo-description: 請依照本頁進一步瞭解Maven專案版本處理
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
 
 ---
 
@@ -29,4 +29,4 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 >[!NOTE]
 >
->無論原始版本是否已併入Cloud manager初始化的版本，原始版本都可作為名為cloudManagerOriginalVersion的Maven屬 *性使用*。
+>無論原始版本是否已併入Cloud manager初始化的版本，原始版本都可作為名為cloudManagerOriginalVersion的Maven屬 *性使用。*
