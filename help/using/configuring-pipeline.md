@@ -10,7 +10,7 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
 
 ---
 
@@ -127,6 +127,11 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
    按一 **下「儲存** 」以保存此設定。
 
    ![](assets/image2018-8-7_15-4-30.png)
+
+   **在舞台部署後批准**&#x200B;在舞台部署後 **批准有一個可選步驟** ，可在生產管線中配置。
+   >[!NOTE]
+   >
+   >**在Stage Deployment** （部署後）的功能與生產部署之前的核准類似，但會立即在階段部署步驟（即測試完成之前）之後進行，而在生產部署之前（所有測試完成之後）進行核准。
 
 1. 存取「 **測試** 」標籤，以定義您方案的測試准則。
 
