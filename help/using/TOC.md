@@ -4,7 +4,7 @@ sub-product: experience manager Cloud Manager
 archetype: 管理員
 user-guide-title: Experience Manager Cloud manager說明
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
    + [通知](notifications.md)
    + [自訂代碼品質規則](custom-code-quality-rules.md)
 + 管理您的程式碼 {#managing-code}
-   + [激活Maven配置檔案](activating-maven-project.md)
+   + [Maven專案版本處理](activating-maven-project.md)
    + [與Git整合](setup-cloud-manager-git-integration.md)
 + 產品更新精靈 {#product-update-wizard}
    + [綜覽](overview-productupdate-wizard.md)
