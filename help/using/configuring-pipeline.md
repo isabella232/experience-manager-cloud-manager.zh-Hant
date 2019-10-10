@@ -10,7 +10,7 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -129,9 +129,17 @@ source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
    ![](assets/image2018-8-7_15-4-30.png)
 
    **在舞台部署後批准**&#x200B;在舞台部署後 **批准有一個可選步驟** ，可在生產管線中配置。
+在「管線編輯」( **Pipeline Edit)螢幕的新選項中啟** 用此選項：
+
+   ![](assets/post_deployment1.png)
+
+   然後，在管線執行期間，它會顯示為個別步驟：
+   ![](assets/post_deployment2.png)
+
    >[!NOTE]
    >
    >**在Stage Deployment** （部署後）的功能與生產部署之前的核准類似，但會立即在階段部署步驟（即測試完成之前）之後進行，而在生產部署之前（所有測試完成之後）進行核准。
+
 
 1. 存取「 **測試** 」標籤，以定義您方案的測試准則。
 
