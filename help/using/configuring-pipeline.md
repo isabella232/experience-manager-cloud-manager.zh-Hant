@@ -10,7 +10,7 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ---
 
@@ -18,6 +18,15 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 # 配置CI/CD管線 {#configure-your-ci-cd-pipeline}
 
 下頁說明了如何配置管 **線**。 若要檢視管道運作方式的更多概念性資訊，請參閱 [CI/CD管道概觀](ci-cd-pipeline.md)。
+
+## 教學影片 {#video-tutorial-one}
+
+### 在Cloud manager中配置管線 {#config-pipeline-video}
+
+CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產部署和效能測試參數的參數。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=chi_hant)
+
 
 ## 瞭解流程 {#understanding-the-flow}
 
@@ -100,6 +109,21 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 >
 >「使 **用CSE監督** 」選項不適用於所有客戶。
 
+**在階段部署後核准**
+
+在Production Pipeline中可以 **設定Approve after Stage Deployment** （階段部署後批准）選用步驟。
+在「管線編輯」( **Pipeline Edit)螢幕的新選項中啟** 用此選項：
+
+![](assets/post_deployment1.png)
+
+然後，在管線執行期間，它會顯示為個別步驟：
+
+![](assets/post_deployment2.png)
+
+>[!NOTE]
+>
+>**在Stage Deployment** （部署後）的功能與生產部署之前的核准類似，但會立即在階段部署步驟（即測試完成之前）之後進行，而在生產部署之前（所有測試完成之後）進行核准。
+
 **Dispatcher Invalidation**
 
 身為部署管理員，您有機會設定一組路徑，在設定或編輯管線時，這些路徑會 **使****AEM Dispatcher快取無效或被清除** 。
@@ -127,18 +151,6 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
    按一 **下「儲存** 」以保存此設定。
 
    ![](assets/image2018-8-7_15-4-30.png)
-
-   **在舞台部署後批准**&#x200B;在舞台部署後 **批准有一個可選步驟** ，可在生產管線中配置。
-在「管線編輯」( **Pipeline Edit)螢幕的新選項中啟** 用此選項：
-
-   ![](assets/post_deployment1.png)
-
-   然後，在管線執行期間，它會顯示為個別步驟：
-   ![](assets/post_deployment2.png)
-
-   >[!NOTE]
-   >
-   >**在Stage Deployment** （部署後）的功能與生產部署之前的核准類似，但會立即在階段部署步驟（即測試完成之前）之後進行，而在生產部署之前（所有測試完成之後）進行核准。
 
 
 1. 存取「 **測試** 」標籤，以定義您方案的測試准則。
@@ -182,10 +194,13 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 除了部署到生產階段的主管道外，客戶還可以設定額外的管道，即非生 **產管道**。 這些管線始終執行構建和代碼質量步驟。 他們也可以選擇性地部署至Adobe Managed Services環境。
 
-### 非製作與僅程式碼品質管道影片
+## 非製作與僅程式碼品質管道影片
+
+## 教學影片 {#video-tutorial-two}
+
+### Cloud manager非生產和代碼質量專屬管道 {#non-prod-video}
 
 CI/CD非生產管道分為代碼質量管道和部署管道兩類。 程式碼品質會從Git分支輸入所有程式碼，以根據Cloud manager的程式碼品質掃描來建立和評估。
-請參閱以下影片以取得詳細資訊。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=chi_hant)
 
