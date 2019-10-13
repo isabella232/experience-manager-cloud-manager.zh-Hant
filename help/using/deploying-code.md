@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 使用
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
 
@@ -125,7 +125,7 @@ Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 
    >[!NOTE]
    >
-   >您可以跳過開發和階段部署中的負載允許更改，即在非生產管道、開發人員環境和生產管道中分離和附加步驟，以用於階段環境。 此功能預期主要由1-1-1客戶使用。
+   >您可以跳過開發和階段部署中的負載允許更改，即在非生產管道、開發人員環境和生產管道中分離和附加步驟，以用於階段環境。
 
 ### 部署至生產階段 {#deployment-production-phase}
 
