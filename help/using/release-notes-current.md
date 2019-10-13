@@ -4,7 +4,7 @@ seo-title: AEM Cloud manager 2019.10.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2019.10.0版的資訊。
 seo-description: 請依照本頁取得AEM Cloud Manager 2019.10.0版的相關資訊。
 translation-type: tm+mt
-source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
+source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 
 ## 發行日期 {#release-date}
 
-2019.10.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年10月12日。
+2019.10.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年10月10日。
 
 ## 新功能 {#whats-new}
 
@@ -33,4 +33,4 @@ source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 ## 錯誤修正 {#bug-fixes}
 
 * 「概述」頁面上的某些卡 **片未** 正確垂直對齊。
-* 某些故障條件不會導致管線執行被正確標籤，並且阻止後續執行。
+* 某些故障條件不會導致管線執行被正確標籤，並阻止後續執行。
