@@ -1,6 +1,6 @@
 ---
-title: 建立AEM應用程式專案
-seo-title: 建立AEM應用程式專案
+title: 建立 AEM 應用程式專案
+seo-title: 建立 AEM 應用程式專案
 description: 'null'
 seo-description: 請依照本頁進一步瞭解如何在Cloud manager入門時設定AEM專案。
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 快速入門
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
+source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 ---
 
 
-# 建立AEM應用程式專案 {#create-an-aem-application-project}
+# 建立 AEM 應用程式專案 {#create-an-aem-application-project}
 
 ## 使用精靈建立AEM應用程式專案 {#using-wizard-to-create-an-aem-application-project}
 
@@ -76,7 +76,7 @@ Last Modified Date: 2018-10-08T12:52:50.071-0400
 
 * 可部署的Dispatcher對象是通過掃描 *zip檔案* (同樣，包含在名為target **&#x200B;的目錄中)來發現的，該目錄具有名為 *conf* 和 ** conf.d的目錄。
 
-* 如果有多個內容包，則無法保證包部署的順序。 如果需要特定順序，則可使用內容包相關性來定義順序。
+* 如果有多個內容包，則無法保證包部署的順序。 如果需要特定順序，則可使用內容包相關性來定義順序。 可從部署中 [跳過](#skipping-content-packages) 包。
 
 <!-- 
 
