@@ -1,6 +1,6 @@
 ---
-title: 配置CI/CD管線
-seo-title: 配置CI/CD管線
+title: 設定 CI/CD 管道
+seo-title: 設定 CI/CD 管道
 description: 請依照本頁，從Cloud manager設定您的管道設定。
 seo-description: '開始部署程式碼之前，您必須從AEM Cloud Manager設定您的管道設定。 '
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
@@ -10,12 +10,12 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
+source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ---
 
 
-# 配置CI/CD管線 {#configure-your-ci-cd-pipeline}
+# 設定 CI/CD 管道 {#configure-your-ci-cd-pipeline}
 
 下頁說明了如何配置管 **線**。 若要檢視管道運作方式的更多概念性資訊，請參閱 [CI/CD管道概觀](ci-cd-pipeline.md)。
 
