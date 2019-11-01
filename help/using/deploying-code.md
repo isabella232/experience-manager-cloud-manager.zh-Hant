@@ -1,6 +1,6 @@
 ---
-title: 部署您的程式碼
-seo-title: 部署您的程式碼
+title: 部署程式碼
+seo-title: 部署程式碼
 description: 'null'
 seo-description: 配置了管線（儲存庫、環境和測試環境）後，您就可以部署代碼。 請依照本頁進一步瞭解。
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 使用
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
+source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
 
 ---
 
 
-# 部署您的程式碼 {#deploy-your-code}
+# 部署程式碼 {#deploy-your-code}
 
 ## 使用Cloud manager部署程式碼 {#deploying-code-with-cloud-manager}
 
@@ -43,15 +43,16 @@ source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
    「 **舞台部署**」涉及以下步驟：
 
-   * 構建和單元測試
-   * 程式碼掃描
+   * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
+   * 構建和單元測試：此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](create-an-application-project.md) 」。
+   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
    * 部署至舞台
    ![](assets/Stage_Deployment1.png)
 
    階段 **測試**，包括以下步驟：
 
-   * 安全性測試
-   * 效能測試
+   * 安全性測試——此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 效能測試——此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
    ![](assets/Stage_Testing1.png)
 
    生 **產部署**，包括下列步驟：
