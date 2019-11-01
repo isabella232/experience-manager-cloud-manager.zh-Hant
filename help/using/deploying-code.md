@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 使用
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
+source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 ---
 
@@ -51,8 +51,8 @@ source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
 
    階段 **測試**，包括以下步驟：
 
-   * 安全性測試——此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
-   * 效能測試——此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 安全性測試：此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 效能測試：此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
    ![](assets/Stage_Testing1.png)
 
    生 **產部署**，包括下列步驟：
