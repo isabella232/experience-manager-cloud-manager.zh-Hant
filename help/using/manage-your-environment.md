@@ -1,6 +1,6 @@
 ---
-title: 管理您的環境
-seo-title: 管理您的環境
+title: 管理環境
+seo-title: 管理環境
 description: 'null'
 seo-description: 請依照本頁查看用於在Cloud manager中設定和運行CI/CD管道的生產和非生產環境的清單。
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
@@ -9,18 +9,18 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 使用
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 72daabd54cd6216743dfbf4d843f685b3b12b3aa
 
 ---
 
 
-# 管理您的環境 {#manage-your-environments}
+# 管理環境 {#manage-your-environments}
 
 Cloud manager **的** 「概述」頁面包含「 **Environments** 」圖格，其中列出所有受管理的AEM環境。
 
 每個列出的環境都顯示其關聯狀態。
 
-![](assets/Manage_Environments1.png)
+![](assets/Manage-Environments1.png)
 
 ## 教學影片 {#video-tutorial}
 
@@ -36,7 +36,7 @@ Cloud manager **的** 「概述」頁面包含「 **Environments** 」圖格，�
 
 狀態是環境中節點上累計的電源狀態。 如果所有節點都在運行，則為綠色；如果某個節點停止，則為紅色；如果某個節點出現，則為藍色；如果某個節點的電源狀態不可用，則為黃色（按此優先順序順序）。
 
-![](assets/manage_environments-screen2.png)
+![](assets/Environments-card-new.png)
 
 ### 環境 {#environments}
 
@@ -48,4 +48,4 @@ Cloud manager **的** 「概述」頁面包含「 **Environments** 」圖格，�
 >
 >節 **點的STATUS** 代表VM的電源狀態，不反映伺服器上AEM的狀態。 狀態可以是「 **Running** (circle)」、「 **Stopped** （紅色圓圈）」、「Furing up **（藍色圓圈）」或「****** UnavailableCircle（黃色圓圈）」。
 
-![](assets/Manage_Environments2.png)
+![](assets/Environments-tab.png)
