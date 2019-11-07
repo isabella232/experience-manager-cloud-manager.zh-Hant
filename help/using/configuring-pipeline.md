@@ -10,7 +10,7 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
+source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 ---
 
@@ -219,7 +219,7 @@ CI/CD非生產管道分為代碼質量管道和部署管道兩類。 程式碼�
    * **編輯** -允許編輯管線設定
    * **Detail** —— 顯示上次管線執行（如果有）
    * **Build** —— 導航到執行頁，可從中執行管線
-   ![](assets/Configuring_Pipeline_Add-Production3.png)
+   ![](assets/Non-prod-2.png)
 
    >[!NOTE]
    >
