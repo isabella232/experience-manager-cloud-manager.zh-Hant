@@ -1,10 +1,10 @@
 ---
-title: 監控您的環境
-seo-title: 監控您的環境
+title: 監控環境
+seo-title: 監控環境
 description: 'null'
 seo-description: 請依照本頁瞭解Cloud manager中的系統監控，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種度量。
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 每個類別的狀態是個別度量的摘要——如果某個類別中的任何度量處於關鍵狀態，則整個類別在概述頁面中都處於關鍵狀態。 在環境級別和實例級別都可以查看相同的總結。
 
-![](assets/Reports.png)
+![](assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -107,11 +107,11 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 客戶可以看到其生產AEM環境相對於其合約服務層級合約(SLA)的效能。 這可透過「報表」畫面上的子功能表取得。
 例如，下圖顯示2018年的月度SLA成績。
 
-![](assets/sla-reporting1.png)
+![](assets/SLA-Reports-one.png)
 
 和系統監控圖表一樣，滾動資料點顯示該月的特定值。
 
-![](assets/sla-reporting2.png)
+![](assets/SLA-Reports-two.png)
 
 此圖表下的「事件分析」區段顯示在目前選取年度內，程式發生的事件集。 每個事件都有一個時間範圍、一個原因和一組注釋。
 
