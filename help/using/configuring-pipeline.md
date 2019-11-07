@@ -10,7 +10,7 @@ topic-tags: 使用
 content-type: 引用
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
+source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
 
 ---
 
@@ -58,7 +58,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 1. 按一下「 **設定管線** 」(Setup Pipeline)以設定和配置管線。
 
-   ![](assets/Configure_ci-cd-1.png)
+   ![](assets/Setup-Pipeline.png)
 
 1. 將顯 **示「設定管線** 」螢幕。
 
@@ -188,7 +188,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
    >
    >此外，在設定管線後，您仍可使用 **UI中的「生產管線設定」圖格來編輯相同的設**[!UICONTROL Cloud Manager] 定。
 
-   ![](assets/Prod-Pipeline-Settings-Dialog.png)
+   ![](assets/Production-Pipeline.png)
 
 ## 非生產和代碼純質量管道
 
@@ -206,7 +206,7 @@ CI/CD非生產管道分為代碼質量管道和部署管道兩類。 程式碼�
 
 1. 從Cloud manager **主畫面存取「非生產管道** 」圖格。
 
-   ![](assets/Configuring_Pipeline_Add-Production.png)
+   ![](assets/Non-Production-Pipeline.png)
 
 1. 按一下「添加」(Add)按鈕，指定「管線名稱」(Pipeline Name)、「管線類型」(Pipeline Type)和「Git分支」(Git Branch)。
 
