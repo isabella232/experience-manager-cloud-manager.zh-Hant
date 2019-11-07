@@ -1,36 +1,29 @@
 ---
-title: 2019.10.0發行說明
-seo-title: AEM Cloud manager 2019.10.0版本注意事項
-description: 請依照本頁取得Cloud Manager 2019.10.0版的資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2019.10.0版的相關資訊。
+title: 2019.11.0 的發行說明
+seo-title: AEM Cloud manager 2019.11.0版本注意事項
+description: 請依照本頁取得Cloud Manager 2019.11.0版的資訊。
+seo-description: 請依照本頁取得AEM Cloud Manager 2019.11.0版的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
+source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
 
 ---
 
-# 2019.10.0發行說明 {#release-notes-for}
+# 2019.11.0 的發行說明 {#release-notes-for}
 
-下節概述2019.10.0版的一般發行說明，並新增部署步驟的更新，並管理專案版本處理。 [!UICONTROL Cloud Manager] 
+下節概述2019.11.0版的一般發行說明，並新增管道驗證程式的更新以及資產效能測試的增強功能。 [!UICONTROL Cloud Manager] 
 請依照下列章節瞭解詳細資訊。
 
 ## 發行日期 {#release-date}
 
-2019.10.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年10月10日。
+2019.11.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年11月07日。
 
 ## 新功能 {#whats-new}
 
-* 部署步驟中的大部分已提升效能。
-* 如果適用，組建Maven專案的版本現在將以git的形式整合專案版本。
-* 在構建時，有新的環境變數可用。
-* 非生產管道可從「概述」頁面和API的卡 **片中刪除** 。
-* 在階段部署步驟之後，但在安全性測試步驟之前，會立即有新的選擇性核准步驟。
-* 在配置CI/CD流水線時，可以跳過從負載平衡器分離和附加調度器實例，以用於開發和階段環境。
-請參閱部 **[署程式](deploying-code.md#deployment-process)** ，以取得詳細資訊。
-* Cloud Manager CLI已擴充，可支援存取執行步驟記錄檔。
-* Cloud Manager API現在支援編輯管道的已設定分支。
-* 效能測試期間執行的要求現在會在使用者代理 ***中包含特定的Token cloudManagerTest*** 。
+* 如果驗證管線步驟失敗，現在會顯示遇到的特定驗證錯誤。
+* 資產效能測試期間用來刪除資產的機制已改進。
+* 「概 *述」(Overview* )頁 *面上的「管道」(Pipelines* )和「環境 **」(Environments** )卡已以視覺方式刷新。
+* Program Switcher已移動（現在位於Adobe Experience Manager標誌下）。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 「概述」頁面上的某些卡 **片未** 正確垂直對齊。
-* 某些故障條件不會導致管線執行被正確標籤，並阻止後續執行。
+* 在某些情況下，在非生 **產管線上選擇「跳過負載平衡器更改** 」選項實際上並未啟用此選項。
