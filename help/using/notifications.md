@@ -6,17 +6,17 @@ seo-description: 請依照本頁瞭解當AEM Cloud manager中的管道開始並�
 uuid: 73e4bb80-36c1-4408-bdbd-1ac5328359d1
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 使用
+topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
 translation-type: tm+mt
-source-git-commit: 1d4bb0b24cdcd6dc0ed9db58f1e14b6714bb96d6
+source-git-commit: be0350b98c19b3b84519947c04a7e362b46bba21
 
 ---
 
 
 # 通知 {#notifications}
 
-[!UICONTROL Cloud Manager] 可讓使用者在生產部署開始時，以及達到「上線核准」和「排程」步驟時，於管道開始和完成（成功或未成功）時收到通 ******** 知。 這些通知會透過Adobe通知系 [!UICONTROL Experience Cloud] 統傳送。
+[!UICONTROL Cloud Manager] 可讓使用者在生產管道開始和完成（成功或失敗）、生產部署開始時，以及達到「上線核准 **」和「已排程****** 」步驟時收到通知。 這些通知會透過Adobe通知系 [!UICONTROL Experience Cloud] 統傳送。
 
 >[!NOTE]
 >
