@@ -1,20 +1,20 @@
 ---
-title: 瞭解您的測試結果
-seo-title: 瞭解您的測試結果
+title: 瞭解測試結果
+seo-title: 瞭解測試結果
 description: 'null'
 seo-description: 在Cloud manager中執行管道、程式碼掃描、效能和安全性測試驗證您的程式時，請依照本頁瞭解三層閘道。
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 使用
+topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
+source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 ---
 
 
-# 瞭解您的測試結果 {#understand-your-test-results}
+# 瞭解測試結果 {#understand-your-test-results}
 
 在「管 **線** 」程式中，會擷取許多量度，並與企業擁有者所定義的「關鍵績效指標」(KPI)或Adobe Managed services所設定的標準進行比較。
 
@@ -113,7 +113,6 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | AuthorizableNodeName實作不會在節點名稱／路徑中公開可授權的ID。 | 可授權節點名稱產生 | 關鍵 |
 | 預設密碼已變更 | 預設登入帳戶 | 關鍵 |
 | Sling default GET servlet受到DOS攻擊的保護。 | Sling Get Servlet | 關鍵 |
-| Dispatcher正確篩選請求 | CQ Dispatcher 組態 | 關鍵 |
 | Sling Java Script Handler已正確設定 | Sling Java 指令碼處理常式 | 關鍵 |
 | Sling JSP指令碼處理常式已正確設定 | Sling JSP指令碼處理常式 | 關鍵 |
 | SSL已正確設定 | SSL 設定 | 關鍵 |
@@ -121,7 +120,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | Sling Referrer Filter已設定，以防止CSRF攻擊 | Sling 查閱者篩選 | 重要 |
 | Adobe Granite HTML Library manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
 | 已禁用CRXDE支援包 | CRXDE 支援 | 重要 |
-| Sling DavEx Bundle和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
+| Sling DavEx套裝和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
 | 未安裝範例內容 | 範例內容封裝 | 重要 |
 | WCM請求篩選器和WCM除錯篩選器都已停用 | WCM 篩選設定 | 重要 |
 | Sling webDAV搭售和servlet已正確設定 | WebDAV 健康狀態檢查 | 重要 |
