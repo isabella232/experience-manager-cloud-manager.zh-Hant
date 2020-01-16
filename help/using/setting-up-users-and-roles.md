@@ -1,20 +1,20 @@
 ---
-title: 添加用戶和角色
-seo-title: 添加用戶和角色
+title: 新增使用者和角色
+seo-title: 新增使用者和角色
 description: 'null'
 seo-description: 您可以將使用者新增至管理控制台中的Cloud manager產品設定檔，以指派特定角色成員資格。 請依照本節的說明進一步瞭解。
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 需求
+topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 translation-type: tm+mt
-source-git-commit: 73203dca7b20570103af429cf933610941b787be
+source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 
 ---
 
 
-# 添加用戶和角色{#add-users-and-roles}
+# 新增使用者和角色 {#add-users-and-roles}
 
 中的許多功 [!UICONTROL Cloud Manager] 能需要特定的操作權限。 例如，僅允許某些用戶為程式設定關鍵績效指標(KPI)。 這些權限在邏輯上分組為角色。
 
@@ -41,16 +41,10 @@ source-git-commit: 73203dca7b20570103af429cf933610941b787be
 |--- |--- |
 | 企業負責人 | 負責定義KPI、批准生產部署及覆寫重要的3層故障。 |
 | 計畫經理 | 用於 [!UICONTROL Cloud Manager] 執行團隊設定、複查狀態和查看KPI。 可以批准重要的3層故障。 |
-| 部署管理員 | 管理部署操作。 用於 [!UICONTROL Cloud Manager] 執行階段／生產部署。 可編輯CI/CD管線。 可以批准重要的3層故障。 可以訪問Git儲存庫。 請連絡您的CSE/AMS代表以索取。 |
-| 開發人員 | 開發並測試自訂的應用程式碼。 主要用 [!UICONTROL Cloud Manager] 於查看狀態。 應取得程式碼提交的Git儲存庫存取權。 在添加具有此角色的用戶以授予對Git儲存庫的訪問權時，請聯繫您的CSE/AMS代表。 |
+| 部署管理員 | 管理部署操作。 用於 [!UICONTROL Cloud Manager] 執行階段／生產部署。 可編輯CI/CD管線。 可以批准重要的3層故障。 可以訪問Git儲存庫。 |
+| 開發人員 | 開發並測試自訂的應用程式碼。 主要用 [!UICONTROL Cloud Manager] 於查看狀態。 可以訪問Git儲存庫以進行代碼提交。 |
 | 客戶成功工程師 | 通常支援AMS客戶的成功。 為執行需 [!UICONTROL Cloud Manager] 要CSE監督的部署而與之互動。 |
 | 內容作者 | 通常不與互動 [!UICONTROL Cloud Manager]。 可能會使 [!UICONTROL Cloud Manager] 用Program Switcher(已瀏覽過 [!UICONTROL Experience Cloud])來存取AEM。 |
-
->[!NOTE]
->
->對 [!UICONTROL Cloud Manager] Git儲存庫的訪問由CSE管理。 請連絡他們以新增和移除使用者。
->
->如果新添加的用戶需要訪問Git儲存庫，則您需要聯繫您的CSE/AMS代表以獲得訪問權限。 這些角色不提供對Git儲存庫的自動訪問。 最多只能有3個具有Git儲存庫訪問權限的用戶。
 
 ## 使用Admin console建立設定檔 {#using-admin-console-to-create-a-profile}
 
