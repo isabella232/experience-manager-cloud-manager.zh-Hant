@@ -1,18 +1,18 @@
 ---
-title: CI/CD管道
-seo-title: CI/CD管道
+title: CI/CD 管道
+seo-title: CI/CD 管道
 description: 'null'
 seo-description: 請依照本節內容瞭解CI/CD管道，該管道可在Cloud manager中處理部署和生產。
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
-topic-tags: 簡介
+topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
+source-git-commit: 2d7b18ea55e2bd5879cf8bd896cafed4d46c0011
 
 ---
 
-
-# CI/CD管道 {#ci-cd-pipeline}
+SHANKARI_TEST_CHANGE
+# CI/CD 管道 {#ci-cd-pipeline}
 
 ## 管線概述 {#pipeline-overview}
 
@@ -35,7 +35,7 @@ CI/CD管道還自動化了單元和效能測試流程，以提高部署效率，
 | 3.使用自動產生的版本建立為發行 | [!UICONTROL Cloud Manager] 使用新指派的版本號碼建立應用程式。 |
 | 4.評估程式碼品質 | [!UICONTROL Cloud Manager] 掃描原始碼並提供摘要，然後代碼才能部署到階段環境 |
 | 5.已儲存的版本化對象 | 發行對象會儲存起來，以便日後在部署步驟中使用。 |
-| 6. Automatic Deployment of Artifact(s) to AMS AEM Stage | The release artifact is deployed to the stage environment. |
+| 6.自動將對象部署到AMS AEM Stage | 釋放對象部署到舞台環境。 |
 | 7.觸發自動測試 | [!UICONTROL Cloud Manager] 運行對象的效能和安全性測試。 |
 | 8.生產觸發器部署 | 完成自動測試後， [!UICONTROL Cloud Manager] 開始將部署至生產環境。 |
 | 9.獲 [!UICONTROL Cloud Manager] 取要部署的對象 | [!UICONTROL Cloud Manager] 提取儲存的釋放對象。 |
@@ -65,4 +65,4 @@ CI/CD管線提供了質量門或驗收標準，在將代碼從階段環境移動
 
 ### 如何設定門 {#how-to-setup-gates}
 
-如需 **[設定程式碼](configuring-pipeline.md)** 、品質和效能閘道的詳細資訊，請參閱設定閘道。
+如需 **[設定程式碼](configuring-pipeline.md)**、品質和效能閘道的詳細資訊，請參閱設定閘道。
