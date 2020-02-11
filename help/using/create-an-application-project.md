@@ -6,10 +6,10 @@ seo-description: 請依照本頁進一步瞭解如何在Cloud manager入門時�
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 快速入門
+topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
+source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 當客戶已登入Cloud manager時，他們會獲得一個空的git儲存庫。 目前的Adobe Managed Services(AMS)客戶（或內部部署AEM客戶，如果要移轉至AMS），通常其專案程式碼已位於git（或其他版本控制系統）中，並將其專案匯入Cloud Manager Git儲存庫。 但是，新客戶沒有現有的專案。
 
-為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案作為起點。 此程式以 [**AEM Project Archetype為基礎**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
+為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案作為起點。 此程式以 [**AEM Project Archetype為基礎&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 <!-- 
 
@@ -38,6 +38,7 @@ Last Modified Date: 2018-10-08T12:52:50.071-0400
 
    ![](assets/image2018-10-3_14-29-44.png)
 
+[Shankari] ，下述的第二個步驟不正確。 請刪除它。
 1. 按一下「 **建立** 」(Create **)以導航至「管** 線設定」(Pipeline Setup)螢幕。
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -121,7 +122,7 @@ Cloud manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 | **變數名稱** | **定義** |
 |---|---|
-| CM_BUILD | 一律設為"true" |
+| CM_BUILD | 一律設為&quot;true&quot; |
 | 分支 | 為執行配置的分支 |
 | CM_PIPELINE_ID | 數值管線標識符 |
 | CM_PIPELINE_NAME | 管線名稱 |
