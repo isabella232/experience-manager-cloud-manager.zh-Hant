@@ -6,11 +6,11 @@ seo-description: '開始部署程式碼之前，您必須從AEM Cloud Manager設
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 使用
-content-type: 引用
+topic-tags: using
+content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產部署和效能測試參數的參數。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## 瞭解流程 {#understanding-the-flow}
@@ -78,7 +78,6 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    * **On Git Changes** —— 每當有提交添加到配置的git分支時，啟動CI/CD管線。 即使選取此選項，也始終可以手動啟動管線。
    * **手動** -使用UI手動啟動管線。
-   * **已排程** -這個選項即將在即將發行的版本中推出。
    在管道設定或編輯期間，當在任何質量門（如代碼質量、安全性測試和效能測試）中遇到重要故障時，部署管理器可以選擇定義管道的行為。
 
    這對希望實現更自動化流程的客戶非常有用。 可用的選項包括：
@@ -101,7 +100,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 >
 >如果選 **取** 「已排程」選項，您可以在階段部署後將生產部署排程至管道(若已啟用，則 **使用GoLive Approval******)，以等待排程設定。 使用者也可以選擇立即執行生產部署。
 >
->請參閱「 [**部署程式碼**](deploying-code.md)」，以設定部署排程或立即執行生產。
+>請參閱「 [**部署程式碼&#x200B;**](deploying-code.md)」，以設定部署排程或立即執行生產。
 
 ![](assets/Configure_ci-cd-3.png)
 
@@ -200,7 +199,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 CI/CD非生產管道分為代碼質量管道和部署管道兩類。 程式碼品質會從Git分支輸入所有程式碼，以根據Cloud manager的程式碼品質掃描來建立和評估。
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 在主螢幕上，新卡中列出了以下管線：
 
