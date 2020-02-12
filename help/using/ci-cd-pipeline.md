@@ -7,11 +7,11 @@ uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 2d7b18ea55e2bd5879cf8bd896cafed4d46c0011
+source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
 
 ---
 
-SHANKARI_TEST_CHANGE
+
 # CI/CD 管道 {#ci-cd-pipeline}
 
 ## 管線概述 {#pipeline-overview}
