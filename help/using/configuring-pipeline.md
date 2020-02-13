@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
 
 ---
 
@@ -102,7 +102,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 >
 >請參閱「 [**部署程式碼&#x200B;**](deploying-code.md)」，以設定部署排程或立即執行生產。
 
-![](assets/Configure_ci-cd-3.png)
+![](assets/configure-pipeline3.png)
 
 >[!NOTE]
 >
