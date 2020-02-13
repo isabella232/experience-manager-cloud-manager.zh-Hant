@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
+source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 ---
 
@@ -211,7 +211,7 @@ CI/CD非生產管道分為代碼質量管道和部署管道兩類。 程式碼�
 
    此外，還可以從Pipeline Options中設定部署觸發器和重要故障行為。
 
-   ![](assets/Configuring_Pipeline_Add-Production2.png)
+   ![](assets/non-prod-pipe.png)
 
 1. 按一 **下「儲存** 」(Save)，主畫面上的資訊卡上會顯示管線，並執行下列三個動作：
 
