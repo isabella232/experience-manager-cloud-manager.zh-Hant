@@ -35,4 +35,4 @@ source-git-commit: 7cbc42108a6ccc8f7303eb76fd8ca2e9027f49e0
 
 [!UICONTROL Cloud Manager] 遵守Adobe所定義的隱私權原則。 開發人員透過HTTPS將程式碼安全地推 **送至Git Repository** 。
 
-[!DNL使用者介面(UI) [!UICONTROL Cloud Manager]]建立在符合Adobe所定義之通用控制架構的服務之上。 [!DNL使用者介面(UI)for [!UICONTROL Cloud Manager]]使用來自數個雲端提供者的安全服務。
+適用的使用者介面(UI) [!UICONTROL Cloud Manager] 建立在符合Adobe所定義之通用控制架構的服務之上。 使用者介面， [!UICONTROL Cloud Manager] 以使用來自數家雲端供應商的安全服務。
