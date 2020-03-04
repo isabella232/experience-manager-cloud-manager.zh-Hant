@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
+source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
 
 ## 使用者角色 {#user-roles}
 
-角色管理 [!UICONTROL Cloud Manager] 是在 [Adobe Admin Console中完成](https://helpx.adobe.com/enterprise/using/admin-console.html)。 任何使 [!UICONTROL Cloud Manager] 用者都必須是客戶IMS組織的成員，且具有Adobe Managed services產品內容。 將使用者新增至「管理控制台」中的「產品設 [!UICONTROL Cloud Manager] 定檔」，以提供特定角色成員資格。
+角色管理 [!UICONTROL Cloud Manager] 是在 [Adobe Admin Console中完成](https://helpx.adobe.com/enterprise/using/admin-console.html)。 任何使 [!UICONTROL Cloud Manager] 用者都必須是客戶IMS組織的成員，且具有Adobe Managed Services產品內容。 將使用者新增至「管理控制台」中的「產品設 [!UICONTROL Cloud Manager] 定檔」，以提供特定角色成員資格。
 
 要瞭解有關如何設定角色的詳細資訊，請參 [閱設定用戶和角色](setting-up-users-and-roles.md)。
 
@@ -58,3 +58,5 @@ source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
 | 管線修改批准 | 允許編輯「業務所有者」選項。 |  | x |  |  |  |
 | 管線修改受管部署 | 允許編輯CSE監督選項。 |  | x |  |  |  |
 | 步驟讀取 | 請參閱步驟品質量度結果。 | x | x | x | x | x |
+| 產生個人存取Token | 存取Git。 |  | x |  | x |  |
+
