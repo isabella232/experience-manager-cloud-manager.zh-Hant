@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
+source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
 
 ---
 
@@ -28,10 +28,6 @@ source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
 1. 一旦您登入Cloud Manager且基本程式設定完成後，如果儲存庫為空，「概述」畫面將會顯示特殊的動作卡呼叫。****
 
    ![](assets/image2018-10-3_14-29-44.png)
-
-1. 按一下「 **建立** 」(Create **)以導航至「管** 線設定」(Pipeline Setup)螢幕。
-
-   ![](assets/image2018-10-3_14-30-22.png)
 
 1. 按一 **下「建立** 」以開啟對話方塊，讓使用者提供AEM Project Archetype所需的參數。 在其預設形式中，對話框要求輸入兩個值：
 
