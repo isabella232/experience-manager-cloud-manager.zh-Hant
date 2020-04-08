@@ -2,9 +2,9 @@
 product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
-user-guide-title: Experience Manager Cloud Manager Help
+user-guide-title: Experience Manager Cloud Manager 說明
 translation-type: tm+mt
-source-git-commit: bf97120559429e0d5e16df7c14d4e118417c270a
+source-git-commit: 691a1753194839a0dfb020222887aba60973badf
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: bf97120559429e0d5e16df7c14d4e118417c270a
 + 必要條件 {#requirements}
    + [授予的存取權限](access-rights-granted.md)
    + [原始碼存放庫](source-code-repository.md)
-   + [基於角色的權限](role-based-permissions.md)
+   + [角色型權限](role-based-permissions.md)
    + [新增使用者和角色](setting-up-users-and-roles.md)
    + [已佈建的環境](environments-provisioned.md)
 + 快速入門 {#getting-started}
@@ -48,13 +48,14 @@ source-git-commit: bf97120559429e0d5e16df7c14d4e118417c270a
    + [概覽](overview-productupdate-wizard.md)
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
-   + [目前發行說明 (2020.3.0)](release-notes-current.md)
-   + [2020.2.0 的發行說明](release-notes-2020-2-0.md)
-   + [2020.1.0 的發行說明](release-notes-2020-1-0.md)
-   + [2019.12.0 的發行說明](release-notes-2019-12-0.md)
-   + [2019.11.0 的發行說明](release-notes-2019-11-0.md)
-   + [2019.10.0 的發行說明](release-notes-2019-10-0.md)
-   + [2019.9.0 的發行說明](release-notes-2019-9-0.md)
+   + [最新發行說明 (2020.4.0)](release-notes-current.md)
+   + [2020.3.0 版發行說明](release-notes-2020-3-0.md)
+   + [2020.2.0 版發行說明](release-notes-2020-2-0.md)
+   + [2020.1.0 版發行說明](release-notes-2020-1-0.md)
+   + [2019.12.0 版發行說明](release-notes-2019-12-0.md)
+   + [2019.11.0 版發行說明](release-notes-2019-11-0.md)
+   + [2019.10.0 版發行說明](release-notes-2019-10-0.md)
+   + [2019.9.0 版發行說明](release-notes-2019-9-0.md)
    + [2019.8.0 的發行說明](release-notes-2019-8-0.md)
    + [2019.7.0 的發行說明](release-notes-2019-7-0.md)
    + [2019.6.0 的發行說明](release-notes-2019-6-0.md)
