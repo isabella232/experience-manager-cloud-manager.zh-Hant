@@ -6,10 +6,10 @@ seo-description: 如果您已設定一般設定，而且已準備好第一次使
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 快速入門
+topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -24,21 +24,21 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ## 教學影片 {#video-tutorial-one}
 
-### Cloud manager計畫 {#programs-video}
+### Cloud Manager計畫 {#programs-video}
 
-以下視訊提供Cloud manager計畫的概觀，這些計畫代表支援邏輯業務活動集的AEM環境集，通常對應於購買的服務層級合約(SLA)。
+以下視訊提供Cloud Manager計畫的概觀，這些計畫代表支援邏輯業務活動集的AEM環境集，通常對應於購買的服務層級合約(SLA)。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 首次登入 {#logging-in-for-the-first-time}
 
-1. 登入 **Adobe[!UICONTROL Experience Cloud]** ，您就會看到程式清 **單**。
+1. 登入 **Adobe[!UICONTROL Experience Cloud]**，您就會看到程式**&#x200B;清單&#x200B;**。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
-1. 選取程式(例如 **We.Retail Global**)，然後按一下左上角的圖示以開啟 [!UICONTROL Cloud Manager]。
+1. 選擇程式(例如 **We.Retail Global**)，然後按一下左上角的圖示以開啟 [!UICONTROL Cloud Manager]。
 
-   ![](assets/screen_shot_2018-06-04at12611pm.png)
+   ![](assets/first-timea1.png)
 
 1. 顯示的控 [!UICONTROL Cloud Manager] 制面板。
 
@@ -54,6 +54,6 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 ### 「Cloud Manager活動」頁籤 {#activity-video}
 
-Cloud manager可提供方案活動的整合視圖，列出所有CI/CD Pipeline執行（包括生產和非生產），允許查看過去和現在的活動，並可以查看任何活動的詳細資訊。
+Cloud Manager可提供方案活動的整合視圖，列出所有CI/CD Pipeline執行（包括生產和非生產），允許查看過去和現在的活動，並可以查看任何活動的詳細資訊。
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
