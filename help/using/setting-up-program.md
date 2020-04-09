@@ -6,10 +6,10 @@ seo-description: '上線後，企業負責人將需要進行Adobe AEM Cloud Mana
 uuid: 9ecf8743-1f5a-4744-86af-e2256567642f
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 快速入門
+topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 translation-type: tm+mt
-source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -34,7 +34,13 @@ source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
 
 1. 按一下 **Setup Program** （設定程式）以在中啟動設定過程 [!UICONTROL Cloud Manager]。
 
-   ![](assets/SetUpProgram1.png)
+   ![image1](assets/set-up-program/setup1.png)
+
+   >[!NOTE]
+   > 您隨時都可以從動作列切換、編輯或新增程式，如下圖所示。
+
+   ![image1](assets/set-up-program/setup2.png)
+
 
 1. 「安 **裝程式** 」螢幕顯示「編輯程式資訊」。
 
@@ -56,7 +62,7 @@ source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
       * 建議值——每分鐘200次頁面檢視
    **AEM Assets**
 
-   自從Cloud manager初次推出以來，就可以執行AEM Sites程式的效能測試。 在此版本中，也新增了執行AEM Assets程式效能測試的功能。 資產效能測試是透過在30分鐘測試期間重複上傳資產，並測量每個資產的處理時間以及各種系統層級度量來完成。
+   自從Cloud Manager初次推出以來，就可以執行AEM Sites程式的效能測試。 在此版本中，也新增了執行AEM Assets程式效能測試的功能。 資產效能測試是透過在30分鐘測試期間重複上傳資產，並測量每個資產的處理時間以及各種系統層級度量來完成。
 在方案設定期間，會指定資產特定的KPI:
 
    * 第95個百分位數的處理時間
