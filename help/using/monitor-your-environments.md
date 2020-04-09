@@ -2,9 +2,9 @@
 title: 監控環境
 seo-title: 監控環境
 description: 'null'
-seo-description: 請依照本頁瞭解Cloud manager中的系統監控，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種度量。
+seo-description: 請依照本頁瞭解Cloud Manager中的系統監控，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種度量。
 translation-type: tm+mt
-source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 中的系統監 [!UICONTROL Cloud Manager] 控是通過觀察環境中的單個實例並跟蹤每個實例的各種度量來完成的。 每個度量都有兩個定義的臨界值 *-警告臨界值* ，以 *及嚴重臨界值*。
 
-如果量度超過臨界值，則視為臨界狀態；如果量度超過其警告臨界值（但低於其嚴重臨界值），則會視為處於警告狀態。 臨界值由Adobe Managed services設定，可在中視覺化 [!UICONTROL Cloud Manager]。 在大多數情況下，客戶之間的臨界值是一致的，但有時Adobe Managed services會修改臨界值以符合特定客戶需求。 有關臨界值的問題應該提交給您的客戶成功工程師(CSE)。
+如果量度超過臨界值，則視為臨界狀態；如果量度超過其警告臨界值（但低於其嚴重臨界值），則會視為處於警告狀態。 臨界值由Adobe Managed Services設定，可在中視覺化 [!UICONTROL Cloud Manager]。 在大多數情況下，客戶之間的臨界值是一致的，但有時Adobe Managed Services會修改臨界值以符合特定客戶需求。 有關臨界值的問題應該提交給您的客戶成功工程師(CSE)。
 
 ## 導航到系統監視 {#navigating-system-monitoring}
 
@@ -23,9 +23,9 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
    ![](assets/ProgramLanding.png)
 
-1. 按一下程式卡上的第三個圖示。
+1. 按一下程式卡上的第四個圖示。
 
-   ![](assets/program-card.png)
+   ![](assets/first-timea1.png)
 
    *或*,
 
@@ -51,12 +51,12 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ## 教學影片 {#video-tutorial}
 
-### Cloud manager報表概述 {#reports-video}
+### Cloud Manager報表概述 {#reports-video}
 
 「Cloud Manager報表」透過一組圖表提供方案環境和AEM例項的檢視，這些圖表可報告並追蹤每個AEM例項的各種量度。
 請參閱以下視訊以取得詳細資訊。
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)
 
 ## 系統監控詳細資訊 {#system-monitoring-detail}
 
@@ -94,7 +94,7 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 **儲存**
 
-* 磁碟空間：主機上每個裝載點的已用磁碟空間（以兆位元組為單位）。 每個裝載點有不同的度量。 至少，您會看到"/"和"/mnt"的量度，但是，其他的裝載點量度可能會視特定例項設定而定。
+* 磁碟空間：主機上每個裝載點的已用磁碟空間（以兆位元組為單位）。 每個裝載點有不同的度量。 至少，您會看到&quot;/&quot;和&quot;/mnt&quot;的量度，但是，其他的裝載點量度可能會視特定例項設定而定。
 * 資料夾大小：AEM區段商店：AEM區段商店的已用磁碟空間（以GB為單位）。
 
 **應用程式**
@@ -119,13 +119,13 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ## SLA度量 {#sla-metrics}
 
-* **作者合約**:這是您與Adobe Managed services簽訂的作者層合約中定義的SLA。
+* **作者合約**:這是您與Adobe Managed Services簽訂的作者層合約中定義的SLA。
 
 * **AMS作者SLA**:這是由Adobe或我們的廠商造成的生產作者層級保理事件，經評估的持續運作時間。
 
 * **作者SLA**:這是作者層所測量的正常運行時間，忽略計畫的停機時間（如維護窗口）。
 
-* **使用者合約**:這是您與Adobe Managed services簽訂的發佈層合約中定義的SLA。
+* **使用者合約**:這是您與Adobe Managed Services簽訂的發佈層合約中定義的SLA。
 
 * **AMS最終用戶SLA**:這是由Adobe或我們的廠商所造成的生產發佈層代理事件，經評估的正常運作時間。
 
