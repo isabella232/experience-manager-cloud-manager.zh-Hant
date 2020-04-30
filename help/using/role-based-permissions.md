@@ -1,23 +1,23 @@
 ---
-title: 基於角色的權限
+title: 角色型權限
 description: 請依照本頁來瞭解角色型權限。
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
+source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
 
 ---
 
 
-# 基於角色的權限 {#role-based-permissions}
+# 角色型權限 {#role-based-permissions}
 
 [!UICONTROL Cloud Manager] 具有具有適當權限的預先配置角色。 例如，開發人員會開發程式碼，並具有將程式碼推送至 **Git Repository的權限**。 或者，企業擁有者擁有不同的權限，可讓他們定義關鍵績效指標(KPI)並批准部署。
 
 ## 使用者角色 {#user-roles}
 
-角色管理 [!UICONTROL Cloud Manager] 是在 [Adobe Admin Console中完成](https://helpx.adobe.com/enterprise/using/admin-console.html)。 任何使 [!UICONTROL Cloud Manager] 用者都必須是客戶IMS組織的成員，且具有Adobe Managed Services產品內容。 將使用者新增至「管理控制台」中的「產品設 [!UICONTROL Cloud Manager] 定檔」，以提供特定角色成員資格。
+角色管理 [!UICONTROL Cloud Manager] 是在 [Adobe Admin Console中完成](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。 任何使 [!UICONTROL Cloud Manager] 用者都必須是客戶IMS組織的成員，且具有Adobe Managed Services產品內容。 將使用者新增至「管理控制台」中的「產品設 [!UICONTROL Cloud Manager] 定檔」，以提供特定角色成員資格。
 
 要瞭解有關如何設定角色的詳細資訊，請參 [閱設定用戶和角色](setting-up-users-and-roles.md)。
 
@@ -50,13 +50,14 @@ source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
 | 執行批准部署至生產 | 提供GoLive Approval。 | x | x | x |  |  |
 | 執行計畫部署至生產 | 排程生產部署。 | x | x | x |  | x |
 | 執行部署至生產 | 暫停CSE監督時，將應用程式部署至生產環境。 |  |  |  |  | x |
-| 執行取消 | 取消當前執行。 | x | x | x |  |  |
+| 執行取消 | 取消當前執行。 |  |  | x |  |  |
 | 執行覆蓋質量門失敗 | 批准重要的質量門故障。 | x | x | x |  |  |
 | 管線建立 | 設定／編輯管線。 |  | x |  |  |  |
 | 管線讀取 | 請參閱管線詳細資訊。 | x | x | x | x | x |
 | 管線寫入 | 設定／編輯管線。 |  | x |  |  |  |
 | 管線修改批准 | 允許編輯「業務所有者」選項。 |  | x |  |  |  |
 | 管線修改受管部署 | 允許編輯CSE監督選項。 |  | x |  |  |  |
+| 管線刪除 | 允許刪除管線。 |  | x |  |  |  |
 | 步驟讀取 | 請參閱步驟品質量度結果。 | x | x | x | x | x |
 | 產生個人存取Token | 存取Git。 |  | x |  | x |  |
 
