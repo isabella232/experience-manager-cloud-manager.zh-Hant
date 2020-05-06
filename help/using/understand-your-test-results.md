@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 278858465592482449080fedc3c0165805db223d
+source-git-commit: 4edbbff4e519a1403c3140cc742def35f9516eff
 workflow-type: tm+mt
 source-wordcount: '1461'
 ht-degree: 6%
@@ -54,7 +54,7 @@ ht-degree: 6%
 | 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
 | 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 1 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
-| 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | >0 |
+| 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | > 0 |
 
 
 >[!NOTE]
@@ -124,7 +124,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | Sling Referrer Filter已設定，以防止CSRF攻擊 | Sling 查閱者篩選 | 重要 |
 | Adobe Granite HTML Library Manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
 | 已禁用CRXDE支援包 | CRXDE 支援 | 重要 |
-| Sling DavEx套裝和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
+| Sling DavEx Bundle和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
 | 未安裝範例內容 | 範例內容封裝 | 重要 |
 | WCM請求篩選器和WCM除錯篩選器都已停用 | WCM 篩選設定 | 重要 |
 | Sling WebDAV搭售和servlet已正確設定 | WebDAV 健康狀態檢查 | 重要 |
