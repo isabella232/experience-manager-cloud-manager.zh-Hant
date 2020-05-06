@@ -1,26 +1,29 @@
 ---
-title: 瞭解測試結果
-seo-title: 瞭解測試結果
+title: 了解測試結果
+seo-title: 了解測試結果
 description: 'null'
-seo-description: 在Cloud manager中執行管道、程式碼掃描、效能和安全性測試驗證您的程式時，請依照本頁瞭解三層閘道。
+seo-description: 在Cloud Manager中執行管道、程式碼掃描、效能和安全性測試驗證您的程式時，請依照本頁瞭解三層閘道。
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+source-git-commit: 278858465592482449080fedc3c0165805db223d
+workflow-type: tm+mt
+source-wordcount: '1461'
+ht-degree: 6%
 
 ---
 
 
-# 瞭解測試結果 {#understand-your-test-results}
+# 了解測試結果 {#understand-your-test-results}
 
-在「管 **線** 」程式中，會擷取許多量度，並與企業擁有者所定義的「關鍵績效指標」(KPI)或Adobe Managed services所設定的標準進行比較。
+在「管 **線** 」程式中，會擷取許多量度，並與企業擁有者所定義的「關鍵績效指標」(KPI)或Adobe Managed Services所設定的標準進行比較。
 
 這些是使用本節定義的三層式選通系統來報告。
 
-## 運行管道時的三層門 {#three-tier-gates-while-running-a-pipeline}
+## 運行管道時的三層門  {#three-tier-gates-while-running-a-pipeline}
 
 目前有三扇門正在醖釀之中：
 
@@ -36,7 +39,7 @@ source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 >[!NOTE]
 >
->在僅代碼質量管道中，不能改寫代碼質量測試門中的重要故障，因為代碼質量測試步驟是管道中的最後一步。
+>在僅代碼質量管道中，不能覆蓋代碼質量測試門中的重要故障，因為代碼質量測試步驟是管道中的最後一步。
 
 ## 程式碼品質測試 {#code-quality-testing}
 
@@ -47,17 +50,18 @@ source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 | 安全性分級 | A = 0漏洞 <br/>B =至少1個小漏洞<br/> C =至少1個大漏洞 <br/>D =至少1個嚴重漏洞 <br/>E =至少1個攔截器漏洞 | 關鍵 | &lt; B |
 | 可靠性分級 | A = 0錯誤 <br/>B =至少1個次要錯誤 <br/>C =至少1個主要錯誤 <br/>D =至少1個嚴重錯誤E =至少1個攔截器錯誤 | 重要 | &lt; C |
 | 可維護性評級 | 代碼氣味的未付補救成本是： <br/><ul><li>&lt;=5%已進入應用程式的時間，評分為A </li><li>6%到10%的評分是B </li><li>11%到20%的評分是C </li><li>21%到50%的評分是D</li><li>超過50%的項目是E</li></ul> | 重要 | &lt; A |
-| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式：其 <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/>中：CT =運行單元測試時至少評估為'true'的條件 <br/>CF =運行單元測試時評估為'false'的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
-| 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | &gt; 1 |
-| 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | &gt; 1 |
-| 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | &gt; 1% |
+| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中： CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
+| 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
+| 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 1 |
+| 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
+| 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | >0 |
 
 
 >[!NOTE]
 >
 >請參閱 [量度定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，以取得詳細定義。
 
-您可以在此處下載規 [則清單-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
+您可以在此處下載規 [則清單-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -118,12 +122,12 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | SSL已正確設定 | SSL 設定 | 關鍵 |
 | 未發現明顯不安全的使用者設定檔原則 | 使用者設定檔預設存取 | 關鍵 |
 | Sling Referrer Filter已設定，以防止CSRF攻擊 | Sling 查閱者篩選 | 重要 |
-| Adobe Granite HTML Library manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
+| Adobe Granite HTML Library Manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
 | 已禁用CRXDE支援包 | CRXDE 支援 | 重要 |
 | Sling DavEx套裝和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
 | 未安裝範例內容 | 範例內容封裝 | 重要 |
 | WCM請求篩選器和WCM除錯篩選器都已停用 | WCM 篩選設定 | 重要 |
-| Sling webDAV搭售和servlet已正確設定 | WebDAV 健康狀態檢查 | 重要 |
+| Sling WebDAV搭售和servlet已正確設定 | WebDAV 健康狀態檢查 | 重要 |
 | Web伺服器已設定為防止點按劫持 | Web 伺服器組態 | 重要 |
 | 複製不使用「admin」用戶 | 複寫及傳輸使用者 | 資訊 |
 
@@ -143,14 +147,14 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 | **量度** | **類別** | **故障閾值** |
 |---|---|---|
-| 頁面請求錯誤率% | 關鍵 | &gt;= 2% |
-| CPU使用率 | 關鍵 | &gt;= 80% |
-| 磁碟IO等待時間 | 關鍵 | &gt;= 50% |
-| 95百分位數回應時間 | 重要 | &gt;=方案層級KPI |
-| 峰值響應時間 | 重要 | &gt;= 18秒 |
+| 頁面請求錯誤率% | 關鍵 | >= 2% |
+| CPU使用率 | 關鍵 | >= 80% |
+| 磁碟IO等待時間 | 關鍵 | >= 50% |
+| 95百分位數回應時間 | 重要 | >=方案層級KPI |
+| 峰值響應時間 | 重要 | >= 18秒 |
 | 每分鐘頁面檢視次數 | 重要 | &lt;方案層級KPI |
-| 磁碟頻寬利用率 | 重要 | &gt;= 90% |
-| 網路頻寬利用率 | 重要 | &gt;= 90% |
+| 磁碟頻寬利用率 | 重要 | >= 90% |
+| 網路頻寬利用率 | 重要 | >= 90% |
 | 每分鐘請求數 | 資訊 | &lt; 6000 |
 
 ### 效能測試結果圖 {#performance-testing-results-graphs}
