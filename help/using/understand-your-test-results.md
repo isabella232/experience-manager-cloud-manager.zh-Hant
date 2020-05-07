@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 4edbbff4e519a1403c3140cc742def35f9516eff
+source-git-commit: 4fbcb42157af0200ece491df9b8da4d0ed83efb5
 workflow-type: tm+mt
 source-wordcount: '1461'
 ht-degree: 6%
@@ -52,7 +52,7 @@ ht-degree: 6%
 | 可維護性評級 | 代碼氣味的未付補救成本是： <br/><ul><li>&lt;=5%已進入應用程式的時間，評分為A </li><li>6%到10%的評分是B </li><li>11%到20%的評分是C </li><li>21%到50%的評分是D</li><li>超過50%的項目是E</li></ul> | 重要 | &lt; A |
 | 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中： CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
 | 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
-| 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 1 |
+| 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 0 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
 | 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | > 0 |
 
@@ -137,7 +137,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 在管線設定期間，部署管理員可決定要將多少流量導引至每個儲存貯體。
 
-您可從「設定CI/CD管線」，進一步 [瞭解儲存貯體控制](configuring-pipeline.md)。
+您可從「設定CI/CD管線」，進一步了 [解儲存貯體控制項](configuring-pipeline.md)。
 
 >[!NOTE]
 >
