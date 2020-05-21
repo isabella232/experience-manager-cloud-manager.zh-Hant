@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: cd6272bfd1ffdbf1802c30217e0c615392076109
+source-git-commit: 3663bd773c0043282359d690621de5023fa2974c
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 6%
@@ -105,7 +105,7 @@ public class DoThis implements Runnable {
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
-  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text");
+  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
   response.sendStatus(HttpServletResponse.SC_OK);
 }
 ```
