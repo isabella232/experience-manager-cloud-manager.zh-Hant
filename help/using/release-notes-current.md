@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager 2020.6.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.6.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.6.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
+source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 2020.6.0 版發行說明 {#release-notes-for}
 
-下節概述2020.5.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
+下節概述2020.6.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
 
 ## 發行日期 {#release-date}
 
@@ -33,9 +33,6 @@ ht-degree: 6%
 
 ## 錯誤修正 {#bug-fixes}
 
-
 * 設定生產管線時，某些客戶看不到「排程部署」選項。
 
 * 某些部署消息被截斷。
-
-
