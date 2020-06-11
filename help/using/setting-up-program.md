@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 translation-type: tm+mt
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+source-git-commit: 6851884b08c0c0a971242a958f72a7673a1a1196
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 2%
 
 ---
 
