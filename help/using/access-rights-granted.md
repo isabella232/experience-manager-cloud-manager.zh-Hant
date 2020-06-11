@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
 translation-type: tm+mt
-source-git-commit: e8484052124c23d4849c59f6c76262a3284ef2ac
+source-git-commit: e48f9121423f46f4cf858c4951ad412582020bdb
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 21%
@@ -26,6 +26,6 @@ ht-degree: 21%
 
 ### 使用者和角色 {#users-and-roles}
 
-在Adobe為您的公司建立組織後，您指定的管理員即會新增為該組織的第一名成員。The administrator will be granted the administrator permissions by default, and assigned the [!UICONTROL AEM Managed Services] **Product**, and one or more [!UICONTROL Cloud Manager] **Product Profiles**. 請造訪 [新增使用者和角色](setting-up-users-and-roles.md) ，以進一步瞭解如何使用管理控制台來設定和管理您的團隊使用者。
+在Adobe為您的公司建立組織後，您指定的管理員即會新增為該組織的第一名成員。The administrator will be granted the administrator permissions by default, and assigned the [!UICONTROL AEM Managed Services] Product, and one or more [!UICONTROL Cloud Manager] Product Profiles. 請造訪 [新增使用者和角色](setting-up-users-and-roles.md) ，以進一步瞭解如何使用管理控制台來設定和管理您的團隊使用者。
 
 授予這些權限後，管理員現在會設定單一登入（使用Adobe ID）來存取服務、登入 [!UICONTROL Experience Cloud] AEM雲端環境並使用 [!UICONTROL Cloud Manager]。
