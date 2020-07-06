@@ -2,23 +2,26 @@
 title: 部署程式碼
 seo-title: 部署程式碼
 description: 'null'
-seo-description: 配置了管線（儲存庫、環境和測試環境）後，您就可以部署代碼。 請依照本頁進一步瞭解。
+seo-description: 配置了管線（儲存庫、環境和測試環境）後，您就可以部署代碼。 請依本頁瞭解詳細資訊。
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 使用
+topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
+source-git-commit: 509a74b2e85d5880bafa56cd0ab3bae9c57b0683
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 3%
 
 ---
 
 
 # 部署程式碼 {#deploy-your-code}
 
-## 使用Cloud manager部署程式碼 {#deploying-code-with-cloud-manager}
+## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
 
-在配置了 **Pipeline** （儲存庫、環境和測試環境）後，您就可以部署代碼。
+在配置了 **Pipeline**  (儲存庫、環境和測試環境) 後，您就可以部署代碼。
 
 1. 按一 **下** 「從雲端管理員部署」，開始部署程式。
 
@@ -43,19 +46,19 @@ source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
    「 **舞台部署**」涉及以下步驟：
 
-   * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](create-an-application-project.md) 」。
-   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 驗證： 此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
+   * 構建和單元測試： 此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](create-an-application-project.md) 」。
+   * 代碼掃描： 此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
    * 部署至舞台
    ![](assets/Stage_Deployment1.png)
 
-   階段 **測試**，包括以下步驟：
+   The **Stage Testing**, involves the following steps:
 
-   * 安全性測試：此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
-   * 效能測試：此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 安全性測試： 此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 效能測試： 此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
    ![](assets/Stage_Testing1.png)
 
-   生 **產部署**，包括下列步驟：
+   The **Production Deployment**, involves the following steps:
 
    * **申請核准** （如果已啟用）
    * **排程生產部署** （如果已啟用）
@@ -88,12 +91,12 @@ source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 下節說明AEM和Dispatcher套件在階段階段和生產階段的部署方式。
 
-Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存位置。  在管線的部署階段，會從此位置檢索這些對象。
+Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存位置。  在管線的部署階段，會從此位置檢索這些對象。
 
-當Cloud manager部署到非生產拓撲時，其目標是盡快完成部署，因此對象將同時部署到所有節點，如下所示：
+當Cloud Manager部署到非生產拓撲時，其目標是盡快完成部署，因此對象將同時部署到所有節點，如下所示：
 
-1. Cloud manager會決定每個對象是AEM還是分派程式套件。
-1. Cloud manager會從負載平衡器中刪除所有調度程式，以在部署期間隔離環境。
+1. Cloud Manager會決定每個對象是AEM還是分派程式套件。
+1. Cloud Manager會從負載平衡器中刪除所有調度程式，以在部署期間隔離環境。
 
    除非另行配置，否則您可以跳過開發和階段部署中的負載平衡器更改，即分離和附加非生產管線中的步驟，以用於開發環境，以及生產管線中的步驟，用於階段環境。
 
@@ -103,7 +106,7 @@ Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
    >
    >此功能預期主要由1-1-1客戶使用。
 
-1. 每個AEM物件都會透過Package Manager API部署至每個AEM例項，並依套件而定，以決定部署順序。
+1. 每個AEM物件都會透過Package Manager API部署至每個AEM例項，並包含套件相依性，以決定部署順序。
 
    有關如何使用軟體包來安裝新功能、在實例之間傳輸內容以及備份儲存庫內容的詳細資訊，請參閱如何使用軟體包。
 
@@ -115,18 +118,18 @@ Cloud manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 
    1. 當前配置將備份並複製到臨時位置
    1. 除不可變檔案外，所有配置都將被刪除。 有關詳細資訊，請參閱管理Dispatcher配置。 這會清除目錄，以確保不會留下孤立的檔案。
-   1. 該對象被提取到httpd目錄。  不會覆寫不可變的檔案。 在部署時，您對git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS調度器框架的核心檔案，不能更改。
+   1. 該對象被提取到目 `httpd` 錄。  不會覆寫不可變的檔案。 在部署時，您對git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS調度器框架的核心檔案，不能更改。
    1. Apache會執行組態測試。 如果未找到錯誤，則重新載入服務。 如果發生錯誤，則從備份中恢復配置，重新載入服務，並將錯誤報告回Cloud Manager。
    1. 在流水線配置中指定的每個路徑都無效或從調度器快取中刷新。
    >[!NOTE]
    >
-   >Cloud manager希望調度器對象包含完整檔案集。  所有調度程式配置檔案都必須存在於git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
+   >Cloud Manager希望調度器對象包含完整檔案集。  所有調度程式配置檔案都必須存在於git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
 
 1. 成功將所有AEM和Dispatcher套件部署至所有節點後，會將Dispatcher新增至負載平衡器，而部署即告完成。
 
    >[!NOTE]
    >
-   >您可以跳過開發和階段部署中的負載允許更改，即在非生產管道、開發人員環境和生產管道中分離和附加步驟，以用於階段環境。
+   >您可以跳過開發和階段部署中的負載平衡器更改，即在非生產流水線、開發人員環境和生產流水線中分離和附加步驟，以用於階段環境。
 
 ### 部署至生產階段 {#deployment-production-phase}
 
