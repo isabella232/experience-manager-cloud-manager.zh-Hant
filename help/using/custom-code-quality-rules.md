@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 3663bd773c0043282359d690621de5023fa2974c
+source-git-commit: 8c651bcb187d911448475f6031c93bf956277e9f
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 6%
@@ -621,7 +621,8 @@ AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是
 
 #### 不符合代碼 {#non-compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + projectA
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -632,7 +633,8 @@ AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是
 
 #### 相容代碼 {#compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + shared-config
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -725,7 +727,7 @@ AEM Meduration Tools檔案提供如何將元件從傳統UI轉換為Touch UI的�
 
 為了與雲服務部署模型相容，個別內容包必須包含儲存庫不可變區域的內容（即，不應由客戶代碼修改，並將導致單獨違規）或可變區域（即，其他所有內容），但不能同時包含兩者。 `/apps and /libs, although /libs` 例如，包含兩者的套件 `/apps/myco/components/text and /etc/clientlibs/myco` 與雲端服務不相容，且會造成問題報告。
 
-請參閱 [AEM專案結構](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) ，以取得詳細資訊。
+Refer to [AEM Project Structure](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
 
 ### 不應使用反向複製代理 {#oakpal-reverse-replication}
 
