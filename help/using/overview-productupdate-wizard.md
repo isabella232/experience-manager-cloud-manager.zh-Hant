@@ -8,14 +8,17 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 4%
 
 ---
 
 
-# 綜覽 {#overview-product-update-wizard}
+# 概覽 {#overview-product-update-wizard}
 
-「產品更新」精靈是Cloud manager客戶的逐步引導式體驗，這些客戶要升級至最新的Adobe Experience Manager(AEM)6.5。它可簡化端對端程式，並使用Cloud Manager的CI/CD架構和內建的自動化測試，確保符合AEM最佳實務。
+「產品更新」精靈是Cloud Manager客戶的逐步引導式體驗，這些客戶要升級至最新的Adobe Experience Manager(AEM)6.5。 它可簡化端對端程式，並使用Cloud Manager的CI/CD架構和內建的自動化測試，確保符合AEM最佳實務。
 
 精靈包含五個階段，可引導使用者進行AEM產品更新：
 
@@ -26,12 +29,13 @@ source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 * **完成**
 
 
-## 使用產品更新精靈 {#using-product-update-wizard}
+## Using Product Update Wizard {#using-product-update-wizard}
 
 >[!NOTE]
->已登入Cloud manager且符合升級至AEM 6.5資格的客戶將可運用「產品更新」精靈。 如需詳細資訊，請連絡您的客戶成功工程師(CSE)。
+>
+>已登入Cloud Manager且符合升級至AEM 6.5資格的客戶將可運用「產品更新」精靈。 如需詳細資訊，請連絡您的客戶成功工程師(CSE)。
 
-1. 您會透過Cloud manager收到脈衝通知，通知您您的程式已提供AEM 6.5。
+1. 您會透過Cloud Manager收到脈搏通知，通知您您的程式已提供AEM 6.5。
 
 1. 資訊 **[!UICONTROL AEM 6.5 Update]** 卡會顯示在的概述畫面上 [!UICONTROL Cloud Manager]。 此資訊卡將協助追蹤您目前所處的更新程式階段，並通知您下一步要採取的動作。 選擇 **[!UICONTROL Start Update]** 以啟動嚮導。
 
