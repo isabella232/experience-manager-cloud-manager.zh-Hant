@@ -8,7 +8,10 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
+source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +30,7 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 這是對升級至Adobe Experience Manager(AEM)6.5所需開發工作的評估。
 
 >[!NOTE]
+>
 >若要進一步瞭解圖樣偵測器，請參 [閱使用圖樣偵測器評估升級複雜性](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
 ## 運行評估器 {#running-evaluator}
@@ -36,7 +40,7 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 1. 按一下 **[!UICONTROL Run Evaluation]**。
 
    >[!NOTE]
-   >該圖案檢測器可在任何環境上運行。 但是，為了提高檢測率並避免關鍵業務實例出現任何慢速，Cloud manager將在作者實例的測試環境中運行它。
+   >該圖案檢測器可在任何環境上運行。 但是，為了提高檢測率並避免關鍵業務實例出現任何慢速，Cloud Manager將在作者實例的測試環境中運行它。
 
    ![](assets/Run-Evaluation.png)
 
@@ -47,5 +51,6 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
    ![](assets/Evaluation-1.png)
 
 
->[!NOTE]
->Cloud manager中最新版本的「產品更新」精靈僅支援「 **評估** 」階段。 其他四個階段，即 **補救**、 **執行**、 **驗證**&#x200B;和 **** 完成計畫即將推出。
+   >[!NOTE]
+   >
+   >Cloud Manager中最新版本的「產品更新」精靈僅支援「 **評估** 」階段。 其他四個階段，即 **補救**、 **執行**、 **驗證**&#x200B;和 **** 完成計畫即將推出。
