@@ -1,55 +1,58 @@
 ---
-title: 管理Dispatcher配置
-seo-title: 管理Dispatcher配置
+title: 管理 Dispatcher 設定
+seo-title: 管理 Dispatcher 設定
 description: 'null'
 seo-description: 請依照本頁瞭解如何配置調度程式。
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 快速入門
+topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: e0a280efddb1e31f5aef65f0f52fc5b4e71de3da
+source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+workflow-type: tm+mt
+source-wordcount: '603'
+ht-degree: 2%
 
 ---
 
 
-# 管理Dispatcher配置 {#manage-your-dispatcher-configurations}
+# 管理 Dispatcher 設定 {#manage-your-dispatcher-configurations}
 
-## 使用Cloud manager部署Dispatcher配置檔案 {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
+## 使用Cloud Manager部署Dispatcher配置檔案 {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-除了一般的AEM內容套件外，Cloud manager還能夠部署Web伺服器和Dispatcher組態檔案(假設這些檔案儲存在 **Git Repository**)。
+除了一般的AEM內容套件外，Cloud Manager還能夠部署Web伺服器和Dispatcher組態檔案(假設這些檔案儲存在 **Git Repository**)。
 
-要利用此功能，Maven組建版本應生成包含至少兩個目錄( ***conf*** 和 ***conf.d)的zip檔案***。 此zip檔案可使用maven-assembly-plugin來製作。 由Cloud manager使用內建精靈產生的專 [案](create-an-application-project.md) ，在建立專案時會建立正確的Maven專案結構。 這是新Managed services客戶的推薦路徑。
+要利用此功能，Maven組建版本應生成包含至少兩個目錄( ***conf*** 和 ***conf.d)的zip檔案***。 此zip檔案可使用maven-assembly-plugin來製作。 由Cloud Manager使用內建精靈產生的專 [案](/help/using/create-an-application-project.md) ，在建立專案時會建立正確的Maven專案結構。 這是新Managed Services客戶的推薦路徑。
 
 部署到Dispatcher **Instance**&#x200B;時，這些目錄的內容將覆蓋Dispatcher實例上這些目錄的內容。 由於Web伺服器和Dispatcher配置檔案通常需要特定於環境的資訊，為了使此功能正確使用，您首先需要與客戶成功工程師(CSE)合作，以在 ***/etc/sysconfig/httpd中設定這些環境變數***。
 
-### Steps for Configuring Dispatcher For Existing Managed Services Customers {#steps-for-configuring-dispatcher}
+### 為現有Managed Services客戶配置Dispatcher的步驟 {#steps-for-configuring-dispatcher}
 
 按照以下步驟完成配置Dispatcher的初始過程：
 
 1. 從CSE中獲取當前生產配置檔案。
-1. Remove hard-coded environment-specific data (for example, publish renderer IP) and replace with variables.
+1. 移除硬式編碼的環境特定資料（例如發佈轉譯器IP），並以變數取代。
 1. 在每個目標Dispatcher的鍵值對中定義所需的變數，並請求CSE在每個實例上添加 ***/etc/sysconfig/httpd*** 。
-1. Test the updated configurations on your stage environment, then request your CSE to deploy to production.
-1. Commit files to **Git Repository**.
+1. 在您的舞台環境上測試更新的組態，然後請求CSE部署至生產環境。
+1. 將檔案提交 **到Git儲存庫**。
 
-1. Deploy through Cloud Manager.
+1. 透過Cloud Manager進行部署。
 
 >[!NOTE]
 >
->Migrating Dispatcher and web server configurations to Git Repository may be done during Cloud Manager on-boarding, but can also be done at a later point in time.****
+>將Dispatcher和Web伺服器配置遷移到 **Git Repository** (Git Repository)可以在Cloud Manager上線期間完成，但也可以在稍後的時間點完成。
 
-### 例如 {#example}
+### 範例 {#example}
 
-The specific file and directory structure may vary based on the specifics of your project, but this example should provide a concrete guide to how to structure your project to include Apache and Dispatcher Configurations.
+特定的檔案和目錄結構可能因項目的具體情況而有所不同，但本示例應提供如何將項目結構化為包含Apache和Dispatcher配置的具體指南。
 
-1. Create a subdirectory named `dispatcher`.
+1. 建立名為的子目錄 `dispatcher`。
 
    >[!NOTE]
-   Feel free to use any name here, but the directory name created in this step must be the same as the name used in Step 6.
+   您可在此處使用任何名稱，但在此步驟中建立的目錄名稱必須與步驟6中使用的名稱相同。
 
-1. This subdirectory will contain a Maven module which builds the Dispatcher zip file using the Maven Assembly Plugin. To start this, in the  directory, create a  file with this content, changing the parent reference, artifactId, and name as necessary.`dispatcher``pom.xml`
+1. 此子目錄將包含一個Maven模組，該模組使用Maven Assembly Plugin構建Dispatcher zip檔案。 要啟動此操作，請在 `dispatcher` 目錄中建立 `pom.xml` 包含此內容的檔案，根據需要更改父引用、artifactId和名稱。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,9 +93,9 @@ The specific file and directory structure may vary based on the specifics of you
    ```
 
    >[!NOTE]
-   As in Step 1, the artifactId and name here can be other values if you want;  here just an example used for simplicity.`dispatcher`
+   如同在步驟1中，此處的artifactId和名稱可以是其他值（如果需要）; `dispatcher` 這裡只有一個簡單的例子。
 
-1. The Maven Assembly Plugin requires a descriptor to define how the zip file is created. ** To create this descriptor, create a file (again, in the  subdirectory) named with this content. `dispatcher``assembly.xml`請注意，上述檔案的第26行會參照此 `pom.xml` 檔案名稱。
+1. Maven Assembly Plugin需要一個描 *述符* ，以定義如何建立zip檔案。 要建立此描述符，請建立一個以此內容命名的文 `dispatcher` 件(同樣 `assembly.xml`在子目錄中)。 請注意，上述檔案的第26行會參照此 `pom.xml` 檔案名稱。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -115,7 +118,7 @@ The specific file and directory structure may vary based on the specifics of you
    </assembly>
    ```
 
-1. Now, create a subdirectory named  (as referenced in the assembly descriptor above on line 11) inside the dispatcher subdirectory to store the actual Apache and Dispatcher configurations. `src`在此目 `src` 錄中，建立名 `conf`為、 `conf.d`、 `conf.dispatcher.d`和的目錄 `conf.modules.d`。
+1. 現在，在dispatcher子目錄內 `src` 建立名為（如第11行上面的匯編描述符中所引用）的子目錄，以儲存實際的Apache和Dispatcher配置。 在此目 `src` 錄中，建立名 `conf`為、 `conf.d`、 `conf.dispatcher.d`和的目錄 `conf.modules.d`。
 1. 現在，您可以用 `conf`配置 `conf.d`文 `conf.dispatcher.d`件填入、和 `conf.modules.d` 目錄中。 例如，預設配置由這些檔案和符號連結組成。
 
    ```
