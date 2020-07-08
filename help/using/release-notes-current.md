@@ -1,38 +1,40 @@
 ---
-title: 2020.6.0 版發行說明
-seo-title: AEM Cloud Manager 2020.6.0版本注意事項
-description: 請依照本頁取得Cloud Manager 2020.6.0版的相關資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2020.6.0版的相關資訊
+title: 2020.7.0 版發行說明
+seo-title: AEM Cloud Manager 2020.7.0版本注意事項
+description: 請依照本頁取得Cloud Manager 2020.7.0版的相關資訊
+seo-description: 請依照本頁取得AEM Cloud Manager 2020.7.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
+source-git-commit: 26492dc02371d21670778f3cd60d26146439548e
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 6%
+source-wordcount: '166'
+ht-degree: 8%
 
 ---
 
-# 2020.6.0 版發行說明 {#release-notes-for}
+# 2020.7.0 版發行說明 {#release-notes-for}
 
-下節概述2020.6.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
+下節概述2020.7.0版 [!UICONTROL Cloud Manager] 的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-2020.6.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年6月04日。
+2020.6.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年7月09日。
 
 ## 新功能 {#whats-new}
 
-* 引導著陸頁面上的標籤，以通知並指示使用者基本導覽。
+* 在生產部署期間從負載平衡器分離和連接調度器實例現在可以以更一致的方式工作。
 
-* 現在 **Cloud Manager中提供** LEARN頁面，可透過頂端導覽存取。 本頁提供相關資源，可協助使用者瞭解最常使用的工作流程，這些工作流程與他們在Cloud Manager中指派的角色相關。
+* Cloud Manager組建容器現在支援Java 8和Java 11。
 
-* 「資產第95個百分位數處理時間」的最大值已增加為500秒。
-
-* 「構建日誌」現在包含已發現對象的清單，包括跳過的內容包。
-
-* 「建立」步驟現在會驗證所有產生的內容封裝是否包含所有必要屬性——名稱、群組和版本。
+* Cloud Manager管道現在支援客戶集變數和機密。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 設定生產管線時，某些客戶看不到「排程部署」選項。
+* 「非 **生產管線編** 輯」(Non-Production Pipeline Edit)頁面上的「取消」(Cancel)和「保存」(Save **** )選項並不總是可見。
 
-* 某些部署消息被截斷。
+* 程式碼品質處理中的某些失敗可能會導致記錄檔無法正確產生。
+
+* 有些大型管線步驟記錄無法一貫地透過使用者介面下載。
+
+## 已知問題 {#known-issues}
+
+* 當AMS環境包含備用實例時，記錄的消息會指出該實例處於關閉狀態，而非處於備用模式。
