@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
+source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+workflow-type: tm+mt
+source-wordcount: '1514'
+ht-degree: 7%
 
 ---
 
@@ -34,6 +37,7 @@ source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
    * **Title** —— 預設情況下，此設定為 *Program Name*
 
    * **新建分支名稱** -預設情況下，此為主分 *支*
+
    ![](assets/screen_shot_2018-10-08at55825am.png)
 
    對話框中有一個抽屜，可通過按一下指向對話框底部的手柄來開啟該抽屜。 在其展開形式中，對話框顯示Archetype的所有配置參數。 其中許多參數具有根據標題生成的預設 **值**。
@@ -56,7 +60,7 @@ source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
 若要使用Cloud Manager成功建立和部署現有的AEM專案，必須遵守一些基本規則：
 
 * 必須使用Apache Maven建立專案。
-* Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可能具有其他子模組等）視需要。
+* Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可能具有其他子模組等） 視需要。
 
 * 您可以在 *pom.xml檔案中添加對其他Maven對象儲存庫的引* 用。 但是，不支援對受密碼保護或受網路保護的對象儲存庫的訪問。
 * 可部署的內容套件是透過掃描內容套件 *zip* 檔案來發現的，這些檔案位於名為 *target的目錄中*。 任意數量的子模組都可以生成內容包。
@@ -81,7 +85,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 * 構建環境基於Linux，源自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
-* 安裝的Java版本是Oracle JDK 8u202。
+* 安裝的Java版本是Oracle JDK 8u202和11.0.2。
 * 安裝了一些其他系統軟體包是必要的：
 
    * bzip2
@@ -91,10 +95,41 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
    * graphicsmagick
 
 * 其他軟體包可在構建時安裝，如下 [所述](#installing-additional-system-packages)。
-* 每棟建築都是在原始環境下完成的；建置容器不會在執行之間保留任何狀態。
-* Maven始終使用以下命令運行： *mvn —batch-mode clean org.jaco:jaco-maven-plugin:prepare-agent軟體包*
+* 每棟建築都是在原始環境下完成的； 建置容器不會在執行之間保留任何狀態。
+* Maven始終使用以下命令運行： *mvn -batch-mode clean org.jaco:jaco-maven-plugin:prepare-agent套件*
 * Maven是在系統層級以settings.xml檔案來設定，該檔案會自動包含公用的Adobe **Artifact** 儲存庫。 (如需詳細 [資訊，請參閱Adobe Public Maven Repository](https://repo.adobe.com/) )。
 
+### 使用Java 11 {#using-java-11}
+
+Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設，專案是使用Java 8建立。 想要在專案中使用Java 11的客戶可使用 [Apache Maven Toolchains外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
+
+若要這麼做，請在pom.xml檔案中新增 `<plugin>` 如下的項目：
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>支援的供應商是Oracle和Sun Microsystems，支援的版本是1.8、1.11和11。
 
 ## 環境變數 {#environment-variables}
 
@@ -116,29 +151,35 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 | CM_PROGRAM_NAME | 程式名 |
 | 對象_版本 | 對於舞台或生產管道，由Cloud Manager生成的合成版本 |
 
-### 自訂環境變數 {#custom-environ-variables}
+### 管線變數 {#pipeline-variables}
 
-在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在git儲存庫中。 Cloud Manager允許客戶成功工程師(CSE)根據客戶逐一配置這些變數。 這些變數會儲存在安全的儲存位置中，且僅會顯示在特定客戶的建立容器中。 想要使用此功能的客戶需要聯絡其CSE以設定其變數。
+在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在git儲存庫中。 Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這些變數。 變數可儲存為純文字或在閒置時加密。 在這兩種情況下，變數都可在構建環境中作為環境變數使用，然後可以從pom.xml檔案或其他構建指令碼中引用該環境變數。
 
-配置後，這些變數將可作為環境變數使用。 為了將它們用作Maven屬性，您可以在pom.xml檔案內引用它們，可能如上所述在配置檔案內：
+要使用CLI設定變數，請運行如下命令：
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+目前的變數可以列出：
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+變數名稱只能包含英數字元和底線字元。 按照慣例，名稱應全部大寫。 每個管線有200個變數的限制，每個名稱必須小於100個字元，每個值必須小於2048個字元。
+
+在Maven pom.xml檔案中使用時，使用類似下列的語法將這些變數對應至Maven屬性通常很有幫助：
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
+            <property>
+                <name>env.CM_BUILD</name>
+            </property>
             </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
+                <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+                </properties>
         </profile>
 ```
-
->[!NOTE]
->
->環境變數名稱只能包含字母數字和下划線(_)字元。 按照慣例，名稱應全部大寫。
 
 ## 在Cloud Manager中啟用Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
 
@@ -217,7 +258,6 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
             </build>
         </profile>
 ```
-
 
 ## 安裝其他系統軟體包 {#installing-additional-system-packages}
 
