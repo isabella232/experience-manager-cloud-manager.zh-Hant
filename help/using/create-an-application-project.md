@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1518'
 ht-degree: 7%
 
 ---
@@ -153,13 +153,15 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 
 ### 管線變數 {#pipeline-variables}
 
-在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在git儲存庫中。 Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這些變數。 變數可儲存為純文字或在閒置時加密。 在這兩種情況下，變數都可在構建環境中作為環境變數使用，然後可以從pom.xml檔案或其他構建指令碼中引用該環境變數。
+在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放在Git儲存庫中。 Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這些變數。
 
-要使用CLI設定變數，請運行如下命令：
+變數可儲存為純文字或在閒置時加密。 在這兩種情況下，變數都可在構建環境中作為環境變數使用，然後可以從pom.xml檔案或其他構建指令碼中引用該環境變數。
+
+使用以下命令使用CLI設定變數：
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
-目前的變數可以列出：
+您可列出目前的變數，如下所示：
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
