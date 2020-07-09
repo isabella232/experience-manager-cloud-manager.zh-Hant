@@ -4,9 +4,9 @@ seo-title: AEM Cloud Manager 2020.7.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.7.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.7.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: 26492dc02371d21670778f3cd60d26146439548e
+source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '173'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## 發行日期 {#release-date}
 
-2020.6.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年7月09日。
+2020.7.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年7月09日。
 
 ## 新功能 {#whats-new}
 
@@ -25,7 +25,7 @@ ht-degree: 8%
 
 * Cloud Manager組建容器現在支援Java 8和Java 11。
 
-* Cloud Manager管道現在支援客戶集變數和機密。
+* Cloud Manager管道現在支援客戶集變數和機密。 如需詳細 [資訊，請參閱](/help/using/create-an-application-project.md#pipeline-variables) 「管線變數」。
 
 ## 錯誤修正 {#bug-fixes}
 
