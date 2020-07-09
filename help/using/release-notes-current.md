@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager 2020.7.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.7.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.7.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
+source-git-commit: a0917f5cecbe552807d9147cd20316e02c2dd1a0
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 8%
@@ -24,7 +24,6 @@ ht-degree: 8%
 * 在生產部署期間從負載平衡器分離和連接調度器實例現在可以以更一致的方式工作。
 
 * Cloud Manager組建容器現在支援Java 8和Java 11。
-
 
 ## 錯誤修正 {#bug-fixes}
 
