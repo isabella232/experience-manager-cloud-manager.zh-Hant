@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
+source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1479'
 ht-degree: 7%
 
 ---
@@ -137,7 +137,7 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 
 在某些情況下，客戶會發現必鬚根據方案或管道的相關資訊來變更建立程式。
 
-例如，如果正在進行建置時期的JavaScript精簡化，透過例如gulp等工具，在建立開發環境時，可能會想要使用不同的精簡化層級，而非建立舞台和生產環境。
+例如，如果正在執行建置時期的JavaScript精簡化作業，透過例如gulp工具，在建立開發環境時，可能會想要使用不同的精簡化層級，而非建立舞台和生產環境。
 
 為支援此功能，Cloud Manager會將這些標準環境變數新增至每個執行的建立容器。
 
@@ -151,37 +151,30 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 | CM_PROGRAM_NAME | 程式名 |
 | 對象_版本 | 對於舞台或生產管道，由Cloud Manager生成的合成版本 |
 
-### 管線變數 {#pipeline-variables}
+### 自訂環境變數 {#custom-variables}
 
-在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放在Git儲存庫中。 Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這些變數。
+在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在git儲存庫中。 Cloud Manager允許客戶成功工程師(CSE)根據客戶逐一配置這些變數。
 
-變數可儲存為純文字或在閒置時加密。 在這兩種情況下，變數都可在構建環境中作為環境變數使用，然後可以從pom.xml檔案或其他構建指令碼中引用該環境變數。
+這些變數會儲存在安全的儲存位置中，且僅會顯示在特定客戶的建立容器中。 想要使用此功能的客戶需要聯絡其CSE以設定其變數。
+配置後，這些變數將可作為環境變數使用。 為了將它們用作Maven屬性，您可以在pom.xml檔案內引用它們，可能如上所述在配置檔案內：
 
-使用以下命令使用CLI設定變數：
-
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
-
-您可列出目前的變數，如下所示：
-
-`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
-
-變數名稱只能包含英數字元和底線字元。 按照慣例，名稱應全部大寫。 每個管線有200個變數的限制，每個名稱必須小於100個字元，每個值必須小於2048個字元。
-
-在Maven pom.xml檔案中使用時，使用類似下列的語法將這些變數對應至Maven屬性通常很有幫助：
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-            <property>
-                <name>env.CM_BUILD</name>
-            </property>
+                  <property>
+                        <name>env.CM_BUILD</name>
+                  </property>
             </activation>
-                <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-                </properties>
+            <properties>
+                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
+            </properties>
         </profile>
 ```
+
+>[!NOTE]
+>環境變數名稱只能包含字母數字和下划線(_)字元。 按照慣例，名稱應全部大寫。
 
 ## 在Cloud Manager中啟用Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
 
