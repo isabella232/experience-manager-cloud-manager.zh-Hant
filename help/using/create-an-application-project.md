@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ae22e0641111096c19d5413f3e78f339010bf512
+source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1494'
 ht-degree: 7%
 
 ---
@@ -98,6 +98,9 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 * 每棟建築都是在原始環境下完成的； 建置容器不會在執行之間保留任何狀態。
 * Maven始終使用以下命令運行： *mvn -batch-mode clean org.jaco:jaco-maven-plugin:prepare-agent套件*
 * Maven是在系統層級以settings.xml檔案來設定，該檔案會自動包含公用的Adobe **Artifact** 儲存庫。 (如需詳細 [資訊，請參閱Adobe Public Maven Repository](https://repo.adobe.com/) )。
+
+>[!NOTE]
+>雖然Cloud Manager未定義特定版本， `jacoco-maven-plugin`但使用的版本至少必須是 `0.7.5.201505241946`。
 
 ### 使用Java 11 {#using-java-11}
 
