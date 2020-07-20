@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
+source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1537'
 ht-degree: 7%
 
 ---
@@ -154,30 +154,37 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 | CM_PROGRAM_NAME | 程式名 |
 | 對象_版本 | 對於舞台或生產管道，由Cloud Manager生成的合成版本 |
 
-### 自訂環境變數 {#custom-variables}
+### 管線變數 {#pipeline-variables}
 
-在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在git儲存庫中。 Cloud Manager允許客戶成功工程師(CSE)根據客戶逐一配置這些變數。
+在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在Git儲存庫中，或者需要使用同一分支在不同的管線執行之間有所不同。
 
-這些變數會儲存在安全的儲存位置中，且僅會顯示在特定客戶的建立容器中。 想要使用此功能的客戶需要聯絡其CSE以設定其變數。
-配置後，這些變數將可作為環境變數使用。 為了將它們用作Maven屬性，您可以在pom.xml檔案內引用它們，可能如上所述在配置檔案內：
+Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這些變數。 變數可儲存為純文字或在閒置時加密。 在這兩種情況下，變數都可在建立環境中做為環境變數使用，然後可從檔案或其他建立指令 `pom.xml` 碼中參考。
 
+要使用CLI設定變數，請運行如下命令：
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+目前的變數可以列出：
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+變數名稱只能包含英數字元和底線(_)字元。 按照慣例，名稱應全部大寫。 每個管線有200個變數的限制，每個名稱必須小於100個字元，每個值必須小於2048個字元。
+
+在檔案中使用 `Maven pom.xml` 時，使用類似下列的語法將這些變數對應至Maven屬性通常很有幫助：
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
             </activation>
             <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
             </properties>
         </profile>
 ```
-
->[!NOTE]
->環境變數名稱只能包含字母數字和下划線(_)字元。 按照慣例，名稱應全部大寫。
 
 ## 在Cloud Manager中啟用Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
 
