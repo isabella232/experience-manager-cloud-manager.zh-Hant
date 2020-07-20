@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager 2020.7.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.7.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.7.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
+source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 7%
+source-wordcount: '210'
+ht-degree: 6%
 
 ---
 
@@ -24,6 +24,9 @@ ht-degree: 7%
 * 在生產部署期間從負載平衡器分離和連接調度器實例現在可以以更一致的方式工作。
 
 * Cloud Manager組建容器現在支援Java 8和Java 11。
+
+* Cloud Manager管道現在支援客戶集變數和機密。
+如需詳細 [資訊，請參閱](/help/using/create-an-application-project.md#pipeline-variables) 「管線變數」。
 
 ## 錯誤修正 {#bug-fixes}
 
