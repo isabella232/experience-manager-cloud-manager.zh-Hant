@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
+source-git-commit: 0fda91c2fe319fb58b3a6dd09f75eac7a60d9038
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 7%
+source-wordcount: '1705'
+ht-degree: 6%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 7%
 * 必須使用Apache Maven建立專案。
 * Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可能具有其他子模組等） 視需要。
 
-* 您可以在 *pom.xml檔案中添加對其他Maven對象儲存庫的引* 用。 但是，不支援對受密碼保護或受網路保護的對象儲存庫的訪問。
+* 您可以在 *pom.xml檔案中添加對其他Maven對象儲存庫的引* 用。 配置時 [支援對受密碼保護的對象儲存庫](#password-protected-maven-repositories) 的訪問。 但是，不支援對網路保護對象儲存庫的訪問。
 * 可部署的內容套件是透過掃描內容套件 *zip* 檔案來發現的，這些檔案位於名為 *target的目錄中*。 任意數量的子模組都可以生成內容包。
 
 * 可部署的Dispatcher對象是通過掃描 *zip檔案* (同樣，包含在名為target **&#x200B;的目錄中)來發現的，該目錄具有名為 *conf* 和 ** conf.d的目錄。
@@ -262,6 +262,75 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
                 </plugins>
             </build>
         </profile>
+```
+
+## 受密碼保護的Maven儲存庫支援 {#password-protected-maven-repositories}
+
+若要使用Cloud Manager的受密碼保護的Maven儲存庫，請將密碼（以及使用者名稱）指定為機密 [Pipeline變數](#pipeline-variables) ，然後在git儲存庫中名為的檔案中參考 `.cloudmanager/maven/settings.xml` 該機密。 此檔案遵循「Maven [Settings File](https://maven.apache.org/settings.html) 」架構。 當Cloud Manager建置程式啟動時，此 `<servers>` 檔案中的元素將合併至Cloud Manager提 `settings.xml` 供的預設檔案。 此檔案就位後，伺服器ID將會從檔案內 `<repository>` 的和/ `<pluginRepository>` 或元素 `pom.xml` 中參考。 通常，這 `<repository>` 些和／或 `<pluginRepository>` 元素會包含在 [Cloud Manager特定的配置檔案中]{#activating-maven-profiles-in-cloud-manager}，儘管這並非嚴格的必要。
+
+例如，假設儲存庫位於https://repository.myco.com/maven2,Cloud Manager應使用的用戶名為， `cloudmanager` 密碼為 `secretword`。
+
+首先，將密碼設定為管道上的密碼：
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+
+然後，從檔案中參 `.cloudmanager/maven/settings.xml` 考此：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>myco-repository</id>
+            <username>cloudmanager</username>
+            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>
+```
+
+最後參考檔案中的伺服器 `pom.xml` ID:
+
+```xml
+<profiles>
+    <profile>
+        <id>cmBuild</id>
+        <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+        </activation>
+        <build>
+            <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </build>
+    </profile>
+</profiles>
 ```
 
 ## 安裝其他系統軟體包 {#installing-additional-system-packages}
