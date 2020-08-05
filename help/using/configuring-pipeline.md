@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: afbb9a9f9f227309946f0d1891172a89d15de7a7
+source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1755'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    **AEM Sites:**
 
-   Cloud Manager會在階段發佈伺服器上請求頁面（以未驗證的使用者身分）達30分鐘的測試期間，並測量每個頁面的回應時間以及各種系統層級度量，以執行AEM Sites程式的效能測試。
+   Cloud Manager會在階段發佈伺服器上要求頁面（依預設為未驗證的使用者）達30分鐘的測試期間，並測量每個頁面的回應時間以及各種系統層級度量，以執行AEM Sites程式的效能測試。
 
    在30分鐘測試期開始之前，Cloud Manager將使用由客戶成功工程師配置的一組或多個種子 ** URL來編目Stage環境。 從這些URL開始，會檢查每個頁面的HTML，並以寬度優先的方式瀏覽連結。 此編目程式最多限制為5000頁。 來自Crawler的請求有10秒的固定逾時。
 
@@ -177,6 +177,9 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
    * 「新頁面」集中的3000個頁面中，每個頁面都會點擊一次-((200 * 0.5)/ 3000)* 30 = 1
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
+
+
+   請參閱「 [已驗證的網站效能測試](configuring-pipeline.md#authenticated-sites-performance) 」，以瞭解如何驗證AEM Sites效能測試。
 
    **AEM Assets:**
 
@@ -197,6 +200,22 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
    >此外，在設定管線後，您仍可使用 **UI中的「生產管線設定」圖格來編輯相同的設**[!UICONTROL Cloud Manager] 定。
 
    ![](assets/Production-Pipeline.png)
+
+### 經驗證的網站效能測試 {#authenticated-sites-performance}
+
+擁有已驗證網站的Adobe Managed Services(AMS)客戶可以指定使用者名稱和密碼，Cloud Manager將在Sites效能測試期間用來存取網站。
+
+用戶名和口令被指定為具有名稱和的管 `CM_PERF_TEST_BASIC_USERNAME` 線變數 `CM_PERF_TEST_BASIC_PASSWORD` 。
+
+>[!NOTE]
+> 雖然並非嚴格要求，但建議使用字串變數類型做為username，並建議使用secretString變數類型作為密碼。 如果同時指定了這兩者，則效能測試Crawler和測試虛擬用戶的每個請求都將包含這些憑據作為HTTP Basic身份驗證。
+
+要使用Cloud Manager CLI設定這些變數，請運行：
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
+
+
+
 
 ## 非生產和代碼純質量管道
 
