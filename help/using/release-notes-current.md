@@ -4,9 +4,9 @@ seo-title: AEM Cloud Manager 2020.8.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.8.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.8.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '253'
 ht-degree: 20%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 20%
 
 * Sites Performance Testing現在支援選擇性使用驗證。
 
-   有關詳細資訊，請參閱。
+   請參閱「 [已驗證的網站效能測試](configuring-pipeline.md#authenticated-sites-performance) 」，以瞭解如何驗證AEM Sites效能測試。
 
 * 現在支援驗證綁定的專用Maven儲存庫。
 
