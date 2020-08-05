@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1759'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    現在，您可以定義控制生產部署的參數。 三種可用選項如下：
 
-* **使用上線審批** -部署必須由業務擁有者、專案經理或部署經理透過 [!UICONTROL Cloud Manager] UI手動核准。
+* **使用上線核准** -部署必須由業務擁有者、專案經理或部署經理透過 [!UICONTROL Cloud Manager] UI手動核准。
 * **使用CSE監督** -參與CSE以實際開始部署。 在管線設定或啟用CSE監督時編輯期間，部署管理員可以選擇：
 
    * **任何CSE**: 是指任何可用的CSE
@@ -205,17 +205,14 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 擁有已驗證網站的Adobe Managed Services(AMS)客戶可以指定使用者名稱和密碼，Cloud Manager將在Sites效能測試期間用來存取網站。
 
-用戶名和口令被指定為具有名稱和的管 `CM_PERF_TEST_BASIC_USERNAME` 線變數 `CM_PERF_TEST_BASIC_PASSWORD` 。
+用戶名和口令被指定為 [具有名稱和](create-an-application-project.md#pipeline-variables)`CM_PERF_TEST_BASIC_USERNAME` 的管線變數 `CM_PERF_TEST_BASIC_PASSWORD` 。
 
 >[!NOTE]
 > 雖然並非嚴格要求，但建議使用字串變數類型做為username，並建議使用secretString變數類型作為密碼。 如果同時指定了這兩者，則效能測試Crawler和測試虛擬用戶的每個請求都將包含這些憑據作為HTTP Basic身份驗證。
 
-要使用Cloud Manager CLI設定這些變數，請運行：
+要使用 [Cloud Manager CLI設定這些變數](https://github.com/adobe/aio-cli-plugin-cloudmanager)，請運行：
 
 `$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
-
-
-
 
 ## 非生產和代碼純質量管道
 
