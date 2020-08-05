@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager 2020.8.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.8.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.8.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
+source-git-commit: c0881ccf602a14b00b7cc68c3d1fc60e7b6954ed
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 20%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
@@ -43,8 +43,3 @@ ht-degree: 20%
 
 * 概述頁面上的顏色不符。
 
-## 已知問題 {#known-issues}
-
-* 當AMS環境包含備用實例時，記錄的消息會指出該實例處於關閉狀態，而非處於備用模式。
-
-* 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;_最低_&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。若客戶明確參考較舊版本，會在程式碼品質處理程序中收到錯誤訊息。
