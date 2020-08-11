@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 0fda91c2fe319fb58b3a6dd09f75eac7a60d9038
+source-git-commit: 200057885f068ff8df889601a401e06d89981209
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1721'
 ht-degree: 6%
 
 ---
@@ -95,7 +95,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
    * graphicsmagick
 
 * 其他軟體包可在構建時安裝，如下 [所述](#installing-additional-system-packages)。
-* 每棟建築都是在原始環境下完成的； 建置容器不會在執行之間保留任何狀態。
+* 每棟建築都是在原始環境下完成的；建置容器不會在執行之間保留任何狀態。
 * Maven始終使用以下命令運行： *mvn -batch-mode clean org.jaco:jaco-maven-plugin:prepare-agent套件*
 * Maven是在系統層級以settings.xml檔案來設定，該檔案會自動包含公用的Adobe **Artifact** 儲存庫。 (如需詳細 [資訊，請參閱Adobe Public Maven Repository](https://repo.adobe.com/) )。
 
@@ -266,7 +266,7 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
 
 ## 受密碼保護的Maven儲存庫支援 {#password-protected-maven-repositories}
 
-若要使用Cloud Manager的受密碼保護的Maven儲存庫，請將密碼（以及使用者名稱）指定為機密 [Pipeline變數](#pipeline-variables) ，然後在git儲存庫中名為的檔案中參考 `.cloudmanager/maven/settings.xml` 該機密。 此檔案遵循「Maven [Settings File](https://maven.apache.org/settings.html) 」架構。 當Cloud Manager建置程式啟動時，此 `<servers>` 檔案中的元素將合併至Cloud Manager提 `settings.xml` 供的預設檔案。 此檔案就位後，伺服器ID將會從檔案內 `<repository>` 的和/ `<pluginRepository>` 或元素 `pom.xml` 中參考。 通常，這 `<repository>` 些和／或 `<pluginRepository>` 元素會包含在 [Cloud Manager特定的配置檔案中]{#activating-maven-profiles-in-cloud-manager}，儘管這並非嚴格的必要。
+若要使用Cloud Manager的受密碼保護的Maven儲存庫，請將密碼（以及使用者名稱）指定為機密 [Pipeline變數](#pipeline-variables) ，然後在git儲存庫中名為的檔案中參考 `.cloudmanager/maven/settings.xml` 該機密。 此檔案遵循「Maven [Settings File](https://maven.apache.org/settings.html) 」架構。 當Cloud Manager建置程式啟動時，此 `<servers>` 檔案中的元素將合併至Cloud Manager提 `settings.xml` 供的預設檔案。 伺服器ID從開 `adobe` 始， `cloud-manager` 並視為保留，不應由自訂伺服器使用。 此檔案就位後，伺服器ID將會從檔案內 `<repository>` 的和/ `<pluginRepository>` 或元素 `pom.xml` 中參考。 通常，這 `<repository>` 些和／或 `<pluginRepository>` 元素會包含在 [Cloud Manager特定的配置檔案中]{#activating-maven-profiles-in-cloud-manager}，儘管這並非嚴格的必要。
 
 例如，假設儲存庫位於https://repository.myco.com/maven2,Cloud Manager應使用的用戶名為， `cloudmanager` 密碼為 `secretword`。
 
