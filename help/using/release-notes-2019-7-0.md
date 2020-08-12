@@ -10,7 +10,7 @@ source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 # 2019.7.0發行說明 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 7.0版新增Experience cloud通知的更新和改進，作為錯誤修正。 請依照下列章節瞭解詳細資訊。
+&#x200B;2019. [!UICONTROL Cloud Manager] 7.0版新增Experience cloud通知的更新和改進，作為錯誤修正。 請依照下列章節瞭解詳細資訊。
 
 ## 發行日期 {#release-date}
 

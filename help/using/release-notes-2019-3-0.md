@@ -11,7 +11,7 @@ source-git-commit: 28780dc73a6787b7f3e715965e580534344f3602
 
 # 2019.3.0發行說明 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 3.0版將SLA報告新增至上一版提供的系統監控功能。
+&#x200B;2019. [!UICONTROL Cloud Manager] 3.0版將SLA報告新增至上一版提供的系統監控功能。
 
 ## 發行日期 {#release-date}
 

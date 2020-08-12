@@ -11,7 +11,7 @@ source-git-commit: 98395c4413b1b6bfbb3a565388ffa32dc3880dff
 
 # 2019.2.0發行說明 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 2.0版新增了系統監控功能。 這可讓客戶在系統層級檢視其Adobe Managed services環境的狀態。
+&#x200B;2019. [!UICONTROL Cloud Manager] 2.0版新增了系統監控功能。 這可讓客戶在系統層級檢視其Adobe Managed services環境的狀態。
 
 
 ## 發行日期 {#release-date}
