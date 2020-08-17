@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1751'
 ht-degree: 1%
 
 ---
@@ -95,8 +95,8 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 * **使用上線審批** -部署必須由業務擁有者、專案經理或部署經理透過 [!UICONTROL Cloud Manager] UI手動核准。
 * **使用CSE監督** -參與CSE以實際開始部署。 在管線設定或啟用CSE監督時編輯期間，部署管理員可以選擇：
 
-   * **任何CSE**: 是指任何可用的CSE
-   * **我的CSE**: 是指指派給客戶的特定CSE或其備份（如果CSE不在辦公室）
+   * **任何CSE**:是指任何可用的CSE
+   * **我的CSE**:是指指派給客戶的特定CSE或其備份（如果CSE不在辦公室）
 
 * **已排程** -此選項可讓使用者啟用已排程的生產部署。
 
@@ -104,7 +104,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 >
 >如果選 **取** 「已排程」選項，您可以在階段部署後將生產部署排程至管道(若已啟用，則 **使用GoLive Approval******)，以等待排程設定。 使用者也可以選擇立即執行生產部署。
 >
->請參閱「 [**部署程式碼&#x200B;**](deploying-code.md)」，以設定部署排程或立即執行生產。
+>請參閱「 [**部署程式碼**](deploying-code.md)」，以設定部署排程或立即執行生產。
 
 ![](assets/configure-pipeline3.png)
 
@@ -129,9 +129,9 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 **Dispatcher Invalidation**
 
-身為部署管理員，您有機會設定一組內容路徑，這些路徑會在設定或編輯 **管道時** ，從 **AEM Dispatcher快取中無效或清除** 。
+身為部署管理員，您有機會設定一組內容路徑，這些路徑會在設定或編輯管線時，從 **AEM** Dispatcher快取中廢 **除或清除** ，以用於發佈例項。
 
-您可以為「舞台(Stage)」和「生產(Production)」部署設定個別的路徑集。 如果已配置，則這些快取動作將作為部署管線步驟的一部分執行，就在部署任何內容封裝後執行。 這些設定使用標準的AEM Dispatcher行為——無效執行快取失效，類似於從作者啟動內容以進行發佈； flush會執行快取刪除。
+您可以為「舞台(Stage)」和「生產(Production)」部署設定個別的路徑集。 如果已配置，則這些快取動作將作為部署管線步驟的一部分執行，就在部署任何內容封裝後執行。 這些設定使用標準的AEM Dispatcher行為——無效執行快取失效，類似於從作者啟動內容以進行發佈；flush會執行快取刪除。
 
 一般而言，使用無效動作較為可取，但有時可能需要刷新，尤其是在使用AEM HTML Client Libraries時。
 
@@ -168,7 +168,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    在30分鐘測試期開始之前，Cloud Manager將使用由客戶成功工程師配置的一組或多個種子 ** URL來編目Stage環境。 從這些URL開始，會檢查每個頁面的HTML，並以寬度優先的方式瀏覽連結。 此編目程式最多限制為5000頁。 來自Crawler的請求有10秒的固定逾時。
 
-   頁面由三個頁 **面集選擇**; 您可以選擇從一組到三組的任意位置。 流量的分配是根據選擇的集數，即如果全部三個都被選中，則33%的頁面檢視會放入每個集； 如果選取2個，則每組50%; 如果選取其中一個，則100%的流量會移至該集合。
+   頁面由三個頁 **面集選擇**;您可以選擇從一組到三組的任意位置。 流量的分配是根據選擇的集數，即如果全部三個都被選中，則33%的頁面檢視會放入每個集；如果選取2個，則每組50%;如果選取其中一個，則100%的流量會移至該集合。
 
    例如，假設「熱門即時頁面」和「新頁面」集（在此範例中，未使用其他即時頁面）之間有50%/50%的分割，而「新頁面」集包含3000個頁面。 每分鐘頁面檢視次數KPI設定為200。 在30分鐘的測試期間：
 
@@ -177,6 +177,8 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
    * 「新頁面」集中的3000個頁面中，每個頁面都會點擊一次-((200 * 0.5)/ 3000)* 30 = 1
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
+
+   如需詳細 [資訊，請參閱驗證](#authenticated-performance-testing) 效能測試。
 
    **AEM Assets:**
 
@@ -198,6 +200,17 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    ![](assets/Production-Pipeline.png)
 
+### 驗證的效能測試 {#authenticated-performance-testing}
+
+具有已驗證網站的AMS客戶可以指定Cloud Manager在Sites效能測試期間用來存取網站的使用者名稱和密碼。
+
+用戶名和口令被指定為 [具有名稱](/help/using/create-an-application-project.md#pipeline-variables) 和的管 `CM_PERF_TEST_BASIC_USERNAME` 線變數 `CM_PERF_TEST_BASIC_PASSWORD`。
+
+雖然並非嚴格要求，但建議使用字串變數類型做為username，並建議使用secretString變數類型作為密碼。 如果同時指定了這兩者，則效能測試Crawler和測試虛擬用戶的每個請求都將包含這些憑據作為HTTP Basic身份驗證。
+
+要使用 [Cloud Manager CLI設定這些變數](https://github.com/adobe/aio-cli-plugin-cloudmanager)，請運行：
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## 非生產和代碼純質量管道
 
