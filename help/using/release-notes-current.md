@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager 2020.8.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.8.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.8.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 7%
+source-wordcount: '192'
+ht-degree: 6%
 
 ---
 
@@ -37,5 +37,9 @@ ht-degree: 7%
 
 * 程式卡上的工具提示不一致正確。
 
-* 概述頁面上的顏色不符。
+* 「概述」頁面上的顏色不 **符** 。
+
+* Sites Performance Testing現在支援選擇性使用驗證。
+
+* 當透過Cloud Manager部署分派程式設定時，作者例項的分派程式快取會自動清除。
 
