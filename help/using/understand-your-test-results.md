@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 # 了解測試結果 {#understand-your-test-results}
 
-在「管 **線** 」程式中，會擷取許多量度，並與企業擁有者所定義的「關鍵績效指標」(KPI)或Adobe Managed Services所設定的標準進行比較。
+在管道執行期間，會擷取許多量度並與企業擁有者定義的關鍵績效指標(KPI)或Adobe Managed Services設定的標準進行比較。
 
 這些是使用本節定義的三層式選通系統來報告。
 
@@ -47,9 +47,10 @@ ht-degree: 6%
 
 ### 瞭解程式碼品質測試 {#understanding-code-quality-testing}
 
-在程式碼品質測試中，會掃描原始碼，以確保其部署符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「自訂程式碼 [品質規則」](/help/using/custom-code-quality-rules.md)。
+在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「自訂程式碼 [品質規則」](/help/using/custom-code-quality-rules.md)。
 
-您可以在這裡下載規則 [清單](/help/using/assets/CodeQuality-rules-latest.xlsx)。
+>[!NOTE]
+>您可以在這裡下載完整的規則 [清單](/help/using/assets/CodeQuality-rules-latest.xlsx)。
 
 此步驟的結果會以「評 *分」*。 下表摘要了各種測試標準的評分：
 
@@ -130,7 +131,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | Sling Referrer Filter已設定，以防止CSRF攻擊 | Sling 查閱者篩選 | 重要 |
 | Adobe Granite HTML Library Manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
 | 已禁用CRXDE支援包 | CRXDE 支援 | 重要 |
-| Sling DavEx套裝和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
+| Sling DavEx Bundle和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
 | 未安裝範例內容 | 範例內容封裝 | 重要 |
 | WCM請求篩選器和WCM除錯篩選器都已停用 | WCM 篩選設定 | 重要 |
 | Sling WebDAV搭售和servlet已正確設定 | WebDAV 健康狀態檢查 | 重要 |
