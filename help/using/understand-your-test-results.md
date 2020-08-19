@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: f062ee126ad12d164c36b2e1535ee709f43b6900
+source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1544'
 ht-degree: 6%
 
 ---
@@ -43,14 +43,22 @@ ht-degree: 6%
 
 ## 程式碼品質測試 {#code-quality-testing}
 
-作為管道的一部分，會掃描原始碼，以確保部署符合特定的質量標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 下表摘要了測試標準的評分：
+此步驟會評估您的應用程式碼的品質。 它是僅限程式碼品質管道的核心目標，並會立即在所有非生產及生產管道的建立步驟後執行。 請參 [閱配置CI-CD管線](/help/using/configuring-pipeline.md) ，以進一步瞭解不同類型的管線。
+
+### 瞭解程式碼品質測試 {#understanding-code-quality-testing}
+
+在程式碼品質測試中，會掃描原始碼，以確保其部署符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「自訂程式碼 [品質規則」](/help/using/custom-code-quality-rules.md)。
+
+您可以在這裡下載規則 [清單](/help/using/assets/CodeQuality-rules-latest.xlsx)。
+
+此步驟的結果會以「評 *分」*。 下表摘要了各種測試標準的評分：
 
 | 名稱 | 定義 | 類別 | 故障閾值 |
 |--- |--- |--- |--- |
 | 安全性分級 | A = 0漏洞 <br/>B =至少1個小漏洞<br/> C =至少1個大漏洞 <br/>D =至少1個嚴重漏洞 <br/>E =至少1個攔截器漏洞 | 關鍵 | &lt; B |
 | 可靠性分級 | A = 0錯誤 <br/>B =至少1個次要錯誤 <br/>C =至少1個主要錯誤 <br/>D =至少1個嚴重錯誤<br/>E =至少1個攔截器錯誤 | 重要 | &lt; C |
 | 可維護性評級 | 代碼氣味的未付補救成本是： <br/><ul><li>&lt;=5%已進入應用程式的時間，評分為A </li><li>6%到10%的評分是B </li><li>11%到20%的評分是C </li><li>21%到50%的評分是D</li><li>超過50%的項目是E</li></ul> | 重要 | &lt; A |
-| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中： CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
+| 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中：CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
 | 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
 | 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 0 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊： <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
@@ -60,8 +68,6 @@ ht-degree: 6%
 >[!NOTE]
 >
 >請參閱 [量度定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) ，以取得詳細定義。
-
-您可以在此處下載規 [則清單-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -124,7 +130,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | Sling Referrer Filter已設定，以防止CSRF攻擊 | Sling 查閱者篩選 | 重要 |
 | Adobe Granite HTML Library Manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
 | 已禁用CRXDE支援包 | CRXDE 支援 | 重要 |
-| Sling DavEx Bundle和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
+| Sling DavEx套裝和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
 | 未安裝範例內容 | 範例內容封裝 | 重要 |
 | WCM請求篩選器和WCM除錯篩選器都已停用 | WCM 篩選設定 | 重要 |
 | Sling WebDAV搭售和servlet已正確設定 | WebDAV 健康狀態檢查 | 重要 |
