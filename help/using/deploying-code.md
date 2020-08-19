@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 509a74b2e85d5880bafa56cd0ab3bae9c57b0683
+source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 3%
+source-wordcount: '953'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
 
-在配置了 **Pipeline**  (儲存庫、環境和測試環境) 後，您就可以部署代碼。
+Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. 按一 **下** 「從雲端管理員部署」，開始部署程式。
 
@@ -40,22 +40,25 @@ ht-degree: 3%
    1. 階段部署
    1. 階段測試
    1. 生產部署
+
    >[!NOTE]
    >
    >此外，您也可以檢視記錄檔或檢視結果，以檢視各種部署程式中的步驟，以取得測試標準。
 
    「 **舞台部署**」涉及以下步驟：
 
-   * 驗證： 此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試： 此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](create-an-application-project.md) 」。
-   * 代碼掃描： 此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
+   * 構建和單元測試：此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](create-an-application-project.md) 」。
+   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
    * 部署至舞台
+
    ![](assets/Stage_Deployment1.png)
 
    The **Stage Testing**, involves the following steps:
 
-   * 安全性測試： 此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
-   * 效能測試： 此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 安全性測試：此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 效能測試：此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+
    ![](assets/Stage_Testing1.png)
 
    The **Production Deployment**, involves the following steps:
@@ -64,6 +67,7 @@ ht-degree: 3%
    * **排程生產部署** （如果已啟用）
    * **CSE支援** （若已啟用）
    * **部署至生產環境**
+
    ![](assets/Prod_Deployment1.png)
 
    >[!NOTE]
@@ -121,6 +125,7 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
    1. 該對象被提取到目 `httpd` 錄。  不會覆寫不可變的檔案。 在部署時，您對git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS調度器框架的核心檔案，不能更改。
    1. Apache會執行組態測試。 如果未找到錯誤，則重新載入服務。 如果發生錯誤，則從備份中恢復配置，重新載入服務，並將錯誤報告回Cloud Manager。
    1. 在流水線配置中指定的每個路徑都無效或從調度器快取中刷新。
+
    >[!NOTE]
    >
    >Cloud Manager希望調度器對象包含完整檔案集。  所有調度程式配置檔案都必須存在於git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
