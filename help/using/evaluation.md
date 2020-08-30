@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 「產品更新」嚮導的第一個階段是 **[!UICONTROL Evaluation]** 階段。
 您可以在這裡使用模式偵測器，直接從精靈存取，以評估升級的複雜性。 在此步驟結束時，您將可存取評估報表。
 
-產生的報表可讓您偵測下列模式，以檢查作者實例的可升級性：
+產生的報表可讓您偵測下列模式，以檢查Author例項是否要升級：
 
 * 違反特定規則，並在受升級影響或覆寫的區域執行。
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 1. 按一下 **[!UICONTROL Run Evaluation]**。
 
    >[!NOTE]
-   >該圖案檢測器可在任何環境上運行。 但是，為了提高檢測率並避免關鍵業務實例出現任何慢速，Cloud Manager將在作者實例的測試環境中運行它。
+   >該圖案檢測器可在任何環境下運行。 但是，為了提高檢測率並避免關鍵業務實例出現任何慢速，Cloud Manager將在作者實例的測試環境中運行它。
 
    ![](assets/Run-Evaluation.png)
 
