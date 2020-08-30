@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ea9c4836caba1221cae75c600f77fd542a71d52c
+source-git-commit: f281b919b0ffaf4ca20a241d056c132e08e95206
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1867'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 當客戶已登入Cloud Manager時，他們會獲得一個空的git儲存庫。 目前的Adobe Managed Services(AMS)客戶（或內部部署AEM客戶，如果要移轉至AMS），通常其專案程式碼已位於git（或其他版本控制系統）中，並將其專案匯入Cloud Manager Git儲存庫。 但是，新客戶沒有現有的專案。
 
-為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案作為起點。 此程式以 [**AEM Project Archetype為基礎&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
+為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案作為起點。 此程式以 [**AEM Project Archetype為基礎**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 
 請依照下列步驟，在Cloud Manager中建立AEM應用程式專案：
@@ -63,7 +63,7 @@ ht-degree: 6%
 * Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可能具有其他子模組等） 視需要。
 
 * 您可以在 *pom.xml檔案中添加對其他Maven對象儲存庫的引* 用。 配置時 [支援對受密碼保護的對象儲存庫](#password-protected-maven-repositories) 的訪問。 但是，不支援對網路保護對象儲存庫的訪問。
-* 可部署的內容套件是透過掃描內容套件 *zip* 檔案來發現的，這些檔案位於名為 *target的目錄中*。 任意數量的子模組都可以生成內容包。
+* 可部署的內容套件是透過掃描內容套件 *zip* 檔案來發現的，這些檔案位於名為 *target的目錄中*。 任何數量的子模組都可以生成內容包。
 
 * 可部署的Dispatcher對象是通過掃描 *zip檔案* (同樣，包含在名為target **&#x200B;的目錄中)來發現的，該目錄具有名為 *conf* 和 ** conf.d的目錄。
 
@@ -140,7 +140,7 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 
 在某些情況下，客戶會發現必鬚根據方案或管道的相關資訊來變更建立程式。
 
-例如，如果正在執行建置時期的JavaScript精簡化作業，透過例如gulp工具，在建立開發環境時，可能會想要使用不同的精簡化層級，而非建立舞台和生產環境。
+例如，如果正在執行建置時期的JavaScript精簡化，透過例如gulp等工具，在建立開發環境時，可能會想要使用不同的精簡化層級，而非建立舞台和生產環境。
 
 為支援此功能，Cloud Manager會將這些標準環境變數新增至每個執行的建立容器。
 
@@ -170,7 +170,7 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
 
 變數名稱只能包含英數字元和底線(_)字元。 按照慣例，名稱應全部大寫。 每個管線有200個變數的限制，每個名稱必須小於100個字元，每個值必須小於2048個字元。
 
-在檔案中使用 `Maven pom.xml` 時，使用類似下列的語法將這些變數對應至Maven屬性通常很有幫助：
+在檔案中使用時， `Maven pom.xml` 通常使用類似下列的語法將這些變數對應至Maven屬性會很有幫助：
 
 ```xml
         <profile>
@@ -266,6 +266,9 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
 
 ## 受密碼保護的Maven儲存庫支援 {#password-protected-maven-repositories}
 
+>[!NOTE]
+>使用密碼保護的Maven儲存庫中的對象只能非常謹慎地使用，因為透過此機制部署的代碼目前並未透過Cloud Manager的「品質門」執行。 因此，它只應用於少數情況，以及未系結至AEM的程式碼。 建議您也部署Java來源，以及整個專案原始碼與二進位檔。
+
 若要使用Cloud Manager的受密碼保護的Maven儲存庫，請將密碼（以及使用者名稱）指定為機密 [Pipeline變數](#pipeline-variables) ，然後在git儲存庫中名為的檔案中參考 `.cloudmanager/maven/settings.xml` 該機密。 此檔案遵循「Maven [Settings File](https://maven.apache.org/settings.html) 」架構。 當Cloud Manager建置程式啟動時，此 `<servers>` 檔案中的元素將合併至Cloud Manager提 `settings.xml` 供的預設檔案。 伺服器ID從開 `adobe` 始， `cloud-manager` 並視為保留，不應由自訂伺服器使用。 Cloud Manager不 **會鏡像** ，也不會鏡像不符合其中 `central` 一個前置詞或預設ID的伺服器ID。 此檔案就位後，伺服器ID將會從檔案內 `<repository>` 的和/ `<pluginRepository>` 或元素 `pom.xml` 中參考。 通常，這 `<repository>` 些和／或 `<pluginRepository>` 元素會包含在 [Cloud Manager特定的配置檔案中](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager)，儘管這並非嚴格的必要。
 
 例如，假設儲存庫位於https://repository.myco.com/maven2,Cloud Manager應使用的用戶名為， `cloudmanager` 密碼為 `secretword`。
@@ -331,6 +334,54 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
         </build>
     </profile>
 </profiles>
+```
+
+### 部署來源 {#deploying-sources}
+
+將Java源與二進位檔案一起部署到Maven儲存庫是一個很好的做法。
+
+在您的專案中設定maven-source-plugin:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+```
+
+### 部署專案來源 {#deploying-project-sources}
+
+將整個項目源與二進位檔案一起部署到Maven儲存庫是一個很好的做法——這樣可以重建確切的對象。
+
+在您的專案中設定maven-assembly-plugin:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>project-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>project</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 ```
 
 ## 安裝其他系統軟體包 {#installing-additional-system-packages}
