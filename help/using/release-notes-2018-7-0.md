@@ -1,20 +1,23 @@
 ---
-title: 2018.7.0發行說明
-seo-title: 2018.7.0發行說明
+title: 2018.7.0 版發行說明
+seo-title: 2018.7.0 版發行說明
 description: 'null'
 seo-description: 請依照本頁取得Cloud Manager 2018.7.0版的相關資訊。
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
-topic-tags: 發行說明
+topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
 translation-type: tm+mt
-source-git-commit: b78c29520414726ad2bbf86e5b7f8e65710c7f75
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 4%
 
 ---
 
 
-# 2018.7.0發行說明 {#release-notes-for}
+# 2018.7.0 版發行說明 {#release-notes-for}
 
 下節概述提供 [!UICONTROL Cloud Manager] 自動縮放功能的2018.7.0 *版本* 。
 
@@ -32,9 +35,9 @@ source-git-commit: b78c29520414726ad2bbf86e5b7f8e65710c7f75
 
 * **程式碼品質分析** -用以識別錯誤API使用情形的新規則。 請參閱自訂 [程式碼品質規則](custom-code-quality-rules.md) ，瞭解更多資訊。
 
-* **效能測試** -在查看效能測試結果時，可以使用CPU利用率、磁碟I/O等待時間、頁錯誤率、磁碟頻寬利用率、網路頻寬利用率、峰值頁面響應時間和第95個百分位數頁面響應時間的圖表。 請參閱「瞭解測試結果」頁面上的「 [效能測試」](understand-your-test-results.md) *一節。
+* **效能測試** -在查看效能測試結果時，可以使用CPU利用率、磁碟I/O等待時間、頁錯誤率、磁碟頻寬利用率、網路頻寬利用率、峰值頁面響應時間和第95個百分位數頁面響應時間的圖表。 請參閱「了 *解測試結果* 」頁面 [上的「效能測試」部分](understand-your-test-results.md) 。
 
-* **效能測試** -檢視效能測試結果時，可下載頁面錯誤和慢速請求清單。 請參閱「瞭解測試結果」頁面上的「 [效能測試」](understand-your-test-results.md) *一節。
+* **效能測試** -檢視效能測試結果時，可下載頁面錯誤和慢速請求清單。 請參閱「了 *解測試結果* 」頁面 [上的「效能測試」部分](understand-your-test-results.md) 。
 
 ## 錯誤修正 {#bug-fixes}
 
