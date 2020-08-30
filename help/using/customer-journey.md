@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
 translation-type: tm+mt
-source-git-commit: 77b7e2fc81880a7f1878fa9553ce2ae8078d1b78
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 1. **Adobe Managed Services上的新AEM客戶**
 
-   身為新客戶，您將會登入Adobe [!UICONTROL Cloud Manager] 管理雲端服務的登入程式。
+   身為新客戶，您將會登入Adobe [!UICONTROL Cloud Manager] 受管理服務的登入程式。
 
-   要存取的URL [!UICONTROL Cloud Manager] 將會包含在歡迎電子郵件中，並附上登入指示， [!UICONTROL Experience Cloud]並使用Adobe Admin Console來管理您的使用者及其相關權限，以供需要存取的使用者使用 [!UICONTROL Cloud Manager]。
+   要存取的URL將 [!UICONTROL Cloud Manager] 會包含在歡迎電子郵件中，並附上登入指示 [!UICONTROL Experience Cloud]，並使用Adobe Admin Console來管理您的使用者及其相關權限，以供需要存取的使用者使用 [!UICONTROL Cloud Manager]。
 
 1. **Adobe Managed Services上的現有AEM客戶**
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## Getting Started with [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
-登入後，首先 [!UICONTROL Cloud Manager]要做的事是設定您的程式碼儲存庫環境，然後是您的團隊和角色。 具體而言，角色成員資格是透過使用「管理控制台」UI [!UICONTROL Cloud Manager] 將使用者新增至描述檔來指派。
+登入後，首先 [!UICONTROL Cloud Manager]要做的事是設定您的程式碼儲存庫環境，然後是您的團隊和角色。 具體而言，角色成員資格是透過使用「管理控制台」UI將使 [!UICONTROL Cloud Manager] 用者新增至描述檔來指派。
 
 接下來，您必須在 **Git Repository中設定原始碼分支**，根據負載和效能KPI定義您的目標，並測試藍本，以便在所有品質檢查順利通過後，將您的程式碼成功部署至您的舞台和生產環境。
 
