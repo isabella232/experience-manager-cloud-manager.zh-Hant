@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '597'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 要利用此功能，Maven組建版本應生成包含至少兩個目錄( ***conf*** 和 ***conf.d)的zip檔案***。 此zip檔案可使用maven-assembly-plugin來製作。 由Cloud Manager使用內建精靈產生的專 [案](/help/using/create-an-application-project.md) ，在建立專案時會建立正確的Maven專案結構。 這是新Managed Services客戶的推薦路徑。
 
-部署到Dispatcher **Instance**&#x200B;時，這些目錄的內容將覆蓋Dispatcher實例上這些目錄的內容。 由於Web伺服器和Dispatcher配置檔案通常需要特定於環境的資訊，為了使此功能正確使用，您首先需要與客戶成功工程師(CSE)合作，以在 ***/etc/sysconfig/httpd中設定這些環境變數***。
+部署到Dispatcher **Instance**&#x200B;時，這些目錄的內容將覆蓋Dispatcher實例上這些目錄的內容。 由於Web伺服器和Dispatcher配置檔案通常需要特定於環境的資訊，因此要正確使用此功能，您首先需要與客戶成功工程師(CSE)合作，在中設定這些環境變數 `/etc/sysconfig/httpd`。
 
 ### 為現有Managed Services客戶配置Dispatcher的步驟 {#steps-for-configuring-dispatcher}
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 1. 從CSE中獲取當前生產配置檔案。
 1. 移除硬式編碼的環境特定資料（例如發佈轉譯器IP），並以變數取代。
-1. 在每個目標Dispatcher的鍵值對中定義所需的變數，並請求CSE在每個實例上添加 ***/etc/sysconfig/httpd*** 。
+1. 在每個目標Dispatcher的鍵值對中定義所需的變數，並請求CSE在每個實例 `/etc/sysconfig/httpd` 上添加。
 1. 在您的舞台環境上測試更新的組態，然後請求CSE部署至生產環境。
 1. 將檔案提交 **到Git儲存庫**。
 
@@ -220,7 +220,7 @@ ht-degree: 2%
    >[!NOTE]
    如步驟1所述，元素的值必 `<module>` 須 **符合** 已建立的目錄名。
 
-1. 最後，要測試，請在項目根目錄中運行mvn clean軟體包。 在輸出中應該看到這樣的行
+1. 最後，要測試，請在項目根目錄中運行mvn clean軟體包。 在輸出中，您應該會看到這樣的行
 
    ```
    [INFO] --- maven-assembly-plugin:3.1.0:single (default) @ dispatcher ---
