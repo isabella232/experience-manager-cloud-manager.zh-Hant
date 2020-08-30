@@ -2,14 +2,14 @@
 title: 部署程式碼
 seo-title: 部署程式碼
 description: 'null'
-seo-description: 配置了管線（儲存庫、環境和測試環境）後，您就可以部署代碼。 請依本頁瞭解詳細資訊。
+seo-description: 配置了管線（儲存庫、環境和測試環境）後，您就可以部署代碼。 請依照本頁進一步瞭解。
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 1%
@@ -75,7 +75,7 @@ ht-degree: 1%
    >在配 **置管線時** ，會啟用「計畫生產部署」。
    >
    >
-   >使用此選項，您可以排程生產部署，或按一下「立 **即** 」立即執行生產部署。
+   >使用此選項，您可以排程生產部署，或按一下「 **立即** 」立即執行生產部署。
    >
    >
    >排程的日期和時間會根據使用者的時區指定。
@@ -127,13 +127,11 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
    1. 在流水線配置中指定的每個路徑都無效或從調度器快取中刷新。
 
    >[!NOTE]
-   >
    >Cloud Manager希望調度器對象包含完整檔案集。  所有調度程式配置檔案都必須存在於git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
 
 1. 成功將所有AEM和Dispatcher套件部署至所有節點後，會將Dispatcher新增至負載平衡器，而部署即告完成。
 
    >[!NOTE]
-   >
    >您可以跳過開發和階段部署中的負載平衡器更改，即在非生產流水線、開發人員環境和生產流水線中分離和附加步驟，以用於階段環境。
 
 ### 部署至生產階段 {#deployment-production-phase}
