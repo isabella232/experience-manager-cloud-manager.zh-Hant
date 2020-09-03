@@ -5,9 +5,9 @@ archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 說明
 user-guide-description: Learn to use Adobe Managed Services to self-manage Experience Manager in the cloud.
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '218'
 ht-degree: 87%
 
 ---
@@ -31,7 +31,9 @@ ht-degree: 87%
 + 快速入門 {#getting-started}
    + [首次登入](first-time-login.md)
    + [設定您的方案](setting-up-program.md)
-   + [建立 AEM 應用程式專案](create-an-application-project.md)
+   + 建立 AEM 應用程式專案 {#create-application-project}
+      + [建立 AEM 應用程式專案](create-an-application-project.md)
+      + [使用精靈](using-the-wizard.md)
    + [設定您的發行分支](configure-your-release-branches.md)
    + [管理 Dispatcher 設定](dispatcher-configurations.md)
 + 如何使用 {#how-to-use}
@@ -52,7 +54,8 @@ ht-degree: 87%
    + [概覽](overview-productupdate-wizard.md)
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
-   + [最新發行說明 (2020.8.0)](release-notes-current.md)
+   + [最新發行說明 (2020.9.0)](release-notes-current.md)
+   + [2020.8.0 版發行說明](release-notes-2020-8-0.md)
    + [2020.7.0 版發行說明](release-notes-2020-7-0.md)
    + [2020.6.0 版發行說明](release-notes-2020-6-0.md)
    + [2020.5.0 版發行說明](release-notes-2020-5-0.md)
