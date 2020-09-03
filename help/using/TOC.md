@@ -5,10 +5,10 @@ archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 說明
 user-guide-description: Learn to use Adobe Managed Services to self-manage Experience Manager in the cloud.
 translation-type: tm+mt
-source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
+source-git-commit: f73ea3db4bc50891518bebbe5da2d69dd2890a81
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 87%
+source-wordcount: '221'
+ht-degree: 83%
 
 ---
 
@@ -32,8 +32,9 @@ ht-degree: 87%
    + [首次登入](first-time-login.md)
    + [設定您的方案](setting-up-program.md)
    + 建立 AEM 應用程式專案 {#create-application-project}
-      + [建立 AEM 應用程式專案](create-an-application-project.md)
       + [使用精靈](using-the-wizard.md)
+      + [設定專案](setting-up-project.md)
+      + [瞭解構建環境](build-environment-details.md)
    + [設定您的發行分支](configure-your-release-branches.md)
    + [管理 Dispatcher 設定](dispatcher-configurations.md)
 + 如何使用 {#how-to-use}
