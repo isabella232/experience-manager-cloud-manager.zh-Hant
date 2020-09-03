@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager 2020.9.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.9.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.9.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
+source-git-commit: 988cebcb0503725946d33751d111e10f28f09ce7
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 發行日期 {#release-date}
 
-2020.8.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年9月03日。
+2020.9.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年9月03日。
 
 ## 新功能 {#whats-new}
 
