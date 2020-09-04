@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 除了一般的AEM內容套件外，Cloud Manager還能夠部署Web伺服器和Dispatcher組態檔案(假設這些檔案儲存在 **Git Repository**)。
 
-要利用此功能，Maven組建版本應生成包含至少兩個目錄( ***conf*** 和 ***conf.d)的zip檔案***。 此zip檔案可使用maven-assembly-plugin來製作。 由Cloud Manager使用內建精靈產生的專 [案](/help/using/create-an-application-project.md) ，在建立專案時會建立正確的Maven專案結構。 這是新Managed Services客戶的推薦路徑。
+要利用此功能，Maven組建版本應生成包含至少兩個目錄( ***conf*** 和 ***conf.d)的zip檔案***。 此zip檔案可使用maven-assembly-plugin來製作。 由Cloud Manager使用內建精靈產生的專 [案](/help/using/using-the-wizard.md) ，在建立專案時會建立正確的Maven專案結構。 這是新Managed Services客戶的推薦路徑。
 
 部署到Dispatcher **Instance**&#x200B;時，這些目錄的內容將覆蓋Dispatcher實例上這些目錄的內容。 由於Web伺服器和Dispatcher配置檔案通常需要特定於環境的資訊，因此要正確使用此功能，您首先需要與客戶成功工程師(CSE)合作，在中設定這些環境變數 `/etc/sysconfig/httpd`。
 
