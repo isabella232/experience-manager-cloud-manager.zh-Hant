@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '952'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
    「 **舞台部署**」涉及以下步驟：
 
    * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建立程式。 如需 [建立環境的詳細資訊，請參閱「建立AEM應用程式專案](create-an-application-project.md) 」。
+   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關 [構建環境的詳細資訊](/help/using/build-environment-details.md) ，請參閱瞭解構建環境。
    * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
    * 部署至舞台
 
