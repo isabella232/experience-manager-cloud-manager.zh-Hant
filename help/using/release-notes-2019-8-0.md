@@ -4,9 +4,9 @@ seo-title: AEM Cloud Manager 2019.8.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2019.8.0版的相關資訊。
 seo-description: 請依照本頁取得AEM Cloud Manager 2019.8.0版的相關資訊。
 translation-type: tm+mt
-source-git-commit: c07e88564dc1419bd0305c9d25173a8e0e1f47cf
+source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '223'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 ## 新功能 {#whats-new}
 
 * 由 [Adobe I/O CLI提供的Cloud Manager API新命令列介面](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
-* 構建版本生成的特定內容包可聲明為可跳過，且不會部署。 如需詳細 ***資訊，請參閱「建立AEM應用程*** 式專案」中的「跳過內容套件 [](/help/using/create-an-application-project.md) 」一節。
+* 由組建產生的特定內容封裝可宣告為已跳過且不會部署。 如需詳細 [資訊，請參閱「跳過內容套件](/help/using/setting-up-project.md#skipping-content-packages) 」。
 * 已重新處理建置容器中預先載入的相依性集，以避免某些不必要的網路要求。
 * 某些配置錯誤的程式的概述頁面上的消息已經改進。
 
