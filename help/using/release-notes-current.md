@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager 2020.9.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2020.9.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.9.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: 988cebcb0503725946d33751d111e10f28f09ce7
+source-git-commit: 92249cbb7134082fcc66455c90dda8bdcb9dbf1d
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 10%
@@ -23,6 +23,6 @@ ht-degree: 10%
 
 * 建立程式已分為三個不同的Maven命令。
 * 如果Git儲存庫無法克隆，則最多將重新嘗試三次。
-* 在效能測試期間使用身份驗證時，現在流水線執行詳細資訊頁面上有一個指示器
+* 在效能測試期間使用驗證時，現在流水線執行詳細資訊頁面上有一個指示器。
 
 
