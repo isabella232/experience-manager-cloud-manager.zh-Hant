@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
 source-wordcount: '1751'
 ht-degree: 1%
@@ -45,7 +45,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 >[!CAUTION]
 >
->在Git儲存庫至少有一個分支和程式設定完成之前，無法 [設定管道](setting-up-program.md) 。
+>在Git儲存庫至少有一個分支且程式設定完成之前，無法 [設定管道](setting-up-program.md) 。
 
 開始部署代碼之前，必須從中配置管線設定 [!UICONTROL Cloud Manager]。
 
@@ -204,7 +204,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 具有已驗證網站的AMS客戶可以指定Cloud Manager在Sites效能測試期間用來存取網站的使用者名稱和密碼。
 
-用戶名和口令被指定為 [具有名稱](/help/using/create-an-application-project.md#pipeline-variables) 和的管 `CM_PERF_TEST_BASIC_USERNAME` 線變數 `CM_PERF_TEST_BASIC_PASSWORD`。
+用戶名和口令被指定為 [具有名稱](/help/using/build-environment-details.md#pipeline-variables) 和的管 `CM_PERF_TEST_BASIC_USERNAME` 線變數 `CM_PERF_TEST_BASIC_PASSWORD`。
 
 雖然並非嚴格要求，但建議使用字串變數類型做為username，並建議使用secretString變數類型作為密碼。 如果同時指定了這兩者，則效能測試Crawler和測試虛擬用戶的每個請求都將包含這些憑據作為HTTP Basic身份驗證。
 
