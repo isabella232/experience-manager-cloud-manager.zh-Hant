@@ -1,7 +1,7 @@
 ---
 title: 2019.1.0 版發行說明
 seo-title: AEM Cloud Manager 2019.1.0版本注意事項
-description: 請依照本頁取得Cloud Manager 2019.1.0版的資訊。
+description: 請依照本頁取得Cloud Manager 2019.1.0版的相關資訊。
 seo-description: 請依照本頁取得AEM Cloud Manager 2019.1.0版的相關資訊。
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
 translation-type: tm+mt
-source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '335'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 4%
 
 * 新增對AEM Assets效能測試的支援。 如需詳細資訊，請參 [閱設定CI/CD](configuring-pipeline.md)管道。
 * 新增支援僅執行建置和程式碼品質步驟的管道，以及部署至非生產環境的管道。 如需詳細資 **訊，請參閱「設定CI/CD管道」中的「非生產與程式碼**[](configuring-pipeline.md) 品質僅限管道」一節。
-* 新增對建置環境中自訂環境變數的支援。 如需詳細 [資訊，請參閱「建立AEM應用程式專案](/help/using/create-an-application-project.md) 」。
+* 新增對建置環境中自訂環境變數的支援。
 * 對於具有多階段或生產環境的客戶，可在「配置CI/CD管道」頁中選擇將部署到哪個環境作為生產管道的一部分 [](configuring-pipeline.md) 。
 * httpxt2dbm已新增至建立容器。
 * 所有幫助菜單項都會開啟一個新頁籤。
