@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 translation-type: tm+mt
-source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '329'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ## 新功能 {#what-s-new}
 
-* **Program Setup** - New wizard to create an application project in the AEM Project Archetype請參閱「 [Create an AEM Application Project](/help/using/create-an-application-project.md) 」（建立AEM應用程式專案）以瞭解更多資訊。
+* **Program Setup** —— 使用AEM Project原型在Git中建立應用程式專案的新精靈
 
 * **CI/CD管線** - CI/CD管線中添加了以下更改。 請參閱「 [Configure your CI/CD Pipeline](configuring-pipeline.md) （配置CI/CD管道）」以瞭解更多資訊。
 
