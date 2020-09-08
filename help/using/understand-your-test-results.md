@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
+source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 6%
@@ -56,7 +56,7 @@ ht-degree: 6%
 
 | 名稱 | 定義 | 類別 | 故障閾值 |
 |--- |--- |--- |--- |
-| 安全性分級 | A = 0漏洞 <br/>B =至少1個小漏洞<br/> C =至少1個大漏洞 <br/>D =至少1個嚴重漏洞 <br/>E =至少1個攔截器漏洞 | 關鍵 | &lt; B |
+| 安全性分級 | A = 0漏洞 <br/>B =至少1個小漏洞<br/> C =至少1個大漏洞 <br/>D =至少1個嚴重漏洞 <br/>E =至少1個攔截器漏洞 | 重要 | &lt; B |
 | 可靠性分級 | A = 0錯誤 <br/>B =至少1個次要錯誤 <br/>C =至少1個主要錯誤 <br/>D =至少1個嚴重錯誤<br/>E =至少1個攔截器錯誤 | 重要 | &lt; C |
 | 可維護性評級 | 代碼氣味的未付補救成本是： <br/><ul><li>&lt;=5%已進入應用程式的時間，評分為A </li><li>6%到10%的評分是B </li><li>11%到20%的評分是C </li><li>21%到50%的評分是D</li><li>超過50%的項目是E</li></ul> | 重要 | &lt; A |
 | 適用範圍 | 單位測試線覆蓋率與條件覆蓋率的混合使用公式： <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>其中：CT =運行單元測試時至少評估為&#39;true&#39;的條件 <br/>CF =運行單元測試時評估為&#39;false&#39;的條件至少一次，而 <br/>LC =覆蓋行= lines_to_cover - uncovered_lines <br/><br/> B =條件 <br/>EL =可執行行(lines_to_cover)的總數 | 重要 | &lt; 50% |
@@ -118,20 +118,20 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 | **名稱** | **運行狀況檢查實施** | **類別** |
 |---|---|---|
-| 還原序列化防火牆附加API就緒性處於可接受的狀態 | 還原序列化防火牆附加 API 整備 | 關鍵 |
-| 還原序列化防火牆功能正常 | 還原序列化防火牆已作用 | 關鍵 |
-| 已載入還原序列化防火牆 | 還原序列化防火牆已載入 | 關鍵 |
-| AuthorizableNodeName實作不會在節點名稱／路徑中公開可授權的ID。 | 可授權節點名稱產生 | 關鍵 |
-| 預設密碼已變更 | 預設登入帳戶 | 關鍵 |
-| Sling default GET servlet受到DOS攻擊的保護。 | Sling Get Servlet | 關鍵 |
-| Sling Java Script Handler已正確設定 | Sling Java 指令碼處理常式 | 關鍵 |
-| Sling JSP指令碼處理常式已正確設定 | Sling JSP指令碼處理常式 | 關鍵 |
-| SSL已正確設定 | SSL 設定 | 關鍵 |
-| 未發現明顯不安全的使用者設定檔原則 | 使用者設定檔預設存取 | 關鍵 |
+| 還原序列化防火牆附加API就緒性處於可接受的狀態 | 還原序列化防火牆附加 API 整備 | 重要 |
+| 還原序列化防火牆功能正常 | 還原序列化防火牆已作用 | 重要 |
+| 已載入還原序列化防火牆 | 還原序列化防火牆已載入 | 重要 |
+| AuthorizableNodeName實作不會在節點名稱／路徑中公開可授權的ID。 | 可授權節點名稱產生 | 重要 |
+| 預設密碼已變更 | 預設登入帳戶 | 重要 |
+| Sling default GET servlet受到DOS攻擊的保護。 | Sling Get Servlet | 重要 |
+| Sling Java Script Handler已正確設定 | Sling Java 指令碼處理常式 | 重要 |
+| Sling JSP指令碼處理常式已正確設定 | Sling JSP指令碼處理常式 | 重要 |
+| SSL已正確設定 | SSL 設定 | 重要 |
+| 未發現明顯不安全的使用者設定檔原則 | 使用者設定檔預設存取 | 重要 |
 | Sling Referrer Filter已設定，以防止CSRF攻擊 | Sling 查閱者篩選 | 重要 |
 | Adobe Granite HTML Library Manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
 | 已禁用CRXDE支援包 | CRXDE 支援 | 重要 |
-| Sling DavEx Bundle和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
+| Sling DavEx套裝和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
 | 未安裝範例內容 | 範例內容封裝 | 重要 |
 | WCM請求篩選器和WCM除錯篩選器都已停用 | WCM 篩選設定 | 重要 |
 | Sling WebDAV搭售和servlet已正確設定 | WebDAV 健康狀態檢查 | 重要 |
@@ -154,15 +154,15 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 | **量度** | **類別** | **故障閾值** |
 |---|---|---|
-| 頁面請求錯誤率% | 關鍵 | >= 2% |
-| CPU使用率 | 關鍵 | >= 80% |
-| 磁碟IO等待時間 | 關鍵 | >= 50% |
+| 頁面請求錯誤率% | 重要 | >= 2% |
+| CPU使用率 | 重要 | >= 80% |
+| 磁碟IO等待時間 | 重要 | >= 50% |
 | 95百分位數回應時間 | 重要 | >=方案層級KPI |
 | 峰值響應時間 | 重要 | >= 18秒 |
 | 每分鐘頁面檢視次數 | 重要 | &lt;方案層級KPI |
 | 磁碟頻寬利用率 | 重要 | >= 90% |
 | 網路頻寬利用率 | 重要 | >= 90% |
-| 每分鐘請求數 | 資訊 | &lt; 6000 |
+| 每分鐘請求數 | 資訊 | >= 6000 |
 
 ### 效能測試結果圖 {#performance-testing-results-graphs}
 
