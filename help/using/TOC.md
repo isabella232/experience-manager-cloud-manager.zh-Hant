@@ -6,9 +6,9 @@ user-guide-title: Experience Manager Cloud Manager指南
 breadcrumb-title: Cloud Manager Guide
 user-guide-description: Learn to use Adobe Managed Services to self-manage Experience Manager in the cloud.
 translation-type: tm+mt
-source-git-commit: 0f8d208484044db66aa94d7505b9fdaa2a206a09
+source-git-commit: 928b430dde75070178fac323eb7bc959d35a2ae7
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '224'
 ht-degree: 80%
 
 ---
@@ -56,7 +56,8 @@ ht-degree: 80%
    + [概覽](overview-productupdate-wizard.md)
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
-   + [最新發行說明 (2020.9.0)](release-notes-current.md)
+   + [最新發行說明 (2020.10.0)](release-notes-current.md)
+   + [2020.9.0 版發行說明](release-notes-2020-9-0.md)
    + [2020.8.0 版發行說明](release-notes-2020-8-0.md)
    + [2020.7.0 版發行說明](release-notes-2020-7-0.md)
    + [2020.6.0 版發行說明](release-notes-2020-6-0.md)
