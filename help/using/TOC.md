@@ -2,19 +2,19 @@
 product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
-user-guide-title: Experience Manager Cloud Manager指南
-breadcrumb-title: Cloud Manager Guide
-user-guide-description: Learn to use Adobe Managed Services to self-manage Experience Manager in the cloud.
+user-guide-title: Experience Manager Cloud Manager 指南
+breadcrumb-title: Cloud Manager 指南
+user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自行管理Experience Manager。
 translation-type: tm+mt
 source-git-commit: 928b430dde75070178fac323eb7bc959d35a2ae7
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 80%
+source-wordcount: '240'
+ht-degree: 85%
 
 ---
 
 
-# 雲端管理員指南 {#using}
+# Cloud Manager 指南 {#using}
 
 + [Cloud Manager 簡介](introduction-to-cloud-manager.md)
 + 概覽 {#overview}
