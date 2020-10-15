@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +22,6 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 在您設定一般設定後， [!UICONTROL Cloud Manager]就可以使用使用者介面(UI) [!UICONTROL Cloud Manager]。
 
 >[!NOTE]
->
 >根據中指派的角色和應 [!UICONTROL Cloud Manager] 用程式的狀態，您在使用UI時會看到不同的 [!UICONTROL Cloud Manager] 畫面。
 
 ## 教學影片 {#video-tutorial-one}
@@ -32,11 +34,11 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ## 首次登入 {#logging-in-for-the-first-time}
 
-1. 登入 **Adobe[!UICONTROL Experience Cloud]**，您就會看到程式**&#x200B;清單&#x200B;**。
+1. 登入 **Adobe[!UICONTROL Experience Cloud]** ，您就會看到程式 **清單**。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
-1. 選擇程式(例如 **We.Retail Global**)，然後按一下左上角的圖示以開啟 [!UICONTROL Cloud Manager]。
+1. 選取程式(例如 **We.Retail Global**)，然後按一下左上角的圖示以開啟 [!UICONTROL Cloud Manager]。
 
    ![](assets/first-timea1.png)
 
