@@ -2,9 +2,9 @@
 title: 瞭解構建環境
 description: 請依本頁瞭解環境
 translation-type: tm+mt
-source-git-commit: 57a99792e151bd5fe69c8372b6a9d3b100036a51
+source-git-commit: 000843f902a180181981de2b1307fd2777d32994
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-變數名稱只能包含英數字元和底線(_)字元。 按照慣例，名稱應全部大寫。 每個管線有200個變數的限制，每個名稱必須小於100個字元，每個值必須小於2048個字元。
+變數名稱只能包含英數字元和底線(_)字元。 按照慣例，名稱應全部大寫。 每個管線有200個變數的限制，每個名稱必須少於100個字元，而字串類型變數的每個值必須少於2048個字元，secretString類型變數的每個值必須少於500個字元。
 
 在檔案中使用時， `Maven pom.xml` 通常使用類似下列的語法將這些變數對應至Maven屬性會很有幫助：
 
@@ -183,5 +183,4 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
 此相同技術可用於安裝語言特定的軟體包，即使用RubyGems或 `gem` Python軟體包 `pip` 進行安裝。
 
 >[!NOTE]
->
->以此方式安裝系統套件 **不會** ，將它安裝在執行Adobe Experience Manager時所用的執行階段環境中。 如果您需要在AEM環境中安裝系統套件，請連絡您的客戶成功工程師(CSE)。
+>以此方式安裝系統套件 **不會** ，將它安裝在執行Adobe Experience Manager時所用的執行階段環境中。 如果您需要在AEM環境中安裝系統套件，請連絡您的Adobe代表。
