@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 91%
@@ -73,4 +73,4 @@ ht-degree: 91%
 自動縮放功能只會套用在 Dispatcher/Publish 層，而且一律會採用水平縮放的方法來執行，至少一個額外的 Dispatcher/Publish 組合區段，最多十個區段。佈建的額外容量會在十個工作天的期間內以手動縮放，實際時間長短由 CSE (客戶成功工程師) 決定。
 
 >[!NOTE]
->想要探索Autoscaling是否適合其應用程式的客戶，請聯絡其CSE或Adobe代表。
+>想要探索自動縮放是否適合其應用程式的客戶，請連絡其CSE或Adobe代表。
