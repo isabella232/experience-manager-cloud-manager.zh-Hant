@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 4838de3d6c78884333d8088eb38f388fbcd0e707
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 94%
+source-wordcount: '680'
+ht-degree: 91%
 
 ---
 
@@ -70,4 +70,4 @@ ht-degree: 94%
 
 在自動縮放的事件中，[!UICONTROL Cloud Manager] 會自動觸發自動縮放佈建程序，傳送自動縮放事件的通知，並在數分鐘內讓額外的容量上線。額外的容量會佈建在相同地區的生產環境中，並且採用與執行 Dispatcher/Publish 節點相同的系統規格。
 
-自動縮放功能只會套用在 Dispatcher/Publish 層，而且一律會採用水平縮放的方法來執行，至少一個額外的 Dispatcher/Publish 組合區段，最多十個區段。佈建的額外容量會在十個工作天的期間內以手動縮放，實際時間長短由 CSE (客戶成功工程師) 決定。
+自動縮放功能只會套用在 Dispatcher/Publish 層，而且一律會採用水平縮放的方法來執行，至少一個額外的 Dispatcher/Publish 組合區段，最多十個區段。佈建的額外容量會在十個工作天的期間內以手動縮放，實際時間長短由 CSE (客戶成功工程師) 決定。想要探索Autoscaling是否適合其應用程式的客戶，請聯絡其CSE或Adobe代表。
