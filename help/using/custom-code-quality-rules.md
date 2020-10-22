@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: a8cd1ac2448b9f875c1d925c62e7fe42c8ceec2a
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2296'
 ht-degree: 6%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 6%
 本頁說明由Cloud Manager根據AEM工程的最佳實務建立的自訂程式碼品質規則。
 
 >[!NOTE]
->
->此處提供的程式碼範例僅供說明之用。
+>此處提供的程式碼範例僅供說明之用。 請參 [閱Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) ，以瞭解SonarQube概念和品質規則。
 
 ## SonarQube規則 {#sonarqube-rules}
 
@@ -31,13 +30,13 @@ ht-degree: 6%
 
 ### 不要使用潛在的危險功能 {#do-not-use-potentially-dangerous-functions}
 
-**密鑰**: CQRules:CWE-676
+**密鑰**:CQRules:CWE-676
 
-**類型**: 弱點
+**類型**:弱點
 
-**嚴重性**: 主修
+**嚴重性**:主修
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 方法 ***Thread.stop()*** 和 ***Thread.interrupt()*** 可產生難以重制的問題，在某些情況下，還可能產生安全漏洞。它們的使用應受到嚴密監控和驗證。總的來說，傳遞資訊是實現類似目標的更安全的方式。
 
@@ -90,13 +89,13 @@ public class DoThis implements Runnable {
 
 ### 請勿使用可能受外部控制的格式字串 {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-**密鑰**: CQRules:CWE-134
+**密鑰**:CQRules:CWE-134
 
-**類型**: 弱點
+**類型**:弱點
 
-**嚴重性**: 主修
+**嚴重性**:主修
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 使用來自外部源（如請求參數或用戶生成的內容）的格式字串可以使應用程式暴露於拒絕服務攻擊。 在某些情況下，格式字串可能受到外部控制，但僅允許來自受信任來源。
 
@@ -112,13 +111,13 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 ### HTTP請求應一律有通訊端和連線逾時 {#http-requests-should-always-have-socket-and-connect-timeouts}
 
-**密鑰**: CQRules:ConnectionTimeoutMechanism
+**密鑰**:CQRules:ConnectionTimeoutMechanism
 
-**類型**: 錯誤
+**類型**:錯誤
 
-**嚴重性**: 關鍵
+**嚴重性**:重要
 
-**自**: 2018.6.0版
+**自**:2018.6.0版
 
 當從AEM應用程式內部執行HTTP請求時，請務必確定已設定適當逾時，以避免不必要的執行緒耗用。 很遺憾，Java的預設HTTP客戶端(java.net.HttpUrlConnection)和常用的Apache HTTP Components客戶端的預設行為都是永不超時，因此必須明確設定超時。 此外，作為最佳實務，這些逾時秒數不應超過60秒。
 
@@ -190,13 +189,13 @@ public void orDoThis() {
 
 ### 客戶不應實作或擴充以@ProviderType註解的產品API {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
-**密鑰**: CQBP-84、CQBP-84-dependicies
+**密鑰**:CQBP-84、CQBP-84-dependicies
 
-**類型**: 錯誤
+**類型**:錯誤
 
-**嚴重性**: 關鍵
+**嚴重性**:重要
 
-**自**: 2018.7.0版
+**自**:2018.7.0版
 
 AEM API包含Java介面和類別，這些介面和類別僅能由自訂程式碼使用，但不能實作。例如，介面 *com.day.cq.wcm.api.Page* 僅由 ***AEM實作***。
 
@@ -216,13 +215,13 @@ public class DontDoThis implements Page {
 
 ### ResourceResolver對象應始終關閉 {#resourceresolver-objects-should-always-be-closed}
 
-**密鑰**: CQRules:CQBP-72
+**密鑰**:CQRules:CQBP-72
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 主修
+**嚴重性**:主修
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 從ResourceResolverFactory中獲取的ResourceResolver對象會佔用系統資源。 雖然在ResourceResolver不再使用時，有措施可回收這些資源，但通過調用close()方法明確關閉任何已開啟的ResourceResolver對象會更有效。
 
@@ -261,13 +260,13 @@ public void orDoThis(Session session) throws Exception {
 
 ### 請勿使用Sling servlet路徑來註冊servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
-**密鑰**: CQRules:CQBP-75
+**密鑰**:CQRules:CQBP-75
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 主修
+**嚴重性**:主修
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 如 [Sling檔案所述](http://sling.apache.org/documentation/the-sling-engine/servlets.html)，不建議依路徑系結servlet。 路徑綁定的servlet不能使用標準JCR訪問控制，因此需要額外的安全性嚴格性。 建議您不要使用路徑綁定的servlet，而是在儲存庫中建立節點並按資源類型註冊servlet。
 
@@ -284,13 +283,13 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 ### 捕獲到的異常應記錄或拋出，但不應同時記錄或拋出 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-**密鑰**: CQRules:CQBP-44—CatchAndEitherLogOrThrow
+**密鑰**:CQRules:CQBP-44—CatchAndEitherLogOrThrow
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 一般而言，例外應只記錄一次。 多次記錄例外可能會造成混淆，因為不清楚發生例外的次數。 導致這種情況的最常見模式是記錄並拋出一個捕獲到的異常。
 
@@ -329,13 +328,13 @@ public void orDoThis() throws MyCustomException {
 
 ### 避免在日誌語句後面立即加上拋出語句 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-**密鑰**: CQRules:CQBP-44—ConcentilueLogAndThrow
+**密鑰**:CQRules:CQBP-44—ConcentilueLogAndThrow
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 另一個避免的常見模式是記錄訊息，然後立即擲回例外。 這通常表示異常消息將在日誌檔案中重複。
 
@@ -356,13 +355,13 @@ public void doThis() throws Exception {
 }
 ```
 
-### 在處理GET或HEAD請求時，避免登入INFO {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### 在處理GET或HEAD請求時，避免在INFO登入 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-**密鑰**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
+**密鑰**:CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
 一般而言，INFO記錄檔層級應用於區分重要動作，而且依預設，AEM會設定為在INFO層級或以上記錄檔。 GET和HEAD方法只能是只讀操作，因此不構成重要操作。 響應GET或HEAD請求在INFO級別登錄可能會產生明顯的日誌雜訊，從而更難識別日誌檔案中的有用資訊。 處理GET或HEAD請求時的記錄應位於發生錯誤時的WARN或ERROR級別，或位於DEBUG或TRACE級別（如果更深入的疑難排解資訊有幫助）。
 
@@ -388,15 +387,15 @@ public void doGet() throws Exception {
 
 ### 請勿將Exception.getMessage()用作記錄語句的第一個參數 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
-**密鑰**: CQRules:CQBP-44 - ExceptionGetMessageIsFirstLogParam
+**密鑰**:CQRules:CQBP-44 - ExceptionGetMessageIsFirstLogParam
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
-作為最佳做法，日誌消息應提供有關應用程式中發生異常的位置的上下文資訊。 雖然上下文也可以透過使用堆疊追蹤來判斷，但一般而言，記錄訊息會更容易讀取和瞭解。 因此，在記錄例外時，將例外消息用作日誌消息的做法是不好的——例外消息將包含出錯的內容，而日誌消息應用於告知日誌讀取器發生例外時應用程式正在執行什麼操作。 例外消息仍將記錄； 指定您自己的訊息，讓記錄檔更容易理解。
+作為最佳做法，日誌消息應提供有關應用程式中發生異常的位置的上下文資訊。 雖然上下文也可以透過使用堆疊追蹤來判斷，但一般而言，記錄訊息會更容易讀取和瞭解。 因此，在記錄例外時，將例外消息用作日誌消息的做法是不好的——例外消息將包含出錯的內容，而日誌消息應用於告知日誌讀取器發生例外時應用程式正在執行什麼操作。 例外消息仍將記錄；指定您自己的訊息，讓記錄檔更容易理解。
 
 #### 不符合程式碼 {#non-compliant-code-9}
 
@@ -424,13 +423,13 @@ public void doThis() {
 
 ### 登錄捕獲塊應處於WARN或ERROR級別 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-**密鑰**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
+**密鑰**:CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 如名稱所示，Java例外應一律用於例 *外情* 況。 因此，在捕獲到異常時，務必確保日誌消息記錄在適當的級別- WARN或ERROR。 這可確保這些消息在日誌中正確顯示。
 
@@ -460,13 +459,13 @@ public void doThis() {
 
 ### 不將堆棧跟蹤打印到控制台 {#do-not-print-stack-traces-to-the-console}
 
-**密鑰**: CQRules:CQBP-44 - ExceptionPrintStackTrace
+**密鑰**:CQRules:CQBP-44 - ExceptionPrintStackTrace
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 如前所述，瞭解日誌消息時，上下文至關重要。 使用Exception.printStackTrace()只會 **將堆疊跟蹤輸出到** 標準錯誤流，從而丟失所有上下文。 此外，在像AEM這樣的多執行緒應用程式中，如果使用此方法並行列印多個例外，則其堆疊追蹤可能會重疊，造成嚴重混淆。 只應通過記錄框架記錄異常。
 
@@ -496,13 +495,13 @@ public void doThis() {
 
 ### 不輸出為「標準輸出」或「標準錯誤」 {#do-not-output-to-standard-output-or-standard-error}
 
-**密鑰**: CQRules:CQBP-44—LogLevelConsolePrinters
+**密鑰**:CQRules:CQBP-44—LogLevelConsolePrinters
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 登入AEM應一律透過登入架構(SLF4J)完成。 直接輸出到標準輸出或標準錯誤流會丟失記錄框架提供的結構和上下文資訊，在某些情況下可能導致效能問題。
 
@@ -532,13 +531,13 @@ public void doThis() {
 
 ### 避免硬式編碼/apps和/libs路徑 {#avoid-hardcoded-apps-and-libs-paths}
 
-**密鑰**: CQRules:CQBP-71
+**密鑰**:CQRules:CQBP-71
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2018.4.0版
+**自**:2018.4.0版
 
 一般而言，以/libs和/apps開頭的路徑不應硬式編碼為它們所參照的路徑，最常儲存為相對於Sling搜尋路徑的路徑（依預設會設為/libs,/apps）。 使用絕對路徑可能會帶來細微的缺陷，這些缺陷只會在項目生命週期的後期出現。
 
@@ -560,13 +559,13 @@ public void doThis(Resource resource) {
 
 ### Sling Scheduler Should Not Be Used {#sonarqube-sling-scheduler}
 
-**密鑰**: CQRules:AMSCORE-554
+**密鑰**:CQRules:AMSCORE-554
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2020.5.0版
+**自**:2020.5.0版
 
 Sling Scheduler不得用於需要保證執行的任務。 Sling Scheduled Jobs可確保執行，更適合叢集和非叢集環境。
 
@@ -574,19 +573,19 @@ Sling Scheduler不得用於需要保證執行的任務。 Sling Scheduled Jobs�
 
 ### 不應使用AEM已過時的API {#sonarqube-aem-deprecated}
 
-**密鑰**: AMSCORE-553
+**密鑰**:AMSCORE-553
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2020.5.0版
+**自**:2020.5.0版
 
 AEM API表面處於常數修訂之下，以識別不建議使用且因此被視為已過時的API。
 
 在許多情況下，這些API會使用標準Java *@Deprecated* annotation（例如，由識別）來取代 `squid:CallToDeprecatedMethod`。
 
-不過，有時AEM的內容會淘汰API，但在其他內容中可能不會淘汰。 此規則可識別此第二類。
+不過，有時AEM的上下文中會淘汰API，但在其他上下文中可能不會淘汰。 此規則可識別此第二類。
 
 ## OakPAL內容規則 {#oakpal-rules}
 
@@ -598,25 +597,25 @@ AEM API表面處於常數修訂之下，以識別不建議使用且因此被視�
 
 ### 客戶包不應在/libs下建立或修改節點 {#oakpal-customer-package}
 
-**密鑰**: UnbandedPaths
+**密鑰**:UnbandedPaths
 
-**類型**: 錯誤
+**類型**:錯誤
 
-**嚴重性**: 封鎖程式
+**嚴重性**:封鎖程式
 
-**自**: 2019.6.0版
+**自**:2019.6.0版
 
 AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是一項長期以來的最佳做法。 在 */libs下修改節點和屬性* ，會對主要和次要更新造成重大風險。 Adobe僅 *能透過* 「官方」通道對/libs進行修改。
 
 ### 軟體包不應包含重複的OSGi配置 {#oakpal-package-osgi}
 
-**密鑰**: DuplicateOsgiConfigurations
+**密鑰**:DuplicateOsgiConfigurations
 
-**類型**: 錯誤
+**類型**:錯誤
 
-**嚴重性**: 主修
+**嚴重性**:主修
 
-**自**: 2019.6.0版
+**自**:2019.6.0版
 
 在複雜項目上發生的常見問題是，同一個OSGi元件被多次配置。 這就產生了關於哪些配置可操作的模糊性。 此規則是「執行模式感知」，因為它只會識別在相同執行模式（或執行模式組合）中多次設定相同元件的問題。
 
@@ -643,13 +642,13 @@ AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是
 
 ### 配置和安裝資料夾應僅包含OSGi節點 {#oakpal-config-install}
 
-**密鑰**: ConfigAndInstallShouldOnlyContainOsgiNodes
+**密鑰**:ConfigAndInstallShouldOnlyContainOsgiNodes
 
-**類型**: 錯誤
+**類型**:錯誤
 
-**嚴重性**: 主修
+**嚴重性**:主修
 
-**自**: 2019.6.0版
+**自**:2019.6.0版
 
 基於安全性原因，包含 */config/和/install/* ，路徑僅能由AEM的管理使用者閱讀，且僅能用於OSGi組態和OSGi組合。 將其他類型的內容置於包含這些區段的路徑下，會導致應用程式行為在管理使用者與非管理使用者之間無意間有所不同。
 
@@ -676,37 +675,37 @@ AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是
 
 ### 包不應重疊 {#oakpal-no-overlap}
 
-**密鑰**: PackageOverlaps
+**密鑰**:PackageOverlaps
 
-**類型**: 錯誤
+**類型**:錯誤
 
-**嚴重性**: 主修
+**嚴重性**:主修
 
-**自**: 2019.6.0版
+**自**:2019.6.0版
 
 與「包不 *應包含重複OSGi配置」類似* ，在由多個獨立內容包寫入相同節點路徑的複雜項目中，這是一個常見問題。 雖然使用內容封裝相依性可確保結果一致，但最好避免完全重疊。
 
 ### 預設的製作模式不應是傳統的使用者介面 {#oakpal-default-authoring}
 
-**密鑰**: ClassicUIAuthoringMode
+**密鑰**:ClassicUIAuthoringMode
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2020.5.0版
+**自**:2020.5.0版
 
 OSGi設定會 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 在AEM中定義預設編寫模式。 自從AEM 6.4以來，Classic UI已過時，現在當預設的製作模式設定為Classic UI時，就會引發問題。
 
 ### 具有對話框的元件應具有觸控UI對話框 {#oakpal-components-dialogs}
 
-**密鑰**: ComponentWithOnlyClassicUIDialog
+**密鑰**:ComponentWithOnlyClassicUIDialog
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2020.5.0版
+**自**:2020.5.0版
 
 具有Classic UI對話方塊的AEM元件應一律具有對應的Touch UI對話方塊，以提供最佳的製作體驗，並與不支援Classic UI的Cloud Service部署模型相容。 此規則會驗證下列案例：
 
@@ -718,13 +717,13 @@ AEM Meduration Tools檔案提供如何將元件從傳統UI轉換為Touch UI的�
 
 ### 套件不應混合可變內容和不可變內容 {#oakpal-packages-immutable}
 
-**密鑰**: ImmutableMutableMixedPackage
+**密鑰**:ImmutableMutableMixedPackage
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2020.5.0版
+**自**:2020.5.0版
 
 為了與雲服務部署模型相容，個別內容包必須包含儲存庫不可變區域的內容（即，不應由客戶代碼修改，並將導致單獨違規）或可變區域（即，其他所有內容），但不能同時包含兩者。 `/apps and /libs, although /libs` 例如，包含兩者的套件 `/apps/myco/components/text and /etc/clientlibs/myco` 與雲端服務不相容，且會造成問題報告。
 
@@ -732,15 +731,15 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/zh-Hant/exp
 
 ### 不應使用反向複製代理 {#oakpal-reverse-replication}
 
-**密鑰**: 反向複製
+**密鑰**:反向複製
 
-**類型**: 程式碼氣味
+**類型**:程式碼氣味
 
-**嚴重性**: 次要
+**嚴重性**:次要
 
-**自**: 2020.5.0版
+**自**:2020.5.0版
 
-如發行說明所述，雲端服務部署中不提供反向複製 [支援： 刪除複製代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+如發行說明所述，雲端服務部署中不提供反向複製 [支援：刪除複製代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
 
 使用反向複製的客戶應聯絡Adobe以取得其他解決方案。
 
