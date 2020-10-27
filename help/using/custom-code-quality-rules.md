@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: a8cd1ac2448b9f875c1d925c62e7fe42c8ceec2a
+source-git-commit: 71a760997ec2a0873a7f39d206086a8b4fd6854e
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2314'
 ht-degree: 6%
 
 ---
@@ -561,7 +561,7 @@ public void doThis(Resource resource) {
 
 **密鑰**:CQRules:AMSCORE-554
 
-**類型**:程式碼氣味
+**類型**:程式碼氣味／雲端服務相容性
 
 **嚴重性**:次要
 
@@ -575,7 +575,7 @@ Sling Scheduler不得用於需要保證執行的任務。 Sling Scheduled Jobs�
 
 **密鑰**:AMSCORE-553
 
-**類型**:程式碼氣味
+**類型**:程式碼氣味／雲端服務相容性
 
 **嚴重性**:次要
 
@@ -689,7 +689,7 @@ AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是
 
 **密鑰**:ClassicUIAuthoringMode
 
-**類型**:程式碼氣味
+**類型**:程式碼氣味／雲端服務相容性
 
 **嚴重性**:次要
 
@@ -701,7 +701,7 @@ OSGi設定會 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 在AEM中定
 
 **密鑰**:ComponentWithOnlyClassicUIDialog
 
-**類型**:程式碼氣味
+**類型**:程式碼氣味／雲端服務相容性
 
 **嚴重性**:次要
 
@@ -719,7 +719,7 @@ AEM Meduration Tools檔案提供如何將元件從傳統UI轉換為Touch UI的�
 
 **密鑰**:ImmutableMutableMixedPackage
 
-**類型**:程式碼氣味
+**類型**:程式碼氣味／雲端服務相容性
 
 **嚴重性**:次要
 
@@ -733,7 +733,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/zh-Hant/exp
 
 **密鑰**:反向複製
 
-**類型**:程式碼氣味
+**類型**:程式碼氣味／雲端服務相容性
 
 **嚴重性**:次要
 
