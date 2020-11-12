@@ -1,28 +1,36 @@
 ---
-title: 2020.10.0 版發行說明
-seo-title: AEM Cloud Manager 2020.10.0版本注意事項
-description: 請依照本頁取得Cloud Manager 2020.10.0版的資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2020.10.0版的相關資訊
+title: 2020.11.0 版發行說明
+seo-title: AEM Cloud Manager 2020.11.0版本注意事項
+description: 請依照本頁取得Cloud Manager版本2020.11.0的資訊
+seo-description: 請依照本頁取得AEM Cloud Manager 2020.11.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: aad2da58e5934999884553619dd97d42cc725d88
+source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 2020.10.0 版發行說明 {#release-notes-for}
+# 2020.11.0 版發行說明 {#release-notes-for}
 
-下節概述2020.10.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
+下節概述2020.11.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
 
 ## 發行日期 {#release-date}
 
-2020.10.0版 [!UICONTROL Cloud Manager] 的發行日期是2020年10月1日。
+2020.11.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年11月12日。
+
+## 新功能 {#whats-new}
+
+* Cloud Manager中 **的** 「學習」索引標籤會以UI中的新影像重新整理。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 用於效能測試的Crawler錯誤地將某些資源類型視為有效的Web連結。
+* 某些客戶導致的部署錯誤現在會明確地出現在部署記錄中。
 
-* 在某些情況下，效能測試的完成步驟處理不正確，導致執行時間較長的步驟。
+* 在建立執行前載入的相依性需要下載Maven外掛程式。
 
-* 為生產部署配置了分發程式快取失效時，有時會執行兩次失效。
+* 從Cloud Manager頁尾選取語言的連結現在會導覽至正確的位置。
+
+* 有時在程式碼掃描期間，SonarQube程式不會啟動。 現在會自動偵測到此問題，並嘗試重新啟動。
+
+* 在效能測試中使用的網站編目程式中，會自動重試前三個深度遍歷層級中逾時的請求。
