@@ -10,10 +10,10 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
 workflow-type: tm+mt
-source-wordcount: '1751'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -164,7 +164,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    **AEM Sites:**
 
-   Cloud Manager會在階段發佈伺服器上要求頁面（依預設為未驗證的使用者）達30分鐘的測試期間，並測量每個頁面的回應時間以及各種系統層級度量，以執行AEM Sites程式的效能測試。
+   Cloud Manager會在階段發佈伺服器上要求頁面（依預設為未驗證的使用者）達30分鐘的測試期間，並測量每個頁面的回應時間以及各種系統層級度量，以執行AEM Sites程式的效能測試。 這些請求是從一組已知的專用地址發出的。 您可向客戶成功工程師或Adobe代表取得地址範圍。
 
    在30分鐘測試期開始之前，Cloud Manager將使用由客戶成功工程師配置的一組或多個種子 ** URL來編目Stage環境。 從這些URL開始，會檢查每個頁面的HTML，並以寬度優先的方式瀏覽連結。 此編目程式最多限制為5000頁。 來自Crawler的請求有10秒的固定逾時。
 
