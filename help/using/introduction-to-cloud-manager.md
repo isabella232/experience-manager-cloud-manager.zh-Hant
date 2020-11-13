@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
+source-git-commit: 213d1b2ee52496cc8cf6bc699488d9da9f7b9946
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 91%
+source-wordcount: '682'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 ## 簡介 {#introduction}
 
-[!UICONTROL Cloud Manager]，是 Adobe Managed Services 的一部分，可讓組織在雲端自行管理 Experience Manager。其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。
+[!UICONTROL Cloud Manager],Adobe Experience Manager(AEM)的一部分，讓組織能夠自行管理雲端的Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。
 
 使用 [!UICONTROL Cloud Manager] 自助服務客戶入口網站，**組織**&#x200B;便可以執行/善用以下內容: 
 
