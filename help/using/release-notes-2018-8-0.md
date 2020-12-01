@@ -19,17 +19,17 @@ ht-degree: 4%
 
 # 2018.8.0 版發行說明 {#release-notes-for}
 
-2018.8.0 [!UICONTROL Cloud Manager] 版本新增支援在Git提交時自動觸發CI/CD管道，以及新精靈，可根據AEM專案原型在Git中建立應用程式專案。
+[!UICONTROL Cloud Manager] 2018.8.0版新增支援，可在Git提交時自動觸發CI/CD管道，並新增精靈，可根據AEM專案原型在Git中建立應用程式專案。
 
 ## 發行日期 {#release-date}
 
-2018.8.0版 [!UICONTROL Cloud Manager] 的發行日期為2018年10月4日。
+[!UICONTROL Cloud Manager] 2018.8.0版的發行日期為2018年10月04日。
 
 ## 新功能 {#what-s-new}
 
-* **Program Setup** —— 使用AEM Project原型在Git中建立應用程式專案的新精靈
+* **程式設定** -使用「AEM專案原型」在Git中建立應用程式專案的新精靈
 
-* **CI/CD管線** - CI/CD管線中添加了以下更改。 請參閱「 [Configure your CI/CD Pipeline](configuring-pipeline.md) （配置CI/CD管道）」以瞭解更多資訊。
+* **CI/CD管線** - CI/CD管線中添加了以下更改。請參閱[配置CI/CD Pipeline](configuring-pipeline.md)以瞭解更多資訊。
 
    * On Git Changes trigger, this trigger when when the commits added to the configured git branch.
    * 首頁畫面上的卡片現在深入連結至管道執行頁面的特定區段。
@@ -41,7 +41,7 @@ ht-degree: 4%
 * **導覽** -下列變更會新增至 [!UICONTROL Cloud Manager]。
 
    * 全域導覽中的資源連結將導覽至Sharepoint中的「操作手冊」。
-   * 說明功能表已重新整理，加入更 [!UICONTROL Cloud Manager]多特定內容。
+   * 說明功能表已重新整理，以包含更多[!UICONTROL Cloud Manager]特定內容。
 
 ## 錯誤修正 {#bug-fixes}
 
@@ -54,5 +54,5 @@ ht-degree: 4%
 ## 已知問題 {#known-issues}
 
 * 使用「應用程式專案精靈」建立的分支不能包含虛線。
-* 通知 [!UICONTROL Experience Cloud] 側欄可能無法一致地載入通知。 不過，通知會顯示在中， [!UICONTROL Experience Cloud] 且如果設定，仍會透過電子郵件傳送。
+* [!UICONTROL Experience Cloud]通知邊欄可能無法一致地載入通知。 但是，通知會顯示在[!UICONTROL Experience Cloud]中，若已設定，仍會透過電子郵件傳送。
 
