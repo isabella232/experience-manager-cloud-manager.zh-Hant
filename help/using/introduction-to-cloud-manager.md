@@ -21,7 +21,7 @@ ht-degree: 88%
 
 ## 簡介 {#introduction}
 
-[!UICONTROL Cloud Manager],Adobe Experience Manager(AEM)的一部分，讓組織能夠自行管理雲端的Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。
+[!UICONTROL Cloud Manager],Adobe Experience Manager(AEM)的一部分，讓組織能夠自行管理雲端的Experience Manager。其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。
 
 使用 [!UICONTROL Cloud Manager] 自助服務客戶入口網站，**組織**&#x200B;便可以執行/善用以下內容: 
 
@@ -44,7 +44,7 @@ ht-degree: 88%
 
 客戶定義應用程式專用的關鍵績效指標 (KPI) - 每分鐘尖峰頁面檢視次數，以及頁面載入的預期回應時間，而這些最終可構成衡量成功部署的基礎。您可以輕鬆定義不同團隊成員的角色和權限。全新的自助服務介面可讓您重新取得掌控，而且也提供最佳實務連結以及 Adobe 內部專家的存取權限，這些專家可提供您所需的指引。
 
-若要探索並開始使用 [!UICONTROL Cloud Manager]UI，請參 [閱首次登入](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)。
+若要探索並開始使用[!UICONTROL Cloud Manager]的UI，請參閱[首次登入](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)。
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
@@ -52,7 +52,7 @@ ht-degree: 88%
 
 透過 [!UICONTROL Cloud Manager] UI，客戶可以設定並啟動其 CI/CD 管道。在此管道期間，會執行徹底的程式碼掃描，以確保只有高品質的應用程式才能傳遞至生產環境。
 
-若要進一步瞭解如何從UI設 [!UICONTROL Cloud Manager]定管道，請參 [閱設定CI/CD管道](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)。
+要瞭解有關從[!UICONTROL Cloud Manager]的UI配置管線的更多資訊，請參見[配置CI/CD管線](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)。
 
 ### 有彈性的部署模式 {#flexible-deployment-modes}
 
