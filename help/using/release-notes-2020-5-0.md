@@ -13,11 +13,11 @@ ht-degree: 66%
 
 # 2020.5.0 版發行說明 {#release-notes-for}
 
-下節概述2020.5.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
+以下章節概述[!UICONTROL Cloud Manager] 2020.5.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-2020.5.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年5月7日。
+[!UICONTROL Cloud Manager] 2020.5.0版的發行日期為2020年5月7日。
 
 ## 新功能 {#whats-new}
 
