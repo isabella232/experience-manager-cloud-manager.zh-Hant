@@ -13,11 +13,11 @@ ht-degree: 6%
 
 # 2020.8.0 版發行說明 {#release-notes-for}
 
-下節概述2020.8.0版 [!UICONTROL Cloud Manager] 的一般發行說明。
+以下章節概述[!UICONTROL Cloud Manager] 2020.8.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-2020.8.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年8月06日。
+[!UICONTROL Cloud Manager] 2020.8.0版的發行日期為2020年8月06日。
 
 ## 新功能 {#whats-new}
 
@@ -33,11 +33,11 @@ ht-degree: 6%
 
 * 在某些情況下，未完成的管線執行未成功記錄為已完成，從而防止了管線的新執行。
 
-* 管道執行偶爾會因 *內部* 通訊問題而卡住。
+* 由於內部通訊問題，管道執行偶爾會出現&#x200B;*卡住*。
 
 * 程式卡上的工具提示不一致正確。
 
-* 「概述」頁面上的顏色不 **符** 。
+* **概述**&#x200B;頁面上的顏色不符。
 
 * Sites Performance Testing現在支援選擇性使用驗證。
 
