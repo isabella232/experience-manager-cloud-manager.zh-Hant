@@ -8,8 +8,8 @@ user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自�
 translation-type: tm+mt
 source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 85%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 0%
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [通知](notifications.md)
    + [自訂程式碼品質規則](custom-code-quality-rules.md)
-+ 管理您的程式碼 {#managing-code}
++ 管理代碼{#managing-code}
    + [Maven 專案版本處理](activating-maven-project.md)
    + [存取 Git](accessing-git.md)
    + [與Git整合](setup-cloud-manager-git-integration.md)
