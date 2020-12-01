@@ -13,11 +13,11 @@ ht-degree: 10%
 
 # 2020.9.0 版發行說明 {#release-notes-for}
 
-下節概述2020.9.0版 [!UICONTROL Cloud Manager] 的一般發行說明。
+下節概述[!UICONTROL Cloud Manager] 2020.7.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-2020.9.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年9月03日。
+[!UICONTROL Cloud Manager]版本2020.9.0的發行日期為2020年9月03日。
 
 ## 新功能 {#whats-new}
 
