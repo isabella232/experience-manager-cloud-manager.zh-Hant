@@ -13,11 +13,11 @@ ht-degree: 51%
 
 # 2020.7.0 版發行說明 {#release-notes-for}
 
-下節概述2020.7.0版 [!UICONTROL Cloud Manager] 的一般發行說明。
+下節概述[!UICONTROL Cloud Manager] 2020.7.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
+[!UICONTROL Cloud Manager] 2020.7.0版的發行日期為2020年7月09日。
 
 ## 新功能 {#whats-new}
 
@@ -29,7 +29,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 ## 錯誤修正 {#bug-fixes}
 
-* The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible.
+* 「非生產管線編輯」(Non-Production Pipeline Edit)頁面上的&#x200B;**Cancel**&#x200B;和&#x200B;**Save**&#x200B;選項並不總是可見。
 
 * 程式碼品質處理程序的某些失敗作業可能導致系統無法正確產生記錄檔。
 
