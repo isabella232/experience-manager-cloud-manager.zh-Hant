@@ -19,30 +19,30 @@ ht-degree: 8%
 
 # 首次登入 {#first-time-login}
 
-在您設定一般設定後， [!UICONTROL Cloud Manager]就可以使用使用者介面(UI) [!UICONTROL Cloud Manager]。
+在設定[!UICONTROL Cloud Manager]的常規配置後，您就可以使用[!UICONTROL Cloud Manager]的用戶介面(UI)。
 
 >[!NOTE]
->根據中指派的角色和應 [!UICONTROL Cloud Manager] 用程式的狀態，您在使用UI時會看到不同的 [!UICONTROL Cloud Manager] 畫面。
+>根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
 
-## 教學影片 {#video-tutorial-one}
+## 教學影片{#video-tutorial-one}
 
-### Cloud Manager計畫 {#programs-video}
+### Cloud Manager程式{#programs-video}
 
 以下視訊提供Cloud Manager計畫的概觀，這些計畫代表支援邏輯業務活動集的AEM環境集，通常對應於購買的服務層級合約(SLA)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
-## 首次登入 {#logging-in-for-the-first-time}
+## 首次登入{#logging-in-for-the-first-time}
 
-1. 登入 **Adobe[!UICONTROL Experience Cloud]** ，您就會看到程式 **清單**。
+1. 登入&#x200B;**Adobe[!UICONTROL Experience Cloud]**，您會看到&#x200B;**Programs**&#x200B;的清單。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
-1. 選取程式(例如 **We.Retail Global**)，然後按一下左上角的圖示以開啟 [!UICONTROL Cloud Manager]。
+1. 選擇程式（例如&#x200B;**We.Retail Global**），然後按一下左上角表徵圖以開啟[!UICONTROL Cloud Manager]。
 
    ![](assets/first-timea1.png)
 
-1. 顯示的控 [!UICONTROL Cloud Manager] 制面板。
+1. 將顯示[!UICONTROL Cloud Manager]的控制面板。
 
    ![](assets/FirstLogin1.png)
 
@@ -50,11 +50,11 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >請參閱 [設定您的方案](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) ，以完成後續步驟。
+   >請參閱[設定您的程式](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html)以完成後續步驟。
 
-## 教學影片 {#video-tutorial-two}
+## 教學影片{#video-tutorial-two}
 
-### 「Cloud Manager活動」頁籤 {#activity-video}
+### 「Cloud Manager活動」頁籤{#activity-video}
 
 Cloud Manager可提供方案活動的整合視圖，列出所有CI/CD Pipeline執行（包括生產和非生產），允許查看過去和現在的活動，並可以查看任何活動的詳細資訊。
 
