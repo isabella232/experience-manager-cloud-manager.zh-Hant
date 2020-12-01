@@ -19,17 +19,17 @@ ht-degree: 1%
 
 # 部署程式碼 {#deploy-your-code}
 
-## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
+## 使用Cloud Manager部署代碼{#deploying-code-with-cloud-manager}
 
 一旦配置了生產管線（儲存庫、環境和測試環境），您就可以部署代碼。
 
-1. 按一 **下** 「從雲端管理員部署」，開始部署程式。
+1. 從Cloud Manager按一下「**部署**」以開始部署程式。
 
    ![](assets/Deploy1.png)
 
-1. 將顯 **示「管線執行** 」螢幕。
+1. 將顯示&#x200B;**管線執行**&#x200B;螢幕。
 
-   按一下 **Build** （生成）啟動進程。
+   按一下&#x200B;**Build**&#x200B;啟動進程。
 
    ![](assets/Deploy2.png)
 
@@ -48,50 +48,50 @@ ht-degree: 1%
    「 **舞台部署**」涉及以下步驟：
 
    * 驗證：此步驟確保將管線配置為使用當前可用資源，例如，已配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關 [構建環境的詳細資訊](/help/using/build-environment-details.md) ，請參閱瞭解構建環境。
-   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 構建和單元測試：此步驟會執行容器化的建立程式。 有關構建環境的詳細資訊，請參閱[瞭解構建環境](/help/using/build-environment-details.md)。
+   * 代碼掃描：此步驟會評估您的應用程式碼的品質。 如需測試程式的詳細資訊，請參閱[瞭解測試結果](understand-your-test-results.md)。
    * 部署至舞台
 
    ![](assets/Stage_Deployment1.png)
 
-   The **Stage Testing**, involves the following steps:
+   **階段測試**&#x200B;包含下列步驟：
 
-   * 安全性測試：此步驟會評估應用程式碼對AEM環境的安全性影響。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
-   * 效能測試：此步驟會評估應用程式碼的效能。 如需 [測試程式的詳細資訊](understand-your-test-results.md) ，請參閱瞭解測試結果。
+   * 安全性測試：此步驟會評估應用程式碼對AEM環境的安全性影響。 如需測試程式的詳細資訊，請參閱[瞭解測試結果](understand-your-test-results.md)。
+   * 效能測試：此步驟會評估應用程式碼的效能。 如需測試程式的詳細資訊，請參閱[瞭解測試結果](understand-your-test-results.md)。
 
    ![](assets/Stage_Testing1.png)
 
-   The **Production Deployment**, involves the following steps:
+   **生產部署**&#x200B;涉及以下步驟：
 
    * **申請核准** （如果已啟用）
    * **排程生產部署** （如果已啟用）
-   * **CSE支援** （若已啟用）
+   * **CSE支援** （如果已啟用）
    * **部署至生產環境**
 
    ![](assets/Prod_Deployment1.png)
 
    >[!NOTE]
    >
-   >在配 **置管線時** ，會啟用「計畫生產部署」。
+   >在配置管線時，**計畫生產部署**&#x200B;已啟用。
    >
    >
-   >使用此選項，您可以排程生產部署，或按一下「 **立即** 」立即執行生產部署。
+   >使用此選項，您可以計畫生產部署，或按一下&#x200B;**Now**&#x200B;立即執行生產部署。
    >
    >
    >排程的日期和時間會根據使用者的時區指定。
    >
    >
-   >按一 **下「確認** 」以確認您的設定。
+   >按一下&#x200B;**確認**&#x200B;以驗證設定。
 
    ![](assets/Production_Deployment1.png)
 
    在確認部署排程後，您的程式碼部署就會完成。
 
-   從上述步驟中選取「 **現在** 」選項時，會顯示下列畫面。
+   從上述步驟中選擇&#x200B;**Now**&#x200B;選項時，將顯示以下螢幕。
 
    ![](assets/Production_Deployment2.png)
 
-## 部署程式 {#deployment-process}
+## 部署過程{#deployment-process}
 
 下節說明AEM和Dispatcher套件在階段階段和生產階段的部署方式。
 
@@ -122,7 +122,7 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 
    1. 當前配置將備份並複製到臨時位置
    1. 除不可變檔案外，所有配置都將被刪除。 有關詳細資訊，請參閱管理Dispatcher配置。 這會清除目錄，以確保不會留下孤立的檔案。
-   1. 該對象被提取到目 `httpd` 錄。  不會覆寫不可變的檔案。 在部署時，您對git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS調度器框架的核心檔案，不能更改。
+   1. 該對象被提取到`httpd`目錄。  不會覆寫不可變的檔案。 在部署時，您對git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS調度器框架的核心檔案，不能更改。
    1. Apache會執行組態測試。 如果未找到錯誤，則重新載入服務。 如果發生錯誤，則從備份中恢復配置，重新載入服務，並將錯誤報告回Cloud Manager。
    1. 在流水線配置中指定的每個路徑都無效或從調度器快取中刷新。
 
@@ -134,7 +134,7 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
    >[!NOTE]
    >您可以跳過開發和階段部署中的負載平衡器更改，即在非生產流水線、開發人員環境和生產流水線中分離和附加步驟，以用於階段環境。
 
-### 部署至生產階段 {#deployment-production-phase}
+### 部署到生產階段{#deployment-production-phase}
 
 部署至生產拓撲的程式略有不同，以盡量降低對AEM網站訪客的影響。
 
