@@ -10,26 +10,26 @@ ht-degree: 7%
 ---
 
 
-# 設定專案 {#setting-up-your-project}
+# 設定您的專案{#setting-up-your-project}
 
-## 修改項目設定詳細資訊 {#modifying-project-setup-details}
+## 修改項目設定詳細資訊{#modifying-project-setup-details}
 
 若要使用Cloud Manager成功建立和部署現有的AEM專案，必須遵守一些基本規則：
 
 * 必須使用Apache Maven建立專案。
-* Git儲存庫 *的根目錄中必須有pom.xml* 檔案。 此 *pom.xml* 檔案可以引用任意數量的子模組（這些子模組又可以有其它子模組等） 視需要。
+* Git儲存庫的根目錄中必須有&#x200B;*pom.xml*&#x200B;檔案。 此&#x200B;*pom.xml*&#x200B;檔案可以引用許多子模組（這些子模組又可能具有其他子模組等） 視需要。
 
-* 您可以在 *pom.xml檔案中添加對其他Maven對象儲存庫的引* 用。 配置時 [支援對受密碼保護的對象儲存庫](#password-protected-maven-repositories) 的訪問。 但是，不支援對網路保護對象儲存庫的訪問。
-* 可部署的內容套件是透過掃描內容套件 *zip* 檔案來發現的，這些檔案位於名為 *target的目錄中*。 任何數量的子模組都可以生成內容包。
+* 您可以在&#x200B;*pom.xml*&#x200B;檔案中添加對其他Maven對象儲存庫的引用。 配置時支援訪問[受密碼保護的對象儲存庫](#password-protected-maven-repositories)。 但是，不支援對網路保護對象儲存庫的訪問。
+* 可部署的內容包是通過掃描內容包&#x200B;*zip*&#x200B;檔案來發現的，這些檔案包含在名為&#x200B;*target*&#x200B;的目錄中。 任何數量的子模組都可以生成內容包。
 
-* 可部署的Dispatcher對象是通過掃描 *zip檔案* (同樣，包含在名為target **&#x200B;的目錄中)來發現的，該目錄具有名為 *conf* 和 ** conf.d的目錄。
+* 可部署的調度器對象通過掃描&#x200B;*zip*&#x200B;檔案（同樣，包含在名為&#x200B;*target*&#x200B;的目錄中）來發現，這些檔案具有名為&#x200B;*conf*&#x200B;和&#x200B;*conf.d*&#x200B;的目錄。
 
-* 如果有多個內容包，則無法保證包部署的順序。 如果需要特定順序，則可使用內容包相關性來定義順序。 可從部署中 [跳過](#skipping-content-packages) 包。
+* 如果有多個內容包，則無法保證包部署的順序。 如果需要特定順序，則可使用內容包相關性來定義順序。 軟體包可以是部署中[跳過](#skipping-content-packages)的軟體包。
 
 
-## 在Cloud Manager中啟用Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
+## 在Cloud Manager {#activating-maven-profiles-in-cloud-manager}中激活Maven配置檔案
 
-在某些有限的情況下，在Cloud Manager內執行時，您可能需要稍微改變建立程式，而不是在開發人員工作站上執行。 在這些情況下， [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 可用來定義在不同環境（包括Cloud Manager）中，建置應如何不同。
+在某些有限的情況下，在Cloud Manager內執行時，您可能需要稍微改變建立程式，而不是在開發人員工作站上執行。 對於這些情況，[Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)可用來定義不同環境（包括Cloud Manager）中構建版本的不同之處。
 
 在Cloud Manager構建環境中激活Maven配置檔案時，應查找上述CM_BUILD環境變數。 相反地，應通過查找此變數的缺失來完成僅用於Cloud Manager構建環境以外的配置檔案。
 
@@ -69,7 +69,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->要在開發人員工作站上測試此配置檔案，可以在命令行(使用 `-PcmBuild`)或整合開發環境(IDE)中啟用它。
+>要在開發人員工作站上測試此配置檔案，可以在命令行（使用`-PcmBuild`）或整合開發環境(IDE)中啟用它。
 
 如果您只想在構建版本在Cloud Manager外部運行時輸出簡單消息，則可以執行以下操作：
 
@@ -105,20 +105,20 @@ ht-degree: 7%
         </profile>
 ```
 
-## 受密碼保護的Maven儲存庫支援 {#password-protected-maven-repositories}
+## 受密碼保護的Maven儲存庫支援{#password-protected-maven-repositories}
 
 >[!NOTE]
 >使用密碼保護的Maven儲存庫中的對象只能非常謹慎地使用，因為透過此機制部署的代碼目前並未透過Cloud Manager的「品質門」執行。 因此，它只應用於少數情況，以及未系結至AEM的程式碼。 建議您也部署Java來源，以及整個專案原始碼與二進位檔。
 
-若要使用Cloud Manager的受密碼保護的Maven儲存庫，請將密碼（以及使用者名稱）指定為機密 [Pipeline變數](/help/using/build-environment-details.md#pipeline-variables) ，然後在git儲存庫中名為的檔案中參考 `.cloudmanager/maven/settings.xml` 該機密。 此檔案遵循「Maven [Settings File](https://maven.apache.org/settings.html) 」架構。 當Cloud Manager建置程式啟動時，此 `<servers>` 檔案中的元素將合併至Cloud Manager提 `settings.xml` 供的預設檔案。 伺服器ID從開 `adobe` 始， `cloud-manager` 並視為保留，不應由自訂伺服器使用。 Cloud Manager不 **會鏡像** ，也不會鏡像不符合其中 `central` 一個前置詞或預設ID的伺服器ID。 此檔案就位後，伺服器ID將會從檔案內 `<repository>` 的和/ `<pluginRepository>` 或元素 `pom.xml` 中參考。 通常，這 `<repository>` 些和／或 `<pluginRepository>` 元素會包含在 [Cloud Manager特定的配置檔案中](#activating-maven-profiles-in-cloud-manager)，儘管這並非嚴格的必要。
+若要使用Cloud Manager的受密碼保護的Maven儲存庫，請將密碼（以及使用者名稱）指定為機密[Pipeline變數](/help/using/build-environment-details.md#pipeline-variables)，然後在git儲存庫中名為`.cloudmanager/maven/settings.xml`的檔案中參考該機密。 此檔案遵循[Maven Settings File](https://maven.apache.org/settings.html)模式。 當Cloud Manager構建過程啟動時，此檔案中的`<servers>`元素將合併到Cloud Manager提供的預設`settings.xml`檔案中。 以`adobe`和`cloud-manager`開頭的伺服器ID會視為保留，自訂伺服器不應使用。 Cloud Manager將不會鏡像與其中一個前置詞或預設ID `central`匹配的伺服器ID **不**。 在此檔案就位後，將會從`<repository>`和／或`<pluginRepository>`檔案內的`pom.xml`元素中參考伺服器ID。 通常，這些`<repository>`和／或`<pluginRepository>`元素會包含在[雲端管理員專用的設定檔](#activating-maven-profiles-in-cloud-manager)中，但並非嚴格必要。
 
-例如，假設儲存庫位於https://repository.myco.com/maven2,Cloud Manager應使用的用戶名為， `cloudmanager` 密碼為 `secretword`。
+例如，假設儲存庫位於https://repository.myco.com/maven2,Cloud Manager應使用的用戶名為`cloudmanager` ，密碼為`secretword`。
 
 首先，將密碼設定為管道上的密碼：
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
 
-然後，從檔案中參 `.cloudmanager/maven/settings.xml` 考此：
+然後，從`.cloudmanager/maven/settings.xml`檔案中參考以下內容：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +134,7 @@ ht-degree: 7%
 </settings>
 ```
 
-最後參考檔案中的伺服器 `pom.xml` ID:
+最後，請參考`pom.xml`檔案中的伺服器ID:
 
 ```xml
 <profiles>
@@ -177,7 +177,7 @@ ht-degree: 7%
 </profiles>
 ```
 
-### 部署來源 {#deploying-sources}
+### 部署源{#deploying-sources}
 
 將Java源與二進位檔案一起部署到Maven儲存庫是一個很好的做法。
 
@@ -198,7 +198,7 @@ ht-degree: 7%
         </plugin>
 ```
 
-### 部署專案來源 {#deploying-project-sources}
+### 部署Project Sources {#deploying-project-sources}
 
 將整個項目源與二進位檔案一起部署到Maven儲存庫是一個很好的做法——這樣可以重建確切的對象。
 
@@ -225,7 +225,7 @@ ht-degree: 7%
         </plugin>
 ```
 
-## 跳過內容包 {#skipping-content-packages}
+## 正在跳過內容包{#skipping-content-packages}
 
 在Cloud Manager中，組建可能會產生任意數量的內容套件。
 由於各種原因，可能需要製作內容套件，但不要部署它。 例如，當建立僅用於測試的內容封裝時，或者在建立程式中的另一個步驟（即作為另一個封裝的子封裝）重新封裝的內容封裝時，這可能很有用。
@@ -262,6 +262,6 @@ ht-degree: 7%
         </plugin>
 ```
 
-## 根據最佳實務來開發程式碼 {#develop-your-code-based-on-best-practices}
+## 根據最佳實務{#develop-your-code-based-on-best-practices}開發您的程式碼
 
-Adobe工程與諮詢團隊已針對AEM [開發人員開發一套完整的最佳實務](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)。
+Adobe工程與諮詢團隊已針對AEM開發人員開發一套[完整的最佳實務。](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)
