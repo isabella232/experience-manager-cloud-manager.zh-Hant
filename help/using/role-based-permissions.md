@@ -7,36 +7,39 @@ topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
 source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 14%
 
 ---
 
 
 # 角色型權限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] 具有具有適當權限的預先配置角色。 例如，開發人員會開發程式碼，並具有將程式碼推送至 **Git Repository的權限**。 或者，企業擁有者擁有不同的權限，可讓他們定義關鍵績效指標(KPI)並批准部署。
+[!UICONTROL Cloud Manager] 具有具有適當權限的預先配置角色。例如，開發人員會開發程式碼，並具有將程式碼推送至&#x200B;**Git Repository**&#x200B;的權限。 或者，企業擁有者擁有不同的權限，可讓他們定義關鍵績效指標(KPI)並批准部署。
 
 ## 使用者角色 {#user-roles}
 
-角色管理 [!UICONTROL Cloud Manager] 是在 [Adobe Admin Console中完成](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。 任何使 [!UICONTROL Cloud Manager] 用者都必須是客戶IMS組織的成員，且具有Adobe Managed Services產品內容。 將使用者新增至「管理控制台」中的「產品設 [!UICONTROL Cloud Manager] 定檔」，以提供特定角色成員資格。
+[!UICONTROL Cloud Manager]的角色管理是在[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)內完成。 [!UICONTROL Cloud Manager]的任何使用者都必須是客戶IMS組織的成員，且必須擁有Adobe Managed Services產品內容。 將使用者新增至管理控制台中的[!UICONTROL Cloud Manager]產品設定檔，以提供特定角色成員資格。
 
-要瞭解有關如何設定角色的詳細資訊，請參 [閱設定用戶和角色](setting-up-users-and-roles.md)。
+如需有關如何設定角色的詳細資訊，請參閱[設定用戶和角色](setting-up-users-and-roles.md)。
 
 下表列出您可在管理控制台中指派的可能角色。
 
-| **[!UICONTROL Cloud Manager]角色&#x200B;** | **說明** |
+| **[!UICONTROL Cloud Manager]角色** | **說明** |
 |---|---|
-| 企業負責人 | 完成初始設定的主要 [!UICONTROL Cloud Manager] 使用者。 負責定義KPI、批准生產部署及覆寫重要的3層故障。 |
-| 計畫經理 | 用於 [!UICONTROL Cloud Manager] 執行團隊設定、複查狀態和查看KPI。 可能會批准重要的3層故障。 |
-| 部署管理員 | 管理部署操作。 用於 [!UICONTROL Cloud Manager] 執行階段和生產部署。 可能會批准重要的3層故障。 具有Git儲存庫的訪問權限。 |
-| 開發人員 | 開發並測試自訂的應用程式碼。 主要用 [!UICONTROL Cloud Manager] 於查看狀態。 具有對Git儲存庫的提交訪問權。 |
-| 客戶成功工程師 | 通常支援AMS客戶的成功。 為執行需 [!UICONTROL Cloud Manager] 要客戶成功工程師(CSE)監督的部署而與之互動。 |
-| 內容作者 | 通常不與互動 [!UICONTROL Cloud Manager]。 此使用者可能會使 [!UICONTROL Cloud Manager] 用Program Switcher(已從 [!UICONTROL Experience Cloud])存取Adobe Experience Manager(AEM)。 |
+| 企業負責人 | 完成初始[!UICONTROL Cloud Manager]設定的主要用戶。 負責定義KPI、批准生產部署及覆寫重要的3層故障。 |
+| 計畫經理 | 使用[!UICONTROL Cloud Manager]執行團隊設定、檢閱狀態及檢視KPI。 可能會批准重要的3層故障。 |
+| 部署管理員 | 管理部署操作。 使用[!UICONTROL Cloud Manager]執行階段和生產部署。 可能會批准重要的3層故障。 具有Git儲存庫的訪問權限。 |
+| 開發人員 | 開發並測試自訂的應用程式碼。 主要使用[!UICONTROL Cloud Manager]來檢視狀態。 具有對Git儲存庫的提交訪問權。 |
+| 客戶成功工程師 | 通常支援AMS客戶的成功。 與[!UICONTROL Cloud Manager]互動，以執行需要客戶成功工程師(CSE)監督的部署。 |
+| 內容作者 | 通常不與[!UICONTROL Cloud Manager]互動。 此使用者可使用[!UICONTROL Cloud Manager] Program Switcher（已從[!UICONTROL Experience Cloud]導覽）來存取Adobe Experience Manager(AEM)。 |
 
 ## 使用者權限 {#user-permissions}
 
 每個角色都具有與每個角色關聯的特定權限、預配置的任務或權限。 此表列出了可用的函式以及可以執行該函式的角色。
 
-若要進一步瞭解如何設定您的使用者，請參閱 [設定使用者和角色](setting-up-users-and-roles.md)。
+如需有關如何設定使用者的詳細資訊，請參閱[設定使用者和角色](setting-up-users-and-roles.md)。
 
 | 權限 | 說明 | 企業負責人 | 部署管理員 | 計畫經理 | 開發人員 | CSE |
 |--- |--- |--- |--- |--- |--- |--- |
