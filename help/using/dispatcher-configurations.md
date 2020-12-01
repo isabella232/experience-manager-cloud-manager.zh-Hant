@@ -19,40 +19,40 @@ ht-degree: 2%
 
 # 管理 Dispatcher 設定 {#manage-your-dispatcher-configurations}
 
-## 使用Cloud Manager部署Dispatcher配置檔案 {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
+## 使用Cloud Manager部署Dispatcher配置檔案{#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-除了一般的AEM內容套件外，Cloud Manager還能夠部署Web伺服器和Dispatcher組態檔案(假設這些檔案儲存在 **Git Repository**)。
+Cloud Manager能夠部署Web伺服器和Dispatcher配置檔案（假設這些檔案儲存在&#x200B;**Git Repository**&#x200B;中），以及常規AEM內容包。
 
-要利用此功能，Maven組建版本應生成包含至少兩個目錄( ***conf*** 和 ***conf.d)的zip檔案***。 此zip檔案可使用maven-assembly-plugin來製作。 由Cloud Manager使用內建精靈產生的專 [案](/help/using/using-the-wizard.md) ，在建立專案時會建立正確的Maven專案結構。 這是新Managed Services客戶的推薦路徑。
+要利用此功能，Maven構建版本應生成包含至少兩個目錄的zip檔案- ***conf***&#x200B;和&#x200B;***conf.d***。 此zip檔案可使用maven-assembly-plugin來製作。 Cloud Manager使用內置[嚮導](/help/using/using-the-wizard.md)生成的項目具有在建立項目時建立的正確Maven項目結構。 這是新Managed Services客戶的推薦路徑。
 
-部署到Dispatcher **Instance**&#x200B;時，這些目錄的內容將覆蓋Dispatcher實例上這些目錄的內容。 由於Web伺服器和Dispatcher配置檔案通常需要特定於環境的資訊，因此要正確使用此功能，您首先需要與客戶成功工程師(CSE)合作，在中設定這些環境變數 `/etc/sysconfig/httpd`。
+部署到Dispatcher **Instance**&#x200B;時，這些目錄的內容將覆蓋Dispatcher實例上這些目錄的內容。 由於Web伺服器和Dispatcher配置檔案通常需要特定於環境的資訊，因此要正確使用此功能，您首先需要與客戶成功工程師(CSE)合作，在`/etc/sysconfig/httpd`中設定這些環境變數。
 
-### 為現有Managed Services客戶配置Dispatcher的步驟 {#steps-for-configuring-dispatcher}
+### 為現有Managed Services客戶配置Dispatcher的步驟{#steps-for-configuring-dispatcher}
 
 按照以下步驟完成配置Dispatcher的初始過程：
 
 1. 從CSE中獲取當前生產配置檔案。
 1. 移除硬式編碼的環境特定資料（例如發佈轉譯器IP），並以變數取代。
-1. 在每個目標Dispatcher的鍵值對中定義所需的變數，並請求CSE在每個實例 `/etc/sysconfig/httpd` 上添加。
+1. 在每個目標Dispatcher的鍵值對中定義所需的變數，並請求CSE在每個實例上添加到`/etc/sysconfig/httpd`。
 1. 在您的舞台環境上測試更新的組態，然後請求CSE部署至生產環境。
-1. 將檔案提交 **到Git儲存庫**。
+1. 將檔案提交到&#x200B;**Git儲存庫**。
 
 1. 透過Cloud Manager進行部署。
 
 >[!NOTE]
 >
->將Dispatcher和Web伺服器配置遷移到 **Git Repository** (Git Repository)可以在Cloud Manager上線期間完成，但也可以在稍後的時間點完成。
+>將Dispatcher和Web伺服器配置遷移到&#x200B;**Git Repository**&#x200B;可在Cloud Manager上線期間完成，但也可以在稍後的時間點完成。
 
 ### 範例 {#example}
 
 特定的檔案和目錄結構可能因項目的具體情況而有所不同，但本示例應提供如何將項目結構化為包含Apache和Dispatcher配置的具體指南。
 
-1. 建立名為的子目錄 `dispatcher`。
+1. 建立名為`dispatcher`的子目錄。
 
    >[!NOTE]
    您可在此處使用任何名稱，但在此步驟中建立的目錄名稱必須與步驟6中使用的名稱相同。
 
-1. 此子目錄將包含一個Maven模組，該模組使用Maven Assembly Plugin構建Dispatcher zip檔案。 要啟動此操作，請在 `dispatcher` 目錄中建立 `pom.xml` 包含此內容的檔案，根據需要更改父引用、artifactId和名稱。
+1. 此子目錄將包含一個Maven模組，該模組使用Maven Assembly Plugin構建Dispatcher zip檔案。 要啟動此操作，請在`dispatcher`目錄中建立包含此內容的`pom.xml`檔案，根據需要更改父引用、artifactId和名稱。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -93,9 +93,9 @@ ht-degree: 2%
    ```
 
    >[!NOTE]
-   如同在步驟1中，此處的artifactId和名稱可以是其他值（如果需要）; `dispatcher` 這裡只有一個簡單的例子。
+   如同在步驟1中，此處的artifactId和名稱可以是其他值（如果需要）;`dispatcher`這裡只是簡單的範例。
 
-1. Maven Assembly Plugin需要一個描 *述符* ，以定義如何建立zip檔案。 要建立此描述符，請建立一個以此內容命名的文 `dispatcher` 件(同樣 `assembly.xml`在子目錄中)。 請注意，上述檔案的第26行會參照此 `pom.xml` 檔案名稱。
+1. Maven Assembly Plugin需要&#x200B;*descriptor*&#x200B;來定義如何建立zip檔案。 要建立此描述符，請使用此內容建立名為`assembly.xml`的檔案（同樣，在`dispatcher`子目錄中）。 請注意，上述`pom.xml`檔案的第26行會參照此檔案名稱。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -118,8 +118,8 @@ ht-degree: 2%
    </assembly>
    ```
 
-1. 現在，在dispatcher子目錄內 `src` 建立名為（如第11行上面的匯編描述符中所引用）的子目錄，以儲存實際的Apache和Dispatcher配置。 在此目 `src` 錄中，建立名 `conf`為、 `conf.d`、 `conf.dispatcher.d`和的目錄 `conf.modules.d`。
-1. 現在，您可以用 `conf`配置 `conf.d`文 `conf.dispatcher.d`件填入、和 `conf.modules.d` 目錄中。 例如，預設配置由這些檔案和符號連結組成。
+1. 現在，在dispatcher子目錄內建立名為`src`的子目錄（如第11行上面的匯編描述符中所引用），以儲存實際的Apache和Dispatcher配置。 在此`src`目錄中，建立名為`conf`、`conf.d`、`conf.dispatcher.d`和`conf.modules.d`的目錄。
+1. 現在，您可以用配置檔案填充`conf`、`conf.d`、`conf.dispatcher.d`和`conf.modules.d`目錄。 例如，預設配置由這些檔案和符號連結組成。
 
    ```
    dispatcher
@@ -194,7 +194,7 @@ ht-degree: 2%
            └── 02-dispatcher.conf
    ```
 
-1. 最後，在專案根目錄的pom.xml檔案中，新增元素以 `<module>` 包含分派程式模組。
+1. 最後，在項目根目錄的pom.xml檔案中，添加`<module>`元素以包含調度程式模組。
 
    例如，如果您的現有模組清單是
 
@@ -218,7 +218,7 @@ ht-degree: 2%
    ```
 
    >[!NOTE]
-   如步驟1所述，元素的值必 `<module>` 須 **符合** 已建立的目錄名。
+   如步驟1中所述，`<module>`元素&#x200B;**的值必須**&#x200B;與所建立的目錄名稱匹配。
 
 1. 最後，要測試，請在項目根目錄中運行mvn clean軟體包。 在輸出中，您應該會看到這樣的行
 
