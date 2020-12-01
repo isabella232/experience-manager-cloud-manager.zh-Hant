@@ -13,11 +13,11 @@ ht-degree: 37%
 
 # 2020.4.0 版發行說明 {#release-notes-for}
 
-下節概述2020.4.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
+下節概述[!UICONTROL Cloud Manager] 2020.4.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-2020.4.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年4月09日。
+[!UICONTROL Cloud Manager]版本2020.4.0的發行日期為2020年4月09日。
 
 ## 新功能 {#whats-new}
 
