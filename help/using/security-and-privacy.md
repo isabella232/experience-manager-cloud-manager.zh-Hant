@@ -19,23 +19,23 @@ ht-degree: 2%
 
 # 安全性與隱私權 {#security-and-privacy}
 
-[!UICONTROL Cloud Manager] 具有具有適當權限的預先配置角色。 本節重點說明使用AEM Cloud Manager的資產（程式碼／物件）的安全性和隱私權。 此外， [!UICONTROL Cloud Manager] 已預先設定具有適當權限的角色。
+[!UICONTROL Cloud Manager] 具有具有適當權限的預先配置角色。本節重點說明使用AEM Cloud Manager的資產（程式碼／物件）的安全性和隱私權。 此外，[!UICONTROL Cloud Manager]還具有預先設定的具有適當權限的角色。
 
-若要瞭解您可在「管理控制台」中指派的角色和使用者角色權限，請參閱「基於角 [色的權限」](/help/using/role-based-permissions.md)。
+要瞭解您可以在管理控制台中指派的角色和用戶角色權限，請參閱[基於角色的權限](/help/using/role-based-permissions.md)。
 
 
-## 資源隔離 {#resource-isolation}
+## 資源隔離{#resource-isolation}
 
-使用其 [!UICONTROL Cloud Manager] IMS認證的客戶將需要驗證，因為系結至其IMS [!UICONTROL Cloud Manager] 組織的所有權限都會加以設定並系結。 在上線過程中，設定團隊確保在中強制執行資源隔離 [!UICONTROL Cloud Manager]。
+使用[!UICONTROL Cloud Manager]的客戶將需要其IMS憑證來驗證，因為系結至[!UICONTROL Cloud Manager]的所有權限都會加以設定並系結至其IMS組織。 在上線過程中，設定團隊確保在[!UICONTROL Cloud Manager]中強制執行資源隔離。
 
-## 資料安全性 {#data-security}
+## 資料安全{#data-security}
 
-在傳輸中 [!UICONTROL Cloud Manager] 的代碼是加密的。 Cloud Manager構建的二進位檔案在傳輸中也會加密，並在儲存時加密。
+[!UICONTROL Cloud Manager]中的代碼在傳輸中被加密。 Cloud Manager構建的二進位檔案在傳輸中也會加密，並在儲存時加密。
 
-每個客戶都有自己的 **Git儲存庫** ，其代碼是安全的，不會與任何其他組 **織共用**。
+每個客戶都有自己的&#x200B;**Git儲存庫**，其代碼是安全的，不與任何其他&#x200B;**組織**&#x200B;共用。
 
-## 資料隱私 {#data-privacy}
+## 資料隱私{#data-privacy}
 
-[!UICONTROL Cloud Manager] 遵守Adobe所定義的隱私權原則。 開發人員透過HTTPS將程式碼安全地推 **送至Git Repository** 。
+[!UICONTROL Cloud Manager] 遵守Adobe所定義的隱私權原則。開發人員可透過HTTPS將程式碼安全地推送至&#x200B;**Git Repository**。
 
-適用的使用者介面(UI) [!UICONTROL Cloud Manager] 建立在符合Adobe所定義之通用控制架構的服務之上。 使用者介面， [!UICONTROL Cloud Manager] 以使用來自數家雲端供應商的安全服務。
+[!UICONTROL Cloud Manager]的使用者介面(UI)建立在符合Adobe所定義之通用控制架構的服務之上。 [!UICONTROL Cloud Manager]的使用者介面使用來自數個雲端提供者的安全服務。
