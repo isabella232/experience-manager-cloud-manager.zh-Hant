@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 部署環境 {#deployment-environment}
+# 部署環境{#deployment-environment}
 
 您可能是Adobe Experience Manager(AEM)6.4的新手，或需要升級至AEM 6.4版本。
 
