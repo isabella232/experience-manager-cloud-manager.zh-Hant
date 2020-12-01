@@ -1,21 +1,24 @@
 ---
-title: 2019.4.0發行說明
-seo-title: AEM Cloud manager 2019.4.0版本注意事項
+title: 2019.4.0 版發行說明
+seo-title: AEM Cloud Manager 2019.4.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2019.4.0版的相關資訊。
 seo-description: 請依照本頁取得AEM Cloud Manager 2019.4.0版的相關資訊。
 translation-type: tm+mt
 source-git-commit: b368c46c2a9f40d0c3867db6eb2a333bd71fe22a
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 6%
 
 ---
 
 
-# 2019.4.0發行說明 {#release-notes-for}
+# 2019.4.0 版發行說明 {#release-notes-for}
 
-&#x200B;2019. [!UICONTROL Cloud Manager] 4.0版不包含重大功能變更。 請依照下列章節瞭解詳細資訊。
+[!UICONTROL Cloud Manager] 2019.4.0版不包含重大功能變更。 請依照下列章節瞭解詳細資訊。
 
 ## 發行日期 {#release-date}
 
-2019.4.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年4月18日。
+[!UICONTROL Cloud Manager] 2019.4.0版的發行日期為2019年4月18日。
 
 ## 新功能 {#whats-new}
 
@@ -30,7 +33,7 @@ source-git-commit: b368c46c2a9f40d0c3867db6eb2a333bd71fe22a
 * 當詳細資訊無法使用時，程式碼掃描步驟的詳細資訊按鈕已啟用。
 * 為每分鐘頁面檢視次數指定無效值時，KPI的下界值錯誤。
 * 非生產管道上的部署類別資本不正確。
-* 當git儲存庫未正確設定時， **「概述** 」頁面上的動作卡呼叫有不正確的文字。
+* 當git資料庫未正確設定時，**概述**&#x200B;頁面上對動作卡的呼叫有不正確的文字。
 
 ## 已知問題 {#known-issues}
 
