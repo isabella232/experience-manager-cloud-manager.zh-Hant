@@ -13,16 +13,16 @@ ht-degree: 5%
 
 # 2019.8.0 版發行說明 {#release-notes-for}
 
-2019.8.0 [!UICONTROL Cloud Manager] 版本新增了對選擇性內建內容封裝的支援、改善內建效能並修正多種次要錯誤。
+[!UICONTROL Cloud Manager] 2019.8.0版新增了對選擇性內建內容封裝的支援、改善內建效能，並修正了各種小錯誤。
 
 ## 發行日期 {#release-date}
 
-2019.8.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年8月19日。
+[!UICONTROL Cloud Manager] 2019.8.0版的發行日期為2019年8月19日。
 
 ## 新功能 {#whats-new}
 
-* 由 [Adobe I/O CLI提供的Cloud Manager API新命令列介面](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
-* 由組建產生的特定內容封裝可宣告為已跳過且不會部署。 如需詳細 [資訊，請參閱「跳過內容套件](/help/using/setting-up-project.md#skipping-content-packages) 」。
+* 由[Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)提供的Cloud Manager API新命令列介面。
+* 由組建產生的特定內容封裝可宣告為已跳過且不會部署。 有關詳細資訊，請參閱[跳過內容包](/help/using/setting-up-project.md#skipping-content-packages)。
 * 已重新處理建置容器中預先載入的相依性集，以避免某些不必要的網路要求。
 * 某些配置錯誤的程式的概述頁面上的消息已經改進。
 
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 * 存取SLA報告時，預設年份為2018，而非2019。
 * 對於較長的環境名稱，「報告」畫面上的環境選擇器未正確增加大小。
-* 當使 ***用Sling Rewriter元件時，ConfigAndInstallShowOnlyContainOsgiNodes*** code quality rule會產生誤報。
-* ConfigAndInstallShoudOnlyContainOsgiNodes ****** 代碼品質規則針對某些不常見的路徑結構產生誤報。
+* ***ConfigAndInstallShoudOnlyContainOsgiNodes***&#x200B;程式碼品質規則在使用Sling Rewriter元件時產生誤報。
+* ***ConfigAndInstallShoudOnlyContainOsgiNodes***&#x200B;代碼品質規則會針對某些不常見的路徑結構產生誤報。
 * 僅限資產的客戶可能無法一致地導覽至其AEM環境。
 * 「建立分支」和「專案」對話方塊在不同瀏覽器上的呈現方式不同。
