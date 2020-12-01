@@ -19,25 +19,25 @@ ht-degree: 4%
 
 # 2018.7.0 版發行說明 {#release-notes-for}
 
-下節概述提供 [!UICONTROL Cloud Manager] 自動縮放功能的2018.7.0 *版本* 。
+下節概述[!UICONTROL Cloud Manager] 2018.7.0版本，其中提供&#x200B;*自動縮放*&#x200B;功能。
 
-**自動縮放** ，可透過生產環境上區段的橫向縮放來 `Dispatcher/Publish` 啟用，以支援負載、容量、存取以及其他已定義的監控量度的突然增加。
+**自** 動縮放是透過生產環境上區段的 `Dispatcher/Publish` 水準縮放來啟用，以支援負載、容量、存取和其他已定義的監控量度的突然增加。
 
 ## 發行日期 {#release-date}
 
-2018.7.0版 [!UICONTROL Cloud Manager] 的發行日期為2018年9月10日。
+[!UICONTROL Cloud Manager] 2018.7.0版的發行日期為2018年9月10日。
 
 ## 新功能 {#what-s-new}
 
-* **布建** -現 [!UICONTROL Cloud Manager] 在可以使用Dispatcher/Publish細分水準向外擴展，從而自動擴展客戶程式上的生產環境。 UI中的新功能是「方案設定」中的「布建」區段，如果在客戶方案上啟用自動縮放，則會顯示此區段。 請參閱設 [定您的方案](setting-up-program.md) ，瞭解更多。
+* **布建** -現 [!UICONTROL Cloud Manager] 在可以使用Dispatcher/Publish細分水準向外擴展，從而自動擴展客戶程式上的生產環境。UI中的新功能是「方案設定」中的「布建」區段，如果在客戶方案上啟用自動縮放，則會顯示此區段。 請參閱[設定您的計畫](setting-up-program.md)以瞭解更多資訊。
 
-* **環境** -現在可以詳細查看生產和階段環境以及與每個環境相關聯的節點的大小、儲存、區域和狀態。 請參閱「管 [理您的環境](manage-your-environment.md) 」以瞭解更多。
+* **環境** -現在可以詳細查看生產和階段環境以及與每個環境相關聯的節點的大小、儲存、區域和狀態。請參閱[管理您的環境](manage-your-environment.md)以瞭解更多資訊。
 
-* **程式碼品質分析** -用以識別錯誤API使用情形的新規則。 請參閱自訂 [程式碼品質規則](custom-code-quality-rules.md) ，瞭解更多資訊。
+* **程式碼品質分析** -用以識別錯誤API使用情形的新規則。請參閱[自訂程式碼品質規則](custom-code-quality-rules.md)以瞭解詳細資訊。
 
-* **效能測試** -在查看效能測試結果時，可以使用CPU利用率、磁碟I/O等待時間、頁錯誤率、磁碟頻寬利用率、網路頻寬利用率、峰值頁面響應時間和第95個百分位數頁面響應時間的圖表。 請參閱「了 *解測試結果* 」頁面 [上的「效能測試」部分](understand-your-test-results.md) 。
+* **效能測試** -在查看效能測試結果時，可獲得CPU利用率、磁碟I/O等待時間、頁錯誤率、磁碟頻寬利用率、網路頻寬利用率、峰值頁面響應時間和第95個百分位數頁面響應時間的圖表。請參閱[瞭解測試結果](understand-your-test-results.md)頁面上的&#x200B;*效能測試*&#x200B;一節。
 
-* **效能測試** -檢視效能測試結果時，可下載頁面錯誤和慢速請求清單。 請參閱「了 *解測試結果* 」頁面 [上的「效能測試」部分](understand-your-test-results.md) 。
+* **效能測試** -檢視效能測試結果時，可下載頁面錯誤和慢速請求的清單。請參閱[瞭解測試結果](understand-your-test-results.md)頁面上的&#x200B;*效能測試*&#x200B;一節。
 
 ## 錯誤修正 {#bug-fixes}
 
@@ -48,5 +48,5 @@ ht-degree: 4%
 ## 已知問題 {#known-issues}
 
 * 雖然客戶可以選擇提交觸發器，但管線可能不會基於新提交而實際啟動。
-* 通知 [!UICONTROL Experience Cloud] 側欄可能無法一致地載入通知。 不過，通知會顯示在中， [!UICONTROL Experience Cloud] 且如果設定，仍會透過電子郵件傳送。
+* [!UICONTROL Experience Cloud]通知邊欄可能無法一致地載入通知。 但是，通知會顯示在[!UICONTROL Experience Cloud]中，若已設定，仍會透過電子郵件傳送。
 
