@@ -6,22 +6,22 @@ seo-description: 請依照本頁取得AEM Cloud Manager 2020.11.0版的相關資
 translation-type: tm+mt
 source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '160'
+ht-degree: 7%
 
 ---
 
 # 2020.11.0 版發行說明 {#release-notes-for}
 
-下節概述2020.11.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
+下節概述[!UICONTROL Cloud Manager] 2020.11.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-2020.11.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年11月12日。
+[!UICONTROL Cloud Manager] 2020.11.0版的發行日期為2020年11月12日。
 
 ## 新功能 {#whats-new}
 
-* Cloud Manager中 **的** 「學習」索引標籤會以UI中的新影像重新整理。
+* Cloud Manager中的&#x200B;**Learn**&#x200B;標籤會以UI中的新影像重新整理。
 
 ## 錯誤修正 {#bug-fixes}
 
