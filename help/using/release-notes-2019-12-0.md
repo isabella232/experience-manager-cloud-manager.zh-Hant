@@ -1,22 +1,25 @@
 ---
-title: 2019.12.0 的發行說明
-seo-title: AEM Cloud manager 2019.12.0版本注意事項
+title: 2019.12.0 版發行說明
+seo-title: AEM Cloud Manager 2019.12.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2019.12.0版的資訊。
 seo-description: 請依照本頁取得AEM Cloud Manager 2019.12.0版的相關資訊。
 translation-type: tm+mt
 source-git-commit: 0fa1fedccb013e82c8df5838a612ce26a1efb7e8
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 5%
 
 ---
 
 
-# 2019.12.0 的發行說明 {#release-notes-for}
+# 2019.12.0 版發行說明 {#release-notes-for}
 
-下節概述2019.12.0版的一般發行說明，並新增管道執行的更新以及程式碼品質掃描的增強功能。 [!UICONTROL Cloud Manager] 
+下節概述[!UICONTROL Cloud Manager]版本2019.12.0的一般發行說明，並新增管線執行的更新以及程式碼品質掃描的增強功能。
 請依照下列章節瞭解詳細資訊。
 
-## Release Date {#release-date}
+## 發行日期 {#release-date}
 
-2019.12.0版 [!UICONTROL Cloud Manager] 的發行日期為2019年12月12日。
+[!UICONTROL Cloud Manager]版本2019.12.0的發行日期為2019年12月12日。
 
 ## 新功能 {#whats-new}
 
