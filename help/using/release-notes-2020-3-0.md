@@ -5,16 +5,19 @@ description: 請依照本頁取得Cloud Manager 2020.3.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2020.3.0版的相關資訊
 translation-type: tm+mt
 source-git-commit: e7da473a22bec1d3d9b3d39bf654af0c596fe86d
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 51%
 
 ---
 
 # 2020.3.0 版發行說明 {#release-notes-for}
 
-下節概述2020.3.0版的一 [!UICONTROL Cloud Manager] 般發行說明。
+以下章節概述[!UICONTROL Cloud Manager] 2020.3.0版的一般發行說明。
 
-## Release Date {#release-date}
+## 發行日期 {#release-date}
 
-2020.3.0版 [!UICONTROL Cloud Manager] 的發行日期為2020年3月05日。
+[!UICONTROL Cloud Manager]版本2020.3.0的發行日期為2020年3月05日。
 
 ## 新功能 {#whats-new}
 
