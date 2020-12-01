@@ -5,21 +5,24 @@ description: 'null'
 seo-description: 請依照本頁瞭解Cloud Manager中的系統監控，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種度量。
 translation-type: tm+mt
 source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+workflow-type: tm+mt
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
 
-# 系統監控 {#system-monitoring}
+# 系統監視{#system-monitoring}
 
-中的系統監 [!UICONTROL Cloud Manager] 控是通過觀察環境中的單個實例並跟蹤每個實例的各種度量來完成的。 每個度量都有兩個定義的臨界值 *-警告臨界值* ，以 *及嚴重臨界值*。
+[!UICONTROL Cloud Manager]中的系統監控是通過觀察環境中的單個實例並跟蹤每個實例的各種度量來完成的。 每個度量有兩個定義的閾值- *警告閾值*&#x200B;和&#x200B;*嚴重閾值*。
 
-如果量度超過臨界值，則視為臨界狀態；如果量度超過其警告臨界值（但低於其嚴重臨界值），則會視為處於警告狀態。 臨界值由Adobe Managed Services設定，可在中視覺化 [!UICONTROL Cloud Manager]。 在大多數情況下，客戶之間的臨界值是一致的，但有時Adobe Managed Services會修改臨界值以符合特定客戶需求。 有關臨界值的問題應該提交給您的客戶成功工程師(CSE)。
+如果量度超過臨界值，則視為臨界狀態；如果量度超過其警告臨界值（但低於其嚴重臨界值），則會視為處於警告狀態。 臨界值由Adobe Managed Services設定，可在[!UICONTROL Cloud Manager]中視覺化。 在大多數情況下，客戶之間的臨界值是一致的，但有時Adobe Managed Services會修改臨界值以符合特定客戶需求。 有關臨界值的問題應該提交給您的客戶成功工程師(CSE)。
 
-## 導航到系統監視 {#navigating-system-monitoring}
+## 導航到系統監視{#navigating-system-monitoring}
 
 導覽至「系統監視」功能可透過兩種方式完成。
 
-1. 登錄到 **Managed Services —— 程式登錄頁** 。
+1. 登錄到&#x200B;**Managed Services - Programs**&#x200B;登錄頁。
 
    ![](assets/ProgramLanding.png)
 
@@ -29,10 +32,10 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
    *或*,
 
-* 導覽至「系 **統監控** 」著陸頁面，瀏覽 **Reports** global導覽功能表項目 [!UICONTROL Cloud Manager]。
+* 導覽至&#x200B;**系統監控**&#x200B;登陸頁面，瀏覽[!UICONTROL Cloud Manager]內的&#x200B;**報告**&#x200B;全域導覽功能表項目。
 
 
-## 「系統監視概述」頁 {#system-monitoring-overview-page}
+## 「系統監視概述」頁{#system-monitoring-overview-page}
 
 「系統監視概述」頁列出了程式中受監控的環境，並報告了四個不同類別的高級別運行狀況：
 
@@ -49,16 +52,16 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 >
 >依預設，導覽至此頁面時，生產環境例項是可見的，但其他環境也可開啟。
 
-## 教學影片 {#video-tutorial}
+## 教學影片{#video-tutorial}
 
-### Cloud Manager報表概述 {#reports-video}
+### Cloud Manager報告概述{#reports-video}
 
 「Cloud Manager報表」透過一組圖表提供方案環境和AEM例項的檢視，這些圖表可報告並追蹤每個AEM例項的各種量度。
 請參閱以下視訊以取得詳細資訊。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)
 
-## 系統監控詳細資訊 {#system-monitoring-detail}
+## 系統監視詳細資訊{#system-monitoring-detail}
 
 若要檢視特定度量的詳細資訊，您可以按一下左側導覽中的其中一個類別，或按一下特定例項的其中一個類別指標。 每個詳細資料頁面會顯示該類別中量度的一連串圖表。 您可以檢視環境中所有例項或特定例項的度量。 您可以使用右上角的下拉式方塊，在環境和例項之間切換。
 
@@ -77,7 +80,7 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ![](assets/Monitoring_Graphs2.png)
 
-### 量度定義 {#metric-definitions}
+### 量度定義{#metric-definitions}
 
 **主機**
 
@@ -102,7 +105,7 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 * 複製代理：測試複製事件的時間（以秒為單位）。 每個複製代理都有不同的度量。
 * Dispatcher Flush:當前在調度器刷新隊列中的項目數。
 
-## SLA報告 {#sla-reporting}
+## SLA報告{#sla-reporting}
 
 客戶可以看到其生產AEM環境相對於其合約服務層級合約(SLA)的效能。 這可透過「報表」畫面上的子功能表取得。
 例如，下圖顯示2018年的月度SLA成績。
@@ -117,9 +120,9 @@ source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ![](assets/sla-reporting3.png)
 
-## SLA度量 {#sla-metrics}
+## SLA度量{#sla-metrics}
 
-* **作者合約**:這是您與Adobe Managed Services簽訂的作者層合約中定義的SLA。
+* **作者合約**:這是您與Adobe Managed Services合約中針對作者層定義的SLA。
 
 * **AMS作者SLA**:這是由Adobe或我們的廠商造成的生產作者層級保理事件，經評估的持續運作時間。
 
