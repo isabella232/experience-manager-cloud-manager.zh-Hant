@@ -29,7 +29,7 @@ ht-degree: 4%
 * **完成**
 
 
-## Using Product Update Wizard {#using-product-update-wizard}
+## 使用產品更新嚮導{#using-product-update-wizard}
 
 >[!NOTE]
 >
@@ -37,8 +37,8 @@ ht-degree: 4%
 
 1. 您會透過Cloud Manager收到脈衝通知，通知您您的程式已提供AEM 6.5。
 
-1. 資訊 **[!UICONTROL AEM 6.5 Update]** 卡會顯示在的概述畫面上 [!UICONTROL Cloud Manager]。 此資訊卡將協助追蹤您目前所處的更新程式階段，並通知您下一步要採取的動作。 選擇 **[!UICONTROL Start Update]** 以啟動嚮導。
+1. 在[!UICONTROL Cloud Manager]的概述畫面上會顯示&#x200B;**[!UICONTROL AEM 6.5 Update]**&#x200B;卡片。 此資訊卡將協助追蹤您目前所處的更新程式階段，並通知您下一步要採取的動作。 選擇&#x200B;**[!UICONTROL Start Update]**&#x200B;以啟動嚮導。
 
    ![](assets/Start-Update.png)
 
-   精靈現在會顯示評估階 **[!UICONTROL AEM 6.5 Update]** 段中的第一 [階段](evaluation.md)。
+   嚮導現在顯示&#x200B;**[!UICONTROL AEM 6.5 Update]**&#x200B;進程的第一階段，如[評估階段](evaluation.md)中所示。
