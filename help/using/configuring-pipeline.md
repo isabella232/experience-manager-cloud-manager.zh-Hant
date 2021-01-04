@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -71,8 +71,6 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
    >[!NOTE]
    >
    >在Git儲存庫中找到的分支會連結至您的程式。
-
-   ![](assets/Configure_ci-cd-2.png)
 
 
 1. 訪問&#x200B;**環境**&#x200B;頁籤以選擇&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#x200B;選項。
