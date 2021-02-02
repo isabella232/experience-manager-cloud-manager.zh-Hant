@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
+source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -59,7 +59,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 請依照下列步驟來設定管道的行為和偏好設定：
 
-1. 按一下「設定管線」(Setup Pipeline)「**」(&lt;a0/>)以設定和配置管線。**
+1. 按一下「設定管線」(Setup Pipeline)「**」(**)以設定和配置管線。
 
    ![](assets/Setup-Pipeline.png)
 
@@ -170,7 +170,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    例如，假設「熱門即時頁面」和「新頁面」集（在此範例中，未使用其他即時頁面）之間有50%/50%的分割，而「新頁面」集包含3000個頁面。 每分鐘頁面檢視次數KPI設定為200。 在30分鐘的測試期間：
 
-   * 「熱門即時頁面」集中的25個頁面，每個頁面將被點擊240次-((200 * 0.5)/ 25)* 30 = 120
+   * 「熱門即時頁面」集中的25個頁面，每個頁面將被點擊120次-((200 * 0.5)/ 25)* 30 = 120
 
    * 「新頁面」集中的3000個頁面中，每個頁面都會點擊一次-((200 * 0.5)/ 3000)* 30 = 1
 
