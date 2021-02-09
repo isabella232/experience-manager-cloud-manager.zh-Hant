@@ -2,9 +2,9 @@
 title: 瞭解構建環境
 description: 請依本頁瞭解環境
 translation-type: tm+mt
-source-git-commit: 000843f902a180181981de2b1307fd2777d32994
+source-git-commit: 60270a7adb612355ff6d6928adcff8e94cabe092
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,14 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 >[!NOTE]
 >雖然Cloud Manager未定義`jacoco-maven-plugin`的特定版本，但使用的版本至少必須是`0.7.5.201505241946`。
+
+
+>[!NOTE]
+>請參閱下列其他資源以瞭解如何使用Cloud Manager API:
+> * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>* [建立API整合](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
+>* [API權限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
+
 
 ## 使用Java 11 {#using-java-11}
 
@@ -124,6 +132,7 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
             </properties>
         </profile>
 ```
+
 
 ## 安裝其他系統軟體包{#installing-additional-system-packages}
 
