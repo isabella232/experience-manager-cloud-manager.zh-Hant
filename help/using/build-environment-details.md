@@ -2,7 +2,7 @@
 title: 瞭解構建環境
 description: 請依本頁瞭解環境
 translation-type: tm+mt
-source-git-commit: 60270a7adb612355ff6d6928adcff8e94cabe092
+source-git-commit: 5a6148fd7750544def87147c5f012c09077b2b60
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven在系統層級設定有設定。xml檔案，此檔案會自動包含公用Adobe **Artifact**&#x200B;儲存庫。 （如需詳細資訊，請參閱[Adobe Public Maven Repository](https://repo.adobe.com/)）。
+* Maven在系統層級設定有設定。xml檔案，此檔案會自動包含公用Adobe **Artifact**儲存庫。
+如需詳細資訊，請參閱[Adobe Public Maven Repository](https://repo.adobe.com/)。
 
 >[!NOTE]
 >雖然Cloud Manager未定義`jacoco-maven-plugin`的特定版本，但使用的版本至少必須是`0.7.5.201505241946`。
