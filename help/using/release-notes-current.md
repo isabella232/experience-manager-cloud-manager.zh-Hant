@@ -4,10 +4,10 @@ seo-title: AEM Cloud Manager 2021.2.0版本注意事項
 description: 請依照本頁取得Cloud Manager 2021.2.0版的相關資訊
 seo-description: 請依照本頁取得AEM Cloud Manager 2021.2.0版的相關資訊
 translation-type: tm+mt
-source-git-commit: 02d2f91d97847a1ca512c2e0f4e02274e79951de
+source-git-commit: d956c7a2d3833e357920a9602e4f5a5b37f2c98a
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 5%
+source-wordcount: '244'
+ht-degree: 4%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 5%
 * SonarQube的Cloud Manager設定檔已更新，以移除Sonar規則`squid:S2142`。 這不會再與線程中斷檢查衝突。
 
 * 現在會動態移除客戶`pom.xml`檔案中預先加上聲納的屬性，以避免建置和品質掃描失敗。
+
+* 已新增其他程式碼品質規則，以涵蓋雲端服務相容性問題。
 
 ## 錯誤修正 {#bug-fixes}
 
