@@ -1,7 +1,7 @@
 ---
 title: 2018.7.0 版發行說明
 seo-title: 2018.7.0 版發行說明
-description: 'null'
+description: 瞭解Cloud Manager 2018.7.0版
 seo-description: 請依照本頁取得Cloud Manager 2018.7.0版的相關資訊。
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
@@ -9,10 +9,10 @@ topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 4%
+source-wordcount: '354'
+ht-degree: 12%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 下節概述[!UICONTROL Cloud Manager] 2018.7.0版本，其中提供&#x200B;*自動縮放*&#x200B;功能。
 
-**自** 動縮放是透過生產環境上區段的 `Dispatcher/Publish` 水準縮放來啟用，以支援負載、容量、存取和其他已定義的監控量度的突然增加。
+**自動擴充功能是透過生產環境中 區段的橫向擴充功能來啟用，用於支援突然增加的負載、磁碟區、存取和其他已定義的監控量度。**`Dispatcher/Publish`
 
 ## 發行日期 {#release-date}
 
