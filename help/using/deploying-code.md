@@ -1,17 +1,17 @@
 ---
 title: 部署程式碼
 seo-title: 部署程式碼
-description: 'null'
-seo-description: 配置了管線（儲存庫、環境和測試環境）後，您就可以部署代碼。 請依照本頁進一步瞭解。
+description: 提供Cloud Manager中部署程式的概述
+seo-description: 瞭解在配置了管道（儲存庫、環境和測試環境）後，如何部署代碼
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -142,10 +142,10 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 
 1. 部署AEM套件以製作。
 1. 從負載平衡器分離dispatcher1。
-1. 將AEM封裝部署至publish1，並將dispatcher封裝部署至dispatcher1，以刷新dispatcher快取。
+1. 將AEM套件部署至publish1，並將dispatcher套件部署至pispatcher1，並平行清除dispatcher快取。
 1. 將dispatcher1放回負載平衡器。
 1. 在dispatcher1恢復服務後，請從負載平衡器分離dispatcher2。
-1. 將AEM套件部署至publish2，將dispatcher套件部署至dispatcher2，以刷新dispatcher快取。
+1. 將AEM套件部署至publish2，並將dispatcher套件部署至pispatcher2，並平行清除dispatcher快取。
 1. 將dispatcher2放回負載平衡器。
 此過程將繼續，直到部署到拓撲中所有發佈者和調度程式為止。
 
