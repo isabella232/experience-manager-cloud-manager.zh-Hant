@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 71a760997ec2a0873a7f39d206086a8b4fd6854e
+source-git-commit: 7cfa7826f851cb55be72211f8e8a980451846f3b
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 6%
+source-wordcount: '3251'
+ht-degree: 4%
 
 ---
 
@@ -743,6 +743,183 @@ AEM Meduration Tools檔案提供如何將元件從傳統UI轉換為Touch UI的�
 
 使用反向複製的客戶應聯絡Adobe以取得其他解決方案。
 
+### OakPAL —— 啟用Proxy的用戶端程式庫中包含的資源應位於名為resources {#oakpal-resources-proxy}的資料夾中
+
+**密鑰**:ClientlibProxyResource
+
+**類型**:錯誤
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM用戶端程式庫可能包含靜態資源，例如影像和字型。 如[使用預處理器](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)中所述，在使用預處理器客戶端庫時，這些靜態資源必須包含在名為resources的子資料夾中，以便在發佈實例上有效地引用。
+
+#### 不符合代碼{#non-compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + images
+        + myimage.jpg
+```
+
+#### 相容代碼{#compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + resources
+        + myimage.jpg
+```
+
+### OakPAL —— 雲端服務不相容工作流程程式的使用{#oakpal-usage-cloud-service}
+
+**密鑰**:CloudServiceIncomplativeWorkflowProcess
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+隨著移至Asset micro-services以處理AEM Cloud服務上的資產，在內部部署和AMS版本的AEM中使用的數個工作流程程式變成不支援或不必要。 位於[aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)的移轉工具可用於在AEM Cloud服務移轉期間更新工作流程模型。
+
+### OakPAL —— 不建議使用靜態範本，而改用可編輯的範本{#oakpal-static-template}
+
+**密鑰**:StaticTemplateUsage
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+雖然靜態範本在AEM專案中的使用向來很常見，但強烈建議使用可編輯的範本，因為這些範本提供最靈活的彈性，並支援靜態範本中未顯示的其他功能。 如需詳細資訊，請參閱[頁面範本- Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)。 從靜態範本移轉至可編輯的範本，可使用[AEM Meduration Tools](https://opensource.adobe.com/aem-modernize-tools/)大幅自動化。
+
+### OakPAL —— 不建議使用舊版基礎元件{#oakpal-usage-legacy}
+
+**密鑰**:LegacyFoundationComponentUsage
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+數個AEM版本已淘汰舊版基礎元件（例如`/libs/foundation`下的元件），以利WCM核心元件。 不建議使用舊式基礎元件做為自訂元件的基礎——不論是透過覆蓋或繼承——並應轉換為對應的核心元件。 [AEM Meduration Tools](https://opensource.adobe.com/aem-modernize-tools/)可協助轉換。
+
+### OakPAL —— 應使用{#oakpal-supported-runmodes}僅支援的執行模式名稱和順序
+
+**密鑰**:支援的執行模式
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM Cloud Service會針對執行模式名稱實施嚴格的命名原則，並對這些執行模式實施嚴格的排序。 支援的執行模式清單可在[Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)上找到，任何偏離此模式的情況都會視為問題。
+
+### OakPAL —— 自訂搜尋索引定義節點必須是/oak:index {#oakpal-custom-search}的直接子項
+
+**密鑰**:OakIndexLocation
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM Cloud服務要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinition類型的節點）為`/oak:index`的直接子節點。 其他位置的索引必須移動，才能與AEM Cloud服務相容。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
+
+### OakPAL —— 自訂搜尋索引定義節點必須有2 {#oakpal-custom-search-compatVersion}的compat版本
+
+**密鑰**:IndexCompatVersion
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM Cloud Service要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinition類型的節點）必須將compatVersion屬性設為2。 AEM Cloud服務不支援任何其他值。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
+
+### OakPAL —— 自定義搜索索引定義節點的後代節點必須為Nt:Unstructured {#oakpal-descendent-nodes}類型
+
+**密鑰**:IndexDescendantNodeType
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+當自訂搜尋索引定義節點具有無序的子節點時，可能會發生難以疑難排解的問題。 為避免這些情況，建議`oak:QueryIndexDefinition`節點的所有子節點都為nt:unstructured類型。
+
+### OakPAL —— 自訂搜尋索引定義節點必須包含名為indexRules的子節點，該子節點具有{#oakpal-custom-search-index}子節點
+
+**密鑰**:IndexRulesNode
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+正確定義的自定義搜索索引定義節點必須包含名為indexRules的子節點，而該子節點必須至少有一個子節點。 如需詳細資訊，請參閱[Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
+
+### OakPAL —— 自訂搜尋索引定義節點必須遵循命名慣例{#oakpal-custom-search-definitions}
+
+**密鑰**:IndexName
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM Cloud服務要求自訂搜尋索引定義（即，`oak:QueryIndexDefinition`類型的節點）必須依照[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)中說明的特定模式命名。
+
+### OakPAL —— 自訂搜尋索引定義節點必須使用索引類型lucene {#oakpal-index-type-lucene}
+
+**密鑰**:IndexType
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM Cloud Service要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinition類型的節點）具有type屬性，其值設定為&#x200B;**lucene**。 使用舊有索引類型建立索引必須在移轉至AEM Cloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
+
+### OakPAL —— 自訂搜尋索引定義節點不得包含名為seed {#oakpal-property-name-seed}的屬性
+
+**密鑰**:IndexSeedProperty
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM Cloud服務禁止自訂搜尋索引定義（亦即`oak:QueryIndexDefinition`類型的節點）包含名為seed的屬性。 使用此屬性建立索引必須在移轉至AEM Cloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
+
+### OakPAL —— 自訂搜尋索引定義節點不得包含名為reindex {#oakpal-reindex-property}的屬性
+
+**密鑰**:IndexReindexProperty
+
+**類型**:程式碼氣味
+
+**嚴重性**:次要
+
+**自**:2021.2.0版
+
+AEM Cloud服務禁止自訂搜尋索引定義（亦即`oak:QueryIndexDefinition`類型的節點）包含名為reindex的屬性。 使用此屬性建立索引必須在移轉至AEM Cloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
 
 
 
