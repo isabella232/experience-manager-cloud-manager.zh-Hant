@@ -1,7 +1,7 @@
 ---
 title: 了解測試結果
 seo-title: 了解測試結果
-description: 'null'
+description: 在Cloud Manager中執行管道時，進一步瞭解三層門
 seo-description: 在Cloud Manager中執行管道、程式碼掃描、效能和安全性測試驗證您的程式時，請依照本頁瞭解三層閘道。
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1556'
 ht-degree: 6%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 6%
 在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「[自訂代碼品質規則」](/help/using/custom-code-quality-rules.md)。
 
 >[!NOTE]
->您可以下載規則的完整清單[這裡](/help/using/assets/CodeQuality-rules-latest.xlsx)。
+>您可以下載規則的完整清單[這裡](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)。
 
 此步驟的結果以&#x200B;*Rating*&#x200B;的形式提供。 下表摘要了各種測試標準的評分：
 
@@ -78,7 +78,7 @@ ht-degree: 6%
 
 品質掃描程式不完善，有時會錯誤地識別實際上沒有問題的問題。 這稱為「假陽性」。
 
-在這些情況下，原始碼可以用標準Java `@SuppressWarnings`注釋加以注釋，該標準Java &lt;a0/>注釋指定規則ID作為注釋屬性。 例如，一個常見問題是，用於檢測硬編碼密碼的SonarQube規則對於如何識別硬編碼密碼具有攻擊性。
+在這些情況下，原始碼可以用標準Java `@SuppressWarnings`注釋加以注釋，該標準Java 注釋指定規則ID作為注釋屬性。 例如，一個常見問題是，用於檢測硬編碼密碼的SonarQube規則對於如何識別硬編碼密碼具有攻擊性。
 
 若要檢視特定範例，此程式碼在AEM專案中相當常見，該專案具有連接至某些外部服務的程式碼：
 
