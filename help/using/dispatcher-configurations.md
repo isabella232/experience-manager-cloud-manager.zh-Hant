@@ -1,7 +1,7 @@
 ---
 title: 管理 Dispatcher 設定
 seo-title: 管理 Dispatcher 設定
-description: 'null'
+description: 瞭解如何使用Cloud Manager部署調度程式配置檔案
 seo-description: 請依照本頁瞭解如何配置調度程式。
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '606'
 ht-degree: 2%
 
 ---
