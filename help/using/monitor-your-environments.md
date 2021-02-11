@@ -1,12 +1,12 @@
 ---
 title: 監控環境
 seo-title: 監控環境
-description: 'null'
+description: 瞭解如何在Cloud Manager中監控您的環境
 seo-description: 請依照本頁瞭解Cloud Manager中的系統監控，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種度量。
 translation-type: tm+mt
-source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
