@@ -1,15 +1,15 @@
 ---
 title: CI/CD 管道
 seo-title: CI/CD 管道
-description: 'null'
-seo-description: 請依照本節內容瞭解CI/CD管道，該管道可在Cloud Manager中處理部署和生產。
+description: CI/CD管道概述，它可在Cloud Manager中處理部署到舞台和生產環境
+seo-description: 請依照本節內容瞭解CI/CD管道，該管道可在Cloud Manager中處理部署和生產
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
