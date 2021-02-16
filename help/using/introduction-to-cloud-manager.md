@@ -9,15 +9,22 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 213d1b2ee52496cc8cf6bc699488d9da9f7b9946
+source-git-commit: 6ff4b6e950e153c98b6981ec09dfa0648809c693
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 88%
+source-wordcount: '749'
+ht-degree: 85%
 
 ---
 
 
 # [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager} 簡介
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cloudmanager_introduction"
+>title="Cloud Manager 簡介"
+>abstract="讓組織能夠在雲端自行管理Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="建立程式"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager" text="建立環境"
 
 ## 簡介 {#introduction}
 
