@@ -4,9 +4,9 @@ seo-title: Cloud Manager常見問答集
 description: 請參閱Cloud Manager常見問答集以取得一些疑難排解提示
 seo-description: 請依照本頁取得有關Cloud Manager常見問答集的解答
 translation-type: tm+mt
-source-git-commit: cb63a8bbe30b28668313dc851f17aa34fc166474
+source-git-commit: 1d4f07ba0aa4630585ccbb35f2d48f0c7e1f3df2
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Cloud Manager常見問題{#cloud-manager-faqs}
 
-以下章節提供與Cloud Manager相關的常見常見問答集的解答。
+下節提供一些與Cloud Manager相關的常見問答集的解答。
 
 ## 1.Java 11是否可搭配Cloud Manager組建使用？{#java-11-cloud-manager}
 
-嘗試將組建版本從Java 8切換為Java 11時，AEM Cloud Manager組建版本會失敗。 問題可能有許多原因，最常見的原因如下：
+嘗試將組建版本從Java 8切換為11時，AEM Cloud Manager組建版本會失敗。 問題可能有許多原因，最常見的原因如下：
 
 * 如[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started)所述，新增具有正確Java 11設定的maven-toolchains-plugin。  例如，請參閱[wknd範例專案程式碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 * *效能步驟*&#x200B;是Web效能步驟——表示是使用Web瀏覽器載入頁面的時機。
 * 在測試期間，結果CSV檔案中所列的URL會載入Cloud Manager基礎架構的Chrome瀏覽器中。
 * 失敗的常見度量是&#x200B;*錯誤率*。 若要傳遞URL，主URL必須載入200個狀態且少於20秒。 超過20秒的頁面載入會標示為504錯誤。
-* 如果您的網站需要使用者驗證，請參閱本檔案，以設定測試以驗證您的網站。
+* 如果您的網站需要「使用者驗證」，請參閱[「已驗證的效能測試」，以設定測試以驗證您的網站。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)
 
 ## 4.我們是否允許在主項目版本中使用SNAPSHOT? 軟體包和捆綁jar檔案的版本控制如何用於舞台和生產部署？{#snapshot-version}
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ## 6.無法透過aio雲端管理器設定變數，以設定管道變數。 如何除錯這些問題？{#set-variable}
 
-如果您嘗試透過類似下列命令的命令列出或設定管道變數時遇到403錯誤，則必須在管理控制台中新增為&#x200B;*部署管理員*&#x200B;雲端管理員產品角色。\
+如果您嘗試透過類似下列的命令列出或設定管道變數時遇到403錯誤，則需要在Admin Console中新增為&#x200B;*Deployment Manager* Cloud Manager產品角色。\
 如需詳細資訊，請參閱[API權限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)。
 
 相關命令和錯誤：
