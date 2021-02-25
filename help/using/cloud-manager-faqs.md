@@ -4,9 +4,9 @@ seo-title: Cloud Manager常見問答集
 description: 請參閱Cloud Manager常見問答集以取得一些疑難排解提示
 seo-description: 請依照本頁取得有關Cloud Manager常見問答集的解答
 translation-type: tm+mt
-source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
+source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 1. Cloud Manager會自動將其版本新增至「舞台(Stage)」和「生產(Production)」組建，甚至會建立Git分支。 不需要特殊配置。 如果跳過上述步驟3，部署仍可正常運作，而且會自動設定版本。
 
-1. 如果您將版本保留為`-SNAPSHOT`用於舞台和生產組建或部署，則即使這樣也沒問題。 Cloud Manager會自動設定正確的版本號碼，並在Git中為您建立標籤。 如有需要，此標籤可在稍後參考。
+1. 如果您將版本保留在`-SNAPSHOT`的「舞台(Stage)」和「生產(Production)」組建或部署版本中，則沒有問題。 Cloud Manager會自動設定正確的版本號碼，並在Git中為您建立標籤。 如有需要，此標籤可在稍後參考。
 
-1. 如果您想要在開發環境中試用一些實驗性程式碼，可以建立新的Git分支，並設定管道以使用該不同的分支。 當部署開始失敗，而且您想要測試舊版程式碼，以檢視程式碼何時中斷時，這個功能會很有用。
+1. 如果您想在「開發」環境中試用一些實驗性程式碼，可以建立新的Git分支，並設定管線以使用該不同的分支。 當部署開始失敗，而且您想要測試舊版程式碼，以檢視程式碼何時中斷時，這個功能會很有用。
 
    下面的Git命令針對特定的預存提交`485548e4fbafbc83b11c3cb12b035c9d26b6532b`建立名為&#x200B;*testbranch1*&#x200B;的遠程分支。  此特殊分支可用於Cloud Manager，而不會影響任何其他分支：
 
