@@ -4,7 +4,7 @@ seo-title: Cloud Manager常見問答集
 description: 請參閱Cloud Manager常見問答集以取得一些疑難排解提示
 seo-description: 請依照本頁取得有關Cloud Manager常見問答集的解答
 translation-type: tm+mt
-source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
+source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 0%
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 ## 我們是否允許在Maven項目版本中使用SNAPSHOT? 軟體包和捆綁jar檔案的版本控制如何用於舞台和生產部署？{#snapshot-version}
 
-1. 對於dev部署，Git分支`pom.xml`檔案必須在`<version>`值的末尾包含`-SNAPSHOT`。 如此可讓後續部署版本未變更，仍可安裝。 在開發部署中，不會新增或產生主版本的自動版本。
+1. 對於開發人員部署，Git分支`pom.xml`檔案必須在`<version>`值結尾處包含`-SNAPSHOT`。 如此可讓後續部署版本未變更，仍可安裝。 在開發人員部署中，不會為Maven Build新增或產生任何自動版本。
 
-1. 在階段和生產部署中，自動版本會根據[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code)的說明產生。
+1. 在「階段」和「生產」部署中，會根據[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code)的說明產生自動版本。
 
-1. 對於階段和生產部署中的自定義版本控制，請設定3個部件正確的主版本，如`1.0.0`。 每次您必須進行其他部署至生產環境時，都會增加版本。
+1. 對於舞台和生產部署中的自定義版本，請設定3個部件正確的版本，如`1.0.0`。 每次您必須進行其他部署至生產環境時，都會增加版本。
 
 1. Cloud Manager會自動將其版本新增至「舞台(Stage)」和「生產(Production)」組建，甚至會建立Git分支。 不需要特殊配置。 如果跳過上述步驟3，部署仍可正常運作，而且會自動設定版本。
 
@@ -82,8 +82,8 @@ ht-degree: 0%
 
 `$ aio cloudmanager:list-pipeline-variables 222`
 
-錯誤: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*錯誤*:  `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
 
 `$ aio cloudmanager:set-pipeline-variables 222 --variable TEST 1`
 
-錯誤: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*錯誤*:  `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
