@@ -4,9 +4,9 @@ seo-title: Cloud Manager常見問答集
 description: 請參閱Cloud Manager常見問答集以取得一些疑難排解提示
 seo-description: 請依照本頁取得有關Cloud Manager常見問答集的解答
 translation-type: tm+mt
-source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
+source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 * *效能步驟*&#x200B;是Web效能步驟，即使用Web瀏覽器載入頁面的時間。
 * 測試期間，結果&#x200B;*CSV*&#x200B;檔案中列出的URL會載入Cloud Manager基礎架構的Chrome瀏覽器中。
 * 失敗的常見度量是&#x200B;*錯誤率*。 要傳遞URL，主URL必須以`200`狀態載入，且速度不超過`20`秒。 超過`20`秒的頁面載入會標示為`504`錯誤。
-* 如果您的網站需要「使用者驗證」，請參閱[「已驗證的效能測試」，以設定測試以驗證您的網站。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)
+* 如果您的網站需要使用者驗證，請參閱[已驗證的效能測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)，以設定測試以驗證您的網站。
 
 ## 我們是否允許在Maven項目版本中使用SNAPSHOT? 軟體包和捆綁jar檔案的版本控制如何用於舞台和生產部署？{#snapshot-version}
 
