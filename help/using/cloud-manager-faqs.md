@@ -4,9 +4,9 @@ seo-title: Cloud Manager常見問答集
 description: 請參閱Cloud Manager常見問答集以取得一些疑難排解提示
 seo-description: 請依照本頁取得有關Cloud Manager常見問答集的解答
 translation-type: tm+mt
-source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
+source-git-commit: cf5c02c8c594015b6baa00e1a8aaa2d898aa60a9
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,9 @@ ht-degree: 0%
 * 失敗的常見度量是&#x200B;*錯誤率*。 要傳遞URL，主URL必須以`200`狀態載入，且速度不超過`20`秒。 超過`20`秒的頁面載入會標示為`504`錯誤。
 * 如果您的網站需要使用者驗證，請參閱[已驗證的效能測試](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)，以設定測試以驗證您的網站。
 
-## 我們是否允許在Maven項目版本中使用SNAPSHOT? 軟體包和捆綁jar檔案的版本控制如何用於舞台和生產部署？{#snapshot-version}
+## 我們是否允許在Maven項目版本中使用SNAPSHOT? 套件和捆綁jar檔案的版本控制如何適用於舞台和生產部署？{#snapshot-version}
+
+請參閱以下案例，以瞭解用於舞台和生產部署的軟體包和捆綁jar檔案的版本修訂：
 
 1. 對於開發人員部署，Git分支`pom.xml`檔案必須在`<version>`值結尾處包含`-SNAPSHOT`。 如此可讓後續部署版本未變更，仍可安裝。 在開發人員部署中，不會為Maven Build新增或產生任何自動版本。
 
