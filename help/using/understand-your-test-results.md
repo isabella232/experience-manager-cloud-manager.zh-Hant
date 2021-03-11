@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1563'
 ht-degree: 6%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->在僅代碼質量管道中，不能覆蓋代碼質量測試門中的重要故障，因為代碼質量測試步驟是管道中的最後一步。
+>在僅代碼質量管道中，不能改寫代碼質量測試門中的重要故障，因為代碼質量測試步驟是管道中的最後一步。
 
 ## 程式碼品質測試{#code-quality-testing}
 
@@ -47,10 +47,10 @@ ht-degree: 6%
 
 ### 瞭解代碼質量測試{#understanding-code-quality-testing}
 
-在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是由SonarQube和使用OakPAL的內容封裝層級檢查組合來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務建立，並稱為「[自訂代碼品質規則」](/help/using/custom-code-quality-rules.md)。
+在「程式碼品質測試」中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是透過SonarQube、使用OakPAL的內容封裝層級檢查以及使用Dispatcher Optimization Tool的Dispatcher驗證來實作的。 有超過100種規則結合一般Java規則和AEM特定規則。 有些特定AEM規則是根據工程部門的最佳實踐AEM而建立，稱為[自訂代碼品質規則](/help/using/custom-code-quality-rules.md)。
 
 >[!NOTE]
->您可以下載規則的完整清單[這裡](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)。
+>您可以下載規則的完整清單[這裡](/help/using/assets/CodeQuality-rules-AMS.xlsx)。
 
 此步驟的結果以&#x200B;*Rating*&#x200B;的形式提供。 下表摘要了各種測試標準的評分：
 
@@ -63,7 +63,7 @@ ht-degree: 6%
 | 跳過的設備測試 | 跳過的單元測試數。 | 資訊 | > 1 |
 | 未結問題 | 整體問題類型——弱點、錯誤和程式碼氣味 | 資訊 | > 0 |
 | 複製行 | 重複塊中涉及的行數。 <br/>對於要視為複製的代碼塊：  <br/><ul><li>**非Java專案：**</li><li>至少應有100個連續和重複的Token。</li><li>這些預付碼應至少分散於： </li><li>COBOL的30行代碼 </li><li>ABAP的20行代碼 </li><li>10行其他語言的程式碼</li><li>**Java專案：**</li><li> 不論預付碼和行數為何，至少應有10個連續和重複的陳述式。</li></ul> <br/>在檢測重複時，會忽略縮排和字串文字的差異。 | 資訊 | > 1% |
-| 雲端服務相容性 | 已識別的雲端服務相容性問題數目。 | 資訊 | > 0 |
+| Cloud Service相容性 | 已識別的Cloud Service相容性問題數。 | 資訊 | > 0 |
 
 
 >[!NOTE]
@@ -80,7 +80,7 @@ ht-degree: 6%
 
 在這些情況下，原始碼可以用標準Java `@SuppressWarnings`注釋加以注釋，該標準Java 注釋指定規則ID作為注釋屬性。 例如，一個常見問題是，用於檢測硬編碼密碼的SonarQube規則對於如何識別硬編碼密碼具有攻擊性。
 
-若要檢視特定範例，此程式碼在AEM專案中相當常見，該專案具有連接至某些外部服務的程式碼：
+若要檢視特定範例，此程式碼在專案中相當常見，AEM專案中有程式碼可連接至某些外部服務：
 
 ```java
 @Property(label = "Service Password")
@@ -110,7 +110,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## 安全性測試{#security-testing}
 
-[!UICONTROL Cloud Manager] 在部署後執 ***行現有的AEM Security Heath*** Checkson階段，並透過UI報告狀態。結果會從環境中的所有AEM例項匯總。
+[!UICONTROL Cloud Manager] 在部署後執 ***行AEM現有的Security Heath*** Checkson階段，並透過UI報告狀態。從環境中的所有實例AEM匯總結果。
 
 如果&#x200B;**Instances**&#x200B;中的任何一個報告給定健康檢查的失敗，則整個&#x200B;**Environment**&#x200B;將失敗該健康檢查。 如同程式碼品質與效能測試，這些健康狀況檢查會組織成類別，並使用三層式選通系統來報告。 唯一的區別是，在安全測試中沒有閾值。 所有健康檢查都只是通過或失敗。
 
@@ -123,13 +123,13 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 已載入還原序列化防火牆 | 還原序列化防火牆已載入 | 重要 |
 | AuthorizableNodeName實作不會在節點名稱／路徑中公開可授權的ID。 | 可授權節點名稱產生 | 重要 |
 | 預設密碼已變更 | 預設登入帳戶 | 重要 |
-| Sling default GET servlet受到DOS攻擊的保護。 | Sling Get Servlet | 重要 |
+| Sling defaultGETservlets is protected for DOS attacks. | Sling Get Servlet | 重要 |
 | Sling Java Script Handler已正確設定 | Sling Java 指令碼處理常式 | 重要 |
 | Sling JSP指令碼處理常式已正確設定 | Sling JSP指令碼處理常式 | 重要 |
 | SSL已正確設定 | SSL 設定 | 重要 |
 | 未發現明顯不安全的使用者設定檔原則 | 使用者設定檔預設存取 | 重要 |
 | Sling Referrer Filter已設定，以防止CSRF攻擊 | Sling 查閱者篩選 | 重要 |
-| Adobe Granite HTML Library Manager已正確設定 | CQ HTML 文件庫管理員組態 | 重要 |
+| Adobe花崗岩HTML庫管理器已正確配置 | CQ HTML 文件庫管理員組態 | 重要 |
 | 已禁用CRXDE支援包 | CRXDE 支援 | 重要 |
 | Sling DavEx套裝和servlet已停用 | DavEx 健康狀態檢查 | 重要 |
 | 未安裝範例內容 | 範例內容封裝 | 重要 |
