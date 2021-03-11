@@ -2,16 +2,16 @@
 title: 自訂程式碼品質規則
 seo-title: 自訂程式碼品質規則
 description: 請依本頁瞭解Cloud Manager執行的自訂代碼品質規則。
-seo-description: 請依照本頁瞭解Adobe Experience Manager Cloud Manager執行的自訂代碼品質規則。
+seo-description: 請依本頁瞭解由Adobe Experience Manager雲端管理員執行的自訂程式碼品質規則。
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 7cfa7826f851cb55be72211f8e8a980451846f3b
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3622'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # 自訂程式碼品質規則 {#custom-code-quality-rules}
 
-本頁說明由Cloud Manager根據AEM工程的最佳實務建立的自訂程式碼品質規則。
+本頁說明由Cloud Manager根據「工程」的最佳實務所建立的自訂程式碼品質規則AEM。
 
 >[!NOTE]
 >此處提供的程式碼範例僅供說明之用。 請參閱[概念](https://docs.sonarqube.org/7.4/user-guide/concepts/)以瞭解SonarQube概念和品質規則。
@@ -119,7 +119,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **自**:2018.6.0版
 
-當從AEM應用程式內部執行HTTP請求時，請務必確定已設定適當逾時，以避免不必要的執行緒耗用。 很遺憾，Java的預設HTTP客戶端(java.net.HttpUrlConnection)和常用的Apache HTTP Components客戶端的預設行為都是永不超時，因此必須明確設定超時。 此外，作為最佳實務，這些逾時秒數不應超過60秒。
+當從應用程式內部執行HTTP請AEM求時，請務必確保已設定適當逾時，以避免不必要的執行緒耗用。 很遺憾，Java的預設HTTP客戶端(java.net.HttpUrlConnection)和常用的Apache HTTP Components客戶端的預設行為都是永不超時，因此必須明確設定超時。 此外，作為最佳實務，這些逾時秒數不應超過60秒。
 
 #### 不符合代碼{#non-compliant-code-2}
 
@@ -201,7 +201,7 @@ AEM API包含Java介面和類別，這些介面和類別僅能由自訂程式碼
 
 將新方法添加到這些介面時，這些附加方法不會影響使用這些介面的現有代碼，因此，在這些介面中添加新方法會被視為向後相容。但是，如果自訂程 ***式碼實作*** 其中一個介面，該自訂程式碼會給客戶帶來向後相容性風險。
 
-僅打算由AEM實作的介面（和類）會用&#x200B;*org.osgi.annotation.versioning.ProviderType*(或者，在某些情況下，類似的舊式注釋&#x200B;*aQute.bnd.annotation.ProviderType*&#x200B;加以註解。 此規則可識別自訂程式碼實作（或擴充類別）此類介面的情況。
+僅要由實施的介面（和類）AEM將用&#x200B;*org.osgi.annotation.versioning.ProviderType*(或者，在某些情況下，類似的舊式注釋&#x200B;*aQute.bnd.annotation.ProviderType*&#x200B;進行注釋。 此規則可識別自訂程式碼實作（或擴充類別）此類介面的情況。
 
 #### 不符合代碼{#non-compliant-code-3}
 
@@ -355,7 +355,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### 在處理GET或HEAD請求{#avoid-logging-at-info-when-handling-get-or-head-requests}時，避免在INFO上記錄
+### 在處理GET或HEAD請求{#avoid-logging-at-info-when-handling-get-or-head-requests}時，避免在INFO上登錄
 
 **密鑰**:CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
@@ -363,7 +363,7 @@ public void doThis() throws Exception {
 
 **嚴重性**:次要
 
-一般而言，INFO記錄檔層級應用於區分重要動作，而且依預設，AEM會設定為在INFO層級或以上記錄檔。 GET和HEAD方法只能是只讀操作，因此不構成重要操作。 響應GET或HEAD請求在INFO級別登錄可能會產生明顯的日誌雜訊，從而更難識別日誌檔案中的有用資訊。 處理GET或HEAD請求時的記錄應位於發生錯誤時的WARN或ERROR級別，或位於DEBUG或TRACE級別（如果更深入的疑難排解資訊有幫助）。
+一般而言，INFO記錄檔層級應用於區分重要動作，並依預設設定AEM為在INFO層級或以上記錄檔。 GET和HEAD方式只能是唯讀操作，因此不構成重要行動。 響應GET或HEAD請求而在INFO級別登錄可能會產生明顯的日誌雜訊，從而更難識別日誌檔案中的有用資訊。 處理GET或HEAD請求時，如果更深入的疑難排解資訊有幫助，則記錄應位於發生錯誤時的「警告」或「錯誤」層級，或位於「除錯」或「TRACE」層級。
 
 >[!CAUTION]
 >
@@ -467,7 +467,7 @@ public void doThis() {
 
 **自**:2018.4.0版
 
-如前所述，瞭解日誌消息時，上下文至關重要。 使用Exception.printStackTrace()僅使&#x200B;****&#x200B;堆棧跟蹤輸出到標準錯誤流，從而丟失所有上下文。 此外，在像AEM這樣的多執行緒應用程式中，如果使用此方法並行列印多個例外，則其堆疊追蹤可能會重疊，造成嚴重混淆。 只應通過記錄框架記錄異常。
+如前所述，瞭解日誌消息時，上下文至關重要。 使用Exception.printStackTrace()僅使&#x200B;****&#x200B;堆棧跟蹤輸出到標準錯誤流，從而丟失所有上下文。 此外，在多線程應用中，如AEM果使用該方法並行打印多個例外，其堆棧跡線可能重疊，從而產生明顯的混淆。 只應通過記錄框架記錄異常。
 
 #### 不符合代碼{#non-compliant-code-11}
 
@@ -503,7 +503,7 @@ public void doThis() {
 
 **自**:2018.4.0版
 
-登入AEM應一律透過登入架構(SLF4J)完成。 直接輸出到標準輸出或標準錯誤流會丟失記錄框架提供的結構和上下文資訊，在某些情況下可能導致效能問題。
+登入應AEM一律透過登入架構(SLF4J)進行。 直接輸出到標準輸出或標準錯誤流會丟失記錄框架提供的結構和上下文資訊，在某些情況下可能導致效能問題。
 
 #### 不符合代碼{#non-compliant-code-12}
 
@@ -561,7 +561,7 @@ public void doThis(Resource resource) {
 
 **密鑰**:CQRules:AMSCORE-554
 
-**類型**:程式碼氣味／雲端服務相容性
+**類型**:程式碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
@@ -571,21 +571,21 @@ Sling Scheduler不得用於需要保證執行的任務。 Sling Scheduled Jobs�
 
 請參閱[Apache Sling Eventing和Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)以進一步瞭解Sling Jobs如何在叢集環境中處理。
 
-### AEM已過時的API不應使用{#sonarqube-aem-deprecated}
+### 不AEM應使用已過時的API {#sonarqube-aem-deprecated}
 
 **密鑰**:AMSCORE-553
 
-**類型**:程式碼氣味／雲端服務相容性
+**類型**:程式碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-AEM API表面處於常數修訂之下，以識別不建議使用且因此被視為已過時的API。
+APIAEM表面處於常數修訂之下，以識別不建議使用且因此被視為已過時的API。
 
 在許多情況下，這些API會使用標準Java *@Deprecated*&#x200B;注釋來取代，如`squid:CallToDeprecatedMethod`所識別。
 
-不過，有時AEM的上下文中會淘汰API，但在其他上下文中可能不會淘汰。 此規則可識別此第二類。
+但是，有時API在上下文中已過時，但在其AEM他上下文中可能不再過時。 此規則可識別此第二類。
 
 ## OakPAL內容規則{#oakpal-rules}
 
@@ -593,7 +593,7 @@ AEM API表面處於常數修訂之下，以識別不建議使用且因此被視�
 
 >[!NOTE]
 >
->OakPAL是由AEM合作夥伴（2019年AEM Rockstar北美地區得獎者）開發的架構，可使用獨立的Oak儲存庫來驗證內容套件。
+>OakPAL是由合作夥伴(AEM2019年Rockstar North America的得獎者)開發的架構，可使用獨立的Oak資料庫來驗證內容套件。
 
 ### 客戶軟體包不應在/libs {#oakpal-customer-package}下建立或修改節點
 
@@ -605,7 +605,7 @@ AEM API表面處於常數修訂之下，以識別不建議使用且因此被視�
 
 **自**:2019.6.0版
 
-AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是一項長期以來的最佳做法。 修改&#x200B;*/libs*&#x200B;下的節點和屬性會對主要和次要更新造成重大風險。 對&#x200B;*/libs*&#x200B;所做的修改僅應由Adobe透過官方管道進行。
+客戶應將內容存放庫中的/libs內容樹視為唯讀，這AEM是一種長期的最佳做法。 修改&#x200B;*/libs*&#x200B;下的節點和屬性會對主要和次要更新造成重大風險。 對&#x200B;*/libs*&#x200B;的修改僅應通過正式渠道Adobe。
 
 ### 軟體包不應包含重複的OSGi配置{#oakpal-package-osgi}
 
@@ -650,7 +650,7 @@ AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是
 
 **自**:2019.6.0版
 
-出於安全原因，包含&#x200B;*/config/和/install/*&#x200B;的路徑只能由AEM的管理使用者閱讀，且僅能用於OSGi配置和OSGi捆綁包。 將其他類型的內容置於包含這些區段的路徑下，會導致應用程式行為在管理使用者與非管理使用者之間無意間有所不同。
+出於安全原因，包含&#x200B;*/config/和/install/*&#x200B;的路徑只能由中的管理用戶讀取AEM，並且應僅用於OSGi配置和OSGi捆綁包。 將其他類型的內容置於包含這些區段的路徑下，會導致應用程式行為在管理使用者與非管理使用者之間無意間有所不同。
 
 常見的問題是，在元件對話框中或指定用於內嵌編輯的富格文本編輯器配置時，使用名為`config`的節點。 要解決此問題，應將違規節點更名為相容名稱。 對於富格文本編輯器配置，請使用`cq:inplaceEditing`節點上的`configPath`屬性來指定新位置。
 
@@ -689,59 +689,59 @@ AEM內容存放庫中的/libs內容樹狀結構應被客戶視為唯讀，這是
 
 **密鑰**:ClassicUIAuthoringMode
 
-**類型**:程式碼氣味／雲端服務相容性
+**類型**:程式碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-OSGi組態`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義AEM中的預設編寫模式。 自從AEM 6.4以來，Classic UI已過時，現在當預設的製作模式設定為Classic UI時，就會引發問題。
+OSGi配置`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`定義了中的預設編寫模AEM式。 自6.4以來，Classic UI已不再支援AEM，現在當預設編寫模式設定為Classic UI時，會引發問題。
 
 ### 具有對話框的元件應具有觸摸UI對話框{#oakpal-components-dialogs}
 
 **密鑰**:ComponentWithOnlyClassicUIDialog
 
-**類型**:程式碼氣味／雲端服務相容性
+**類型**:程式碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-具有Classic UI對話方塊的AEM元件應一律具有對應的Touch UI對話方塊，以提供最佳的製作體驗，並與不支援Classic UI的Cloud Service部署模型相容。 此規則會驗證下列案例：
+具AEM有Classic UI對話方塊的元件應一律具有對應的Touch UI對話方塊，以提供最佳的製作體驗，並與不支援Classic UI的Cloud Service部署模型相容。 此規則會驗證下列案例：
 
 * 具有Classic UI對話框的元件（即，對話子節點）必須具有相應的Touch UI對話框（即`cq:dialog`子節點）。
 * 具有Classic UI設計對話框的元件（即design_dialog節點）必須具有相應的Touch UI設計對話框（即`cq:design_dialog`子節點）。
 * 具有「傳統型」UI對話框和「傳統型」UI設計對話框的元件必須具有相應的「觸控型」UI對話框和相應的「觸控型」UI設計對話框。
 
-AEM Meduration Tools檔案提供如何將元件從傳統UI轉換為Touch UI的檔案和工具。 如需詳細資訊，請參閱[ AEM現代化工具](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)。
+「現代化工AEM具」檔案提供如何將元件從傳統UI轉換為Touch UI的檔案和工具。 如需詳細資訊，請參AEM閱「現代化工具」。[](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)
 
 ### 軟體包不應混合可變內容和不可變內容{#oakpal-packages-immutable}
 
 **密鑰**:ImmutableMutableMixedPackage
 
-**類型**:程式碼氣味／雲端服務相容性
+**類型**:程式碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-為了與雲服務部署模型相容，單個內容包必須包含儲存庫不可變區域的內容（即`/apps and /libs, although /libs`不應由客戶代碼修改，並將導致單獨違規）或可變區域（即其他所有內容），但不能同時包含兩者。 例如，同時包含`/apps/myco/components/text and /etc/clientlibs/myco`的套件與雲端服務不相容，且會造成問題的報告。
+為了與Cloud Service部署模型相容，單個內容包必須包含儲存庫不可變區域的內容（即`/apps and /libs, although /libs`不應由客戶代碼修改，並將導致單獨違規）或可變區域（即，其他所有內容），但不能同時包含兩者。 例如，同時包含`/apps/myco/components/text and /etc/clientlibs/myco`的套件與Cloud Service不相容，且會造成問題報告。
 
-如需詳細資訊，請參閱[AEM Project Structure](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
+如需詳細資訊，請參AEM閱[專案結構](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)。
 
 ### 不應使用反向複製代理{#oakpal-reverse-replication}
 
 **密鑰**:反向複製
 
-**類型**:程式碼氣味／雲端服務相容性
+**類型**:程式碼氣味/Cloud Service相容性
 
 **嚴重性**:次要
 
 **自**:2020.5.0版
 
-如[發行說明中所述，雲端服務部署中不支援反向複製：刪除複製代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+在Cloud Service部署中不支援反向複製，如[發行說明中所述：刪除複製代理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
 
-使用反向複製的客戶應聯絡Adobe以取得其他解決方案。
+使用反向複製的客戶應與Adobe聯繫，以獲得其他解決方案。
 
 ### OakPAL —— 啟用Proxy的用戶端程式庫中包含的資源應位於名為resources {#oakpal-resources-proxy}的資料夾中
 
@@ -753,7 +753,7 @@ AEM Meduration Tools檔案提供如何將元件從傳統UI轉換為Touch UI的�
 
 **自**:2021.2.0版
 
-AEM用戶端程式庫可能包含靜態資源，例如影像和字型。 如[使用預處理器](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)中所述，在使用預處理器客戶端庫時，這些靜態資源必須包含在名為resources的子資料夾中，以便在發佈實例上有效地引用。
+用戶AEM端程式庫可能包含靜態資源，例如影像和字型。 如[使用預處理器](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)中所述，在使用預處理器客戶端庫時，這些靜態資源必須包含在名為resources的子資料夾中，以便在發佈實例上有效地引用。
 
 #### 不符合代碼{#non-compliant-proxy-enabled}
 
@@ -777,7 +777,7 @@ AEM用戶端程式庫可能包含靜態資源，例如影像和字型。 如[使
         + myimage.jpg
 ```
 
-### OakPAL —— 雲端服務不相容工作流程程式的使用{#oakpal-usage-cloud-service}
+### OakPAL -Cloud Service不相容工作流程的使用{#oakpal-usage-cloud-service}
 
 **密鑰**:CloudServiceIncomplativeWorkflowProcess
 
@@ -787,7 +787,7 @@ AEM用戶端程式庫可能包含靜態資源，例如影像和字型。 如[使
 
 **自**:2021.2.0版
 
-隨著移至Asset micro-services以處理AEM Cloud服務上的資產，在內部部署和AMS版本的AEM中使用的數個工作流程程式變成不支援或不必要。 位於[aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)的移轉工具可用於在AEM Cloud服務移轉期間更新工作流程模型。
+隨著移至資產微服務以進行資產處理的AEMCloud Service，在內部部署和AMS版本中使用的數個工作流程程式變成不支援AEM或不必要。 位於[aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)的移轉工具可用於在Cloud Service移轉期間更新工作AEM流程模型。
 
 ### OakPAL —— 不建議使用靜態範本，而改用可編輯的範本{#oakpal-static-template}
 
@@ -799,7 +799,7 @@ AEM用戶端程式庫可能包含靜態資源，例如影像和字型。 如[使
 
 **自**:2021.2.0版
 
-雖然靜態範本在AEM專案中的使用向來很常見，但強烈建議使用可編輯的範本，因為這些範本提供最靈活的彈性，並支援靜態範本中未顯示的其他功能。 如需詳細資訊，請參閱[頁面範本- Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)。 從靜態範本移轉至可編輯的範本，可使用[AEM Meduration Tools](https://opensource.adobe.com/aem-modernize-tools/)大幅自動化。
+雖然靜態範本的使用在專案中很常見，但強烈建議使用可編輯AEM的範本，因為這些範本可提供最大的彈性，並支援靜態範本中未顯示的其他功能。 如需詳細資訊，請參閱[頁面範本- Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)。 從靜態範本移轉至可編輯的範本，可使用[現代化工具AEM](https://opensource.adobe.com/aem-modernize-tools/)大幅自動化。
 
 ### OakPAL —— 不建議使用舊版基礎元件{#oakpal-usage-legacy}
 
@@ -811,7 +811,7 @@ AEM用戶端程式庫可能包含靜態資源，例如影像和字型。 如[使
 
 **自**:2021.2.0版
 
-數個AEM版本已淘汰舊版基礎元件（例如`/libs/foundation`下的元件），以利WCM核心元件。 不建議使用舊式基礎元件做為自訂元件的基礎——不論是透過覆蓋或繼承——並應轉換為對應的核心元件。 [AEM Meduration Tools](https://opensource.adobe.com/aem-modernize-tools/)可協助轉換。
+在多個版本中，支援WCM核心元件的舊式基礎元件（即`/libs/foundation`下的元件）已AEM被淘汰。 不建議使用舊式基礎元件做為自訂元件的基礎——不論是透過覆蓋或繼承——並應轉換為對應的核心元件。 [現代化工具](https://opensource.adobe.com/aem-modernize-tools/)AEM可促進這種轉換。
 
 ### OakPAL —— 應使用{#oakpal-supported-runmodes}僅支援的執行模式名稱和順序
 
@@ -823,7 +823,7 @@ AEM用戶端程式庫可能包含靜態資源，例如影像和字型。 如[使
 
 **自**:2021.2.0版
 
-AEM Cloud Service會針對執行模式名稱實施嚴格的命名原則，並對這些執行模式實施嚴格的排序。 支援的執行模式清單可在[Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)上找到，任何偏離此模式的情況都會視為問題。
+AEMCloud Service會針對執行模式名稱執行嚴格的命名原則，並對這些執行模式執行嚴格的排序。 支援的執行模式清單可在[Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)上找到，任何偏離此模式的情況都會視為問題。
 
 ### OakPAL —— 自訂搜尋索引定義節點必須是/oak:index {#oakpal-custom-search}的直接子項
 
@@ -835,7 +835,7 @@ AEM Cloud Service會針對執行模式名稱實施嚴格的命名原則，並對
 
 **自**:2021.2.0版
 
-AEM Cloud服務要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinition類型的節點）為`/oak:index`的直接子節點。 其他位置的索引必須移動，才能與AEM Cloud服務相容。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
+AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）是`/oak:index`的直接子節點。 其他位置的索引必須移動，才能與AEMCloud Service相容。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
 
 ### OakPAL —— 自訂搜尋索引定義節點必須有2 {#oakpal-custom-search-compatVersion}的compat版本
 
@@ -847,7 +847,7 @@ AEM Cloud服務要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinitio
 
 **自**:2021.2.0版
 
-AEM Cloud Service要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinition類型的節點）必須將compatVersion屬性設為2。 AEM Cloud服務不支援任何其他值。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
+AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）必須將compatVersion屬性設為2。 Cloud Service不支援任何其他值AEM。 有關搜索索引的詳細資訊，請參閱[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)。
 
 ### OakPAL —— 自定義搜索索引定義節點的後代節點必須為Nt:Unstructured {#oakpal-descendent-nodes}類型
 
@@ -883,7 +883,7 @@ AEM Cloud Service要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinit
 
 **自**:2021.2.0版
 
-AEM Cloud服務要求自訂搜尋索引定義（即，`oak:QueryIndexDefinition`類型的節點）必須依照[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)中說明的特定模式命名。
+AEMCloud Service要求自定義搜索索引定義（即，`oak:QueryIndexDefinition`類型的節點）必須按照[內容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)中描述的特定模式命名。
 
 ### OakPAL —— 自訂搜尋索引定義節點必須使用索引類型lucene {#oakpal-index-type-lucene}
 
@@ -895,7 +895,7 @@ AEM Cloud服務要求自訂搜尋索引定義（即，`oak:QueryIndexDefinition`
 
 **自**:2021.2.0版
 
-AEM Cloud Service要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinition類型的節點）具有type屬性，其值設定為&#x200B;**lucene**。 使用舊有索引類型建立索引必須在移轉至AEM Cloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
+AEMCloud Service要求自訂搜尋索引定義（即oak:QueryIndexDefinition類型的節點）具有type屬性，其值設定為&#x200B;**lucene**。 使用舊索引類型的索引必須在遷移到Cloud Service之前AEM更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
 
 ### OakPAL —— 自訂搜尋索引定義節點不得包含名為seed {#oakpal-property-name-seed}的屬性
 
@@ -907,7 +907,7 @@ AEM Cloud Service要求自訂搜尋索引定義（亦即，oak:QueryIndexDefinit
 
 **自**:2021.2.0版
 
-AEM Cloud服務禁止自訂搜尋索引定義（亦即`oak:QueryIndexDefinition`類型的節點）包含名為seed的屬性。 使用此屬性建立索引必須在移轉至AEM Cloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
+AEMCloud Service禁止自定義搜索索引定義（即`oak:QueryIndexDefinition`類型的節點）包含名為seed的屬性。 使用此屬性進行索引必須在遷移到Cloud Service之AEM前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
 
 ### OakPAL —— 自訂搜尋索引定義節點不得包含名為reindex {#oakpal-reindex-property}的屬性
 
@@ -919,8 +919,45 @@ AEM Cloud服務禁止自訂搜尋索引定義（亦即`oak:QueryIndexDefinition`
 
 **自**:2021.2.0版
 
-AEM Cloud服務禁止自訂搜尋索引定義（亦即`oak:QueryIndexDefinition`類型的節點）包含名為reindex的屬性。 使用此屬性建立索引必須在移轉至AEM Cloud Service之前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
+AEMCloud Service禁止自定義搜索索引定義（即`oak:QueryIndexDefinition`類型的節點）包含名為reindex的屬性。 使用此屬性進行索引必須在遷移到Cloud Service之AEM前更新。 如需詳細資訊，請參閱[內容搜尋與索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)。
 
+## Dispatcher Optimization Tool {#dispatcher-optimization-tool-rules}
 
+以下章節反白顯示Cloud Manager執行的DOT檢查：
 
+* [DOT —— 解析違規- Dispatcher配置意外的Token](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+
+* [DOT —— 解析違規- Dispatcher配置不匹配報價](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+
+* [DOT —— 解析違規- Dispatcher配置缺少大括弧](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+
+* [DOT —— 解析違規- Dispatcher Configuration Extra Brace](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+
+* [DOT —— 解析違規- Dispatcher配置缺少強制屬性](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+
+* [DOT —— 解析違規- Dispatcher配置已過時屬性](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+
+* [DOT —— 解析違規——未找到Dispatcher配置](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+
+* [DOT —— 解析違規——未找到Httpd配置包含檔案](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+
+* [DOT —— 解析違規- Dispatcher Configuration General](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+
+* [DOT - Dispatcher publish群組快取應啟用serveStaleOnError](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+
+* [DOT - Dispatcher發佈群篩選器應包含6.x.x版原型的預設拒絕規AEM則](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+
+* [DOT - Dispatcher publish farm cache statfilelevel屬性應為>= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+
+* [DOT - Dispatcher publish farm gracePeriod屬性應為>= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+
+* [DOT —— 每個Dispatcher群應有唯一的名稱](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+
+* [DOT - Dispatcher發佈群快取應以允許清單方式配置其ignoreUrlParams規則](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+
+* [DOT - Dispatcher publish farm篩選器應以允許清單方式指定允許的Sling選擇器](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+
+* [DOT - Dispatcher publish farm篩選器應以允許清單方式指定允許的Sling字尾模式](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+
+* [DOT —— 在具有根目錄路徑的VirtualHost Directory部分中，不應使用「需要授予的所有」指令](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
 
