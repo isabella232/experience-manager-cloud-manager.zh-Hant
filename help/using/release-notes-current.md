@@ -1,44 +1,40 @@
 ---
-title: 2021.2.0 版發行說明
-seo-title: AEM Cloud Manager 2021.2.0版本注意事項
-description: 請依照本頁取得Cloud Manager 2021.2.0版的相關資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2021.2.0版的相關資訊
+title: 2021.3.0 版發行說明
+seo-title: Cloud Manager AEM 2021.3.0版本說明
+description: 請依照本頁取得Cloud Manager 2021.3.0版的相關資訊
+seo-description: 請依照本頁取得AEMCloud Manager 2021.3.0版的資訊
 translation-type: tm+mt
-source-git-commit: d956c7a2d3833e357920a9602e4f5a5b37f2c98a
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 4%
+source-wordcount: '221'
+ht-degree: 5%
 
 ---
 
-# 2021.2.0 版發行說明 {#release-notes-for}
+# 2021.3.0 版發行說明 {#release-notes-for}
 
-下節概述[!UICONTROL Cloud Manager] 2021.2.0版的一般發行說明。
+下節概述[!UICONTROL Cloud Manager] 2021.3.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2021.2.0版的發行日期為2021年2月11日。
+[!UICONTROL Cloud Manager] 2021.3.0版的發行日期為2021年3月11日。
 
 ## 新功能 {#whats-new}
 
-* 「專案與沙盒建立」中使用的AEM專案原型已更新為版本25。
+* 為驗證客戶調度器配置(Dispatcher Optimization Tool)，引入了新的代碼質量工具。
 
-* 程式碼掃描期間識別的已過時API清單已改良，加入最新Cloud Service SDK版本中已淘汰的其他類別和方法。
+* 現在，在導覽至Unified Shell的「用戶配置檔案」表徵圖（右上角）後，用戶可以選擇「查看雲管理員角色」****&#x200B;選項，以查看其Cloud Manager角色。
 
-* 生產部署現在可並行部署至配對的發佈與分派器例項。
+* **申請批准**&#x200B;標籤已重新標籤至&#x200B;**生產批准**，以更清楚明瞭。
 
-* SonarQube的Cloud Manager設定檔已更新，以移除Sonar規則`squid:S2142`。 這不會再與線程中斷檢查衝突。
+* **版本**&#x200B;標籤已重新標籤至「生產管線」執行畫面中的&#x200B;**Git Tag**。
 
-* 現在會動態移除客戶`pom.xml`檔案中預先加上聲納的屬性，以避免建置和品質掃描失敗。
+* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為——立即取消和立即核准。
 
-* 已新增其他程式碼品質規則，以涵蓋雲端服務相容性問題。
+* 類別和方法取代清單已根據Cloud ServiceSDK的`2021.3.4997.20210303T022849Z-210225`版AEM本更新。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 有時，CI/CD（部署）管線在效能測試步驟期間失敗，原因是執行負載測試的容器遇到錯誤。
+* 在將包嵌入其他包時，未正確發現某些質量問題。
 
-* 有時，即使只發生一個例外情況，載入測試容器仍會將執行報告為失敗。 只有在無法還原測試程式時才會報告失敗。
-
-* 儲存環境名稱的方式之間的某些機箱不匹配會導致效能測試失敗。
-
-* 某些管線故障錯誤報告為管線錯誤。
+* 有時，如果用戶在啟動管線後立即導航離開管線執行頁面，則會顯示一條錯誤消息，指出操作失敗，儘管實際上執行開始。
