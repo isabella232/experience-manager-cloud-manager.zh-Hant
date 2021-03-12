@@ -4,10 +4,10 @@ seo-title: Cloud Manager AEM 2021.3.0版本說明
 description: 請依照本頁取得Cloud Manager 2021.3.0版的相關資訊
 seo-description: 請依照本頁取得AEMCloud Manager 2021.3.0版的資訊
 translation-type: tm+mt
-source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
+source-git-commit: 090505e737b8cb224d87f117a9b5e786a4f99851
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 * **版本**&#x200B;標籤已重新標籤至「生產管線」執行畫面中的&#x200B;**Git Tag**。
 
-* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為- **取消立即**&#x200B;和&#x200B;**批准立即**。
+* 當重要量度不符合定義的臨界值時，定義行為的標籤已重新標籤，以反映其真實行為- **取消立即**&#x200B;和&#x200B;**批准立即**。 如需詳細資訊，請參閱[從Cloud Manager設定管道設定。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager)
 
 * 類別和方法取代清單已根據Cloud ServiceSDK的`2021.3.4997.20210303T022849Z-210225`版AEM本更新。
 
