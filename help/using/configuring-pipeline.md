@@ -2,7 +2,7 @@
 title: 設定 CI/CD 管道
 seo-title: 設定 CI/CD 管道
 description: 請依照本頁，從Cloud Manager設定您的管道設定。
-seo-description: '開始部署程式碼之前，您必須從AEM Cloud Manager設定您的管道設定。 '
+seo-description: '在開始部署程式碼之前，您必須從Cloud Manager設定您的管AEM線設定。 '
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
+source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -85,8 +85,8 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
    這對希望實現更自動化流程的客戶非常有用。 可用的選項包括：
 
 * **每次詢問** -這是預設設定，需要手動干預任何重要故障。
-* **立即失敗** -如果選中此選項，當出現「重要」(Impertient)故障時，管線將被取消。這實際上是模擬使用者手動拒絕每個失敗。
-* **立即繼續** -如果選中此選項，當出現「重要」(Importent)故障時，管線將自動繼續。這實際上是在模擬用戶手動批准每個故障。
+* **立即取消** -如果選中此選項，則每當出現「重要」(Impertient)故障時，管線將被取消。這實際上是模擬使用者手動拒絕每個失敗。
+* **立即批准** -如果選中此選項，當出現「重要」故障時，管線將自動繼續。這實際上是在模擬用戶手動批准每個故障。
 
    現在，您可以定義控制生產部署的參數。 三種可用選項如下：
 
@@ -100,11 +100,11 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 >[!NOTE]
 >
->如果選擇了&#x200B;**Scheduled**&#x200B;選項，則可以在&#x200B;**階段部署之後將生產部署計畫到流水線**（和&#x200B;**使用GoLive Approval**，如果已啟用，則可以）等待計畫設定。 使用者也可以選擇立即執行生產部署。
+>如果選擇了「已調度」**「已調度」**&#x200B;選項，則可以在階段部署&#x200B;**(和**&#x200B;使用GoLive批准&#x200B;**，如果已啟用)之後將生產部署計畫安排到流水線。**&#x200B;使用者也可以選擇立即執行生產部署。
 >
 >請參閱&#x200B;[**部署您的程式碼**](deploying-code.md)，以設定部署排程或立即執行生產。
 
-![](assets/configure-pipeline3.png)
+![](assets/configure-pipeline-new.png)
 
 >[!NOTE]
 >
@@ -127,11 +127,11 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
 **Dispatcher Invalidation**
 
-身為部署管理員，您有機會在設定或編輯管道時，設定一組內容路徑，這些路徑會從AEM Dispatcher快取中，從無效的&#x200B;****&#x200B;或&#x200B;**清除的**&#x200B;進行發佈例項。
+作為部署管理員，您有機會在設定或編輯管線時配置一組內容路徑，這些路徑將從AEMDispatcher快取中為發佈實例清除&#x200B;**無效**&#x200B;或&#x200B;**。**
 
-您可以為「舞台(Stage)」和「生產(Production)」部署設定個別的路徑集。 如果已配置，則這些快取動作將作為部署管線步驟的一部分執行，就在部署任何內容封裝後執行。 這些設定使用標準的AEM Dispatcher行為——無效執行快取失效，類似於從作者啟動內容以進行發佈；flush會執行快取刪除。
+您可以為「舞台(Stage)」和「生產(Production)」部署設定個別的路徑集。 如果已配置，則這些快取動作將作為部署管線步驟的一部分執行，就在部署任何內容封裝後執行。 這些設定使用標準AEM的Dispatcher行為——使快取失效，類似於從作者激活內容以發佈時；flush會執行快取刪除。
 
-一般而言，使用無效動作較為可取，但有時可能需要刷新，尤其是在使用AEM HTML Client Libraries時。
+通常，最好使用無效動作，但有時可能需要刷新，尤其是使用AEMHTML客戶端庫時。
 
 >[!NOTE]
 >
@@ -158,11 +158,11 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    現在，您可以設定效能測試參數。
 
-   您可以設定&#x200B;*AEM Sites*&#x200B;和&#x200B;*AEM Assets*&#x200B;效能測試，視您擁有的授權產品而定。
+   您可以根據您擁有的授權產品，設定&#x200B;*AEM Sites*&#x200B;和&#x200B;*AEM Assets*&#x200B;效能測試。
 
    **AEM Sites:**
 
-   Cloud Manager會在階段發佈伺服器上要求頁面（依預設為未驗證的使用者）達30分鐘的測試期間，並測量每個頁面的回應時間以及各種系統層級度量，以執行AEM Sites程式的效能測試。 這些請求是從一組已知的專用地址發出的。 您可向客戶成功工程師或Adobe代表取得地址範圍。
+   Cloud Manager會在舞台發佈伺服器上要求頁面（依預設為未驗證的使用者）30分鐘的測試時段，並測量每個頁面的回應時間以及各種系統層級度量，以執行AEM Sites程式的效能測試。 這些請求是從一組已知的專用地址發出的。 您可向客戶成功工程師或Adobe代表取得地址範圍。
 
    在30分鐘測試期開始之前，Cloud Manager將使用客戶成功工程師配置的一組或多個&#x200B;*seed* URL來編目Stage環境。 從這些URL開始，會檢查每個頁面的HTML，並以寬度優先的方式瀏覽連結。 此編目程式最多限制為5000頁。 來自Crawler的請求有10秒的固定逾時。
 
@@ -180,7 +180,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    **AEM Assets:**
 
-   Cloud Manager會重複上傳資產30分鐘的測試期間，並測量每個資產的處理時間以及各種系統層級的度量，以執行AEM Assets程式的效能測試。 此功能可上傳影像和PDF檔案。 每分鐘上載的每種類型的資產數量分佈在「管線設定」或「編輯」螢幕中設定。
+   Cloud Manager會在30分鐘的測試期間內重複上傳資產，並測量每個資產的處理時間以及各種系統層級的度量，以執行AEM Assets程式的效能測試。 此功能可上傳影像和PDF檔案。 每分鐘上載的每種類型的資產數量分佈在「管線設定」或「編輯」螢幕中設定。
 
    例如，如果使用70/30分割，如下圖所示。 每分鐘上傳10個資產，每分鐘上傳7個影像和3個檔案。
 
@@ -188,7 +188,7 @@ CI/CD Production Pipeline配置定義將啟動管線的觸發器、控制生產�
 
    >[!NOTE]
    >
-   >有預設影像和PDF檔案，但在大多數情況下，客戶會想要上傳自己的資產。 這可從「管線設定」(Pipeline Setup)或「編輯」(Edit)螢幕中完成。 Photoshop、Illustrator和Postscript檔案支援常見的影像格式，例如JPEG、PNG、GIF和BMP。
+   >有預設影像和PDF檔案，但在大多數情況下，客戶會想要上傳自己的資產。 這可從「管線設定」(Pipeline Setup)或「編輯」(Edit)螢幕中完成。 JPEG、PNG、GIF和BMP等常用影像格式以及Photoshop、Illustrator和Postscript檔案都受支援。
 
 1. 按一下&#x200B;**保存**&#x200B;以完成管線進程的設定。
 
