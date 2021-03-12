@@ -4,7 +4,7 @@ seo-title: Cloud Manager AEM 2021.3.0版本說明
 description: 請依照本頁取得Cloud Manager 2021.3.0版的相關資訊
 seo-description: 請依照本頁取得AEMCloud Manager 2021.3.0版的資訊
 translation-type: tm+mt
-source-git-commit: b0c29ed6712abd556458aea6d49f6382f183cdae
+source-git-commit: e12adf3549af6ecd5e7487ef27f25abc44eaa794
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 4%
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 * 擁有必要權限的使用者現在可以編輯程式，讓他們以自助方式執行下列作業：
 
-   *將Sites解決方案加入包含資產的現有計畫（反之亦然）。
+   * 將Sites解決方案新增至包含資產的現有計畫（反之亦然）。
    * 將網站（或資產）從現有的計畫中移除，同時包含網站和資產。
    * 新增（上一步）解決方案可以對現有方案或作為新方案執行。
 
