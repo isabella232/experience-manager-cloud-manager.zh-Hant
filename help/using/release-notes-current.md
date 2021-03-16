@@ -4,10 +4,10 @@ seo-title: Cloud Manager AEM 2021.3.0版本說明
 description: 請依照本頁取得Cloud Manager 2021.3.0版的相關資訊
 seo-description: 請依照本頁取得AEMCloud Manager 2021.3.0版的資訊
 translation-type: tm+mt
-source-git-commit: fde8cbd22ff36e0d30409f68e8a0523c814ccf90
+source-git-commit: 8c057ca2d3dfe8c8575300084b7bc83c95556d67
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 3%
+source-wordcount: '257'
+ht-degree: 4%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 3%
 下一版預計於2021年4月08日推出。
 
 ## 新功能 {#whats-new}
-
-* 具備必要權限的使用者現在可以編輯程式，讓他們以自助方式執行下列作業：
-
-   * 將Sites解決方案新增至包含資產的現有計畫（反之亦然）。
-   * 將網站（或資產）從現有的計畫中移除，同時包含網站和資產。
-   * 新增（上一步）解決方案可以對現有方案或作為新方案執行。
 
 * 引入了新的代碼質量工具[Dispatcher Optimization Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules)來驗證客戶分發程式配置。
 
