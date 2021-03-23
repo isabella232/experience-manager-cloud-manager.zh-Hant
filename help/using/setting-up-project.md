@@ -1,11 +1,12 @@
 ---
 title: 設定專案
 description: 請依本頁瞭解如何設定專案
+feature: 快速入門，製作
 translation-type: tm+mt
-source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 7%
+source-wordcount: '876'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 ## 修改項目設定詳細資訊{#modifying-project-setup-details}
 
-若要使用Cloud Manager成功建立和部署現有的AEM專案，必須遵守一些基本規則：
+為使用Cloud Manager成功建立和部署現有專案，AEM必須遵守一些基本規則：
 
 * 必須使用Apache Maven建立專案。
 * Git儲存庫的根目錄中必須有&#x200B;*pom.xml*&#x200B;檔案。 此&#x200B;*pom.xml*&#x200B;檔案可以引用許多子模組（這些子模組又可能具有其他子模組等） 視需要。
@@ -108,7 +109,7 @@ ht-degree: 7%
 ## 受密碼保護的Maven儲存庫支援{#password-protected-maven-repositories}
 
 >[!NOTE]
->使用密碼保護的Maven儲存庫中的對象只能非常謹慎地使用，因為透過此機制部署的代碼目前並未透過Cloud Manager的「品質門」執行。 因此，它只應用於少數情況，以及未系結至AEM的程式碼。 建議您也部署Java來源，以及整個專案原始碼與二進位檔。
+>使用密碼保護的Maven儲存庫中的對象只能非常謹慎地使用，因為透過此機制部署的代碼目前並未透過Cloud Manager的「品質門」執行。 因此，它只應用於極少數情況，以及不系結至程式碼AEM。 建議您也部署Java來源，以及整個專案原始碼與二進位檔。
 
 若要使用Cloud Manager的受密碼保護的Maven儲存庫，請將密碼（以及使用者名稱）指定為機密[Pipeline變數](/help/using/build-environment-details.md#pipeline-variables)，然後在git儲存庫中名為`.cloudmanager/maven/settings.xml`的檔案中參考該機密。 此檔案遵循[Maven Settings File](https://maven.apache.org/settings.html)模式。 當Cloud Manager構建過程啟動時，此檔案中的`<servers>`元素將合併到Cloud Manager提供的預設`settings.xml`檔案中。 以`adobe`和`cloud-manager`開頭的伺服器ID會視為保留，自訂伺服器不應使用。 Cloud Manager將不會鏡像與其中一個前置詞或預設ID `central`匹配的伺服器ID **不**。 在此檔案就位後，將會從`<repository>`和／或`<pluginRepository>`檔案內的`pom.xml`元素中參考伺服器ID。 通常，這些`<repository>`和／或`<pluginRepository>`元素會包含在[雲端管理員專用的設定檔](#activating-maven-profiles-in-cloud-manager)中，但並非嚴格必要。
 
@@ -264,4 +265,4 @@ ht-degree: 7%
 
 ## 根據最佳實務{#develop-your-code-based-on-best-practices}開發您的程式碼
 
-Adobe工程與諮詢團隊已針對AEM開發人員開發一套[完整的最佳實務。](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)
+Adobe工程與諮詢團隊已為開發人員開發一套[完整的最佳AEM實務](https://helpx.adobe.com/tw/experience-manager/6-4/sites/developing/using/best-practices.html)。
