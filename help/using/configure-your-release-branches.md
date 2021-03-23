@@ -1,17 +1,18 @@
 ---
 title: 設定您的發行分支
 seo-title: 設定您的發行分支
-description: 在Git中為AEM Cloud Manager設定發行分支
+description: 在Git中為Cloud Manager設定發AEM行分支
 seo-description: 請依照本頁瞭解如何以git設定發行分支。
 uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
+feature: Git儲存庫
 translation-type: tm+mt
-source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '309'
 ht-degree: 3%
 
 ---
