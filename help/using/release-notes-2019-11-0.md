@@ -1,13 +1,14 @@
 ---
 title: 2019.11.0 版發行說明
-seo-title: AEM Cloud Manager 2019.11.0版本注意事項
+seo-title: 2019AEM.11.0版Cloud Manager發行說明
 description: 請依照本頁取得Cloud Manager 2019.11.0版的資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2019.11.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2019.11.0版的資訊。
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 8%
+source-wordcount: '152'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 8%
 * 如果驗證管線步驟失敗，現在會顯示遇到的特定驗證錯誤。
 * 資產效能測試期間用來刪除資產的機制已改進。
 * **概述**&#x200B;頁面上的&#x200B;*管線*&#x200B;和&#x200B;*環境*&#x200B;卡已以視覺方式刷新。
-* Program Switcher已移動（現在位於Adobe Experience Manager標誌下）。
+* Program Switcher已移動(現在位於Adobe Experience Manager標誌下)。
 
 ## 錯誤修正 {#bug-fixes}
 
