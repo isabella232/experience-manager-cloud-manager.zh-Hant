@@ -7,11 +7,12 @@ uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
+feature: 快速入門
 translation-type: tm+mt
-source-git-commit: 8d1a100420129d234fe21911f165621405a04a9b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 1%
 
 ---
 
@@ -25,9 +26,9 @@ ht-degree: 0%
 
 * 違反特定規則，並在受升級影響或覆寫的區域執行。
 
-* 使用AEM 6.x功能或API，此功能在新AEM上無法向後相容，而且升級後可能會中斷。
+* 使用AEM6.x功能或API，新功能不向後相容，且升級後AEM可能會中斷。
 
-這是對升級至Adobe Experience Manager(AEM)6.5所需開發工作的評估。
+這是對升級至Adobe Experience Manager(AEM)6.5的發展努力的評估。
 
 >[!NOTE]
 >
