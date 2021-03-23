@@ -1,13 +1,14 @@
 ---
 title: 2020.12.0 版發行說明
-seo-title: AEM Cloud Manager 2020.12.0版本注意事項
+seo-title: Cloud Manager AEM 2020.12.0版本說明
 description: 請依照本頁取得Cloud Manager版本2020.12.0的資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2020.12.0版的相關資訊
+seo-description: 請依照本頁取得AEMCloud Manager 2020.12.0版的資訊
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 88b17f05a577b5c46b5b352d7340228353b49a38
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 15%
+source-wordcount: '68'
+ht-degree: 17%
 
 ---
 
