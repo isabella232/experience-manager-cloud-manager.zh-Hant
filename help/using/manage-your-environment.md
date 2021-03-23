@@ -8,18 +8,19 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
+feature: 環境
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 3%
+source-wordcount: '270'
+ht-degree: 4%
 
 ---
 
 
 # 管理環境 {#manage-your-environments}
 
-Cloud Manager的&#x200B;**概述**&#x200B;頁面包含&#x200B;**環境**&#x200B;圖格，其中列出所有受管理的AEM環境。
+Cloud Manager的&#x200B;**概述**&#x200B;頁面包含列出所有受管理環境的&#x200B;**環境** AEM表徵圖。
 
 每個列出的環境都顯示其關聯狀態。
 
@@ -49,6 +50,6 @@ Cloud Manager的&#x200B;**概述**&#x200B;頁面包含&#x200B;**環境**&#x200B;
 
 >[!NOTE]
 >
->節點的&#x200B;**STATUS**&#x200B;代表VM的電源狀態，不反映伺服器上AEM的狀態。 狀態可以是&#x200B;**運行**（綠色圓）、**停止**（紅色圓）、**啟動**（藍色圓）或&#x200B;**不可用**（黃色圓）。
+>節點的&#x200B;**STATUS**&#x200B;表示VM的電源狀態，不反映伺服器AEM的狀態。 狀態可以是&#x200B;**運行**（綠色圓）、**停止**（紅色圓）、**啟動**（藍色圓）或&#x200B;**不可用**（黃色圓）。
 
 ![](assets/Environments-tab.png)
