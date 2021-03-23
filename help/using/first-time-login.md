@@ -1,18 +1,19 @@
 ---
 title: 首次登入
-seo-title: 首次登入Adobe AEM Cloud Manager
+seo-title: 首次登入AdobeAEM雲端管理員
 description: 如果您已設定一般設定，且已準備好第一次使用Cloud Manager，請依照本頁進行。
-seo-description: 如果您已設定一般設定，而且已準備好第一次使用Adobe AEM Cloud Manager，請依照本頁進行。
+seo-description: 如果您已設定一般設定，且已準備好第一次使用AdobeAEM Cloud Manager，請依照本頁進行。
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
+feature: 快速入門
 translation-type: tm+mt
-source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 8%
+source-wordcount: '249'
+ht-degree: 9%
 
 ---
 
@@ -28,13 +29,13 @@ ht-degree: 8%
 
 ### Cloud Manager程式{#programs-video}
 
-以下視訊提供Cloud Manager計畫的概觀，這些計畫代表支援邏輯業務活動集的AEM環境集，通常對應於購買的服務層級合約(SLA)。
+以下視頻概述了Cloud Manager計畫，這些計畫代表支援邏輯業務計畫集的AEM環境集，通常對應於購買的服務級別協定(SLA)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 首次登入{#logging-in-for-the-first-time}
 
-1. 登入&#x200B;**Adobe[!UICONTROL Experience Cloud]**，您會看到&#x200B;**Programs**&#x200B;的清單。
+1. 登錄&#x200B;**Adobe[!UICONTROL Experience Cloud]**，您將看到&#x200B;**程式**&#x200B;的清單。
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
