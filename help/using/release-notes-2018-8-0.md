@@ -1,17 +1,18 @@
 ---
 title: 2018.8.0 版發行說明
-seo-title: AEM Cloud Manager 2018.8.0版本注意事項
+seo-title: Cloud Manager AEM 2018.8.0發行說明
 description: 請依照本頁取得Cloud Manager 2018.8.0版的相關資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2018.8.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2018.8.0版的資訊。
 uuid: e8aaba32-89b4-4bc5-b295-09b753252612
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '331'
 ht-degree: 4%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 # 2018.8.0 版發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2018.8.0版新增支援，可在Git提交時自動觸發CI/CD管道，並新增精靈，可根據AEM專案原型在Git中建立應用程式專案。
+[!UICONTROL Cloud Manager] 2018.8.0版新增支援在Git提交時自動觸發CI/CD管道，以及新精靈，以Project Archetype為基礎，在Git中建立應用程式專AEM案。
 
 ## 發行日期 {#release-date}
 
@@ -27,7 +28,7 @@ ht-degree: 4%
 
 ## 新功能 {#what-s-new}
 
-* **程式設定** -使用「AEM專案原型」在Git中建立應用程式專案的新精靈
+* **程式設定** -使用「項目原型」在Git中建立應用程式項目的新AEM嚮導
 
 * **CI/CD管線** - CI/CD管線中添加了以下更改。請參閱[配置CI/CD Pipeline](configuring-pipeline.md)以瞭解更多資訊。
 
