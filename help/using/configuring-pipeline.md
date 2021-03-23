@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
+feature: CI-CD管道
 translation-type: tm+mt
-source-git-commit: 7a33d6dc2240b61c9413bba34880ee5e7d49e02d
+source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
