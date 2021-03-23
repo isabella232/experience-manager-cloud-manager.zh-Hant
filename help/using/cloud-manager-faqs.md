@@ -3,10 +3,11 @@ title: Cloud Manager常見問答集
 seo-title: Cloud Manager常見問答集
 description: 請參閱Cloud Manager常見問答集以取得一些疑難排解提示
 seo-description: 請依照本頁取得有關Cloud Manager常見問答集的解答
+feature: 快速入門
 translation-type: tm+mt
-source-git-commit: cf5c02c8c594015b6baa00e1a8aaa2d898aa60a9
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
