@@ -1,19 +1,20 @@
 ---
 title: 2020.7.0 版發行說明
-seo-title: AEM Cloud Manager 2020.7.0版本注意事項
+seo-title: Cloud Manager AEM 2020.7.0發行說明
 description: 請依照本頁取得Cloud Manager 2020.7.0版的相關資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2020.7.0版的相關資訊
+seo-description: 請依照本頁取得AEMCloud Manager 2020.7.0版的資訊
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 51%
+source-wordcount: '212'
+ht-degree: 52%
 
 ---
 
 # 2020.7.0 版發行說明 {#release-notes-for}
 
-下節概述[!UICONTROL Cloud Manager] 2020.7.0版的一般發行說明。
+以下章節概述[!UICONTROL Cloud Manager] 2020.9.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
