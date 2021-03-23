@@ -1,17 +1,18 @@
 ---
 title: 原始碼存放庫
-seo-title: Adobe AEM Cloud Manager的原始碼儲存庫
+seo-title: Adobe雲端管理員的原始AEM碼儲存庫
 description: 請依照本頁瞭解為Cloud Manager中的每個程式布建的git儲存庫。
-seo-description: 請依照本頁瞭解為Adobe AEM Cloud Manager中每個程式布建的Git儲存庫。
+seo-description: 請依照本頁瞭解為您在AdobeCloud Manager中的每個程式布建的Git儲存AEM庫。
 uuid: 2c42775f-8703-43f7-bad2-7dc086ea9dd7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
+feature: 布建
 translation-type: tm+mt
-source-git-commit: 697311cd00ef96568f6befd2fe76febafc27961e
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '280'
 ht-degree: 2%
 
 ---
