@@ -1,15 +1,15 @@
 ---
 title: 2021.3.0 版發行說明
-seo-title: Cloud Manager AEM 2021.3.0版本說明
 description: 請依照本頁取得Cloud Manager 2021.3.0版的相關資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2021.3.0版的資訊
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 8c057ca2d3dfe8c8575300084b7bc83c95556d67
+source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 4%
+source-wordcount: '242'
+ht-degree: 5%
 
 ---
+
 
 # 2021.3.0 版發行說明 {#release-notes-for}
 
