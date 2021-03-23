@@ -2,16 +2,17 @@
 title: 設定您的方案
 seo-title: 設定您的方案
 description: 上線後，企業負責人需要先設定程式。
-seo-description: '上線後，企業負責人將需要進行Adobe AEM Cloud Manager的初步設定。 這包括設定方案說明，以及定義將用於效能測試的KPI。 '
+seo-description: '入職後，業務負責人將需要進行一些初始設定，以設定AdobeAEM Cloud Manager。 這包括設定方案說明，以及定義將用於效能測試的KPI。 '
 uuid: 9ecf8743-1f5a-4744-86af-e2256567642f
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
+feature: 快速入門
 translation-type: tm+mt
-source-git-commit: 6851884b08c0c0a971242a958f72a7673a1a1196
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -53,7 +54,7 @@ ht-degree: 2%
 
    ![](assets/Setup_Program-General.png)
 
-1. 在&#x200B;**KPI**&#x200B;下，您可以定義兩個KPI（每個部署的預期值）。 AEM Sites **和** AEM Assets **分別定義了KPI。**&#x200B;您將可以指定已授權產品的KPI。
+1. 在&#x200B;**KPI**&#x200B;下，您可以定義兩個KPI（每個部署的預期值）。 分別為&#x200B;**AEM Sites**&#x200B;和&#x200B;**AEM Assets**&#x200B;定義KPI。 您將可以指定已授權產品的KPI。
 
    **AEM Sites**
 
@@ -66,7 +67,7 @@ ht-degree: 2%
 
    **AEM Assets**
 
-   自從Cloud Manager初次推出以來，就可以執行AEM Sites程式的效能測試。 在此版本中，也新增了執行AEM Assets程式效能測試的功能。 資產效能測試是透過在30分鐘測試期間重複上傳資產，並測量每個資產的處理時間以及各種系統層級度量來完成。
+   自從Cloud Manager初次發佈以來，它便能夠對AEM Sites程式執行效能測試。 在此版本中，還添加了執行AEM Assets程式效能測試的功能。 資產效能測試是透過在30分鐘測試期間重複上傳資產，並測量每個資產的處理時間以及各種系統層級度量來完成。
 在方案設定期間，會指定資產特定的KPI:
 
    * 第95個百分位數的處理時間
