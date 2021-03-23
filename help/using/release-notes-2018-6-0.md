@@ -1,18 +1,19 @@
 ---
 title: 2018.6.0 版發行說明
-seo-title: AEM Cloud Manager 2018.6.0版本注意事項
-description: 請瀏覽本頁，以取得Cloud Manager 2018.6.0版的資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2018.6.0版的相關資訊。
+seo-title: Cloud Manager AEM 2018.6.0發行說明
+description: 請依照本頁取得Cloud Manager 2018.6.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2018.6.0版的資訊。
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 4%
 
 ---
 
@@ -44,5 +45,5 @@ ht-degree: 3%
 * 在某些情況下，效能測試並未完全分佈於多個分發器和發佈執行個體。
 * 頁首導覽在狹窄的瀏覽器視窗中消失。
 * 在管線運行時，某些管線設定未禁用。
-* 「AEM」和「從程式清單監視」畫面的連結會取代目前的瀏覽器標籤，並開啟新的標籤。
+* 指向「程AEM序」清單螢幕和「從程式監視」清單螢幕的連結取代了當前瀏覽器頁籤並開啟了新頁籤。
 * 在某些情況下，長時間的核准期可能會導致部署失敗。
