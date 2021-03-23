@@ -3,10 +3,11 @@ title: 監控環境
 seo-title: 監控環境
 description: 瞭解如何在Cloud Manager中監控您的環境
 seo-description: 請依照本頁瞭解Cloud Manager中的系統監控，方法是觀察環境中的個別執行個體，並追蹤每個執行個體的各種度量。
+feature: 環境
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '967'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 1%
 
 導覽至「系統監視」功能可透過兩種方式完成。
 
-1. 登錄到&#x200B;**Managed Services - Programs**&#x200B;登錄頁。
+1. 登入&#x200B;**Managed Services-程式**&#x200B;登陸頁面。
 
    ![](assets/ProgramLanding.png)
 
@@ -56,7 +57,7 @@ ht-degree: 1%
 
 ### Cloud Manager報告概述{#reports-video}
 
-「Cloud Manager報表」透過一組圖表提供方案環境和AEM例項的檢視，這些圖表可報告並追蹤每個AEM例項的各種量度。
+「雲端管理員報表」透過一組圖表提供方案AEM環境與例項的檢視，這些圖表會報告並追蹤每個例項的各種度AEM量。
 請參閱以下視訊以取得詳細資訊。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)
@@ -93,12 +94,12 @@ ht-degree: 1%
 
 **網路**
 
-* CQ埠檢查：存取AEM或Dispatcher埠的回應時間（以秒為單位）。 作者、發佈和分派程式有不同的度量。
+* CQ埠檢查：訪問或Dispatcher埠的響應時間(以秒為AEM單位)。 作者、發佈和分派程式有不同的度量。
 
 **儲存**
 
 * 磁碟空間：主機上每個裝載點的已用磁碟空間（以兆位元組為單位）。 每個裝載點有不同的度量。 至少，您會看到&quot;/&quot;和&quot;/mnt&quot;的量度，但是，其他的裝載點量度可能會視特定例項設定而定。
-* 資料夾大小：AEM區段商店：AEM區段商店的已用磁碟空間（以GB為單位）。
+* 資料夾大小：區AEM段商店：區段儲存區的已用磁碟空間(以吉AEM位元組為單位)。
 
 **應用程式**
 
@@ -107,7 +108,7 @@ ht-degree: 1%
 
 ## SLA報告{#sla-reporting}
 
-客戶可以看到其生產AEM環境相對於其合約服務層級合約(SLA)的效能。 這可透過「報表」畫面上的子功能表取得。
+客戶可以看到其生產環境相對於其合AEM同的服務級別協定(SLA)的效能。 這可透過「報表」畫面上的子功能表取得。
 例如，下圖顯示2018年的月度SLA成績。
 
 ![](assets/SLA-Reports-one.png)
@@ -122,14 +123,14 @@ ht-degree: 1%
 
 ## SLA度量{#sla-metrics}
 
-* **作者合約**:這是您與Adobe Managed Services合約中針對作者層定義的SLA。
+* **作者合約**:這是您與Adobe Managed Services簽訂的作者層合約中定義的SLA。
 
-* **AMS作者SLA**:這是由Adobe或我們的廠商造成的生產作者層級保理事件，經評估的持續運作時間。
+* **AMS作者SLA**:這是由Adobe或我們的供應商造成的生產作者層級保理事件的衡量正常運行時間。
 
 * **作者SLA**:這是作者層所測量的正常運行時間，忽略計畫的停機時間（如維護窗口）。
 
 * **使用者合約**:這是您與Adobe Managed Services簽訂的發佈層合約中定義的SLA。
 
-* **AMS最終用戶SLA**:這是由Adobe或我們的廠商所造成的生產發佈層代理事件，經評估的正常運作時間。
+* **AMS最終用戶SLA**:這是由Adobe或我們的廠商所造成的生產發佈層代理事件的測量正常運行時間。
 
 * **最終用戶SLA**:這是發佈層的測量正常運行時間，忽略計畫的停機時間（如維護窗口）。
