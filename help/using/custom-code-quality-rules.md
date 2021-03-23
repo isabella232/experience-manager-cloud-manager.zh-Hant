@@ -8,10 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
+feature: 程式碼品質規則
 translation-type: tm+mt
-source-git-commit: c15421daf81561a2407776d69741006bee3c3d6c
+source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt
-source-wordcount: '3622'
+source-wordcount: '3625'
 ht-degree: 4%
 
 ---
