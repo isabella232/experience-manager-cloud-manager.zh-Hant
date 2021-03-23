@@ -1,17 +1,18 @@
 ---
 title: 新增使用者和角色
 seo-title: 新增使用者和角色
-description: 瞭解使用者和角色，以及如何使用Admin Console建立描述檔
-seo-description: 您可以將使用者新增至管理控制台中的Cloud Manager產品設定檔，以指派特定角色成員資格。 請依照本節的說明進一步瞭解。
+description: 瞭解使用者和角色，以及如何使用Admin Console來建立描述檔
+seo-description: 您可以將使用者新增至Admin Console中的Cloud Manager產品設定檔，以指派特定角色成員資格。 請依照本節的說明進一步瞭解。
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
+feature: 使用者角色
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '632'
 ht-degree: 28%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->「管理控制台」中的「開發人員角色」與[!UICONTROL Cloud Manager]中的「開發人員角色」無關。
+>Admin Console中的「開發人員角色」與[!UICONTROL Cloud Manager]中的「開發人員角色」無關。
 
 下表匯總了角色：
 
@@ -47,11 +48,11 @@ ht-degree: 28%
 | 部署管理員 | 管理部署操作。 使用[!UICONTROL Cloud Manager]執行階段／生產部署。 可編輯CI/CD管線。 可以批准重要的3層故障。 可以訪問Git儲存庫。 |
 | 開發人員 | 開發並測試自訂的應用程式碼。 主要使用[!UICONTROL Cloud Manager]來檢視狀態。 可以訪問Git儲存庫以進行代碼提交。 |
 | 客戶成功工程師 | 通常支援AMS客戶的成功。 與[!UICONTROL Cloud Manager]互動，以執行需要CSE監督的部署。 |
-| 內容作者 | 通常不與[!UICONTROL Cloud Manager]互動。 可使用[!UICONTROL Cloud Manager] Program Switcher（已從[!UICONTROL Experience Cloud]導覽）來存取AEM。 |
+| 內容作者 | 通常不與[!UICONTROL Cloud Manager]互動。 可使用[!UICONTROL Cloud Manager] Program Switcher（已從[!UICONTROL Experience Cloud]導航）訪問AEM。 |
 
-## 使用Admin Console建立配置式{#using-admin-console-to-create-a-profile}
+## 使用Admin Console建立配置檔案{#using-admin-console-to-create-a-profile}
 
-您可從Adobe Admin Console管理[!UICONTROL Cloud Manager]的角色。 將使用者新增至管理控制台中的[!UICONTROL Cloud Manager]產品設定檔，以提供特定角色成員資格。
+從Adobe Admin Console為[!UICONTROL Cloud Manager]管理角色。 將用戶添加到Admin Console中的[!UICONTROL Cloud Manager]產品配置檔案中，可提供特定角色成員資格。
 
 您可以在Adobe Admin console中將使用者新增至 [!UICONTROL Cloud Manager]**Product Profile** ，以指派特定角色會籍。Adobe Admin console是管理整個組織中Adobe權益的集中位置。若要進一步瞭解Adobe Admin Console，請參閱 [Admin Console的檔案](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。
 
@@ -61,14 +62,14 @@ ht-degree: 28%
 
 為了為 [!UICONTROL Cloud Manager]  (客戶組織中的管理員) 使用者提供適當的角色型權限，必須在 ****[!UICONTROL AEM Managed Services] Product Context下建立新的產品設定檔。
 
-要為[!UICONTROL Cloud Manager]用戶提供相應的基於角色的權限，作為管理員，您必須在[!UICONTROL AEM Managed Services]產品上下文下建立四個新的產品配置檔案，這些產品上下文對應於四個[!UICONTROL Cloud Manager]角色中的每個角色：
+要為[!UICONTROL Cloud Manager]用戶提供相應的基於角色的權限，作為管理員，您必須在[!UICONTROL AEM Managed Services]產品上下文下建立四個新的產品配置檔案，這四個產品配置檔案分別對應於四個[!UICONTROL Cloud Manager]角色：
 
 * 企業負責人
 * 部署管理員
 * 開發人員
 * 計畫經理
 
-您可以使用[Admin Console](https://adminconsole.adobe.com/)為[!UICONTROL Cloud Manager]建立或新增使用者／群組至這些產品設定檔，如下圖所示：
+您可以使用[](https://adminconsole.adobe.com/)Admin Console[!UICONTROL Cloud Manager]為建立或新增使用者／群組至這些產品描述檔，如下圖所示：
 
 1. 登入管理控制台，然後按一下「新增描述檔&#x200B;**」以新增描述檔。**
 
