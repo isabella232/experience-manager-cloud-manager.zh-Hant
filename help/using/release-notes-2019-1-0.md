@@ -1,17 +1,18 @@
 ---
 title: 2019.1.0 版發行說明
-seo-title: AEM Cloud Manager 2019.1.0版本注意事項
+seo-title: Cloud Manager AEM 2019.1.0版本說明
 description: 請依照本頁取得Cloud Manager 2019.1.0版的相關資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2019.1.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2019.1.0版的資訊。
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '337'
 ht-degree: 4%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 # 2019.1.0 版發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2018.9.0版本新增支援測試AEM Assets程式，以及執行建立和程式碼品質步驟的其他管道類型，可選擇部署至非生產環境。
+[!UICONTROL Cloud Manager] 2018.9.0版新增支援測試AEM Assets程式以及執行建立和程式碼品質步驟的其他管道類型，可選擇部署至非生產環境。
 
 ## 發行日期 {#release-date}
 
