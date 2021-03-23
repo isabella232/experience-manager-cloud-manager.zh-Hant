@@ -1,18 +1,19 @@
 ---
 title: 2018.5.0 版發行說明
-seo-title: AEM Cloud Manager 2018.5.0版本注意事項
+seo-title: Cloud Manager AEM 2018.5.0發行說明
 description: 請依照本頁取得Cloud Manager 2018.5.0版的相關資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2018.5.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2018.5.0版的資訊。
 uuid: 37f8b155-6984-454d-83a8-3f5fb081be97
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 6d1e7098-b56e-4172-8373-486f186f3d53
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 7%
+source-wordcount: '181'
+ht-degree: 8%
 
 ---
 
@@ -44,5 +45,5 @@ ht-degree: 7%
 
 ## 已知問題 {#known-issues}
 
-* 從「程式清單」畫面到&#x200B;**AEM**&#x200B;和&#x200B;**Monitoring**&#x200B;的連結，都會取代目前的瀏覽器標籤，並開啟至新的標籤。
+* 從「程式清單」螢幕到AEM ****&#x200B;和&#x200B;**監視**&#x200B;的連結將替換當前瀏覽器頁籤並開啟到新頁籤。
 
