@@ -1,13 +1,14 @@
 ---
 title: 2020.1.0 版發行說明
-seo-title: AEM Cloud Manager 2020.1.0版本注意事項
+seo-title: Cloud Manager AEM 2020.1.0版本說明
 description: 請依照本頁取得Cloud Manager 2020.1.0版的相關資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2020.1.0版的相關資訊
+seo-description: 請依照本頁取得AEMCloud Manager 2020.1.0版的資訊
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 7%
+source-wordcount: '153'
+ht-degree: 9%
 
 ---
 
@@ -21,8 +22,8 @@ ht-degree: 7%
 
 ## 新功能 {#whats-new}
 
-* 現在，您可從Cloud Manager使用者介面內取得Git認證。 有關詳細資訊，請參閱[訪問Git](/help/using/accessing-git.md)。
-* 登入體驗和URL結構已變更為Adobe全域計畫的一部分。 舊書籤會重新導向至新URL。
+* 現在，您可從Cloud Manager使用者介面內取得Git認證。 如需詳細資訊，請參閱[存取Git](/help/using/accessing-git.md)。
+* 登入體驗和URL結構已變更為全Adobe方案的一部份。 舊書籤會重新導向至新URL。
 
 
 ## 錯誤修正 {#bug-fixes}
