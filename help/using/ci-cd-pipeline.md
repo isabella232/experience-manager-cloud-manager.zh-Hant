@@ -6,10 +6,11 @@ seo-description: 請依照本節內容瞭解CI/CD管道，該管道可在Cloud M
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
+feature: CI-CD管道
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 ## 管線概述{#pipeline-overview}
 
-[!UICONTROL Cloud Manager] 包含連續整合(CI)和連續傳送(CD)架構，可讓實施團隊快速測試並傳送新的或更新的程式碼。例如，實作團隊可以設定、設定和啟動自動化CI/CD管道，運用Adobe編碼最佳實務來執行完整的程式碼掃描，並確保最高的程式碼品質。
+[!UICONTROL Cloud Manager] 包含連續整合(CI)和連續傳送(CD)架構，可讓實施團隊快速測試並傳送新的或更新的程式碼。例如，實作團隊可以設定、設定和啟動自動化CI/CD管道，利用Adobe編碼最佳實務來執行完整的程式碼掃描，並確保最高的程式碼品質。
 
 CI/CD管道還自動化了單元和效能測試流程，以提高部署效率，並主動發現部署後需要修復的重要問題。 實作團隊可存取完整的程式碼效能報告，以便在將程式碼部署至生產環境時，洞悉KPI和重要安全性驗證的潛在影響。
 
@@ -38,7 +39,7 @@ CI/CD管道還自動化了單元和效能測試流程，以提高部署效率，
 | 3.使用自動產生的版本建立為發行 | [!UICONTROL Cloud Manager] 使用新指派的版本號碼建立應用程式。 |
 | 4.評估程式碼品質 | [!UICONTROL Cloud Manager] 掃描原始碼並提供摘要，然後代碼才能部署到階段環境 |
 | 5.已儲存的版本化對象 | 發行對象會儲存起來，以便日後在部署步驟中使用。 |
-| 6.自動將對象部署到AMS AEM Stage | 釋放對象部署到舞台環境。 |
+| 6.將對象自動部署到AMS階AEM段 | 釋放對象部署到舞台環境。 |
 | 7.觸發自動測試 | [!UICONTROL Cloud Manager] 運行對象的效能和安全性測試。 |
 | 8.生產觸發器部署 | 完成自動測試後，[!UICONTROL Cloud Manager]將開始部署至生產環境。 |
 | 9.[!UICONTROL Cloud Manager]獲取要部署的對象 | [!UICONTROL Cloud Manager] 提取儲存的釋放對象。 |
