@@ -1,29 +1,30 @@
 ---
 title: 使用精靈
-description: 請依照本頁瞭解如何使用精靈來建立AEM應用程式專案
+description: 請依照本頁瞭解如何使用精靈建立應用程AEM式專案
+feature: 快速入門
 translation-type: tm+mt
-source-git-commit: 7146a41d64365c9de03d32f4fc4c33f9e366c244
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 9%
+source-wordcount: '334'
+ht-degree: 10%
 
 ---
 
 
 # 使用嚮導{#using-wizard-to-create-an-aem-application-project}
 
-當客戶已登入Cloud Manager時，他們會獲得一個空的git儲存庫。 目前的Adobe Managed Services(AMS)客戶（或內部部署AEM客戶，如果要移轉至AMS），通常其專案程式碼已位於git（或其他版本控制系統）中，並將其專案匯入Cloud Manager Git儲存庫。 但是，新客戶沒有現有的專案。
+當客戶已登入Cloud Manager時，他們會獲得一個空的git儲存庫。 目前的Adobe Managed Services(AMS)客戶(或遷移至AMS的內部部AEM署客戶)通常已擁有其專案程式碼（或其他版本控制系統），並將其專案匯入Cloud Manager Git儲存庫。 但是，新客戶沒有現有的專案。
 
-為協助新客戶開始使用，Cloud Manger現在可以建立最少的AEM專案作為起點。 此程式基於&#x200B;[**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
+為協助新客戶開始使用，Cloud Manger現在可以從最AEM小的專案開始。 此程式基於&#x200B;[**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
 
 
-請依照下列步驟，在Cloud Manager中建立AEM應用程式專案：
+請依照下列步驟，在Cloud Manager中建AEM立應用程式專案：
 
 1. 一旦您登入Cloud Manager且基本程式設定完成後，如果儲存庫為空，「概述」畫面將會顯示特殊的動作卡呼叫。****
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-1. 按一下「建立至&#x200B;**」開啟對話方塊，讓使用者提供AEM Project Archetype所需的參數。**&#x200B;在其預設形式中，對話框要求輸入兩個值：
+1. 按一下&#x200B;**建立以**&#x200B;開啟一個對話框，該對話框允許用戶提供項目原型所需AEM的參數。 在其預設形式中，對話框要求輸入兩個值：
 
    * **Title**  —— 依預設，此值會設為 *Program Name*
 
