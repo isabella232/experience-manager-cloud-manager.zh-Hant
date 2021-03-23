@@ -1,13 +1,14 @@
 ---
 title: 2019.3.0 版發行說明
-seo-title: AEM Cloud Manager 2019.3.0版本注意事項
+seo-title: Cloud Manager AEM 2019.3.0發行說明
 description: 請依照本頁取得Cloud Manager 2019.3.0版的資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2019.3.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2019.3.0版的資訊。
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 28780dc73a6787b7f3e715965e580534344f3602
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 9%
+source-wordcount: '125'
+ht-degree: 11%
 
 ---
 
