@@ -1,19 +1,20 @@
 ---
 title: 2020.4.0 版發行說明
-seo-title: AEM Cloud Manager 2020.4.0版本注意事項
+seo-title: Cloud Manager AEM 2020.4.0發行說明
 description: 請依照本頁取得Cloud Manager 2020.4.0版的相關資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2020.4.0版的相關資訊
+seo-description: 請依照本頁取得AEMCloud Manager 2020.4.0版的資訊
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 278858465592482449080fedc3c0165805db223d
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 37%
+source-wordcount: '241'
+ht-degree: 38%
 
 ---
 
 # 2020.4.0 版發行說明 {#release-notes-for}
 
-下節概述[!UICONTROL Cloud Manager] 2020.4.0版的一般發行說明。
+以下章節概述[!UICONTROL Cloud Manager] 2020.4.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
@@ -31,7 +32,7 @@ ht-degree: 37%
 
 * 監控資料有時可能會以不正確的方式顯示，或根據技術值的微小差異完全無法顯示。
 * 已建置容器中使用的 Maven 設定經過更新，可避免在下載成品中繼資料時發生鎖死。
-* Assets效能測試程式偶爾無法解密AEM密碼，導致測試失敗。
+* 資產效能測試程式偶爾無法解AEM密密碼，導致測試失敗。
 * 某些具有備用實例的拓撲在安全性測試中可能具有假負值。
 * 如果舞台環境包含已停止的實例，則安全性測試步驟有時會失敗。
 * 無法一致地收到 Experience Cloud 通知。
