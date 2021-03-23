@@ -1,19 +1,20 @@
 ---
 title: 2019.7.0 版發行說明
-seo-title: AEM Cloud Manager 2019.7.0版本注意事項
+seo-title: Cloud Manager AEM 2019.7.0發行說明
 description: 請依照本頁取得Cloud Manager 2019.7.0版的相關資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2019.7.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2019.7.0版的資訊。
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 7%
+source-wordcount: '159'
+ht-degree: 8%
 
 ---
 
 # 2019.7.0 版發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.7.0版新增Experience Cloud通知的更新和改進，做為錯誤修正。 請依照下列章節瞭解詳細資訊。
+[!UICONTROL Cloud Manager] 2019.7.0版新增了Experience Cloud通知的更新和改良，做為錯誤修正。 請依照下列章節瞭解詳細資訊。
 
 ## 發行日期 {#release-date}
 
