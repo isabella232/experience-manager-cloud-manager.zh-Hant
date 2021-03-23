@@ -1,13 +1,14 @@
 ---
 title: 2019.12.0 版發行說明
-seo-title: AEM Cloud Manager 2019.12.0版本注意事項
+seo-title: Cloud Manager AEM 2019.12.0發行說明
 description: 請依照本頁取得Cloud Manager 2019.12.0版的資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2019.12.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2019.12.0版的資訊。
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 0fa1fedccb013e82c8df5838a612ce26a1efb7e8
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 5%
+source-wordcount: '231'
+ht-degree: 6%
 
 ---
 
