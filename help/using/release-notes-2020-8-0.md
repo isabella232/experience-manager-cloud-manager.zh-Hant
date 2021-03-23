@@ -1,19 +1,20 @@
 ---
 title: 2020.8.0 版發行說明
-seo-title: AEM Cloud Manager 2020.8.0版本注意事項
+seo-title: Cloud Manager AEM 2020.8.0發行說明
 description: 請依照本頁取得Cloud Manager 2020.8.0版的相關資訊
-seo-description: 請依照本頁取得AEM Cloud Manager 2020.8.0版的相關資訊
+seo-description: 請依照本頁取得AEMCloud Manager 2020.8.0版的資訊
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 6%
+source-wordcount: '194'
+ht-degree: 7%
 
 ---
 
 # 2020.8.0 版發行說明 {#release-notes-for}
 
-以下章節概述[!UICONTROL Cloud Manager] 2020.8.0版的一般發行說明。
+下節概述[!UICONTROL Cloud Manager] 2020.8.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
