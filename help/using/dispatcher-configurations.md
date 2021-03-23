@@ -8,10 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -21,9 +22,9 @@ ht-degree: 2%
 
 ## 使用Cloud Manager部署Dispatcher配置檔案{#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-Cloud Manager能夠部署Web伺服器和Dispatcher配置檔案（假設這些檔案儲存在&#x200B;**Git Repository**&#x200B;中），以及常規AEM內容包。
+Cloud Manager能夠部署Web伺服器和Dispatcher配置檔案（假設它們儲存在&#x200B;**Git Repository**&#x200B;中），以及常規內容包AEM中。
 
-要利用此功能，Maven構建版本應生成包含至少兩個目錄的zip檔案- ***conf***&#x200B;和&#x200B;***conf.d***。 此zip檔案可使用maven-assembly-plugin來製作。 Cloud Manager使用內置[嚮導](/help/using/using-the-wizard.md)生成的項目具有在建立項目時建立的正確Maven項目結構。 這是新Managed Services客戶的推薦路徑。
+要利用此功能，Maven構建版本應生成包含至少兩個目錄的zip檔案- ***conf***&#x200B;和&#x200B;***conf.d***。 此zip檔案可使用maven-assembly-plugin來製作。 Cloud Manager使用內置[嚮導](/help/using/using-the-wizard.md)生成的項目具有在建立項目時建立的正確Maven項目結構。 這是新Managed Services客戶的推薦途徑。
 
 部署到Dispatcher **Instance**&#x200B;時，這些目錄的內容將覆蓋Dispatcher實例上這些目錄的內容。 由於Web伺服器和Dispatcher配置檔案通常需要特定於環境的資訊，因此要正確使用此功能，您首先需要與客戶成功工程師(CSE)合作，在`/etc/sysconfig/httpd`中設定這些環境變數。
 
