@@ -1,25 +1,26 @@
 ---
 title: 2018.9.0 版發行說明
-seo-title: AEM Cloud Manager 2018.9.0版本注意事項
+seo-title: Cloud Manager AEM 2018.9.0發行說明
 description: 請依照本頁取得Cloud Manager 2018.9.0版的相關資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2018.9.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2018.9.0版的資訊。
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 5%
+source-wordcount: '277'
+ht-degree: 9%
 
 ---
 
 
 # 2018.9.0 版發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2018.9.0版新增了對Adobe I/O型API（包括Events）的支援，以整合[!UICONTROL Cloud Manager]的CI/CD管道與其他系統。 它也會開始在React中重寫UI層。
+[!UICONTROL Cloud Manager] 2018.9.0版新增了對Adobe I/O型API（包括事件）的支援，以整合[!UICONTROL Cloud Manager]的CI/CD管道與其他系統。 同時也開始在 React 中重寫 UI 層。
 
 ## 發行日期 {#release-date}
 
@@ -45,5 +46,5 @@ ht-degree: 5%
 ## 已知問題 {#known-issues}
 
 * 使用「應用程式專案精靈」建立的分支不能包含虛線。
-* Adobe [!UICONTROL Experience Cloud]通知側欄可能無法一致地載入通知。 不過，通知會顯示在Adobe [!UICONTROL Experience Cloud]中，若已設定，仍會透過電子郵件傳送。
+* Adobe[!UICONTROL Experience Cloud]通知邊欄可能無法一致地載入通知。 不過，通知會顯示在Adobe[!UICONTROL Experience Cloud]中，如果已設定，仍會透過電子郵件傳送。
 
