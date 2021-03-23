@@ -1,12 +1,13 @@
 ---
 title: 2019.9.0 版發行說明
-seo-title: AEM Cloud Manager 2019.9.0版本注意事項
+seo-title: Cloud Manager AEM 2019.9.0發行說明
 description: 請依照本頁取得Cloud Manager 2019.9.0版的相關資訊。
-seo-description: 請依照本頁取得AEM Cloud Manager 2019.9.0版的相關資訊。
+seo-description: 請依照本頁取得AEMCloud Manager 2019.9.0版的資訊。
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '279'
 ht-degree: 5%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 5%
 * Sling Referrer Filter Health check的分類已從Critical變更為Importent。
 * HTML Library Manager Config運行狀況檢查的分類已從「Critical（關鍵）」更改為「Mignent（重要）」。
 * 現在可以下載監控圖形。 有關詳細資訊，請參閱[監視環境](monitor-your-environments.md)。
-* 如果程式沒有生產AEM環境，從著陸頁面按一下程式卡會導覽至「雲端管理員概述」頁面，而不會產生錯誤對話方塊。
+* 如果程式沒有生產環AEM境，從著陸頁面按一下程式卡會導覽至「雲端管理員」概觀頁面，而不會產生錯誤對話方塊。
 * **概述**&#x200B;頁面上的&#x200B;**管線設定**&#x200B;卡已改名為&#x200B;**生產管線設定**。
 * 「重要故障行為」選項按鈕已從僅代碼質量的管線中刪除。
 * **Activity**&#x200B;頁面現在會顯示每個執行的管線名稱。
