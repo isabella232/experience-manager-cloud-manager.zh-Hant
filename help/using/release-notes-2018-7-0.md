@@ -2,16 +2,17 @@
 title: 2018.7.0 版發行說明
 seo-title: 2018.7.0 版發行說明
 description: 瞭解Cloud Manager 2018.7.0版
-seo-description: 請依照本頁取得Cloud Manager 2018.7.0版的相關資訊。
+seo-description: 請依照本頁取得Cloud Manager 2019.7.0版的相關資訊。
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 12%
 
 ---
