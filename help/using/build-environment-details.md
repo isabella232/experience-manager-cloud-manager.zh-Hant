@@ -1,10 +1,11 @@
 ---
 title: 瞭解構建環境
 description: 請依本頁瞭解環境
+feature: 環境
 translation-type: tm+mt
-source-git-commit: 5a6148fd7750544def87147c5f012c09077b2b60
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
 
 * 構建環境基於Linux，源自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
-* 安裝的Java版本是Oracle JDK 8u202和11.0.2。
+* 安裝的Java版本是OracleJDK 8u202和11.0.2。
 * 安裝了一些其他系統軟體包是必要的：
 
    * bzip2
@@ -33,8 +34,8 @@ Cloud Manager使用專業的構建環境來構建和測試代碼。 此環境具
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven在系統層級設定有設定。xml檔案，此檔案會自動包含公用Adobe **Artifact**儲存庫。
-如需詳細資訊，請參閱[Adobe Public Maven Repository](https://repo.adobe.com/)。
+* Maven在系統級別配置了設定。xml檔案，該檔案自動包含公共Adobe **Artifact**儲存庫。
+有關詳細資訊，請參閱[Adobe公共Maven儲存庫](https://repo.adobe.com/)。
 
 >[!NOTE]
 >雖然Cloud Manager未定義`jacoco-maven-plugin`的特定版本，但使用的版本至少必須是`0.7.5.201505241946`。
@@ -88,7 +89,7 @@ Cloud Manager現在支援使用Java 8和Java 11建立客戶專案。 依預設�
 
 在某些情況下，客戶會發現必鬚根據方案或管道的相關資訊來變更建立程式。
 
-例如，如果正在執行建置時期的JavaScript精簡化，透過例如gulp等工具，在建立開發環境時，可能會想要使用不同的精簡化層級，而非建立舞台和生產環境。
+例如，如果正在執行建置時期的JavaScript精簡化作業，透過例如gulp工具，在建立開發環境時，可能會想要使用不同的精簡化層級，而非建立舞台和生產環境。
 
 為支援此功能，Cloud Manager會將這些標準環境變數新增至每個執行的建立容器。
 
@@ -193,4 +194,4 @@ Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這
 同樣的技術也可用於安裝語言特定的軟體包，即使用`gem`（對於RubyGems）或`pip`（對於Python軟體包）。
 
 >[!NOTE]
->以此方式安裝系統套件會&#x200B;**not**&#x200B;將它安裝在用於執行Adobe Experience Manager的執行時期環境中。 如果您需要在AEM環境中安裝系統套件，請連絡您的Adobe代表。
+>以此方式安裝系統軟體包會&#x200B;**not**&#x200B;在運行Adobe Experience Manager的運行時環境中安裝它。 如果您需要在環境中安裝系統包，請AEM與Adobe代表聯繫。
