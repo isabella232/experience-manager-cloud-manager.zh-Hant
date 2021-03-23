@@ -5,10 +5,13 @@ archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 指南
 breadcrumb-title: Cloud Manager 指南
 user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自行管理Experience Manager。
+feature-set: Experience Manager Cloud Manager
+role: 管理員
+level: 中級
 translation-type: tm+mt
-source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
+source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '263'
 ht-degree: 82%
 
 ---
