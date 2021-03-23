@@ -5,11 +5,12 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
+feature: 使用者角色
 translation-type: tm+mt
-source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 14%
+source-wordcount: '519'
+ht-degree: 17%
 
 ---
 
@@ -20,11 +21,11 @@ ht-degree: 14%
 
 ## 使用者角色 {#user-roles}
 
-[!UICONTROL Cloud Manager]的角色管理是在[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)內完成。 [!UICONTROL Cloud Manager]的任何使用者都必須是客戶IMS組織的成員，且必須擁有Adobe Managed Services產品內容。 將使用者新增至管理控制台中的[!UICONTROL Cloud Manager]產品設定檔，以提供特定角色成員資格。
+[!UICONTROL Cloud Manager]的角色管理在[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)內完成。 [!UICONTROL Cloud Manager]的任何使用者都必須是客戶IMS組織的成員，且必須擁有Adobe Managed Services產品內容。 將用戶添加到Admin Console中的[!UICONTROL Cloud Manager]產品配置檔案中，可提供特定角色成員資格。
 
 如需有關如何設定角色的詳細資訊，請參閱[設定用戶和角色](setting-up-users-and-roles.md)。
 
-下表列出您可在管理控制台中指派的可能角色。
+下表清單定義了可以在Admin Console中分配的可能角色。
 
 | **[!UICONTROL Cloud Manager]角色** | **說明** |
 |---|---|
@@ -33,11 +34,11 @@ ht-degree: 14%
 | 部署管理員 | 管理部署操作。 使用[!UICONTROL Cloud Manager]執行階段和生產部署。 可能會批准重要的3層故障。 具有Git儲存庫的訪問權限。 |
 | 開發人員 | 開發並測試自訂的應用程式碼。 主要使用[!UICONTROL Cloud Manager]來檢視狀態。 具有對Git儲存庫的提交訪問權。 |
 | 客戶成功工程師 | 通常支援AMS客戶的成功。 與[!UICONTROL Cloud Manager]互動，以執行需要客戶成功工程師(CSE)監督的部署。 |
-| 內容作者 | 通常不與[!UICONTROL Cloud Manager]互動。 此使用者可使用[!UICONTROL Cloud Manager] Program Switcher（已從[!UICONTROL Experience Cloud]導覽）來存取Adobe Experience Manager(AEM)。 |
+| 內容作者 | 通常不與[!UICONTROL Cloud Manager]互動。 此用戶可使用[!UICONTROL Cloud Manager] Program Switcher（已從[!UICONTROL Experience Cloud]導航）訪問Adobe Experience Manager(AEM)。 |
 
 ## 使用者權限 {#user-permissions}
 
-每個角色都具有與每個角色關聯的特定權限、預配置的任務或權限。 此表列出了可用的函式以及可以執行該函式的角色。
+各角色皆擁有各自相關的特定權限、預設任務或權限。此表列出了可用的函式以及可以執行該函式的角色。
 
 如需有關如何設定使用者的詳細資訊，請參閱[設定使用者和角色](setting-up-users-and-roles.md)。
 
@@ -50,7 +51,7 @@ ht-degree: 14%
 | 建立執行 | 啟動管線。 | x | x | x |  |  |
 | 讀取執行 | 請參閱執行狀態。 | x | x | x | x | x |
 | 繼續執行 | 可在暫停時繼續執行。 | x | x | x |  | x |
-| 執行批准部署至生產 | 提供GoLive Approval。 | x | x | x |  |  |
+| 執行批准部署至生產 | 提供GoLive批准。 | x | x | x |  |  |
 | 執行計畫部署至生產 | 排程生產部署。 | x | x | x |  | x |
 | 執行部署至生產 | 暫停CSE監督時，將應用程式部署至生產環境。 |  |  |  |  | x |
 | 執行取消 | 取消當前執行。 |  |  | x |  |  |
