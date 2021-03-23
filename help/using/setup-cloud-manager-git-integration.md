@@ -1,20 +1,21 @@
 ---
-title: 與Adobe Cloud Manager整合
-description: 一個視訊系列，可逐步瞭解客戶管理（內部部署）的Git儲存庫與Adobe Cloud Manager的設定與整合。
-seo-title: 與Adobe Cloud Manager整合
-seo-description: 一個視訊系列，可逐步瞭解客戶管理（內部部署）的Git儲存庫與Adobe Cloud Manager的設定與整合。
+title: 與Git Cloud Manager整合Adobe
+description: 一個視訊系列，可逐步介紹客戶管理的（內部部署）git儲存庫與Adobe雲管理器的設定和整合。
+seo-title: 與Git Cloud Manager整合Adobe
+seo-description: 一個視訊系列，可逐步介紹客戶管理的（內部部署）git儲存庫與Adobe雲管理器的設定和整合。
+feature: Git儲存庫
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '405'
 ht-degree: 5%
 
 ---
 
 
-# 與Adobe Cloud Manager整合
+# 與Git Cloud Manager整合Adobe
 
-Adobe Cloud Manager提供單一Git儲存庫，用來使用Cloud Manager的CI/CD管道部署程式碼。 客戶可以立即使用Cloud Manager的git儲存庫。 客戶還可以選擇將內部部署或&#x200B;**customer-managed** git儲存庫與Cloud Manager整合。
+Adobe雲管理器隨附單一Git儲存庫，用來使用雲端管理器的CI/CD管道部署程式碼。 客戶可以立即使用Cloud Manager的git儲存庫。 客戶還可以選擇將內部部署或&#x200B;**customer-managed** git儲存庫與Cloud Manager整合。
 
 ## Git整合概觀
 
@@ -68,5 +69,5 @@ Adobe Cloud Manager提供單一Git儲存庫，用來使用Cloud Manager的CI/CD�
 
 * [Cloud Manager 文件](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GitHub資源](https://try.github.io)
-* [Atlassian Git教學課程](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Atlassian GitTutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
