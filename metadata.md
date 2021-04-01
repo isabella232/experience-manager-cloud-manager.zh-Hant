@@ -1,13 +1,13 @@
 ---
 solution: Experience Manager
 type: 文件
-cloud: experience-cloud
+cloud: Experience Cloud
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-manager.zh-Hant
 translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+source-git-commit: 7477bfedd20c04c799530ee07496ab596bbd1eab
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
