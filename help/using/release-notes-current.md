@@ -4,7 +4,7 @@ description: 請依照本頁取得Cloud Manager 2021.4.0版的相關資訊
 feature: 發行資訊
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 translation-type: tm+mt
-source-git-commit: 0c33fd9f1af4c98564c9fd14a468fc3bf27744ee
+source-git-commit: 1f7f87a4b944d1fadc708958a96a1bda7d41da5d
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -32,11 +32,11 @@ ht-degree: 7%
 
 * 刪除環境時啟動管線時的錯誤消息已被澄清。
 
-* Eclipse專案提供的OSGi組合現已排除在規則之外。
+* Eclipse專案提供的OSGi組合現在已排除在規則`CQBP-84--dependencies`之外。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 在生產管道中的「資產測試」步驟中可能發生的罕見的暫時錯誤。
+* 在生產管線中，在&#x200B;*Assets Test*&#x200B;步驟中可能發生的罕見的暫時錯誤。
 
 * 生產管線「載入測試」中的尾隨斜線導致404失敗。
 
