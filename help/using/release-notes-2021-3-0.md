@@ -2,9 +2,9 @@
 title: 2021.3.0 版發行說明
 description: 請依照本頁取得Cloud Manager 2021.3.0版的相關資訊
 feature: 發行資訊
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea,e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
 translation-type: tm+mt
-source-git-commit: 13a918f69185c684ca69b812df7eb5c2bd43e064
+source-git-commit: 9c3e748f8aed969af861b505ee336eb5501d826f
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 5%
