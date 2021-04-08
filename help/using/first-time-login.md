@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 feature: 快速入門
+exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+source-git-commit: 9be78d21b455095c1b1bd49cdb267a8aa5624927
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 9%
+source-wordcount: '213'
+ht-degree: 10%
 
 ---
-
 
 # 首次登入 {#first-time-login}
 
@@ -24,14 +24,6 @@ ht-degree: 9%
 
 >[!NOTE]
 >根據[!UICONTROL Cloud Manager]中指派的角色和應用程式的狀態，您在使用[!UICONTROL Cloud Manager] UI時會看到不同的畫面。
-
-## 教學影片{#video-tutorial-one}
-
-### Cloud Manager程式{#programs-video}
-
-以下視頻概述了Cloud Manager計畫，這些計畫代表支援邏輯業務計畫集的AEM環境集，通常對應於購買的服務級別協定(SLA)。
-
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 首次登入{#logging-in-for-the-first-time}
 
