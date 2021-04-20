@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: e35be81f-cfe5-4f14-b9c8-59235a7ef22c
-feature: 快速入門
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: 2019.2.0 版發行說明
 seo-title: Cloud Manager AEM 2019.2.0發行說明
 description: 請依照本頁取得Cloud Manager 2019.2.0版的相關資訊。
 seo-description: 請依照本頁取得AEMCloud Manager 2019.2.0版的資訊。
-feature: 發行資訊
+feature: Release Information
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

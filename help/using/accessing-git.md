@@ -3,7 +3,7 @@ title: 存取 Git
 seo-title: 存取 Git
 description: 本頁介紹如何訪問和管理Git儲存庫。
 seo-description: 請依照本頁瞭解如何存取和管理您的Git儲存庫。
-feature: Git儲存庫
+feature: Git Repositories
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt

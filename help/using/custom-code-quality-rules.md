@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: 程式碼品質規則
+feature: Code Quality Rules
 translation-type: tm+mt
 source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt

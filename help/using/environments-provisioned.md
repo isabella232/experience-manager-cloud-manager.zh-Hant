@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 7d32ba78-4ded-4656-aac2-c3e7cc0518de
-feature: 環境，資源調配
+feature: Environments, Provisioning
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt

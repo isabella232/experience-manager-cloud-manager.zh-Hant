@@ -1,7 +1,7 @@
 ---
 title: 使用精靈
 description: 請依照本頁瞭解如何使用精靈建立應用程AEM式專案
-feature: 快速入門
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

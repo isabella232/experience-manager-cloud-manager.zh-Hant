@@ -7,7 +7,7 @@ uuid: 9aa90a99-f049-422e-9e06-b00b843ed98b
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
-feature: 快速入門
+feature: Getting Started
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

@@ -1,6 +1,6 @@
 ---
 solution: Experience Manager
-type: 文件
+type: Documentation
 cloud: Experience Cloud
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-manager.zh-Hant
 translation-type: tm+mt

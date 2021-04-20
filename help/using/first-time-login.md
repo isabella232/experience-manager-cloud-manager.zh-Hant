@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-feature: 快速入門
+feature: Getting Started
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 translation-type: tm+mt
 source-git-commit: 9be78d21b455095c1b1bd49cdb267a8aa5624927

@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-feature: CI-CD管道，測試結果
+feature: CI-CD Pipeline, Test Results
 translation-type: tm+mt
 source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt
