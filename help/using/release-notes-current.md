@@ -3,10 +3,10 @@ title: 2021.5.0 版發行說明
 description: 請依照本頁取得Cloud Manager 2021.5.0版的相關資訊
 feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 3d6f9a760a1e5bafdae6ece5627358524467a0d2
+source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '181'
+ht-degree: 7%
 
 ---
 
@@ -32,8 +32,6 @@ ht-degree: 0%
 * 編輯程式體驗已重新整理。
 
 ## 錯誤修正 {#bug-fixes}
-
-* 有時，即使未部署該配置，用戶在「IP允許清單」旁邊也會看到綠色&#x200B;*active*&#x200B;狀態。
 
 * 管線變數API不會移除&#39;deleted&#39;變數，而只會以&#39;DELETED&#39;狀態標籤它們。
 
