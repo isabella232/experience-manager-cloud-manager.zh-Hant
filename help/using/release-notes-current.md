@@ -5,8 +5,8 @@ feature: 發行資訊
 translation-type: tm+mt
 source-git-commit: 3d6f9a760a1e5bafdae6ece5627358524467a0d2
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
