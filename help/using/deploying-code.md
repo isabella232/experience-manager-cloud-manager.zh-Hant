@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: Code Deployment
+feature: 程式碼部署
+exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
-
 
 # 部署程式碼 {#deploy-your-code}
 
@@ -92,6 +92,19 @@ ht-degree: 1%
 
    ![](assets/Production_Deployment2.png)
 
+## 逾時{#timeouts}
+
+如果離開等待使用者意見回應，下列步驟將逾時：
+
+| 步驟 | 逾時 |
+|--- |--- |
+| 程式碼品質測試 | 7天 |
+| 安全性測試 | 7天 |
+| 效能測試 | 7天 |
+| 申請核准 | 7天 |
+| 排程生產部署 | 7天 |
+| CSE支援 | 7天 |
+
 ## 部署過程{#deployment-process}
 
 以下部分介紹在階AEM段階段和生產階段中如何部署和調度程式包。
@@ -149,5 +162,3 @@ Cloud Manager會將建立程式產生的所有目標/*.zip檔案上傳至儲存�
 1. 將包部AEM署到publish2 ，將調度程式包部署到pispatcher2並行刷新調度程式快取。
 1. 將dispatcher2放回負載平衡器。
 此過程將繼續，直到部署到拓撲中所有發佈者和調度程式為止。
-
-
