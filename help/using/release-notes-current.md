@@ -1,43 +1,42 @@
 ---
-title: 2021.4.0 版發行說明
-description: 請依照本頁取得Cloud Manager 2021.4.0版的相關資訊
-feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+title: 2021.5.0 版發行說明
+description: 請依照本頁取得Cloud Manager 2021.5.0版的相關資訊
+feature: 發行資訊
 translation-type: tm+mt
-source-git-commit: 1f7f87a4b944d1fadc708958a96a1bda7d41da5d
+source-git-commit: 3d6f9a760a1e5bafdae6ece5627358524467a0d2
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 7%
+source-wordcount: '202'
+ht-degree: 6%
 
 ---
 
-# 2021.4.0 版發行說明 {#release-notes-for}
+# 2021.5.0 版發行說明 {#release-notes-for}
 
-下節概述[!UICONTROL Cloud Manager] 2021.4.0版的一般發行說明。
+下節概述[!UICONTROL Cloud Manager] 2021.5.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager]版本2021.4.0的發行日期為2021年4月08日。
-下一版預計於2021年5月06日推出。
+[!UICONTROL Cloud Manager] 2021.5.0版的發行日期為2021年5月6日。
+下一版預計於2021年6月03日推出。
 
 ## 新功能 {#whats-new}
 
-* 效能測試虛擬使用者的請求逾時已從20秒增加至60秒。
+* PackageOverlaps品質規則現在會偵測在相同部署的套件集中，同一套件已部署多次（即在多個內嵌位置）的情況。
 
-* 即使未配置管線，「管理Git」按鈕也會顯示在「管線」卡上。
+* Public API中的儲存庫端點現在包含Git URL。
 
-* 在「管線」執行頁的部署步驟期間，除了&#x200B;*進行中*&#x200B;狀態的UI中的當前步驟外，用戶還可以查看已完成和未來的部署步驟。
+* 在「編輯方案」工作流程中，使用者只能設定非小數的KPI值。
 
-* Cloud Manager使用的AEM專案原型版本已更新為27版。
+* 現在已解決將程式碼推送至AdobeGit時間不斷發生的故障。
 
-* 刪除環境時啟動管線時的錯誤消息已被澄清。
-
-* Eclipse專案提供的OSGi組合現在已排除在規則`CQBP-84--dependencies`之外。
+* 編輯程式體驗已重新整理。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 在生產管線中，在&#x200B;*Assets Test*&#x200B;步驟中可能發生的罕見的暫時錯誤。
+* 有時，即使未部署該配置，用戶在「IP允許清單」旁邊也會看到綠色&#x200B;*active*&#x200B;狀態。
 
-* 生產管線「載入測試」中的尾隨斜線導致404失敗。
+* 管線變數API不會移除&#39;deleted&#39;變數，而只會以&#39;DELETED&#39;狀態標籤它們。
 
-* `Runmode`檢查對非資料夾節點產生誤報。
+* 某些「程式碼氣味」類型的品質問題錯誤地影響「可靠性評等」。
+
+* 當管道執行在午夜到凌晨1點之間啟動時，Cloud Manager生成的對象版本不保證大於前一天建立的版本。
