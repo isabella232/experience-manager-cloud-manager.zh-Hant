@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-feature: CI-CD Pipeline, Test Results
+feature: CI-CD管道，測試結果
+exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2694'
 ht-degree: 3%
 
 ---
-
 
 # 了解測試結果 {#understand-your-test-results}
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 對於每個門，門都有三層結構來解決由門所識別的問題。
 
 * **Critical**  —— 這些是由門確定的導致管道立即故障的問題。
-* **重要** -這些是閘道識別的問題，導致管線進入暫停狀態。部署經理、專案經理或業務負責人可以覆寫問題（在這種情況下，管道會繼續），或者接受問題（在這種情況下，管道會因故障而停止）。
+* **重要** -這些是閘道識別的問題，導致管線進入暫停狀態。部署經理、專案經理或業務負責人可以覆寫問題（在這種情況下，管道會繼續），或者接受問題（在這種情況下，管道會因故障而停止）。 重要失敗的覆寫受[逾時](deploying-code.md#timeouts)的限制。
 * **Info**  —— 這些是由門所標識的問題，這些問題僅供參考，對管線執行沒有影響。
 
 >[!NOTE]
@@ -274,4 +274,3 @@ Cloud Manager會在30分鐘的測試期間內，重複上傳資產，以執行AE
 ![](assets/understand_test-results-screen1.png)
 
 ![](assets/screen_shot_2018-09-05at83933pm.png)
-
