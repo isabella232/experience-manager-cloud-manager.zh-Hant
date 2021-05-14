@@ -2,11 +2,10 @@
 title: 2021.5.0 版發行說明
 description: 請依照本頁取得Cloud Manager 2021.5.0版的相關資訊
 feature: 發行資訊
-translation-type: tm+mt
-source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
+source-git-commit: b9adcc700edb7ba54a92037e86e86df812c93c83
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,3 +37,5 @@ ht-degree: 7%
 * 某些「程式碼氣味」類型的品質問題錯誤地影響「可靠性評等」。
 
 * 當管道執行在午夜到凌晨1點之間啟動時，Cloud Manager生成的對象版本不保證大於前一天建立的版本。
+
+* 某些Adobe Managed Services(AMS)客戶無法使用Cloud Manager API在Adobe I/O開發人員主控台中建立新專案。
