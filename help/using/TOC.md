@@ -3,16 +3,15 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 指南
-breadcrumb-title: Cloud Manager 指南
+breadcrumb-title: 6.x版Cloud Manager指AEM南
 user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自行管理Experience Manager。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 5f81fdb86b1dfa6c748bb7784ef00dc062c9f8ef
+source-git-commit: 9cca6fd7d4ef3351fa024bac0f95f5592105dbae
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 81%
 
 ---
 
@@ -42,10 +41,10 @@ ht-degree: 0%
       + [瞭解構建環境](build-environment-details.md)
    + [設定您的發行分支](configure-your-release-branches.md)
    + [管理 Dispatcher 設定](dispatcher-configurations.md)
-+ 如何使用 {#how-to-use}
++ 使用方式 {#how-to-use}
    + [設定 CI/CD 管道](configuring-pipeline.md)
    + [部署程式碼](deploying-code.md)
-   + [瞭解測試結果](understand-your-test-results.md)
+   + [了解測試結果](understand-your-test-results.md)
    + [管理環境](manage-your-environment.md)
    + [監控環境](monitor-your-environments.md)
    + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
@@ -81,16 +80,16 @@ ht-degree: 0%
    + [2019.11.0 版發行說明](release-notes-2019-11-0.md)
    + [2019.10.0 版發行說明](release-notes-2019-10-0.md)
    + [2019.9.0 版發行說明](release-notes-2019-9-0.md)
-   + [2019.8.0 的發行說明](release-notes-2019-8-0.md)
-   + [2019.7.0 的發行說明](release-notes-2019-7-0.md)
-   + [2019.6.0 的發行說明](release-notes-2019-6-0.md)
-   + [2019.5.0 的發行說明](release-notes-2019-5-0.md)
-   + [2019.4.0 的發行說明](release-notes-2019-4-0.md)
-   + [2019.3.0 的發行說明](release-notes-2019-3-0.md)
-   + [2019.2.0 的發行說明](release-notes-2019-2-0.md)
-   + [2019.1.0 的發行說明](release-notes-2019-1-0.md)
-   + [2018.9.0 的發行說明](release-notes-2018-9-0.md)
-   + [2018.8.0 的發行說明](release-notes-2018-8-0.md)
-   + [2018.7.0 的發行說明](release-notes-2018-7-0.md)
-   + [2018.6.0 的發行說明](release-notes-2018-6-0.md)
-   + [2018.5.0 的發行說明](release-notes-2018-5-0.md)
+   + [2019.8.0 版發行說明](release-notes-2019-8-0.md)
+   + [2019.7.0 版發行說明](release-notes-2019-7-0.md)
+   + [2019.6.0 版發行說明](release-notes-2019-6-0.md)
+   + [2019.5.0 版發行說明](release-notes-2019-5-0.md)
+   + [2019.4.0 版發行說明](release-notes-2019-4-0.md)
+   + [2019.3.0 版發行說明](release-notes-2019-3-0.md)
+   + [2019.2.0 版發行說明](release-notes-2019-2-0.md)
+   + [2019.1.0 版發行說明](release-notes-2019-1-0.md)
+   + [2018.9.0 版發行說明](release-notes-2018-9-0.md)
+   + [2018.8.0 版發行說明](release-notes-2018-8-0.md)
+   + [2018.7.0 版發行說明](release-notes-2018-7-0.md)
+   + [2018.6.0 版發行說明](release-notes-2018-6-0.md)
+   + [2018.5.0 版發行說明](release-notes-2018-5-0.md)
