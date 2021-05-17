@@ -10,10 +10,9 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: 程式碼部署
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-translation-type: tm+mt
-source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -21,6 +20,9 @@ ht-degree: 1%
 # 部署程式碼 {#deploy-your-code}
 
 ## 使用Cloud Manager部署代碼{#deploying-code-with-cloud-manager}
+
+>[!NOTE]
+>要瞭解如何將Cloud Manager的代碼部署AEM為Cloud Service，請參閱[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)。
 
 一旦配置了生產管線（儲存庫、環境和測試環境），您就可以部署代碼。
 
@@ -92,7 +94,7 @@ ht-degree: 1%
 
    ![](assets/Production_Deployment2.png)
 
-## 逾時{#timeouts}
+## 逾時 {#timeouts}
 
 如果離開等待使用者意見回應，下列步驟將逾時：
 
