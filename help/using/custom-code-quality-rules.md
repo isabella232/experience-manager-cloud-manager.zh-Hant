@@ -8,17 +8,19 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
-translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+feature: 程式碼品質規則
+exl-id: 7d118225-5826-434e-8869-01ee186e0754
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3654'
 ht-degree: 4%
 
 ---
 
-
 # 自訂程式碼品質規則 {#custom-code-quality-rules}
+
+>[!NOTE]
+>若要瞭解Cloud Manager的自訂程式碼品質規則，請參AEM閱[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager)Cloud Service。
 
 本頁說明由Cloud Manager根據「工程」的最佳實務所建立的自訂程式碼品質規則AEM。
 
@@ -961,4 +963,3 @@ AEMCloud Service禁止自定義搜索索引定義（即`oak:QueryIndexDefinition
 * [DOT - Dispatcher publish farm篩選器應以允許清單方式指定允許的Sling字尾模式](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
 * [DOT —— 在具有根目錄路徑的VirtualHost Directory部分中，不應使用「需要授予的所有」指令](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
-
