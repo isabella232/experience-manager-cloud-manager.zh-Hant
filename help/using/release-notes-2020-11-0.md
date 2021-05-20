@@ -1,11 +1,11 @@
 ---
 title: 2020.11.0 版發行說明
-seo-title: Cloud Manager AEM 2020.11.0發行說明
-description: 請依照本頁取得Cloud Manager版本2020.11.0的資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2020.11.0版的資訊
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager2020.11.0版發行說明
+description: 請詳閱本頁以取得Cloud Manager版本2020.11.0的資訊
+seo-description: 請詳閱本頁以取得AEM Cloud Manager版本2020.11.0的資訊
+feature: 發行資訊
+exl-id: c283c55d-156f-4540-9353-e6337d185842
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 8%
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # 2020.11.0 版發行說明 {#release-notes-for}
 
-下節概述[!UICONTROL Cloud Manager] 2020.11.0版的一般發行說明。
+以下章節概述[!UICONTROL Cloud Manager] 2020.11.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
@@ -26,12 +26,12 @@ ht-degree: 8%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 某些客戶導致的部署錯誤現在會明確地出現在部署記錄中。
+* 現在，部署記錄中會明確顯示某些客戶造成的部署錯誤。
 
-* 在建立執行前載入的相依性需要下載Maven外掛程式。
+* 在建置執行前完成的相依性載入需要下載Maven外掛程式。
 
-* 從Cloud Manager頁尾選取語言的連結現在會導覽至正確的位置。
+* 從Cloud Manager頁尾選取語言的連結現在會導覽至正確位置。
 
 * 有時在程式碼掃描期間，SonarQube程式不會啟動。 現在會自動偵測到此問題，並嘗試重新啟動。
 
-* 在效能測試中使用的網站編目程式中，會自動重試前三個深度遍歷層級中逾時的請求。
+* 在效能測試中使用的網站編目程式期間，系統會自動重試前三個深度周遊層級中逾時的請求。
