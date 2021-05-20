@@ -8,29 +8,28 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-feature: Getting Started
+feature: 快速入門
 level: Beginner
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '751'
 ht-degree: 85%
 
 ---
-
 
 # [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager} 簡介
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="Cloud Manager 簡介"
->abstract="讓組織能夠自行管理雲端的Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="建立程式"
+>abstract="可讓組織在雲端中自行管理Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="建立方案"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager" text="建立環境"
 
 ## 簡介 {#introduction}
 
-[!UICONTROL Cloud Manager]是Adobe Experience Manager(AEMCloud)的一部分，讓組織可以自行管理雲端Experience Manager。其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。
+[!UICONTROL Cloud Manager]，是雲端中Adobe Experience Manager(AEM)的一部分，可讓組織在雲端中自行管理Experience Manager。其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。
 
 使用 [!UICONTROL Cloud Manager] 自助服務客戶入口網站，**組織**&#x200B;便可以執行/善用以下內容: 
 
@@ -61,7 +60,7 @@ ht-degree: 85%
 
 透過 [!UICONTROL Cloud Manager] UI，客戶可以設定並啟動其 CI/CD 管道。在此管道期間，會執行徹底的程式碼掃描，以確保只有高品質的應用程式才能傳遞至生產環境。
 
-要瞭解有關從[!UICONTROL Cloud Manager]的UI配置管線的更多資訊，請參見[配置CI/CD管線](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)。
+若要進一步了解如何從[!UICONTROL Cloud Manager]的UI設定管道，請參閱[設定CI/CD管道](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)。
 
 ### 有彈性的部署模式 {#flexible-deployment-modes}
 
