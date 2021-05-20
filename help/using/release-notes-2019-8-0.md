@@ -1,11 +1,11 @@
 ---
 title: 2019.8.0 版發行說明
-seo-title: Cloud Manager AEM 2019.8.0發行說明
-description: 請依照本頁取得Cloud Manager 2019.8.0版的相關資訊。
-seo-description: 請依照本頁取得AEMCloud Manager 2019.8.0版的資訊。
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2019.8.0版發行說明
+description: 請詳閱本頁以取得Cloud Manager 2019.8.0版的資訊。
+seo-description: 請詳閱本頁，以取得AEM Cloud Manager 2019.8.0版的資訊。
+feature: 發行資訊
+exl-id: 9b3da506-76f1-439f-8de0-a5e2ee88b979
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # 2019.8.0 版發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.8.0版新增了對選擇性內建內容封裝的支援、改善內建效能，並修正了各種小錯誤。
+[!UICONTROL Cloud Manager] 2019.8.0版新增了對選擇性建置內容套件的支援、改善建置效能，並修正了各種小錯誤。
 
 ## 發行日期 {#release-date}
 
@@ -22,16 +22,16 @@ ht-degree: 6%
 
 ## 新功能 {#whats-new}
 
-* 由[Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)提供的Cloud Manager API新命令行介面。
-* 由組建產生的特定內容封裝可宣告為已跳過且不會部署。 有關詳細資訊，請參閱[跳過內容包](/help/using/setting-up-project.md#skipping-content-packages)。
-* 已重新處理建置容器中預先載入的相依性集，以避免某些不必要的網路要求。
-* 某些配置錯誤的程式的概述頁面上的消息已經改進。
+* 使用[Adobe I/OCLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)提供的新命令列介面至Cloud Manager API。
+* 組建產生的特定內容套件可宣告為已略過，且不會部署。 如需詳細資訊，請參閱[略過內容套件](/help/using/setting-up-project.md#skipping-content-packages) 。
+* 組建容器中預先載入的相依性集已重作，以避免某些不必要的網路要求。
+* 已改善「概述」頁面上針對某些未正確設定之程式所顯示的訊息。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 存取SLA報告時，預設年份為2018，而非2019。
-* 對於較長的環境名稱，「報告」畫面上的環境選擇器未正確增加大小。
-* ***ConfigAndInstallShoudOnlyContainOsgiNodes***&#x200B;程式碼品質規則在使用Sling Rewriter元件時產生誤報。
-* ***ConfigAndInstallShoudOnlyContainOsgiNodes***&#x200B;代碼品質規則會針對某些不常見的路徑結構產生誤報。
-* 僅限資產的客戶可能無法一致地導覽至其環AEM境。
-* 「建立分支」和「專案」對話方塊在不同瀏覽器上的呈現方式不同。
+* 存取SLA報表時，預設年份為2018年，而非2019年。
+* 若環境名稱較長，「報表」畫面上的環境選取器未正確增加大小。
+* ***ConfigAndInstallShouldOnlyContainOsgiNodes***&#x200B;程式碼品質規則在使用Sling重寫器元件時產生誤判。
+* ***ConfigAndInstallShouldOnlyContainOsgiNodes***&#x200B;代碼質量規則針對某些不常見的路徑結構產生誤判。
+* 僅限資產的客戶可能無法一致地導覽至其AEM環境。
+* 「建立分支」和「專案」對話方塊在不同瀏覽器間的呈現方式不同。
