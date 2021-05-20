@@ -1,11 +1,11 @@
 ---
 title: 2020.2.0 版發行說明
-seo-title: Cloud Manager AEM 2020.2.0版本說明
-description: 請依照本頁取得Cloud Manager 2020.2.0版的相關資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2020.2.0版的資訊
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.2.0版發行說明
+description: 請詳閱本頁，了解Cloud Manager 2020.2.0版的相關資訊
+seo-description: 請詳閱本頁，以取得AEM Cloud Manager 2020.2.0版的相關資訊
+feature: 發行資訊
+exl-id: 3f225c07-b217-4568-8f8e-cbc1f20989bf
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 55%
@@ -27,8 +27,8 @@ ht-degree: 55%
 * Experience Cloud 通知中使用的 URL 已完成最佳化，能避免執行額外的重新導向作業。
 * 逾時的管道執行步驟現在會明確指出此狀態。
 * 「程式碼掃描」步驟現在提供記錄檔以供下載。
-* 「安全性測試」步驟現在有可下載的記錄檔。
-* 「效能測試」期間存取的頁面清單現在可供下載。
+* 安全性測試步驟現在提供可下載的記錄檔。
+* 現在可下載效能測試期間存取的頁面清單。
 * 現在起，程式碼掃描期間所發現之問題的試算表中，會有一個欄位顯示特定規則文件的連結。
 * 如果「效能測試」步驟無法啟動，則現在會顯示失敗的原因。
 
