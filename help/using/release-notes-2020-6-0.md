@@ -1,11 +1,11 @@
 ---
 title: 2020.6.0 版發行說明
-seo-title: Cloud Manager AEM 2020.6.0發行說明
-description: 請依照本頁取得Cloud Manager 2020.6.0版的相關資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2020.6.0版的資訊
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.6.0版發行說明
+description: 請詳閱本頁，了解Cloud Manager 2020.6.0版的相關資訊
+seo-description: 請詳閱本頁以取得AEM Cloud Manager 2020.6.0版的相關資訊
+feature: 發行資訊
+exl-id: 92eda9ea-f916-429e-97e3-be3a1ecef7cb
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 64%
@@ -14,11 +14,11 @@ ht-degree: 64%
 
 # 2020.6.0 版發行說明 {#release-notes-for}
 
-下節概述[!UICONTROL Cloud Manager] 2020.6.0版的一般發行說明。
+以下章節概述[!UICONTROL Cloud Manager] 2020.6.0版的一般發行說明。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager]版本2020.6.0的發行日期為2020年6月04日。
+[!UICONTROL Cloud Manager] 2020.6.0版的發行日期為2020年6月4日。
 
 ## 新功能 {#whats-new}
 
@@ -26,7 +26,7 @@ ht-degree: 64%
 
 * 現在，Cloud Manager 中提供&#x200B;**學習**&#x200B;頁面，可透過上層導覽存取。此頁面提供相關資源，可協助使用者了解與他們在 Cloud Manager 中指派的角色有關的常用工作流程。
 
-* 「資產第95個百分位數處理時間」的最大值已增加為500秒。
+* 資產第95個百分位數處理時間的最大值已增加至500秒。
 
 * 「建置」記錄現在包含探索到的成品清單，包括略過的內容封裝。
 
