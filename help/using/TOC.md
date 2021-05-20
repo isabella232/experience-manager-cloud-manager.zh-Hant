@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 指南
-breadcrumb-title: 6.x版Cloud Manager指AEM南
+breadcrumb-title: 適用於AEM 6.x的Cloud Manager指南
 user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自行管理Experience Manager。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
@@ -25,7 +25,7 @@ ht-degree: 81%
    + [CI/CD 管道](ci-cd-pipeline.md)
    + [安全性與隱私權](security-and-privacy.md)
    + [說明資源](help-resources.md)
-   + [Cloud Manager常見問答集](cloud-manager-faqs.md)
+   + [Cloud Manager常見問題集](cloud-manager-faqs.md)
 + 必要條件 {#requirements}
    + [授予的存取權限](access-rights-granted.md)
    + [原始碼存放庫](source-code-repository.md)
@@ -38,7 +38,7 @@ ht-degree: 81%
    + 建立 AEM 應用程式專案 {#create-application-project}
       + [使用精靈](using-the-wizard.md)
       + [設定專案](setting-up-project.md)
-      + [瞭解構建環境](build-environment-details.md)
+      + [了解建置環境](build-environment-details.md)
    + [設定您的發行分支](configure-your-release-branches.md)
    + [管理 Dispatcher 設定](dispatcher-configurations.md)
 + 使用方式 {#how-to-use}
@@ -55,7 +55,7 @@ ht-degree: 81%
    + [Maven 專案版本處理](activating-maven-project.md)
    + [存取 Git](accessing-git.md)
    + [與Git整合](setup-cloud-manager-git-integration.md)
-   + [使用多源Git儲存庫](/help/using/working-with-multiple-source-git-repos.md)
+   + [使用多個來源Git存放庫](/help/using/working-with-multiple-source-git-repos.md)
 + 產品更新精靈 {#product-update-wizard}
    + [概覽](overview-productupdate-wizard.md)
    + [評估](evaluation.md)
