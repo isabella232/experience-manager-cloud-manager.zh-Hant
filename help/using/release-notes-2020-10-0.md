@@ -1,11 +1,11 @@
 ---
 title: 2020.10.0 版發行說明
-seo-title: Cloud Manager AEM 2020.10.0版本說明
-description: 請依照本頁取得Cloud Manager 2020.10.0版的相關資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2020.10.0版的資訊
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager2020.10.0版發行說明
+description: 請詳閱本頁以取得Cloud Manager版本2020.10.0的資訊
+seo-description: 請詳閱本頁以取得AEM Cloud Manager版本2020.10.0的資訊
+feature: 發行資訊
+exl-id: c79454e5-e256-4e61-ac02-a201deca9dcd
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 11%
@@ -22,8 +22,8 @@ ht-degree: 11%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 用於效能測試的Crawler錯誤地將某些資源類型視為有效的Web連結。
+* 用於效能測試的Crawler未正確地將某些資源類型視為有效的Web連結。
 
-* 在某些情況下，效能測試的完成步驟處理不正確，導致執行時間較長的步驟。
+* 在某些情況下，效能測試的完成步驟未正確處理，導致執行時間較長的步驟。
 
-* 為生產部署配置了分發程式快取失效時，有時會執行兩次失效。
+* 當針對生產部署設定Dispatcher快取無效時，有時會執行兩次失效。
