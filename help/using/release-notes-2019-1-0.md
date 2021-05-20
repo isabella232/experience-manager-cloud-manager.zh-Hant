@@ -1,26 +1,25 @@
 ---
 title: 2019.1.0 版發行說明
-seo-title: Cloud Manager AEM 2019.1.0版本說明
-description: 請依照本頁取得Cloud Manager 2019.1.0版的相關資訊。
-seo-description: 請依照本頁取得AEMCloud Manager 2019.1.0版的資訊。
+seo-title: AEM Cloud Manager 2019.1.0版發行說明
+description: 請詳閱本頁以取得Cloud Manager 2019.1.0版的資訊。
+seo-description: 請詳閱本頁，以取得AEM Cloud Manager 2019.1.0版的資訊。
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+feature: 發行資訊
+exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 4%
 
 ---
 
-
 # 2019.1.0 版發行說明 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2018.9.0版新增支援測試AEM Assets程式以及執行建立和程式碼品質步驟的其他管道類型，可選擇部署至非生產環境。
+[!UICONTROL Cloud Manager] 2018.9.0版新增了對AEM Assets程式的支援測試，以及執行組建和程式碼品質步驟的其他管道類型，可選擇部署至非生產環境。
 
 ## 發行日期 {#release-date}
 
@@ -28,25 +27,25 @@ ht-degree: 4%
 
 ## 新功能 {#whats-new}
 
-* 新增對AEM Assets效能測試的支援。 有關詳細資訊，請參閱配置[CI/CD Pipeline](configuring-pipeline.md)。
-* 新增支援僅執行建置和程式碼品質步驟的管道，以及部署至非生產環境的管道。 如需詳細資訊，請參閱[設定您的CI/CD管道](configuring-pipeline.md)中的&#x200B;**非生產與程式碼品質專用管道**&#x200B;一節。
+* 新增對AEM Assets效能測試的支援。 如需詳細資訊，請參閱設定[CI/CD管道](configuring-pipeline.md) 。
+* 新增對僅執行組建和程式碼品質步驟的管道以及部署至非生產環境的管道的支援。 如需詳細資訊，請參閱[設定CI/CD管道](configuring-pipeline.md)中的&#x200B;**僅限非生產與程式碼品質管道**&#x200B;區段。
 * 新增對建置環境中自訂環境變數的支援。
-* 對於具有多階段或生產環境的客戶，在[配置CI/CD Pipeline](configuring-pipeline.md)頁面中可選擇將部署到哪個環境作為生產管線的一部分。
-* httpxt2dbm已新增至建立容器。
-* 所有幫助菜單項都會開啟一個新頁籤。
+* 若為具有多階段或生產環境的客戶，可在[設定CI/CD管道](configuring-pipeline.md)頁面中選取要部署為生產管道一部分的環境。
+* 已將httxt2dbm新增至建置容器。
+* 所有幫助菜單項都開啟一個新頁簽。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 編輯程式時，可以取消選擇所有頁面集。
+* 編輯程式時，可以取消選取所有頁面集。
 * 核准步驟的標題不正確。
-* 在某些情況下，程式標誌不正確匹配。
-* 如果只生成了調度程式配置包，則部署步驟將失敗。
-* 包含冷備用實例的環境無法正確處理。
+* 在某些情況下，計畫徽標的匹配不正確。
+* 如果僅建置Dispatcher設定套件，部署步驟將會失敗。
+* 未正確處理包含冷備用實例的環境。
 * 節目切換器上出現了一些終止的節目。
-* 如果在編輯管線時新增分支至git儲存庫，則可能無法立即選取。
-* 在某些畫面上，「說明」選單中的「Developer Connection」圖示不會顯示。
-* Tab鍵未在調度程式刷新配置對話框中正確處理。
+* 如果在編輯管道時將新分支新增至Git存放庫，可能尚未立即選取。
+* 在某些畫面上，「說明」功能表中的「Developer Connection」圖示未顯示。
+* 在Dispatcher排清設定對話方塊中，未正確處理索引標籤金鑰。
 
 ## 已知問題 {#known-issues}
 
-* 當開啟已設定「網站」但未設定「資產」、「KPI」的程式時，所有使用者都會看到使用&#x200B;**設定程式**&#x200B;按鈕的動作卡。 但是，只有「業務所有者」角色的用戶可以實際按一下&#x200B;**設定程式**&#x200B;按鈕。
+* 開啟具有Sites但未設定Assets、KPI的程式時，所有使用者都會看到帶有&#x200B;**設定程式**&#x200B;按鈕的動作卡呼叫。 但是，只有業務所有者角色中的用戶才能實際按一下&#x200B;**設定程式**&#x200B;按鈕。
