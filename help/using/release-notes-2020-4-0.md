@@ -1,11 +1,11 @@
 ---
 title: 2020.4.0 版發行說明
-seo-title: Cloud Manager AEM 2020.4.0發行說明
-description: 請依照本頁取得Cloud Manager 2020.4.0版的相關資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2020.4.0版的資訊
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.4.0版發行說明
+description: 請詳閱本頁，了解Cloud Manager 2020.4.0版的相關資訊
+seo-description: 請詳閱本頁以取得AEM Cloud Manager 2020.4.0版的相關資訊
+feature: 發行資訊
+exl-id: bb21b7ea-6bae-4755-becb-37cef0d49412
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 38%
@@ -18,22 +18,21 @@ ht-degree: 38%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager]版本2020.4.0的發行日期為2020年4月09日。
+[!UICONTROL Cloud Manager] 2020.4.0版的發行日期為2020年4月9日。
 
 ## 新功能 {#whats-new}
 
-* 對導覽Cloud Manager概述頁面所做的變更，可讓使用者編輯或切換程式。
+* 導覽Cloud Manager概述頁面的變更，可讓使用者編輯或切換程式。
 * 變更項目可讓使用者在 Cloud Manager 登陸頁面上的程式資訊卡編輯程式。
 * 新管道狀態&#x200B;**管道正在執行**&#x200B;會針對關聯環境而顯示。
-* 改良管道執行頁面的可理解性。這包括「管線名稱」（僅限非生產管線）和「類型」(Type)的顯示，以及指示管線狀態為「正在進行／已取消／失敗」的標章。
+* 改良管道執行頁面的可理解性。這包括管道名稱（僅限非生產管道）和類型的顯示，以及指出管道狀態為「進行中/已取消/失敗」的徽章。
 * 用於產生 git 密碼的程式對於基礎服務層的問題更具彈性。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 監控資料有時可能會以不正確的方式顯示，或根據技術值的微小差異完全無法顯示。
+* 監控資料有時可能會因技術值的微小差異而以不正確的方式顯示，或完全不顯示。
 * 已建置容器中使用的 Maven 設定經過更新，可避免在下載成品中繼資料時發生鎖死。
-* 資產效能測試程式偶爾無法解AEM密密碼，導致測試失敗。
-* 某些具有備用實例的拓撲在安全性測試中可能具有假負值。
-* 如果舞台環境包含已停止的實例，則安全性測試步驟有時會失敗。
+* AEM效能測試程式偶爾無法解密密碼，導致測試失敗。
+* 具有備用實例的某些拓撲在安全測試中可能具有偽負值。
+* 如果預備環境包含已停止的例項，則安全性測試步驟有時會失敗。
 * 無法一致地收到 Experience Cloud 通知。
-
