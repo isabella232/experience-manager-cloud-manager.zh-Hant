@@ -1,11 +1,11 @@
 ---
 title: 2020.5.0 版發行說明
-seo-title: Cloud Manager AEM 2020.5.0發行說明
-description: 請依照本頁取得Cloud Manager 2020.5.0版的相關資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2020.5.0版的資訊
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.5.0版發行說明
+description: 請詳閱本頁，了解Cloud Manager 2020.5.0版的相關資訊
+seo-description: 請詳閱本頁以取得AEM Cloud Manager 2020.5.0版的相關資訊
+feature: 發行資訊
+exl-id: f8a80419-e480-450a-8768-6d9ab690a425
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 67%
@@ -40,5 +40,4 @@ ht-degree: 67%
 
 * 概覽頁面中的特定卡片未正確顯示實體名稱。
 
-* 某些拓撲配置會導致效能測試步驟生成錯誤，而不是報告缺少的度量。
-
+* 某些拓撲配置會導致效能測試步驟產生錯誤，而不是報告缺少的度量。
