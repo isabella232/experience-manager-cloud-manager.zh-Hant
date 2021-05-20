@@ -6,7 +6,6 @@ seo-description: Adobe AEM Cloud Manager 說明概覽
 uuid: d4a23a6e-347e-41c3-9e3b-b7b7469c4754
 contentOwner: jsyal
 discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
-translation-type: tm+mt
 source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '108'
@@ -21,7 +20,7 @@ ht-degree: 73%
 
 本節提供讓您開始使用 [!UICONTROL Cloud Manager] 的資源清單概覽。
 
-請依照下列資源開始使用[!UICONTROL Cloud Manager]，從瞭解主要概念和術語到設定組態（預先要求），讓您開始使用[!UICONTROL Cloud Manager]。
+請依照下列資源，開始使用[!UICONTROL Cloud Manager]的歷程，從了解重要概念和術語，到設定組態（必備條件），最後讓您開始使用[!UICONTROL Cloud Manager]。
 
 下圖說明學習 [!UICONTROL Cloud Manager] 的路徑圖: 
 
