@@ -1,11 +1,11 @@
 ---
 title: 2020.7.0 版發行說明
-seo-title: Cloud Manager AEM 2020.7.0發行說明
-description: 請依照本頁取得Cloud Manager 2020.7.0版的相關資訊
-seo-description: 請依照本頁取得AEMCloud Manager 2020.7.0版的資訊
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.7.0版發行說明
+description: 請詳閱本頁，了解Cloud Manager 2020.7.0版的相關資訊
+seo-description: 請詳閱本頁以取得AEM Cloud Manager 2020.7.0版的資訊
+feature: 發行資訊
+exl-id: c0272d9d-0a6d-4abd-add1-f82280b7ecec
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 52%
@@ -18,11 +18,11 @@ ht-degree: 52%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2020.7.0版的發行日期為2020年7月09日。
+[!UICONTROL Cloud Manager] 2020.7.0版的發行日期為2020年7月9日。
 
 ## 新功能 {#whats-new}
 
-* 在生產部署期間從負載平衡器分離和連接調度器實例現在可以以更一致的方式工作。
+* 現在起，在生產部署期間，從負載平衡器分離和附加Dispatcher例項，可以以更一致的方式運作。
 
 * Cloud Manager 建置容器現可支援 Java 8 和 Java 11。
 
@@ -30,7 +30,7 @@ ht-degree: 52%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 「非生產管線編輯」(Non-Production Pipeline Edit)頁面上的&#x200B;**Cancel**&#x200B;和&#x200B;**Save**&#x200B;選項並不總是可見。
+* 非生產管道編輯頁面上的&#x200B;**取消**&#x200B;和&#x200B;**儲存**&#x200B;選項不一定會顯示。
 
 * 程式碼品質處理程序的某些失敗作業可能導致系統無法正確產生記錄檔。
 
@@ -38,6 +38,6 @@ ht-degree: 52%
 
 ## 已知問題 {#known-issues}
 
-* 當AMS環境包含備用實例時，記錄的消息會指出該實例處於關閉狀態，而非處於備用模式。
+* 當AMS環境包含備用執行個體時，記錄的訊息會指出執行個體關閉，而非處於備用模式。
 
 * 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;_最低_&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。若客戶明確參考較舊版本，會在程式碼品質處理程序中收到錯誤訊息。
