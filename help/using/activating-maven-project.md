@@ -5,10 +5,10 @@ description: 進一步了解Maven專案版本處理。
 seo-description: 請詳閱本頁，深入了解Maven專案版本處理。
 feature: 快速入門
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: aa2d7cb3d0fa3d6038d364659ce8d5eacb6825c5
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 8%
+source-wordcount: '276'
+ht-degree: 7%
 
 ---
 
@@ -21,6 +21,9 @@ ht-degree: 8%
 可在管道執行詳細資訊頁面和活動頁面上看到此版本。 執行組建時，Maven專案會更新為使用此版本，並在Git存放庫中建立標籤，並以該版本為名稱。
 
 如果原始專案版本符合特定條件，更新的Maven專案版本將會合併原始專案版本和Cloud Manager產生的版本。 不過，標籤一律會使用產生的版本。 要進行此合併，原始項目版本必須由三個版本段（例如1.0.0或1.2.3，但不是1.0或1）組成，且原始版本不得以 — SNAPSHOT結束。
+
+>[!NOTE]
+>此原始專案版本值必須在Git存放庫分支之頂層`pom.xml`檔案的`<version>`元素中靜態設定。
 
 如果原始版本確實符合此條件，則產生的版本會附加至原始版本，作為新版本區段。 產生的版本也會稍微修改，以包含正確的排序和版本處理。 例如，假設產生的2019.926.121356.0000020490版：
 
