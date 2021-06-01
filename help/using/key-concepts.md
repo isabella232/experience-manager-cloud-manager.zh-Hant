@@ -11,7 +11,7 @@ discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
 feature: 快速入門
 level: Beginner
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: f9b33de0f1f2203175f66f261c8ee553f47e0c3b
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 **** 管道(Pipeline)依序執行的一組部署步驟。
 
-**** 產品在由組織授權的解決方案內的特定功能集。組織內的不同方案可能有權獲得不同的產品集。 例如Sites、Forms的Assets。
+**** 產品在由組織授權的解決方案內的特定功能集。組織內的不同方案可能有權獲得不同的產品集。 例如Sites、Assets或Forms。
 
 **** 方案支援客戶活動邏輯分組的一組環境，通常對應於購買的服務級別協定(SLA)。每個程式都只有一個生產環境，並且可能有許多非生產環境。
 
