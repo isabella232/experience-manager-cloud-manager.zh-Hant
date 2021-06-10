@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD管線，測試結果
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
 workflow-type: tm+mt
 source-wordcount: '2722'
 ht-degree: 3%
@@ -53,7 +53,7 @@ ht-degree: 3%
 在程式碼品質測試中，會掃描原始碼，以確保其符合特定品質標準。 目前，這是透過SonarQube、使用OakPAL的內容套件層級檢查，以及使用Dispatcher最佳化工具進行Dispatcher驗證而實作。 有100多個規則結合一般Java規則和AEM專用規則。 有些AEM專用規則是根據AEM Engineering的最佳實務建立，並稱為[自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)。
 
 >[!NOTE]
->您可以在此處[下載規則完整清單。](/help/using/assets/CodeQuality-rules-AMS.xlsx)
+>您可以在此處[下載規則完整清單。](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)
 
 此步驟的結果以&#x200B;*Rating*&#x200B;傳送。 下表匯總了各種測試標準的評等：
 
