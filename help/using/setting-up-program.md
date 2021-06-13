@@ -5,9 +5,9 @@ description: 上線後，業務負責人將需要執行程式的一些初始設�
 seo-description: '上線後，業務擁有者將需要執行AdobeAEM Cloud Manager的一些初始設定。 這包括設定程式說明和定義用於效能測試的KPI。 '
 feature: 快速入門
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
+source-git-commit: 71a6f2709efb9c4c3831deaa1ce89d93e30b775c
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '727'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 2%
 
 1. 將顯示「**編輯程式**」螢幕，該螢幕允許您更新或修改程式。
 
-   您可以從&#x200B;**General**&#x200B;頁簽更新程式名和說明。
+   您可以從&#x200B;**General**&#x200B;頁簽更新程式描述。
 
    ![](assets/set-up-program/edit-program-general.png)
 
