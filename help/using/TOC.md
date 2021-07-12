@@ -6,9 +6,9 @@ user-guide-title: Experience Manager Cloud Manager 指南
 breadcrumb-title: 適用於AEM 6.x的Cloud Manager指南
 user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自行管理Experience Manager。
 feature-set: Experience Manager Cloud Manager, Experience Manager
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: 0c082c7d24a50cfeaa8f452655e5abb609dc6915
+source-git-commit: 58ed9a96513c9d984286132f89f129038f177ee1
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 81%
