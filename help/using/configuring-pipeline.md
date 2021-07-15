@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD管道
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
+source-git-commit: 1c103b1c43a1e5fe7a6fa27110fc692bba6fb8b2
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1308'
 ht-degree: 2%
 
 ---
@@ -25,16 +25,16 @@ ht-degree: 2%
 
 以下頁面說明如何配置&#x200B;**管道**。 若要查看管道運作方式的更多概念資訊，請參閱[CI/CD管道概述](ci-cd-pipeline.md)。
 
-## 影片教學課程{#video-tutorial-one}
+## 教學課程影片 {#video-tutorial-one}
 
-### 在Cloud Manager {#config-pipeline-video}中配置管道
+### 在Cloud Manager中設定管道 {#config-pipeline-video}
 
 CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署的參數以及效能測試參數。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
-## 了解流量{#understanding-the-flow}
+## 了解流量 {#understanding-the-flow}
 
 您可以從 **** UI [!UICONTROL Cloud Manager]的「Pipeline Settings 」 (管道設定) 圖格來設定管道。
 
@@ -44,7 +44,7 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
 * 定義控制生產部署的參數。
 * 配置效能測試參數。
 
-## 設定管道{#setting-up-the-pipeline}
+## 設定管道 {#setting-up-the-pipeline}
 
 >[!CAUTION]
 >
@@ -56,7 +56,7 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
 >
 >可在初始設定後更改管道設定。
 
-### 從[!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}配置管道設定
+### 從[!UICONTROL Cloud Manager]配置管道設定 {#configuring-the-pipeline-settings-from-cloud-manager}
 
 使用[!UICONTROL Cloud Manager] UI設定程式後，即可設定管道。
 
@@ -171,9 +171,9 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
 
 除了部署到預備和生產的主管道外，客戶還可以設定其他管道，稱為&#x200B;**非生產管道**。 這些管道一律會執行建置和程式碼品質步驟。 他們也可以選擇部署至Adobe Managed Services環境。
 
-## 影片教學課程{#video-tutorial-two}
+## 教學課程影片 {#video-tutorial-two}
 
-### Cloud Manager非生產和代碼質量管道{#non-prod-video}
+### 僅限Cloud Manager非生產與程式碼品質管道 {#non-prod-video}
 
 CI/CD非生產管道分為兩類：程式碼品質管道和部署管道。 程式碼品質會管道來自Git分支的所有程式碼，以根據Cloud Manager的程式碼品質掃描來建置和評估。
 
@@ -183,27 +183,28 @@ CI/CD非生產管道分為兩類：程式碼品質管道和部署管道。 程�
 
 1. 從Cloud Manager主畫面存取&#x200B;**非生產管道**&#x200B;方塊。
 
-   ![](assets/Non-Production-Pipeline.png)
+   ![](/help/using/assets/non-prod-add.png)
 
-1. 按一下「添加」(Add)按鈕，以指定管道名稱、管道類型和Git分支。
+1. 按一下&#x200B;**Add**&#x200B;按鈕，以指定管道名稱、管道類型和Git分支。
 
    此外，您也可以從管道選項設定部署觸發程式和重要失敗行為。
 
    ![](assets/non-prod-pipe.png)
 
-1. 按一下「**儲存**」，主畫面的卡片上會顯示管道，包含三個動作：
+1. 按一下「**儲存**」，主畫面的卡片上會顯示管道，其中包含五個動作：
 
    * **編輯**  — 允許編輯管道設定
-   * **詳細資料**  — 顯示最後一個管道執行（如果有的話）
+   * **詳細資訊**  — 顯示上次管道執行（如果有的話）
    * **建置**  — 導覽至執行頁面，可從該頁面執行管道
+   * **存取存放庫資訊**  — 可讓使用者取得存取Cloud Manager Git存放庫所需的資訊
+   * **了解更多**  — 導覽至了解CI/CD管道檔案資源。
 
-   ![](assets/Non-prod-2.png)
-
+      ![](assets/prod-one.png)
    >[!NOTE]
    >
    >管道執行期間，會顯示目前步驟，且只有&#x200B;**Details**&#x200B;動作可用。
 
-## 後續步驟{#the-next-steps}
+## 後續步驟 {#the-next-steps}
 
 設定管道後，您需要部署程式碼。
 
