@@ -2,9 +2,9 @@
 title: 2021.7.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager 2021.7.0版的資訊
 feature: 發行資訊
-source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
+source-git-commit: 1da4ceef0d89223580800d9018c46aaec51f8927
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '259'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,9 @@ ht-degree: 6%
 
 * 傳出輸出IP現在將記錄在建置步驟記錄檔中。
 
-* 「管理Git」按鈕已重新命名為「存取Git資訊」，對話方塊也已視覺化重新整理。
+* **管理Git**&#x200B;按鈕已取消&#x200B;**存取Git資訊**，對話方塊也已視覺化重新整理。
+
+* Cloud Manager使用的AEM專案原型版本已更新為28版。
 
 * 某些意外的拓撲重新配置可能導致從管道執行詳細資訊頁面中不再提供詳細測試報告。
 
