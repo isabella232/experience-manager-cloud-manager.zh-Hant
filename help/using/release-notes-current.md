@@ -2,10 +2,10 @@
 title: 2021.8.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager 2021.8.0版的資訊
 feature: 發行資訊
-source-git-commit: 460964e8882a30d9289a25ec7c4162221031b0da
+source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 7%
+source-wordcount: '169'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,5 @@ ht-degree: 7%
 * Cloud Manager使用的AEM專案原型版本已更新為28版。
 
 ## 錯誤修正 {#bug-fixes}
-
-* *更* 新可用狀態不應在最新版本小於目前版本時顯示。
 
 * 有時，當管道因某些原因觸發兩次時，會導致其中一個執行失敗，並出現&#x200B;*無法更新管道執行狀態*&#x200B;錯誤。
