@@ -2,7 +2,7 @@
 title: 2021.8.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager 2021.8.0版的資訊
 feature: 發行資訊
-source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
+source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 8%
@@ -29,7 +29,7 @@ ht-degree: 8%
 
 * 現在有API可用來使每個管道的Maven相依性快取失效。
 
-* Cloud Manager使用的AEM專案原型版本已更新為28版。
+* Cloud Manager使用的AEM專案原型版本已更新為29版。
 
 ## 錯誤修正 {#bug-fixes}
 
