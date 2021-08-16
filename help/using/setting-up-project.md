@@ -3,16 +3,16 @@ title: 設定專案
 description: 請參閱本頁面，了解如何設定專案
 feature: 快速入門，生產計畫
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: cf19c7dfd593810779c03c51e08081954f8fc11e
+source-git-commit: 2a253abb98fa096f9f1c07bac94804849fad2ebb
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '884'
 ht-degree: 8%
 
 ---
 
-# 設定項目{#setting-up-your-project}
+# 設定專案 {#setting-up-your-project}
 
-## 修改項目設定詳細資訊{#modifying-project-setup-details}
+## 修改項目設定詳細資訊 {#modifying-project-setup-details}
 
 為了能順利透過Cloud Manager建立和部署，現有AEM專案必須遵循一些基本規則：
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 * 如果有多個內容包，則無法保證包部署的順序。 如果需要特定順序，則可使用內容套件相依性來定義順序。 可以從部署中跳過[](#skipping-content-packages)包。
 
 
-## 在Cloud Manager中啟用Maven設定檔{#activating-maven-profiles-in-cloud-manager}
+## 在Cloud Manager中啟用Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
 
 在某些有限的情況下，在Cloud Manager內執行時，您可能需要稍微改變您的建置程式，而不是在開發人員工作站上執行。 針對這些情況，[Maven設定檔](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)可用來定義不同環境（包括Cloud Manager）中組建的差異。
 
@@ -105,10 +105,10 @@ ht-degree: 8%
         </profile>
 ```
 
-## 受密碼保護的Maven儲存庫支援{#password-protected-maven-repositories}
+## 受密碼保護的Maven儲存庫支援 {#password-protected-maven-repositories}
 
 >[!NOTE]
->密碼保護的Maven存放庫中的成品使用時應非常謹慎，因為目前透過此機制部署的程式碼並未透過Cloud Manager的品質閘道執行。 因此，它只應用在少數情況下，以及不系結至AEM的程式碼。 建議您同時使用二進位檔來部署Java來源以及整個專案原始碼。
+>密碼保護的Maven存放庫中的成品使用時應非常謹慎，因為目前透過此機制部署的程式碼並未透過Cloud Manager品質閘道中實作的所有品質規則執行。 因此，它只應用在少數情況下，以及不系結至AEM的程式碼。 建議您同時使用二進位檔來部署Java來源以及整個專案原始碼。
 
 若要從Cloud Manager使用受密碼保護的Maven存放庫，請將密碼（以及選擇性的使用者名稱）指定為密碼[管道變數](/help/using/build-environment-details.md#pipeline-variables)，然後在Git存放庫中名為`.cloudmanager/maven/settings.xml`的檔案內參照該密碼。 此檔案遵循[Maven設定檔案](https://maven.apache.org/settings.html)架構。 當Cloud Manager建置程式開始時，此檔案中的`<servers>`元素將合併至Cloud Manager提供的預設`settings.xml`檔案。 以`adobe`和`cloud-manager`開頭的伺服器ID視為保留，自訂伺服器不應使用。 Cloud Manager不會鏡像符合其中一個前置詞或預設ID `central`的伺服器ID **。**&#x200B;使用此檔案後，將從`<repository>`和/或`<pluginRepository>`檔案內的`pom.xml`元素內引用伺服器ID。 通常，這些`<repository>`和/或`<pluginRepository>`元素會包含在[Cloud Manager特定設定檔](#activating-maven-profiles-in-cloud-manager)中，儘管這並非嚴格必要。
 
@@ -177,7 +177,7 @@ ht-degree: 8%
 </profiles>
 ```
 
-### 部署源{#deploying-sources}
+### 部署來源 {#deploying-sources}
 
 將Java來源與二進位檔一起部署至Maven存放庫是個不錯的作法。
 
@@ -198,7 +198,7 @@ ht-degree: 8%
         </plugin>
 ```
 
-### 部署項目源{#deploying-project-sources}
+### 部署專案來源 {#deploying-project-sources}
 
 將整個專案來源與二進位檔一起部署至Maven存放庫是個不錯的作法，這樣就能重建確切的工件。
 
@@ -225,7 +225,7 @@ ht-degree: 8%
         </plugin>
 ```
 
-## 正在跳過內容包{#skipping-content-packages}
+## 跳過內容包 {#skipping-content-packages}
 
 在Cloud Manager中，組建可能會產生任何數量的內容套件。
 出於各種原因，可能需要製作內容包，但不要部署它。 例如，在建立僅用於測試的內容包時，這可能非常有用，或者，在構建過程中，將通過另一個步驟重新打包的內容包，即作為另一個包的子包。
@@ -262,6 +262,6 @@ ht-degree: 8%
         </plugin>
 ```
 
-## 根據最佳實務{#develop-your-code-based-on-best-practices}開發您的程式碼
+## 根據最佳實務開發程式碼 {#develop-your-code-based-on-best-practices}
 
 Adobe工程與諮詢團隊已為AEM開發人員開發一套[全面的最佳實務准則](https://helpx.adobe.com/tw/experience-manager/6-4/sites/developing/using/best-practices.html)。
