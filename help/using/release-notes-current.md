@@ -3,10 +3,10 @@ title: 2021.9.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager 2021.9.0版的資訊
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 3fccb0b577662ebc12b65777cbf9624e06d4259d
+source-git-commit: ec180b60b24676bf1affe6369b6af66a10d9e8a0
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,10 +19,12 @@ ht-degree: 6%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2021.8.0版的發行日期為2021年9月9日。
+[!UICONTROL Cloud Manager] 2021.9.0版的發行日期為2021年9月9日。
 下一版預計於2021年10月7日發行。
 
 ## 新增功能 {#whats-new}
+
+* Cloud Manager使用的AEM專案原型版本已更新為30版。
 
 * Cloud Manager登陸頁面上的方案卡片和相關聯的體驗已重新整理。
 
@@ -31,8 +33,6 @@ ht-degree: 6%
 * 「活動」頁面功能表選項現在包含「下載記錄」選項，供已完成的代碼產生器執行使用。 選取此選項將下載建置步驟的記錄檔。
 
 * 直接按一下「方案」卡片，現在會導覽至「Cloud Manager概觀」頁面。
-
-* Cloud Manager使用的AEM專案原型版本已更新為30版。
 
 ## 錯誤修正 {#bug-fixes}
 
