@@ -3,10 +3,10 @@ title: 2021.9.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager 2021.9.0版的資訊
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ec180b60b24676bf1affe6369b6af66a10d9e8a0
+source-git-commit: 9e9836ad8793540a57048a6e43e4d158abf91579
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '179'
+ht-degree: 6%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * 「活動」頁面功能表選項現在包含「下載記錄」選項，供已完成的代碼產生器執行使用。 選取此選項將下載建置步驟的記錄檔。
 
-* 直接按一下「方案」卡片，現在會導覽至「Cloud Manager概觀」頁面。
+* 直接按一下「方案」卡片，現在會導覽至Cloud Manager的&#x200B;**概述**&#x200B;頁面。
 
 ## 錯誤修正 {#bug-fixes}
 
