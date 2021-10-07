@@ -1,9 +1,10 @@
 ---
 title: Cloud Manager儲存庫
 description: Cloud Manager儲存庫
-source-git-commit: 7bda34be143d2d7587e61c09dab642f3419dfad9
+exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
+source-git-commit: 2a1f471f2e4148a424688ab9858c534935c3fe69
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Git子模組可用來在建置時合併Git存放庫間多個分支的內容。 �
 $ git submodule update --init
 ```
 
-這會將每個子模組簽入相應目錄。 對於熟悉使用Git子模組且不想管理外部合併程式的組織，此技術是https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html的替代方法。
+這會將每個子模組簽入相應目錄。 對於熟悉使用Git子模組且不想管理外部合併程式的組織，此技術是使用多個來源Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html)的替代方法。[
 
 例如，假設有三個存放庫，每個存放庫都包含名為main的單一分支。 在「主要」存放庫（即管道中設定的存放庫）中，主分支有一個pom.xml檔案，聲明其他兩個存放庫中包含的專案：
 
@@ -101,4 +102,3 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 * Git URL必須完全使用上述語法。 基於安全考量，請勿在這些URL中內嵌憑證。
 * 僅支援分支根的子模組。
 * Git子模組參考會儲存至特定的Git提交。 因此，在對子模組存放庫進行變更時，需要更新所參考的提交，例如使用`git submodule update --remote` 。
-
