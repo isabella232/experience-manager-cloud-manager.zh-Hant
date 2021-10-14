@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
+source-git-commit: e748383fb627ac6ecf69f1b6e313bb5710fbf444
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1379'
 ht-degree: 1%
 
 ---
@@ -215,13 +215,14 @@ CI/CD非生產管道分為兩類：程式碼品質管道和部署管道。 程�
 
 1. 選擇非生產管道，然後按一下&#x200B;**...**。 按一下&#x200B;**Edit**，如下圖所示。
 
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit1.png)
 
-1. 隨即顯示&#x200B;**編輯生產管道**&#x200B;對話方塊。
+1. 隨即顯示「編輯生產管道&#x200B;**」對話框，該對話框允許您更新**&#x200B;管道名稱&#x200B;**、**&#x200B;儲存庫&#x200B;**、** Git分支&#x200B;**、**&#x200B;部署觸發器&#x200B;**和**&#x200B;重要度量失敗行為&#x200B;**。**
 
-   1. **Configuration**&#x200B;標籤允許您更新&#x200B;**Pipeline Name**、**Deployment Trigger**&#x200B;和&#x200B;**Important Metrics Failure Behavior**。
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit2.png)
 
-      >[!NOTE]
-      >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，了解如何在Cloud Manager中新增和管理存放庫。
+   >[!NOTE]
+   >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，了解如何在Cloud Manager中新增和管理存放庫。
 
 
 1. 編輯完非生產管道後，按一下「**更新**」。
