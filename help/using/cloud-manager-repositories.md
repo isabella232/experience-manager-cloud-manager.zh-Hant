@@ -2,9 +2,9 @@
 title: Cloud Manager儲存庫
 description: Cloud Manager儲存庫
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 2a1f471f2e4148a424688ab9858c534935c3fe69
+source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,5 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 * Git URL必須完全使用上述語法。 基於安全考量，請勿在這些URL中內嵌憑證。
 * 僅支援分支根的子模組。
-* Git子模組參考會儲存至特定的Git提交。 因此，在對子模組存放庫進行變更時，需要更新所參考的提交，例如使用`git submodule update --remote` 。
+* Git子模組參考會儲存至特定的Git提交。 因此，在對子模組儲存庫進行更改時，需要更新引用的提交，例如，使用`git submodule update --remote`。
+* 除非另有必要，強烈建議使用「淺層」子模組。 要執行此操作，請對每個子模組運行`git config -f .gitmodules submodule.<submodule path>.shallow true`。

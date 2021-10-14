@@ -1,28 +1,28 @@
 ---
 title: 部署程式碼
-seo-title: 部署程式碼
+seo-title: Deploy your Code
 description: 提供Cloud Manager中部署程式的概觀
-seo-description: 了解如何在設定管道（存放庫、環境和測試環境）後部署程式碼
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: 程式碼部署
+feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
 
 # 部署程式碼 {#deploy-your-code}
 
-## 使用Cloud Manager {#deploying-code-with-cloud-manager}部署程式碼
+## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->若要了解如何在AEM as aCloud Service中部署Cloud Manager的程式碼，請參閱[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)。
+>若要了解如何在AEMas a Cloud Service中部署Cloud Manager的程式碼，請參閱[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)。
 
 一旦配置了生產管道（儲存庫、環境和測試環境），您就可以部署代碼。
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 | 排程生產部署 | 7天 |
 | CSE支援 | 7天 |
 
-## 部署過程{#deployment-process}
+## 部署過程 {#deployment-process}
 
 以下章節說明如何在階段階段和生產階段部署AEM和Dispatcher套件。
 
@@ -150,7 +150,7 @@ Cloud Manager會將建置程式產生的所有target/*.zip檔案上傳至儲存�
    >[!NOTE]
    >您可以跳過開發和預備部署中的負載平衡器更改，即在非生產管道、開發人員環境和生產管道中（用於預備環境）分離和附加步驟。
 
-### 部署到生產階段{#deployment-production-phase}
+### 部署至生產階段 {#deployment-production-phase}
 
 部署至生產拓撲的程式稍有不同，以將對AEM網站訪客的影響降至最低。
 
@@ -164,3 +164,32 @@ Cloud Manager會將建置程式產生的所有target/*.zip檔案上傳至儲存�
 1. 將AEM套件部署至publish2，並將Dispatcher套件並行部署至Dispatcher2，排清Dispatcher快取。
 1. 將dispatcher2放回負載平衡器。
 此過程將繼續，直到部署已到達拓撲中的所有發佈商和調度程式。
+
+## 緊急管道執行模式 {#emergency-pipeline}
+
+在緊急情況下，Adobe Managed Services客戶可能需要將程式碼變更部署至其預備和生產環境，而不需等待Cloud Manager完整測試週期執行。
+
+為了解決這些情況，Cloud Manager生產管道可以在&#x200B;*緊急*&#x200B;模式下執行。 使用此模式時，不會執行安全和效能測試步驟；所有其他步驟（包括任何已設定的核准步驟）則以正常管道執行模式中的方式執行。
+
+>[!NOTE]
+>緊急管道執行模式功能由客戶成功工程師按程式啟動。
+
+### 使用緊急管道執行模式 {#using-emergency-pipeline}
+
+在啟動生產管道執行時，如果已激活此功能，則可以從對話框以正常或緊急模式啟動執行，如下圖所示。
+
+![](assets/execution-emergency1.png)
+
+此外，查看在緊急模式下運行的執行的管道執行詳細資訊頁面時，螢幕頂部的瀏覽路徑標示將顯示用於此特定執行的緊急模式指示器。
+
+![](assets/execution-emergency2.png)
+
+
+您也可以透過Cloud Manager API或CLI，在此緊急模式下建立管道執行。 要在緊急模式下啟動執行，請使用查詢參數`?pipelineExecutionMode=EMERGENCY`或在使用CLI時向管道的執行端點提交PUT請求：
+
+```
+$ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
+```
+
+>[!IMPORTANT]
+>使用`--emergency`標幟可能需要更新至最新的`aio-cli-plugin-cloudmanager`版本。
