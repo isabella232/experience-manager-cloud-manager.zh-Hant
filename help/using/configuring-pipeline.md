@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: bdbee51ff0a61c2a72ff7ae3a742e2dd817c671a
+source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,9 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
       * **在階段部署** 後批准的功能與在生產部署前批准的功能類似，但會在階段部署步驟後立即進行，即在完成任何測試之前，與在完成所有測試後完成的生產部署之前的批准進行比較。
 
       * **跳過負載平衡器**
-   1. 為Stage選取&#x200B;**Dispatcher設定**。
+   1. 為Stage選取&#x200B;**Dispatcher設定**。 輸入路徑，從&#x200B;**Type**&#x200B;中選擇操作，然後按一下&#x200B;**Add Path**。 您可以為每個環境指定最多100個路徑。
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
    1. 為生產選擇&#x200B;**部署選項**。 現在您可以定義控制生產部署的參數。 三種可用選項如下：
 
@@ -114,7 +116,9 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
          >如果選取了&#x200B;**已排程**&#x200B;選項，您可以在預備部署(和&#x200B;**使用GoLive核准**，如果已啟用)之後，將生產部署排程到管道&#x200B;**。**&#x200B;使用者也可以選擇立即執行生產部署。
          >
          >請參閱[部署代碼](deploying-code.md)，以設定部署計畫或立即執行生產。
-   1. 為「生產」設定&#x200B;**Dispatcher設定**。
+   1. 為「生產」設定&#x200B;**Dispatcher設定**。 輸入路徑，從&#x200B;**Type**&#x200B;中選擇操作，然後按一下&#x200B;**Add Path**。 您可以為每個環境指定最多100個路徑。
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-prod.png)
 
       作為部署管理員，您可以設定一組內容路徑，這些路徑會在設定或編輯管道時，從AEM Dispatcher快取中取消&#x200B;****&#x200B;或&#x200B;**已清除**。
 
