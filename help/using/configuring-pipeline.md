@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
+source-git-commit: 9509f83f3cecbeaa81543e3c1f8ec33028009e6a
 workflow-type: tm+mt
 source-wordcount: '1834'
 ht-degree: 1%
@@ -25,14 +25,6 @@ ht-degree: 1%
 
 以下頁面說明如何配置&#x200B;**管道**。 若要查看管道運作方式的更多概念資訊，請參閱[CI/CD管道概述](ci-cd-pipeline.md)。
 
-## 教學課程影片 {#video-tutorial-one}
-
-### 在Cloud Manager中設定管道 {#config-pipeline-video}
-
-CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署的參數以及效能測試參數。
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 
 ## 了解流量 {#understanding-the-flow}
 
@@ -43,6 +35,14 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
 * 定義將啟動管道的觸發器。
 * 定義控制生產部署的參數。
 * 配置效能測試參數。
+
+## 教學課程影片 {#video-tutorial-one}
+
+### 在Cloud Manager中設定管道 {#config-pipeline-video}
+
+CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署的參數以及效能測試參數。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 ## 設定管道 {#setting-up-the-pipeline}
 
@@ -56,7 +56,7 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
 >
 >可在初始設定後更改管道設定。
 
-## 從管道卡添加新的生產管道 {#adding-production-pipeline}
+### 從管道卡添加新的生產管道 {#adding-production-pipeline}
 
 設定程式並使用[!UICONTROL Cloud Manager] UI至少有一個環境後，即可新增生產管道。
 
