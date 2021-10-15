@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
+source-git-commit: 973fec504cd5f35435b10e3d1d28f3ba20ff4ab9
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1478'
 ht-degree: 1%
 
 ---
@@ -158,29 +158,19 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
 
 1. 按一下&#x200B;**...**&#x200B;管道&#x200B;**卡上的**，按一下&#x200B;**編輯**，如下圖所示。
 
+   ![](/help/using/assets/configure-pipelines/edit-prod1.png)
 
 1. 隨即顯示&#x200B;**編輯生產管道**&#x200B;對話方塊。
 
-   1. **Configuration**&#x200B;標籤允許您更新&#x200B;**Pipeline Name**、**Deployment Trigger**&#x200B;和&#x200B;**Important Metrics Failure Behavior**。
+   1. **Configuration**&#x200B;標籤可讓您更新&#x200B;**Pipeline Name**、**Repository**、**Git分支**、**Deployment Trigger**、**Important Metrics Failure Behavion**、**DeploymentOptions**&#x200B;和&lt;a14/&lt;A5/>Dispatcher配置。****
 
       >[!NOTE]
       >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) ，了解如何在Cloud Manager中新增和管理存放庫。
 
 
-   1. **Source**&#x200B;索引標籤提供選項，可在部署至生產&#x200B;**之前勾選或取消勾選**&#x200B;暫停，以及從&#x200B;**生產部署選項**&#x200B;排程&#x200B;**選項。**
-
-
-   1. **體驗稽核**&#x200B;選項可讓您更新或新增頁面。
-
+   1. **階段測試**&#x200B;索引標籤提供從&#x200B;**網站內容傳送/分佈式負載權重**&#x200B;和&#x200B;**資產效能測試分佈**&#x200B;重新選取選項的選項。
 
 1. 編輯管道後，按一下&#x200B;**更新**。
-
-1. 按一下&#x200B;**設定管道**&#x200B;以設定和設定管道。
-
-   ![](assets/Setup-Pipeline.png)
-
-
-
 
 ## 僅限非生產和代碼品質的管道
 
