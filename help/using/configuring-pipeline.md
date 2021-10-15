@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 78a6c939cdb7c4335891e27209b221fc3e6efec2
+source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1834'
 ht-degree: 1%
 
 ---
@@ -199,6 +199,9 @@ CI/CD生產管道設定會定義將啟動管道的觸發器、控制生產部署
 
    ![](/help/using/assets/configure-pipelines/prod-delete.png)
 
+   >[!NOTE]
+   >部署管理員角色中的使用者現在可以透過管道卡中的&#x200B;**Delete**&#x200B;選項，以自助方式刪除生產管道。
+
 ## 僅限非生產和代碼品質的管道
 
 除了部署到預備和生產的主管道外，客戶還可以設定其他管道，稱為&#x200B;**非生產管道**。 這些管道一律會執行建置和程式碼品質步驟。 他們也可以選擇部署至Adobe Managed Services環境。
@@ -269,6 +272,28 @@ CI/CD非生產管道分為兩類：程式碼品質管道和部署管道。 程�
 
 
 1. 編輯完非生產管道後，按一下「**更新**」。
+
+### 其他非生產管道動作 {#additional-nonprod-actions}
+
+#### 執行非生產管道 {#run-nonprod}
+
+可以從「管道」卡運行生產管道：
+
+1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
+
+1. 按一下&#x200B;**...**&#x200B;管道&#x200B;**卡上的**，按一下&#x200B;**運行**，如下圖所示。
+
+   ![](/help/using/assets/configure-pipelines/nonprod-run1.png)
+
+#### 刪除非生產管道 {#delete-nonprod}
+
+您可以從「管道」卡中刪除生產管道：
+
+1. 從&#x200B;**程式概述**&#x200B;頁面導覽至&#x200B;**管道**&#x200B;卡片。
+
+1. 按一下&#x200B;**...從**&#x200B;管道&#x200B;**卡中按一下**&#x200B;刪除&#x200B;**，如下圖所示。**
+
+   ![](/help/using/assets/configure-pipelines/nonprod-delete.png)
 
 
 ## 後續步驟 {#the-next-steps}
