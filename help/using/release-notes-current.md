@@ -3,14 +3,14 @@ title: 2021.11.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager版本2021.11.0的資訊
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: e6e5a17c16c42e0b0ed5aedd2f9a6360fd81d8cd
+source-git-commit: 0a8373f9613715f8945f482198710cefd84b169d
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 3%
 
 ---
 
-# 2021.10.0 版發行說明 {#release-notes-for}
+# 2021.11.0 版發行說明 {#release-notes-for}
 
 以下章節概述的一般發行說明 [!UICONTROL Cloud Manager] 2021.11.0版。
 
