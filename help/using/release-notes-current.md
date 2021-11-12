@@ -3,7 +3,7 @@ title: 2021.11.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager版本2021.11.0的資訊
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0a8373f9613715f8945f482198710cefd84b169d
+source-git-commit: 096468d28d70b84286841dd9818c7aab54662b2b
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 3%
@@ -15,12 +15,12 @@ ht-degree: 3%
 以下章節概述的一般發行說明 [!UICONTROL Cloud Manager] 2021.11.0版。
 
 >[!NOTE]
->請參閱 [最新發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) 以在AEM as a Cloud Service中查看Cloud Manager的最新發行說明。
+>請參閱 [最新發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) 若要查看AEM as a Cloud Service中Cloud Manager的最新發行說明，請參閱
 
 ## 發行日期 {#release-date}
 
 的發行日期 [!UICONTROL Cloud Manager] 2021.11.0版是2021年11月4日。
-下一版預計於2021年12月9日發行。
+下一版預計於2021年12月16日發行。
 
 ## 新增功能 {#whats-new}
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 * 現在提供新的「活動頁面」，供檢視活動（例如管道和程式碼執行）及其相關詳細資訊之用。 隨著時間推移，此頁面所列的活動將會擴展範圍以及提供的詳細資料。
 
-* 現在提供新的管道頁面，其中提供暫留時顯示的狀態彈出視窗，以便您輕鬆檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
+* 提供新的管道頁面，可在暫留時顯示狀態彈出視窗，方便您檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
 
 * 「編輯管道API」現在支援設定Dispatcher失效和排清路徑。
 
