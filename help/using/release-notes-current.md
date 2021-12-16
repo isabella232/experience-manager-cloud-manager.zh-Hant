@@ -1,57 +1,36 @@
 ---
-title: 2021.11.0 版發行說明
-description: 請詳閱本頁以取得Cloud Manager版本2021.11.0的資訊
+title: 2021.12.0 版發行說明
+description: 以下是Cloud Manager 2021.12.0版的發行說明。
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 096468d28d70b84286841dd9818c7aab54662b2b
+source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '249'
 ht-degree: 3%
 
 ---
 
-# 2021.11.0 版發行說明 {#release-notes-for}
+# Cloud Manager發行說明2021.12.0版 {#release-notes}
 
-以下章節概述的一般發行說明 [!UICONTROL Cloud Manager] 2021.11.0版。
+以下章節概述的一般發行說明 [!UICONTROL Cloud Manager] 2021.12.0版。
 
 >[!NOTE]
->請參閱 [最新發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) 若要查看AEM as a Cloud Service中Cloud Manager的最新發行說明，請參閱
+>
+>如需AEM as a Cloud Service中Cloud Manager的最新發行說明，請參閱 [AEM as a Cloud Service最新發行說明中的Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!UICONTROL Cloud Manager] 2021.11.0版是2021年11月4日。
-下一版預計於2021年12月16日發行。
+的發行日期 [!UICONTROL Cloud Manager] 2021.12.0版是2021年12月16日。 下一版預計於2022年1月推出。
 
 ## 新增功能 {#whats-new}
 
-* Git提交ID現在會顯示在管道執行詳細資訊中，以便更輕鬆追蹤已建置的程式碼。
-
-* 此 `x-request-id` 回應標題現在會顯示在 [www.adobe.io](https://www.adobe.io/). 提交客戶服務問題以進行疑難排解時，此標題相當實用。
-
-* 身為使用者，我看到管道為零的管道卡為我提供適當的指引。
-
-* 現在提供新的「活動頁面」，供檢視活動（例如管道和程式碼執行）及其相關詳細資訊之用。 隨著時間推移，此頁面所列的活動將會擴展範圍以及提供的詳細資料。
-
-* 提供新的管道頁面，可在暫留時顯示狀態彈出視窗，方便您檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
-
-* 「編輯管道API」現在支援設定Dispatcher失效和排清路徑。
-
-* 「編輯管道API」現在支援變更部署階段所使用的環境。
-
-* 已針對大型封裝導入OakPal掃描程式的最佳化。
-
-* 品質問題CSV檔案現在會包含每個品質問題的時間戳記。
-
-* UI中將不再顯示「環境」頁面中的「管理」按鈕。
+* UI中已顯示提交雜湊，現在也會在API中提供。
+* 「活動」頁面現在包含用於執行管道的快顯視窗，可提供管道詳細資訊的摘要，一覽無遺。
+* 已新增更新，加入「活動」頁面中顯示的其他詳細資料。
+* Cloud Manager中的「學習」標籤現在提供API指南和相關資源的快速存取。
+* 具有部署管理員角色的用戶現在可以為資料庫啟動項目/分支建立嚮導，該資料庫沒有「資料庫」頁面上的「操作」菜單中的分支。
+* 現在，如果所選儲存庫沒有分支，將通知處於添加或編輯管道工作流的部署管理員如何建立分支或項目。
+* 在「編輯生產管道」視窗中，如果有多個生產階段環境，則可使用供環境選取的下拉式清單。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 某些非正統的組建設定會導致管道的Maven工件快取中儲存不必要的檔案，導致在啟動和停止組建容器時產生多餘的網路I/O。
-
-* 如果部署階段不存在，管道PATCHAPI就會失敗。
-
-* 此 `ClientlibProxyResourceCheck` 當有具有共同基本路徑的用戶端程式庫時，品質規則會產生誤判問題。
-
-* 達到最大儲存庫數時，錯誤訊息未指定錯誤的原因。
-
-* 在少數情況下，管道由於某些回應代碼的重試處理不當而失敗。
+* 即使使用者在名稱欄位中輸入不同名稱，完整堆疊生產管道仍會保留名為「生產管道」。

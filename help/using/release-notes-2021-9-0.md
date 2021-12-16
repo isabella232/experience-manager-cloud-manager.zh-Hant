@@ -2,8 +2,7 @@
 title: 2021.9.0 版發行說明
 description: 請詳閱本頁以取得Cloud Manager 2021.9.0版的資訊
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
+source-git-commit: 09dd8fe608d95cd9dbc95129cf86b9693c2839b5
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 6%
@@ -12,14 +11,14 @@ ht-degree: 6%
 
 # 2021.9.0 版發行說明 {#release-notes-for}
 
-以下章節概述[!UICONTROL Cloud Manager] 2021.9.0版的一般發行說明。
+以下章節概述的一般發行說明 [!UICONTROL Cloud Manager] 版本2021.9.0。
 
 >[!NOTE]
->請參閱[最新發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) ，以在AEMas a Cloud Service中查看Cloud Manager的最新發行說明。
+>請參閱 [最新發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) 若要查看AEM as a Cloud Service中Cloud Manager的最新發行說明，請參閱
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2021.9.0版的發行日期為2021年9月9日。
+的發行日期 [!UICONTROL Cloud Manager] 2021.9.0版是2021年9月9日。
 
 ## 新增功能 {#whats-new}
 
@@ -31,7 +30,7 @@ ht-degree: 6%
 
 * 「活動」頁面功能表選項現在包含「下載記錄」選項，供已完成的代碼產生器執行使用。 選取此選項將下載建置步驟的記錄檔。
 
-* 直接按一下「方案」卡片，現在會導覽至Cloud Manager的&#x200B;**概述**&#x200B;頁面。
+* 直接按一下「方案」卡片，現在即可導覽至Cloud Manager的 **概述** 頁面。
 
 ## 錯誤修正 {#bug-fixes}
 
