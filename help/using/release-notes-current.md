@@ -2,9 +2,10 @@
 title: 2021.12.0 版發行說明
 description: 以下是Cloud Manager 2021.12.0版的發行說明。
 feature: Release Information
-source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: 61f2d1e0882b752d1a1d5e62f9c028aa71941efe
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '265'
 ht-degree: 3%
 
 ---
@@ -30,6 +31,7 @@ ht-degree: 3%
 * 具有部署管理員角色的用戶現在可以為資料庫啟動項目/分支建立嚮導，該資料庫沒有「資料庫」頁面上的「操作」菜單中的分支。
 * 現在，如果所選儲存庫沒有分支，將通知處於添加或編輯管道工作流的部署管理員如何建立分支或項目。
 * 在「編輯生產管道」視窗中，如果有多個生產階段環境，則可使用供環境選取的下拉式清單。
+* Cloud Manager使用的AEM專案原型版本已更新為32版。
 
 ## 錯誤修正 {#bug-fixes}
 
