@@ -3,15 +3,15 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 指南
-breadcrumb-title: 適用於AEM 6.x的Cloud Manager指南
+breadcrumb-title: AEM 6.x Cloud Manager 指南
 user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自行管理Experience Manager。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: 53c5aed5e42408ae4503b6003350de3ae1f27edf
+source-git-commit: e3f0759437707f73dfc6851608e06e30064c0f16
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 80%
+source-wordcount: '294'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 80%
    + [CI/CD 管道](ci-cd-pipeline.md)
    + [安全性與隱私權](security-and-privacy.md)
    + [說明資源](help-resources.md)
-   + [Cloud Manager常見問題集](cloud-manager-faqs.md)
+   + [Cloud Manager常見問題](cloud-manager-faqs.md)
 + 必要條件 {#requirements}
    + [授予的存取權限](access-rights-granted.md)
    + [原始碼存放庫](source-code-repository.md)
@@ -36,9 +36,9 @@ ht-degree: 80%
    + [首次登入](first-time-login.md)
    + [設定您的方案](setting-up-program.md)
    + 建立 AEM 應用程式專案 {#create-application-project}
-      + [使用精靈](using-the-wizard.md)
-      + [設定專案](setting-up-project.md)
-      + [了解建置環境](build-environment-details.md)
+      + [使用嚮導](using-the-wizard.md)
+      + [設定項目](setting-up-project.md)
+      + [瞭解構建環境](build-environment-details.md)
    + [設定您的發行分支](configure-your-release-branches.md)
    + [管理 Dispatcher 設定](dispatcher-configurations.md)
 + 使用方式 {#how-to-use}
@@ -47,21 +47,22 @@ ht-degree: 80%
    + [了解測試結果](understand-your-test-results.md)
    + [管理環境](manage-your-environment.md)
    + [監控環境](monitor-your-environments.md)
-   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+   + [雲管理器API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](notifications.md)
    + [自訂程式碼品質規則](custom-code-quality-rules.md)
-+ 管理程式碼 {#managing-code}
++ 管理代碼 {#managing-code}
    + [Maven 專案版本處理](activating-maven-project.md)
-   + [Cloud Manager中的存放庫](cloud-manager-repositories.md)
-   + [存取儲存庫](accessing-repos.md)
+   + [雲管理器中的儲存庫](cloud-manager-repositories.md)
+   + [訪問儲存庫](accessing-repos.md)
    + [與Git整合](setup-cloud-manager-git-integration.md)
-   + [使用多個來源Git存放庫](/help/using/working-with-multiple-source-git-repos.md)
+   + [使用多個源Git儲存庫](/help/using/working-with-multiple-source-git-repos.md)
 + 產品更新精靈 {#product-update-wizard}
    + [概覽](overview-productupdate-wizard.md)
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](release-notes-current.md)
+   + [2021.12.0 版發行說明](release-notes-2021-12-0.md)
    + [2021.11.0 版發行說明](release-notes-2021-11-0.md)
    + [2021.10.0 版發行說明](release-notes-2021-10-0.md)
    + [2021.9.0 版發行說明](release-notes-2021-9-0.md)

@@ -1,0 +1,38 @@
+---
+title: 2021.12.0 版發行說明
+description: 這些是Cloud Manager 2021.12.0版的發行說明。
+feature: Release Information
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: 5796f30c311f2f25421b53d40e0d4429c4458ff6
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 3%
+
+---
+
+# Cloud Manager版本2021.12.0的發行說明 {#release-notes}
+
+以下部分概述了有關 [!UICONTROL Cloud Manager] 2021.12.0版。
+
+>[!NOTE]
+>
+>有關as a Cloud Service中Cloud Manager的最新發AEM行說明，請參閱 [《 AEMas a Cloud Service的當前發行說明》中的Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
+
+## 發行日期 {#release-date}
+
+發放日期 [!UICONTROL Cloud Manager] 2021.12.0版為2021年12月16日。 下一版計畫於2022年1月發行。
+
+## 新增功能 {#whats-new}
+
+* 提交哈希（在UI中已可見）現在也在API中提供。
+* 「活動」(Activity)頁面現在包含一個用於運行管道的彈出窗口，該彈出窗口提供了管道詳細資訊的概覽摘要。
+* 已添加更新，以包括「活動」頁中顯示的其他詳細資訊。
+* Cloud Manager中的「學習」頁籤現在包括對API指南和相關資源的快速訪問。
+* 具有部署管理器角色的用戶現在可以從儲存庫頁面上的操作菜單中為沒有分支的儲存庫啟動項目/分支建立嚮導。
+* 部署管理器（位於添加或編輯管道工作流中）現在將被告知如何建立分支或項目（如果所選儲存庫沒有分支）。
+* 在「編輯生產管道」(Edit Production Pipeline)窗口中，當存在多個用於生產的階段環境時，將提供一個用於環境選擇的下拉清單。
+* Cloud Manager使用的AEM項目原型版本已更新為版本32。
+
+## 錯誤修正 {#bug-fixes}
+
+* 即使用戶在名稱欄位中輸入了不同的名稱，整個堆棧生產管道仍保留為「生產管道」。
