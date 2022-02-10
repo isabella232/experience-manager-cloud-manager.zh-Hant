@@ -1,109 +1,109 @@
 ---
-title: 設定您的方案
-seo-title: 設定您的方案
-description: 上線後，業務負責人將需要執行程式的一些初始設定。
-seo-description: '上線後，業務擁有者將需要執行AdobeAEM Cloud Manager的一些初始設定。 這包括設定程式說明和定義用於效能測試的KPI。 '
-feature: 快速入門
+title: 設定程式
+seo-title: Set Up Your Program
+description: 入職後，業務所有者需要對程式進行一些初始設定。
+seo-description: After onboarding, the business owner will need to do some initial setup of Adobe AEM Cloud Manager. This involves setting the program description and defining the KPIs which will be used for performance testing.
+feature: Getting Started
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 71a6f2709efb9c4c3831deaa1ce89d93e30b775c
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 2%
+source-wordcount: '687'
+ht-degree: 1%
 
 ---
 
 # 設定您的方案 {#setup-your-program}
 
-上線後，業務負責人需要完成程式的一些初始設定。 這包括設定程式說明和定義用於效能測試的關鍵績效指標(KPI)。 可選擇上傳縮圖。 此外，業務所有者可以在設定程式時配置環境配置。
+登機後，業務所有者需要完成程式的一些初始設定。 這包括設定程式說明和定義用於效能測試的關鍵績效指標(KPI)。 也可以上載縮略圖。 此外，業務所有者可以在設定程式時配置環境配置。
 
-定義的KPI可作為效能測試的基準，每次執行管道時都會傳遞此基準。
+定義的KPI用作每次管道執行時通過的效能測試的基線。
 
 >[!NOTE]
->定義的KPI是在&#x200B;**stage**環境上執行的測試上測量。 通常，這些KPI會縮小以符合階段環境的功能。
->例如，如果使用者在生產&#x200B;**環境**中預期平均每分鐘1000次頁面檢視，且在生產中有四個Dispatcher/Publish伺服器，則應將此值縮放至每分鐘250次頁面檢視（假設其階段環境僅包含單一Dispatcher/Publish伺服器對）。
->此外，許多使用者在生產環境前會有內容傳遞網路(CDN)，例如Akamai或CloudFront。 由於[!UICONTROL Cloud Manager]會直接針對預備環境進行測試，因此KPI應僅反映預期要通過CDN的流量，亦即快取未命中。 這通常是生產流量總量中相對較小的子集。
+>定義的KPI是按運行於 **階段** 環境。 通常，這些KPI會根據階段環境的功能進行縮放。
+>例如，在生產中，平均每分鐘需要1000個頁面視圖的用戶 **環境** 而在生產中有四個dispatcher/publish伺服器時，應將此頁數量擴展到每分鐘250個頁面視圖（假定其階段環境僅包含一個dispatcher/publish伺服器對）。
+>此外，許多用戶在其生產環境前面將有一個內容交付網路(CDN)，如Akamai或CloudFront。 自 [!UICONTROL Cloud Manager] test階段環境時，KPI應只反映預期通過CDN的流量，即快取未命中。 通常，這將是總生產流量中相對較小的子集。
 
-## 使用[!UICONTROL Cloud Manager]設定程式{#using-cloud-manager-to-setup-your-program}
+## 使用 [!UICONTROL Cloud Manager] 設定程式 {#using-cloud-manager-to-setup-your-program}
 
-請依照下列步驟設定方案並定義KPI:
+按照以下步驟設定程式並定義KPI:
 
-1. 按一下&#x200B;**Setup Program**&#x200B;以在[!UICONTROL Cloud Manager]中啟動安裝過程。
+1. 按一下 **安裝程式** 在中啟動安裝進程 [!UICONTROL Cloud Manager]。
 
-   ![image1](assets/set-up-program/setup1.png)
+   ![影像1](assets/set-up-program/setup1.png)
 
    >[!NOTE]
    > 您始終可以從操作欄切換、編輯或添加新程式，如下圖所示。
 
-   ![image1](assets/set-up-program/setup2.png)
+   ![影像1](assets/set-up-program/setup2.png)
 
 
-1. **Setup Program**&#x200B;螢幕顯示Edit Program Information。
+1. 的 **安裝程式** 螢幕顯示編輯程式資訊。
 
-1. 您會看到三個選項，如&#x200B;**一般**、**KPI**&#x200B;和&#x200B;**布建**&#x200B;標籤。
+1. 您將看到三個選項 **常規**。 **KPI**, **設定** 頁籤。
 
-1. 在&#x200B;**一般**&#x200B;標籤中，將縮圖上傳至您的程式。 您也可以將相關說明新增至您的方案。
+1. 在 **常規** 頁籤，將縮略圖上載到您的程式。 您還可以向程式添加相關說明。
 
    ![](assets/Setup_Program-General.png)
 
-1. 在&#x200B;**KPI**&#x200B;下，您可以定義兩個KPI（每個部署的預期值）。 分別為&#x200B;**AEM Sites**&#x200B;和&#x200B;**AEM Assets**&#x200B;定義KPI。 您將能指定您已授權產品的KPI。
+1. 下 **KPI**，您可以定義兩個KPI（每個部署的期望值）。 為 **AEM Sites** 和 **AEM Assets**。 您將能夠指定已許可的產品的KPI。
 
    **AEM Sites**
 
-   1. 您可接受的第95個百分位數回應時間是多少？
+   1. 您可以接受的第95百分位響應時間是多少？
 
-      * 建議值 — 3秒
-   1. 峰值負載下每分鐘頁面檢視次數？
+      * 推薦值 — 3秒
+   1. 在峰值負載下每分鐘頁面視圖數？
 
-      * 建議值 — 每分鐘200次頁面檢視
+      * 推薦值 — 每分鐘200頁
 
    **AEM Assets**
 
-   自首次發行以來，Cloud Manager已能夠執行AEM Sites程式的效能測試。 透過此版本，也新增了執行AEM Assets程式效能測試的功能。 資產效能測試的方式為在30分鐘的測試期間重複上傳資產，並測量每個資產的處理時間以及各種系統層級量度。
-在程式設定期間，會指定資產專屬KPI:
+   自最初發佈以來，Cloud Manager已能夠對AEM Sites程式執行效能測試。 在此版本中，還添加了執行AEM Assets程式效能test的功能。 資產效能測試是通過在30分鐘的test期間反複上載資產並測量每個資產的處理時間以及各種系統級度量來完成的。
+在程式設定期間，指定特定於資產的KPI:
 
-   * 第95個百分位數處理時間
-   * 每分鐘上傳資產
+   * 第95百分位處理時間
+   * 每分鐘上載的資產
 
    ![](assets/Setup_Program-KPIs.png)
 
-1. 在&#x200B;**預配**&#x200B;下，可以查看或編輯程式中生產和非生產環境的預配配置。 如果已為程式開啟了自動縮放功能，則會看到&#x200B;**自動縮放處於**&#x200B;上。
+1. 下 **設定**，您可以查看或編輯程式中生產和非生產環境的預配配置。 您將看到 **自動縮放已開啟**，如果已為程式啟用自動縮放。
 
    >[!NOTE]
    >自動縮放功能僅適用於生產環境，可能不適用於所有客戶計畫。
 
    ![](assets/Setup_Program-Provisioning.png)
 
-1. 按一下&#x200B;**Save**&#x200B;以完成安裝嚮導。
+1. 按一下 **保存** 的子菜單。
 
    >[!NOTE]
-   >設定初始程式後，您隨時可以編輯程式。 請依照下列步驟以取得詳細資訊。
+   >初始程式設定完成後，您始終可以編輯程式。 請按照以下步驟瞭解更多詳細資訊。
 
-## 編輯程式{#editing-program}
+## 編輯程式 {#editing-program}
 
-1. 從&#x200B;**Cloud Manager**&#x200B;主畫面導覽至程式。
+1. 從 **雲管理器** 主螢幕。
 
-1. 按一下&#x200B;**編輯程式**&#x200B;以從&#x200B;**概述**&#x200B;頁更新或修改程式，如下圖所示。
+1. 按一下 **編輯程式** 從 **概述** 的下界。
 
    ![](assets/set-up-program/edit-program1.png)
 
-1. 將顯示「**編輯程式**」螢幕，該螢幕允許您更新或修改程式。
+1. 的 **編輯程式** 螢幕顯示，允許您更新或修改程式。
 
-   您可以從&#x200B;**General**&#x200B;頁簽更新程式描述。
+   您可以從 **常規** 頁籤。
 
    ![](assets/set-up-program/edit-program-general.png)
 
-   導覽至&#x200B;**KPI**&#x200B;標籤，以更新AEM Sites和資產的相關資訊。
+   導航到 **KPI** 頁籤，以更新有關AEM Sites和資產的資訊。
 
    ![](assets/set-up-program/edit-program-kpi.png)
 
-   此外，您可以導航到&#x200B;**預配**&#x200B;頁簽，以編輯程式中生產和非生產環境的預配配置。
+   此外，您還可以導航到 **設定** 頁籤，編輯程式中生產和非生產環境的預配配置。
 
    ![](assets/set-up-program/edit-program-provision.png)
 
-1. 按一下&#x200B;**更新**&#x200B;以儲存您的編輯。
+1. 按一下 **更新** 的子菜單。
 
-## 後續步驟{#the-next-steps}
+## 後續步驟 {#the-next-steps}
 
-如果您已設定管道，則下次執行時會考量您更新的設定。 如果尚未設定管道，請依照步驟先設定管道。
+如果已設定管道，則下次執行將考慮更新的設定。 如果尚未設定管道，請按照步驟先設定管道。
 
-請參閱[設定CI/CD管道](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)以設定管道。
+請參閱文檔 [配置生產管線](configuring-production-pipelines.md) 和 [配置非生產管道](configuring-non-production-pipelines.md) 來設定管道。

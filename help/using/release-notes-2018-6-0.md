@@ -1,48 +1,48 @@
 ---
 title: 2018.6.0 版發行說明
-seo-title: AEM Cloud Manager 2018.6.0版發行說明
-description: 請詳閱本頁以取得Cloud Manager 2018.6.0版的資訊。
-seo-description: 請詳閱本頁，以取得AEM Cloud Manager 2018.6.0版的資訊。
+seo-title: AEM Cloud Manager Release Notes for 2018.6.0
+description: 按照本頁獲取Cloud Manager 2018.6.0版的資訊。
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2018.6.0.
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
-feature: 發行資訊
+feature: Release Information
 exl-id: 456f7892-c64c-4b3f-b845-15682d034aaa
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 4%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
 # 2018.6.0 版發行說明 {#release-notes-for}
 
-以下章節概述[!UICONTROL Cloud Manager] 2018.6.0版的一般發行說明，並新增對部署期間Dispatcher失效、其他通知和可用性改善的支援。
+以下部分概述了有關 [!UICONTROL Cloud Manager] 2018.6.0版，並增加了對部署期間調度程式失效的支援、其他通知和可用性改進。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2018.6.0版的發行日期為2018年8月9日。
+發放日期 [!UICONTROL Cloud Manager] 版本2018.6.0為2018年8月9日。
 
-## 新功能 {#what-s-new}
+## 新增功能 {#what-s-new}
 
-* **CI/CD管道**  — 在CI/CD管道執行期間，預備和生產上的可設定Dispatcher失效和快取排清。請參閱[設定CI/CD管道](configuring-pipeline.md)以深入了解。
+* **CI/CD管道**  — 在CI/CD管道執行期間，可配置的Dispatcher Invalidation和Cache Flushing（在階段和生產上）。 請參閱文檔 [配置生產管道](configuring-production-pipelines.md) 來瞭解更多資訊。
 
-* **CI/CD管道**  — 在管道設定期間，現在可定義管道在其中一個品質閘道中遇到重要故障時的行為。請參閱[設定CI/CD管道](configuring-pipeline.md)以深入了解。
+* **CI/CD管道**  — 在管線設定期間，現在可以定義當管道在質量門之一中遇到「重要」故障時，管線的行為。 請參閱文檔 [配置生產管道](configuring-production-pipelines.md) 來瞭解更多資訊。
 
-* **CI/CD管道**  — 在管道設定期間，現在可以選擇您希望CSE或任何可用CSE執行CSE監督。請參閱[設定CI/CD管道](configuring-pipeline.md)以深入了解。
+* **CI/CD管道**  — 在管道設定期間，現在可以選擇是希望CSE Oversight由CSE還是任何可用CSE執行。 請參閱文檔 [配置生產管道](configuring-production-pipelines.md) 來瞭解更多資訊。
 
-* **CI/CD管道**  — 當CI/CD管道達到業務核准步驟時，會傳送通知給獲授權核准部署的使用者。請參閱[通知](notifications.md)以了解更多資訊。
+* **CI/CD管道**  — 當CI/CD管道到達業務批准步驟時，將向有權批准部署的用戶發送通知。 請參閱 [通知](notifications.md) 來瞭解更多資訊。
 
-* **CI/CD管道**  — 當CI/CD管道達到排程集時，會傳送通知給獲授權設定排程的使用者。請參閱[通知](notifications.md)以了解更多資訊。
+* **CI/CD管道**  — 當CI/CD管道到達計畫集時，將向有權設定計畫的用戶發送通知。 請參閱 [通知](notifications.md) 來瞭解更多資訊。
 
-* **程式碼品質分析**  — 識別設定不正確之傳出HTTP/HTTPS要求的新規則。請參閱[自訂程式碼品質規則](custom-code-quality-rules.md)以深入了解。
+* **代碼質量分析**  — 用於標識未正確配置的出站HTTP/HTTPS請求的新規則。 請參閱 [自定義代碼質量規則](custom-code-quality-rules.md) 來瞭解更多資訊。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 在某些情況下，效能測試並未完全分散在多個Dispatcher和發佈例項之間。
-* 窄瀏覽器窗口上的標題導航消失。
-* 管道執行期間未停用某些管道設定。
-* 指向AEM和從程式清單螢幕的連結替換了當前瀏覽器頁簽並開啟了新頁簽。
-* 在某些情況下，長時間的批准期可能導致部署失敗。
+* 在某些情況下，效能test未完全分佈在多個調度程式和發佈實例之間。
+* 標題導航在狹窄的瀏覽器窗口中消失。
+* 在管線運行期間未禁用某些管線設定。
+* 指向「程AEM序」(Program)清單螢幕的連結和「從程式清單監視」(Monitoring from Program)螢幕已同時替換當前瀏覽器頁籤並開啟了新頁籤。
+* 在某些情況下，長時間的批准期可能會導致部署失敗。

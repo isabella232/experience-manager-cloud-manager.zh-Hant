@@ -11,9 +11,9 @@ discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 08d831c560510d58062ed81fab809c12169810cb
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 66%
 
 ---
@@ -23,23 +23,23 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="Cloud Manager 簡介"
->abstract="可讓組織在雲端中自行管理Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="建立方案"
+>abstract="使組織能夠在雲中自我管理Experience Manager。 其內容包含持續整合與持續傳送 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加快提供自訂或更新的傳送速度，而不會影響效能或安全性。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="建立程式"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager" text="建立環境"
 
 ## 簡介 {#introduction}
 
-[!UICONTROL Cloud Manager] 針對Adobe Experience Manager，開發人員能透過以Adobe Experience Manager最佳實務為基礎的簡化工作流程，建立具影響力的客戶體驗。 針對Adobe Experience Manager最佳化的CI/CD管道，可讓您只要檢查程式碼並一路移至生產就緒，即可輕鬆合併開發工作流程。 在建置階段，您會使用經過嘗試和學習的最佳實務來徹底測試自訂程式碼更新，以為客戶提供具影響力的數位體驗。 Cloud Manager使用開放API方法，可讓您與系統整合，而不會中斷現有的程式和工具。
+[!UICONTROL Cloud Manager] 對於Adobe Experience Manager公司，開發人員能夠通過簡化的工作流建立具有影響力的客戶體驗，這些工作流基於Adobe Experience Manager的最佳做法。 為Adobe Experience Manager優化的CI/CD管道允許您輕鬆合併開發工作流，只需簽入代碼並一路移動到生產就緒狀態即可。 在構建階段，您的自定義代碼更新將使用經過嘗試和學習的最佳實踐進行徹底測試，以便為客戶提供有影響的數字型驗。 Cloud Manager使用開放API方法，使您能夠與系統整合而不中斷現有流程和工具。
 
-本檔案網站特別說明Cloud Manager for Adobe Managed Services(AMS)客戶的功能。 AEMas a Cloud Service客戶的相同檔案位於 [為AEMas a Cloud Service實作應用程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en).
+本文檔網站專門介紹Cloud Manager for Adobe Managed Services(AMS)客戶的功能和特性。 可在以下幾AEM個中找到as a Cloud Service客戶的相同文檔： [實施應用程AEM序as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en)。
 
-透過Cloud Manager，您的開發團隊可善用下列功能：
+使用Cloud Manager，您的開發團隊可以利用以下功能：
 
 * 持續整合/持續傳送程式碼，將上市時間從數月/數週縮短至數天/數小時。
 
-* 程式碼檢查、效能測試和安全性驗證是根據最佳實務而設，然後再推送至生產環境，將生產中斷的情況降至最低。
+* 代碼檢查、效能測試和基於最佳做法的安全驗證，然後再推向生產以最大限度地減少生產中斷。
 
-* API連線，以補充現有的DevOps程式。
+* API連接，用於補充現有DevOps進程。
 
 * 自動縮放功能，會聰明地偵測到增加容量的需求，並自動將其他 Dispatcher/Publish 區段連至網路。
 
@@ -57,7 +57,7 @@ ht-degree: 66%
 
 客戶定義應用程式專用的關鍵績效指標 (KPI) - 每分鐘尖峰頁面檢視次數，以及頁面載入的預期回應時間，而這些最終可構成衡量成功部署的基礎。您可以輕鬆定義不同團隊成員的角色和權限。全新的自助服務介面可讓您重新取得掌控，而且也提供最佳實務連結以及 Adobe 內部專家的存取權限，這些專家可提供您所需的指引。
 
-探索並開始使用 [!UICONTROL Cloud Manager]的UI，請參閱 [首次登入](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html).
+瀏覽並開始使用 [!UICONTROL Cloud Manager]的UI，請參閱 [首次登錄](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)。
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
@@ -65,7 +65,7 @@ ht-degree: 66%
 
 透過 [!UICONTROL Cloud Manager] UI，客戶可以設定並啟動其 CI/CD 管道。在此管道期間，會執行徹底的程式碼掃描，以確保只有高品質的應用程式才能傳遞至生產環境。
 
-若要進一步了解如何透過 [!UICONTROL Cloud Manager]的UI，請參閱 [設定CI/CD管道](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
+瞭解有關從配置管道的詳細資訊 [!UICONTROL Cloud Manager]的UI，請參閱文檔 [配置生產管線](configuring-production-pipelines.md) 和 [配置非生產管道。](configuring-non-production-pipelines.md)
 
 ### 有彈性的部署模式 {#flexible-deployment-modes}
 
@@ -86,4 +86,4 @@ ht-degree: 66%
 自動縮放功能只會套用在 Dispatcher/Publish 層，而且一律會採用水平縮放的方法來執行，至少一個額外的 Dispatcher/Publish 組合區段，最多十個區段。佈建的額外容量會在十個工作天的期間內以手動縮放，實際時間長短由 CSE (客戶成功工程師) 決定。
 
 >[!NOTE]
->想要探索自動縮放是否適合其應用程式的客戶，必須聯絡其CSE或Adobe代表。
+>有興趣探索自動縮放是否適合其應用程式的客戶必須聯繫其CSE或Adobe代表。

@@ -1,18 +1,18 @@
 ---
-title: 2022.01.0 版發行說明
-description: 這些是Cloud Manager 2022.01.0版的發行說明。
+title: 2022.2.0 版發行說明
+description: 這些是Cloud Manager 2022.2.0版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ebbbbdca2bfd834bc3dc0ff06ffb318df42713ee
+source-git-commit: ae4cc3e8056e6ac317628e997271b4b01c7251c3
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '131'
 ht-degree: 6%
 
 ---
 
-# Cloud Manager版本2021.12.0的發行說明 {#release-notes}
+# Cloud Manager版本2022.2.0的發行說明 {#release-notes}
 
-以下部分概述了 [!UICONTROL Cloud Manager] 2022.01.0版。
+以下部分概述了 [!UICONTROL Cloud Manager] 2022.2.0版。
 
 >[!NOTE]
 >
@@ -20,14 +20,13 @@ ht-degree: 6%
 
 ## 發行日期 {#release-date}
 
-發放日期 [!UICONTROL Cloud Manager] 2022.01.0版為2022年1月20日。 下一版計畫於2022年2月10日發行。
+發放日期 [!UICONTROL Cloud Manager] 2022.2.0版是2022年2月10日。 下一版計畫於2022年3月10日發行。
 
 ## 新增功能 {#whats-new}
 
-* 雲管理器將 [在檢測到使用了相同的git提交時避免重建代碼庫](/help/using/setting-up-project.md#build-artifact-reuse) 執行多個完整堆棧管道。
-* 在生成Git密碼時，將顯示過期日期。
+* 刷新的Cloud Manager登錄頁體驗可改進導航功能，方便在網格/磁貼視圖之間切換，並可彈出窗口，快速獲得程式摘要。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 已解決錯誤陽性管道故障的不頻繁發生。
-* 對於只有一個儲存庫的程式，管道執行螢幕現在將顯示儲存庫名稱。
+* 現在，回滾執行與完整堆棧管道執行正確區分。
+* 當生成新密碼時，舊Git儲存庫密碼始終無效。

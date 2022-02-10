@@ -1,9 +1,8 @@
 ---
 title: 2021.11.0 版發行說明
-description: 請詳閱本頁以取得Cloud Manager版本2021.11.0的資訊
+description: 按照本頁獲取Cloud Manager 2021.11.0版的資訊
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6852df51d4b9b4947f1d5ce0b5a284bef94d0589
+source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 3%
@@ -12,46 +11,46 @@ ht-degree: 3%
 
 # 2021.11.0 版發行說明 {#release-notes-for}
 
-以下章節概述的一般發行說明 [!UICONTROL Cloud Manager] 2021.11.0版。
+以下部分概述了有關 [!UICONTROL Cloud Manager] 2021.11.0版。
 
 >[!NOTE]
->請參閱 [最新發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) 若要查看AEM as a Cloud Service中Cloud Manager的最新發行說明，請參閱
+>請參閱 [當前發行說明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) 查看as a Cloud Service中Cloud Manager的最新發行說明AEM。
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!UICONTROL Cloud Manager] 2021.11.0版是2021年11月4日。
-下一版預計於2021年12月16日發行。
+發放日期 [!UICONTROL Cloud Manager] 版本2021.11.0為2021年11月4日。
+下一版計畫於2021年12月16日發行。
 
 ## 新增功能 {#whats-new}
 
-* Git提交ID現在會顯示在管道執行詳細資訊中，以便更輕鬆追蹤已建置的程式碼。
+* Git提交ID現在將顯示在管道執行詳細資訊中，使跟蹤生成的代碼更容易。
 
-* 此 `x-request-id` 回應標題現在會顯示在 [www.adobe.io](https://www.adobe.io/). 提交客戶服務問題以進行疑難排解時，此標題相當實用。
+* 的 `x-request-id` 響應標頭現在可在上的API Ploagn中看到 [www.adobe.io](https://www.adobe.io/)。 此標題在提交客戶關心問題以進行故障排除時非常有用。
 
-* 身為使用者，我看到管道為零的管道卡為我提供適當的指引。
+* 作為用戶，我看到零管線的管線卡為我提供了適當的指導。
 
-* 現在提供新的「活動頁面」，供檢視活動（例如管道和程式碼執行）及其相關詳細資訊之用。 隨著時間推移，此頁面所列的活動將會擴展範圍以及提供的詳細資料。
+* 現在可以使用新的「活動」頁，其中可以查看諸如管道和代碼執行等活動及其關聯的詳細資訊。 隨著時間的推移，此頁中列出的活動將擴展範圍以及提供的詳細資訊。
 
-* 提供新的管道頁面，可在暫留時顯示狀態彈出視窗，方便您檢視詳細資訊摘要。 可檢視管道執行及其相關聯的詳細資訊。
+* 現在可以使用一個新的「管線」(Pipelines)頁面，該頁面具有懸停時的狀態跨距，以便輕鬆查看詳細資訊摘要。 可以查看管道執行及其關聯的詳細資訊。
 
-* 「編輯管道API」現在支援設定Dispatcher失效和排清路徑。
+* Edit Pipeline API現在支援設定調度程式失效和刷新路徑。
 
-* 「編輯管道API」現在支援變更部署階段所使用的環境。
+* 「編輯管道API」現在支援更改部署階段中使用的環境。
 
-* 已針對大型封裝導入OakPal掃描程式的最佳化。
+* 介紹了OakPal掃描過程中對大包裝的優化。
 
-* 品質問題CSV檔案現在會包含每個品質問題的時間戳記。
+* 質量問題CSV檔案現在將包含每個質量問題的時間戳。
 
-* UI中將不再顯示「環境」頁面中的「管理」按鈕。
+* 「環境」頁中的「管理」按鈕在UI中不再可見。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 某些非正統的組建設定會導致管道的Maven工件快取中儲存不必要的檔案，導致在啟動和停止組建容器時產生多餘的網路I/O。
+* 某些非常規的生成配置導致不必要的檔案儲存在管道的Maven項目快取中，這導致在啟動和停止生成容器時產生額外的網路I/O。
 
-* 如果部署階段不存在，管道PATCHAPI就會失敗。
+* 如果部署階段不存在，管道PATCHAPI將失敗。
 
-* 此 `ClientlibProxyResourceCheck` 當有具有共同基本路徑的用戶端程式庫時，品質規則會產生誤判問題。
+* 的 `ClientlibProxyResourceCheck` 當存在具有共同基本路徑的客戶端庫時，質量規則會產生誤報問題。
 
-* 達到最大儲存庫數時，錯誤訊息未指定錯誤的原因。
+* 達到最大資料庫數時的錯誤消息未指定錯誤原因。
 
-* 在少數情況下，管道由於某些回應代碼的重試處理不當而失敗。
+* 在少數情況下，管道由於某些響應代碼的重試處理不當而失敗。

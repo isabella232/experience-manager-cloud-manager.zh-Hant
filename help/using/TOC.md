@@ -8,10 +8,10 @@ user-guide-description: 了解如何使用 Adobe Managed Services 在雲端自�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: e3f0759437707f73dfc6851608e06e30064c0f16
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 82%
+source-wordcount: '303'
+ht-degree: 79%
 
 ---
 
@@ -42,7 +42,10 @@ ht-degree: 82%
    + [設定您的發行分支](configure-your-release-branches.md)
    + [管理 Dispatcher 設定](dispatcher-configurations.md)
 + 使用方式 {#how-to-use}
-   + [設定 CI/CD 管道](configuring-pipeline.md)
+   + CI/CD管道 {#pipelines}
+      + [配置生產管線](configuring-production-pipelines.md)
+      + [配置非生產管道](configuring-non-production-pipelines.md)
+      + [管理管道](managing-pipelines.md)
    + [部署程式碼](deploying-code.md)
    + [了解測試結果](understand-your-test-results.md)
    + [管理環境](manage-your-environment.md)
@@ -62,6 +65,7 @@ ht-degree: 82%
    + [評估](evaluation.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](release-notes-current.md)
+   + [2022.1.0 版發行說明](release-notes-2022-1-0.md)
    + [2021.12.0 版發行說明](release-notes-2021-12-0.md)
    + [2021.11.0 版發行說明](release-notes-2021-11-0.md)
    + [2021.10.0 版發行說明](release-notes-2021-10-0.md)
