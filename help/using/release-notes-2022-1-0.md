@@ -1,17 +1,18 @@
 ---
-title: 2022.01.0 版發行說明
-description: 這些是Cloud Manager 2022.01.0版的發行說明。
+title: 2022.1.0 版發行說明
+description: 這些是Cloud Manager 2022.1.0版的發行說明。
 feature: Release Information
-source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
+exl-id: 9cc40326-cb8e-415f-b2ad-937d42189ee3
+source-git-commit: 797731ff0f9a499fe359d2e4e6044877fdcac702
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 6%
 
 ---
 
-# Cloud Manager版本2021.12.0的發行說明 {#release-notes}
+# Cloud Manager版本2022.1.0的發行說明 {#release-notes}
 
-以下部分概述了 [!UICONTROL Cloud Manager] 2022.01.0版。
+以下部分概述了 [!UICONTROL Cloud Manager] 2022.1.0版。
 
 >[!NOTE]
 >
@@ -19,7 +20,7 @@ ht-degree: 6%
 
 ## 發行日期 {#release-date}
 
-發放日期 [!UICONTROL Cloud Manager] 2022.01.0版為2022年1月20日。 下一版計畫於2022年2月10日發行。
+發放日期 [!UICONTROL Cloud Manager] 2022.1.0版為2022年1月20日。 下一版計畫於2022年2月10日發行。
 
 ## 新增功能 {#whats-new}
 
