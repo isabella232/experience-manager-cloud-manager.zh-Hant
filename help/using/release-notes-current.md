@@ -3,10 +3,10 @@ title: 2022.3.0 版發行說明
 description: 這些是Cloud Manager 2022.3.0版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 7611667d8c617d501f9b69cbc7c854c195a5ebbe
+source-git-commit: 4a5ddf3144ec50f1a7a4ac367b5c99bc9b486752
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 4%
 ## 錯誤修正 {#bug-fixes}
 
 * 的 **跳過負載平衡器更改** 無法禁用。
-* **跳過負載平衡器更改** 選項未顯示在AMS上。開發部署 **編輯管道工作流**。
+* 的 **跳過負載平衡器更改** 選項未顯示在AMS上。開發部署 **編輯管道工作流**。
 * 手動建立的Git儲存庫的子集具有不正確的名稱值，這防止了生成項目重用功能的有效性。 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
 * 來自非生產管道的生成工件在生產完整堆棧管道上被不恰當地重複使用。
 * 添加或編輯代碼質量管道時，不再顯示處理度量失敗的選項。
