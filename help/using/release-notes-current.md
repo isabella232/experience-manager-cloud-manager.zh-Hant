@@ -1,18 +1,19 @@
 ---
-title: 2022.2.0 版發行說明
-description: 這些是Cloud Manager 2022.2.0版的發行說明。
+title: 2022.3.0 版發行說明
+description: 這些是Cloud Manager 2022.3.0版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: ae4cc3e8056e6ac317628e997271b4b01c7251c3
+source-git-commit: 6e98f9d2fcd69799bad86d1e247212b26273bd0b
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 6%
+source-wordcount: '197'
+ht-degree: 4%
 
 ---
 
-# Cloud Manager版本2022.2.0的發行說明 {#release-notes}
 
-以下部分概述了 [!UICONTROL Cloud Manager] 2022.2.0版。
+# Cloud Manager版本2022.3.0的發行說明 {#release-notes}
+
+此頁記錄的發行說明 [!UICONTROL Cloud Manager] 2022.3.0版。
 
 >[!NOTE]
 >
@@ -20,13 +21,17 @@ ht-degree: 6%
 
 ## 發行日期 {#release-date}
 
-發放日期 [!UICONTROL Cloud Manager] 2022.2.0版是2022年2月10日。 下一版計畫於2022年3月10日發行。
+發放日期 [!UICONTROL Cloud Manager] 2022.3.0版為2022年3月10日。 下一版計畫於2022年4月7日發行。
 
-## 新增功能 {#whats-new}
+## 新增功能 {#what-is-new}
 
-* 刷新的Cloud Manager登錄頁體驗可改進導航功能，方便在網格/磁貼視圖之間切換，並可彈出窗口，快速獲得程式摘要。
+* [的 `reliability_rating` 臨界度量](understand-your-test-results.md) 已禁用。
+* 用戶現在可以對 **管線** 的子菜單。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 現在，回滾執行與完整堆棧管道執行正確區分。
-* 當生成新密碼時，舊Git儲存庫密碼始終無效。
+* [的 **跳過負載平衡器更改** 選項](configuring-production-pipelines.md#adding-production-pipeline) 現在可以正確禁用。
+* [的 **跳過負載平衡器更改** 選項](configuring-production-pipelines.md#adding-production-pipeline) 現在顯示編輯部署管道工作流。
+* 手動建立的Git儲存庫的子集具有不正確的名稱值，這影響了 [生成項目重用功能。](setting-up-project.md#build-artifact-reuse) 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
+* [添加或編輯代碼質量管道時，](configuring-non-production-pipelines.md) 不再顯示處理度量故障的選項。
+* 意外的管道變數配置不再導致生成步驟中的錯誤。
