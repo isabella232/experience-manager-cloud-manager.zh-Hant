@@ -3,7 +3,7 @@ title: 2022.3.0 版發行說明
 description: 這些是Cloud Manager 2022.3.0版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6e98f9d2fcd69799bad86d1e247212b26273bd0b
+source-git-commit: 0d14adda454889eebbb0a875978ceeaa5ee4f7ea
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 4%
@@ -25,8 +25,9 @@ ht-degree: 4%
 
 ## 新增功能 {#what-is-new}
 
-* [的 `reliability_rating` 臨界度量](understand-your-test-results.md) 已禁用。
-* 用戶現在可以對 **管線** 的子菜單。
+* (僅Cloud Service)訪AEM問「環境」日誌可以使用「開發人員」角色完成。
+* 的 [`reliability_rating` 臨界度量](understand-your-test-results.md) 已禁用。
+
 
 ## 錯誤修正 {#bug-fixes}
 
