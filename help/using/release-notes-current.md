@@ -1,19 +1,19 @@
 ---
-title: 2022.3.0 版發行說明
-description: 這些是Cloud Manager 2022.3.0版的發行說明。
+title: 2022.4.0 版發行說明
+description: 這些是Cloud Manager 2022.4.0版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 4a5ddf3144ec50f1a7a4ac367b5c99bc9b486752
+source-git-commit: 3d4eea13c0f2e9c4030bbfd3b7c5c25336548498
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '277'
+ht-degree: 2%
 
 ---
 
 
-# Cloud Manager版本2022.3.0的發行說明 {#release-notes}
+# Cloud Manager版本2022.4.0的發行說明 {#release-notes}
 
-此頁記錄的發行說明 [!UICONTROL Cloud Manager] 2022.3.0版。
+此頁記錄的發行說明 [!UICONTROL Cloud Manager] 2022.4.0版。
 
 >[!NOTE]
 >
@@ -21,18 +21,15 @@ ht-degree: 0%
 
 ## 發行日期 {#release-date}
 
-發放日期 [!UICONTROL Cloud Manager] 2022.3.0版為2022年3月10日。 下一版計畫於2022年4月7日發行。
+發放日期 [!UICONTROL Cloud Manager] 2022.4.0版為2022年4月7日。 下一版計畫於2022年5月5日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 來自資產test的出站HTTP請求現在將來自固定IP範圍。
-
-
-## 錯誤修正 {#bug-fixes}
-
-* 的 **跳過負載平衡器更改** 無法禁用。
-* 的 **跳過負載平衡器更改** 選項未顯示在AMS上。開發部署 **編輯管道工作流**。
-* 手動建立的Git儲存庫的子集具有不正確的名稱值，這防止了生成項目重用功能的有效性。 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
-* 來自非生產管道的生成工件在生產完整堆棧管道上被不恰當地重複使用。
-* 添加或編輯代碼質量管道時，不再顯示處理度量失敗的選項。
-* 生成步驟中可能會導致某些意外的管道變數配置。
+* 管道構建步驟的持續時間和成功率的改進已經實施，並將在4月份以增量方式向所有客戶推出。
+* 現在，通過在「添加和編輯管道嚮導」的輸入欄位中鍵入名稱的前幾個字元並從建議的匹配項中選擇，您可以輕鬆找到git分支。
+* 的 **管線** 頁面現在具有分頁功能，可提高具有大量管道的程式的可用性。
+   * 表中將顯示每頁50行。
+* 的版本 [項AEM目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 已將雲管理器使用的版本更新為36。
+* OracleJDK現在是應用程式開發和操作的預設JDKAEM。 即使在Maven工具鏈中顯式選擇了替代選項，Cloud Manager生成過程也將自動切換到使用OracleJDK。
+   * 有關如何切換到OracleJDK的詳細資訊，請參閱 [生成環境文檔。](/help/using/build-environment-details.md#using-java-support)
+   * 請參閱 [Adobe Experience Manager常見問題的Java支援策略](https://experienceleague.adobe.com/docs/experience-manager-65/assets/Java_Policy_for_Adobe_Experience_Manager.pdf) 以解決有關此更改的常見問題。
