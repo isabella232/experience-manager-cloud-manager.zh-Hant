@@ -1,7 +1,7 @@
 ---
 title: 部署程式碼
 seo-title: Deploy your Code
-description: 提供Cloud Manager中部署程式的概觀
+description: 提供Cloud Manager中部署過程的概述
 seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
+source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 1%
@@ -19,26 +19,26 @@ ht-degree: 1%
 
 # 部署程式碼 {#deploy-your-code}
 
-## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
+## 使用雲管理器部署代碼 {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->若要了解如何在AEMas a Cloud Service中部署Cloud Manager的程式碼，請參閱[此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)。
+>要瞭解有關在as a Cloud Service中部署Cloud Manager的代AEM碼，請參閱 [這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)。
 
-一旦配置了生產管道（儲存庫、環境和測試環境），您就可以部署代碼。
+配置了生產管道（儲存庫、環境和測試環境）後，您就可以部署代碼了。
 
-1. 按一下Cloud Manager中的&#x200B;**Deploy**&#x200B;以啟動部署過程。
+1. 按一下 **部署** 啟動部署過程。
 
    ![](assets/Deploy1.png)
 
-1. 將顯示&#x200B;**Pipeline Execution**&#x200B;螢幕。
+1. 的 **管道執行** 螢幕。
 
-   按一下&#x200B;**Build**&#x200B;以啟動進程。
+   按一下 **生成** 以啟動進程。
 
    ![](assets/Deploy2.png)
 
-1. 完成的建置程式會部署您的程式碼。
+1. 完整的生成過程將部署您的代碼。
 
-   建置程式涉及下列階段：
+   構建過程涉及以下階段：
 
    1. 階段部署
    1. 階段測試
@@ -46,150 +46,150 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >此外，您也可以檢視記錄或檢閱測試條件的結果，以檢閱各種部署程式的步驟。
+   >此外，您還可以通過查看日誌或查看結果來查看各種部署流程中的步驟，以瞭解測試標準。
 
    「 **舞台部署**」涉及以下步驟：
 
-   * 驗證：此步驟可確保管道配置為使用當前可用資源，例如，配置的分支存在，環境可用。
-   * 構建和單元測試：此步驟會執行容器化的建置程式。 如需有關建置環境的詳細資訊，請參閱[了解建置環境](/help/using/build-environment-details.md)。
-   * 代碼掃描：此步驟會評估應用程式程式碼的品質。 如需測試程式的詳細資訊，請參閱[了解測試結果](understand-your-test-results.md)。
-   * 部署至預備
+   * 驗證：此步驟確保將管道配置為使用當前可用資源，例如，配置的分支存在，環境可用。
+   * 構建和單元測試：此步驟將運行集裝箱化生成進程。 請參閱 [瞭解構建環境](/help/using/build-environment-details.md) 的子菜單。
+   * 代碼掃描：此步驟將評估應用程式碼的質量。 請參閱 [瞭解您的Test結果](understand-your-test-results.md) 的子菜單。
+   * 部署到階段
 
    ![](assets/Stage_Deployment1.png)
 
-   **階段測試**&#x200B;涉及以下步驟：
+   的 **階段測試**，涉及以下步驟：
 
-   * 安全測試：此步驟會評估應用程式程式碼對AEM環境的安全性影響。 如需測試程式的詳細資訊，請參閱[了解測試結果](understand-your-test-results.md)。
-   * 效能測試：此步驟會評估應用程式程式碼的效能。 如需測試程式的詳細資訊，請參閱[了解測試結果](understand-your-test-results.md)。
+   * 安全測試：此步驟評估應用程式碼對環境的安全AEM影響。 請參閱 [瞭解您的Test結果](understand-your-test-results.md) 的子菜單。
+   * 效能測試：此步驟評估應用程式碼的效能。 請參閱 [瞭解您的Test結果](understand-your-test-results.md) 的子菜單。
 
    ![](assets/Stage_Testing1.png)
 
-   **生產部署**&#x200B;涉及以下步驟：
+   的 **生產部署**，涉及以下步驟：
 
-   * **申請核准** （如果已啟用）
-   * **排程生產部署** （如果已啟用）
+   * **申請審批** （如果已啟用）
+   * **計畫生產部署** （如果已啟用）
    * **CSE支援** （如果已啟用）
-   * **部署至生產環境**
+   * **部署到生產**
 
    ![](assets/Prod_Deployment1.png)
 
    >[!NOTE]
    >
-   >在設定管道時，會啟用&#x200B;**排程生產部署**。
+   >的 **計畫生產部署** 在配置管道時啟用。
    >
    >
-   >使用此選項，可以計畫生產部署，或按一下&#x200B;**Now**&#x200B;立即執行生產部署。
+   >使用此選項，您可以計畫生產部署，或按一下 **現在** 立即執行生產部署。
    >
    >
-   >排程的日期和時間會根據使用者的時區指定。
+   >計畫的日期和時間根據用戶的時區指定。
    >
    >
-   >按一下&#x200B;**確認**&#x200B;以驗證您的設定。
+   >按一下 **確認** 來驗證您的設定。
 
    ![](assets/Production_Deployment1.png)
 
-   確認部署排程後，程式碼部署即告完成。
+   確認部署計畫後，代碼部署即完成。
 
-   從上述步驟中選取&#x200B;**Now**&#x200B;選項時，會顯示下列畫面。
+   顯示以下螢幕，時間 **現在** 的雙曲餘切值。
 
    ![](assets/Production_Deployment2.png)
 
-## 逾時 {#timeouts}
+## 超時 {#timeouts}
 
-如果讓您等候使用者意見回饋，下列步驟會逾時：
+如果留在等待用戶反饋，以下步驟將超時：
 
 | 步驟 | 逾時 |
 |--- |--- |
-| 程式碼品質測試 | 7天 |
-| 安全性測試 | 7天 |
-| 效能測試 | 7天 |
-| 申請批准 | 7天 |
-| 排程生產部署 | 7天 |
-| CSE支援 | 7天 |
+| 代碼質量測試 | 14天 |
+| 安全測試 | 14天 |
+| 效能測試 | 14天 |
+| 申請審批 | 14天 |
+| 計畫生產部署 | 14天 |
+| CSE支援 | 14天 |
 
 ## 部署過程 {#deployment-process}
 
-以下章節說明如何在階段階段和生產階段部署AEM和Dispatcher套件。
+以下部分介紹在AEM階段階段和生產階段如何部署和調度程式包。
 
-Cloud Manager會將建置程式產生的所有target/*.zip檔案上傳至儲存位置。  在管道的部署階段，會從此位置檢索這些對象。
+Cloud Manager將生成過程生成的所有目標/*.zip檔案上載到儲存位置。  在管線的部署階段，將從此位置檢索這些對象。
 
-當Cloud Manager部署至非生產拓撲時，目標是盡快完成部署，因此成品會同時部署至所有節點，如下所示：
+當Cloud Manager部署到非生產拓撲時，目標是盡快完成部署，因此將對象同時部署到所有節點，如下所示：
 
-1. Cloud Manager會判斷每個工件是AEM或Dispatcher套件。
-1. Cloud Manager會從負載平衡器中移除所有調度程式，以在部署期間隔離環境。
+1. Cloud Manager確定每個對象是AEM包還是分派程式包。
+1. Cloud Manager從負載平衡器中刪除所有調度程式，以在部署期間隔離環境。
 
-   除非另有配置，否則您可以跳過開發和階段部署中的負載平衡器更改，即分離和附加非生產管道中的步驟，用於開發環境，以及生產管道，用於預備環境。
+   除非另有配置，否則您可以跳過開發和階段部署中的負載平衡器更改，即在非生產管道、開發環境和生產管道中分離和附加階段環境的步驟。
 
    ![](assets/load_balancer.png)
 
    >[!NOTE]
    >
-   >此功能預計主要供1-1-1名客戶使用。
+   >此功能預計主要由1-1-1客戶使用。
 
-1. 每個AEM工件都會透過套件管理器API部署至每個AEM執行個體，且套件相依性會決定部署順序。
+1. 每個AEM項目都通過包管AEM理器API部署到每個實例，並且包依賴關係決定部署順序。
 
-   要進一步了解如何使用包來安裝新功能、在實例之間轉移內容以及備份儲存庫內容，請參閱如何使用包。
+   有關如何使用軟體包來安裝新功能、在實例之間傳輸內容以及備份儲存庫內容的詳細資訊，請參閱如何使用軟體包。
 
    >[!NOTE]
    >
-   >所有AEM成品都部署至作者和發佈者。 需要節點特定設定時，應運用執行模式。 若要進一步了解執行模式可如何讓您針對特定用途調整AEM執行個體，請參閱執行模式。
+   >所有AEM對象都部署到作者和發佈者。 當需要特定於節點的配置時，應利用運行模式。 要瞭解有關運行模式如何允許您針對特定目AEM的調整實例的詳細資訊，請參閱運行模式。
 
-1. Dispatcher工件會依下列方式部署至每個Dispatcher:
+1. 調度程式項目按如下方式部署到每個調度程式：
 
-   1. 當前配置被備份並複製到臨時位置
-   1. 除不可變的檔案外，所有配置都將被刪除。 如需詳細資訊，請參閱管理Dispatcher設定。 這會清除目錄，以確保不會留下任何孤立的檔案。
-   1. 將對象提取到`httpd`目錄。  不可覆寫的檔案。 在部署時，您對Git存放庫中不可變的檔案所做的任何變更都會被忽略。  這些檔案是AMS Dispatcher架構的核心，無法變更。
-   1. Apache會執行設定測試。 若未找到錯誤，則會重新載入服務。 如果發生錯誤，則會從備份還原設定、重新載入服務，並將錯誤回報至Cloud Manager。
-   1. 管道設定中指定的每個路徑都會失效或從Dispatcher快取中清除。
-
-   >[!NOTE]
-   >Cloud Manager預期Dispatcher工件會包含完整的檔案集。  所有Dispatcher設定檔都必須存在於Git存放庫中。 缺少檔案或資料夾將導致部署失敗。
-
-1. 成功將所有AEM和Dispatcher套件部署至所有節點後，Dispatcher會新增回負載平衡器，且部署完成。
+   1. 將當前配置備份並複製到臨時位置
+   1. 除不可變檔案外，所有配置都將被刪除。 有關詳細資訊，請參閱管理Dispatcher配置。 這將清除目錄，以確保不會留下孤立檔案。
+   1. 將偽影提取到 `httpd` 的子菜單。  不可改寫的檔案。 在部署時，您對Git儲存庫中不可變檔案所做的任何更改都將被忽略。  這些檔案是AMS分派程式框架的核心，無法更改。
+   1. Apache執行配置test。 如果找不到錯誤，則重新載入服務。 如果發生錯誤，則從備份中恢復配置，重新載入服務，並將錯誤報告回雲管理器。
+   1. 在流水線配置中指定的每個路徑被無效或從調度程式快取中刷新。
 
    >[!NOTE]
-   >您可以跳過開發和預備部署中的負載平衡器更改，即在非生產管道、開發人員環境和生產管道中（用於預備環境）分離和附加步驟。
+   >Cloud Manager希望調度程式項目包含完整檔案集。  所有調度程式配置檔案必須存在於Git儲存庫中。 缺少檔案或資料夾將導致部署失敗。
 
-### 部署至生產階段 {#deployment-production-phase}
+1. 成功將所有包和AEM調度程式包部署到所有節點後，調度程式將重新添加到負載平衡器，部署完成。
 
-部署至生產拓撲的程式稍有不同，以將對AEM網站訪客的影響降至最低。
+   >[!NOTE]
+   >您可以跳過開發和階段部署中的負載平衡器更改，即在非生產管道、開發人員環境和生產管道中對階段環境分離和附加步驟。
 
-生產部署通常會依照上述步驟進行，但以滾動方式進行：
+### 部署到生產階段 {#deployment-production-phase}
 
-1. 部署AEM套件以製作。
-1. 從負載平衡器分離dispatcher1。
-1. 將AEM套件部署至publish1，並將Dispatcher套件並行部署至Dispatcher1，排清Dispatcher快取。
+部署到生產拓撲的過程略有不同，以最大限度地減少對站點訪AEM問者的影響。
+
+生產部署通常遵循與上述步驟相同的步驟，但是以滾動方式：
+
+1. 部署AEM要創作的包。
+1. 從負載平衡器中分離Dispatcher1。
+1. 將包部AEM署到publish1 ，將調度程式包部署到並行刷新的調度程式快取中的dispatcher1。
 1. 將dispatcher1放回負載平衡器。
-1. 當dispatcher1重新服務後，請從負載平衡器分離dispatcher2。
-1. 將AEM套件部署至publish2，並將Dispatcher套件並行部署至Dispatcher2，排清Dispatcher快取。
-1. 將dispatcher2放回負載平衡器。
-此過程將繼續，直到部署已到達拓撲中的所有發佈商和調度程式。
+1. 一旦dispatcher1恢復服務，將dispatcher2與負載平衡器分離。
+1. 將包部AEM署到publish2，將調度程式包部署到並行刷新的調度程式快取中的dispatcher2。
+1. 將dispatcher2放回負載平衡器中。
+此過程一直持續到部署到達拓撲中的所有發佈者和調度程式為止。
 
 ## 緊急管道執行模式 {#emergency-pipeline}
 
-在緊急情況下，Adobe Managed Services客戶可能需要將程式碼變更部署至其預備和生產環境，而不需等待Cloud Manager完整測試週期執行。
+在關鍵情況下，Adobe Managed Services客戶可能需要將代碼更改部署到其階段和生產環境，而無需等待Cloud Managertest週期的完整執行。
 
-為了解決這些情況，Cloud Manager生產管道可以在&#x200B;*緊急*&#x200B;模式下執行。 使用此模式時，不會執行安全和效能測試步驟；所有其他步驟（包括任何已設定的核准步驟）則以正常管道執行模式中的方式執行。
+要解決這些情況，Cloud Manager生產管道可以在 *緊急* 的子菜單。 使用此模式時，不執行安全和效能test步驟；所有其他步驟（包括任何已配置的批准步驟）都按照正常管道執行模式執行。
 
 >[!NOTE]
->緊急管道執行模式功能由客戶成功工程師按程式啟動。
+>緊急管道執行模式功能由客戶成功工程師根據程式激活。
 
 ### 使用緊急管道執行模式 {#using-emergency-pipeline}
 
-在啟動生產管道執行時，如果已激活此功能，則可以從對話框以正常或緊急模式啟動執行，如下圖所示。
+啟動生產管道執行時，如果已激活此功能，則可以從對話框以正常或緊急模式啟動執行，如下圖所示。
 
 ![](assets/execution-emergency1.png)
 
-此外，查看在緊急模式下運行的執行的管道執行詳細資訊頁面時，螢幕頂部的瀏覽路徑標示將顯示用於此特定執行的緊急模式指示器。
+此外，查看以緊急模式運行的執行的管道執行詳細資訊頁面時，螢幕頂部的breadcrumbs會顯示用於此特定執行的緊急模式的指示器。
 
 ![](assets/execution-emergency2.png)
 
 
-您也可以透過Cloud Manager API或CLI，在此緊急模式下建立管道執行。 要在緊急模式下啟動執行，請使用查詢參數`?pipelineExecutionMode=EMERGENCY`或在使用CLI時向管道的執行端點提交PUT請求：
+也可以通過Cloud Manager API或CLI在此緊急模式下建立管道執行。 要在緊急模式下啟動執行，請使用查詢參數將PUT請求提交到管道的執行終結點 `?pipelineExecutionMode=EMERGENCY` 或，在使用CLI時：
 
 ```
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
 >[!IMPORTANT]
->使用`--emergency`標幟可能需要更新至最新的`aio-cli-plugin-cloudmanager`版本。
+>使用 `--emergency` 標誌可能需要更新到最新 `aio-cli-plugin-cloudmanager` 。
