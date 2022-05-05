@@ -3,10 +3,10 @@ title: 2022.5.0 版發行說明
 description: 這些是Cloud Manager 2022.5.0版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 84cc4352488002ad40102ea2c507af652d9012a1
+source-git-commit: 59e57e33e52b2749865f8c92a8d947c9a04ffe79
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 4%
+source-wordcount: '137'
+ht-degree: 6%
 
 ---
 
@@ -25,13 +25,11 @@ ht-degree: 4%
 
 ## 新增功能 {#what-is-new}
 
-來自資產test的出站HTTP請求現在將來自固定IP範圍。
+* 「環境」(Environments)頁面中有一列可顯AEM示「環境版本」(Version of environment)。
+* 管道執行現在將在執行螢幕上顯示UI頂級錯誤。
+* 已更新預設配置以包括暫停到B/G配置。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 無法禁用「跳過負載平衡器」更改選項。
-* 未在AMS上顯示「跳過負載平衡器更改」選項。開發人員部署編輯管道工作流。
-* 手動建立的GIT儲存庫的子集具有不正確的名稱值，這妨礙了生成項目重用功能的有效性。 這些資料庫的名稱已更改，用戶將在Cloud Manager API/UI中看到更正的名稱。
-* 來自非生產管道的生成工件在生產完整堆棧管道上被不恰當地重複使用。
-* 添加或編輯代碼質量管道時，不再顯示處理度量失敗的選項。
-* 某些意外的管道變數配置可能導致生成步驟中出現錯誤。
+* 誤導效能test結果，出現504超時錯誤。
+* 某些執行被困在提交觸發和取消批准步驟的上下文中。
