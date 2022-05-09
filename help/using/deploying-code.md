@@ -10,9 +10,9 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
+source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,6 @@ Cloud Manager將生成過程生成的所有目標/*.zip檔案上載到儲存位�
 
 ![](assets/execution-emergency2.png)
 
-
 也可以通過Cloud Manager API或CLI在此緊急模式下建立管道執行。 要在緊急模式下啟動執行，請使用查詢參數將PUT請求提交到管道的執行終結點 `?pipelineExecutionMode=EMERGENCY` 或，在使用CLI時：
 
 ```
@@ -193,3 +192,73 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 >[!IMPORTANT]
 >使用 `--emergency` 標誌可能需要更新到最新 `aio-cli-plugin-cloudmanager` 。
+
+## 重新執行生產部署 {#Reexecute-Deployment}
+
+對於生產部署步驟已完成的執行，支援重新執行生產部署步驟。 完成類型不重要 — 部署可能成功（僅適用於AMS程式）、取消或失敗。 話雖如此，預計主要使用案例將是生產部署步驟因暫時原因而失敗的案例。 重新執行使用同一管道建立新執行。 此新執行包括三個步驟：
+
+1. 驗證步驟 — 這實質上與正常管道執行期間發生的驗證相同。
+1. 生成步驟 — 在重新執行的上下文中，生成步驟是複製對象，而不是實際執行新的生成進程。
+1. 生產部署步驟 — 與正常管道執行中的生產部署步驟使用相同的配置和選項。
+
+生成步驟在UI中的標籤可能稍有不同，以反映它正在複製對象，而不是重新生成。
+
+![](assets/Re-deploy.png)
+
+限制:
+
+* 重新執行生產部署步驟將僅在上次執行時可用。
+* 無法重新執行回滾執行。
+* 如果上次執行是回滾執行，則不可能重新執行。
+* 如果上次執行是推式更新執行，則不可能重新執行。
+* 如果上次執行在生產部署步驟之前的任何時間點失敗，則無法重新執行。
+
+### 重新執行API {#Reexecute-API}
+
+### 標識重新執行
+
+為了確定執行是否是重新執行，可檢查觸發欄位。 它的價值是 *執行(_E)*。
+
+### 觸發新執行
+
+要觸發重新執行，需要向HAL連結&lt;(PUT請求)<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>。 如果存在此連結，則可以從該步驟重新啟動執行。 如果缺少，則無法從該步驟重新啟動執行。 在初始版本中，此連結將只出現在生產部署步驟中，但將來的版本可能支援從其他步驟啟動管道。 範例:
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+HAL連結的語法 *href*  以上值不打算用作參考點。 實際值應始終從HAL連結中讀取而不是生成。
+
+提交 *PUT* 對此終結點的請求將導致 *201* 如果成功，則響應主體將表示新執行。 這類似於通過API啟動常規執行。
