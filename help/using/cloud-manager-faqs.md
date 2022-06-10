@@ -5,9 +5,9 @@ description: 請參閱Cloud Manager常見問題以獲取一些故障排除提示
 seo-description: Follow this page to get answers on Cloud Manager FAQs
 feature: Getting Started
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
+source-git-commit: 6dce1f48b66c6970c3ba025031f0adcbd01195dd
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,13 @@ ht-degree: 0%
 
 * 對於Cloud Manager生成，Maven Enforcer插件失敗，並出現錯誤 `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`。 這是已知問題，因為Cloud Manager使用不同版本的Java運行maven命令而不是編譯代碼。 暫時省略 `requireJavaVersion` 從maven-enforcer插件配置中。
 
-## 由於代碼質量檢查失敗，我們的部署停滯。 有辦法繞過這張支票嗎？ {#deployment-stuck}
+## 由於代碼質量檢查失敗，我們的部署被卡住。 有辦法繞過這張支票嗎？ {#deployment-stuck}
 
-所有代碼質量失敗(除 *安全等級* 是非關鍵度量，因此可以通過擴展結果UI中的項來繞過這些度量。
+可以。 所有代碼質量失敗， *安全等級* 是非關鍵度量，因此可以通過擴展結果UI中的項來將它們作為部署管道的一部分跳過。
 
-具有 [部署經理、項目經理或業務所有者](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) 角色可以覆蓋問題，在這種情況下，管線將繼續，或者他們可以接受問題，在這種情況下，管線將因失敗而停止。  請參閱 [運行管道時的三層門](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) 的子菜單。
+具有 [部署經理、項目經理或業務所有者](/help/using/setting-up-users-and-roles.md#role-definitions) 角色可以覆蓋問題，在這種情況下，管線將繼續，或者他們可以接受問題，在這種情況下，管線將因失敗而停止。
+
+查看文檔 [運行管道時的三層門](/help/using/understand-your-test-results.md#three-tier-gates-while-running-a-pipeline) 和 [配置非生產管道](/help/using/configuring-non-production-pipelines.md#understanding-the-flow) 的子菜單。
 
 ## 在Adobe Managed Services環境中，在效能test步驟中Cloud Manager部署失敗。 我們如何調試此項以傳遞關鍵指標？ {#debug-critical-metrics}
 

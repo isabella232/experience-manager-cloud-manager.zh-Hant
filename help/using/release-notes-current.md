@@ -3,10 +3,10 @@ title: 2022.6.0 版發行說明
 description: 這些是Cloud Manager 2022.6.0版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 844aa7c697c793af05766048ef4263a1bba87c94
+source-git-commit: 6dce1f48b66c6970c3ba025031f0adcbd01195dd
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 6%
+source-wordcount: '179'
+ht-degree: 3%
 
 ---
 
@@ -29,4 +29,8 @@ ht-degree: 6%
    * 此功能將在發佈後的一週內分階段2022.06.0出。
 * [現在可以重用生成對象](/help/using/setting-up-project.md#build-artifact-reuse) 使用git鏡像時。
 
-## 錯誤修正 {#bug-fixes}
+## API更改 {#api-changes}
+
+* 的 [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API已棄用， [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) 應改為使用。
+   * `List Programs` 繼續工作，但其使用將在日誌中生成警告消息。
+   * 三個月後，它將不再得到支援。
