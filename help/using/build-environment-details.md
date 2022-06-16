@@ -1,48 +1,48 @@
 ---
-title: 了解建置環境
-description: 請詳閱本頁以了解環境
+title: 瞭解構建環境
+description: 按照此頁瞭解環境
 feature: Environments
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
+source-git-commit: 9959f649e553d0ff6d41a70a468bec3e2e854d75
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
 
-# 了解建置環境 {#build-environment-details}
+# 瞭解構建環境 {#build-environment-details}
 
-Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 此環境具有下列屬性：
+Cloud Manager使用專用的生成環境生成和test您的代碼。 此環境具有以下屬性：
 
-* 建置環境是以Linux為基礎，衍生自Ubuntu 18.04。
+* 構建環境基於Linux，源自Ubuntu 18.04。
 * 已安裝Apache Maven 3.6.0。
-* 安裝的Java版本為OracleJDK 8u202、Azul Zulu 8u292、OracleJDK 11.0.2和Azul Zulu 11.0.11。
-* 預設情況下，JAVA_HOME環境變數設定為`/usr/lib/jvm/jdk1.8.0_202`，其中包含OracleJDK 8u202。 如需詳細資訊，請參閱[替代Maven執行JDK版本](#alternate-maven)一節。
-* 安裝了一些必需的附加系統軟體包：
+* 安裝的Java版本是OracleJDK 8u202、Azul Zulu 8u292、OracleJDK 11.0.2和Azul Zulu 11.0.11。
+* 預設情況下，JAVA_HOME環境變數設定為 `/usr/lib/jvm/jdk1.8.0_202` 包含OracleJDK 8u202。 請參閱 [備用Maven執行JDK版本](#alternate-maven) 的子菜單。
+* 安裝了一些其他系統軟體包，這是必要的：
 
    * bzip2
-   * unzip
+   * 解壓縮
    * libpng
-   * imagemagick
-   * graphismagick
+   * 影像
+   * 圖形
 
-* 其他軟體包可在生成時安裝，如[下面所述](#installing-additional-system-packages)。
-* 每棟建築都是在原始環境下建造的；建置容器不會在執行之間保留任何狀態。
-* Maven一律使用下列三個命令執行：
+* 其他軟體包可能會在生成時安裝，如所述 [下](#installing-additional-system-packages)。
+* 每棟建築都是在原始環境下完成的；生成容器不會保留執行之間的任何狀態。
+* Maven始終使用以下三個命令運行：
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven在系統級別配置，具有settings.xml檔案，該檔案使用名為`adobe-public`的配置檔案自動包括公共Adobe **Artifact**儲存庫。
-如需詳細資訊，請參閱[Adobe公用Maven存放庫](https://repo.adobe.com/) 。
+* Maven在系統級別配置了自動包括公共Adobe的settings.xml檔案 **藏物** 使用名為的配置檔案的儲存庫 `adobe-public`。
+請參閱 [Adobe公共Maven儲存庫](https://repo1.maven.org/) 的子菜單。
 
 >[!NOTE]
->雖然Cloud Manager未定義`jacoco-maven-plugin`的特定版本，但使用的版本至少必須為`0.7.5.201505241946`。
+>雖然Cloud Manager未定義特定版本 `jacoco-maven-plugin`，使用的版本必須至少為 `0.7.5.201505241946`。
 
 
 >[!NOTE]
->請參閱下列其他資源，了解如何使用Cloud Manager API:
+>請參閱以下其他資源，瞭解如何使用Cloud Manager API:
 > * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [建立API整合](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
 >* [API權限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
@@ -50,11 +50,11 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
 
 ## 使用特定Java版本 {#using-java-version}
 
-依預設，專案是由Cloud Manager建置程式使用Oracle8 JDK建置。 希望使用替代JDK的客戶有兩個選項：Maven工具鏈和為整個Maven執行過程選擇替代的JDK版本。
+預設情況下，項目由Cloud Manager生成進程使用Oracle8 JDK生成。 希望使用備用JDK的客戶有兩個選項：Maven工具鏈，並為整個Maven執行進程選擇備用JDK版本。
 
-### Maven工具鏈 {#maven-toolchains}
+### 馬文工具鏈 {#maven-toolchains}
 
-[Maven工具鏈插件](https://maven.apache.org/plugins/maven-toolchains-plugin/)允許項目選擇特定JDK（或&#x200B;*工具鏈*），以用於工具鏈感知的Maven插件的上下文。 通過指定供應商和版本值，在項目的`pom.xml`檔案中完成此操作。 `pom.xml`檔案中的範例區段為：
+的 [Maven工具鏈插件](https://maven.apache.org/plugins/maven-toolchains-plugin/) 允許項目選擇特定的JDK(或 *工具鏈*)。 在項目中完成 `pom.xml` 指定供應商和版本值。 中的示例部分 `pom.xml` 檔案為：
 
 ```xml
         <plugin>
@@ -79,65 +79,65 @@ Cloud Manager會使用專用的建置環境來建立和測試您的程式碼。 
 </plugin>
 ```
 
-這會導致所有工具鏈感知的Maven外掛程式都使用OracleJDK（第11版）。
+這將導致所有支援工具鏈的Maven插件使用OracleJDK版本11。
 
-使用此方法時，Maven本身仍使用預設的JDK(Oracle8)執行，且`JAVA_HOME`環境變數未變更。 因此，透過外掛程式（例如[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)）檢查或強制執行Java版本時無法運作，因此不得使用這類外掛程式。
+使用此方法時，Maven本身仍使用預設JDK(Oracle8)和 `JAVA_HOME` 環境變數未更改。 因此，通過插件(如 [Apache Maven Enforcer插件](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 不工作，因此不能使用此類插件。
 
 當前可用的供應商/版本組合包括：
 
-* oracle1.8
+* oracle一點八
 * oracle1.11
 * oracle11
-* sun 1.8
-* sun 1.11
-* sun 11
-* azul 1.8
-* azul 1.11
-* azul 8
+* 太陽1.8
+* 週日1.11
+* 11
+* 藍色1.8
+* 阿祖爾1.11
+* 藍色
 
 ### 備用Maven執行JDK版本 {#alternate-maven}
 
-還可以選擇Azul 8或Azul 11作為JDK，以執行整個Maven執行。 與工具鏈選項不同，這會更改用於所有插件的JDK，除非還設定了工具鏈配置，在這種情況下，工具鏈配置仍應用於具有工具鏈的Maven插件。 因此，使用[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)檢查並強制執行Java版本將有效。
+也可以選擇Azul 8或Azul 11作為整個Maven執行的JDK. 與工具鏈選項不同，這將更改用於所有插件的JDK，除非還設定了工具鏈配置，在這種情況下，仍將對具有工具鏈意識的Maven插件應用工具鏈配置。 因此，使用 [Apache Maven Enforcer插件](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 會奏效的。
 
-若要這麼做，請在管道使用的Git存放庫分支中建立名為`.cloudmanager/java-version`的檔案。 此檔案可包含內容11或8。 會忽略任何其他值。 如果指定了11，則使用Azul 11，並將JAVA_HOME環境變數設定為`/usr/lib/jvm/jdk-11.0.11`。 如果指定8，則使用Azul 8，並將JAVA_HOME環境變數設定為`/usr/lib/jvm/jdk-8.0.292`。
+為此，請建立名為 `.cloudmanager/java-version` 管道使用的git儲存庫分支中。 此檔案可以包含內容11或8。 忽略任何其他值。 如果指定了11，則使用Azul 11並將JAVA_HOME環境變數設定為 `/usr/lib/jvm/jdk-11.0.11`。 如果指定8，則使用Azul 8並將JAVA_HOME環境變數設定為 `/usr/lib/jvm/jdk-8.0.292`。
 
 ## 環境變數 {#environment-variables}
 
 ### 標準環境變數 {#standard-environ-variables}
 
-在某些情況下，客戶會發現必鬚根據方案或管道的相關資訊來變更建置程式。
+在某些情況下，客戶發現有必要根據有關計畫或管道的資訊更改構建過程。
 
-例如，如果正在執行建置時間JavaScript縮制，透過例如Gulp等工具，在建置開發環境時，可能會想使用不同的縮制層級，而非建置用於預備和生產。
+例如，如果正在執行生成時JavaScript小型化，則在構建開發環境時可能希望使用不同的小型化級別，而不是構建舞台和生產環境。
 
-為了支援此功能，Cloud Manager會將這些標準環境變數新增至每次執行的組建容器。
+為支援此功能，Cloud Manager將這些標準環境變數添加到每次執行的生成容器中。
 
 | **變數名稱** | **定義** |
 |---|---|
-| CM_BUILD | 一律設為「true」 |
+| CM_BUILD | 始終設定為&quot;true&quot; |
 | 分支 | 為執行配置的分支 |
-| CM_PIPELINE_ID | 數值管線識別碼 |
-| CM_PIPELINE_NAME | 管道名稱 |
-| CM_PROGRAM_ID | 數值程式標識符 |
-| CM_PROGRAM_NAME | 方案名稱 |
-| ENTRACTS_VERSION | 對於階段或生產管道，由Cloud Manager產生的合成版本 |
+| CM_PIPELINE_ID | 數字管道標識符 |
+| CM_PIPELINE_NAME | 管線名稱 |
+| CM_PROGRAM_ID | 數字程式標識符 |
+| CM_PROGRAM_NAME | 程式名稱 |
+| ARTACES_VERSION | 對於階段或生產管道，由Cloud Manager生成的合成版本 |
 
 ### 管道變數 {#pipeline-variables}
 
-某些情況下，客戶的建立程式可能取決於特定設定變數，這些變數不適合放置在Git存放庫中，或需使用相同分支在不同管道執行之間有所差異。
+在某些情況下，客戶的構建過程可能取決於特定的配置變數，這些變數不適合放置在Git儲存庫中，或需要在使用同一分支的管道執行之間有所不同。
 
-Cloud Manager允許透過Cloud Manager API或Cloud Manager CLI，依每個管道設定這些變數。 變數可儲存為純文字，或閒置時加密。 無論是哪種情況，變數都可在組建環境中作為環境變數使用，然後可從`pom.xml`檔案或其他組建指令碼內參照。
+Cloud Manager允許通過Cloud Manager API或Cloud Manager CLI按管道配置這些變數。 變數可以以純文字檔案形式儲存，也可以以靜態方式加密。 在兩種情況下，變數都可在生成環境中作為環境變數使用，然後可以從 `pom.xml` 檔案或其他生成指令碼。
 
-要使用CLI設定變數，請運行命令，如：
+要使用CLI設定變數，請運行如下命令：
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
-可列出目前的變數：
+可列出當前變數：
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-變數名稱只能包含英數字元和底線(_)字元。 按照慣例，名字應全部大寫。 若是字串類型變數，每個管道的變數數上限為200個，每個名稱必須少於100個字元，若是secretString類型變數，每個值必須少於2048個字元，若是secretString類型變數，則必須少於500個字元。
+變數名稱只能包含字母數字和下划線(_)字元。 按照慣例，名稱應全部為大寫。 每個管線有200個變數的限制，每個名稱必須少於100個字元，如果是字串類型變數，則每個值必須少於2048個字元，如果是secretString類型變數，則每個值必須少於500個字元。
 
-在`Maven pom.xml`檔案內使用時，使用類似下列的語法將這些變數對應至Maven屬性通常會很有幫助：
+當在 `Maven pom.xml` 檔案，通常使用類似以下語法將這些變數映射到Maven屬性會很有幫助：
 
 ```xml
         <profile>
@@ -156,7 +156,7 @@ Cloud Manager允許透過Cloud Manager API或Cloud Manager CLI，依每個管道
 
 ## 安裝其他系統包 {#installing-additional-system-packages}
 
-某些組建需要安裝額外的系統套件，才能完全運作。 例如，生成可以調用Python或ruby指令碼，因此需要安裝適當的語言解釋器。 若要這麼做，請呼叫[exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/)以叫用APT。 此執行通常會包裝在Cloud Manager專屬的Maven設定檔中。 例如，要安裝python:
+某些生成需要安裝其他系統軟體包才能完全運行。 例如，生成可以調用Python或ruby指令碼，因此需要安裝適當的語言解釋器。 通過調用 [exec-maven插件](https://www.mojohaus.org/exec-maven-plugin/) 調用APT。 此執行通常應包含在特定於雲管理器的Maven配置檔案中。 例如，要安裝python:
 
 ```xml
         <profile>
@@ -209,7 +209,7 @@ Cloud Manager允許透過Cloud Manager API或Cloud Manager CLI，依每個管道
         </profile>
 ```
 
-同樣的技術可用於安裝語言特定的軟體包，例如，對RubyGems使用`gem`，對Python軟體包使用`pip`。
+同樣的技術可用於安裝語言特定的軟體包，即使用 `gem` 用於RubyGems或 `pip` Python包。
 
 >[!NOTE]
->以此方式安裝系統套件會&#x200B;**不**&#x200B;將其安裝在用於執行Adobe Experience Manager的執行階段環境中。 若您需要AEM環境上安裝系統套件，請連絡您的Adobe代表。
+>以此方式安裝系統軟體包確實 **不** 將其安裝到用於運行Adobe Experience Manager的運行時環境中。 如果需要在環境中安裝系統包AEM，請與Adobe代表聯繫。

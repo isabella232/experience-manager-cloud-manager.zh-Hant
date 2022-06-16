@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 2179314120911cac8a0dd99a8b57974751959871
+source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2896'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要瞭解as a Cloud Service的Cloud Manager支援的testAEM，請參閱 [AEMas a Cloud Service文檔。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html)。
+>要瞭解as a Cloud Service的Cloud Manager支援的testAEM，請參閱 [AEMas a Cloud Service文檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html)。
 
 
 ## 三層評級  {#three-tier-gates-while-running-a-pipeline}
@@ -65,9 +65,9 @@ ht-degree: 3%
 
 | 名稱 | 定義 | 類別 | 故障閾值 |
 |--- |--- |--- |--- |
-| 安全等級 | A = No vulnerabilities<br/>B = At least 1 minor vulnerability<br/>C = At least 1 major vulnerability<br/>D = At least 1 critical vulnerability<br/>E = At least 1 blocker vulnerability | Critical | &lt; B |
-| 可靠性評級 | A = No bugs<br/>B = At least 1 minor bug <br/>C = At least 1 major bug<br/>D = At least 1 critical bug<br/>E = At least 1 blocker bug | 重要 | &lt; C |
-| Maintainability Rating | Defined by the outstanding remediation cost for code smells as a percentage of the time that has already gone into the application<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
+| 安全等級 | A =無漏洞<br/>B =至少1個次要漏洞<br/>C =至少1個主要漏洞<br/>D =至少1個嚴重漏洞<br/>E =至少1個阻止程式漏洞 | 關鍵 | &lt; B |
+| 可靠性評級 | A =無錯誤<br/>B =至少1個次要錯誤 <br/>C =至少1個主要錯誤<br/>D =至少1個嚴重錯誤<br/>E =至少1個阻止程式錯誤 | 重要 | &lt; C |
+| 可維護性評級 | 由代碼氣味的未清補救成本定義，該成本佔已進入應用程式的時間的百分比<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
 | 適用範圍 | 由單位test行覆蓋和條件覆蓋的混合使用公式定義： <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` =已評估為 `true` 運行設備test時至少一次</li><li>`CF` =已評估為 `false` 運行設備test時至少一次</li><li>`LC` =覆蓋行=行到覆蓋 — 未覆蓋行</li><li>`B` =條件總數</li><li>`EL` =可執行行（行到封面）總數</li></ul> | 重要 | &lt; 50% |
 | 跳過的設備Test | 跳過的設備test數 | 資訊 | > 1 |
 | 未解決問題 | 總體問題類型 — 漏洞、錯誤和代碼氣味 | 資訊 | > 0 |
@@ -76,7 +76,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->請參閱 [SonarQube的度量定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 的子菜單。
+>請參閱 [SonarQube的度量定義](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) 的子菜單。
 
 >[!NOTE]
 >
@@ -122,14 +122,14 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 這些相同的運行狀況檢查可以通過Web控制台或操作儀表板隨時執行。
 
-If any of the instances reports a failure for a given health check, the entire environment fails that health check. 與代碼質量和效能測試一樣，這些運行狀況檢查按類別組織，並使用三層門控系統進行報告。 The only distinction is that there is no threshold in the case of security testing. All the health checks are pass or fail.
+如果任何實例報告給定運行狀況檢查的失敗，則整個環境將不通過該運行狀況檢查。 與代碼質量和效能測試一樣，這些運行狀況檢查按類別組織，並使用三層門控系統進行報告。 唯一的區別是在安全測試中沒有閾值。 所有運行狀況檢查都通過或失敗。
 
 下表列出了運行狀況檢查。
 
-| 名稱 | Health Check Implementation | 類別 |
+| 名稱 | 運行狀況檢查實施 | 類別 |
 |---|---|---|
 | 反序列化防火牆連接API就緒性處於可接受狀態。 | [還原序列化防火牆附加 API 整備](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 關鍵 |
-| Deserialization firewall is functional. | [還原序列化防火牆已作用](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 關鍵 |
+| 反序列化防火牆功能正常。 | [還原序列化防火牆已作用](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 關鍵 |
 | 已載入反序列化防火牆。 | [還原序列化防火牆已載入](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) | 關鍵 |
 | `AuthorizableNodeName` 實現不會在節點名稱/路徑中公開可授權ID。 | [可授權節點名稱產生](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) | 關鍵 |
 | 預設密碼已更改。 | [預設登入帳戶](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#users-and-groups-in-aem) | 關鍵 |
@@ -156,7 +156,7 @@ Cloud Manager對AEM Sites程式執行效能測試。 效能test通過旋轉虛�
 
 #### 虛擬用戶 {#virtual-users}
 
-由Cloud Manager啟動的虛擬用戶或容器數由用戶定義的KPI（響應時間和頁面視圖/分鐘）驅動， **業務所有者** 角色 [建立或編輯程式。](setting-up-program.md) 根據定義的KPI，最多將分解10個模擬實際用戶的容器。 The pages that are selected for testing are split and assigned to each virtual user.
+由Cloud Manager啟動的虛擬用戶或容器數由用戶定義的KPI（響應時間和頁面視圖/分鐘）驅動， **業務所有者** 角色 [建立或編輯程式。](setting-up-program.md) 根據定義的KPI，最多將分解10個模擬實際用戶的容器。 選擇用於測試的頁被拆分並分配給每個虛擬用戶。
 
 #### 爬網程式 {#crawler}
 
@@ -194,11 +194,11 @@ Cloud Manager在臨時發佈伺服器上以未經過身份驗證的用戶身份�
 
 下表總結了使用三層門控系統的效能test矩陣。
 
-| 量度 | 類別 | Failure Threshold |
+| 量度 | 類別 | 故障閾值 |
 |---|---|---|
 | 頁面請求錯誤率 | 關鍵 | >= 2% |
 | CPU利用率 | 關鍵 | >= 80% |
-| Disk IO Wait Time | 關鍵 | >= 50% |
+| 磁碟IO等待時間 | 關鍵 | >= 50% |
 | 第95個百分位響應時間 | 重要 | >=方案級KPI |
 | 峰值響應時間 | 重要 | >= 18秒 |
 | 每分鐘頁面視圖 | 重要 | &lt;計畫級KPI |
@@ -210,11 +210,11 @@ Cloud Manager在臨時發佈伺服器上以未經過身份驗證的用戶身份�
 
 >[!NOTE]
 >
->作者和發佈實例都在test期間受到監視。 If any metric for one instance is not obtained, that metric is reported as unknown and the corresponding step will fail.
+>作者和發佈實例都在test期間受到監視。 如果未獲取某個實例的任何度量，則該度量將報告為未知，並且相應的步驟將失敗。
 
 #### 可選 — 經過身份驗證的效能測試 {#authenticated-performance-testing}
 
-If necessary, AMS customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during sites performance testing.
+如有必要，具有經過身份驗證的站點的AMS客戶可以指定Cloud Manager在站點效能測試期間用於訪問該網站的用戶名和密碼。
 
 用戶名和口令被指定為具有名稱的管線變數 `CM_PERF_TEST_BASIC_USERNAME` 和 `CM_PERF_TEST_BASIC_PASSWORD`。
 
@@ -250,11 +250,11 @@ Cloud Manager通過在30分鐘的test期內反複上載資產來執行AEM Assets
 
 #### 測試和報告 {#testing-and-reporting}
 
-Cloud Manager將在作者實例上使用CSE在中設定的用戶名和密碼建立資料夾 [入職要求](#onboaring-requirements) 的子菜單。 Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library.](https://github.com/adobe/toughday2) Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. 此功能可上載影像和PDF文檔。
+Cloud Manager將在作者實例上使用CSE在中設定的用戶名和密碼建立資料夾 [入職要求](#onboaring-requirements) 的子菜單。 然後，使用開源庫將資源上載到資料夾。 由「資產」測試步驟運行的test使用 [開啟源庫。](https://github.com/adobe/toughday2) 每個資產的處理時間以及各種系統級度量都在30分鐘的測試持續時間內進行測量。 此功能可上載影像和PDF文檔。
 
 >[!TIP]
 >
->請參閱文檔 [配置生產管道](configuring-production-pipelines.md) 來瞭解更多資訊。 Refer to the document [Setup your Program](setting-up-program.md) to learn how to setup your program and define your KPIs.
+>請參閱文檔 [配置生產管道](configuring-production-pipelines.md) 來瞭解更多資訊。 請參閱文檔 [設定程式](setting-up-program.md) 瞭解如何設定程式和定義KPI。
 
 ### 效能測試結果圖 {#performance-testing-results-graphs}
 
@@ -266,7 +266,7 @@ Cloud Manager將在作者實例上使用CSE在中設定的用戶名和密碼建�
 
 ![度量擴展為圖形](assets/screen_shot_2018-09-05at83933pm.png)
 
-This functionality is available for the following metrics.
+此功能可用於以下度量。
 
 * **CPU利用率**
    * test期間的CPU利用率圖
@@ -276,7 +276,7 @@ This functionality is available for the following metrics.
 
 * **頁錯誤率**
    * test期間每分鐘的頁錯誤圖
-   * A CSV file listing pages which have produced an error during the test
+   * CSV檔案列出在test期間出錯的頁
 
 * **磁碟頻寬利用率**
    * 磁碟頻寬在test期間的利用率圖
@@ -303,9 +303,10 @@ This functionality is available for the following metrics.
 
 對於生成數十個嵌入式軟體包的項目，顯示此優化後每執行管道可節省10分鐘。
 
-當「全部」內容包包含跳過的內容包和OSGi包的組合時，可能會出現特殊情況。 For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages previously mentioned as well as one or more OSGi bundles, then a new, minimal content package is constructed with only the OSGi bundles. 此包始終被命名 `cloudmanager-synthetic-jar-package` 包裝的束被放入 `/apps/cloudmanager-synthetic-installer/install`。
+當「全部」內容包包含跳過的內容包和OSGi包的組合時，可能會出現特殊情況。 例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 其中包含了之前提到的兩個嵌入式軟體包以及一個或多個OSGi包，然後僅使用OSGi包構建一個新的、最小的內容包。 此包始終被命名 `cloudmanager-synthetic-jar-package` 包裝的束被放入 `/apps/cloudmanager-synthetic-installer/install`。
 
 >[!NOTE]
 >
 >* 此優化不會影響部署到的包AEM。
 >* 由於嵌入式內容包和跳過的內容包之間的匹配基於檔案名，因此如果多個跳過的內容包具有相同的檔案名或在嵌入時更改了檔案名，則無法執行此優化。
+

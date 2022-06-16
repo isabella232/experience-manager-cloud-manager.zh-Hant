@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
+source-git-commit: 4c86446127c8cd66f964b192f3602f02fd2ddf8e
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 1%
@@ -221,7 +221,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 觸發新執行
 
-要觸發重新執行，需要向HAL連結&lt;(PUT請求)<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)>。 如果存在此連結，則可以從該步驟重新啟動執行。 如果缺少，則無法從該步驟重新啟動執行。 在初始版本中，此連結將只出現在生產部署步驟中，但將來的版本可能支援從其他步驟啟動管道。 範例:
+要觸發重新執行，需要向HAL連結發出PUT請求 ```http://ns.adobe.com/adobecloud/rel/pipeline/reExecute``` 生產部署步驟狀態。 如果存在此連結，則可以從該步驟重新啟動執行。 如果缺少，則無法從該步驟重新啟動執行。 在初始版本中，此連結將只出現在生產部署步驟中，但將來的版本可能支援從其他步驟啟動管道。 範例:
 
 ```Javascript
  {

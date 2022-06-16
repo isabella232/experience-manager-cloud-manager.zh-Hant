@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Code Quality Rules
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 834508109e34eb1e052abac482e981735c72d43d
+source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3609'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要瞭解as a Cloud Service中Cloud Manager的自定義代碼質量規AEM則，請參閱 [到本文檔。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager)。
+>要瞭解as a Cloud Service中Cloud Manager的自定義代碼質量規AEM則，請參閱 [到](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager)。
 
 >[!NOTE]
 >
@@ -651,7 +651,7 @@ OSGi配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定義中的預
 * 具有「經典UI設計」對話框的元件(即 `design_dialog` 節點)必須具有相應的觸摸UI設計對話框(即 `cq:design_dialog` 子節點)。
 * 具有「經典UI」對話框和「經典UI設計」對話框的元件必須同時具有相應的「觸摸UI」對話框和相應的「觸摸UI設計」對話框。
 
-「現代化工AEM具」文檔提供了如何將元件從經典UI轉換為Touch UI的詳細資訊和工具。 請參閱 [現代化工AEM具文檔 ](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 的子菜單。
+「現代化工AEM具」文檔提供了如何將元件從經典UI轉換為Touch UI的詳細資訊和工具。 請參閱 [現代化工AEM具文檔 ](https://opensource.adobe.com/aem-modernize-tools/) 的子菜單。
 
 ### 包不應混合可變和不可變內容 {#oakpal-packages-immutable}
 
