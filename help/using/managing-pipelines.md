@@ -1,10 +1,10 @@
 ---
 title: 管理管道
 description: 瞭解如何管理現有管道，包括編輯、運行和刪除這些管道。
-index: true
-source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
+exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
+source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 的 **管線** 卡 **計畫概述** Cloud Manager中的頁面將概述所有管道及其當前狀態。
 
-![雲管理器中的管道卡](/help/using/assets/configure-pipelines/pipelines-card.png)
+![雲管理器中的管道卡](/help/assets/configure-pipelines/pipelines-card.png)
 
 通過按一下每條管線旁邊的省略號按鈕，您可以執行以下操作。
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 在管線清單的底部，有常規選項。
 
-* **添加**  — 至 [添加新的生產管道](configuring-production-pipelines.md) 或 [添加新的非生產管道](configuring-non-production-pipelines.md)
-* **全部顯示**  — 將用戶帶至 **管線** 的子菜單。
+* **添加**  — 至 [添加新的生產管道](/help/using/production-pipelines.md) 或 [添加新的非生產管道](/help/using/non-production-pipelines.md)
+* **全部顯示**  — 將用戶帶至 **管線** 螢幕，查看更詳細的表中的所有管線
 * **訪問回購資訊**  — 顯示訪問Cloud Manager Git儲存庫所需的資訊
 * **瞭解更多資訊**  — 導航到CI/CD管道文檔資源。
 
@@ -55,8 +55,8 @@ ht-degree: 0%
 1. 的 **編輯生產管線** 或 **編輯非生產管線** 對話框，允許您編輯建立管線時輸入的相同詳細資訊。
 
    * 有關管道可用的所有欄位和配置選項的詳細資訊，請參閱以下頁。
-      * [配置生產管線](configuring-production-pipelines.md)
-      * [配置非生產管道](configuring-non-production-pipelines.md)
+      * [配置生產管線](/help/using/production-pipelines.md)
+      * [配置非生產管道](/help/using/non-production-pipelines.md)
 
 1. 按一下 **更新** 編輯完管線後。
 
@@ -82,9 +82,9 @@ ht-degree: 0%
 
 1. 您將被帶到正在運行的管道的詳細資訊頁面。
 
-![管道詳細資訊](/help/using/assets/configure-pipelines/pipeline-running-details.png)
+![管道詳細資訊](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-從此處，您可以查看管道的各個步驟的狀態，並檢索生成日誌以用於診斷目的。 查看文檔 [部署代碼](deploying-code.md) 的子菜單。
+從此處，您可以查看管道的各個步驟的狀態，並檢索生成日誌以用於診斷目的。 查看文檔 [代碼部署](/help/using/code-deployment.md) 的子菜單。
 
 >[!NOTE]
 >

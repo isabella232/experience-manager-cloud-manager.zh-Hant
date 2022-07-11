@@ -1,15 +1,10 @@
 ---
 title: 自訂程式碼品質規則
-description: 本頁介紹Cloud Manager執行的自定義代碼質量規則，作為代碼質量測試的一部分。 它們基於工程部門的最佳AEM實踐。
-uuid: a7feb465-1982-46be-9e57-e67b59849579
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
+description: 瞭解有關Cloud Manager根據工程部門的最佳實踐執行的自定義代碼質量規則的詳細資訊，這些規則是代碼質量測試的一AEM部分。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
+source-git-commit: 5fe0d20d9020e6b90353ef5a54e49c93be5c00be
 workflow-type: tm+mt
-source-wordcount: '3609'
+source-wordcount: '3575'
 ht-degree: 3%
 
 ---
@@ -17,11 +12,7 @@ ht-degree: 3%
 
 # 自訂程式碼品質規則 {#custom-code-quality-rules}
 
-本頁介紹Cloud Manager作為元件執行的自定義代碼質量規則 [代碼質量測試。](understand-your-test-results.md) 它們基於工程部門的最佳AEM實踐。
-
->[!NOTE]
->
->要瞭解as a Cloud Service中Cloud Manager的自定義代碼質量規AEM則，請參閱 [到](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager)。
+瞭解有關Cloud Manager作為元件執行的自定義代碼質量規則的詳細資訊 [代碼質量測試，](/help/using/code-quality-testing.md) 基於工程部門的最AEM佳實踐。
 
 >[!NOTE]
 >
