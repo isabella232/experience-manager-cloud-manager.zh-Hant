@@ -2,10 +2,10 @@
 title: AMS雲管理器簡介
 description: 從此處開始瞭解Adobe Managed Services(AMS)的雲管理器，以及它如何使組織能夠在雲中自我管理Adobe Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 22d40a1f07f56ee7a7dddb4897e4079f1e346674
+source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,7 @@ Cloud Manager提供附加的高級功能，這些功能可能會根據您特定�
 * 藍色/綠色部署是Cloud Manager CI/CD管道的附加元件，在該管道中，將建立第二組發佈和Dispatcher實例（綠色）並用於部署。 綠色實例隨後連接到生產負載平衡器，舊實例（藍色）被刪除並終止。
 * 藍色/綠色的這種實現方式將實例視為瞬態，藍色/綠色管道的每個迭代都將建立一組新的發佈和Dispatcher伺服器。
 * 將建立綠色負載平衡器作為安裝的一部分。 此負載平衡器將永不更改，並且您應將綠色或「test」URL指向。
-* 在藍色/綠色部署期間，將建立現有發佈/調度程式層的精確副本（從TDL讀取）。
+* 在藍色/綠色部署期間，將建立現有發佈/調度程式層的精確副本。
 
 #### 藍/綠部署流 {#flow}
 
