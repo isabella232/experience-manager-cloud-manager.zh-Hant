@@ -2,7 +2,7 @@
 solution: Experience Manager, Experience Manager Cloud Manager
 type: Documentation
 cloud: Experience Cloud
-git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-manager.zh-Hant
+git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.zh-Hant
 source-git-commit: 1d94b19c5d2016bab678a0d03b14b9ddf74ff020
 workflow-type: tm+mt
 source-wordcount: '111'
