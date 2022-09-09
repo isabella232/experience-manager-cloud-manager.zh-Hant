@@ -2,10 +2,10 @@
 title: 首次登入
 description: 如果您已設定一般設定，且已準備好第一次使用Cloud Manager，請遵循本頁面。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
+source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 3%
+source-wordcount: '255'
+ht-degree: 2%
 
 ---
 
@@ -39,3 +39,7 @@ ht-degree: 3%
 ## Cloud Manager活動 {#activity}
 
 Cloud Manager提供方案活動的整合檢視，列出所有CI/CD管道執行（生產和非生產），讓您能夠洞察過去和目前的活動。
+
+>[!NOTE]
+>
+>依預設，具有AEM環境存取權的使用者也會有Cloud Manager使用者角色。 此角色本身和本身不足以讓使用者存取方案詳細資料檢視。 只有Cloud Manager使用者角色的這類使用者，可透過方案功能表選項導覽至AEM環境製作URL（如果存在環境）。 如果這些用戶希望獲得程式級訪問權限，則必須與其管理員聯繫。
