@@ -1,44 +1,44 @@
 ---
-title: 使用「新建項目」嚮導
-description: 按照此頁瞭解如何使用嚮導建立應用程AEM序項目
+title: 使用新專案精靈
+description: 依照本頁面的說明進行，即可了解如何使用精靈來建立 AEM 應用程式專案。
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: cb791a4f148ba394687b5e824b75fe1386d83c18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 使用「新建項目」嚮導 {#using-the-wizard}
+# 使用新專案精靈 {#using-the-wizard}
 
-當您作為新客戶加入Cloud Manager時，將為您提供一個空git儲存庫。 為幫助您入門，Cloud Manger提供了一個嚮導，以根據 [項AEM目原型](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) 作為起點。
+當您加入 Cloud Manager 成為新客戶時，會為您提供一個空白的 Git 存放庫。為協助您開始使用，Cloud Manger 會提供精靈，以根據 [AEM 專案原型](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)來建立最低限度的 AEM 專案作為起點。
 
-按照以下步驟使AEM用嚮導建立項目。
+依照下列步驟操作，即可使用精靈來建立 AEM 專案。
 
-1. 登錄到Cloud Manager(位於 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 並選擇相應的組織。
+1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織。
 
-1. 如果你還沒有， [建立程式。](program-setup.md) 程式建立後，Cloud Manager將認識到尚未設定儲存庫，並會在 **概述** 的上界。
+1. 如果您尚未建立方案，可[建立您的方案。](program-setup.md)建立方案後，Cloud Manager 將識別尚未設定存放庫，並在&#x200B;**總覽**&#x200B;畫面上顯示特殊的召喚行動卡。
 
-   ![建立項目CTA](/help/assets/image2018-10-3_14-29-44.png)
+   ![建立專案 CTA](/help/assets/image2018-10-3_14-29-44.png)
 
-1. 按一下 **建立** 以啟動嚮導並提供重要值。
+1. 按一下&#x200B;**建立**，即可啟動精靈並提供重要的值。
 
-   * **標題**  — 這是項目的標題，預設設定為項目群名稱。
-   * **新建分支名稱**  — 這是您的Git儲存庫的初始分支，預設情況下 `main`。
+   * **標題** - 這指專案標題，並預設為方案名稱。
+   * **新分支名稱** - 這指 Git 存放庫的初始分支，並將預設為 `main`。
 
-   ![項目值](/help/assets/screen_shot_2018-10-08at55825am.png)
+   ![專案值](/help/assets/screen_shot_2018-10-08at55825am.png)
 
-1. 對話框有一個抽屜，可通過向下按一下手柄開啟。 該對話框以擴展形式顯示項目原型的所有配AEM置參數。 這些參數具有根據 **標題** 已提供，不需要修改。 此處將向您解釋這些資訊。
+1. 該對話框有一個抽屜，按一下朝向底部的控點即可將其開啟。該對話框在其擴展形式中會顯示 AEM 專案原型的所有設定參數。這些參數具有根據&#x200B;**標題**&#x200B;產生的預設值，這是您已經提供的，並不需要修改。此處提供說明，以供您參考。
 
-   ![詳細原型參數](/help/assets/screen_shot_2018-10-08at60032am.png)
+   ![詳細的原型參數](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. 按一下 **建立** 使用原型建立啟動程式項目並提交到命名的git分支。
+1. 按一下&#x200B;**建立**，以使用原型建立入門專案並認可已命名的 Git 分支。
 
-你現在有個基本項目！ 現在，您可以設定管道。
+您現在有基礎專案了！現在可以設定您的管道。
 
-## 現有或遷移客戶 {#existing-migrating}
+## 現有或遷移的客戶 {#existing-migrating}
 
-如果您是當前的Adobe Managed Services(AMS)客戶或要遷移到的內部客戶AEM，則您可能已經擁有git或其他版本控制系統中的項目代碼。
+如果您目前是 Adobe Managed Services (AMS) 客戶或正要遷移成為的內部部署 AEM 客戶，您可能已經在 Git 或其他版本控制系統中擁有專案程式碼。
 
-在這種情況下，您會將項目導入到Cloud Manager Git儲存庫。
+在這種情況下，您會將專案匯入 Cloud Manager Git 存放庫中。
