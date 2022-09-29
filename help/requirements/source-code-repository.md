@@ -1,31 +1,31 @@
 ---
-title: 原始碼存放庫
-description: 瞭解為您在Cloud Manager中擁有的每個程式設定的Git儲存庫。
+title: 原始程式碼存放庫
+description: 了解為您在 Cloud Manager 中擁有的每個方案佈建的 Git 存放庫。
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 原始碼存放庫 {#source-code-repository}
+# 原始程式碼存放庫 {#source-code-repository}
 
-瞭解為您在Cloud Manager中擁有的每個程式設定的Git儲存庫。
+了解為您在 Cloud Manager 中擁有的每個方案佈建的 Git 存放庫。
 
-## Cloud Manager儲存庫 {#cloud-manager-repository}
+## Cloud Manager 存放庫 {#cloud-manager-repository}
 
-您 [!UICONTROL AEM Managed Services] 訂閱包括原始碼儲存庫，該儲存庫由Adobe設定和管理。 每個程式都分配了一個唯一的git儲存庫，在該儲存庫中將儲存並保護您的關聯代碼。
+您的 [!UICONTROL AEM Managed Services] 訂閱包括由 Adobe 佈建和管理的原始程式碼存放庫。每個方案都分配有一個唯一的 Git 存放庫，在此將儲存和保護您的相關程式碼。
 
-作為最佳做法，您應始終使用Cloud Manager的git儲存庫，該儲存庫為空，但沒有配置任何分支或示例項目。 要使用雲管理器的Git儲存庫，您將獲得一個專用訪問令牌，該令牌使您能夠使用任何Git客戶端建立分支、儲存和檢索代碼、列出提交歷史記錄等。
+依照最佳做法的要求，您應該一直使用 Cloud Manager 的 Git 存放庫，該存放庫會是空白的，沒有設定任何分支或範例專案。為了使用 Cloud Manager 的 Git 存放庫，您將獲得一個私人的存取權杖，讓您能夠使用任何 Git 用戶端來建立分支、儲存和擷取您的程式碼、製作認可歷史記錄的清單等。
 
-有關如何以Git設定分支的詳細資訊，請參閱 [配置發行分支。](/help/getting-started/configuring-branches.md)
+如需有關如何在 Git 中設定分支的詳細資訊，請參閱[設定版本分支。](/help/getting-started/configuring-branches.md)
 
-有關如何將Cloud Manager的git儲存庫與CI/CD管道一起使用的詳細資訊，請參閱文檔 [配置生產管道](/help/using/production-pipelines.md) 和 [配置非生產管道](/help/using/non-production-pipelines.md) 來瞭解更多資訊。
+如需有關如何將 Cloud Manager 的 Git 存放庫和 CI/CD 管道一起使用的詳細資訊，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)，以深入了解。
 
-## 內部部署儲存庫 {#on-premise-repository}
+## 內部部署存放庫 {#on-premise-repository}
 
-您可能有一個現有的Git儲存庫，並且希望繼續使用它，在這種情況下，您可以將Git的功能用於多個遠程儲存庫。 日常開發將繼續在您的Git儲存庫中進行。 當發佈分支準備好部署到生產環境中時，您可以將最新代碼推送到Cloud Manager的git儲存庫，並觸發Cloud Manager CI/CD管道。
+您可能有一個現有的 Git 存放庫並希望繼續使用它，在這種情況下，您可以將 Git 的功能用於多個遠端存放庫。日常開發將繼續在您的 Git 存放庫中進行。當版本分支已就緒，可部署到生產環境時，您可以將最新的程式碼推送到 Cloud Manager 的 Git 存放庫並觸發 Cloud Manager CI/CD 管道。
 
-要查看常用git命令，請參見 [Git作弊表](https://education.github.com/git-cheat-sheet-education.pdf) 在GitHub網站上。
+若要檢視 Git 命令，請參閱 GitHub 網站上的 [Git 速查表](https://education.github.com/git-cheat-sheet-education.pdf)。
