@@ -1,63 +1,63 @@
 ---
 title: 管理環境
-description: 瞭解如何使用Cloud Manager管理您的環境。
+description: 了解如何使用 Cloud Manager 來管理您的環境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 80f8707e00357f5a08dd835b846c9ee610f3e573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '263'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # 管理環境 {#managing-environments}
 
-瞭解如何使用Cloud Manager管理您的環境。
+了解如何使用 Cloud Manager 來管理您的環境。
 
-## 概覽頁 {#overview-page}
+## 總覽頁面 {#overview-page}
 
-的 **概述** 雲管理器的頁面包括 **環境** 列出所有托管環境AEM的磁貼。
+**Cloud Manager 的總覽**&#x200B;頁面包括&#x200B;**環境**&#x200B;圖磚，上面會提供所有受管理的 AEM 環境清單。
 
-列出的每個環境都顯示其關聯狀態。
+此環境清單中的每一項都會顯示其相關的狀態。
 
-![概覽頁](/help/assets/Manage-Environ-Overview.png)
+![總覽頁面](/help/assets/Manage-Environ-Overview.png)
 
-## 環境磁貼 {#environments-tile}
+## 環境圖磚 {#environments-tile}
 
-的 **環境** 磁貼顯示程式中預配的生產和暫存環境以及狀態。
+此&#x200B;**環境**&#x200B;圖磚會顯示在您的方案中佈建的生產和中繼環境以及狀態。
 
-狀態是按以下優先順序順序在環境中的節點上累計的電源狀態。
+此狀態指依據以下優先順序跨越環境中的節點彙總的電源狀態。
 
-* 綠色 — 所有節點都在運行
-* 紅色 — 停止一個或多個節點。
-* 藍色 — 將出現一個或多個節點。
-* 黃色 — 一個或多個節點的電源狀態不可用。
+* 綠色 - 所有節點運作中
+* 紅色 - 一或更多節點已停止。
+* 藍色 - 一或更多節點將啟動。
+* 黃色 - 一或更多節點無法提供電源狀態。
 
-![環境磁貼](/help/assets/Environments-card-new.png)
+![環境圖磚](/help/assets/Environments-card-new.png)
 
 ## 管理環境 {#managing-environments-with-cloud-manager}
 
-在 **環境** 平鋪，按一下 **管理** 顯示 **環境** 的上界。
+在&#x200B;**環境**&#x200B;圖磚上，按一下&#x200B;**管理**，即可顯示&#x200B;**環境**&#x200B;畫面。
 
-的 **環境** 螢幕顯示程式中每個生產環境和登台環境（如果適用）的卡。 每張卡上方都可以看到環境的名稱。 該卡包括環境中的節點表以及CPU的t恤尺寸、儲存器、區域和狀態。
-
->[!NOTE]
->
->的 **狀態** 節點的狀態表示VM的電源狀態，不反映伺服器AEM上的狀態。 狀態可以是：
-
-* 綠色 — 正在運行
-* 紅色 — 已停止
-* 藍色 — 即將出現
-* 黃色 — 不可用
-
-![「環境」頁籤](/help/assets/Environments-tab.png)
+此&#x200B;**環境**&#x200B;畫面會顯示各代表方案中的生產和中繼環境的卡片 (如適用)。每張卡片的上方都會顯示環境名稱。卡片會包括環境中的節點表以及 CPU 的 T 恤尺寸、儲存空間、區域和狀態。
 
 >[!NOTE]
 >
->如果您需要您的環境日誌，可以通過您的客戶成功工程師請求這些日誌。
+>節點的&#x200B;**狀態**&#x200B;並不表示 VM 的電源狀態，且不反映伺服器上 AEM 的狀態。該狀態有可能是：
 
-## 視頻教程 {#video-tutorial}
+* 綠色 - 運作中
+* 紅色 - 已停止
+* 藍色 - 即將啟動
+* 黃色 - 無法提供
 
-此視頻概括介紹了由創作、發佈和Dispatcher實例AEM組成的Cloud Manager環境。
+![「環境」索引標籤](/help/assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>如果您需要環境紀錄，可透過您的客戶成功工程師索取。
+
+## 教學課程影片 {#video-tutorial}
+
+此影片會提供對 Cloud Manager 環境的總覽，由 AEM 編寫、發佈以及 Dispatcher 執行個體組成。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
