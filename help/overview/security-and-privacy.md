@@ -1,37 +1,37 @@
 ---
 title: 安全性與隱私權
-description: 瞭解Cloud Manager中代碼和項目資產的安全性和隱私性。
+description: 了解 Cloud Manager 中程式碼和成品資產的安全性和隱私權。
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: d7751757c1d3bda3d60406a1d39cb41c61f5c863
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # 安全性與隱私權 {#security-and-privacy}
 
-瞭解Cloud Manager中代碼和項目資產的安全性和隱私性。
+了解 Cloud Manager 中程式碼和成品資產的安全性和隱私權。
 
-## 角色和權限 {#roles}
+## 角色與權限 {#roles}
 
-[!UICONTROL Cloud Manager] 具有預配置的具有適當權限的角色。
+[!UICONTROL Cloud Manager] 已預先設定角色，並賦予適當權限。 
 
-要瞭解可以在Admin Console和用戶角色權限中分配的可能角色，請參閱文檔 [基於角色的權限。](/help/requirements/role-based-permissions.md)
+若要了解有關您在 Admin Console 中可指派的角色以及使用者角色權限，請參閱文件：[角色型權限。](/help/requirements/role-based-permissions.md)
 
 ## 資源隔離 {#resource-isolation}
 
-[!UICONTROL Cloud Manager] 客戶需要其IMS憑據來驗證是否與所有權限相關 [!UICONTROL Cloud Manager] 與他們的IMS組織有聯繫。 在載入過程中，資源調配團隊確保在 [!UICONTROL Cloud Manager]。
+[!UICONTROL Cloud Manager] 客戶需要他們的 IMS 憑證來進行身分驗證，因為所有繫結至 [!UICONTROL Cloud Manager] 的權限都與其 IMS 組織連結。在上線流程中，佈建團隊會確保在 [!UICONTROL Cloud Manager] 中執行資源隔離。
 
-## 資料安全 {#data-security}
+## 資料安全性 {#data-security}
 
-中的代碼 [!UICONTROL Cloud Manager] 在傳輸中被加密。 Cloud Manager生成的二進位檔案也在傳輸中加密，並在儲存時加密。
+傳輸中會將 [!UICONTROL Cloud Manager] 中的程式碼加密。傳輸過程中還會將 Cloud Manager 建置的二進位檔加密，並在儲存時進行加密。
 
-每個客戶都擁有自己的Git儲存庫，並且代碼是安全的，不會與其他任何組織共用。
+每個客戶都會有自己的 Git 存放庫，因此程式碼是安全的，不會和任何其他組織共用。
 
 ## 資料隱私 {#data-privacy}
 
-[!UICONTROL Cloud Manager] 遵守了Adobe定義的隱私原則。 開發人員通過HTTPS將代碼安全地推送到Git儲存庫。
+[!UICONTROL Cloud Manager] 會遵守由 Adobe 定義的隱私原則。開發人員會經由 HTTPS 將程式碼安全地推送到 Git 存放庫中。
 
-[!UICONTROL Cloud Manager]用戶介面構建在符合Adobe通用控制框架的服務之上。 [!UICONTROL Cloud Manager]用戶介面使用來自多個雲提供商的安全服務。
+[!UICONTROL Cloud Manager] 的使用者介面會在符合 Adobe 一般控制架構的服務上建置。[!UICONTROL Cloud Manager] 的使用者介面會使用來自好幾個雲端提供者的安全服務。
