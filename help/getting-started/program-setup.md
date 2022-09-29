@@ -1,95 +1,95 @@
 ---
-title: 程式設定
-description: 入職後，業務所有者需要對程式進行一些初始設定。
+title: 計劃設定
+description: 上線後，企業所有者將需要對方案進行一些初始設定。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 程式設定 {#program-setup}
+# 計劃設定 {#program-setup}
 
-入職後，業務所有者完成程式的初始設定，包括設定程式說明和定義用於效能測試的關鍵績效指標(KPI)。
+上線後，企業所有者完成方案的初始設定，包括設定方案說明並定義用於效能測試的關鍵績效指標 (KPI)。
 
-## 程式設定 [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
+## 使用 [!UICONTROL Cloud Manager] 的方案設定 {#program-setup-cloud-manager}
 
-按照以下步驟設定程式並定義KPI。
+依照下列步驟設定方案並定義 KPI。
 
-1. 登錄到Cloud Manager(位於 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 並選擇相應的組織。
+1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織。
 
-1. 按一下 **安裝程式** 啟動設定進程。
+1. 按一下&#x200B;**設定方案**，即可開始設定流程。
 
-   ![設定程式](/help/assets/set-up-program/setup1.png)
+   ![設定計劃](/help/assets/set-up-program/setup1.png)
 
-1. 在 **安裝程式** 對話框可以在三個標籤中輸入程式資訊。
+1. 在&#x200B;**設定方案**&#x200B;對話框中，您可在以下三個索引標籤中輸入計劃資訊：
 
    * **一般**
    * **KPI**
-   * **設定**
+   * **佈建**
 
-1. 在 **常規** 頁籤，添加程式說明，或者通過按一下 **更改照片**。
+1. 在&#x200B;**一般**&#x200B;索引標籤上，為您的方案新增說明，並可按一下&#x200B;**變更相片**，選擇上傳縮圖。
 
-   ![常規頁籤](/help/assets/Setup_Program-General.png)
+   ![「一般」索引標籤](/help/assets/Setup_Program-General.png)
 
-1. 在 **KPI** 頁籤。 在此示例中，為 **AEM Sites** 和 **AEM Assets**。 您將能夠指定已許可的產品的KPI。
+1. 在 **KPI** 索引標籤上，定義您的 KPI。在此範例中，分別為 **AEM Sites** 和 **AEM Assets** 定義了單獨的 KPI。 您將能夠為已獲得授權的產品指定 KPI。
 
-   * 請參閱一節 [關鍵績效指標](#kpis) 有關如何在雲管理器中衡量KPI的詳細資訊。
+   * 請參閱 [KPI](#kpis) 一節，以取得有關如何在 Cloud Manager 中測量 KPI 的更多詳細資訊。
 
-   ![定義KPI](/help/assets/Setup_Program-KPIs.png)
+   ![定義 KPI](/help/assets/Setup_Program-KPIs.png)
 
-1. 在 **設定** 頁籤，如果為程式啟用了自動縮放，則可以為環境定義按需縮放選項。
+1. 如果您的方案啟用了自動縮放，您可以在&#x200B;**佈建**&#x200B;索引標籤上為您的環境定義隨選縮放選項。
 
-   * 自動縮放僅適用於生產環境，可能不適用於所有客戶計畫。
+   * 自動縮放僅適用於生產環境，而且可能並未提供給所有客戶方案。
 
-   ![設定選項](/help/assets/Setup_Program-Provisioning.png)
+   ![佈建選項](/help/assets/Setup_Program-Provisioning.png)
 
-1. 按一下 **保存** 的子菜單。
+1. 按一下&#x200B;**儲存**，即可完成設定精靈。
 
-將建立您的程式。 在程式準備使用之前，配置資源可能需要幾分鐘。
+將建立您的方案。在方案就緒可供使用之前，可能需要幾分鐘的時間來佈建資源。
 
-## 編輯程式 {#editing-program}
+## 編輯方案 {#editing-program}
 
-可以在程式設定後編輯它們。 按照以下步驟編輯程式。
+您可以在方案完成設定後進行編輯。請依照以下步驟編輯方案。
 
-1. 登錄到Cloud Manager(位於 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 並選擇相應的組織。
+1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織。
 
-1. 從Cloud Manager主螢幕導航到程式。
+1. 從 Cloud Manager 首頁畫面瀏覽至該方案。
 
-1. 按一下 **編輯程式** 從 **概述** 的子菜單。
+1. 按一下&#x200B;**編輯方案**，從&#x200B;**總覽**&#x200B;頁面更新或修改您的方案。
 
-   ![編輯程式選項](/help/assets/set-up-program/edit-program1.png)
+   ![編輯方案選項](/help/assets/set-up-program/edit-program1.png)
 
-1. 的 **編輯程式** 對話框，允許您更新程式。 請參閱一節 [使用雲管理器的程式設定](#program-setup-cloud-manager) 的子菜單。
+1. 會顯示&#x200B;**編輯方案**&#x200B;對話框，讓您能夠更新方案。請參閱[使用 Cloud Manager 的方案設定](#program-setup-cloud-manager)一節，以取得有關可用欄位的詳細資訊。
 
-   ![編輯程式對話框](/help/assets/set-up-program/edit-program-general.png)
+   ![編輯方案對話框](/help/assets/set-up-program/edit-program-general.png)
 
-1. 按一下 **更新** 的子菜單。
+1. 按一下&#x200B;**更新**&#x200B;以儲存變更。
 
-請注意，這些更改會立即保存到Cloud Manager，但在下次管道運行之前不會反映在您的環境中。
+請注意，變更會立即儲存到 Cloud Manager，但要一直到下一次管道執行時才會反映在您的環境中。
 
-如果尚未建立管道，請查看文檔 [配置生產管線](/help/using/production-pipelines.md) 和 [配置非生產管道。](/help/using/non-production-pipelines.md)
+如果您尚未建立管道，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道。](/help/using/non-production-pipelines.md)
 
-## 在程式之間切換 {#swithing-programs}
+## 在方案之間切換 {#swithing-programs}
 
-在處理程式時，您可以快速切換到其他程式，而不返回Cloud Manager概述頁。
+在處理一個方案時，您可以快速切換到另一個方案，而無需返回 Cloud Manager 總覽頁面。
 
-使用操作欄可切換到其他程式、編輯當前程式或添加新程式。
+使用動作列切換到另一個方案、編輯目前的方案或新增方案。
 
-![節目切換器](/help/assets/set-up-program/setup2.png)
+![計劃切換器](/help/assets/set-up-program/setup2.png)
 
-## 關鍵績效指標 {#kpis}
+## KPI {#kpis}
 
-站點KPI是在登台環境上運行的test上衡量的。 通常，這些KPI會按照登台環境的功能進行縮放。
+對網站 KPI 的測量會依據在中繼環境上執行的測試。通常，這些 KPI 會按比例縮小以適合中繼環境的功能。
 
-例如，在生產環境中，預期平均每分鐘有1000個頁面視圖，並且在生產中有四個調度程式/發佈伺服器的用戶應將此視圖擴展到每分鐘250個頁面視圖。 這假定其登台環境僅包含單個調度程式/發佈伺服器對。
+例如，一個使用者若期望在其生產環境中每分鐘平均有 1000 次頁面檢視量，並在生產環境中有四個 Dispatcher/發佈伺服器，應該將其縮小至每分鐘 250 次頁面檢視量。這是假設他們的中繼環境僅包含一個單一 Dispatcher/發佈伺服器的配對。
 
-資產效能測試是通過在30分鐘的test期間反複上載資產並測量每個資產的處理時間以及各種系統級度量來完成的。
+資產效能測試會透過在 30 分鐘的測試期間重複上傳資產並測量每個資產的處理時間以及各種系統層級量度來完成。
 
-您的生產環境前面可能有一個內容交付網路(CDN)，如Akamai或CloudFront。 自 [!UICONTROL Cloud Manager] 直接針對轉移環境test,KPI應僅反映預期通過CDN的流量，即快取未命中。 通常，這將是總生產流量中相對較小的子集。
+您的生產環境前面可能有一個內容傳遞網路 (CDN)，例如 Akamai 或 CloudFront。由於直接針對中繼環境進行 [!UICONTROL Cloud Manager] 測試，因此 KPI 應僅反映預期通過 CDN 的流量，即快取遺漏。通常，這將是總生產流量的一個相對較小的子集。
 
-## 視頻概述 {#video}
+## 影片總覽 {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/)
