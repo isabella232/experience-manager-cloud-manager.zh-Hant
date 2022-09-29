@@ -1,27 +1,27 @@
 ---
-title: 使用多個Git儲存庫
-description: 不直接使用Cloud Manager的git儲存庫，而是瞭解如何使用您自己的git儲存庫或多個git儲存庫。
+title: 使用多個 Git 存放庫
+description: 了解如何使用自己的 Git 存放庫或多個 Git 存放庫，而不是直接使用 Cloud Manager 的 Git 存放庫。
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
 source-git-commit: da9dff997a277c207e2c48207217cb30325f3c0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 使用多個源Git儲存庫 {#working-with-multiple-source-git-repos}
+# 使用多個來源 Git 存放庫 {#working-with-multiple-source-git-repos}
 
-不直接使用Cloud Manager的git儲存庫，而是瞭解如何使用您自己的git儲存庫或多個git儲存庫。
+了解如何使用自己的 Git 存放庫或多個 Git 存放庫，而不是直接使用 Cloud Manager 的 Git 存放庫。
 
-## 同步客戶管理的Git儲存庫 {#syncing-customer-managed-git-repositories}
+## 將客戶管理的 Git 存放庫同步 {#syncing-customer-managed-git-repositories}
 
-如果您希望使用您自己的儲存庫或儲存庫，應設定自動同步過程，以確保Cloud Manager的Git儲存庫始終保持最新。
+如果您希望使用自己的一個或多個存放庫，則應設定自動同步流程，以確保 Cloud Manager 的 Git 存放庫隨時保持最新。
 
-根據您的Git儲存庫的托管位置，可以使用GitHub操作或Jenkins等連續整合解決方案來設定自動化。 在實現自動化後，每次推送到您自己的儲存庫時，都可自動轉發到Cloud Manager的git儲存庫。
+根據代管 Git 存放庫的位置，可以使用 GitHub 操作或 Jenkins 等持續整合解決方案來設定自動化。建立自動化後，可將每次到您自己的存放庫的推送自動轉寄到 Cloud Manager 的 Git 存放庫。
 
-雖然單個客戶擁有的Git儲存庫的這種自動化非常簡單，但為多個儲存庫配置此自動化需要更多參與的初始設定。 需要將來自多個Git儲存庫的內容映射到單個Cloud Manager的Git儲存庫中的不同目錄。 需要為Cloud Manager的Git儲存庫設定根Maven `pom.xml`，列出模組部分中的不同子項目
+雖然對單一客戶擁有的 Git 存放庫而言，這類自動化很簡單，但若為多個存放庫設定，則需要更複雜的初始設定。需要將來自多個 Git 存放庫的內容對應到單一 Cloud Manager 的 Git 存放庫中不同的目錄。需要在 Cloud Manager 的 Git 存放庫佈建根 Maven `pom.xml`，在模組區段中提供不同子專案的清單。
 
-下面是示例 `pom.xml` 用於兩個客戶擁有的git儲存庫。 第一個項目將放入名為 `project-a`，將第二個項目放入名為 `project-b`。
+以下是兩個客戶自有 Git 存放庫的範例 `pom.xml`。第一個專案將被放進名為 `project-a` 的目錄中，而第二個專案則被放進名為 `project-b` 的目錄。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,23 +42,23 @@ ht-degree: 0%
 </project>
 ```
 
-這樣的根 `pom.xml` 已推送到Cloud Manager的git儲存庫中的分支。 然後，需要設定這兩個項目以自動將更改轉發到Cloud Manager的git儲存庫。
+這類根 `pom.xml` 會被推送到 Cloud Manager 的 Git 存放庫中的某個分支。然後需要設定這兩個專案以自動將變更轉寄到 Cloud Manager 的 Git 存放庫。
 
-例如，GitHub操作可以通過向項目A中的分支推送來觸發。該操作將簽出項目A和Cloud Manager git儲存庫，並將項目A的所有內容複製到目錄 `project-a` 在Cloud Manager的Git儲存庫中，然後提交 — 推送更改。
+例如，可以透過對專案 A 中分支的推送來觸發 GitHub 操作。該操作將檢驗專案 A 和 Cloud Manager Git 存放庫，並將專案 A 中的所有內容複製到 Cloud Manager 的 Git 存放庫中的目錄 `project-a`，然後認可-推送變更。
 
-例如， `main` 將項目A中的分支自動推入到 `main` 在Cloud Manager的git儲存庫中分支。 當然，分支之間可能有一個映射，就像向一個名為 `dev` 將項目A中的分支推送到名為 `development` 在Cloud Manager的Git儲存庫中。 項目B需要類似的步驟。
+例如，會將專案 A 中 `main` 分支上的變更自動推送到 Cloud Manager 的 Git 存放庫中的 `main` 分支。當然，分支之間可能會進行對應，例如，會將對專案 A 中名為 `dev` 分支的推送推到 Cloud Manager 的 Git 存放庫中名為 `development` 的分支。專案 B 需要類似的步驟。
 
-根據分支策略和工作流，可以為不同分支配置同步。 如果使用的Git儲存庫不提供與GitHub操作類似的概念，則也可以通過Jenkins（或類似）進行整合。 在這種情況下，網鈎會觸發Jenkins作業，該作業會執行。
+根據分支策略和工作流程，可以為不同的分支設定同步。如果使用的 Git 存放庫不提供類似 GitHub 操作的概念，則也有可能透過 Jenkins (或類似方法) 進行整合。在這種情況下，webhook 會觸發進行這項工作的 Jenkins 作業。
 
-按照以下步驟添加新（第三個）源或儲存庫：
+請依照下列步驟，新增 (第三個) 來源或存放庫：
 
-1. 將新GitHub操作添加到新儲存庫，將更改從該儲存庫推送到Cloud Manager的Git儲存庫。
-1. 至少執行一次該操作，以確保項目代碼位於Cloud Manager的Git儲存庫中。
-1. 在根Maven中添加對新目錄的引用 `pom.xml` 在Cloud Manager git儲存庫中。
+1. 將新的 GitHub 操作新增到新存放庫，會因此從該存放庫將變更推送到 Cloud Manager 的 Git 存放庫。
+1. 至少執行一次該操作，以確保專案程式碼在 Cloud Manager 的 Git 存放庫中。
+1. 在 Cloud Manager Git 存放庫的根 Maven `pom.xml` 中新增對新目錄的參考資料。
 
-## 示例GitHub操作 {#sample-github-action}
+## GitHub 操作範例 {#sample-github-action}
 
-這是通過向 `main` 然後將其推入Cloud Manager的git儲存庫的子目錄。 GitHub操作需要提供兩個秘密， `MAIN_USER` 和 `MAIN_PASSWORD`，以便能夠連接並推送到Cloud Manager的git儲存庫。
+這是一個 GitHub 操作的範例，透過推送至 `main` 分支然後推入 Cloud Manager 的 Git 存放庫的子目錄中來觸發。需要對該 GitHub 操作提供兩個秘密：`MAIN_USER` 以及 `MAIN_PASSWORD`，才能連線並推送至 Cloud Manager 的 Git 存放庫。
 
 ```java
 name: SYNC
@@ -115,19 +115,19 @@ jobs:
           git -C main push
 ```
 
-如上所示，使用GitHub操作非常靈活。 可以執行Git儲存庫分支之間的任何映射以及將單獨的Git項目映射到主項目的目錄佈局中的任何映射。
+如上所示，使用 GitHub 操作非常靈活。Git 存放庫的分支之間可執行的任何對應，以及單獨的 Git 專案到主要專案的目錄版面中的任何對應。
 
 >[!NOTE]
 >
->上述指令碼使用 `git add` 更新假定包含刪除的儲存庫。 根據Git的預設配置，可能需要用 `git add --all`。
+>上述指令碼會使用 `git add` 將假定已納入移除的存放庫更新。根據 Git 的預設設定，這可能需要替換為 `git add --all`。
 
-## 示例Jenkins作業 {#sample-jenkins-job}
+## Jenkins 作業範例 {#sample-jenkins-job}
 
-這是一個示例指令碼，可用於Jenkins作業或類似操作。 它由Git儲存庫中的更改觸發。 Jenkins作業將檢查該項目或分支的最新狀態，然後觸發此指令碼。
+這是指令碼範例，可用於 Jenkins 作業或類似操作。會由 Git 存放庫中的變更觸發。Jenkins 作業會檢查該專案或分支的最新狀態，然後觸發此指令碼。
 
-此指令碼將檢出Cloud Manager的git儲存庫，並將項目代碼提交到子目錄。
+該指令碼會依次檢查 Cloud Manager 的 Git 存放庫並將專案程式碼提交到子目錄。
 
-詹金斯的工作需要有兩個秘密， `MAIN_USER` 和 `MAIN_PASSWORD`，以便能夠連接並推送到Cloud Manager的git儲存庫。
+需要對該 Jenkins 作業提供兩個秘密：`MAIN_USER` 以及 `MAIN_PASSWORD`，才能連線並推送至 Cloud Manager 的 Git 存放庫。
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -181,8 +181,8 @@ git commit -F ../commit.txt
 git push
 ```
 
-如上所示，使用Jenkins工作非常靈活。 可以執行Git儲存庫分支之間的任何映射以及將單獨的Git項目映射到主項目的目錄佈局中的任何映射。
+如上所示，使用 Jenkins 作業非常靈活。Git 存放庫的分支之間可執行的任何對應，以及單獨的 Git 專案到主要專案的目錄版面中的任何對應。
 
 >[!NOTE]
 >
->上述指令碼使用 `git add` 更新假定包含刪除的儲存庫。根據git的預設配置，可能需要用 `git add --all`。
+>上述指令碼會使用 `git add` 將假定已納入移除的存放庫更新。根據 Git 的預設設定，這可能需要替換為 `git add --all`。
