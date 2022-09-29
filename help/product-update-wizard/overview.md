@@ -1,39 +1,39 @@
 ---
 title: 產品更新精靈
-description: 瞭解產品更新嚮導如何優化雲管理AEM器中的端到端更新過程。
+description: 了解產品更新精靈如何簡化 Cloud Manager 中端對端 AEM 更新流程。
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: bbee49987e2f80825f5f7f5caf29c841e2b00dfb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # 產品更新精靈 {#product-update-wizard}
 
-「產品更新」嚮導是使用雲管理器逐步升級到Adobe Experience Manager6.5最新版本的指導性升級體驗。 它優化了端對端流程，並使用AEMCloud Manager的CI/CD框架和內置的自動測試來確保遵守最佳做法。
+產品更新精靈會使用 Cloud Manager 提供引導式、逐步升級到最新版本 Adobe Experience Manager 6.5 的體驗。這會使用 Cloud Manager 的 CI/CD 框架和內建的自動化測試來簡化端對端流程並確保遵守 AEM 最佳做法。
 
-該嚮導包括五個階段，指導您在產品更AEM新過程中：
+該精靈包括在 AEM 產品更新期間引導您的五個階段：
 
 * 評估
-* 修正
+* 矯正
 * 執行
-* 驗證
+* 驗證 
 * 完成
 
-## 使用嚮導 {#using}
+## 使用精靈 {#using}
 
-已掛接到Cloud Manager且有資格升級到AEM6.5的客戶可以利用產品更新嚮導。 請聯繫您的客戶成功工程師(CSE)以瞭解更多詳細資訊。
+加入 Cloud Manager 並有資格升級到 AEM 6.5 的客戶可以利用此產品更新精靈。請和您的客戶成功工程師 (CSE) 聯絡，以了解更多詳細資訊。
 
-1. 您將通過雲管理器收到推送通知，AEM通知您6.5可用於您的程式。
+1. 您將透過 Cloud Manager 接收推播通知，通知您 AEM 6.5 可供您的方案使用。
 
-1. 安 **[!UICONTROL AEM 6.5 Update]** 卡顯示在 [!UICONTROL Cloud Manager]。 此卡將幫助跟蹤您當前正在進行的更新過程的哪個階段，並將通知您下一步將採取什麼步驟。
+1. **[!UICONTROL AEM 6.5 Update]** 卡片會顯示在 [!UICONTROL Cloud Manager] 的總覽畫面上。 這張卡片將有助於追踪您目前處於更新流程的哪個階段，並通知您要採取的下一個步驟。
 
-   ![更新嚮導卡](/help/assets/Start-Update.png)
+   ![更新精靈卡](/help/assets/Start-Update.png)
 
-1. 選擇 **[!UICONTROL Start Update]** 的子菜單。
+1. 選取 **[!UICONTROL Start Update]** 即可啟動精靈。
 
-1. 嚮導將顯示 **[!UICONTROL AEM 6.5 Update]** 處理。
+1. 精靈會顯示 **[!UICONTROL AEM 6.5 Update]** 流程的第一階段。
 
-要瞭解有關嚮導第一階段的詳細資訊，請參閱文檔 [評估階段。](/help/product-update-wizard/evaluation.md)
+若要了解精靈的第一階段的詳細資訊，請參閱文件：[評估階段。](/help/product-update-wizard/evaluation.md)
