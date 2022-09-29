@@ -1,65 +1,65 @@
 ---
 title: 重要概念
-description: 與所有功能強大的工具一樣，Cloud Manager包含許多概念和術語。 本文檔總結了開始使用雲管理器時對您最重要的一些內容。
+description: 像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: 73e322cf93dc7709b7581860974079c8d94034ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # 重要概念 {#key-concepts}
 
-與所有功能強大的工具一樣，Cloud Manager包含許多概念和術語。 本文檔總結了開始使用雲管理器時對您最重要的一些內容。
+像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
 
 ## 應用程式 {#application}
 
-而應用程式是客戶為調整底層而建立的一組定制和配置 [解決方案](#solution) (如AEM Sites或AEM Assets)。 應用程式是可由多個元件組成的邏輯單元 [對象。](#artifact)
+應用程式是客戶建立的自訂項目和設定組，以便根據他們的特定使用案例和需求來調整基礎的[解決方案](#solution) (例如 AEM Sites 或 AEM Assets)。應用程式是一種邏輯單位，可能包含多個[成品。](#artifact)
 
-一個示例應用是虛構 [WKND生活方式應用。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
+一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ## 成品 {#artifact}
 
-偽影是可展開單元，是將原始碼轉換為單個單元的某個生成過程的結果。 例如，包含原始碼的.zip檔案。
+成品是可部署的單位，而且是將原始程式碼轉換為單一單位的某些建置流程的結果。例如，.zip 檔就包含了原始程式碼。
 
-## 項目儲存庫 {#artifact-repository}
+## 成品存放庫 {#artifact-repository}
 
-項目儲存庫是特定於客戶的儲存位置 [偽](#artifact) 被保存和保護。
+成品存放庫是儲存和保護客戶特定[成品](#artifact)的儲存位置。
 
 ## 環境 {#environment}
 
-環境是一個 [的子菜單。](#program) 例如AEM，這由創作實例（可選地附加冷備用創作實例）、零個或多個發佈實例、一個或多個調度程式實例和負載平衡器組成。
+環境指[方案中的單一叢集虛擬機器。](#program) 對於 AEM，這會由一個製作執行個體 (可選擇外加一個額外的冷待命製作執行個體)、零個或多個發佈執行個體、一個或多個 Dispatcher 執行個體和一個負載平衡器組成。
 
-## Git儲存庫 {#git-repository}
+## Git 存放庫 {#git-repository}
 
-Git儲存庫是儲存特定於客戶的原始碼並可訪問的位置 [用git](https://git-scm.com)
+Git 存放庫是儲存客戶特定原始程式碼的位置，並可[使用 Git 存取。](https://git-scm.com)
 
-## 例項 {#instance}
+## 執行個體 {#instance}
 
-實例是運行以下命令的特定虛擬服AEM務器 [解決方案。](#solution) 實例從部署角度表示單個邏輯單元。
+執行個體是一種特定的虛擬伺服器，會執行 AEM [解決方案。](#solution) 從部署的角度來看，執行個體代表單一邏輯單位。
 
 ## 組織 {#organization}
 
-組織是代表企業客戶的Adobe結構。 一家公司可能擁有多個組織，具體取決於在AdobeIdentity Management系統(IMS)中配置這些組織的方式。
+組織指代表企業客戶的 Adobe&#x200B; 建構。一家公司可能有多個組織，會依據在 Adob&#x200B;&#x200B;e 的 Identity Management System (IMS) 中對其進行佈建方式而定。
 
-## 管線 {#pipeline}
+## 管道 {#pipeline}
 
-流水線是按順序執行的一組部署步驟。
+管道指一組按順序執行的部署步驟。
 
 ## 產品 {#product}
 
-產品是產品中的一組特定功能 [解決方案](#solution) 由組織授權。 不同 [方案](#program) 組織內部可以擁有不同的產品，例如AEM Sites、AEM Assets或AEM Forms。
+產品指獲組織授權的[解決方案](#solution)中的一組特定功能。組織內的不同[方案](#program)可能有權使用不同的產品集，例如 AEM Sites、AEM Assets 或 AEM Forms。
 
-## 計畫 {#program}
+## 計劃 {#program}
 
-計畫是一組支援客戶計畫的邏輯分組的環境，通常對應於購買的服務級別協定(SLA)。 每個程式都只有一個生產環境，並且可能有許多非生產環境。
+方案指一組支援客戶倡議邏輯分組的環境，通常會對應購買的服務等級協議 (SLA)。每個方案只會有一個生產環境，並可能有許多非生產環境。
 
 ## 解決方案 {#solution}
 
-解決方案是Adobe [!UICONTROL Experience Cloud] 解決方案。 例如，Adobe Experience Manager、Adobe Target或Adobe Analytics。
+解決方案指 Adobe [!UICONTROL Experience Cloud] 解決方案的其中一種。 例如，Adobe Experience Manager、Adobe Target 或 Adobe Analytics。
 
 ## 步驟 {#step}
 
-步驟是配置的指令集，其將某些工作單元作為 [管線。](#pipeline)
+步驟指已設定的指令集，會完成某些工作單位，是[管道的建置組塊。](#pipeline)
