@@ -1,27 +1,27 @@
 ---
-title: 訪問權限
-description: 瞭解您的Adobe ID以及如何使用它訪問Experience Cloud資源。
+title: 存取權
+description: 了解您的 Adob​​e ID 以及如何用於存取 Experience Cloud 資源。
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# 訪問權限 {#access-rights}
+# 存取權 {#access-rights}
 
-瞭解您的Adobe ID以及如何使用它訪問Experience Cloud資源。
+了解您的 Adob&#x200B;&#x200B;e ID 以及如何用於存取 Experience Cloud 資源。
 
-## 用戶標識類型 {#user-identity-types}
+## 使用者身分類型 {#user-identity-types}
 
-作為登機過程的一部分，Adobe將在AdobeIdentity Management系統(IMS)中為您的公司建立組織標識。 IMS是管理所有用戶及其權限的地方。 每個需要成為此組織成員的用戶將被授予訪問 [!UICONTROL Experience Cloud] 服務，需要有自己的Adobe ID。
+Adobe 在上線流程中將在 Adob&#x200B;&#x200B;e Identity Management System (IMS) 中為您的公司建立一個組織識別碼。IMS 是您可以管理所有使用者及其權限的地方。需要成為本組織成員並將被授予任何 [!UICONTROL Experience Cloud] 服務的存取權的每一位使用者都將需要有自己的 Adobe ID。
 
-要開始使用Adobe ID，請參閱文檔 [管理Adobe標識類型](https://helpx.adobe.com/enterprise/using/identity.html) 有關如何使用可用的一種身份類型獲取Adobe ID的詳細說明。
+若要開始取得 Adobe ID，請參閱文件：[管理 Adobe 身分類型](https://helpx.adobe.com/tw/enterprise/using/identity.html)，以取得有關如何使用所提供的其中一種身分類型來獲取 Adobe ID 的詳細說明。
 
-### 用戶和角色 {#users-and-roles}
+### 使用者和角色 {#users-and-roles}
 
-Adobe為您的公司建立了組織後，您指定的系統管理員將作為第一個成員添加到此組織。 預設情況下，系統管理員將被授予管理員權限，並分配 [!UICONTROL AEM Managed Services] 產品和一個或多個 [!UICONTROL Cloud Manager] 產品配置檔案。 請參閱文檔 [添加用戶和角色](/help/requirements/users-and-roles.md) 瞭解有關如何使用Admin Console配置和管理團隊用戶的詳細資訊。
+在 Adobe 為您的公司建立組織後，即會將您指定的系統管理員新增為該組織的第一名成員。預設情況下，該系統管理員將被授予管理員權限，並被指派 [!UICONTROL AEM Managed Services] 產品以及一或多個 [!UICONTROL Cloud Manager] 產品設定檔。請參閱文件：[新增使用者和角色](/help/requirements/users-and-roles.md)，以進一步了解有關如何使用 Admin Console 設定和管理您的團隊使用者。
 
-授予這些權限後，您的管理員現在將使用Adobe ID進行一次登錄以訪問 [!UICONTROL Experience Cloud] 服務、登錄到AEM雲環境和使用 [!UICONTROL Cloud Manager]。
+被授予這些權限後，您的管理員現在即可使用 Adob&#x200B;&#x200B;e ID 進行單一登入來存取 [!UICONTROL Experience Cloud] 服務、登入到您的 AEM 雲端環境，以及使用 [!UICONTROL Cloud Manager]。
