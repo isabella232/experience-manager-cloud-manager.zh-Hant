@@ -1,11 +1,11 @@
 ---
 title: 首次登入
-description: 如果您已設定一般設定，且已準備好第一次使用Cloud Manager，請遵循本頁面。
+description: 如果您已經設定好一般設定，而且準備好要第一次使用 Cloud Manager，依照本頁面的說明進行。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 2%
+source-wordcount: '261'
+ht-degree: 51%
 
 ---
 
@@ -18,27 +18,27 @@ ht-degree: 2%
 >
 >根據 [!UICONTROL Cloud Manager] 以及應用程式的狀態，您看到的螢幕可能與圖例不同。
 
-## 首次登入 {#logging-in-for-the-first-time}
+## 第一次登入 {#logging-in-for-the-first-time}
 
 1. 登入Adobe [!UICONTROL Experience Cloud] 你會看到節目清單。
 
 1. 選取方案。
 
-1. 在程式的卡片上，選擇刪節號按鈕，然後 **Cloud Manager** 導覽至 **概述** 頁面。
+1. 在您的方案卡上，選取省略符號按鈕，然後選取 **Cloud Manager**，瀏覽至 Cloud Manager 的&#x200B;**總覽**&#x200B;頁面。
 
-   ![Cloud Manager選項](/help/assets/navigate-cm1.png)
+   ![Cloud Manager 選項](/help/assets/navigate-cm1.png)
 
-1. Cloud Manager開啟 **概述** 頁面。
+1. Cloud Manager 會開啟至&#x200B;**總覽**&#x200B;頁面。
 
-   ![Cloud Manager概述頁面](/help/assets/FirstLogin1.png)
+   ![Cloud Manager 總覽頁面](/help/assets/FirstLogin1.png)
 
-1. 按一下 **安裝程式** 設定方案說明並定義關鍵績效指標(KPI)。
+1. 按一下&#x200B;**設定方案**，即可設定您的方案說明，並定義關鍵績效指標 (KPI)。
 
-請繼續閱讀該文檔 [程式設定](/help/getting-started/program-setup.md) 以了解設定方案的後續步驟。
+請繼續參閱文件：[方案設定](/help/getting-started/program-setup.md)，以了解設定方案中的後續步驟。
 
-## Cloud Manager活動 {#activity}
+## Cloud Manager 活動 {#activity}
 
-Cloud Manager提供方案活動的整合檢視，列出所有CI/CD管道執行（生產和非生產），讓您能夠洞察過去和目前的活動。
+Cloud Manager 會提供方案活動的合併檢視，以及所有 CI/CD 管道執行的清單 (包括生產和非生產)，讓您查看過去和現在的活動。
 
 >[!NOTE]
 >

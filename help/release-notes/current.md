@@ -5,15 +5,15 @@ feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 69c1c8a1136c037a5eea635a75f2d4d187f2ac4d
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 63%
+source-wordcount: '124'
+ht-degree: 54%
 
 ---
 
 
 # Cloud Manager 2022.10.0 版的發行說明 {#release-notes}
 
-本頁會記錄 [!UICONTROL Cloud Manager] 2022.10.0 版的發行說明。
+本頁記錄 [!UICONTROL Cloud Manager] 2022.10.0版。
 
 >[!NOTE]
 >
