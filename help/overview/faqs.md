@@ -41,7 +41,7 @@ ht-degree: 100%
 
 這是一個已知問題，原因在於 Cloud Manager 使用不同版本的 Java 來執行 maven 命令而不是編譯程式碼。只需忽略您的 `maven-enforcer-plugin` 設定中的 `requireJavaVersion`。
 
-## 程式碼品質檢查已失敗，我們的部署無法進行。是否有辦法略過這項檢查？ {#deployment-stuck}
+## 計劃碼品質檢查已失敗，我們的部署無法進行。是否有辦法略過這項檢查？ {#deployment-stuck}
 
 是。 除了安全評等之外，所有程式碼品質失敗都是非關鍵性量度，因此可透過擴展結果 UI 中的項目將其視為部署管道的一部分而略過。
 
@@ -64,11 +64,11 @@ ht-degree: 100%
 
 ## 我是否能將 SNAPSHOT 用於 Maven 專案的版本？ {#snapshot}
 
-是。 對於開發人員部署，Git 分支 `pom.xml` 檔案在 `<version>` 值的末尾必須包含 `-SNAPSHOT`。
+可以。 對於開發人員部署，Git 分支 `pom.xml` 檔案在 `<version>` 值的末尾必須包含 `-SNAPSHOT`。
 
 這容許在版本未變更時仍可安裝後續部署。在開發人員部署中，不會為 Maven 組建新增或產生自動版本。
 
-您還可以將版本設定為 `-SNAPSHOT`，以用於中繼和生產組建或部署。Cloud Manager 會自動設定適當的版本編號並在 Git 中為您建立標記。如有需要，可在稍後參照此標記。
+您還可以將版本設定為 `-SNAPSHOT`，以用於測試和生產組建或部署。Cloud Manager 會自動設定適當的版本編號並在 Git 中為您建立標記。如有需要，可在稍後參照此標記。
 
 有關版本處理的進一步詳細資料[在此處記錄。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html)
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 
 對於中繼和生產部署中的自訂版本設定，請設定適當的三部分 Maven 版本，例如 `1.0.0`。 每次部署到生產時，都需增加版本。
 
-Cloud Manager 會自動將其版本新增到中繼和生產組建，並建立 Git 分支。不需要特別設定。如果您並未依照之前的說明設定 Maven 版本，部署仍會成功，並會自動設定版本。
+Cloud Manager 會自動將其版本新增到測試和生產組建，並建立 Git 分支。不需要特別設定。如果您並未依照之前的說明設定 Maven 版本，部署仍會成功，並會自動設定版本。
 
 ## 對於 Cloud Manager 部署，我的 Maven 組建失敗，但它在本機建置且沒有出現錯誤。有什麼問題嗎？ {#maven-build-fail}
 
