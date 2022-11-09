@@ -25,9 +25,9 @@ ht-degree: 100%
 * [執行管道](#running-pipelines)
 * [編輯管道](#editing-pipelines)
 * [刪除管道](#deleting-pipelines)
-* [檢視詳情](#view-details)
+* [檢視詳細資訊](#view-details)
 
-在管道清單底部，您有一般選項。
+在管道清單底部有一般選項。
 
 * **新增** - 至[可新增生產管道](/help/using/production-pipelines.md)或是[新增非生產管道](/help/using/non-production-pipelines.md)
 * **顯示全部** - 將使用者帶到&#x200B;**管道**&#x200B;畫面，在更詳細的表格中檢視所有管道。
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 1. 此管道執行開始，並由&#x200B;**狀態**&#x200B;欄顯示。
 
-您可以查看執行的詳細資訊，只要再按一下省略符號按鈕，並選取 **[檢視全部。](#view-details)**
+您可以查看執行的詳細資訊，只要再按一下省略符號按鈕，並選取&#x200B;**[檢視詳細資訊。](#view-details)**
 
 依管道的類型而定，您也許可以取消執行，只要再按一下省略符號按鈕，並選取&#x200B;**取消**。
 
