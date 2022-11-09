@@ -53,7 +53,7 @@ ht-degree: 100%
 請依照下列步驟，新增 (第三個) 來源或存放庫：
 
 1. 將新的 GitHub 操作新增到新存放庫，會因此從該存放庫將變更推送到 Cloud Manager 的 Git 存放庫。
-1. 至少執行一次該操作，以確保專案程式碼在 Cloud Manager 的 Git 存放庫中。
+1. 至少執行一次該操作，以確保專案計劃碼在 Cloud Manager 的 Git 存放庫中。
 1. 在 Cloud Manager Git 存放庫的根 Maven `pom.xml` 中新增對新目錄的參考資料。
 
 ## GitHub 操作範例 {#sample-github-action}
