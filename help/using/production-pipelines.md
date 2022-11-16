@@ -4,7 +4,7 @@ description: 了解如何使用 Cloud Manager 建立和設定生產管道，以�
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
 workflow-type: ht
-source-wordcount: '1296'
+source-wordcount: '1302'
 ht-degree: 100%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 100%
 
 # 設定生產管道 {#configuring-production-pipelines}
 
-了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。 如果您想先了解有關在 Cloud Manager 中管道如何運作的更多概念性總覽，請參閱文件：[CI/CD 管道。](/help/overview/ci-cd-pipelines.md)
+了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。 如果您想先了解有關在 Cloud Manager 中管道如何運作的更多概念性概觀，請參閱文件：[CI/CD 管道。](/help/overview/ci-cd-pipelines.md)
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 使用&#x200B;**管道設定**&#x200B;圖磚 (在 [!UICONTROL Cloud Manager] 中)，您可建立兩種不同類型的管道。
 
@@ -35,17 +35,17 @@ ht-degree: 100%
 
 ## 教學課程影片 {#video-tutorial-one}
 
-該影片會提供管道建立流程的概覽，本文件對此有詳細說明。
+該影片會提供管道建立流程的概觀，本文件對此有詳細說明。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 ## 新增生產管道 {#adding-production-pipeline}
 
-使用 [!UICONTROL Cloud Manager] UI 設定好方案並擁有至少一個環境後，您就可以著手新增生產管道了。
+使用 [!UICONTROL Cloud Manager] UI 設定完成方案並擁有至少一個環境後，您就可以著手新增生產管道了。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (從&#x200B;**方案總覽**&#x200B;頁面) 並按一下 **+新增**，然後選取&#x200B;**新增生產管道**。
+1. 瀏覽至&#x200B;**管道**&#x200B;卡 (從&#x200B;**方案概觀**&#x200B;頁面) 並按一下 **+新增**，然後選取&#x200B;**新增生產管道**。
 
    ![新增生產管道](/help/assets/configure-pipelines/add-prod1.png)
 
@@ -107,7 +107,7 @@ ht-degree: 100%
 
          * **部署選項** - 您可定義控制生產部署的參數。
 
-            * **使用上線核准** - 部署必須由具有以下角色的使用者手動核准：**企業所有者**、**專案管理員**&#x200B;或&#x200B;**部署管理員** (需透過 [!UICONTROL Cloud Manager] UI)。
+            * **使用上線核准** - 部署必須由具有&#x200B;**企業所有者**、**專案管理員**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者透過 [!UICONTROL Cloud Manager] UI 手動核准。
             * **已排程** - 此選項會在生產部署之前暫停管道，以允許對其進行排程。如果選取此選項，管道將在部署到中繼環境後暫停，並提示使用者應採取的操作。
                * **現在** - 此選項會立即部署到生產環境，有效地完成管道。
                * **日期** - 此選項會讓使用者安排應完成部署的時間。
