@@ -4,7 +4,7 @@ description: 了解 Cloud Manager 中程式碼和成品資產的安全性和隱�
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: d7751757c1d3bda3d60406a1d39cb41c61f5c863
 workflow-type: ht
-source-wordcount: '189'
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 100%
 
 [!UICONTROL Cloud Manager] 會遵守由 Adobe 定義的隱私原則。開發人員會經由 HTTPS 將程式碼安全地推送到 Git 存放庫中。
 
-[!UICONTROL Cloud Manager] 的使用者介面會在符合 Adobe 一般控制架構的服務上建置。[!UICONTROL Cloud Manager] 的使用者介面會使用來自好幾個雲端提供者的安全服務。
+[!UICONTROL Cloud Manager] 的使用者介面會建置在符合 Adobe 一般控制架構的服務上。[!UICONTROL Cloud Manager] 的使用者介面會使用來自數個雲端提供者的安全服務。
