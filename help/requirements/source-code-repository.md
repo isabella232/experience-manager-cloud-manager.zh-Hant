@@ -4,7 +4,7 @@ description: 了解為您在 Cloud Manager 中擁有的每個方案佈建的 Git
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: ht
-source-wordcount: '264'
+source-wordcount: '267'
 ht-degree: 100%
 
 ---
