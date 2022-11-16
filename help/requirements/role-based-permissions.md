@@ -4,7 +4,7 @@ description: 了解 Cloud Manager 預先設定的角色型權限以管理對您�
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
 workflow-type: ht
-source-wordcount: '539'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 以角色為主的權限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] 已預先設定角色，並賦予適當權限。 例如，開發人員會開發程式碼並擁有將程式碼推送到 Git 存放庫的權限。企業所有者擁有不同的權限，讓他們能夠定義關鍵績效指標 (KPI) 並核准部署。
+[!UICONTROL Cloud Manager] 已預先設定角色，賦予適當權限。 例如，開發人員會開發程式碼並擁有將程式碼推送到 Git 存放庫的權限。企業所有者擁有不同的權限，讓他們能夠定義關鍵績效指標 (KPI) 並核准部署。
 
 ## 使用者角色 {#user-roles}
 
@@ -25,9 +25,9 @@ ht-degree: 100%
 | [!UICONTROL Cloud Manager] 角色 | 說明 |
 |---|---|
 | 企業所有者 | 這是完成初始 [!UICONTROL Cloud Manager] 設定的主要使用者，會負責定義 KPI、核准生產部署並在必要時覆寫重要的 3 層級失敗。 |
-| 方案管理員 | 這類使用者會使用 [!UICONTROL Cloud Manager] 來完成團隊設定、審查狀態、檢視 KPI，並可在必要時核准重要的 3 層級失敗。 |
-| 部署管理員 | 這類使用者會使用 [!UICONTROL Cloud Manager] 來管理部署操作，以執行中繼和生產部署，可在必要時核准重要的 3 層級失敗，並可存取 Git 存放庫。 |
-| 開發人員 | 這類使用者會開發和測試自訂應用程式的程式碼，主要利用 [!UICONTROL Cloud Manager] 來檢視部署狀態，並擁有對 Git 存放庫的認可存取權。 |
+| 方案管理員 | 這類使用者會使用 [!UICONTROL Cloud Manager] 來執行團隊設定、審查狀態、檢視 KPI，並在必要時可核准重要的 3 層級失敗。 |
+| 部署管理員 | 這類使用者會使用 [!UICONTROL Cloud Manager] 來管理部署操作，以執行中繼和生產部署，必要時可核准重要的 3 層級失敗，並可存取 Git 存放庫。 |
+| 開發人員 | 這類使用者會開發和測試自訂應用程式的程式碼，主要利用  來檢視部署狀態，並擁有對 Git 存放庫的認可存取權。 |
 | 客戶成功工程師 | 一般來說，這類使用者會為 AMS 客戶支援客戶成功，並和 [!UICONTROL Cloud Manager] 互動，以達到執行需要客戶成功工程師 (CSE) 監督的部署的目的。 |
 | 內容作者 | 這類使用者通常不會和 [!UICONTROL Cloud Manager] 互動，但可能會使用 [!UICONTROL Cloud Manager] 方案切換器 (已經從 [!UICONTROL Experience Cloud] 進行瀏覽) 以存取 Adobe Experience Manager (AEM)。 |
 
