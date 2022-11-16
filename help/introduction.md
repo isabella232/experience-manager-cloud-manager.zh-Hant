@@ -4,7 +4,7 @@ description: 從這裡開始了解用於 Adobe​ Managed Services (AMS) 的 Clo
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: ht
-source-wordcount: '1287'
+source-wordcount: '1311'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透過以 Adob&#x200B;&#x200B;e Experience Manager 最佳做法建立的簡化工作流程建立有影響力的客戶體驗。為 Adob&#x200B;&#x200B;e Experience Manager 最佳化的 CI/CD 管道讓您僅需簽入您的程式碼就能輕鬆地合併開發工作流程，然後就能一路移動到生產就緒狀態。在建置階段，您的自訂程式碼更新會根據最佳做法進行完整測試，以便為您的客戶提供可靠的應用程式。Cloud Manager 會使用開放式 API 方法，讓您能夠在不中斷現有流程和工具的情況下與您的系統整合。
+Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透過以 Adob&#x200B;&#x200B;e Experience Manager 最佳做法為基礎所建置的精簡工作流程建立有影響力的客戶體驗。為 Adob&#x200B;&#x200B;e Experience Manager 最佳化的 CI/CD 管道讓您僅需簽入您的程式碼就能輕鬆地合併開發工作流程，然後就能一路移動到生產就緒狀態。在建置階段，您的自訂程式碼更新會根據最佳做法進行完整測試，以便為您的客戶提供可靠的應用程式。Cloud Manager 會使用開放式 API 方法，讓您能夠在不中斷現有流程和工具的情況下與您的系統整合。
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 ![CI/CD 流程](/help/assets/screen_shot_2018-05-12at73843pm.png)
 
-## [!UICONTROL Cloud Manager] 中的重要功能  {#key-features-in-cloud-manager}
+## [!UICONTROL  中的重要功能 Cloud Manager] {#key-features-in-cloud-manager}
 
 以下是對 Cloud Manager 選定的重要功能的深入探討。
 
@@ -59,15 +59,15 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
-[!UICONTROL Cloud Manager] 的一項重要功能是可運用最佳化的 CI/CD 管道，以加速自訂程式碼或更新的傳送，例如在網站上新增元件。
+[!UICONTROL Cloud Manager] 的一項重要功能是運用最佳化 CI/CD 管道的能力，以便加速自訂程式碼或更新的傳送，例如在網站上新增元件。
 
 透過 [!UICONTROL Cloud Manager] UI，您可以設定並啟動您的 CI/CD 管道。此管道的部分作業會執行完整的程式碼掃描，以確保只有高品質的應用程式才能傳遞至生產環境。
 
-若要了解有關從 [!UICONTROL Cloud Manager] 的 UI 設定管道的詳細資訊，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道。](/help/using/non-production-pipelines.md)
+若要了解有關來自 [!UICONTROL Cloud Manager] 的 UI 設定管道的詳細資訊，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道。](/help/using/non-production-pipelines.md)
 
-### 有彈性的部署模式 {#flexible-deployment-modes}
+### 靈活的部署模式 {#flexible-deployment-modes}
 
-[!UICONTROL Cloud Manager] 會提供有彈性且可設定的部署模式，您因此能夠根據不斷變化的業務需求傳遞體驗。
+[!UICONTROL Cloud Manager] 會提供靈活且可設定的部署模式，讓您因此能夠根據不斷變化的業務需求實現體驗。
 
 使用自動觸發模式時，程式碼會根據特定事件 (例如程式碼認可) 自動部署至環境。您也可以在指定的時間範圍內，甚至在工作時間以外，進行程式碼部署排程。
 
