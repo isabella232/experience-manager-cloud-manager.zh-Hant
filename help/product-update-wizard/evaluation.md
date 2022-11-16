@@ -5,7 +5,7 @@ description: 了解產品更新精靈的評估階段如何使用模式偵測器�
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
 workflow-type: ht
-source-wordcount: '291'
+source-wordcount: '296'
 ht-degree: 100%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 評估階段 {#evaluation}
 
-產品更新精靈的第一階段是 **[!UICONTROL Evaluation]** 階段，該階段會在精靈中直接使用模式偵測器來評估升級複雜性。在此步驟結束時，您將可存取評估報告。
+產品更新精靈的第一階段是&#x200B;**[!UICONTROL 評估]**&#x200B;階段，該階段會直接在精靈中使用模式偵測器來評估升級複雜性。在此步驟結束時，您將可存取評估報告。
 
 所產生的報告可讓您透過偵測以下模式來檢查作者執行個體的升級資格：
 
@@ -35,13 +35,13 @@ ht-degree: 100%
 
 1. 依照以下文件中的說明啟動精靈：[產品更新精靈。](/help/product-update-wizard/overview.md)
 
-1. 按一下 **[!UICONTROL Run Evaluation]**。
+1. 按一下&#x200B;**[!UICONTROL 執行評估]**。
 
    ![執行評估](/help/assets/Run-Evaluation.png)
 
 1. 精靈會通知您操作狀態。當產生評估時，依適用狀態，您將會注意到&#x200B;**進行中**&#x200B;或&#x200B;**已完成**。
 
-1. 報告產生後，您可按一下 **[!UICONTROL Download report]** 即可儲存副本。
+1. 報告產生後，您可按一下&#x200B;**[!UICONTROL 下載報告]**，以儲存副本。
 
    ![報告已建立](/help/assets/Evaluation-1.png)
 
