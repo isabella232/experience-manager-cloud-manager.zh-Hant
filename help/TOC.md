@@ -7,7 +7,7 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 source-git-commit: fcc39abd5c33b3839ea5d6010200bddf17fec03e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 # Cloud Manager 文件 {#content}
 
 + [用於 AMS 的 Cloud Manager](introduction.md)
-+ 總覽 {#overview}
++ 概觀 {#overview}
    + [重要概念](overview/key-concepts.md)
    + [使用者旅程圖](overview/user-journey.md)
    + [CI/CD 管道](overview/ci-cd-pipelines.md)
@@ -58,7 +58,7 @@ ht-degree: 100%
    + [和 Git 整合](managing-code/git-integration.md)
    + [使用多個 Git 存放庫](managing-code/multiple-git-repos.md)
 + 產品更新精靈 {#product-update-wizard}
-   + [總覽](product-update-wizard/overview.md)
+   + [概觀](product-update-wizard/overview.md)
    + [評估](product-update-wizard/evaluation.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](release-notes/current.md)
