@@ -1,16 +1,16 @@
 ---
 title: 程式碼品質測試
-description: 了解管道程式碼品質測試如何運作及如何提高部署品質。
+description: 了解管道計劃碼品質測試如何運作及如何提高部署品質。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: ht
-source-wordcount: '2863'
+source-wordcount: '2867'
 ht-degree: 100%
 
 ---
 
 
-# 程式碼品質測試 {#code-quality-testing}
+# 計劃碼品質測試 {#code-quality-testing}
 
 了解管道程式碼品質測試如何運作及如何提高部署品質。
 
@@ -56,11 +56,11 @@ ht-degree: 100%
 |--- |--- |--- |--- |
 | 安全評等 | A = 無漏洞<br/>B = 至少 1 個輕微漏洞<br/>C = 至少 1 個重大漏洞<br/>D = 至少 1 個嚴重漏洞<br/>E = 至少 1 個阻斷式漏洞 | 嚴重 | &lt; B |
 | 可靠度評等 | A = 無錯誤<br/>B = 至少 1 個輕微錯誤<br/>C = 至少 1 個重大錯誤<br/>D = 至少 1 個嚴重錯誤<br/>E = 至少 1 個阻斷式錯誤 | 重要 | &lt; C |
-| 可維護性評等 | 由程式碼異味的待處理修復成本定義為已進入應用程式的時間的百分比<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
+| 可維護性評等 | 由計劃碼異味的待處理修復成本定義為已進入應用計劃的時間的百分比<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
 | 適用範圍 | 使用以下公式將單位測試行適用範圍和條件適用範圍混合後定義：<br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = 在執行單位測試時已經至少一次評估為 `true` 的條件</li><li>`CF` = 在執行單位測試時已經至少一次評估為 `false` 的條件</li><li>`LC` = 適用行數 = lines_to_cover - uncovered_lines</li><li>`B` = 條件總數</li><li>`EL` = 可執行行的總數 (lines_to_cover)</li></ul> | 重要 | &lt; 50% |
 | 略過的單位測試 | 略過的單位測試總數 | 資訊 | > 1 |
-| 未解決的問題 | 整體問題類型 - 漏洞、錯誤和程式碼異味 | 資訊 | > 0 |
-| 重複的行 | 定義為重複區塊中包含的行數。在以下條件下，會將程式碼區塊視為重複。<br>非 Java 專案：<ul><li>應該至少有 100 個連續和重複的權杖。</li><li>這些權杖應至少分佈在： </li><li>COBOL 的 30 行程式碼 </li><li>ABAP 的 20 行程式碼 </li><li>其他語言的 10 行程式碼</li></ul>Java 專案：<ul></li><li> 無論權杖和行的數量如何，應至少有 10 個連續和重複的陳述式。</li></ul>偵測重複時會忽略縮排和字串常值中的差異。 | 資訊 | > 1% |
+| 未解決的問題 | 整體問題類型 - 漏洞、錯誤和計劃碼異味 | 資訊 | > 0 |
+| 重複的行 | 定義為重複區塊中包含的行數。在以下條件下，會將計劃碼區塊視為重複。<br>非 Java 專案：<ul><li>應該至少有 100 個連續和重複的權杖。</li><li>這些權杖應至少分佈在： </li><li>COBOL 的 30 行計劃碼 </li><li>ABAP 的 20 行計劃碼 </li><li>其他語言的 10 行計劃碼</li></ul>Java 專案：<ul></li><li> 無論權杖和行的數量如何，應至少有 10 個連續和重複的陳述式。</li></ul>偵測重複時會忽略縮排和字串常值中的差異。 | 資訊 | > 1% |
 | 雲端服務相容性 | 識別出的雲端服務相容性問題的數量 | 資訊 | > 0 |
 
 >[!NOTE]
@@ -77,14 +77,14 @@ ht-degree: 100%
 
 在這些情況下，可以使用標準 Java `@SuppressWarnings` 註解來標註原始程式碼，將規則 ID 指定為註解屬性。例如，一種常見的誤判是用於偵測硬式編碼密碼的 SonarQube 規則可能對如何識別硬式編碼密碼過於積極。
 
-以下程式碼在 AEM 專案中相當常見，其中包含連接到某些外部服務的程式碼。
+以下計劃碼在 AEM 專案中相當常見，其中包含連接到某些外部服務的計劃碼。
 
 ```java
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube 因此會提出阻斷式漏洞。但在查看程式碼後，您會發現這並非漏洞，然後可以使用適當的規則 ID 標註程式碼。
+SonarQube 因此會提出阻斷式漏洞。但在查看計劃碼後，您會發現這並非漏洞，然後可以使用適當的規則 ID 標註計劃碼。
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -92,7 +92,7 @@ SonarQube 因此會提出阻斷式漏洞。但在查看程式碼後，您會發�
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-但如果程式碼確實有此問題：
+但如果計劃碼確實有此問題：
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -107,7 +107,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## 安全測試 {#security-testing}
 
-[!UICONTROL Cloud Manager] 會在部署後在中繼環境上運行現有的 AEM 安全健康情況檢查並透過 UI 報告狀態。該結果會由環境中的所有 AEM 執行個體彙總而成。
+[!UICONTROL Cloud Manager] 會在部署後在中繼環境上執行現有 AEM 安全性的健康情況檢查並透過 UI 報告狀態。該結果會由環境中的所有 AEM 執行個體彙總而成。
 
 上述相同的健康情況檢查可隨時透過 Web 控制台或操作儀表板執行。
 
