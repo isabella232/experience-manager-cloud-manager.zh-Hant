@@ -4,7 +4,7 @@ description: 了解 CI/CD 管道以及這些管道如何在 Cloud Manager 中處
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: ht
-source-wordcount: '534'
+source-wordcount: '552'
 ht-degree: 100%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 了解 CI/CD 管道以及這些管道如何在 Cloud Manager 中處理至中繼和生產環境的部署。
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 [!UICONTROL Cloud Manager] 包括持續整合/持續傳遞 (CI/CD) 架構，此架構讓實作團隊可快速測試並傳遞新的或更新的程式碼。 例如，實作團隊可以設定、配置和啟動自動化 CI/CD 管道，該管道會利用 Adob&#x200B;&#x200B;e 編碼最佳做法來執行完整的程式碼掃描並確保最高的程式碼品質。
 
@@ -30,13 +30,13 @@ CI/CD 管道還會自動化單位和效能測試流程，以提高部署效率�
 |---|---|
 | 1. 啟動版本 | 部署管理員觸發版本的方式包括手動、使用 Git 認可，或按照定期排程。 |
 | 2. 建立版本標記 | [!UICONTROL Cloud Manager] 會建立 Git 標記，以使用自動產生的版本編號 (例如 `2018.531.245527.0000001222`) 來標示版次。 |
-| 3. 使用自動產生的版本編號建置版次 | [!UICONTROL Cloud Manager] 會以新指派的版本編號建置應用程式。 |
-| 4. 評估程式碼品質 | [!UICONTROL Cloud Manager] 會掃描原始程式碼並提供摘要，然後才能將程式碼部署到中繼環境。 |
+| 3. 使用自動產生的版本編號建置版次 | [!UICONTROL Cloud Manager] 會使用新指派的版本編號建置應用程式。 |
+| 4. 評估程式碼品質 | [!UICONTROL Cloud Manager] 會先掃描原始程式碼並提供摘要，然後才能將程式碼部署到中繼環境。 |
 | 5. 已建立版本的成品已儲存 | 儲存發行成品以供稍後在部署步驟中使用。 |
 | 6. 將成品自動部署至 AMS AEM 中繼環境 | 將發行成品部署至中繼環境。 |
 | 7. 觸發自動化測試 | [!UICONTROL Cloud Manager] 會在成品上執行效能和安全測試。 |
-| 8. 生產觸發部署 | 完成自動化測試後，[!UICONTROL Cloud Manager] 會開始對生產環境的部署。 |
-| 9. [!UICONTROL Cloud Manager] 取得將部署的成品 | [!UICONTROL Cloud Manager] 提取已儲存的發行成品。 |
+| 8. 生產觸發部署 | 完成自動化測試後，[!UICONTROL Cloud Manager] 會展開對生產環境的部署。 |
+| 9. [!UICONTROL Cloud Manager] 取得要部署的成品 | [!UICONTROL Cloud Manager] 提取已儲存的發行成品。 |
 | 10. 將成品部署至生產環境 | 將發行成品部署至生產環境。 |
 
 ### 如何設定 CI/CD 管道 {#how-to-setup-a-ci-cd-pipeline}
