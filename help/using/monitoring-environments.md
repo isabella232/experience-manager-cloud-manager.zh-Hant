@@ -4,7 +4,7 @@ description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
 workflow-type: ht
-source-wordcount: '933'
+source-wordcount: '939'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 量度臨界值 {#thresholds}
 
-可透過觀察環境中的個別執行個體並追踪每個執行個體的各種量度來完成 [!UICONTROL Cloud Manager] 中的系統監視。每個量度都有兩個已定義的臨界值：警告臨界值以及關鍵臨界值。
+可透過觀察環境中的個別執行個體並追蹤每個執行個體的各種量度來完成 [!UICONTROL Cloud Manager] 中的系統監視。每個量度都有兩個已定義的臨界值：警告臨界值以及關鍵臨界值。
 
 如果量度超越其關鍵臨界值，即被視為處於關鍵狀態。如果量度超越其警告臨界值 (但低於其關鍵臨界值)，即被視為處於警告狀態。此臨界值由 Adobe Managed Services 設定，並可在 [!UICONTROL Cloud Manager] 中視覺化。 在大多數情況下，客戶之間的臨界值會保持一致，但在某些情況下，Adobe Managed Services 會修改臨界值以和特定的客戶需求相符。如有關於臨界值的問題，應直接向您的客戶成功工程師 (CSE) 洽詢。
 
@@ -33,20 +33,20 @@ ht-degree: 100%
    ![設定](/help/assets/first-timea1.png)
 
 
-或者，您可以透過 [!UICONTROL Cloud Manager] 中的&#x200B;**報告**&#x200B;全域導覽功能表項目瀏覽至&#x200B;**系統監視**&#x200B;登陸頁面。
+或者，您可以透過 [!UICONTROL Cloud Manager] 中的&#x200B;**報告**&#x200B;全域導覽選單項目瀏覽至&#x200B;**系統監視**&#x200B;登陸頁面。
 
-## 系統監視總覽 {#system-monitoring-overview}
+## 系統監視概觀 {#system-monitoring-overview}
 
-此系統監視總覽頁面會包含方案中受監視的環境清單，並報告四個不同類別中的高層級健康狀況：
+此系統監視概觀頁面會包含方案中受監視的環境清單，並報告四個不同類別中的高層級健康狀況：
 
 * 主機
 * 儲存空間
 * 網路
 * 應用程式
 
-每個類別中的狀態是個別量度的摘要。如果某個類別中的任何量度處於關鍵狀態，則總覽頁面上的整個類別都會處於關鍵狀態。在環境層級和執行個體層級可檢視相同的摘要。
+每個類別中的狀態是個別量度的摘要。如果某個類別中的任何量度處於關鍵狀態，則概觀頁面上的整個類別都會處於關鍵狀態。在環境層級和執行個體層級可檢視相同的摘要。
 
-![系統監視總覽](/help/assets/System-Monitoring-Reports.png)
+![系統監視概觀](/help/assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -128,6 +128,6 @@ ht-degree: 100%
 
 ## 教學課程影片 {#video-tutorial}
 
-本影片提供了使用 Cloud Manager Reports 產生的圖表來檢視您的方案環境的總覽。
+本影片提供了使用 Cloud Manager Reports 產生的圖表來檢視您的方案環境的概觀。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)
