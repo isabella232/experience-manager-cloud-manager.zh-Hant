@@ -3,10 +3,10 @@ title: 2022.12.0 版發行說明
 description: 這些是 Cloud Manager 2022.12.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 83a404c1f54bc6a791a4c13a22b7a78f83755869
+source-git-commit: 5c97e8bfa30ed6bbbaf361e5d3987aa2a0bf5b13
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 65%
+source-wordcount: '105'
+ht-degree: 73%
 
 ---
 
@@ -27,7 +27,3 @@ ht-degree: 65%
 
 * 現在提供多區域自動縮放功能。 可能會套用某些限制。
 * 提高 [Cloud Manager管道](/help/overview/ci-cd-pipelines.md) 都做了。
-
-## 錯誤修正 {#bug-fixes}
-
-* 已進行變更，以防止 `PATCH /program//environment//variables` 要求環境 `FAILED` 狀態。
