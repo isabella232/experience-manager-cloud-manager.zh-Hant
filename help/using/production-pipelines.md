@@ -3,9 +3,9 @@ title: 設定生產管道
 description: 了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1302'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -94,8 +94,8 @@ ht-degree: 98%
             1. **路徑**&#x200B;下會提供內容路徑。
             1. 在&#x200B;**類型**&#x200B;下，選取在該路徑將採取的操作。
 
-               * **刷新**  — 執行快取刪除。
-               * **無效**  — 執行快取失效，類似於從製作執行個體啟動內容至發佈執行個體時。
+               * **排清** - 執行快取刪除。
+               * **失效** - 執行快取失效，類似於將內容從製作執行個體啟動至發佈執行個體的情況。
             1. 按一下&#x200B;**新增路徑**，即可新增您指定的路徑。您在每個環境最多可新增 100 個路徑。
 
          ![Dispatcher 設定](/help/assets/configure-pipelines/dispatcher-stage.png)
