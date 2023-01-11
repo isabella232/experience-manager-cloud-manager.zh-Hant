@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+source-git-commit: 60a6fd062a3878230dafdc34d9ce289ade361120
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 91%
 
 ---
 
@@ -104,7 +104,7 @@ Cloud Manager 的組建環境有下列屬性。
 
 ### 備用 Maven 執行 JDK 版本 {#alternate-maven}
 
-也可以選取 Oracle 8 或 Oracle 11 作為整個 Maven 執行的 JDK。和工具鏈選項不同，這會變更用於所有外掛程式的 JDK，除非還設定了工具鏈設定，若是這種情況，則工具鏈設定仍適用於工具鏈感知的 Maven 外掛程式。結果，利用 [Apache Maven 強制器外掛計劃](https://maven.apache.org/enforcer/maven-enforcer-plugin/)來檢查和強制執行 Java 版本將變得可行。
+也可以選取 Oracle 8 或 Oracle 11 作為整個 Maven 執行的 JDK。和工具鏈選項不同，這會變更用於所有外掛程式的 JDK，除非還設定了工具鏈設定，若是這種情況，則工具鏈設定仍適用於工具鏈感知的 Maven 外掛程式。結果，利用 [Apache Maven 強制器外掛程式](https://maven.apache.org/enforcer/maven-enforcer-plugin/)來檢查和強制執行 Java 版本將變得可行。
 
 為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。本檔案可能有的內容為 `11` 或 `8`。任何其他值會受到忽略。若指定 `11`，會使用 Oracle 11，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk-11.0.2`。若指定 `8`，會使用 Oracle 8，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk1.8.0_202`。
 
@@ -124,9 +124,31 @@ Cloud Manager 的組建環境有下列屬性。
 | `BRANCH` | 為執行設定的分支 |
 | `CM_PIPELINE_ID` | 數值的管道識別碼 |
 | `CM_PIPELINE_NAME` | 管道名稱 |
-| `CM_PROGRAM_ID` | 數值的方案識別碼 |
+| `CM_PROGRAM_ID` | 數值的程序識別碼 |
 | `CM_PROGRAM_NAME` | 方案名稱 |
 | `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
+
+### 標準環境變數可用性 {#availability}
+
+標準環境變數可用於多個位置。
+
+#### 製作、預覽和發佈 {#author-preview-publish}
+
+一般環境變數和機密都可用於製作、預覽和發佈環境。
+
+#### Dispatcher {#dispatcher}
+
+Dispatcher上只能使用一般環境變數。 無法使用機密。
+
+不過，環境變數無法用於 `IfDefine` 指令。
+
+>[!TIP]
+>
+>您應驗證是否使用環境變數搭配 [本機](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 部署前。
+
+#### OSGi配置 {#osgi}
+
+OSGi設定中可同時使用一般環境變數和機密。
 
 ### 管道變數 {#pipeline-variables}
 
