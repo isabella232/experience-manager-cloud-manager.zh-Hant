@@ -2,9 +2,9 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 60a6fd062a3878230dafdc34d9ce289ade361120
+source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1152'
 ht-degree: 91%
 
 ---
@@ -138,7 +138,7 @@ Cloud Manager 的組建環境有下列屬性。
 
 #### Dispatcher {#dispatcher}
 
-Dispatcher上只能使用一般環境變數。 無法使用機密。
+只有一般環境變數可搭配使用 [調度程式。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant) 無法使用機密。
 
 不過，環境變數無法用於 `IfDefine` 指令。
 
@@ -148,7 +148,7 @@ Dispatcher上只能使用一般環境變數。 無法使用機密。
 
 #### OSGi配置 {#osgi}
 
-OSGi設定中可同時使用一般環境變數和機密。
+規則環境變數和機密皆可用於 [OSGi設定。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
 
 ### 管道變數 {#pipeline-variables}
 
