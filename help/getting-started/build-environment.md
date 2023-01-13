@@ -3,9 +3,9 @@ title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
