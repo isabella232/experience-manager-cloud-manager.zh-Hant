@@ -3,10 +3,10 @@ title: 2023.1.0 版發行說明
 description: 以下是 Cloud Manager 2023.1.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 3e4937fc262016cef5c5c692c06244f411b28c0f
+source-git-commit: dc534e6339f910014a3edbd684f7b1535079f039
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 56%
+source-wordcount: '164'
+ht-degree: 45%
 
 ---
 
@@ -25,7 +25,9 @@ ht-degree: 56%
 
 ## 新增功能 {#what-is-new}
 
-* 可用性增強是通過更新游標樣式來區分用戶可以採取操作的位置和預設指針。
+* 支援 [自助服務內容副本](/help/using/content-copy.md) 將在此版本後，透過分階段推出提供。 可能適用某些限制。
+* 在環境和管道執行的清單中，您現在可以按一下個別列來存取詳細資料。
+* 更新游標樣式，以區分使用者可採取動作的位置與預設指標，進而增強可用性。
 
 ## 錯誤修正 {#bug-fixes}
 
