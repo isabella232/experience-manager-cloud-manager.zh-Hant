@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: dc534e6339f910014a3edbd684f7b1535079f039
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 45%
+ht-degree: 67%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 45%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!UICONTROL Cloud Manager] 版本2023.1.0為2023年1月19日。 下一版預計於2023年2月16日發行。
+[!UICONTROL Cloud Manager] 2023.1.0 版的發行日期為 2023 年 1 月 19 日。下一版計劃於 2023 年 2 月 16 日發行。
 
 ## 新增功能 {#what-is-new}
 
@@ -31,4 +31,4 @@ ht-degree: 45%
 
 ## 錯誤修正 {#bug-fixes}
 
-* Cloud Manager將防止兩個管道執行同時（或幾乎同時）啟動，從而避免管道故障。
+* Cloud Manager 將防止兩個管道執行同時 (或幾乎同時) 開始，從而避免管道故障。
