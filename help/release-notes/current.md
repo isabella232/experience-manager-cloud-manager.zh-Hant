@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: dc534e6339f910014a3edbd684f7b1535079f039
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 67%
 
 ## 新增功能 {#what-is-new}
 
-* 支援 [自助服務內容副本](/help/using/content-copy.md) 將在此版本後，透過分階段推出提供。 可能適用某些限制。
-* 在環境和管道執行的清單中，您現在可以按一下個別列來存取詳細資料。
-* 更新游標樣式，以區分使用者可採取動作的位置與預設指標，進而增強可用性。
+* [自助服務內容副本](/help/using/content-copy.md)的支援將在本次發布後分階段推出。可能適用某些限制。
+* 在環境和管道執行列表中，您現在可以透過點擊個別行來存取詳細資訊。
+* 透過更新滑鼠游標樣式來增強可用性，這些樣式區分用戶可以在何處執行作業與預設指針。
 
 ## 錯誤修正 {#bug-fixes}
 
