@@ -2,9 +2,9 @@
 title: 內容副本工具
 description: Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從 AEM 生產環境複製到較低的環境以進行測試。
 source-git-commit: 360cbf7e3a21e530a4e43f13f6d414dae4afa104
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 
 ## 權限 {#permissions}
 
-若要使用內容複製工具，必須將使用者指派給 **部署管理員** 角色。
+若要使用內容複製工具，使用者必須獲指派來源和目標環境中的&#x200B;**部署管理員**&#x200B;角色。
 
 ## 建立內容集 {#create-content-set}
 
