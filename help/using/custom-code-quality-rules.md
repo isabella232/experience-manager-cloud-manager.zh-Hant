@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則
 description: 根據來自 AEM 工程團隊的最佳做法，了解 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的詳細資訊。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 611cd8f874e8e0d21a475365f4aceb6ae2565644
-workflow-type: ht
-source-wordcount: '3537'
+source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
+workflow-type: tm+mt
+source-wordcount: '3531'
 ht-degree: 100%
 
 ---
@@ -627,7 +627,7 @@ public class DontDoThis implements Page {
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
-OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 AEM 中的預設撰寫模式。由於[從 AEM 6.4 起，Classic UI 就已被取代，](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)若將預設的撰寫模式設定為 Classic UI，將會產生問題。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 AEM 中的預設撰寫模式。由於從 AEM 6.4 起，Classic UI 就已被取代，若將預設的撰寫模式設定為 Classic UI，將會產生問題。
 
 ### 包含對話框的元件應該有 Touch UI 對話框 {#oakpal-components-dialogs}
 
