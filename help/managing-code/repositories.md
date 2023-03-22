@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何為您的 Cloud Manager 方案存取、建立和編輯存放庫。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 80%
 
 ---
 
@@ -81,9 +81,19 @@ ht-degree: 100%
 
 1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤，並瀏覽至&#x200B;**存放庫**&#x200B;頁面。您可以在此檢視您現有存放庫的詳細資料。
 
-1. 選取存放庫並按一下表格最右側的省略符號按鈕，即可&#x200B;**複製存放庫 URL**、**檢視和更新**&#x200B;或&#x200B;**刪除**&#x200B;您的存放庫。
+1. 選取存放庫，然後按一下表格最右側的刪節號按鈕，即可 **複製儲存庫URL** 或 **檢視與更新** 您的存放庫。
 
 ![編輯存放庫](/help/assets/create-repo3.png)
+
+## 刪除儲存庫 {#delete-repos}
+
+要刪除儲存庫，請執行相同步驟 [查看和編輯儲存庫](#edit-repos) 但在 **儲存庫** 頁面選取 **刪除** 從要刪除的儲存庫的刪節號按鈕。
+
+請注意，在Cloud Manager中刪除儲存庫後，系統會將其標示為已刪除，使用者無法再存取，但系統會維護儲存庫以用於復原。
+
+如果您在刪除具有相同名稱的儲存庫後嘗試建立新儲存庫，您將收到錯誤訊息「嘗試建立儲存庫時發生錯誤。 請聯繫您的CSE或Adobe支援。」
+
+如果您收到此錯誤訊息，請聯絡Adobe支援，協助重新命名已刪除的存放庫，或為新存放庫選擇其他名稱。
 
 ## Git 子模組支援 {#git-submodule-support}
 
