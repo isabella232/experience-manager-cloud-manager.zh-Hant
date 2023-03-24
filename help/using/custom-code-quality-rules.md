@@ -3,7 +3,7 @@ title: 自訂程式碼品質規則
 description: 根據來自 AEM 工程團隊的最佳做法，了解 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的詳細資訊。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3531'
 ht-degree: 100%
 
@@ -642,7 +642,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 AEM 
 * 具有 Classic UI 設計對話框 (即 `design_dialog` 節點) 的元件必須具有相對應的 Touch UI 對話框 (即 `cq:design_dialog` 子節點)。
 * 同時具有 Classic UI 對話框以及 Classic UI 設計對話框的元件必須同時有相對應的 Touch UI 對話框以及相對應的 Touch UI 設計對話框。
 
-AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 Touch UI 的詳細資訊和工具。如需更多詳細資訊，請參閱[AEM 現代化工具文件](https://opensource.adobe.com/aem-modernize-tools/)。
+AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 Touch UI 的詳細資訊和工具。如需更多詳細資訊，請參閱 [AEM 現代化工具文件](https://opensource.adobe.com/aem-modernize-tools/)。
 
 ### 套件不應該混合可變和不可變的內容 {#oakpal-packages-immutable}
 
@@ -653,7 +653,7 @@ AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 
 
 為了和雲端服務部署模式相容，個別內容套件必須包含存放庫不可變區域 (即 `/apps` 和 `/libs`) 或可變區域 (即不在 `/apps` 或 `/libs` 中的所有內容) 的內容，但不能同時包含兩者。例如，同時包含 `/apps/myco/components/text and /etc/clientlibs/myco` 的套件和雲端服務不相容，並會導致需通報的問題。
 
-如需更多詳細資訊，請參閱[AEM 專案結構文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)。
+如需更多詳細資訊，請參閱 [AEM 專案結構文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)。
 
 >[!NOTE]
 >
