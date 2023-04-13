@@ -1,13 +1,13 @@
 ---
 title: 內容副本工具
 description: Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從 AEM 生產環境複製到較低的環境以進行測試。
-source-git-commit: 5b10ac5e47052cabd7478050651a4ca04287a8f0
-workflow-type: ht
-source-wordcount: '1082'
-ht-degree: 100%
+exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
+source-git-commit: 7ef29a244688de82537da0b879fbf397900427c0
+workflow-type: tm+mt
+source-wordcount: '1083'
+ht-degree: 99%
 
 ---
-
 
 # 內容副本工具 {#content-copy}
 
@@ -87,7 +87,7 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 
 >[!NOTE]
 >
->您最多可以在一個內容集中新增 50 個路徑。
+>在內容集中最多可新增50個路徑。
 >排除的路徑沒有限制。
 
 ## 正在編輯內容集 {#edit-content-set}

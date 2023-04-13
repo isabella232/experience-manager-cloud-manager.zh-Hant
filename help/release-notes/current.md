@@ -1,19 +1,19 @@
 ---
-title: 2023.3.0 版發行說明
-description: 以下是 Cloud Manager 2023.3.0 版的發行說明。
+title: 2023.4.0 版發行說明
+description: 以下是 Cloud Manager 2023.4.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6ff44d7a7ccccc64f937df4dca854788c973bfd0
-workflow-type: ht
-source-wordcount: '102'
-ht-degree: 100%
+source-git-commit: 0ea63c0c8a4fa216ac3d70db1fb12add7f036495
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Cloud Manager 2023.3.0 版的發行說明 {#release-notes}
+# Cloud Manager 2023.4.0 版的發行說明 {#release-notes}
 
-本頁會記錄 [!UICONTROL Cloud Manager] 2023.3.0 版的發行說明。
+本頁會記錄 [!UICONTROL Cloud Manager] 2023.4.0 版的發行說明。
 
 >[!NOTE]
 >
@@ -21,8 +21,12 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2023.3.0 版的發行日期為 2023 年 3 月 16 日。下一版本計劃於 2023 年 4 月 13 日發行。
+[!UICONTROL Cloud Manager] 2023.4.0 版的發行日期為 2023 年 4 月 13 日。下一個版本計劃於 2023 年 11 月 5 日發行。
+
+## 新增功能 {#what-is-new}
+
+* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 已更新至41版。
 
 ## 錯誤修正 {#bug-fixes}
 
-* Cloud Manager 的&#x200B;**學習**&#x200B;索引標籤上的 Commerce 圖磚現在可以將使用者導覽到正確的頁面。
+* 如果 [藍色/綠色部署](/help/introduction.md#blue-green) 失敗。

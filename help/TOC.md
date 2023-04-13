@@ -6,9 +6,9 @@ breadcrumb-title: 適用於 AEM 6.x 的 Cloud Manager 文件
 user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理適用於 AMS 的 Adobe Experience Manager。
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
-source-git-commit: 6e4b6272fc722a0bd38d1cc4ca1e2052f8b24021
-workflow-type: ht
-source-wordcount: '327'
+source-git-commit: 5cc645ee28761d692cc5b50d235e13d9d21e468e
+workflow-type: tm+mt
+source-wordcount: '330'
 ht-degree: 100%
 
 ---
@@ -62,46 +62,47 @@ ht-degree: 100%
    + [概觀](product-update-wizard/overview.md)
    + [評估](product-update-wizard/evaluation.md)
 + 發行說明 {#release-notes}
-   + [最新發行說明](release-notes/current.md)
+   + [最新版本注意事項](release-notes/current.md)
    + 2023 {#2023}
+      + [2023.3.0 版發行說明](release-notes/2023/2023-3-0.md)
       + [2023.2.0 版發行說明](release-notes/2023/2023-2-0.md)
-      + [2023.1.0 版發行說明](release-notes/2023/2023-1-0.md)
+      + [2023.1.0 版版本注意事項](release-notes/2023/2023-1-0.md)
    + 2022 {#2022}
-      + [2022.12.0 版發行說明](release-notes/2022/2022-12-0.md)
-      + [2022.11.0 版發行說明](release-notes/2022/2022-11-0.md)
-      + [2022.10.0 版發行說明](release-notes/2022/2022-10-0.md)
-      + [2022.9.0 版發行說明](release-notes/2022/2022-9-0.md)
-      + [2022.8.0 版發行說明](release-notes/2022/2022-8-0.md)
-      + [2022.7.0 版發行說明](release-notes/2022/2022-7-0.md)
-      + [2022.6.0 版發行說明](release-notes/2022/2022-6-0.md)
-      + [2022.5.0 版發行說明](release-notes/2022/2022-5-0.md)
-      + [2022.4.0 版發行說明](release-notes/2022/2022-4-0.md)
-      + [2022.3.0 版發行說明](release-notes/2022/2022-3-0.md)
-      + [2022.2.0 版發行說明](release-notes/2022/2022-2-0.md)
-      + [2022.1.0 版發行說明](release-notes/2022/2022-1-0.md)
+      + [2022.12.0 版版本注意事項](release-notes/2022/2022-12-0.md)
+      + [2022.11.0 版版本注意事項](release-notes/2022/2022-11-0.md)
+      + [2022.10.0 版版本注意事項](release-notes/2022/2022-10-0.md)
+      + [2022.9.0 版版本注意事項](release-notes/2022/2022-9-0.md)
+      + [2022.8.0 版版本注意事項](release-notes/2022/2022-8-0.md)
+      + [2022.7.0 版版本注意事項](release-notes/2022/2022-7-0.md)
+      + [2022.6.0 版版本注意事項](release-notes/2022/2022-6-0.md)
+      + [2022.5.0 版版本注意事項](release-notes/2022/2022-5-0.md)
+      + [2022.4.0 版版本注意事項](release-notes/2022/2022-4-0.md)
+      + [2022.3.0 版版本注意事項](release-notes/2022/2022-3-0.md)
+      + [2022.2.0 版版本注意事項](release-notes/2022/2022-2-0.md)
+      + [2022.1.0 版版本注意事項](release-notes/2022/2022-1-0.md)
    + 2021 {#2021}
-      + [2021.12.0 版發行說明](release-notes/2021/2021-12-0.md)
-      + [2021.11.0 版發行說明](release-notes/2021/2021-11-0.md)
-      + [2021.10.0 版發行說明](release-notes/2021/2021-10-0.md)
-      + [2021.9.0 版發行說明](release-notes/2021/2021-9-0.md)
-      + [2021.8.0 版發行說明](release-notes/2021/2021-8-0.md)
-      + [2021.7.0 版發行說明](release-notes/2021/2021-7-0.md)
-      + [2021.6.0 版發行說明](release-notes/2021/2021-6-0.md)
-      + [2021.5.0 版發行說明](release-notes/2021/2021-5-0.md)
-      + [2021.4.0 版發行說明](release-notes/2021/2021-4-0.md)
-      + [2021.3.0 版發行說明](release-notes/2021/2021-3-0.md)
+      + [2021.12.0 版版本注意事項](release-notes/2021/2021-12-0.md)
+      + [2021.11.0 版版本注意事項](release-notes/2021/2021-11-0.md)
+      + [2021.10.0 版版本注意事項](release-notes/2021/2021-10-0.md)
+      + [2021.9.0 版版本注意事項](release-notes/2021/2021-9-0.md)
+      + [2021.8.0 版版本注意事項](release-notes/2021/2021-8-0.md)
+      + [2021.7.0 版版本注意事項](release-notes/2021/2021-7-0.md)
+      + [2021.6.0 版版本注意事項](release-notes/2021/2021-6-0.md)
+      + [2021.5.0 版版本注意事項](release-notes/2021/2021-5-0.md)
+      + [2021.4.0 版版本注意事項](release-notes/2021/2021-4-0.md)
+      + [2021.3.0 版版本注意事項](release-notes/2021/2021-3-0.md)
       + [2021.2.0 版發行說明](release-notes/2021/2021-2-0.md)
    + 2020 {#2020}
-      + [2020.12.0 版發行說明](release-notes/2020/2020-12-0.md)
-      + [2020.11.0 版發行說明](release-notes/2020/2020-11-0.md)
-      + [2020.10.0 版發行說明](release-notes/2020/2020-10-0.md)
-      + [2020.9.0 版發行說明](release-notes/2020/2020-9-0.md)
-      + [2020.8.0 版發行說明](release-notes/2020/2020-8-0.md)
-      + [2020.7.0 版發行說明](release-notes/2020/2020-7-0.md)
-      + [2020.6.0 版發行說明](release-notes/2020/2020-6-0.md)
-      + [2020.5.0 版發行說明](release-notes/2020/2020-5-0.md)
-      + [2020.4.0 版發行說明](release-notes/2020/2020-4-0.md)
-      + [2020.3.0 版發行說明](release-notes/2020/2020-3-0.md)
+      + [2020.12.0 版版本注意事項](release-notes/2020/2020-12-0.md)
+      + [2020.11.0 版版本注意事項](release-notes/2020/2020-11-0.md)
+      + [2020.10.0 版版本注意事項](release-notes/2020/2020-10-0.md)
+      + [2020.9.0 版版本注意事項](release-notes/2020/2020-9-0.md)
+      + [2020.8.0 版版本注意事項](release-notes/2020/2020-8-0.md)
+      + [2020.7.0 版版本注意事項](release-notes/2020/2020-7-0.md)
+      + [2020.6.0 版版本注意事項](release-notes/2020/2020-6-0.md)
+      + [2020.5.0 版版本注意事項](release-notes/2020/2020-5-0.md)
+      + [2020.4.0 版版本注意事項](release-notes/2020/2020-4-0.md)
+      + [2020.3.0 版版本注意事項](release-notes/2020/2020-3-0.md)
       + [2020.2.0 版發行說明](release-notes/2020/2020-2-0.md)
       + [2020.1.0 版發行說明](release-notes/2020/2020-1-0.md)
    + 2019 {#2019}
