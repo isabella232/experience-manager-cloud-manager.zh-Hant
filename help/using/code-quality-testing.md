@@ -3,9 +3,9 @@ title: 程式碼品質測試
 description: 了解管道計劃碼品質測試如何運作及如何提高部署品質。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2867'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ Cloud Manager 旋轉的虛擬使用者或容器的數量由具有&#x200B;**企�
 在 30 分鐘測試期開始之前，Cloud Manager 將使用客戶成功工程師設定的一組一或多個 seed URL 來耙梳中繼環境。從這些 URL 開始，請檢查每個頁面的 HTML，並以廣度優先方式點選所有連結。
 
 * 預設情況下，此耙梳流程的上限為 5000 個頁面。
-* 設定 [管道變數](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
+* 透過設定[管道變數](/help/getting-started/build-environment.md#pipeline-variables)`CM_PERF_TEST_CRAWLER_MAX_PAGES`，可覆寫要測試的最大頁數。
    * 允許值為 `2000` - `7000`。
 * 來自編目程式的請求固定逾時時間為 10 秒。
 
