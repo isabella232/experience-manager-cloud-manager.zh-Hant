@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2023.5.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 5a92ceb98de68025ca917c9b9cb358d54282b235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 67%
 
 ## 發行日期 {#release-date}
 
-的發行日期 [!UICONTROL Cloud Manager] 2023.5.0版於2023年5月11日發行。 下一版本計劃於 2023 年 6 月 8 日發行。
+[!UICONTROL Cloud Manager] 2023.5.0 版的發行日期為 2023 年 5 月 11 日。下一版本計劃於 2023 年 6 月 8 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* [自助服務內容副本](/help/using/content-copy.md) 現在可透過Cloud Manager UI從較高環境使用至較低環境。 如需詳細資訊，請連絡您的客戶成功工程師。
+* 現在可以透過 Cloud Manager UI 從較高環境向較低環境執行[自助內容複製](/help/using/content-copy.md)。請聯絡您的客戶成功工程師以了解詳細資訊。
