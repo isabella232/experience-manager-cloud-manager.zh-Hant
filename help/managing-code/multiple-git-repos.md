@@ -3,7 +3,7 @@ title: 使用多個 Git 存放庫
 description: 了解如何使用自己的 Git 存放庫或多個 Git 存放庫，而不是直接使用 Cloud Manager 的 Git 存放庫。
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
 source-git-commit: da9dff997a277c207e2c48207217cb30325f3c0d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 100%
 

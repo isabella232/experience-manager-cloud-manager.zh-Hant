@@ -3,7 +3,7 @@ title: Git 和 Adobe Cloud Manager 整合
 description: 本影片系列會逐步介紹客戶管理的 (內部部署) Git 存放庫與 Adob​​e Cloud Manager 的設定和整合。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 100%
 

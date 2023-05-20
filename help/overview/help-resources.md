@@ -3,7 +3,7 @@ title: 說明資源
 description: 了解可幫助您使用 Cloud Manager 的資源。
 exl-id: 6a4573a6-d9f0-41bc-8ce2-289ba9cc9f47
 source-git-commit: dcdb9aca03a905e875fbf8f805d7a7ae7b5b594b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 100%
 

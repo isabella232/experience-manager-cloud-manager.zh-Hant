@@ -3,7 +3,7 @@ title: 程式碼品質測試
 description: 了解管道計劃碼品質測試如何運作及如何提高部署品質。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2867'
 ht-degree: 100%
 

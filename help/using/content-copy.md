@@ -3,7 +3,7 @@ title: 內容複製工具
 description: Cloud Manager 內容複製工具能讓使用者依照需要，將可變內容從 AEM 生產環境複製到較低的環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 65cca64cb230686617af7f797fa86b754658e46d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 100%
 

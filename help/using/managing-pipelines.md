@@ -3,7 +3,7 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
 

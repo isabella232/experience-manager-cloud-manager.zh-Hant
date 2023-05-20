@@ -4,7 +4,7 @@ description: 以下是 Cloud Manager 2023.5.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 5a92ceb98de68025ca917c9b9cb358d54282b235
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: 重要概念
 description: 像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: 73e322cf93dc7709b7581860974079c8d94034ba
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 100%
 

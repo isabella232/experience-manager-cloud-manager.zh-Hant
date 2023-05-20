@@ -3,7 +3,7 @@ title: 設定非生產管道
 description: 了解如何使用 Cloud Manager 建立和設定非生產管道，以部署程式碼。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 567a16a032bf80451b5e8ba4e3d842cb617a615f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 有兩種類型的非生產管道：
 
-* **計劃碼品質管道** - 這些會對 Git 分支中的計劃碼執行計劃碼品質掃描並執行組建和計劃碼品質步驟。
+* **程式碼品質管道** - 這些會對 Git 分支中的程式碼執行程式碼品質掃描並執行組建和程式碼品質步驟。
 * **部署管道** - 除了執行程式碼品質管道之類的組建和程式碼品質步驟之外，這些管道還會將程式碼部署到非生產環境。
 
 >[!NOTE]

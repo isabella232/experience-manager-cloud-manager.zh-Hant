@@ -3,7 +3,7 @@ title: 程式碼部署
 description: 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 
 | 步驟 | 逾時 |
 |--- |--- |
-| 計劃碼品質測試 | 14 天 |
+| 程式碼品質測試 | 14 天 |
 | 安全測試 | 14 天 |
 | 效能測試 | 14 天 |
 | 申請核准 | 14 天 |

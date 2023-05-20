@@ -3,7 +3,7 @@ title: Dispatcher 設定
 description: 了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
 

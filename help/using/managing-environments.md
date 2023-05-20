@@ -3,7 +3,7 @@ title: 管理環境
 description: 了解如何使用 Cloud Manager 來管理您的環境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 80f8707e00357f5a08dd835b846c9ee610f3e573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 100%
 

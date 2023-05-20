@@ -3,7 +3,7 @@ title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: 通知
 description: 了解 Cloud Manager 如何通知您重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
 

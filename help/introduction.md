@@ -4,8 +4,8 @@ description: 從這裡開始了解用於 Adobe​ Managed Services (AMS) 的 Clo
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1311'
+ht-degree: 100%
 
 ---
 

@@ -3,7 +3,7 @@ title: Maven 專案版本處理
 description: 了解 Maven 如何處理 Cloud Manager 中的專案版本設定。
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
 source-git-commit: 9312999660b324f0f9d2b44dfbf49c4813a3a6e9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 

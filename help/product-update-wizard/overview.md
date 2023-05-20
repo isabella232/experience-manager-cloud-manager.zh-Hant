@@ -3,7 +3,7 @@ title: 產品更新精靈
 description: 了解產品更新精靈如何簡化 Cloud Manager 中端對端 AEM 更新流程。
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: bbee49987e2f80825f5f7f5caf29c841e2b00dfb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 

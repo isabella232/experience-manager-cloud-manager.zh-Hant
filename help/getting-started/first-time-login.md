@@ -3,7 +3,7 @@ title: 首次登入
 description: 如果您已經設定好一般設定，而且準備好要第一次使用 Cloud Manager，依照本頁面的說明進行。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
 
