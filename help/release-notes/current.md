@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2023.6.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 77%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2023.6.0 版的發行日期為 2023 年 6 月 8 日。下一版本計畫於2023年7月6日發行。
+[!UICONTROL Cloud Manager] 2023.6.0 版的發行日期為 2023 年 6 月 8 日。下一版本計劃於 2023 年 7 月 6 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 恢復時 [生產管道，](/help/using/production-pipelines.md) 確認對話方塊現在顯示在核准步驟中。
+* 當恢復[生產管道](/help/using/production-pipelines.md)時，核准步驟現在會顯示確認對話方塊。
