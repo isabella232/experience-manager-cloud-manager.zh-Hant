@@ -1,19 +1,19 @@
 ---
-title: 2023.6.0 版發行說明
-description: 以下是 Cloud Manager 2023.6.0 版的發行說明。
+title: 2023.7.0 版發行說明
+description: 以下是 Cloud Manager 2023.7.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: ht
-source-wordcount: '99'
-ht-degree: 100%
+source-git-commit: 950fef5781c53f9bccf4c33c8b9d958edd5a0327
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 68%
 
 ---
 
 
-# Cloud Manager 2023.6.0 版的發行說明 {#release-notes}
+# Cloud Manager 2023.7.0 版的發行說明 {#release-notes}
 
-本頁記錄 [!UICONTROL Cloud Manager] 2023.6.0 版的發行說明。
+本頁記錄 [!UICONTROL Cloud Manager] 2023.7.0 版的發行說明。
 
 >[!NOTE]
 >
@@ -21,8 +21,9 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2023.6.0 版的發行日期為 2023 年 6 月 8 日。下一版本計劃於 2023 年 7 月 6 日發行。
+[!UICONTROL Cloud Manager] 2023.7.0 版的發行日期為 2023 年 6 月 29 日。下一版本計畫於 2023 年 8 月 10 日發行。
 
-## 新增功能 {#what-is-new}
+## 錯誤修正 {#bug-fixes}
 
-* 當恢復[生產管道](/help/using/production-pipelines.md)時，核准步驟現在會顯示確認對話方塊。
+* Cloud Manager登陸頁面上的卡片現在會指示是否 [增強式安全性](/help/getting-started/program-setup.md) 已為其程式啟用。
+* 時間 [編輯生產管道，](/help/using/managing-pipelines.md#editing-pipelines) 如果使用者嘗試從 **中繼測試** 索引標籤中，會顯示錯誤。
