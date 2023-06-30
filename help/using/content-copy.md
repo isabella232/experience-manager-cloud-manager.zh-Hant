@@ -1,22 +1,22 @@
 ---
 title: 內容複製工具
-description: Cloud Manager內容複製工具可讓使用者隨選從AMS託管的AEM 6.x生產環境將可變內容複製到較低環境，以進行測試。
+description: Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從 AMS 代管的 AEM 6.x 生產環境複製到較低的環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 223b547d6bc94137dfbb7d92862a508fa67799d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1096'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # 內容複製工具 {#content-copy}
 
-Cloud Manager內容複製工具可讓使用者隨選從AMS託管的AEM 6.x生產環境將可變內容複製到較低環境，以進行測試。
+Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從 AMS 代管的 AEM 6.x 生產環境複製到較低的環境以進行測試。
 
 ## 簡介 {#introduction}
 
-目前的真實資料對於測試、驗證和用戶接受度很有價值。內容複製工具可讓您將內容從生產AMS託管的AEM 6.x環境複製到中繼或開發環境，以進行此類測試。
+目前的真實資料對於測試、驗證和用戶接受度很有價值。內容副本工具允許您將內容從生產 AMS 代管的 AEM 6.x 環境複製到暫存或開發環境以進行此類測試。
 
 要複製的內容由內容集定義。內容集由 JCR 路徑列表組成，這些路徑包含要在同一 Cloud Manager 程序中從來源環境複製到目標環境的可變內容。內容集中允許使用以下路徑。
 
