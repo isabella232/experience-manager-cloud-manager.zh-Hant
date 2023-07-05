@@ -3,9 +3,9 @@ title: 2023.7.0 版發行說明
 description: 以下是 Cloud Manager 2023.7.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 950fef5781c53f9bccf4c33c8b9d958edd5a0327
-workflow-type: ht
-source-wordcount: '123'
+source-git-commit: 9ecefd72cb9701026798ba47a743d99375f657c1
+workflow-type: tm+mt
+source-wordcount: '106'
 ht-degree: 100%
 
 ---
@@ -25,5 +25,4 @@ ht-degree: 100%
 
 ## 錯誤修正 {#bug-fixes}
 
-* Cloud Manager 登陸頁面上的卡片現在會指出是否為其程式啟用[增強式安全性](/help/getting-started/program-setup.md)
 * 在[編輯生產管道](/help/using/managing-pipelines.md#editing-pipelines)時，如果使用者嘗試從「**中繼測試**」索引標籤移除資產，畫面會顯示錯誤。
