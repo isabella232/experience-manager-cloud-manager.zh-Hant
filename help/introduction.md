@@ -2,10 +2,10 @@
 title: 用於 AMS 的 Cloud Manager 的簡介
 description: 從這裡開始了解用於 Adobe​ Managed Services (AMS) 的 Cloud Manager 以及它如何讓組織能夠在雲端中自助管理 Adobe​ Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 14e35882765783b234ca35da14257279af5130a0
+source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1322'
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,9 @@ Cloud Manager 提供額外的進階功能，依據您的特定環境設定和需
 | 5 | 暫停測試 (最長 24 小時) | - |
 | 6 | 將綠色基礎架構新增至生產負載平衡器 | - |
 | 7 | 從生產負載平衡器移除綠色基礎架構- |
-| 8 | 自動結束藍色基礎架構 | - |
+| 8 | 暫停以取得最終簽核（最長24小時） | - |
+| 9 | 自動結束藍色基礎架構 | - |
+| 10 | 管道完成 | - |
 
 #### 實作藍綠色 {#implementing}
 
