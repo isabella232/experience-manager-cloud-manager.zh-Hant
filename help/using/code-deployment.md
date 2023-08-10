@@ -2,10 +2,10 @@
 title: 程式碼部署
 description: 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 100%
+source-wordcount: '1655'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 * **安全測試**：此步驟會評估您的程式碼對 AEM 環境的安全影響。如需有關測試流程的詳細資訊，請參閱文件：[了解測試結果](/help/using/code-quality-testing.md)。
    * **效能測試**：此步驟會評估程式碼的效能。如需有關測試流程的詳細資訊，請參閱[了解測試結果](/help/using/code-quality-testing.md)。
 
-   ![中繼測試](/help/assets/Stage_Testing1.png)
+  ![中繼測試](/help/assets/Stage_Testing1.png)
 
 ### 生產部署步驟 {#production-deployment}
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 * **生產部署排程**
    * 設定管道時會啟用此選項。
    * 排程的日期和時間會根據使用者的時區指定。
-      ![排程部署](/help/assets/Production_Deployment1.png)
+     ![排程部署](/help/assets/Production_Deployment1.png)
 * **CSE 支援** (如啟用)
 * **部署至生產環境**
 
@@ -111,6 +111,7 @@ Cloud Manager 會將建置流程產生的所有 target/*.zip 檔案上傳到儲�
 1. 每個 AEM 成品都會透過封裝管理員 API (加上決定部署順序的套件相依性) 部署到每個 AEM 執行個體，。
 
    * 若要了解如何使用套件安裝新功能、在執行個體之間傳輸內容以及將存放庫內容備份的詳細資訊，請參閱文件：[封裝管理員。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)
+
    >[!NOTE]
    >
    >所有 AEM 成品都會部署給作者和發佈者。當需要節點特定的設定時，應利用運行模式。若要了解有關運行模式如何讓您能夠針對特定目的調整 AEM 執行個體的詳細資訊，請參閱[「部署到 AEM as a Cloud Service」文件的「運行模式」一節。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)
@@ -175,17 +176,21 @@ Cloud Manager 會將建置流程產生的所有 target/*.zip 檔案上傳到儲�
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## 重新執行生產部署 {#re-execute-deployment}
+## 重新執行生產部署 {#reexecute-deployment}
 
-生產部署步驟的重新執行可用於生產部署步驟已完成的執行。完成的類型並不重要。部署可能成功 (僅適用於 AMS 方案)、已取消或不成功。主要使用案例是生產部署步驟由於暫時原因而失敗的情況。重新執行會使用相同的管道建立全新的執行。這個全新執行會包括三個步驟：
+在極少數情況下，生產部署步驟可能會因暫時原因而失敗。 在這種情況下，只要生產部署步驟已完成，即支援重新執行生產部署步驟，無論完成的型別為何（例如成功、取消或不成功）。 重新執行會使用包含三個步驟的相同管道來建立新的執行。
 
-1. **驗證步驟** – 這基本上和正常管道執行期間發生的驗證相同。
-1. **建置步驟** – 在重新執行的內容中，建置步驟會複製成品，而且實際上並非執行全新的建置流程。
-1. **生產部署步驟** – 這會使用和正常管道執行中的生產部署步驟相同的設定和選項。
+1. **驗證步驟**  — 這基本上和正常管道執行期間發生的驗證相同。
+1. **建置步驟**  — 在重新執行的內容中，建置步驟會復製成品，而且實際上並非執行全新的建置流程。
+1. **生產部署步驟**  — 這會使用和正常管道執行中的生產部署步驟相同的設定和選項。
 
-建置步驟在 UI 中可能有不同的標示，以反映這是在複製成品，而不是重新建置。
+在可以重新執行的情況下，生產管道狀態頁面會提供 **重新執行** 選項並列於平常專案旁 **下載建置記錄** 選項。
 
-![重新執行](/help/assets/Re-deploy.png)
+![管線概觀視窗中的重新執行選項](/help/assets/re-execute.png)
+
+>[!NOTE]
+>
+>在重新執行中，建置步驟會在UI中加上標籤，以反映這是在復製成品，而不是重新建置。
 
 ### 限制 {#limitations}
 
@@ -193,15 +198,21 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 重新執行不適用於復原執行或推送更新執行。
 * 如果最後執行在生產部署步驟之前的任何時候失敗，則無法重新執行。
 
-### 識別重新執行的執行 {#identifying}
 
-若要識別是否為重新執行的執行，可檢查 `trigger` 欄位。它的值將為 `RE_EXECUTE`。
+### 重新執行 API {#reexecute-api}
 
-### 觸發重新執行 {#triggering}
+除了可在UI中使用外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 以觸發重新執行並識別觸發為重新執行的執行。
 
-若要觸發重新執行，需要向生產部署步驟狀態的 HAL 連結 `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` 發出 `PUT` 請求。如果此連結存在，則可以從該步驟重新開始執行。如果不存在，則無法從該步驟重新開始執行。此連結只會出現在生產部署步驟中
+#### 觸發重新執行 {#triggering}
 
-```Javascript
+若要觸發重新執行，需要向生產部署步驟狀態的 HAL 連結 `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` 發出 `PUT` 請求。
+
+* 如果此連結存在，則可以從該步驟重新開始執行。
+* 如果不存在，則無法從該步驟重新開始執行。
+
+此連結僅可用於生產部署步驟。
+
+```javascript
  {
   "_links": {
     "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
@@ -236,6 +247,10 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
   "status": "FINISHED"
 ```
 
-HAL 連結 `href` 值的語法並非打算用作參考點。應總是從 HAL 連結讀取實際值，而不是將其產生。
+hal連結的語法 `href` 值只是範例，應該一律從HAL連結讀取實際值，而不是將其產生。
 
 如果成功，則向此端點提交 `PUT` 請求將導致 `201` 回應，而且該回應主體將是新執行的表示方式。這類似於透過 API 啟動常規執行。
+
+#### 識別重新執行的執行 {#identifying}
+
+此值可識別重新執行的執行 `RE_EXECUTE` 在 `trigger` 欄位。

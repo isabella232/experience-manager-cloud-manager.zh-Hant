@@ -2,9 +2,9 @@
 title: 自訂程式碼品質規則
 description: 根據來自 AEM 工程團隊的最佳做法，了解 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的詳細資訊。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 1ba4ed6c311eeaff9c71313d265531f427ef2736
+source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3377'
 ht-degree: 100%
 
 ---
@@ -341,7 +341,7 @@ public void doGet() throws Exception {
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
-依據最佳做法的要求，紀錄訊息應提供有關應用計劃中發生例外狀況的位置的內容相關資訊。雖然也可以透過使用堆疊追蹤來確定內容，但記錄訊息通常將更容易讀取和理解。因此，在記錄例外狀況時，將例外狀況的訊息當成記錄訊息來使用是不好的做法。例外狀況訊息會包含所發生的問題，而記錄訊息則應該用於告知記錄讀取程式例外狀況發生時應用程式正在做什麼。例外狀況訊息仍會記錄。透過指定您自己的訊息，更容易理解這些紀錄。
+依據最佳做法的要求，紀錄訊息應提供有關應用程式中發生例外狀況的位置的內容相關資訊。雖然也可以透過使用堆疊追蹤來確定內容，但記錄訊息通常將更容易讀取和理解。因此，在記錄例外狀況時，將例外狀況的訊息當成記錄訊息來使用是不好的做法。例外狀況訊息會包含所發生的問題，而記錄訊息則應該用於告知記錄讀取程式例外狀況發生時應用程式正在做什麼。例外狀況訊息仍會記錄。透過指定您自己的訊息，更容易理解這些紀錄。
 
 #### 不符合規範的程式碼 {#non-compliant-code-9}
 
@@ -648,22 +648,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 AEM 
 
 AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 Touch UI 的詳細資訊和工具。如需更多詳細資訊，請參閱 [AEM 現代化工具文件](https://opensource.adobe.com/aem-modernize-tools/)。
 
-### 套件不應該混合可變和不可變的內容 {#oakpal-packages-immutable}
-
-* **索引碼**：ImmutableMutableMixedPackage
-* **類型**：程式碼異味/雲端服務相容性
-* **嚴重度**：輕微
-* **始自**：2020.5.0 版本
-
-為了和雲端服務部署模式相容，個別內容套件必須包含存放庫不可變區域 (即 `/apps` 和 `/libs`) 或可變區域 (即不在 `/apps` 或 `/libs` 中的所有內容) 的內容，但不能同時包含兩者。例如，同時包含 `/apps/myco/components/text and /etc/clientlibs/myco` 的套件和雲端服務不相容，並會導致需通報的問題。
-
-如需更多詳細資訊，請參閱 [AEM 專案結構文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)。
-
->[!NOTE]
->
->此[客戶套件不應在 /libs 下建立或修改節點](#oakpal-customer-package)規則永遠適用。
-
-### 不應使用反向複寫代理程式 {#oakpal-reverse-replication}
+### 不應使用反向複寫代理計劃 {#oakpal-reverse-replication}
 
 * **索引碼**：ReverseReplication
 * **類型**：程式碼異味/雲端服務相容性
@@ -737,15 +722,6 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在多個 AEM 版本中被取代，以支持[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 不建議使用舊版基礎元件作為自訂元件的基礎 (無論是透過覆蓋還是繼承)，並應轉換為相對應的核心元件。
 
 [AEM 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可有助於這種轉換。
-
-### 僅應使用受支援的執行模式名稱和順序 {#oakpal-supported-runmodes}
-
-* **索引碼**：SupportedRunmode
-* **類型**：程式碼異味
-* **嚴重度**：輕微
-* **始自**：2021.2.0 版本
-
-AEM Cloud Service 對執行模式名稱實施嚴格的命名原則，並對這些執行模式要求嚴格的排序。受支援的執行模式清單可在[部署到 AEM as a Cloud Service 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)中找到，任何與此的偏離都將被識別為問題。
 
 ### 自訂搜尋索引定義節點必須是 /oak:index 的直接子節點 {#oakpal-custom-search}
 
