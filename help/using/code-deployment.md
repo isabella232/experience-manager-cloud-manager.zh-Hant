@@ -3,9 +3,9 @@ title: 程式碼部署
 description: 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1655'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -178,19 +178,19 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## 重新執行生產部署 {#reexecute-deployment}
 
-在極少數情況下，生產部署步驟可能會因暫時原因而失敗。 在這種情況下，只要生產部署步驟已完成，即支援重新執行生產部署步驟，無論完成的型別為何（例如成功、取消或不成功）。 重新執行會使用包含三個步驟的相同管道來建立新的執行。
+在極少數情況下，生產部署步驟可能會因暫時原因而失敗。在這種情況下，只要生產部署步驟已經完成，無論完成類型為何 (例如，成功、取消或失敗)，系統會支援生產部署步驟的重新執行。重新執行會使用相同管道 (由三個步驟組成) 來建立新的執行。
 
-1. **驗證步驟**  — 這基本上和正常管道執行期間發生的驗證相同。
-1. **建置步驟**  — 在重新執行的內容中，建置步驟會復製成品，而且實際上並非執行全新的建置流程。
-1. **生產部署步驟**  — 這會使用和正常管道執行中的生產部署步驟相同的設定和選項。
+1. **驗證步驟** - 基本上，這和正常管道執行期間發生的驗證相同。
+1. **建置步驟** - 在重新執行的內容中，建置步驟會複製成品，而且實際上並非執行新的建置程序。
+1. **生產部署步驟** - 這會使用和正常管道執行中的生產部署步驟相同的設定和選項。
 
-在可以重新執行的情況下，生產管道狀態頁面會提供 **重新執行** 選項並列於平常專案旁 **下載建置記錄** 選項。
+在可以重新執行的情況下，生產管道狀態頁會提供「**重新執行**」選項 (在一般「**下載建置記錄**」選項旁)。
 
-![管線概觀視窗中的重新執行選項](/help/assets/re-execute.png)
+![管道概觀視窗中的重新執行選項](/help/assets/re-execute.png)
 
 >[!NOTE]
 >
->在重新執行中，建置步驟會在UI中加上標籤，以反映這是在復製成品，而不是重新建置。
+>在重新執行中，UI 會標示建置步驟，以反映這是在複製成品，而不是重新建置。
 
 ### 限制 {#limitations}
 
@@ -201,7 +201,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 重新執行 API {#reexecute-api}
 
-除了可在UI中使用外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 以觸發重新執行並識別觸發為重新執行的執行。
+除了可在 UI 中使用之外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 觸發重新執行，並且識別被觸發為重新執行的執行。
 
 #### 觸發重新執行 {#triggering}
 
@@ -210,7 +210,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 如果此連結存在，則可以從該步驟重新開始執行。
 * 如果不存在，則無法從該步驟重新開始執行。
 
-此連結僅可用於生產部署步驟。
+此連結僅適用於生產部署步驟。
 
 ```javascript
  {
@@ -247,10 +247,10 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
   "status": "FINISHED"
 ```
 
-hal連結的語法 `href` 值只是範例，應該一律從HAL連結讀取實際值，而不是將其產生。
+HAL 連結 `href` 值的語法只是一個範例，實際值應隨時從 HAL 連結讀取而不是由產生取得。
 
 如果成功，則向此端點提交 `PUT` 請求將導致 `201` 回應，而且該回應主體將是新執行的表示方式。這類似於透過 API 啟動常規執行。
 
 #### 識別重新執行的執行 {#identifying}
 
-此值可識別重新執行的執行 `RE_EXECUTE` 在 `trigger` 欄位。
+重新執行的執行可以透過 `trigger` 欄位中的值 `RE_EXECUTE` 來識別。
