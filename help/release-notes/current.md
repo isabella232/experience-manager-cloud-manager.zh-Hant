@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2023.8.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 39%
 
 ## 新增功能 {#what-is-new}
 
-* 已進行增強功能，以改善Cloud Manager UI中錯誤訊息的可理解性和顯示性。
+* 已進行增強以提升 Cloud Manager UI 中錯誤訊息的可理解性和顯示效果。
 
 ## 錯誤修正 {#bug-fixes}
 
-* 不常見的情況 [內容複製](/help/using/content-copy.md) 處理卡住的問題已解決。
-* 已解決未使用New Relic One之客戶的暫時測試問題。
-* [自訂程式碼品質規則](/help/using/custom-code-quality-rules.md) `SupportedRunmode` 和 `ImmutableMutableMixedPackage` 已從SonarQube移除，因為它們僅適用於AEMas a Cloud Service。
-* 使用者不會再遇到似乎處於執行狀態的卡住管道。
-* 此 **環境** 功能表現在會在觸發 **[複製內容](/help/using/content-copy.md)** 強制回應視窗。
-* [管道重新執行](/help/using/code-deployment.md#reexecute-deployment) 如果先前執行沒有 `commitId` 在建置階段狀態上設定。
-* 現在，當使用者按一下中的管道時，對於罕見錯誤，會顯示更易於理解的訊息 **活動** 或 **管道** 畫面。
+* 已解決不常見的[複製內容](/help/using/content-copy.md)程序卡住問題。
+* 已解決客戶未使用 New Relic One 時會碰到的臨時測試問題。
+* [自訂程式碼品質規則](/help/using/custom-code-quality-rules.md) `SupportedRunmode` 和 `ImmutableMutableMixedPackage` 已從 SonarQube 移除，因為這些僅適用於 AEM as a Cloud Service。
+* 使用者不再會碰到管道卡在執行中狀態的問題。
+* 現在，在觸發&#x200B;**[複製內容](/help/using/content-copy.md)**&#x200B;模型後，「**環境**」選單會關閉。
+* 如果前一個執行未在建置階段狀態設定 `commitId`，不再允許[管道重新執行](/help/using/code-deployment.md#reexecute-deployment)。
+* 當使用者在「**活動**」或「**管道**」畫面按一下管道時，如果出現不常見的錯誤，現在會顯示更容易理解的訊息。
