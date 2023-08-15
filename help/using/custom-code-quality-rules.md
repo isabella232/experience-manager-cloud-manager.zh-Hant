@@ -3,7 +3,7 @@ title: 自訂程式碼品質規則
 description: 根據來自 AEM 工程團隊的最佳做法，了解 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的詳細資訊。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3377'
 ht-degree: 100%
 
