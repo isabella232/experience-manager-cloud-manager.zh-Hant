@@ -2,7 +2,7 @@
 title: 設定生產管道
 description: 了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
+source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 100%
@@ -33,12 +33,6 @@ ht-degree: 100%
 >
 >在和管道相關的 Git 存放庫具有至少一個分支並完成[方案設定](/help/getting-started/program-setup.md)前，無法設定管道。
 
-## 教學課程影片 {#video-tutorial-one}
-
-該影片會提供管道建立流程的概觀，本文件對此有詳細說明。
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 ## 新增生產管道 {#adding-production-pipeline}
 
 使用 [!UICONTROL Cloud Manager] UI 設定完成方案並擁有至少一個環境後，您就可以著手新增生產管道了。
@@ -56,6 +50,7 @@ ht-degree: 100%
    1. 在&#x200B;**原始程式碼**&#x200B;區段下，您可定義管道從哪裡擷取將處理的程式碼。
 
       * **存放庫** - 此選項會定義管道應該從哪個 Git 存放庫擷取程式碼。
+
       >[!TIP]
       >
       >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件：[方案設定](/help/getting-started/program-setup.md)。
@@ -73,6 +68,7 @@ ht-degree: 100%
 
             * **手動** - 此選項可讓您使用 Cloud Manager UI 以手動方式啟動管道。
             * **開啟 Git 變更** - 只要將認可新增到已設定的 Git 分支，此選項就會啟動 CI/CD 管道。使用此選項，您仍然可以在需要時手動啟動管道。
+
          * **重要量度失敗行為** - 在管道設定或編輯期間，部署管理員可選擇對任何品質閘道中遭遇重要失敗時的管道行為進行定義。可使用的選項包括：
 
             * **每次都詢問** - 這是預設設定，要求對任何重要失敗進行手動介入。
@@ -96,6 +92,7 @@ ht-degree: 100%
 
                * **排清** - 執行快取刪除。
                * **失效** - 執行快取失效，類似於將內容從製作執行個體啟動至發佈執行個體的情況。
+
             1. 按一下&#x200B;**新增路徑**，即可新增您指定的路徑。您在每個環境最多可新增 100 個路徑。
 
          ![Dispatcher 設定](/help/assets/configure-pipelines/dispatcher-stage.png)
@@ -114,27 +111,18 @@ ht-degree: 100%
                * **日期** - 此選項會讓使用者安排應完成部署的時間。
                * **停止執行** - 此選項會中止到生產環境的部署。
 
-            >[!TIP]
-            >
-            >請參閱文件：[程式碼部署，](/help/using/code-deployment.md)以了解如何設定程式碼排程或立即執行管道。
+           >[!TIP]
+           >
+           >請參閱文件：[程式碼部署，](/help/using/code-deployment.md)以了解如何設定程式碼排程或立即執行管道。
 
             * **使用 CSE 監督** - 如果選取此選項，則 CSE 會參與以實際開始部署。在啟用此選項的情況下建立或編輯管道時，**部署管理員**&#x200B;角色會有以下選項。
 
                * **任何 CSE** - 此選項會讓任何有空的 CSE 開始部署。
                * **我的 CSE** - 此選項僅允許指派給客戶的特定 CSE 開始部署。如果指派的 CSE 沒有空，這也適用於 CSE 的指定後援。
 
-            ![生產部署選項](/help/assets/configure-pipelines/prod-deploymentoptions.png)
+           ![生產部署選項](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
          * **Dispatcher 設定** - 為生產環境定義 Dispatcher 設定。這些選項和中繼環境的選項相同。
-
-
-
-
-
-
-
-
-
 
 1. 按一下&#x200B;**繼續**，即可前進到&#x200B;**中繼測試**&#x200B;索引標籤，您可在此設定 AEM Sites 和 AEM Assets 的效能測試 (依您已授權的產品而定)。
 
@@ -163,10 +151,14 @@ ht-degree: 100%
 
       ![資產測試分佈](/help/assets/configure-pipelines/add-prod6.png)
 
-
-
 1. 按一下&#x200B;**儲存**，即可完成新增生產管道。
 
 ## 後續步驟 {#the-next-steps}
 
 設定好管道後，您需要部署程式碼。如需更多詳細資訊，請參閱文件[程式碼部署](/help/using/code-deployment.md)。
+
+## 教學課程影片 {#video-tutorial-one}
+
+該影片會提供管道建立流程的概觀，本文件對此有詳細說明。
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
