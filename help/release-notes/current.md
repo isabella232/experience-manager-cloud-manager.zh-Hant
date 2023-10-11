@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 851364e74864c28b3bcd9285dfbe06ddb530eb10
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 49%
+ht-degree: 77%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 49%
 
 ## 新增功能 {#what-is-new}
 
-* 此 **部署管理員** 角色可以 [設定在執行非生產管道時會失效或從AEM Dispatcher快取中排清的一組內容路徑。](/help/using/non-production-pipelines.md)
+* **部署管理員**&#x200B;角色可以[設定在執行非生產管道時將失效或從 AEM Dispatcher 快取中排清的一連串內容路徑。](/help/using/non-production-pipelines.md)
    * 在部署任何內容套件後，這些快取操作將以部署管道步驟的一部分來執行。
    * 這些設定會使用標準的 AEM Dispatcher 行為。
-* 在2023年10月發行的Cloud Manager中，Java版本正在透過分階段推出進行更新。
+* 隨著 Cloud Manager 2023 年 10 月版發行，Java 版本將分階段推出更新。
    * Java 8和11以及Maven的次要版本已更新，並將在未來2個月內分階段推出。 新版本包含多項安全性修正和錯誤修正。 新版本為：
    * *Maven： 3.8.8*
    * *Java 8版本： /usr/lib/jvm/jdk1.8.0_371*
    * *Java 11版本： /usr/lib/jvm/jdk-11.0.20*
-   * [請參閱OpenJDK公告](https://openjdk.org/groups/vulnerability/advisories/) 瞭解這些JDK更新中的安全性和錯誤修正的詳細資訊。
+   * [請參閱 OpenJDK 諮詢服務](https://openjdk.org/groups/vulnerability/advisories/)，了解這些 JDK 更新中的安全性和錯誤修正的詳細資訊。
