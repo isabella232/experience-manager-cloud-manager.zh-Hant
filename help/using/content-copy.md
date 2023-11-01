@@ -2,10 +2,10 @@
 title: 內容複製工具
 description: Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從 AMS 代管的 AEM 6.x 生產環境複製到較低的環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 223b547d6bc94137dfbb7d92862a508fa67799d2
-workflow-type: ht
-source-wordcount: '1096'
-ht-degree: 100%
+source-git-commit: fe5de4e1ab5cd0d0e317cd399b8e44758a6312c4
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 93%
 
 ---
 
@@ -44,9 +44,9 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 
 在複製任何內容之前，必須定義一個內容集。定義後，內容集就可以重複使用來複製內容。請依照下列步驟，建立新的內容集。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
 
@@ -103,9 +103,9 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 
 建立內容集後，您可以使用它來複製內容。依照下列步驟複製內容。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
 
@@ -122,7 +122,9 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 
 1. 在&#x200B;**複製內容**&#x200B;對話框中，指定內容複製作業的來源和目的地。
 
-1. 您可以選擇刪除或保留目標環境中的排除路徑。如果您希望保留內容集中指定的排除路徑，請選取核取方塊 `Do not delete exclude paths from destination`。如果未選取核取方塊，則會在目標環境中刪除排除路徑。
+1. 您可以選擇刪除或保留目的地環境中的排除路徑。 如果您希望保留內容集中指定的排除路徑，請選取核取方塊 `Do not delete exclude paths from destination`。如果未選取核取方塊，則會在目標環境中刪除排除路徑。
+
+1. 您可以選擇將路徑版本記錄從來源複製到目的地環境。 選取核取方塊 `Copy Versions` 如果您要複製所有版本記錄。
 
    ![正在複製內容](/help/assets/copying-content.png)
 
@@ -134,9 +136,9 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 
 您可以在&#x200B;**複製內容活動**&#x200B;中監控複製過程的狀態頁面。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從「**概觀**」頁面瀏覽到「**環境**」畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**複製內容活動**&#x200B;頁面。
 
@@ -159,7 +161,7 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 * 無法從較低環境向較高環境執行內容複製。
 * 內容複製只能在同一層內執行 (即作者-作者或發布-發布)。
 * 跨程序和跨區域內容複製是不可能的。
-* 只有在來源和目的地環境位於相同雲端提供者時，才能對基於雲端資料存放區的拓撲執行內容複製。
+* 當來源和目的地環境位於相同的雲端提供者及相同的區域時，才能執行雲端資料存放區型拓撲的內容複製。
 * 在同一環境中運行並發內容複製作業是不可能的。
 * 如果在目標或來源環境 (例如 CI/CD 管道) 上執行任何活動作業，則無法執行內容複製。
 * 每個內容集最多可以指定 50 個路徑。排除的路徑沒有限制。
@@ -167,3 +169,4 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 * 內容複製作業一旦開始就不能暫停或取消。
 * 內容複製工具將資產連同動態媒體相關中繼資料從較高環境複製到選取的較低環境。
    * 然後需要使用在較低的環境中的 [DAM 流程資產工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)，以便使用各自的動態媒體設定。
+* 若未復製版本記錄，內容復製程式的速度會大幅加快。
