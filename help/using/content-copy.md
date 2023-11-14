@@ -2,9 +2,9 @@
 title: 內容複製工具
 description: Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從 AMS 代管的 AEM 6.x 生產環境複製到較低的環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: fe5de4e1ab5cd0d0e317cd399b8e44758a6312c4
+source-git-commit: c7803c75bcfcc967877808214704c5746015481d
 workflow-type: ht
-source-wordcount: '1139'
+source-wordcount: '1128'
 ht-degree: 100%
 
 ---
@@ -31,10 +31,6 @@ Cloud Manager 內容副本工具能讓使用者依照需要，將可變內容從
 
 * 如果在目標環境中修改了內容，如果路徑相同，它將被來源中的內容覆蓋。
 * 如果路徑不同，來源中的內容將與目標中的內容合併。
-
->[!NOTE]
->
->請聯絡您的客戶成功工程師 (CSE) 以啟用此功能。
 
 ## 權限 {#permissions}
 
