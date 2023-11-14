@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: f1f1d53181362e4a92ad6918182107d710724496
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 98%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 100%
    + [原始程式碼存放庫](/help/requirements/source-code-repository.md)
    + [角色型權限](/help/requirements/role-based-permissions.md)
    + [設定使用者和角色](/help/requirements/users-and-roles.md)
+   + [自訂權限](/help/using/custom-permissions.md)
    + [環境佈建](/help/requirements/environment-provisioning.md)
 + 快速入門 {#getting-started}
    + [首次登入](/help/getting-started/first-time-login.md)
@@ -59,12 +60,14 @@ ht-degree: 100%
    + [存放庫](/help/managing-code/repositories.md)
    + [和 Git 整合](/help/managing-code/git-integration.md)
    + [使用多個 Git 存放庫](/help/managing-code/multiple-git-repos.md)
+   + [使用您自己的GitHub存放庫](/help/managing-code/byo-github.md)
 + 產品更新精靈 {#product-update-wizard}
    + [概觀](/help/product-update-wizard/overview.md)
    + [評估](/help/product-update-wizard/evaluation.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](/help/release-notes/current.md)
    + 2023 {#2023}
+      + [2023.10.0 版發行說明](/help/release-notes/2023/2023-10-0.md)
       + [2023.9.0 版發行說明](/help/release-notes/2023/2023-9-0.md)
       + [2023.8.0 版發行說明](/help/release-notes/2023/2023-8-0.md)
       + [2023.7.0 版發行說明](/help/release-notes/2023/2023-7-0.md)

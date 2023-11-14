@@ -2,7 +2,7 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
+source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -19,9 +19,11 @@ ht-degree: 100%
 Cloud Manager 的組建環境有下列屬性。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 18.04。
-* 已安裝 Apache Maven 3.6.0。
-* 已安裝的 Java 版本為 Oracle JDK 8u202 和 Oracle JDK 11.0.2。
-* 預設的情況下，`JAVA_HOME` 環境變數設為 `/usr/lib/jvm/jdk1.8.0_202`，其中包含 Oracle JDK 8u202。如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 區段。
+* 已安裝 Apache Maven 3.8.8。
+* 已安裝的 Java 版本為 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
+   * `/usr/lib/jvm/jdk1.8.0_371`
+   * `/usr/lib/jvm/jdk-11.0.20`
+* 預設的情況下，`JAVA_HOME` 環境變數設為 `/usr/lib/jvm/jdk1.8.0_371`，其中包含 Oracle JDK 8u371。如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 區段。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -47,7 +49,6 @@ Cloud Manager 的組建環境有下列屬性。
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [建立 API 整合](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API 權限](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-
 
 ## 使用特定 Java 版本 {#using-java-version}
 
@@ -124,7 +125,7 @@ Cloud Manager 的組建環境有下列屬性。
 | `BRANCH` | 為執行設定的分支 |
 | `CM_PIPELINE_ID` | 數值的管道識別碼 |
 | `CM_PIPELINE_NAME` | 管道名稱 |
-| `CM_PROGRAM_ID` | 數值的程序識別碼 |
+| `CM_PROGRAM_ID` | 數值的計畫識別碼 |
 | `CM_PROGRAM_NAME` | 方案名稱 |
 | `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
 
@@ -134,11 +135,11 @@ Cloud Manager 的組建環境有下列屬性。
 
 #### 創作、預覽和發佈 {#author-preview-publish}
 
-一般環境變數和祕密均可用於編寫、預覽和發佈環境。
+一般環境變數和密碼均可用於編寫、預覽和發佈環境。
 
 #### Dispatcher {#dispatcher}
 
-[Dispatcher 只能使用一般環境變數。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)不能使用祕密。
+[Dispatcher 只能使用一般環境變數。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)不能使用密碼。
 
 但是環境變數不能在 `IfDefine` 指令中使用。
 
