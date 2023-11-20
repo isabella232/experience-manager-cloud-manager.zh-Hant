@@ -3,7 +3,7 @@ title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ Cloud Manager 的組建環境有下列屬性。
 | `BRANCH` | 為執行設定的分支 |
 | `CM_PIPELINE_ID` | 數值的管道識別碼 |
 | `CM_PIPELINE_NAME` | 管道名稱 |
-| `CM_PROGRAM_ID` | 數值的計畫識別碼 |
+| `CM_PROGRAM_ID` | 數值的方案識別碼 |
 | `CM_PROGRAM_NAME` | 方案名稱 |
 | `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
 
@@ -149,7 +149,7 @@ Cloud Manager 的組建環境有下列屬性。
 
 #### OSGi 設定 {#osgi}
 
-一般環境變數和祕密都可以在 [OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)中使用。
+一般環境變數和密碼都可以在 [OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)中使用。
 
 ### 管道變數 {#pipeline-variables}
 
