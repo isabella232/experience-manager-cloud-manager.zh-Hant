@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 98%
    + [環境佈建](/help/requirements/environment-provisioning.md)
 + 快速入門 {#getting-started}
    + [首次登入](/help/getting-started/first-time-login.md)
-   + [計劃設定](/help/getting-started/program-setup.md)
+   + [方案設定](/help/getting-started/program-setup.md)
    + 建立 AEM 專案 {#project-creation}
       + [使用精靈](/help/getting-started/using-the-wizard.md)
       + [專案設定](/help/getting-started/project-setup.md)
@@ -60,7 +60,7 @@ ht-degree: 98%
    + [存放庫](/help/managing-code/repositories.md)
    + [和 Git 整合](/help/managing-code/git-integration.md)
    + [使用多個 Git 存放庫](/help/managing-code/multiple-git-repos.md)
-   + [使用您自己的GitHub存放庫](/help/managing-code/byo-github.md)
+   + [使用您自己的 GitHub 存放庫](/help/managing-code/byo-github.md)
 + 產品更新精靈 {#product-update-wizard}
    + [概觀](/help/product-update-wizard/overview.md)
    + [評估](/help/product-update-wizard/evaluation.md)
