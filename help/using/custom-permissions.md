@@ -1,10 +1,10 @@
 ---
 title: 自訂權限
 description: 了解如何使用自訂權限建立新的自訂權限設定檔並內含可設定的權限，以便限制 Cloud Manager 使用者對方案、管道和環境的存取。
-source-git-commit: e1a3814041a8a7842e39ab09289c83e9c935b4ab
-workflow-type: ht
-source-wordcount: '1444'
-ht-degree: 100%
+source-git-commit: 769538ec21b21e612619b0c96718f27982574f6c
+workflow-type: tm+mt
+source-wordcount: '1489'
+ht-degree: 96%
 
 ---
 
@@ -129,6 +129,11 @@ Cloud Manager 有一組預先定義的角色，用於管理對雲端管理員各
 | 覆寫/拒絕重要量度失敗 | 允許使用者覆寫/拒絕重要量度失敗 |
 | 生產部署排程 | 允許使用者排程生產部署步驟 |
 | 存放庫資訊存取 | 允許使用者存取存放庫資訊並產生存取密碼 |
+| 存放庫建立 | 允許使用者建立新的Git存放庫 |
+| 存放庫刪除 | 允許使用者刪除Git存放庫 |
+| 儲存庫編輯 | 允許使用者編輯Git存放庫 |
+| 產生存放庫代碼 | 允許使用者從原型產生專案 |
+| 內容複製管理 | 允許使用者管理內容復製作業 |
 
 ### 組織層級權限 {#organization-level}
 
