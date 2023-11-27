@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2023.11.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ ht-degree: 88%
 * [管道執行詳細資訊頁面](/help/using/managing-pipelines.md#view-details)現在將顯示管道執行中的所有步驟，尚未開始的步驟呈現灰色。
 * **[活動](/help/using/managing-pipelines.md#activity)**&#x200B;和&#x200B;**[管道](/help/using/managing-pipelines.md#pipelines)**&#x200B;頁面中，現在按一下執行中管道即可取得管道執行摘要。
 * [管道詳細資訊頁面](/help/using/managing-pipelines.md#view-details)中已加入新的&#x200B;**持續時間**&#x200B;區段，其中包含基於該方案歷史趨勢的管道步驟平均持續時間。
-* 在 [管道執行頁面，](/help/using/managing-pipelines.md#activity-window) 完成的步驟現在會顯示持續時間
+* 在[管道執行頁面](/help/using/managing-pipelines.md#activity-window)上，已完成的步驟現在會顯示持續時間
 * Cloud Manager [內容複製工具](/help/using/content-copy.md)能讓使用者依照需要，將可變內容從 AMS 代管的 AEM 6.x 生產環境複製到較低的環境以進行測試。
-* 執行次數： [重複使用組建成品](/help/getting-started/project-setup.md#build-artifact-reuse) 現在將顯示最初建立這些成品的執行連結。
-* 要選取的選項 **重要量度失敗** 現在可以設定為 [計畫碼品質管道](/help/using/non-production-pipelines.md) 以及。
+* [重新使用組建成品](/help/getting-started/project-setup.md#build-artifact-reuse)的執行現在將顯示最初建置這些成品之執行的連結。
+* 現在也可以為[程式碼品質管道](/help/using/non-production-pipelines.md)設定用於選取&#x200B;**重要的量度失敗**&#x200B;的選項。
 
 ## 早期採用計劃 {#early-adoption}
 
