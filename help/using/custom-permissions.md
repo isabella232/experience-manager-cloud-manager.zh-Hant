@@ -3,7 +3,7 @@ title: 自訂權限
 description: 了解如何使用自訂權限建立新的自訂權限設定檔並內含可設定的權限，以便限制 Cloud Manager 使用者對方案、管道和環境的存取。
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: 16eef51d86647ae4f2515f3f3c4cb2d15e948854
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 100%
 
