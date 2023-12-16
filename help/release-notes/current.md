@@ -3,10 +3,10 @@ title: 2023.12.0 版發行說明
 description: 以下是 Cloud Manager 2023.12.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 16eef51d86647ae4f2515f3f3c4cb2d15e948854
+source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 93%
+source-wordcount: '305'
+ht-degree: 66%
 
 ---
 
@@ -26,6 +26,14 @@ ht-degree: 93%
 ## 新增功能 {#what-is-new}
 
 * [Cloud Manager 自訂權限](/help/using/custom-permissions.md)允許您以可設定的權限建立新的自訂權限設定檔，以限制 Cloud Manager 使用者對方案、管道和環境的存取。
+* 將更新轉出到 [組建環境](/help/getting-started/build-environment.md) 曾經是 [宣佈並從10月版本的Cloud Manager開始](/help/release-notes/2023/2023-10-0.md) 已完成。
+   * 新增對節點18的支援 [前端和完整棧疊管道。](/help/overview/ci-cd-pipelines.md)
+   * Java 8次要版本已更新至 `jdk1.8.0_371`.
+   * Java 11次要版本更新至 `jdk-11.0.20`.
+   * Maven已更新至3.8.8版
+      * Maven現在會停用所有不安全的專案 `http://*` 預設為映象。
+      * [Adobe建議](/help/getting-started/build-environment.md#https-maven) 使用者更新其Maven存放庫以使用HTTPS而不是HTTP。
+* 組建容器基礎影像已更新為Ubuntu 22.04。
 
 ## 早期採用計劃 {#early-adoption}
 
