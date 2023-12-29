@@ -3,9 +3,9 @@ title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1283'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager 的組建環境有下列屬性。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.8.8。
-   * Adobe推薦使用者 [更新其Maven存放庫以使用HTTPS而不是HTTP。](#https-maven)
+   * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
 * 已安裝的 Java 版本為 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
    * `/usr/lib/jvm/jdk1.8.0_371`
    * `/usr/lib/jvm/jdk-11.0.20`
@@ -39,7 +39,7 @@ Cloud Manager 的組建環境有下列屬性。
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 透過 `settings.xml` 檔案在系統層級設定 Maven，這會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。
    * 如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
-* Node.js 18可用於 [前端和完整棧疊管道。](/help/overview/ci-cd-pipelines.md)
+* Node.js 18 可用於[前端和全端管道](/help/overview/ci-cd-pipelines.md)。
 
 >[!NOTE]
 >
@@ -52,13 +52,13 @@ Cloud Manager 的組建環境有下列屬性。
 >* [建立 API 整合](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API 權限](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 
-## HTTPS Maven存放庫 {#https-maven}
+## HTTPS Maven 存放庫 {#https-maven}
 
-Cloud Manager [2023.10.0版](/help/release-notes/2023/2023-10-0.md) 開始組建環境的滾動更新（完成於2023.12.0版），其中包括Maven 3.8.8的更新。Maven 3.8.1中推出的重大變更是安全性增強功能，旨在減少潛在的弱點。 具體來說，Maven現在會停用所有不安全的專案 `http://*` 預設為映象，如 [Maven發行說明。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [2023.10.0 版](/help/release-notes/2023/2023-10-0.md)開始推出組建環境的更新 (在 2023.12.0 版時完成)，其中包含 Maven 3.8.8 的更新。Maven 3.8.1 引入一項重大變更，即為安全性增強，其目的在減少潛在漏洞。具體而言，Maven 現在預設停用所有不安全的 `http://*` 鏡像，如 [Maven 發行說明](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)中所述。
 
-由於此安全性增強功能，某些使用者在建置步驟中可能會遇到問題，尤其是從使用不安全HTTP連線的Maven存放庫下載成品時。
+由於此安全性增強，某些使用者可能會在建置步驟中遇到問題，特別是從使用不安全 HTTP 連線的 Maven 存放庫下載成品時。
 
-為了確保更新版本的順暢體驗，Adobe建議使用者更新其Maven存放庫，以使用HTTPS而非HTTP。 此調整符合業界日益轉向安全通訊協定，並有助於維持安全可靠的建置流程。
+為了確保更新的版本有流暢的使用體驗，Adobe 建議使用者更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。這項調整符合產業日益轉向使用安全通訊協定的趨勢，有助於維持安全可靠的建置程序。
 
 ## 使用特定 Java 版本 {#using-java-version}
 
