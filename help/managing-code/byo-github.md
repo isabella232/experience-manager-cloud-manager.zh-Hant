@@ -2,7 +2,8 @@
 title: 在 Cloud Manager 中使用您自己的 GitHub 存放庫
 description: 了解如何設定 Cloud Manager 以搭配使用您自己的 GitHub 存放庫。
 feature: Release Information
-source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
+exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
+source-git-commit: 3bb59686a3c25e47e5c747bb8d5f626055e54a06
 workflow-type: ht
 source-wordcount: '753'
 ht-degree: 100%
@@ -54,7 +55,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
    ![私人存放庫所有權驗證](/help/assets/repositories/private-repo-validate.png)
 
 1. Cloud Manager 使用 GitHub 應用程式與您的存放庫安全地互動。
-   * 您 GitHub 組織的擁有者必須安裝位於 `https://github.com/apps/cloud-manager-for-aem-stage` 的應用程式，並授予存放庫的存取權。
+   * 您 GitHub 組織的擁有者必須安裝位於 `https://github.com/apps/cloud-manager-for-aem` 的應用程式，並授予存放庫的存取權。
    * 如需深入了解如何完成此操作，請參閱 GitHub 的文件。
 
 1. 為了提高安全性，您必須在存放庫的預設分支中建立密碼檔案。點選或按一下&#x200B;**產生**。
