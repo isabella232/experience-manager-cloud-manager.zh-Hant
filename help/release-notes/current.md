@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2024.1.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: b235e398b42e9da3dd2efacdc0ef38b6803bd213
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -35,5 +35,5 @@ ht-degree: 77%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 已針對某些轉角案例更正錯誤，這類案例中，由於測試應用程式如何解讀資料，而導致下載失敗，導致總錯誤百分比無法通過測試。
-* 當建置步驟以狀態完成時 `FAILED` 由於 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`，現在會正確描述為由於與目的地分支合併衝突而導致的錯誤。
+* 修正了某些極端情況下的錯誤，這些情況下由於測試應用程式解釋資料的方式而導致下載失敗，從而導致總錯誤百分比無法通過測試。
+* 當建置步驟由於 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` 而以 `FAILED` 狀態完成時，現在可以正確地將其描述為由於與目標分支的合併衝突而導致的錯誤。
