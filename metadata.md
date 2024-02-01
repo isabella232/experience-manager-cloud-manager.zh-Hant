@@ -3,9 +3,10 @@ solution: Experience Manager, Experience Manager Cloud Manager
 type: Documentation
 cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.zh-Hant
-source-git-commit: 1d94b19c5d2016bab678a0d03b14b9ddf74ff020
+recommendations: noDisplay
+source-git-commit: f35a777176522d412267f481622c8cd3d2592764
 workflow-type: ht
-source-wordcount: '111'
+source-wordcount: '109'
 ht-degree: 100%
 
 ---
