@@ -3,10 +3,10 @@ title: 在 Cloud Manager 中使用您自己的 GitHub 存放庫
 description: 了解如何設定 Cloud Manager 以搭配使用您自己的 GitHub 存放庫。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 3bb59686a3c25e47e5c747bb8d5f626055e54a06
+source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '767'
+ht-degree: 98%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >此功能僅適用於[早期採用者方案。](/help/release-notes/current.md#early-adoption)
+
+>[!NOTE]
+>
+>此功能是公共GitHub的專屬功能。 不支援自行託管GitHub。
 
 ## 設定 {#configuration}
 

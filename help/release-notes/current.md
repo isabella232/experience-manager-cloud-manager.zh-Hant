@@ -3,10 +3,10 @@ title: 2024.1.0 版發行說明
 description: 以下是 Cloud Manager 2024.1.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: b235e398b42e9da3dd2efacdc0ef38b6803bd213
-workflow-type: ht
-source-wordcount: '243'
-ht-degree: 100%
+source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 84%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ### 帶著您自己的 GitHub {#byo-github}
 
-如果您使用 GitHub 來管理您的存放庫，[現在您可以透過 Cloud Manager 直接在 GitHub 存放庫中驗證程式碼。](/help/managing-code/byo-github.md)這種整合消除了始終將程式碼與 Adobe 存放庫保持同步的需要，並允許您先確認提取要求再將其合併到主要分支。
+如果您使用 GitHub 來管理您的存放庫，[現在您可以透過 Cloud Manager 直接在 GitHub 存放庫中驗證程式碼。](/help/managing-code/byo-github.md) 此整合免除了與Adobe存放庫一致同步程式碼的需求，並可讓您在合併提取請求至主要分支之前先驗證提取請求。 此功能是公共GitHub的專屬功能。 不支援自行託管GitHub。
 
 如果您有興趣測試此新功能並分享您的意見反饋，請使用和您的 Adobe ID 相關聯的電子郵件傳送一封電子郵件至 `Grp-CloudManager_BYOG@adobe.com`。
 
