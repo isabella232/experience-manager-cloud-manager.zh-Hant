@@ -3,7 +3,7 @@ title: 2024.2.0 版發行說明
 description: 以下是 Cloud Manager 2024.2.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 524471a87217c15dae96c3e6aee57426b43dcccb
+source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 68%
@@ -21,7 +21,7 @@ ht-degree: 68%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.2.0 版的發行日期為 2024 年 2 月 16 日。下一個版本計畫於 2024 年 3 月 16 日發行。
+[!UICONTROL Cloud Manager] 2024.2.0 版的發行日期為 2024 年 2 月 15 日。下一個版本計畫於 2024 年 3 月 16 日發行。
 
 ## 新增功能 {#what-is-new}
 
@@ -41,3 +41,4 @@ ht-degree: 68%
 ## 錯誤修正 {#bug-fixes}
 
 * 組建容器的JDK已更新至可解決的版本 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)
+§
