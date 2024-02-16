@@ -1,19 +1,19 @@
 ---
-title: 2024.1.0 版發行說明
-description: 以下是 Cloud Manager 2024.1.0 版的發行說明。
+title: 2024.2.0 版發行說明
+description: 以下是 Cloud Manager 2024.2.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+source-git-commit: 524471a87217c15dae96c3e6aee57426b43dcccb
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 68%
 
 ---
 
 
-# Cloud Manager 2024.1.0 版的發行說明 {#release-notes}
+# Cloud Manager 2024.2.0 版的發行說明 {#release-notes}
 
-本頁記錄 [!UICONTROL Cloud Manager] 2024.1.0 版的發行說明。
+本頁記錄 [!UICONTROL Cloud Manager] 2024.2.0 版的發行說明。
 
 >[!NOTE]
 >
@@ -21,7 +21,12 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.1.0 版的發行日期為 2024 年 1 月 17 日。下一版計畫於 2024 年 2 月 16 日發行。
+[!UICONTROL Cloud Manager] 2024.2.0 版的發行日期為 2024 年 2 月 16 日。下一個版本計畫於 2024 年 3 月 16 日發行。
+
+## 新增功能 {#what-is-new}
+
+* 做為的一部分 [部署，](/help/using/code-deployment.md) Dispatcher快取已在 **附加Dispatcher** 步驟。 為了讓您在將每個節點附加到應用程式負載平衡器之前測試其上的變更，在部署程式碼到特定發佈者後，您現在可以在將該Dispatcher附加到負載平衡器之前直接從關聯的Dispatcher測試變更。
+* [組建環境](/help/getting-started/build-environment.md) 已更新至Maven 3.9.4版和JDK jdk-11.0.22版和jdk1.8.0_401版。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -35,5 +40,4 @@ ht-degree: 100%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 修正了某些極端情況下的錯誤，這些情況下由於測試應用程式解釋資料的方式而導致下載失敗，從而導致總錯誤百分比無法通過測試。
-* 當建置步驟由於 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` 而以 `FAILED` 狀態完成時，現在可以正確地將其描述為由於與目標分支的合併衝突而導致的錯誤。
+* 組建容器的JDK已更新至可解決的版本 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)

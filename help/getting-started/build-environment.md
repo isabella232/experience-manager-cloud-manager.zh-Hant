@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: ht
-source-wordcount: '1283'
-ht-degree: 100%
+source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
+workflow-type: tm+mt
+source-wordcount: '1280'
+ht-degree: 97%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 100%
 Cloud Manager 的組建環境有下列屬性。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
-* 已安裝 Apache Maven 3.8.8。
+* 已安裝 Apache Maven 3.9.4。
    * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
-* 已安裝的 Java 版本為 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
-   * `/usr/lib/jvm/jdk1.8.0_371`
-   * `/usr/lib/jvm/jdk-11.0.20`
-* 預設的情況下，`JAVA_HOME` 環境變數設為 `/usr/lib/jvm/jdk1.8.0_371`，其中包含 Oracle JDK 8u371。如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 區段。
+* 安裝的Java版本為OracleJDK 8u401和OracleJDK 11.0.22。
+   * `/usr/lib/jvm/jdk1.8.0_401`
+   * `/usr/lib/jvm/jdk-11.0.22`
+* 根據預設， `JAVA_HOME`  環境變數已設為 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 區段。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -39,7 +39,7 @@ Cloud Manager 的組建環境有下列屬性。
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 透過 `settings.xml` 檔案在系統層級設定 Maven，這會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。
    * 如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
-* Node.js 18 可用於[前端和全端管道](/help/overview/ci-cd-pipelines.md)。
+* Node.js 18可用於 [前端管道。](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Cloud Manager [2023.10.0 版](/help/release-notes/2023/2023-10-0.md)開始推出
 
 也可以選取 Oracle 8 或 Oracle 11 作為整個 Maven 執行的 JDK。和工具鏈選項不同，這會變更用於所有外掛程式的 JDK，除非還設定了工具鏈設定，若是這種情況，則工具鏈設定仍適用於工具鏈感知的 Maven 外掛程式。結果，利用 [Apache Maven 強制器外掛程式](https://maven.apache.org/enforcer/maven-enforcer-plugin/)來檢查和強制執行 Java 版本將變得可行。
 
-為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。本檔案可能有的內容為 `11` 或 `8`。任何其他值會受到忽略。若指定 `11`，會使用 Oracle 11，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk-11.0.2`。若指定 `8`，會使用 Oracle 8，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk1.8.0_202`。
+為此，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。本檔案可能有的內容為 `11` 或 `8`。任何其他值會受到忽略。若指定 `11`，會使用 Oracle 11，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk-11.0.22`。若指定 `8`，會使用 Oracle 8，而 `JAVA_HOME` 環境變數會設為 `/usr/lib/jvm/jdk1.8.0_401`。
 
 ## 環境變數 {#environment-variables}
 
