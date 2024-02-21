@@ -3,9 +3,9 @@ title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Cloud Manager 的組建環境有下列屬性。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.9.4。
-   * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
-* 安裝的Java版本為OracleJDK 8u401和OracleJDK 11.0.22。
+   * Adobe 建議用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。](#https-maven)
+* 已安裝的 Java 版本為 Oracle JDK 8u401 和 Oracle JDK 11.0.22。
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* 根據預設， `JAVA_HOME`  環境變數已設為 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 區段。
+* 預設的情況下，`JAVA_HOME` 環境變數設為 `/usr/lib/jvm/jdk1.8.0_401`，其中包含 Oracle JDK 8u401。如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 區段。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -39,7 +39,7 @@ Cloud Manager 的組建環境有下列屬性。
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 透過 `settings.xml` 檔案在系統層級設定 Maven，這會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。
    * 如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
-* Node.js 18可用於 [前端管道。](/help/overview/ci-cd-pipelines.md)
+* Node.js 18 可用於[前端管道](/help/overview/ci-cd-pipelines.md)。
 
 >[!NOTE]
 >
