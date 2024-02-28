@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2024.2.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 68%
 
 ## 新增功能 {#what-is-new}
 
-* 做為的一部分 [部署，](/help/using/code-deployment.md) Dispatcher快取已在 **附加Dispatcher** 步驟。 為了讓您在將每個節點附加到應用程式負載平衡器之前測試其上的變更，在部署程式碼到特定發佈者後，您現在可以在將該Dispatcher附加到負載平衡器之前直接從關聯的Dispatcher測試變更。
-* [組建環境](/help/getting-started/build-environment.md) 已更新至Maven 3.9.4版和JDK jdk-11.0.22版和jdk1.8.0_401版。
+* 作為[部署](/help/using/code-deployment.md)的一部分，Dispatcher 快取已在&#x200B;**附加 Dispatcher**&#x200B;步驟中清除。為了允許您在將每個節點附加到應用程式負載平衡器之前測試每個節點的變更，在將程式碼部署到特定發佈者之後，您現在可以在將該 Dispatcher 附加到負載平衡器之前直接從關聯的 Dispatcher 測試變更。
+* [建置環境](/help/getting-started/build-environment.md)已更新為 Maven 版本 3.9.4 和 JDK 版本 jdk-11.0.22 和 jdk1.8.0_401。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -40,5 +40,5 @@ ht-degree: 68%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 組建容器的JDK已更新至可解決的版本 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)
+* 建置容器的 JDK 已更新至可解決 [JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765) 的版本。
 §
