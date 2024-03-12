@@ -3,9 +3,9 @@ title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->本檔案說明適用於AdobeManaged Services (AMS)的Cloud Manager角色型許可權。
+>本文件旨在說明用於 Adob&#x200B;&#x200B;e Managed Services (AMS) 的 Cloud Manager 以角色為主的權限。
 >
->AEMas a Cloud Service的同等檔案可在檔案中找到 [Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) 在AEMas a Cloud Service檔案中。
+>AEM as a Cloud Service 同等文件可以在 AEM as a Cloud Service 文件中的「[Cloud Manager 簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions)」文件找到。
 
 ## 使用者角色 {#user-roles}
 
