@@ -3,10 +3,10 @@ title: 2024.3.0 版發行說明
 description: 以下是 Cloud Manager 2024.3.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 95a7a7be3ba20e05311ff90b91bd0773f6e77a07
+source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 70%
+source-wordcount: '268'
+ht-degree: 76%
 
 ---
 
@@ -25,8 +25,7 @@ ht-degree: 70%
 
 ## 新增功能 {#what-is-new}
 
-* 您現在可以驗證伺服器的健康狀態、檢閱記錄檔，以及深入瞭解在藍綠色部署期間建立的執行個體。
-   * 包括綠色伺服器的IP/DNS (FQDN)資訊的詳細資訊現在顯示在Cloud Manager的UI中。
+* Cloud Manager UI中現在會顯示包括綠色伺服器的IP/DNS (FQDN)資訊的細節。
 
 ## 早期採用計劃 {#early-adoption}
 
